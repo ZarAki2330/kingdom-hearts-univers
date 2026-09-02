@@ -53,7 +53,8 @@ export default async function LocaleLayout({
       <head>
         <ThemeScript />
       </head>
-      <body className="min-h-dvh flex flex-col">
+      {/* suppressHydrationWarning : des extensions navigateur (ColorZilla, Grammarly…) ajoutent des attributs à <body> avant React */}
+      <body className="min-h-dvh flex flex-col" suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">
