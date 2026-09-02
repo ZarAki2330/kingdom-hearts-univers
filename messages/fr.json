@@ -1,0 +1,98 @@
+{
+  "Meta": {
+    "title": "Kingdom Hearts Univers",
+    "description": "L'encyclopédie francophone de l'univers Kingdom Hearts : jeux, personnages, mondes, Keyblades et chronologies."
+  },
+  "Nav": {
+    "home": "Accueil",
+    "games": "Jeux",
+    "timeline": "Chronologie",
+    "encyclopedia": "Encyclopédie",
+    "story": "Histoire",
+    "guides": "Soluces",
+    "skip": "Aller au contenu principal",
+    "menu": "Menu principal",
+    "language": "Langue",
+    "theme": "Thème d'affichage",
+    "comingSoon": "Bientôt"
+  },
+  "Theme": {
+    "dawn": "Aube",
+    "day": "Jour",
+    "dusk": "Crépuscule",
+    "night": "Nuit"
+  },
+  "Home": {
+    "eyebrow": "Encyclopédie de l'univers",
+    "title": "Kingdom Hearts Univers",
+    "lead": "Tous les mondes commencent dans les ténèbres, et tous y retournent. Explorez les jeux, les personnages, les mondes et les Keyblades d'une saga qui relie Disney, Final Fantasy et une histoire originale de plus de vingt ans.",
+    "quote": "« Tous les mondes commencent dans les ténèbres, et tous s'y achèvent. »",
+    "quoteAuthor": "Ansem",
+    "ctaGames": "Découvrir les jeux",
+    "ctaTimeline": "Voir la chronologie",
+    "sectionsTitle": "Explorer l'univers",
+    "sections": {
+      "games": { "title": "Les jeux", "desc": "Fiches détaillées : dates de sortie, plateformes, durée, synopsis." },
+      "timeline": { "title": "Chronologies", "desc": "Par date de sortie ou par ordre des événements dans l'univers." },
+      "characters": { "title": "Personnages", "desc": "Sora, Riku, Kairi, l'Organisation XIII et des centaines d'autres." },
+      "enemies": { "title": "Ennemis", "desc": "Sans-cœur, Similis, Nescients et Non-êtres." },
+      "worlds": { "title": "Mondes", "desc": "De la Cité du Crépuscule aux mondes Disney." },
+      "keyblades": { "title": "Keyblades", "desc": "Statistiques, obtention et jeu d'origine." }
+    },
+    "statsTitle": "La saga en chiffres",
+    "stats": {
+      "games": "jeux",
+      "years": "ans d'histoire",
+      "platforms": "plateformes",
+      "languages": "langues"
+    },
+    "latestTitle": "Prochainement",
+    "latestDesc": "Kingdom Hearts IV est attendu pour fin 2027 sur PS5, Xbox Series, Switch 2 et PC. Sora s'éveille à Quadratum."
+  },
+  "Games": {
+    "title": "Les jeux",
+    "lead": "Chaque titre de la saga, des premiers pas de Sora sur les Îles du Destin jusqu'à Quadratum. Les durées sont indicatives (histoire principale).",
+    "filterAll": "Tous",
+    "filterMain": "Épisodes principaux",
+    "filterSpin": "Épisodes annexes",
+    "filterCollection": "Compilations",
+    "release": "Sortie",
+    "platforms": "Plateformes",
+    "developer": "Développeur",
+    "duration": "Durée",
+    "hours": "{hours} h",
+    "tba": "À venir",
+    "cancelled": "Annulé",
+    "japan": "Japon",
+    "europe": "Europe",
+    "america": "Amérique du Nord",
+    "synopsis": "Synopsis",
+    "story": "Histoire",
+    "includes": "Contient",
+    "chronoPosition": "Place dans la chronologie",
+    "chronoNote": "Ordre des événements dans l'univers",
+    "back": "Retour aux jeux",
+    "kind": {
+      "main": "Épisode principal",
+      "spin": "Épisode annexe",
+      "collection": "Compilation",
+      "remake": "Remake"
+    }
+  },
+  "Timeline": {
+    "title": "Chronologie des jeux",
+    "lead": "Deux façons de lire la saga : dans l'ordre où les jeux sont sortis, ou dans l'ordre où leurs événements se déroulent dans l'univers.",
+    "byRelease": "Par date de sortie",
+    "byStory": "Par chronologie interne",
+    "releaseHelp": "Année de première sortie (Japon).",
+    "storyHelp": "Position des événements dans l'histoire de l'univers. Les jeux marqués d'une accolade se déroulent en parallèle.",
+    "parallel": "En parallèle",
+    "eventsSoon": "La frise des événements de l'univers arrive bientôt."
+  },
+  "Footer": {
+    "about": "Kingdom Hearts Univers est un site de fans, sans lien avec Square Enix ou Disney. Kingdom Hearts est une marque de Square Enix Co., Ltd. et de Disney.",
+    "sources": "Sources et remerciements",
+    "accessibility": "Accessibilité",
+    "github": "Code source sur GitHub"
+  }
+}

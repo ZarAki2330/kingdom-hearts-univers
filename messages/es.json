@@ -1,0 +1,41 @@
+{
+  "Meta": { "title": "Kingdom Hearts Univers", "description": "La enciclopedia del universo Kingdom Hearts: juegos, personajes, mundos, Llaves Espada y cronologías." },
+  "Nav": { "home": "Inicio", "games": "Juegos", "timeline": "Cronología", "encyclopedia": "Enciclopedia", "story": "Historia", "guides": "Guías", "skip": "Ir al contenido principal", "menu": "Menú principal", "language": "Idioma", "theme": "Tema de visualización", "comingSoon": "Pronto" },
+  "Theme": { "dawn": "Alba", "day": "Día", "dusk": "Crepúsculo", "night": "Noche" },
+  "Home": {
+    "eyebrow": "Enciclopedia del universo",
+    "title": "Kingdom Hearts Univers",
+    "lead": "Todos los mundos comienzan en la oscuridad y todos terminan en ella. Explora los juegos, personajes, mundos y Llaves Espada de una saga que une Disney, Final Fantasy y una historia original de más de veinte años.",
+    "quote": "«Todos los mundos comienzan en la oscuridad, y así también terminan.»",
+    "quoteAuthor": "Ansem",
+    "ctaGames": "Descubrir los juegos",
+    "ctaTimeline": "Ver la cronología",
+    "sectionsTitle": "Explorar el universo",
+    "sections": {
+      "games": { "title": "Juegos", "desc": "Fichas detalladas: fechas de lanzamiento, plataformas, duración, sinopsis." },
+      "timeline": { "title": "Cronologías", "desc": "Por fecha de lanzamiento o por orden de los acontecimientos." },
+      "characters": { "title": "Personajes", "desc": "Sora, Riku, Kairi, la Organización XIII y cientos más." },
+      "enemies": { "title": "Enemigos", "desc": "Sincorazón, Incorpóreos, Nescientes y Devorasueños." },
+      "worlds": { "title": "Mundos", "desc": "De Villa Crepúsculo a los mundos Disney." },
+      "keyblades": { "title": "Llaves Espada", "desc": "Estadísticas, obtención y juego de origen." }
+    },
+    "statsTitle": "La saga en cifras",
+    "stats": { "games": "juegos", "years": "años de historia", "platforms": "plataformas", "languages": "idiomas" },
+    "latestTitle": "Próximamente",
+    "latestDesc": "Kingdom Hearts IV se espera para finales de 2027 en PS5, Xbox Series, Switch 2 y PC. Sora despierta en Quadratum."
+  },
+  "Games": {
+    "title": "Juegos", "lead": "Cada título de la saga, desde los primeros pasos de Sora en las Islas del Destino hasta Quadratum. Las duraciones son orientativas (historia principal).",
+    "filterAll": "Todos", "filterMain": "Entregas principales", "filterSpin": "Entregas secundarias", "filterCollection": "Recopilaciones",
+    "release": "Lanzamiento", "platforms": "Plataformas", "developer": "Desarrollador", "duration": "Duración", "hours": "{hours} h",
+    "tba": "Próximamente", "cancelled": "Cancelado", "japan": "Japón", "europe": "Europa", "america": "Norteamérica",
+    "synopsis": "Sinopsis", "story": "Historia", "includes": "Incluye", "chronoPosition": "Lugar en la cronología", "chronoNote": "Orden de los acontecimientos en el universo", "back": "Volver a los juegos",
+    "kind": { "main": "Entrega principal", "spin": "Entrega secundaria", "collection": "Recopilación", "remake": "Remake" }
+  },
+  "Timeline": {
+    "title": "Cronología de los juegos", "lead": "Dos formas de leer la saga: en el orden en que salieron los juegos o en el orden en que ocurren sus acontecimientos.",
+    "byRelease": "Por fecha de lanzamiento", "byStory": "Por cronología interna", "releaseHelp": "Año del primer lanzamiento (Japón).",
+    "storyHelp": "Posición de los acontecimientos en la historia del universo. Los juegos marcados con una llave ocurren en paralelo.", "parallel": "En paralelo", "eventsSoon": "La cronología de los acontecimientos del universo llegará pronto."
+  },
+  "Footer": { "about": "Kingdom Hearts Univers es un sitio de fans sin relación con Square Enix ni Disney. Kingdom Hearts es una marca de Square Enix Co., Ltd. y Disney.", "sources": "Fuentes y créditos", "accessibility": "Accesibilidad", "github": "Código fuente en GitHub" }
+}

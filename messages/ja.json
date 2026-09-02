@@ -1,0 +1,41 @@
+{
+  "Meta": { "title": "Kingdom Hearts Univers", "description": "キングダム ハーツの世界の百科事典：ゲーム、キャラクター、ワールド、キーブレード、年表。" },
+  "Nav": { "home": "ホーム", "games": "ゲーム", "timeline": "年表", "encyclopedia": "百科事典", "story": "ストーリー", "guides": "攻略", "skip": "本文へスキップ", "menu": "メインメニュー", "language": "言語", "theme": "表示テーマ", "comingSoon": "近日公開" },
+  "Theme": { "dawn": "夜明け", "day": "昼", "dusk": "夕暮れ", "night": "夜" },
+  "Home": {
+    "eyebrow": "世界の百科事典",
+    "title": "Kingdom Hearts Univers",
+    "lead": "すべての世界は闇から始まり、闇へと帰る。ディズニー、ファイナルファンタジー、そして20年以上にわたるオリジナルストーリーを結ぶサーガのゲーム、キャラクター、ワールド、キーブレードを探索しよう。",
+    "quote": "「すべての世界は闇に始まり、闇に終わる」",
+    "quoteAuthor": "アンセム",
+    "ctaGames": "ゲームを見る",
+    "ctaTimeline": "年表を見る",
+    "sectionsTitle": "世界を探索する",
+    "sections": {
+      "games": { "title": "ゲーム", "desc": "詳細データ：発売日、対応機種、プレイ時間、あらすじ。" },
+      "timeline": { "title": "年表", "desc": "発売順、または作中の時系列順。" },
+      "characters": { "title": "キャラクター", "desc": "ソラ、リク、カイリ、XIII機関ほか多数。" },
+      "enemies": { "title": "敵", "desc": "ハートレス、ノーバディ、アンヴァース、ドリームイーター。" },
+      "worlds": { "title": "ワールド", "desc": "トワイライトタウンからディズニーの世界まで。" },
+      "keyblades": { "title": "キーブレード", "desc": "性能、入手方法、初登場作品。" }
+    },
+    "statsTitle": "数字で見るサーガ",
+    "stats": { "games": "作品", "years": "年の歴史", "platforms": "機種", "languages": "言語" },
+    "latestTitle": "近日登場",
+    "latestDesc": "キングダム ハーツIVは2027年後半にPS5、Xbox Series、Switch 2、PCで発売予定。ソラはクアッドラトゥムで目覚める。"
+  },
+  "Games": {
+    "title": "ゲーム", "lead": "デスティニーアイランドでのソラの最初の一歩からクアッドラトゥムまで、サーガの全作品。プレイ時間は目安（メインストーリー）。",
+    "filterAll": "すべて", "filterMain": "ナンバリング", "filterSpin": "外伝", "filterCollection": "コレクション",
+    "release": "発売", "platforms": "対応機種", "developer": "開発", "duration": "プレイ時間", "hours": "{hours} 時間",
+    "tba": "発売予定", "cancelled": "開発中止", "japan": "日本", "europe": "欧州", "america": "北米",
+    "synopsis": "あらすじ", "story": "ストーリー", "includes": "収録作品", "chronoPosition": "時系列上の位置", "chronoNote": "作中の出来事の順序", "back": "ゲーム一覧へ戻る",
+    "kind": { "main": "ナンバリング", "spin": "外伝", "collection": "コレクション", "remake": "リメイク" }
+  },
+  "Timeline": {
+    "title": "ゲームの年表", "lead": "サーガを読む2つの方法：ゲームの発売順、または作中の出来事が起こる順。",
+    "byRelease": "発売日順", "byStory": "作中時系列順", "releaseHelp": "初発売の年（日本）。",
+    "storyHelp": "世界の歴史における出来事の位置。括弧で示された作品は同時期に進行します。", "parallel": "同時期", "eventsSoon": "世界の出来事の年表は近日公開。"
+  },
+  "Footer": { "about": "Kingdom Hearts Universはファンサイトであり、スクウェア・エニックスおよびディズニーとは関係ありません。KINGDOM HEARTSは株式会社スクウェア・エニックスおよびディズニーの商標です。", "sources": "出典とクレジット", "accessibility": "アクセシビリティ", "github": "GitHubのソースコード" }
+}

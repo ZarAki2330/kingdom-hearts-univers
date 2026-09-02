@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Kingdom Hearts Univers — design tokens
+   Quatre thèmes inspirés de khdestiny : Aube, Jour, Crépuscule, Nuit.
+   Le thème par défaut suit la préférence système (Jour / Nuit).
+--------------------------------------------------------------------------- */
+:root {
+  /* Jour */
+  --bg: #f4f1e8;
+  --bg-2: #eae5d6;
+  --surface: #ffffff;
+  --surface-2: #f8f5ee;
+  --line: #d8d1bf;
+  --text: #1b1f33;
+  --text-2: #5b6078;
+  --accent: #a8791a;
+  --accent-2: #2f6fb5;
+  --accent-contrast: #ffffff;
+  --glow: rgba(168, 121, 26, 0.25);
+  --hero-1: #dfe8f5;
+  --hero-2: #f4f1e8;
+  --shadow: 0 1px 2px rgba(27, 31, 51, 0.08), 0 12px 32px -16px rgba(27, 31, 51, 0.25);
+  color-scheme: light;
+}
+
+:root[data-theme="dawn"] {
+  --bg: #fbf3ea;
+  --bg-2: #f6e6d6;
+  --surface: #fffaf5;
+  --surface-2: #fdf1e7;
+  --line: #e7cfba;
+  --text: #2b1f2e;
+  --text-2: #6f5a6b;
+  --accent: #c2622e;
+  --accent-2: #8d5ba6;
+  --accent-contrast: #ffffff;
+  --glow: rgba(194, 98, 46, 0.25);
+  --hero-1: #f8d4b8;
+  --hero-2: #e9d3ec;
+  color-scheme: light;
+}
+
+:root[data-theme="dusk"] {
+  --bg: #1d1730;
+  --bg-2: #241d3c;
+  --surface: #2b2247;
+  --surface-2: #33295a;
+  --line: #4a3d75;
+  --text: #f3ecf9;
+  --text-2: #b7aacd;
+  --accent: #f0a35c;
+  --accent-2: #c58ff5;
+  --accent-contrast: #1d1730;
+  --glow: rgba(240, 163, 92, 0.3);
+  --hero-1: #5a2d6e;
+  --hero-2: #1d1730;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 36px -16px rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="day"]):not([data-theme="dawn"]):not([data-theme="dusk"]) {
+    --bg: #0b1020;
+    --bg-2: #0f1630;
+    --surface: #151d3a;
+    --surface-2: #1b2547;
+    --line: #27315a;
+    --text: #eae6f5;
+    --text-2: #9ba1be;
+    --accent: #e8b84a;
+    --accent-2: #7cc4ff;
+    --accent-contrast: #0b1020;
+    --glow: rgba(232, 184, 74, 0.3);
+    --hero-1: #1f3a80;
+    --hero-2: #0b1020;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 36px -16px rgba(0, 0, 0, 0.7);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="night"] {
+  --bg: #0b1020;
+  --bg-2: #0f1630;
+  --surface: #151d3a;
+  --surface-2: #1b2547;
+  --line: #27315a;
+  --text: #eae6f5;
+  --text-2: #9ba1be;
+  --accent: #e8b84a;
+  --accent-2: #7cc4ff;
+  --accent-contrast: #0b1020;
+  --glow: rgba(232, 184, 74, 0.3);
+  --hero-1: #1f3a80;
+  --hero-2: #0b1020;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 36px -16px rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-text-2: var(--text-2);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-contrast: var(--accent-contrast);
+  --font-display: "Cinzel", Georgia, "Times New Roman", serif;
+  --font-body: "Nunito Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --shadow-card: var(--shadow);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Focus visible net et cohérent sur tous les éléments interactifs */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--accent-2);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  letter-spacing: 0.01em;
+}
+
+.prose-max {
+  max-width: 68ch;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Cartes : élévation réservée aux objets cliquables */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.card-link {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.card-link:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Hero : ciel étoilé discret */
+.hero {
+  background:
+    radial-gradient(1200px 500px at 15% -10%, var(--hero-1), transparent 60%),
+    linear-gradient(180deg, var(--bg-2), var(--bg));
+}
+
+.stars {
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, var(--accent) 50%, transparent 51%),
+    radial-gradient(1px 1px at 70% 20%, var(--text-2) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 40% 70%, var(--accent-2) 50%, transparent 51%),
+    radial-gradient(1px 1px at 85% 60%, var(--accent) 50%, transparent 51%),
+    radial-gradient(1px 1px at 55% 45%, var(--text-2) 50%, transparent 51%),
+    radial-gradient(1px 1px at 10% 80%, var(--accent-2) 50%, transparent 51%);
+  opacity: 0.5;
+}
+
+/* Frise chronologique */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  border-radius: 1px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 0.35rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--glow);
+}
+
+.parallel-group {
+  border-left: 3px solid var(--accent-2);
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .card {
+    border: 1px solid CanvasText;
+  }
+}

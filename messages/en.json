@@ -1,0 +1,83 @@
+{
+  "Meta": {
+    "title": "Kingdom Hearts Univers",
+    "description": "The Kingdom Hearts encyclopedia: games, characters, worlds, Keyblades and timelines."
+  },
+  "Nav": {
+    "home": "Home",
+    "games": "Games",
+    "timeline": "Timeline",
+    "encyclopedia": "Encyclopedia",
+    "story": "Story",
+    "guides": "Guides",
+    "skip": "Skip to main content",
+    "menu": "Main menu",
+    "language": "Language",
+    "theme": "Display theme",
+    "comingSoon": "Soon"
+  },
+  "Theme": { "dawn": "Dawn", "day": "Day", "dusk": "Dusk", "night": "Night" },
+  "Home": {
+    "eyebrow": "Encyclopedia of the universe",
+    "title": "Kingdom Hearts Univers",
+    "lead": "All worlds begin in darkness, and all so end. Explore the games, characters, worlds and Keyblades of a saga that ties Disney, Final Fantasy and an original story spanning more than twenty years.",
+    "quote": "“All worlds begin in darkness, and all so end.”",
+    "quoteAuthor": "Ansem",
+    "ctaGames": "Discover the games",
+    "ctaTimeline": "See the timeline",
+    "sectionsTitle": "Explore the universe",
+    "sections": {
+      "games": { "title": "Games", "desc": "Detailed sheets: release dates, platforms, playtime, synopsis." },
+      "timeline": { "title": "Timelines", "desc": "By release date or by the order of events in the universe." },
+      "characters": { "title": "Characters", "desc": "Sora, Riku, Kairi, Organization XIII and hundreds more." },
+      "enemies": { "title": "Enemies", "desc": "Heartless, Nobodies, Unversed and Dream Eaters." },
+      "worlds": { "title": "Worlds", "desc": "From Twilight Town to the Disney worlds." },
+      "keyblades": { "title": "Keyblades", "desc": "Stats, how to obtain them and game of origin." }
+    },
+    "statsTitle": "The saga in numbers",
+    "stats": { "games": "games", "years": "years of story", "platforms": "platforms", "languages": "languages" },
+    "latestTitle": "Coming next",
+    "latestDesc": "Kingdom Hearts IV is expected in late 2027 on PS5, Xbox Series, Switch 2 and PC. Sora awakens in Quadratum."
+  },
+  "Games": {
+    "title": "Games",
+    "lead": "Every title in the saga, from Sora's first steps on Destiny Islands to Quadratum. Playtimes are indicative (main story).",
+    "filterAll": "All",
+    "filterMain": "Main entries",
+    "filterSpin": "Side entries",
+    "filterCollection": "Collections",
+    "release": "Release",
+    "platforms": "Platforms",
+    "developer": "Developer",
+    "duration": "Playtime",
+    "hours": "{hours} h",
+    "tba": "Upcoming",
+    "cancelled": "Cancelled",
+    "japan": "Japan",
+    "europe": "Europe",
+    "america": "North America",
+    "synopsis": "Synopsis",
+    "story": "Story",
+    "includes": "Includes",
+    "chronoPosition": "Place in the timeline",
+    "chronoNote": "Order of events in the universe",
+    "back": "Back to games",
+    "kind": { "main": "Main entry", "spin": "Side entry", "collection": "Collection", "remake": "Remake" }
+  },
+  "Timeline": {
+    "title": "Games timeline",
+    "lead": "Two ways to read the saga: in the order the games were released, or in the order their events happen in the universe.",
+    "byRelease": "By release date",
+    "byStory": "By in-universe chronology",
+    "releaseHelp": "Year of first release (Japan).",
+    "storyHelp": "Position of the events in the universe's history. Games marked with a brace happen in parallel.",
+    "parallel": "In parallel",
+    "eventsSoon": "The universe events timeline is coming soon."
+  },
+  "Footer": {
+    "about": "Kingdom Hearts Univers is a fan site with no affiliation to Square Enix or Disney. Kingdom Hearts is a trademark of Square Enix Co., Ltd. and Disney.",
+    "sources": "Sources and credits",
+    "accessibility": "Accessibility",
+    "github": "Source code on GitHub"
+  }
+}
