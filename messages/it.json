@@ -1,7 +1,27 @@
 {
-  "Meta": { "title": "Kingdom Hearts Univers", "description": "L'enciclopedia dell'universo Kingdom Hearts: giochi, personaggi, mondi, Keyblade e cronologie." },
-  "Nav": { "home": "Home", "games": "Giochi", "timeline": "Cronologia", "encyclopedia": "Enciclopedia", "story": "Storia", "guides": "Guide", "skip": "Vai al contenuto principale", "menu": "Menu principale", "language": "Lingua", "theme": "Tema di visualizzazione", "comingSoon": "Presto" },
-  "Theme": { "dawn": "Alba", "day": "Giorno", "dusk": "Crepuscolo", "night": "Notte" },
+  "Meta": {
+    "title": "Kingdom Hearts Univers",
+    "description": "L'enciclopedia dell'universo Kingdom Hearts: giochi, personaggi, mondi, Keyblade e cronologie."
+  },
+  "Nav": {
+    "home": "Home",
+    "games": "Giochi",
+    "timeline": "Cronologia",
+    "encyclopedia": "Enciclopedia",
+    "story": "Storia",
+    "guides": "Guide",
+    "skip": "Vai al contenuto principale",
+    "menu": "Menu principale",
+    "language": "Lingua",
+    "theme": "Tema di visualizzazione",
+    "comingSoon": "Presto"
+  },
+  "Theme": {
+    "dawn": "Alba",
+    "day": "Giorno",
+    "dusk": "Crepuscolo",
+    "night": "Notte"
+  },
   "Home": {
     "eyebrow": "Enciclopedia dell'universo",
     "title": "Kingdom Hearts Univers",
@@ -12,30 +32,86 @@
     "ctaTimeline": "Vedi la cronologia",
     "sectionsTitle": "Esplora l'universo",
     "sections": {
-      "games": { "title": "Giochi", "desc": "Schede dettagliate: date di uscita, piattaforme, durata, trama." },
-      "timeline": { "title": "Cronologie", "desc": "Per data di uscita o per ordine degli eventi nell'universo." },
-      "characters": { "title": "Personaggi", "desc": "Sora, Riku, Kairi, l'Organizzazione XIII e centinaia di altri." },
-      "enemies": { "title": "Nemici", "desc": "Heartless, Nessuno, Unversed e Dream Eater." },
-      "worlds": { "title": "Mondi", "desc": "Da Crepuscopoli ai mondi Disney." },
-      "keyblades": { "title": "Keyblade", "desc": "Statistiche, come ottenerli e gioco di origine." }
+      "games": {
+        "title": "Giochi",
+        "desc": "Schede dettagliate: date di uscita, piattaforme, durata, trama."
+      },
+      "timeline": {
+        "title": "Cronologie",
+        "desc": "Per data di uscita o per ordine degli eventi nell'universo."
+      },
+      "characters": {
+        "title": "Personaggi",
+        "desc": "Sora, Riku, Kairi, l'Organizzazione XIII e centinaia di altri."
+      },
+      "enemies": {
+        "title": "Nemici",
+        "desc": "Heartless, Nessuno, Unversed e Dream Eater."
+      },
+      "worlds": {
+        "title": "Mondi",
+        "desc": "Da Crepuscopoli ai mondi Disney."
+      },
+      "keyblades": {
+        "title": "Keyblade",
+        "desc": "Statistiche, come ottenerli e gioco di origine."
+      }
     },
     "statsTitle": "La saga in numeri",
-    "stats": { "games": "giochi", "years": "anni di storia", "platforms": "piattaforme", "languages": "lingue" },
+    "stats": {
+      "games": "giochi",
+      "years": "anni di storia",
+      "platforms": "piattaforme",
+      "languages": "lingue"
+    },
     "latestTitle": "Prossimamente",
     "latestDesc": "Kingdom Hearts IV è atteso per la fine del 2027 su PS5, Xbox Series, Switch 2 e PC. Sora si risveglia a Quadratum."
   },
   "Games": {
-    "title": "Giochi", "lead": "Ogni titolo della saga, dai primi passi di Sora sulle Isole del Destino fino a Quadratum. Le durate sono indicative (storia principale).",
-    "filterAll": "Tutti", "filterMain": "Capitoli principali", "filterSpin": "Capitoli secondari", "filterCollection": "Raccolte",
-    "release": "Uscita", "platforms": "Piattaforme", "developer": "Sviluppatore", "duration": "Durata", "hours": "{hours} h",
-    "tba": "In arrivo", "cancelled": "Annullato", "japan": "Giappone", "europe": "Europa", "america": "Nord America",
-    "synopsis": "Trama", "story": "Storia", "includes": "Contiene", "chronoPosition": "Posizione nella cronologia", "chronoNote": "Ordine degli eventi nell'universo", "back": "Torna ai giochi",
-    "kind": { "main": "Capitolo principale", "spin": "Capitolo secondario", "collection": "Raccolta", "remake": "Remake" }
+    "title": "Giochi",
+    "lead": "Ogni titolo della saga, dai primi passi di Sora sulle Isole del Destino fino a Quadratum. Le durate sono indicative (storia principale).",
+    "filterAll": "Tutti",
+    "filterMain": "Capitoli principali",
+    "filterSpin": "Capitoli secondari",
+    "filterCollection": "Raccolte",
+    "release": "Uscita",
+    "platforms": "Piattaforme",
+    "developer": "Sviluppatore",
+    "duration": "Durata",
+    "hours": "{hours} h",
+    "tba": "In arrivo",
+    "cancelled": "Annullato",
+    "japan": "Giappone",
+    "europe": "Europa",
+    "america": "Nord America",
+    "synopsis": "Trama",
+    "story": "Storia",
+    "includes": "Contiene",
+    "chronoPosition": "Posizione nella cronologia",
+    "chronoNote": "Ordine degli eventi nell'universo",
+    "back": "Torna ai giochi",
+    "kind": {
+      "main": "Capitolo principale",
+      "spin": "Capitolo secondario",
+      "collection": "Raccolta",
+      "remake": "Remake"
+    }
   },
   "Timeline": {
-    "title": "Cronologia dei giochi", "lead": "Due modi di leggere la saga: nell'ordine in cui i giochi sono usciti o nell'ordine in cui i loro eventi accadono nell'universo.",
-    "byRelease": "Per data di uscita", "byStory": "Per cronologia interna", "releaseHelp": "Anno della prima uscita (Giappone).",
-    "storyHelp": "Posizione degli eventi nella storia dell'universo. I giochi contrassegnati da una parentesi si svolgono in parallelo.", "parallel": "In parallelo", "eventsSoon": "La cronologia degli eventi dell'universo arriverà presto."
+    "title": "Cronologia dei giochi",
+    "lead": "Due modi di leggere la saga: nell'ordine in cui i giochi sono usciti o nell'ordine in cui i loro eventi accadono nell'universo.",
+    "byRelease": "Per data di uscita",
+    "byStory": "Per cronologia interna",
+    "releaseHelp": "Anno della prima uscita (Giappone).",
+    "storyHelp": "Posizione degli eventi nella storia dell'universo. I giochi contrassegnati da una parentesi si svolgono in parallelo.",
+    "parallel": "In parallelo",
+    "eventsSoon": "La cronologia degli eventi dell'universo arriverà presto."
   },
-  "Footer": { "about": "Kingdom Hearts Univers è un sito di fan senza alcun legame con Square Enix o Disney. Kingdom Hearts è un marchio di Square Enix Co., Ltd. e Disney.", "sources": "Fonti e ringraziamenti", "accessibility": "Accessibilità", "github": "Codice sorgente su GitHub" }
+  "Footer": {
+    "about": "Kingdom Hearts Univers è un sito di fan senza alcun legame con Square Enix o Disney. Kingdom Hearts è un marchio di Square Enix Co., Ltd. e Disney.",
+    "sources": "Fonti e ringraziamenti",
+    "accessibility": "Accessibilità",
+    "github": "Codice sorgente su GitHub",
+    "images": "Copertine, loghi e illustrazioni © Square Enix / Disney, riprodotti a scopo illustrativo; rimossi su richiesta di un titolare dei diritti."
+  }
 }

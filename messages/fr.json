@@ -32,12 +32,30 @@
     "ctaTimeline": "Voir la chronologie",
     "sectionsTitle": "Explorer l'univers",
     "sections": {
-      "games": { "title": "Les jeux", "desc": "Fiches détaillées : dates de sortie, plateformes, durée, synopsis." },
-      "timeline": { "title": "Chronologies", "desc": "Par date de sortie ou par ordre des événements dans l'univers." },
-      "characters": { "title": "Personnages", "desc": "Sora, Riku, Kairi, l'Organisation XIII et des centaines d'autres." },
-      "enemies": { "title": "Ennemis", "desc": "Sans-cœur, Similis, Nescients et Non-êtres." },
-      "worlds": { "title": "Mondes", "desc": "De la Cité du Crépuscule aux mondes Disney." },
-      "keyblades": { "title": "Keyblades", "desc": "Statistiques, obtention et jeu d'origine." }
+      "games": {
+        "title": "Les jeux",
+        "desc": "Fiches détaillées : dates de sortie, plateformes, durée, synopsis."
+      },
+      "timeline": {
+        "title": "Chronologies",
+        "desc": "Par date de sortie ou par ordre des événements dans l'univers."
+      },
+      "characters": {
+        "title": "Personnages",
+        "desc": "Sora, Riku, Kairi, l'Organisation XIII et des centaines d'autres."
+      },
+      "enemies": {
+        "title": "Ennemis",
+        "desc": "Sans-cœur, Similis, Nescients et Non-êtres."
+      },
+      "worlds": {
+        "title": "Mondes",
+        "desc": "De la Cité du Crépuscule aux mondes Disney."
+      },
+      "keyblades": {
+        "title": "Keyblades",
+        "desc": "Statistiques, obtention et jeu d'origine."
+      }
     },
     "statsTitle": "La saga en chiffres",
     "stats": {
@@ -93,6 +111,7 @@
     "about": "Kingdom Hearts Univers est un site de fans, sans lien avec Square Enix ou Disney. Kingdom Hearts est une marque de Square Enix Co., Ltd. et de Disney.",
     "sources": "Sources et remerciements",
     "accessibility": "Accessibilité",
-    "github": "Code source sur GitHub"
+    "github": "Code source sur GitHub",
+    "images": "Jaquettes, logos et illustrations © Square Enix / Disney, reproduits à titre d'illustration ; retirés sur simple demande d'un ayant droit."
   }
 }

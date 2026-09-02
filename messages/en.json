@@ -16,7 +16,12 @@
     "theme": "Display theme",
     "comingSoon": "Soon"
   },
-  "Theme": { "dawn": "Dawn", "day": "Day", "dusk": "Dusk", "night": "Night" },
+  "Theme": {
+    "dawn": "Dawn",
+    "day": "Day",
+    "dusk": "Dusk",
+    "night": "Night"
+  },
   "Home": {
     "eyebrow": "Encyclopedia of the universe",
     "title": "Kingdom Hearts Univers",
@@ -27,15 +32,38 @@
     "ctaTimeline": "See the timeline",
     "sectionsTitle": "Explore the universe",
     "sections": {
-      "games": { "title": "Games", "desc": "Detailed sheets: release dates, platforms, playtime, synopsis." },
-      "timeline": { "title": "Timelines", "desc": "By release date or by the order of events in the universe." },
-      "characters": { "title": "Characters", "desc": "Sora, Riku, Kairi, Organization XIII and hundreds more." },
-      "enemies": { "title": "Enemies", "desc": "Heartless, Nobodies, Unversed and Dream Eaters." },
-      "worlds": { "title": "Worlds", "desc": "From Twilight Town to the Disney worlds." },
-      "keyblades": { "title": "Keyblades", "desc": "Stats, how to obtain them and game of origin." }
+      "games": {
+        "title": "Games",
+        "desc": "Detailed sheets: release dates, platforms, playtime, synopsis."
+      },
+      "timeline": {
+        "title": "Timelines",
+        "desc": "By release date or by the order of events in the universe."
+      },
+      "characters": {
+        "title": "Characters",
+        "desc": "Sora, Riku, Kairi, Organization XIII and hundreds more."
+      },
+      "enemies": {
+        "title": "Enemies",
+        "desc": "Heartless, Nobodies, Unversed and Dream Eaters."
+      },
+      "worlds": {
+        "title": "Worlds",
+        "desc": "From Twilight Town to the Disney worlds."
+      },
+      "keyblades": {
+        "title": "Keyblades",
+        "desc": "Stats, how to obtain them and game of origin."
+      }
     },
     "statsTitle": "The saga in numbers",
-    "stats": { "games": "games", "years": "years of story", "platforms": "platforms", "languages": "languages" },
+    "stats": {
+      "games": "games",
+      "years": "years of story",
+      "platforms": "platforms",
+      "languages": "languages"
+    },
     "latestTitle": "Coming next",
     "latestDesc": "Kingdom Hearts IV is expected in late 2027 on PS5, Xbox Series, Switch 2 and PC. Sora awakens in Quadratum."
   },
@@ -62,7 +90,12 @@
     "chronoPosition": "Place in the timeline",
     "chronoNote": "Order of events in the universe",
     "back": "Back to games",
-    "kind": { "main": "Main entry", "spin": "Side entry", "collection": "Collection", "remake": "Remake" }
+    "kind": {
+      "main": "Main entry",
+      "spin": "Side entry",
+      "collection": "Collection",
+      "remake": "Remake"
+    }
   },
   "Timeline": {
     "title": "Games timeline",
@@ -78,6 +111,7 @@
     "about": "Kingdom Hearts Univers is a fan site with no affiliation to Square Enix or Disney. Kingdom Hearts is a trademark of Square Enix Co., Ltd. and Disney.",
     "sources": "Sources and credits",
     "accessibility": "Accessibility",
-    "github": "Source code on GitHub"
+    "github": "Source code on GitHub",
+    "images": "Box art, logos and artwork © Square Enix / Disney, reproduced for illustrative purposes; removed on request of a rights holder."
   }
 }

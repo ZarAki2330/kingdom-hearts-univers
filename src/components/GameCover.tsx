@@ -3,7 +3,9 @@ import type { Game } from "@/data/games";
 
 /**
  * Jaquette d'un jeu.
- * - Si `game.cover` est renseignée (visuel officiel, crédité dans docs/IMAGES.md), on l'affiche via next/image.
+ * - Si `game.cover` est renseignée (visuel officiel, crédité — voir docs/IMAGES.md), on l'affiche via next/image.
+ *   Les visuels n'ont pas tous le même ratio (boîtes DS/3DS, logos) : l'image est affichée entière sur un fond
+ *   à la couleur du jeu, pour que la carte garde le même format partout.
  * - Sinon, jaquette générée : dégradé à la couleur du jeu + titre court (décorative, aria-hidden).
  */
 export function GameCover({
@@ -17,16 +19,19 @@ export function GameCover({
   sizes?: string;
   priority?: boolean;
 }) {
+  const bg = `radial-gradient(120% 90% at 20% 0%, ${game.accent} 0%, transparent 60%), linear-gradient(160deg, ${game.accent}cc, #0b1020 95%)`;
+
   if (game.cover) {
+    const portrait = game.cover.height / game.cover.width > 1.2;
     return (
-      <div className={`relative overflow-hidden rounded-xl bg-surface-2 ${className}`}>
+      <div className={`relative overflow-hidden rounded-xl ${className}`} style={{ background: bg }}>
         <Image
           src={game.cover.src}
           alt={`Jaquette de ${game.title}`}
           fill
           sizes={sizes}
           priority={priority}
-          className="object-cover"
+          className={portrait ? "object-cover" : "object-contain p-[6%]"}
         />
       </div>
     );
@@ -35,10 +40,7 @@ export function GameCover({
     <div
       aria-hidden="true"
       className={`relative flex items-center justify-center overflow-hidden rounded-xl ${className}`}
-      style={{
-        containerType: "inline-size",
-        background: `radial-gradient(120% 90% at 20% 0%, ${game.accent} 0%, transparent 60%), linear-gradient(160deg, ${game.accent}cc, #0b1020 95%)`,
-      }}
+      style={{ containerType: "inline-size", background: bg }}
     >
       <div className="stars absolute inset-0" />
       <span

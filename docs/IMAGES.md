@@ -11,14 +11,16 @@ Le site doit être richement illustré, mais tous les visuels de *Kingdom Hearts
 | Illustrations du site (emblème, jaquettes générées, icônes) | Créées pour le site | Pas de reprise du logo officiel (couronne/cœur de la marque) ni de copie de personnages |
 | Fan-arts | Uniquement avec l'**accord écrit** de l'artiste | Crédit nominatif + lien |
 
-Tout ce qui ne rentre pas dans ce tableau reste en jaquette générée (dégradé + titre), qui est le comportement par défaut du composant `GameCover`.
+## Choix retenu (2 septembre 2026)
 
-En cas de demande de retrait d'un ayant droit, l'image est supprimée sans discussion : c'est la règle des sites de fans (khdestiny, KH13…) et le seul cadre sûr.
+Après discussion, le site applique la **tolérance « site de fans »** : les jaquettes, logos et illustrations officiels sont affichés à titre d'illustration éditoriale, non commerciale, avec crédit systématique « © Square Enix / Disney » et mention de la source. Les fichiers actuels proviennent du [Kingdom Hearts Wiki](https://kingdomhearts.fandom.com/) (versions occidentales quand elles existent en bonne définition, sinon japonaises), redimensionnés à 900 px maximum. Ce n'est pas une autorisation formelle : **en cas de demande de retrait d'un ayant droit, l'image est supprimée sans discussion**, comme le font khdestiny, KH13 et les autres sites de fans. Le pied de page du site porte cette mention.
+
+Tout jeu sans visuel reste en jaquette générée (dégradé + titre), comportement par défaut du composant `GameCover`. Les visuels n'ont pas tous le même ratio (boîtes DS/3DS presque carrées, logos horizontaux) : le composant affiche l'image entière sur un fond à la couleur du jeu.
 
 ## Procédure pour ajouter une jaquette
 
 1. Récupérer le visuel via une source du tableau ci-dessus.
-2. L'exporter en **JPEG, ratio 3:4, 600 × 800 px minimum, < 400 Ko**, nommé `public/images/games/<slug>.jpg` (même slug que dans `src/data/games.ts`).
+2. L'exporter en **JPEG, 900 px maximum sur le plus grand côté, < 400 Ko**, nommé `public/images/games/<slug>.jpg` (même slug que dans `src/data/games.ts`). Tout ratio est accepté.
 3. Dans `src/data/games.ts`, ajouter au jeu :
    ```ts
    cover: {
@@ -28,7 +30,7 @@ En cas de demande de retrait d'un ayant droit, l'image est supprimée sans discu
      height: 800,
    },
    ```
-4. Lancer `node scripts/check-covers.mjs` : le script vérifie la présence du fichier, le ratio, la taille et le crédit, et liste les jeux encore en jaquette générée.
+4. Lancer `npm run check:covers` : le script vérifie la présence du fichier, la taille, le poids et le crédit, et liste les jeux encore en jaquette générée.
 5. Le crédit est affiché automatiquement sur la fiche du jeu.
 
 ## Alt text

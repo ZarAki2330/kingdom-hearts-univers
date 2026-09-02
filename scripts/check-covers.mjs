@@ -1,4 +1,4 @@
-// Vérifie les jaquettes : fichiers présents, ratio 3:4, taille minimale, crédit renseigné.
+// Vérifie les visuels : fichiers présents, taille minimale, poids, crédit renseigné.
 // Usage : node scripts/check-covers.mjs
 import { readFileSync, existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
@@ -14,9 +14,7 @@ for (const [, path, credit, w, h] of covers) {
   const slug = path.split("/").pop().replace(/\.\w+$/, "");
   withCover.add(slug);
   if (!existsSync(file)) { console.error(`✖ ${path} : fichier absent`); errors++; continue; }
-  const ratio = Number(w) / Number(h);
-  if (Math.abs(ratio - 0.75) > 0.05) { console.error(`✖ ${path} : ratio ${ratio.toFixed(2)} (attendu 3:4)`); errors++; }
-  if (Number(w) < 600) { console.error(`✖ ${path} : largeur ${w}px < 600`); errors++; }
+  if (Number(w) < 400 && Number(h) < 400) { console.error(`✖ ${path} : ${w}×${h}px trop petit (min 400px)`); errors++; }
   if (!credit.trim()) { console.error(`✖ ${path} : crédit manquant`); errors++; }
   const kb = Math.round(statSync(file).size / 1024);
   if (kb > 400) console.warn(`⚠ ${path} : ${kb} Ko (compresser sous 400 Ko)`);
