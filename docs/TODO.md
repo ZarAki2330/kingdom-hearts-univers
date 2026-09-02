@@ -1,10 +1,10 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 35 % (15/43 tâches)**
+**Avancement global : 40 % (17/43 tâches)**
 
-Légende : `[x]` terminée · `[~]` en cours · `[ ]` à faire
+Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
-## I. Fondations — 6/8
+## I. Fondations — 7/8
 
 Repo, outillage, squelette du site
 
@@ -14,10 +14,10 @@ Repo, outillage, squelette du site
 - [x] Initialiser Next.js + Tailwind + next-intl — _Next.js 16, App Router, TypeScript, locales fr/en/es/de/it/ja_
 - [x] Design system (couleurs, typos, composants accessibles) — _Thèmes Aube/Jour/Crépuscule/Nuit, Cinzel + Nunito auto-hébergées_
 - [x] Page d'accueil + header/footer + sélecteur de langue — _Skip-link, menu mobile, sélecteur de thème et de langue_
-- [~] README, licence, .gitignore, CI GitHub Actions (lint + build) — _README + CI faits ; licence à choisir ; premier push en attente d'identifiants_
+- [x] README, licence, .gitignore, CI GitHub Actions (lint + build) — _Code MIT, textes CC BY-NC-SA 4.0 ; README, CI, premier push_
 - [ ] Choisir l'hébergement (Vercel / GitHub Pages) et déployer — _Décision reportée_
 
-## II. Les jeux — 6/7
+## II. Les jeux — 7/7
 
 Fiches détaillées et frises chronologiques
 
@@ -27,7 +27,7 @@ Fiches détaillées et frises chronologiques
 - [x] Frise des jeux par date de sortie — _Onglets accessibles au clavier_
 - [x] Frise des jeux par chronologie interne — _χ → Dark Road → BbS → KH → CoM/Days → KH II → coded → DDD → 0.2 → KH III → MoM → KH IV_
 - [x] Ajouter les collections/remasters (1.5, 2.5, 2.8, All-in-One, Integrum Masterpiece)
-- [~] Illustrations : jaquettes et logos (droits vérifiés) — _Jaquettes générées (dégradé + titre) en attendant les visuels officiels_
+- [x] Illustrations : jaquettes et logos (droits vérifiés) — _Pipeline prêt : champ cover, next/image, crédit affiché, docs/IMAGES.md, script check:covers. Visuels officiels à déposer (kit presse)_
 
 ## III. Encyclopédie — 0/8
 

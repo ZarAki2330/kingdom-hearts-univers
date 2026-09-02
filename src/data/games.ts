@@ -24,8 +24,13 @@ export interface Game {
   includes?: string[];
   /** Slug du jeu original (remakes) */
   remakeOf?: string;
-  /** Couleur d'accent de la jaquette, utilisée pour l'illustration */
+  /** Couleur d'accent de la jaquette, utilisée pour l'illustration générée */
   accent: string;
+  /**
+   * Jaquette officielle : fichier dans public/images/games/<slug>.jpg (ratio 3:4, ≥ 600 px de large).
+   * Renseigner `credit` (ayant droit + source) — voir docs/IMAGES.md. Absente = jaquette générée.
+   */
+  cover?: { src: string; credit: string; width: number; height: number };
 }
 
 export const games: Game[] = [

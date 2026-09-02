@@ -42,6 +42,12 @@ Le site vise le niveau **WCAG 2.2 AA** : navigation clavier complète, lien d'é
 - [KH-Story — bibliographie](https://kh-story.com/bibliographie)
 - [HowLongToBeat](https://howlongtobeat.com/) pour les durées indicatives
 
+## Licences
+
+- **Code** : [MIT](LICENSE).
+- **Textes éditoriaux** (synopsis, fiches, guides, traductions) : [CC BY-NC-SA 4.0](LICENSE-CONTENT.md).
+- **Visuels officiels** (jaquettes, logos, artworks) : propriété de Square Enix et Disney, utilisés à titre d'illustration. La politique d'ajout des images est décrite dans [docs/IMAGES.md](docs/IMAGES.md).
+
 ## Mentions
 
 Site de fans sans affiliation avec Square Enix ou Disney. *Kingdom Hearts* est une marque de Square Enix Co., Ltd. et de Disney.

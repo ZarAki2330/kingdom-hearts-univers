@@ -1,10 +1,36 @@
+import Image from "next/image";
 import type { Game } from "@/data/games";
 
 /**
- * Jaquette générée : dégradé à la couleur du jeu + titre court.
- * Sera remplacée par les visuels officiels une fois les droits vérifiés.
+ * Jaquette d'un jeu.
+ * - Si `game.cover` est renseignée (visuel officiel, crédité dans docs/IMAGES.md), on l'affiche via next/image.
+ * - Sinon, jaquette générée : dégradé à la couleur du jeu + titre court (décorative, aria-hidden).
  */
-export function GameCover({ game, className = "" }: { game: Game; className?: string }) {
+export function GameCover({
+  game,
+  className = "",
+  sizes = "220px",
+  priority = false,
+}: {
+  game: Game;
+  className?: string;
+  sizes?: string;
+  priority?: boolean;
+}) {
+  if (game.cover) {
+    return (
+      <div className={`relative overflow-hidden rounded-xl bg-surface-2 ${className}`}>
+        <Image
+          src={game.cover.src}
+          alt={`Jaquette de ${game.title}`}
+          fill
+          sizes={sizes}
+          priority={priority}
+          className="object-cover"
+        />
+      </div>
+    );
+  }
   return (
     <div
       aria-hidden="true"

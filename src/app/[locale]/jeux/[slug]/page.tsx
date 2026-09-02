@@ -49,7 +49,10 @@ export default async function GamePage({ params }: Props) {
       </nav>
 
       <header className="mt-6 grid gap-8 md:grid-cols-[220px_1fr] md:items-start">
-        <GameCover game={game} className="aspect-[3/4] w-full max-w-[220px]" />
+        <div className="max-w-[220px]">
+          <GameCover game={game} className="aspect-[3/4] w-full" priority />
+          {game.cover && <p className="mt-2 text-xs text-text-2">{game.cover.credit}</p>}
+        </div>
         <div>
           <p className="eyebrow">{t(`kind.${game.kind}`)}</p>
           <h1 className="mt-2 text-3xl font-bold sm:text-4xl lg:text-5xl">{game.title}</h1>
