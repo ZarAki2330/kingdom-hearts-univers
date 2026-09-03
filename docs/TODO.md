@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 49 % (21/43 tâches)**
+**Avancement global : 58 % (25/43 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -29,7 +29,7 @@ Fiches détaillées et frises chronologiques
 - [x] Ajouter les collections/remasters (1.5, 2.5, 2.8, All-in-One, Integrum Masterpiece)
 - [x] Illustrations : jaquettes et logos (droits vérifiés) — _20/21 visuels officiels (KH Wiki), crédit © Square Enix / Disney, mention de retrait en pied de page ; Integrum Masterpiece reste en jaquette générée_
 
-## III. Encyclopédie — 4/8
+## III. Encyclopédie — 8/8
 
 Personnages, ennemis, mondes, Keyblades
 
@@ -37,10 +37,10 @@ Personnages, ennemis, mondes, Keyblades
 - [x] Personnages principaux (Sora, Riku, Kairi, trio Wayfinder, Organisation XIII…) — _30 fiches fr/en : héros, trio Wayfinder, Xehanort et ses incarnations, Organisation XIII, Ephemer_
 - [x] Personnages Disney et Final Fantasy — _22 fiches fr/en : Mickey, Donald, Dingo, Maléfique, Pat, Merlin… ; Léon, Cloud, Sephiroth, Auron, Zack…_
 - [x] Ennemis : Sans-cœur, Similis, Nescients, Non-êtres — _4 espèces + 18 ennemis emblématiques, filtrables par famille ; portraits officiels à ajouter_
-- [ ] Mondes (Disney, originaux) et leur apparition par jeu
-- [ ] Keyblades : statistiques, obtention, jeu d'origine
-- [ ] Organisations et concepts (Organisation XIII, Foretellers, Kingdom Hearts, χ-blade…)
-- [ ] Recherche globale et navigation croisée
+- [x] Mondes (Disney, originaux) et leur apparition par jeu — _32 mondes fr/en (12 originaux, 20 Disney) avec œuvre d'origine, apparitions par jeu, habitants liés_
+- [x] Keyblades : statistiques, obtention, jeu d'origine — _30 Keyblades fr/en : Force/Magie, capacité, obtention par jeu, porteur_
+- [x] Organisations et concepts (Organisation XIII, Foretellers, Kingdom Hearts, χ-blade…) — _17 concepts fr/en : Kingdom Hearts, χ-blade, Organisation XIII, Gardiens, Princesses de Cœur, Prophètes, Maître des Maîtres, Guerre des Keyblades…_
+- [x] Recherche globale et navigation croisée — _Palette Ctrl+K (index statique, clavier, ARIA) + page /recherche sans JS ; fiche jeu → mondes/personnages/ennemis/Keyblades, monde → habitants, personnage → monde d'origine_
 
 ## IV. Histoire — 0/3
 
