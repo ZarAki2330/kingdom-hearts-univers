@@ -6,6 +6,8 @@ import { routing, type Locale } from "@/i18n/routing";
 import { byStory, games, getGame, localized } from "@/data/games";
 import { GameCover } from "@/components/GameCover";
 import { formatDate } from "@/lib/format";
+import { CATEGORY_SLUG, displayName, entriesInGame, localized as localizedEntry } from "@/data/encyclopedia";
+import { EntryPortrait } from "@/components/EntryPortrait";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -28,7 +30,9 @@ export default async function GamePage({ params }: Props) {
   const game = getGame(slug);
   if (!game) notFound();
   const t = await getTranslations("Games");
+  const te = await getTranslations("Encyclopedia");
   const loc = locale as Locale;
+  const cast = entriesInGame(game.slug);
 
   const dates: [string, string | undefined][] = [
     [t("japan"), formatDate(game.release.jp, locale)],
@@ -142,6 +146,25 @@ export default async function GamePage({ params }: Props) {
           )}
         </aside>
       </section>
+
+      {cast.length > 0 && (
+        <section aria-labelledby="cast" className="mt-12">
+          <h2 id="cast" className="text-2xl font-bold">{te("inGame")}</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {cast.map((e) => (
+              <li key={e.slug}>
+                <Link href={`/encyclopedie/${CATEGORY_SLUG[e.category]}/${e.slug}`} className="card card-link flex items-center gap-3 p-2.5">
+                  <EntryPortrait entry={e} className="h-12 w-12 shrink-0" sizes="48px" />
+                  <span className="min-w-0">
+                    <span className="block text-sm font-bold leading-tight">{displayName(e, loc)}</span>
+                    <span className="line-clamp-1 text-xs text-text-2">{localizedEntry(e.tagline, loc)}</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </article>
   );
 }

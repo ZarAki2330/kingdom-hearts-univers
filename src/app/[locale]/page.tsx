@@ -8,8 +8,8 @@ import { Emblem } from "@/components/Emblem";
 const sections = [
   { key: "games", href: "/jeux", live: true },
   { key: "timeline", href: "/chronologie", live: true },
-  { key: "characters", href: "/", live: false },
-  { key: "enemies", href: "/", live: false },
+  { key: "characters", href: "/encyclopedie/personnages", live: true },
+  { key: "enemies", href: "/encyclopedie/ennemis", live: true },
   { key: "worlds", href: "/", live: false },
   { key: "keyblades", href: "/", live: false },
 ] as const;

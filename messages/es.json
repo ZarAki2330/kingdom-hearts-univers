@@ -113,5 +113,77 @@
     "accessibility": "Accesibilidad",
     "github": "Código fuente en GitHub",
     "images": "Carátulas, logotipos e ilustraciones © Square Enix / Disney, reproducidos con fines ilustrativos; se retiran a petición de un titular de derechos."
+  },
+  "Encyclopedia": {
+    "title": "Enciclopedia",
+    "lead": "Personajes, enemigos, mundos, Llaves Espada y conceptos del universo Kingdom Hearts, enlazados entre sí y con cada juego.",
+    "entries": "{count} entradas",
+    "search": "Buscar una entrada…",
+    "filterAll": "Todos",
+    "noResult": "Ninguna entrada coincide.",
+    "back": "Volver a la enciclopedia",
+    "appearances": "Apariciones",
+    "debut": "Primera aparición",
+    "relations": "Vínculos",
+    "tags": "Palabras clave",
+    "inGame": "Personajes y enemigos de este juego",
+    "seeAll": "Ver toda la categoría",
+    "categories": {
+      "characters": {
+        "title": "Personajes",
+        "desc": "Héroes, villanos, aliados Disney e invitados de Final Fantasy."
+      },
+      "enemies": {
+        "title": "Enemigos",
+        "desc": "Sincorazón, Incorpóreos, Nescientes y Devorasueños."
+      },
+      "worlds": {
+        "title": "Mundos",
+        "desc": "De los mundos originales a los reinos Disney."
+      },
+      "keyblades": {
+        "title": "Llaves Espada",
+        "desc": "Estadísticas, obtención y juego de origen."
+      },
+      "concepts": {
+        "title": "Conceptos",
+        "desc": "Organizaciones, artefactos y nociones clave."
+      }
+    },
+    "kinds": {
+      "original": "Originales",
+      "disney": "Disney",
+      "final-fantasy": "Final Fantasy",
+      "other": "Otros",
+      "heartless": "Sincorazón",
+      "nobody": "Incorpóreos",
+      "unversed": "Nescientes",
+      "dream-eater": "Devorasueños"
+    },
+    "roles": {
+      "common": "Enemigo común",
+      "boss": "Jefe",
+      "secret-boss": "Jefe secreto",
+      "species": "Especie"
+    },
+    "alignment": {
+      "light": "Luz",
+      "darkness": "Oscuridad",
+      "twilight": "Intermedio",
+      "neutral": "Neutral"
+    },
+    "facts": {
+      "kind": "Tipo",
+      "alignment": "Alineamiento",
+      "homeworld": "Mundo de origen",
+      "group": "Grupo",
+      "weapon": "Arma",
+      "voice": "Doblaje",
+      "role": "Rol",
+      "variant": "Variante",
+      "names": "Nombre original",
+      "aliases": "También llamado"
+    },
+    "comingSoon": "Esta categoría llegará pronto."
   }
 }

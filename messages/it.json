@@ -113,5 +113,77 @@
     "accessibility": "Accessibilità",
     "github": "Codice sorgente su GitHub",
     "images": "Copertine, loghi e illustrazioni © Square Enix / Disney, riprodotti a scopo illustrativo; rimossi su richiesta di un titolare dei diritti."
+  },
+  "Encyclopedia": {
+    "title": "Enciclopedia",
+    "lead": "Personaggi, nemici, mondi, Keyblade e concetti dell'universo Kingdom Hearts, collegati tra loro e a ogni gioco.",
+    "entries": "{count} voci",
+    "search": "Cerca una voce…",
+    "filterAll": "Tutti",
+    "noResult": "Nessuna voce corrisponde.",
+    "back": "Torna all'enciclopedia",
+    "appearances": "Apparizioni",
+    "debut": "Prima apparizione",
+    "relations": "Legami",
+    "tags": "Parole chiave",
+    "inGame": "Personaggi e nemici di questo gioco",
+    "seeAll": "Vedi tutta la categoria",
+    "categories": {
+      "characters": {
+        "title": "Personaggi",
+        "desc": "Eroi, cattivi, alleati Disney e ospiti Final Fantasy."
+      },
+      "enemies": {
+        "title": "Nemici",
+        "desc": "Heartless, Nessuno, Unversed e Dream Eater."
+      },
+      "worlds": {
+        "title": "Mondi",
+        "desc": "Dai mondi originali ai regni Disney."
+      },
+      "keyblades": {
+        "title": "Keyblade",
+        "desc": "Statistiche, come ottenerli e gioco di origine."
+      },
+      "concepts": {
+        "title": "Concetti",
+        "desc": "Organizzazioni, artefatti e nozioni chiave."
+      }
+    },
+    "kinds": {
+      "original": "Originali",
+      "disney": "Disney",
+      "final-fantasy": "Final Fantasy",
+      "other": "Altri",
+      "heartless": "Heartless",
+      "nobody": "Nessuno",
+      "unversed": "Unversed",
+      "dream-eater": "Dream Eater"
+    },
+    "roles": {
+      "common": "Nemico comune",
+      "boss": "Boss",
+      "secret-boss": "Boss segreto",
+      "species": "Specie"
+    },
+    "alignment": {
+      "light": "Luce",
+      "darkness": "Oscurità",
+      "twilight": "Crepuscolo",
+      "neutral": "Neutrale"
+    },
+    "facts": {
+      "kind": "Tipo",
+      "alignment": "Allineamento",
+      "homeworld": "Mondo d'origine",
+      "group": "Gruppo",
+      "weapon": "Arma",
+      "voice": "Doppiaggio",
+      "role": "Ruolo",
+      "variant": "Variante",
+      "names": "Nome originale",
+      "aliases": "Noto anche come"
+    },
+    "comingSoon": "Questa categoria arriverà presto."
   }
 }

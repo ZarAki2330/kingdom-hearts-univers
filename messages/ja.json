@@ -113,5 +113,77 @@
     "accessibility": "アクセシビリティ",
     "github": "GitHubのソースコード",
     "images": "パッケージ画像・ロゴ・イラストは © Square Enix / Disney であり、紹介目的で掲載しています。権利者からの要請があれば削除します。"
+  },
+  "Encyclopedia": {
+    "title": "百科事典",
+    "lead": "キングダム ハーツの世界のキャラクター、敵、ワールド、キーブレード、用語を、互いに、そして各作品と結びつけて紹介します。",
+    "entries": "{count} 件",
+    "search": "項目を検索…",
+    "filterAll": "すべて",
+    "noResult": "該当する項目はありません。",
+    "back": "百科事典へ戻る",
+    "appearances": "登場作品",
+    "debut": "初登場",
+    "relations": "関連",
+    "tags": "キーワード",
+    "inGame": "この作品のキャラクターと敵",
+    "seeAll": "カテゴリをすべて見る",
+    "categories": {
+      "characters": {
+        "title": "キャラクター",
+        "desc": "主人公、悪役、ディズニーの仲間、ファイナルファンタジーのゲスト。"
+      },
+      "enemies": {
+        "title": "敵",
+        "desc": "ハートレス、ノーバディ、アンヴァース、ドリームイーター。"
+      },
+      "worlds": {
+        "title": "ワールド",
+        "desc": "オリジナルワールドからディズニーの世界まで。"
+      },
+      "keyblades": {
+        "title": "キーブレード",
+        "desc": "性能、入手方法、初登場作品。"
+      },
+      "concepts": {
+        "title": "用語",
+        "desc": "組織、アイテム、重要な概念。"
+      }
+    },
+    "kinds": {
+      "original": "オリジナル",
+      "disney": "ディズニー",
+      "final-fantasy": "ファイナルファンタジー",
+      "other": "その他",
+      "heartless": "ハートレス",
+      "nobody": "ノーバディ",
+      "unversed": "アンヴァース",
+      "dream-eater": "ドリームイーター"
+    },
+    "roles": {
+      "common": "通常の敵",
+      "boss": "ボス",
+      "secret-boss": "隠しボス",
+      "species": "種族"
+    },
+    "alignment": {
+      "light": "光",
+      "darkness": "闇",
+      "twilight": "その狭間",
+      "neutral": "中立"
+    },
+    "facts": {
+      "kind": "分類",
+      "alignment": "属性",
+      "homeworld": "出身ワールド",
+      "group": "所属",
+      "weapon": "武器",
+      "voice": "声優",
+      "role": "役割",
+      "variant": "種別",
+      "names": "原語名",
+      "aliases": "別名"
+    },
+    "comingSoon": "このカテゴリは近日公開。"
   }
 }

@@ -113,5 +113,77 @@
     "accessibility": "Barrierefreiheit",
     "github": "Quellcode auf GitHub",
     "images": "Cover, Logos und Artworks © Square Enix / Disney, zu Illustrationszwecken wiedergegeben; auf Wunsch eines Rechteinhabers werden sie entfernt."
+  },
+  "Encyclopedia": {
+    "title": "Enzyklopädie",
+    "lead": "Charaktere, Gegner, Welten, Schlüsselschwerter und Begriffe des Kingdom-Hearts-Universums, untereinander und mit jedem Spiel verknüpft.",
+    "entries": "{count} Einträge",
+    "search": "Eintrag suchen…",
+    "filterAll": "Alle",
+    "noResult": "Kein Eintrag passt.",
+    "back": "Zurück zur Enzyklopädie",
+    "appearances": "Auftritte",
+    "debut": "Erster Auftritt",
+    "relations": "Verbindungen",
+    "tags": "Schlagwörter",
+    "inGame": "Charaktere und Gegner in diesem Spiel",
+    "seeAll": "Ganze Kategorie ansehen",
+    "categories": {
+      "characters": {
+        "title": "Charaktere",
+        "desc": "Helden, Schurken, Disney-Verbündete und Final-Fantasy-Gäste."
+      },
+      "enemies": {
+        "title": "Gegner",
+        "desc": "Herzlose, Niemande, Unversierte und Traumfänger."
+      },
+      "worlds": {
+        "title": "Welten",
+        "desc": "Von den Originalwelten bis zu den Disney-Reichen."
+      },
+      "keyblades": {
+        "title": "Schlüsselschwerter",
+        "desc": "Werte, Fundort und Ursprungsspiel."
+      },
+      "concepts": {
+        "title": "Begriffe",
+        "desc": "Organisationen, Artefakte und Schlüsselbegriffe."
+      }
+    },
+    "kinds": {
+      "original": "Original",
+      "disney": "Disney",
+      "final-fantasy": "Final Fantasy",
+      "other": "Andere",
+      "heartless": "Herzlose",
+      "nobody": "Niemande",
+      "unversed": "Unversierte",
+      "dream-eater": "Traumfänger"
+    },
+    "roles": {
+      "common": "Gewöhnlicher Gegner",
+      "boss": "Boss",
+      "secret-boss": "Geheimer Boss",
+      "species": "Spezies"
+    },
+    "alignment": {
+      "light": "Licht",
+      "darkness": "Dunkelheit",
+      "twilight": "Dazwischen",
+      "neutral": "Neutral"
+    },
+    "facts": {
+      "kind": "Typ",
+      "alignment": "Gesinnung",
+      "homeworld": "Heimatwelt",
+      "group": "Gruppe",
+      "weapon": "Waffe",
+      "voice": "Synchronisation",
+      "role": "Rolle",
+      "variant": "Variante",
+      "names": "Originalname",
+      "aliases": "Auch bekannt als"
+    },
+    "comingSoon": "Diese Kategorie folgt bald."
   }
 }

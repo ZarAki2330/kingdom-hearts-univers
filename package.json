@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:covers": "node scripts/check-covers.mjs"
+    "check:covers": "node scripts/check-covers.mjs",
+    "check:encyclopedia": "node scripts/check-encyclopedia.mjs"
   },
   "dependencies": {
     "@fontsource-variable/nunito": "^5.3.0",

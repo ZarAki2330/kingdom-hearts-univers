@@ -113,5 +113,77 @@
     "accessibility": "Accessibilité",
     "github": "Code source sur GitHub",
     "images": "Jaquettes, logos et illustrations © Square Enix / Disney, reproduits à titre d'illustration ; retirés sur simple demande d'un ayant droit."
+  },
+  "Encyclopedia": {
+    "title": "Encyclopédie",
+    "lead": "Personnages, ennemis, mondes, Keyblades et concepts de l'univers Kingdom Hearts, reliés entre eux et à chaque jeu.",
+    "entries": "{count} entrées",
+    "search": "Rechercher une entrée…",
+    "filterAll": "Tous",
+    "noResult": "Aucune entrée ne correspond.",
+    "back": "Retour à l'encyclopédie",
+    "appearances": "Apparitions",
+    "debut": "Première apparition",
+    "relations": "Liens",
+    "tags": "Mots-clés",
+    "inGame": "Personnages et ennemis de ce jeu",
+    "seeAll": "Voir toute la catégorie",
+    "categories": {
+      "characters": {
+        "title": "Personnages",
+        "desc": "Héros, méchants, alliés Disney et invités Final Fantasy."
+      },
+      "enemies": {
+        "title": "Ennemis",
+        "desc": "Sans-cœur, Similis, Nescients et Avale-Rêves."
+      },
+      "worlds": {
+        "title": "Mondes",
+        "desc": "Des mondes originaux aux royaumes Disney."
+      },
+      "keyblades": {
+        "title": "Keyblades",
+        "desc": "Statistiques, obtention et jeu d'origine."
+      },
+      "concepts": {
+        "title": "Concepts",
+        "desc": "Organisations, artefacts et notions clés."
+      }
+    },
+    "kinds": {
+      "original": "Originaux",
+      "disney": "Disney",
+      "final-fantasy": "Final Fantasy",
+      "other": "Autres",
+      "heartless": "Sans-cœur",
+      "nobody": "Similis",
+      "unversed": "Nescients",
+      "dream-eater": "Avale-Rêves"
+    },
+    "roles": {
+      "common": "Ennemi commun",
+      "boss": "Boss",
+      "secret-boss": "Boss secret",
+      "species": "Espèce"
+    },
+    "alignment": {
+      "light": "Lumière",
+      "darkness": "Ténèbres",
+      "twilight": "Entre-deux",
+      "neutral": "Neutre"
+    },
+    "facts": {
+      "kind": "Type",
+      "alignment": "Alignement",
+      "homeworld": "Monde d'origine",
+      "group": "Groupe",
+      "weapon": "Arme",
+      "voice": "Doublage",
+      "role": "Rôle",
+      "variant": "Variante",
+      "names": "Nom original",
+      "aliases": "Aussi appelé"
+    },
+    "comingSoon": "Cette catégorie arrive bientôt."
   }
 }

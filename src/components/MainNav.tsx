@@ -5,9 +5,10 @@ import { Link, usePathname } from "@/i18n/navigation";
 const items = [
   { href: "/jeux", key: "games" },
   { href: "/chronologie", key: "timeline" },
+  { href: "/encyclopedie", key: "encyclopedia" },
 ] as const;
 
-const soon = ["encyclopedia", "story", "guides"] as const;
+const soon = ["story", "guides"] as const;
 
 export function MainNav() {
   const t = useTranslations("Nav");

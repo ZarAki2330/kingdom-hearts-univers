@@ -113,5 +113,77 @@
     "accessibility": "Accessibility",
     "github": "Source code on GitHub",
     "images": "Box art, logos and artwork © Square Enix / Disney, reproduced for illustrative purposes; removed on request of a rights holder."
+  },
+  "Encyclopedia": {
+    "title": "Encyclopedia",
+    "lead": "Characters, enemies, worlds, Keyblades and concepts of the Kingdom Hearts universe, linked to each other and to every game.",
+    "entries": "{count} entries",
+    "search": "Search an entry…",
+    "filterAll": "All",
+    "noResult": "No entry matches.",
+    "back": "Back to the encyclopedia",
+    "appearances": "Appearances",
+    "debut": "First appearance",
+    "relations": "Connections",
+    "tags": "Keywords",
+    "inGame": "Characters and enemies in this game",
+    "seeAll": "See the whole category",
+    "categories": {
+      "characters": {
+        "title": "Characters",
+        "desc": "Heroes, villains, Disney allies and Final Fantasy guests."
+      },
+      "enemies": {
+        "title": "Enemies",
+        "desc": "Heartless, Nobodies, Unversed and Dream Eaters."
+      },
+      "worlds": {
+        "title": "Worlds",
+        "desc": "From original worlds to Disney realms."
+      },
+      "keyblades": {
+        "title": "Keyblades",
+        "desc": "Stats, how to obtain them and game of origin."
+      },
+      "concepts": {
+        "title": "Concepts",
+        "desc": "Organizations, artefacts and key notions."
+      }
+    },
+    "kinds": {
+      "original": "Original",
+      "disney": "Disney",
+      "final-fantasy": "Final Fantasy",
+      "other": "Other",
+      "heartless": "Heartless",
+      "nobody": "Nobodies",
+      "unversed": "Unversed",
+      "dream-eater": "Dream Eaters"
+    },
+    "roles": {
+      "common": "Common enemy",
+      "boss": "Boss",
+      "secret-boss": "Secret boss",
+      "species": "Species"
+    },
+    "alignment": {
+      "light": "Light",
+      "darkness": "Darkness",
+      "twilight": "In-between",
+      "neutral": "Neutral"
+    },
+    "facts": {
+      "kind": "Type",
+      "alignment": "Alignment",
+      "homeworld": "Home world",
+      "group": "Group",
+      "weapon": "Weapon",
+      "voice": "Voice",
+      "role": "Role",
+      "variant": "Variant",
+      "names": "Original name",
+      "aliases": "Also known as"
+    },
+    "comingSoon": "This category is coming soon."
   }
 }
