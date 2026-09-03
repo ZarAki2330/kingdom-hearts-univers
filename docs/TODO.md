@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 48 % (26/54 tâches)**
+**Avancement global : 54 % (29/54 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -43,14 +43,14 @@ Personnages, ennemis, mondes, Keyblades
 - [x] Organisations et concepts (Organisation XIII, Foretellers, Kingdom Hearts, χ-blade…) — _17 concepts fr/en : Kingdom Hearts, χ-blade, Organisation XIII, Gardiens, Princesses de Cœur, Prophètes, Maître des Maîtres, Guerre des Keyblades…_
 - [x] Recherche globale et navigation croisée — _Palette Ctrl+K (index statique, clavier, ARIA) + page /recherche sans JS ; fiche jeu → mondes/personnages/ennemis/Keyblades, monde → habitants, personnage → monde d'origine_
 
-## III bis. Compléter l'encyclopédie — 1/4
+## III bis. Compléter l'encyclopédie — 4/4
 
 Couverture exhaustive de l'univers
 
-- [~] Ajouter tous les personnages de l'univers — _Lot 1 : 80 ajoutés (131 au total). Lot 2 à venir : apprentis d’Ansem, Union χ/Dark Road, Disney secondaires_
-- [~] Ajouter tous les ennemis de l'univers — _Lot 1 : 117 ajoutés (140 au total). Lot 2 à venir : Sans-cœur KH2/Days, Nescients, Avale-Rêves_
-- [~] Ajouter toutes les Keyblades — _Lot 1 : 72 ajoutées (103 au total). Reste ~20 (Stormfall, Ends of the Earth, gears de Days, Union χ)_
-- [x] Ajouter tous les mondes — _Lot 1 : 18 ajoutés (50 au total) — tous les mondes jouables couverts_
+- [x] Ajouter tous les personnages de l'univers — _231 personnages (2 lots) : originaux, Disney, Final Fantasy, Union χ, Dark Road ; PNJ mineurs au fil de l'eau_
+- [x] Ajouter tous les ennemis de l'univers — _250 ennemis (2 lots) : Sans-cœur, Similis, Nescients, Avale-Rêves, boss de toute la série_
+- [x] Ajouter toutes les Keyblades — _120 Keyblades : toute la série, y compris gears de Days et Union χ_
+- [x] Ajouter tous les mondes — _50 mondes, toutes les visites de la série_
 
 ## III ter. Enrichir l'encyclopédie — 0/7
 
