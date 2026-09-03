@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 58 % (25/43 tâches)**
+**Avancement global : 53 % (25/47 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -41,6 +41,15 @@ Personnages, ennemis, mondes, Keyblades
 - [x] Keyblades : statistiques, obtention, jeu d'origine — _30 Keyblades fr/en : Force/Magie, capacité, obtention par jeu, porteur_
 - [x] Organisations et concepts (Organisation XIII, Foretellers, Kingdom Hearts, χ-blade…) — _17 concepts fr/en : Kingdom Hearts, χ-blade, Organisation XIII, Gardiens, Princesses de Cœur, Prophètes, Maître des Maîtres, Guerre des Keyblades…_
 - [x] Recherche globale et navigation croisée — _Palette Ctrl+K (index statique, clavier, ARIA) + page /recherche sans JS ; fiche jeu → mondes/personnages/ennemis/Keyblades, monde → habitants, personnage → monde d'origine_
+
+## III bis. Compléter l'encyclopédie — 0/4
+
+Couverture exhaustive de l'univers
+
+- [ ] Ajouter tous les personnages de l'univers — _Au-delà des 52 fiches actuelles : personnages secondaires originaux, Disney par monde, Final Fantasy, χ/Dark Road_
+- [ ] Ajouter tous les ennemis de l'univers — _Bestiaire complet par jeu : Sans-cœur, Similis, Nescients, Avale-Rêves, boss_
+- [ ] Ajouter toutes les Keyblades — _Toutes les Keyblades de chaque jeu, avec stats et obtention_
+- [ ] Ajouter tous les mondes — _Tous les mondes visités ou cités, y compris ceux de χ, DDD et KH III_
 
 ## IV. Histoire — 0/3
 
