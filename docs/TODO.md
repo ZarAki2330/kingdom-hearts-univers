@@ -1,8 +1,9 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 53 % (25/47 tâches)**
+**Avancement global : 55 % (26/47 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
+
 
 ## I. Fondations — 7/8
 
@@ -42,14 +43,14 @@ Personnages, ennemis, mondes, Keyblades
 - [x] Organisations et concepts (Organisation XIII, Foretellers, Kingdom Hearts, χ-blade…) — _17 concepts fr/en : Kingdom Hearts, χ-blade, Organisation XIII, Gardiens, Princesses de Cœur, Prophètes, Maître des Maîtres, Guerre des Keyblades…_
 - [x] Recherche globale et navigation croisée — _Palette Ctrl+K (index statique, clavier, ARIA) + page /recherche sans JS ; fiche jeu → mondes/personnages/ennemis/Keyblades, monde → habitants, personnage → monde d'origine_
 
-## III bis. Compléter l'encyclopédie — 0/4
+## III bis. Compléter l'encyclopédie — 1/4
 
 Couverture exhaustive de l'univers
 
-- [ ] Ajouter tous les personnages de l'univers — _Au-delà des 52 fiches actuelles : personnages secondaires originaux, Disney par monde, Final Fantasy, χ/Dark Road_
-- [ ] Ajouter tous les ennemis de l'univers — _Bestiaire complet par jeu : Sans-cœur, Similis, Nescients, Avale-Rêves, boss_
-- [ ] Ajouter toutes les Keyblades — _Toutes les Keyblades de chaque jeu, avec stats et obtention_
-- [ ] Ajouter tous les mondes — _Tous les mondes visités ou cités, y compris ceux de χ, DDD et KH III_
+- [~] Ajouter tous les personnages de l'univers — _Lot 1 : 80 ajoutés (131 au total). Lot 2 à venir : apprentis d’Ansem, Union χ/Dark Road, Disney secondaires_
+- [~] Ajouter tous les ennemis de l'univers — _Lot 1 : 117 ajoutés (140 au total). Lot 2 à venir : Sans-cœur KH2/Days, Nescients, Avale-Rêves_
+- [~] Ajouter toutes les Keyblades — _Lot 1 : 72 ajoutées (103 au total). Reste ~20 (Stormfall, Ends of the Earth, gears de Days, Union χ)_
+- [x] Ajouter tous les mondes — _Lot 1 : 18 ajoutés (50 au total) — tous les mondes jouables couverts_
 
 ## IV. Histoire — 0/3
 
@@ -95,4 +96,3 @@ Devenir LA référence
 - [ ] Nom de domaine et hébergement définitif
 - [ ] Page À propos, mentions légales, crédits (Square Enix/Disney)
 - [ ] Contributions communautaires (issues, formulaire)
-
