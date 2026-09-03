@@ -1,12 +1,15 @@
 import { originalCharacters } from "./characters-original";
 import { guestCharacters } from "./characters-guest";
 import { enemies } from "./enemies";
+import { worlds } from "./worlds";
+import { keyblades } from "./keyblades";
+import { concepts } from "./concepts";
 import type { Category, Entry } from "./types";
 
 export * from "./types";
 
 /** Toutes les entrées de l'encyclopédie, toutes catégories confondues. */
-export const entries: Entry[] = [...originalCharacters, ...guestCharacters, ...enemies];
+export const entries: Entry[] = [...originalCharacters, ...guestCharacters, ...enemies, ...worlds, ...keyblades, ...concepts];
 
 const bySlug = new Map(entries.map((e) => [e.slug, e]));
 

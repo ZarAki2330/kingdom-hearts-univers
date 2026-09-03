@@ -182,8 +182,35 @@
       "role": "Ruolo",
       "variant": "Variante",
       "names": "Nome originale",
-      "aliases": "Noto anche come"
+      "aliases": "Noto anche come",
+      "source": "Opera d'origine",
+      "stats": "Statistiche",
+      "strength": "Forza",
+      "magic": "Magia",
+      "ability": "Abilità"
     },
-    "comingSoon": "Questa categoria arriverà presto."
+    "comingSoon": "Questa categoria arriverà presto.",
+    "obtained": "Come ottenerlo",
+    "residents": "Abitanti e personaggi collegati",
+    "inGameSuffix": "in questo gioco"
+  },
+  "Search": {
+    "label": "Cerca",
+    "open": "Apri la ricerca",
+    "close": "Chiudi",
+    "placeholder": "Un gioco, un personaggio, un mondo, un Keyblade…",
+    "loading": "Caricamento dell'indice…",
+    "noResult": "Nessun risultato.",
+    "hint": "Scrivi per cercare nei giochi e nell'enciclopedia. Frecce per navigare, Invio per aprire.",
+    "submit": "Cerca",
+    "count": "{count} risultato/i per «{q}»",
+    "types": {
+      "game": "Gioco",
+      "characters": "Personaggio",
+      "enemies": "Nemico",
+      "worlds": "Mondo",
+      "keyblades": "Keyblade",
+      "concepts": "Concetto"
+    }
   }
 }

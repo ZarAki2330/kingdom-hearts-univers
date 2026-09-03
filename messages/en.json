@@ -182,8 +182,35 @@
       "role": "Role",
       "variant": "Variant",
       "names": "Original name",
-      "aliases": "Also known as"
+      "aliases": "Also known as",
+      "source": "Source work",
+      "stats": "Stats",
+      "strength": "Strength",
+      "magic": "Magic",
+      "ability": "Ability"
     },
-    "comingSoon": "This category is coming soon."
+    "comingSoon": "This category is coming soon.",
+    "obtained": "How to obtain",
+    "residents": "Residents and related characters",
+    "inGameSuffix": "in this game"
+  },
+  "Search": {
+    "label": "Search",
+    "open": "Open search",
+    "close": "Close",
+    "placeholder": "A game, a character, a world, a Keyblade…",
+    "loading": "Loading index…",
+    "noResult": "No result.",
+    "hint": "Type to search games and the encyclopedia. Arrows to navigate, Enter to open.",
+    "submit": "Search",
+    "count": "{count} result(s) for “{q}”",
+    "types": {
+      "game": "Game",
+      "characters": "Character",
+      "enemies": "Enemy",
+      "worlds": "World",
+      "keyblades": "Keyblade",
+      "concepts": "Concept"
+    }
   }
 }

@@ -182,8 +182,35 @@
       "role": "Rôle",
       "variant": "Variante",
       "names": "Nom original",
-      "aliases": "Aussi appelé"
+      "aliases": "Aussi appelé",
+      "source": "Œuvre d'origine",
+      "stats": "Statistiques",
+      "strength": "Force",
+      "magic": "Magie",
+      "ability": "Capacité"
     },
-    "comingSoon": "Cette catégorie arrive bientôt."
+    "comingSoon": "Cette catégorie arrive bientôt.",
+    "obtained": "Comment l'obtenir",
+    "residents": "Habitants et personnages liés",
+    "inGameSuffix": "dans ce jeu"
+  },
+  "Search": {
+    "label": "Rechercher",
+    "open": "Ouvrir la recherche",
+    "close": "Fermer",
+    "placeholder": "Un jeu, un personnage, un monde, une Keyblade…",
+    "loading": "Chargement de l'index…",
+    "noResult": "Aucun résultat.",
+    "hint": "Tape pour chercher dans les jeux et l'encyclopédie. Flèches pour naviguer, Entrée pour ouvrir.",
+    "submit": "Chercher",
+    "count": "{count} résultat(s) pour « {q} »",
+    "types": {
+      "game": "Jeu",
+      "characters": "Personnage",
+      "enemies": "Ennemi",
+      "worlds": "Monde",
+      "keyblades": "Keyblade",
+      "concepts": "Concept"
+    }
   }
 }

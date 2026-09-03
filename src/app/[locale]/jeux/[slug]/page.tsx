@@ -147,11 +147,14 @@ export default async function GamePage({ params }: Props) {
         </aside>
       </section>
 
-      {cast.length > 0 && (
-        <section aria-labelledby="cast" className="mt-12">
-          <h2 id="cast" className="text-2xl font-bold">{te("inGame")}</h2>
+      {(["worlds", "characters", "enemies", "keyblades", "concepts"] as const).map((cat) => {
+        const list = cast.filter((e) => e.category === cat);
+        if (list.length === 0) return null;
+        return (
+        <section key={cat} aria-labelledby={`cast-${cat}`} className="mt-12">
+          <h2 id={`cast-${cat}`} className="text-2xl font-bold">{te(`categories.${cat}.title`)} <span className="text-base font-semibold text-text-2">· {te("inGameSuffix")}</span></h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {cast.map((e) => (
+            {list.map((e) => (
               <li key={e.slug}>
                 <Link href={`/encyclopedie/${CATEGORY_SLUG[e.category]}/${e.slug}`} className="card card-link flex items-center gap-3 p-2.5">
                   <EntryPortrait entry={e} className="h-12 w-12 shrink-0" sizes="48px" />
@@ -164,7 +167,8 @@ export default async function GamePage({ params }: Props) {
             ))}
           </ul>
         </section>
-      )}
+        );
+      })}
     </article>
   );
 }

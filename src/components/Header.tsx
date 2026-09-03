@@ -6,6 +6,7 @@ import { SkipLink } from "./SkipLink";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { MainNav } from "./MainNav";
+import { SearchPalette } from "./SearchPalette";
 
 export function Header({ locale }: { locale: Locale }) {
   const t = useTranslations("Nav");
@@ -21,6 +22,7 @@ export function Header({ locale }: { locale: Locale }) {
         </Link>
         <MainNav />
         <div className="ml-auto flex items-center gap-2">
+          <SearchPalette />
           <ThemeSwitcher />
           <LocaleSwitcher current={locale} />
         </div>

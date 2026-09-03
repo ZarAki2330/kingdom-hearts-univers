@@ -1,5 +1,7 @@
 import Image from "next/image";
-import type { Entry } from "@/data/encyclopedia";
+import { useLocale } from "next-intl";
+import type { Locale } from "@/i18n/routing";
+import { displayName, type Entry } from "@/data/encyclopedia";
 
 /** Initiales pour le portrait généré : « Roi Mickey » → « RM », « Sora » → « S ». */
 function initials(name: string) {
@@ -12,11 +14,13 @@ function initials(name: string) {
  * sinon médaillon généré aux couleurs de l'entrée.
  */
 export function EntryPortrait({ entry, className = "", sizes = "96px" }: { entry: Entry; className?: string; sizes?: string }) {
+  const locale = useLocale() as Locale;
+  const label = displayName(entry, locale);
   const bg = `radial-gradient(120% 90% at 20% 0%, ${entry.accent} 0%, transparent 60%), linear-gradient(160deg, ${entry.accent}cc, #0b1020 95%)`;
   if (entry.image) {
     return (
       <div className={`relative overflow-hidden rounded-full ${className}`} style={{ background: bg }}>
-        <Image src={entry.image.src} alt={entry.name} fill sizes={sizes} className="object-cover" />
+        <Image src={entry.image.src} alt={label} fill sizes={sizes} className="object-cover" />
       </div>
     );
   }
@@ -28,7 +32,7 @@ export function EntryPortrait({ entry, className = "", sizes = "96px" }: { entry
     >
       <div className="stars absolute inset-0" />
       <span className="relative drop-shadow-[0_2px_6px_rgba(0,0,0,.6)]" style={{ fontSize: "clamp(0.75rem, 38cqw, 3rem)" }}>
-        {initials(entry.name)}
+        {initials(label)}
       </span>
     </div>
   );

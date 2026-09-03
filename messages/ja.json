@@ -182,8 +182,35 @@
       "role": "役割",
       "variant": "種別",
       "names": "原語名",
-      "aliases": "別名"
+      "aliases": "別名",
+      "source": "原作",
+      "stats": "性能",
+      "strength": "攻撃力",
+      "magic": "魔力",
+      "ability": "アビリティ"
     },
-    "comingSoon": "このカテゴリは近日公開。"
+    "comingSoon": "このカテゴリは近日公開。",
+    "obtained": "入手方法",
+    "residents": "住人と関連キャラクター",
+    "inGameSuffix": "この作品"
+  },
+  "Search": {
+    "label": "検索",
+    "open": "検索を開く",
+    "close": "閉じる",
+    "placeholder": "ゲーム、キャラクター、ワールド、キーブレード…",
+    "loading": "インデックスを読み込み中…",
+    "noResult": "結果なし。",
+    "hint": "入力してゲームと百科事典を検索。矢印キーで移動、Enterで開く。",
+    "submit": "検索",
+    "count": "「{q}」の検索結果：{count} 件",
+    "types": {
+      "game": "ゲーム",
+      "characters": "キャラクター",
+      "enemies": "敵",
+      "worlds": "ワールド",
+      "keyblades": "キーブレード",
+      "concepts": "用語"
+    }
   }
 }

@@ -182,8 +182,35 @@
       "role": "Rol",
       "variant": "Variante",
       "names": "Nombre original",
-      "aliases": "También llamado"
+      "aliases": "También llamado",
+      "source": "Obra de origen",
+      "stats": "Estadísticas",
+      "strength": "Fuerza",
+      "magic": "Magia",
+      "ability": "Habilidad"
     },
-    "comingSoon": "Esta categoría llegará pronto."
+    "comingSoon": "Esta categoría llegará pronto.",
+    "obtained": "Cómo obtenerla",
+    "residents": "Habitantes y personajes relacionados",
+    "inGameSuffix": "en este juego"
+  },
+  "Search": {
+    "label": "Buscar",
+    "open": "Abrir la búsqueda",
+    "close": "Cerrar",
+    "placeholder": "Un juego, un personaje, un mundo, una Llave Espada…",
+    "loading": "Cargando el índice…",
+    "noResult": "Sin resultados.",
+    "hint": "Escribe para buscar en los juegos y la enciclopedia. Flechas para navegar, Intro para abrir.",
+    "submit": "Buscar",
+    "count": "{count} resultado(s) para «{q}»",
+    "types": {
+      "game": "Juego",
+      "characters": "Personaje",
+      "enemies": "Enemigo",
+      "worlds": "Mundo",
+      "keyblades": "Llave Espada",
+      "concepts": "Concepto"
+    }
   }
 }

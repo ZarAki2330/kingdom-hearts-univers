@@ -182,8 +182,35 @@
       "role": "Rolle",
       "variant": "Variante",
       "names": "Originalname",
-      "aliases": "Auch bekannt als"
+      "aliases": "Auch bekannt als",
+      "source": "Ursprungswerk",
+      "stats": "Werte",
+      "strength": "Stärke",
+      "magic": "Magie",
+      "ability": "Fähigkeit"
     },
-    "comingSoon": "Diese Kategorie folgt bald."
+    "comingSoon": "Diese Kategorie folgt bald.",
+    "obtained": "So erhält man es",
+    "residents": "Bewohner und verbundene Charaktere",
+    "inGameSuffix": "in diesem Spiel"
+  },
+  "Search": {
+    "label": "Suchen",
+    "open": "Suche öffnen",
+    "close": "Schließen",
+    "placeholder": "Ein Spiel, ein Charakter, eine Welt, ein Schlüsselschwert…",
+    "loading": "Index wird geladen…",
+    "noResult": "Kein Ergebnis.",
+    "hint": "Tippe, um Spiele und Enzyklopädie zu durchsuchen. Pfeile zum Navigieren, Enter zum Öffnen.",
+    "submit": "Suchen",
+    "count": "{count} Ergebnis(se) für „{q}“",
+    "types": {
+      "game": "Spiel",
+      "characters": "Charakter",
+      "enemies": "Gegner",
+      "worlds": "Welt",
+      "keyblades": "Schlüsselschwert",
+      "concepts": "Begriff"
+    }
   }
 }
