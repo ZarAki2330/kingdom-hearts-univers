@@ -59,7 +59,7 @@ Images, navigation, profondeur des fiches
 - [ ] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _Pipeline navigateur intégré → KH Wiki, crédit © Square Enix / Disney_
 - [ ] Pagination des listes de l'encyclopédie — _Accessible (liens numérotés, aria-current), conservée dans l'URL_
 - [ ] Filtres des listes (par jeu, type, camp…) — _Filtre par jeu en priorité ; combinable avec la recherche_
-- [ ] Revoir les jaquettes des jeux (mêmes visuels que khdestiny.fr)
+- [ ] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _Logos « Kingdom Hearts » (cœur bleu couronné) sur fond transparent, ex. Kingdom_Hearts_Logo.png de Wikipédia ; crédit © Square Enix / Disney_
 - [ ] Préciser le film d'origine des personnages Disney — _Champ `source` + affichage sur la fiche et la carte_
 - [ ] Réadapter le titre du site dans la barre de navigation
 - [ ] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _Sections par jeu, chronologie interne, sources_
