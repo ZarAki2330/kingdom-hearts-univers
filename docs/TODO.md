@@ -27,7 +27,7 @@ Fiches détaillées et frises chronologiques
 - [x] Frise des jeux par date de sortie — _Onglets accessibles au clavier_
 - [x] Frise des jeux par chronologie interne — _χ → Dark Road → BbS → KH → CoM/Days → KH II → coded → DDD → 0.2 → KH III → MoM → KH IV_
 - [x] Ajouter les collections/remasters (1.5, 2.5, 2.8, All-in-One, Integrum Masterpiece)
-- [x] Illustrations : jaquettes et logos (droits vérifiés) — _Pipeline prêt : champ cover, next/image, crédit affiché, docs/IMAGES.md, script check:covers. Visuels officiels à déposer (kit presse)_
+- [x] Illustrations : jaquettes et logos (droits vérifiés) — _20/21 visuels officiels (KH Wiki), crédit © Square Enix / Disney, mention de retrait en pied de page ; Integrum Masterpiece reste en jaquette générée_
 
 ## III. Encyclopédie — 0/8
 
