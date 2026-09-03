@@ -4,12 +4,27 @@ import { enemies } from "./enemies";
 import { worlds } from "./worlds";
 import { keyblades } from "./keyblades";
 import { concepts } from "./concepts";
+import { moreCharacters } from "./characters-more";
+import { moreEnemies } from "./enemies-more";
+import { moreWorlds } from "./worlds-more";
+import { moreKeyblades } from "./keyblades-more";
 import type { Category, Entry } from "./types";
 
 export * from "./types";
 
 /** Toutes les entrées de l'encyclopédie, toutes catégories confondues. */
-export const entries: Entry[] = [...originalCharacters, ...guestCharacters, ...enemies, ...worlds, ...keyblades, ...concepts];
+export const entries: Entry[] = [
+  ...originalCharacters,
+  ...guestCharacters,
+  ...moreCharacters,
+  ...enemies,
+  ...moreEnemies,
+  ...worlds,
+  ...moreWorlds,
+  ...keyblades,
+  ...moreKeyblades,
+  ...concepts,
+];
 
 const bySlug = new Map(entries.map((e) => [e.slug, e]));
 
