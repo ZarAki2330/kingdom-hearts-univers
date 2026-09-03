@@ -8,6 +8,9 @@ import { moreCharacters } from "./characters-more";
 import { moreEnemies } from "./enemies-more";
 import { moreWorlds } from "./worlds-more";
 import { moreKeyblades } from "./keyblades-more";
+import { moreCharacters2 } from "./characters-more-2";
+import { moreEnemies2 } from "./enemies-more-2";
+import { moreKeyblades2 } from "./keyblades-more-2";
 import type { Category, Entry } from "./types";
 
 export * from "./types";
@@ -17,12 +20,15 @@ export const entries: Entry[] = [
   ...originalCharacters,
   ...guestCharacters,
   ...moreCharacters,
+  ...moreCharacters2,
   ...enemies,
   ...moreEnemies,
+  ...moreEnemies2,
   ...worlds,
   ...moreWorlds,
   ...keyblades,
   ...moreKeyblades,
+  ...moreKeyblades2,
   ...concepts,
 ];
 
