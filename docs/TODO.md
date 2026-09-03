@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 40 % (17/43 tâches)**
+**Avancement global : 49 % (21/43 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -29,14 +29,14 @@ Fiches détaillées et frises chronologiques
 - [x] Ajouter les collections/remasters (1.5, 2.5, 2.8, All-in-One, Integrum Masterpiece)
 - [x] Illustrations : jaquettes et logos (droits vérifiés) — _20/21 visuels officiels (KH Wiki), crédit © Square Enix / Disney, mention de retrait en pied de page ; Integrum Masterpiece reste en jaquette générée_
 
-## III. Encyclopédie — 0/8
+## III. Encyclopédie — 4/8
 
 Personnages, ennemis, mondes, Keyblades
 
-- [ ] Modèle de données des entrées encyclopédiques — _Catégories, relations, apparitions par jeu_
-- [ ] Personnages principaux (Sora, Riku, Kairi, trio Wayfinder, Organisation XIII…)
-- [ ] Personnages Disney et Final Fantasy
-- [ ] Ennemis : Sans-cœur, Similis, Nescients, Non-êtres — _Bestiaire filtrable par jeu_
+- [x] Modèle de données des entrées encyclopédiques — _Types typés (personnages, ennemis, mondes, Keyblades, concepts), relations, apparitions par jeu, script check:encyclopedia_
+- [x] Personnages principaux (Sora, Riku, Kairi, trio Wayfinder, Organisation XIII…) — _30 fiches fr/en : héros, trio Wayfinder, Xehanort et ses incarnations, Organisation XIII, Ephemer_
+- [x] Personnages Disney et Final Fantasy — _22 fiches fr/en : Mickey, Donald, Dingo, Maléfique, Pat, Merlin… ; Léon, Cloud, Sephiroth, Auron, Zack…_
+- [x] Ennemis : Sans-cœur, Similis, Nescients, Non-êtres — _4 espèces + 18 ennemis emblématiques, filtrables par famille ; portraits officiels à ajouter_
 - [ ] Mondes (Disney, originaux) et leur apparition par jeu
 - [ ] Keyblades : statistiques, obtention, jeu d'origine
 - [ ] Organisations et concepts (Organisation XIII, Foretellers, Kingdom Hearts, χ-blade…)
