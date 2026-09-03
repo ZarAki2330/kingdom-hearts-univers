@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 55 % (26/47 tâches)**
+**Avancement global : 48 % (26/54 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -51,6 +51,18 @@ Couverture exhaustive de l'univers
 - [~] Ajouter tous les ennemis de l'univers — _Lot 1 : 117 ajoutés (140 au total). Lot 2 à venir : Sans-cœur KH2/Days, Nescients, Avale-Rêves_
 - [~] Ajouter toutes les Keyblades — _Lot 1 : 72 ajoutées (103 au total). Reste ~20 (Stormfall, Ends of the Earth, gears de Days, Union χ)_
 - [x] Ajouter tous les mondes — _Lot 1 : 18 ajoutés (50 au total) — tous les mondes jouables couverts_
+
+## III ter. Enrichir l'encyclopédie — 0/7
+
+Images, navigation, profondeur des fiches
+
+- [ ] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _Pipeline navigateur intégré → KH Wiki, crédit © Square Enix / Disney_
+- [ ] Pagination des listes de l'encyclopédie — _Accessible (liens numérotés, aria-current), conservée dans l'URL_
+- [ ] Filtres des listes (par jeu, type, camp…) — _Filtre par jeu en priorité ; combinable avec la recherche_
+- [ ] Revoir les jaquettes des jeux (mêmes visuels que khdestiny.fr)
+- [ ] Préciser le film d'origine des personnages Disney — _Champ `source` + affichage sur la fiche et la carte_
+- [ ] Réadapter le titre du site dans la barre de navigation
+- [ ] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _Sections par jeu, chronologie interne, sources_
 
 ## IV. Histoire — 0/3
 
