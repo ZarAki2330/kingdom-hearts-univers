@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 54 % (29/54 tâches)**
+**Avancement global : 59 % (32/54 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -52,14 +52,14 @@ Couverture exhaustive de l'univers
 - [x] Ajouter toutes les Keyblades — _120 Keyblades : toute la série, y compris gears de Days et Union χ_
 - [x] Ajouter tous les mondes — _50 mondes, toutes les visites de la série_
 
-## III ter. Enrichir l'encyclopédie — 0/7
+## III ter. Enrichir l'encyclopédie — 3/7
 
 Images, navigation, profondeur des fiches
 
-- [ ] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _Pipeline navigateur intégré → KH Wiki, crédit © Square Enix / Disney_
-- [ ] Pagination des listes de l'encyclopédie — _Accessible (liens numérotés, aria-current), conservée dans l'URL_
-- [ ] Filtres des listes (par jeu, type, camp…) — _Filtre par jeu en priorité ; combinable avec la recherche_
-- [ ] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _Logos « Kingdom Hearts » (cœur bleu couronné) sur fond transparent, ex. Kingdom_Hearts_Logo.png de Wikipédia ; crédit © Square Enix / Disney_
+- [x] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _623 entrées sur 651 illustrées (rendus officiels KH Wiki, webp 320 px, crédit sur chaque fiche) ; 28 sans image fiable, voir docs/IMAGES.md_
+- [x] Pagination des listes de l'encyclopédie — _48 entrées par page, liens réels ?page=, aria-current, précédent/suivant, 6 langues_
+- [x] Filtres des listes (par jeu, type, camp…) — _Jeu (liste réelle des apparitions), type, camp (alignement / rôle) + recherche accentuée ; état dans l'URL, combinable avec la pagination_
+- [>] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _Logos « Kingdom Hearts » (cœur bleu couronné) sur fond transparent, ex. Kingdom_Hearts_Logo.png de Wikipédia ; crédit © Square Enix / Disney_
 - [ ] Préciser le film d'origine des personnages Disney — _Champ `source` + affichage sur la fiche et la carte_
 - [ ] Réadapter le titre du site dans la barre de navigation
 - [ ] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _Sections par jeu, chronologie interne, sources_
