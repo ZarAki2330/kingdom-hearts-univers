@@ -11,12 +11,13 @@ import { moreKeyblades } from "./keyblades-more";
 import { moreCharacters2 } from "./characters-more-2";
 import { moreEnemies2 } from "./enemies-more-2";
 import { moreKeyblades2 } from "./keyblades-more-2";
+import { entryImages } from "./images";
 import type { Category, Entry } from "./types";
 
 export * from "./types";
 
 /** Toutes les entrées de l'encyclopédie, toutes catégories confondues. */
-export const entries: Entry[] = [
+const rawEntries: Entry[] = [
   ...originalCharacters,
   ...guestCharacters,
   ...moreCharacters,
@@ -31,6 +32,9 @@ export const entries: Entry[] = [
   ...moreKeyblades2,
   ...concepts,
 ];
+
+/** Illustrations fusionnées (src/data/encyclopedia/images.ts) ; une image déclarée dans l'entrée garde la priorité. */
+export const entries: Entry[] = rawEntries.map((e) => (e.image || !entryImages[e.slug] ? e : { ...e, image: entryImages[e.slug] }));
 
 const bySlug = new Map(entries.map((e) => [e.slug, e]));
 

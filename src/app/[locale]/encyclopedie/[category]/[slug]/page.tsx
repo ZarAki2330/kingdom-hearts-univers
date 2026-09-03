@@ -89,8 +89,11 @@ export default async function EntryPage({ params }: Props) {
         <Link href={`/encyclopedie/${category}`} className="font-semibold text-accent hover:underline">{t(`categories.${c}.title`)}</Link>
       </nav>
 
-      <header className="mt-6 grid gap-6 md:grid-cols-[160px_1fr] md:items-start">
-        <EntryPortrait entry={entry} className="h-32 w-32 md:h-40 md:w-40" sizes="160px" />
+      <header className="mt-6 grid gap-6 md:grid-cols-[224px_1fr] md:items-start">
+        <figure className="m-0">
+          <EntryPortrait entry={entry} shape="panel" informative className="h-44 w-44 md:h-56 md:w-56" sizes="(min-width: 768px) 224px, 176px" />
+          {entry.image && <figcaption className="mt-2 max-w-56 text-xs text-text-2">{entry.image.credit}</figcaption>}
+        </figure>
         <div>
           <p className="eyebrow">{"kind" in entry ? t(`kinds.${entry.kind}`) : t(`categories.${c}.title`)}</p>
           <h1 className="mt-2 text-3xl font-bold sm:text-4xl lg:text-5xl">{displayName(entry, locale)}</h1>
