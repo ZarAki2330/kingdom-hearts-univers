@@ -192,7 +192,21 @@
     "comingSoon": "This category is coming soon.",
     "obtained": "How to obtain",
     "residents": "Residents and related characters",
-    "inGameSuffix": "in this game"
+    "inGameSuffix": "in this game",
+    "filters": {
+      "label": "Filter entries",
+      "game": "Game",
+      "allGames": "All games",
+      "side": "Side",
+      "reset": "Reset"
+    },
+    "pagination": {
+      "label": "Pagination",
+      "prev": "Previous page",
+      "next": "Next page",
+      "page": "Page",
+      "status": "Page {page} of {total}"
+    }
   },
   "Search": {
     "label": "Search",

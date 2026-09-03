@@ -192,7 +192,21 @@
     "comingSoon": "Esta categoría llegará pronto.",
     "obtained": "Cómo obtenerla",
     "residents": "Habitantes y personajes relacionados",
-    "inGameSuffix": "en este juego"
+    "inGameSuffix": "en este juego",
+    "filters": {
+      "label": "Filtrar entradas",
+      "game": "Juego",
+      "allGames": "Todos los juegos",
+      "side": "Bando",
+      "reset": "Restablecer"
+    },
+    "pagination": {
+      "label": "Paginación",
+      "prev": "Página anterior",
+      "next": "Página siguiente",
+      "page": "Página",
+      "status": "Página {page} de {total}"
+    }
   },
   "Search": {
     "label": "Buscar",

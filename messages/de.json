@@ -192,7 +192,21 @@
     "comingSoon": "Diese Kategorie folgt bald.",
     "obtained": "So erhält man es",
     "residents": "Bewohner und verbundene Charaktere",
-    "inGameSuffix": "in diesem Spiel"
+    "inGameSuffix": "in diesem Spiel",
+    "filters": {
+      "label": "Einträge filtern",
+      "game": "Spiel",
+      "allGames": "Alle Spiele",
+      "side": "Seite",
+      "reset": "Zurücksetzen"
+    },
+    "pagination": {
+      "label": "Seitennavigation",
+      "prev": "Vorherige Seite",
+      "next": "Nächste Seite",
+      "page": "Seite",
+      "status": "Seite {page} von {total}"
+    }
   },
   "Search": {
     "label": "Suchen",

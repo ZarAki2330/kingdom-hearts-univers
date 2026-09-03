@@ -192,7 +192,21 @@
     "comingSoon": "このカテゴリは近日公開。",
     "obtained": "入手方法",
     "residents": "住人と関連キャラクター",
-    "inGameSuffix": "この作品"
+    "inGameSuffix": "この作品",
+    "filters": {
+      "label": "項目を絞り込む",
+      "game": "作品",
+      "allGames": "すべての作品",
+      "side": "陣営",
+      "reset": "リセット"
+    },
+    "pagination": {
+      "label": "ページ送り",
+      "prev": "前のページ",
+      "next": "次のページ",
+      "page": "ページ",
+      "status": "{page} / {total} ページ"
+    }
   },
   "Search": {
     "label": "検索",

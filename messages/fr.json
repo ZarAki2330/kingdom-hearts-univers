@@ -192,7 +192,21 @@
     "comingSoon": "Cette catégorie arrive bientôt.",
     "obtained": "Comment l'obtenir",
     "residents": "Habitants et personnages liés",
-    "inGameSuffix": "dans ce jeu"
+    "inGameSuffix": "dans ce jeu",
+    "filters": {
+      "label": "Filtrer les entrées",
+      "game": "Jeu",
+      "allGames": "Tous les jeux",
+      "side": "Camp",
+      "reset": "Réinitialiser"
+    },
+    "pagination": {
+      "label": "Pagination",
+      "prev": "Page précédente",
+      "next": "Page suivante",
+      "page": "Page",
+      "status": "Page {page} sur {total}"
+    }
   },
   "Search": {
     "label": "Rechercher",

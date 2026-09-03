@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { CATEGORIES, CATEGORY_SLUG, categoryFromSlug, displayName, entriesOf } from "@/data/encyclopedia";
-import { EntryList } from "@/components/EntryList";
+import { EntryList, type GameOption } from "@/components/EntryList";
+import { games } from "@/data/games";
 
 type Props = { params: Promise<{ locale: string; category: string }> };
 
@@ -34,6 +36,8 @@ export default async function CategoryPage({ params }: Props) {
   if (!c) notFound();
   const t = await getTranslations("Encyclopedia");
   const list = entriesOf(c).sort((a, b) => displayName(a, locale).localeCompare(displayName(b, locale), locale));
+  const present = new Set(list.flatMap((e) => e.appearances));
+  const gameOptions: GameOption[] = games.filter((g) => present.has(g.slug)).map((g) => ({ slug: g.slug, label: g.title }));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -48,7 +52,9 @@ export default async function CategoryPage({ params }: Props) {
       {list.length === 0 ? (
         <p className="mt-8 rounded-xl border border-dashed border-line p-6 text-text-2">{t("comingSoon")}</p>
       ) : (
-        <EntryList entries={list} kinds={KINDS[c] ?? []} />
+        <Suspense fallback={<p className="mt-8 text-text-2">{t("entries", { count: list.length })}</p>}>
+          <EntryList entries={list} kinds={KINDS[c] ?? []} games={gameOptions} category={c} />
+        </Suspense>
       )}
     </div>
   );
