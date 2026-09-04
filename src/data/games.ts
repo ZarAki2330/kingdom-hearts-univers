@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/routing";
+import { gameLogos } from "./game-logos";
 
 export type GameKind = "main" | "spin" | "collection" | "remake";
 export type GameStatus = "released" | "upcoming" | "cancelled";
@@ -32,9 +33,11 @@ export interface Game {
    * Renseigner `credit` (ayant droit + source) — voir docs/IMAGES.md. Absent = jaquette générée.
    */
   cover?: { src: string; credit: string; width: number; height: number };
+  /** Logo officiel (fond transparent), affiché en tête des cartes et des fiches — voir src/data/game-logos.ts. */
+  logo?: { src: string; credit: string; width: number; height: number };
 }
 
-export const games: Game[] = [
+const rawGames: Game[] = [
   {
     slug: "kingdom-hearts",
     title: "Kingdom Hearts",
@@ -403,6 +406,9 @@ export const games: Game[] = [
     },
   },
 ];
+
+/** Jeux avec leur logo officiel fusionné. */
+export const games: Game[] = rawGames.map((g) => (g.logo || !gameLogos[g.slug] ? g : { ...g, logo: gameLogos[g.slug] }));
 
 export function getGame(slug: string): Game | undefined {
   return games.find((g) => g.slug === slug);

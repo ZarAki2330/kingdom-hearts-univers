@@ -43,3 +43,9 @@ Les jaquettes officielles ont pour texte alternatif « Jaquette de *Titre* ». L
 - Source : Kingdom Hearts Wiki (kingdomhearts.fandom.com), image principale de la page ou fichier nommé d'après l'entrée ; le nom du fichier d'origine figure dans `credit`.
 - Droits : © Square Enix / Disney (rendus promotionnels et in-game). Usage encyclopédique non commercial, avec crédit sur chaque fiche et mention de retrait sur demande dans le pied de page.
 - Entrées sans image fiable (médaillon généré) : Joueur (Union χ), Ténèbres, Vidar, Vali, Vala, Hoder, Helgi, Heimdall, Mère de Sora, Similis et Avale-Rêves (espèces), Flutterling, Vitality Vial, Gluttonous Goo, Beat Bomber, Helmet Bomber, et quelques Keyblades de Days / KH III (Pain of Solitude, Total Eclipse, Lunar Eclipse, Twilight Blaze, Omega Weapon, Crown Unlimit, Elemental Encoder, Advent Red, Darker Than Dark, Astral Blast, Silent Dirge, Moogle O' Glory).
+
+## Logos des jeux
+
+- Fichiers : `public/images/logos/<slug>.webp` (800 px, fond transparent), déclarés dans `src/data/game-logos.ts` (généré) et fusionnés dans `games` (`src/data/games.ts`). Ils remplacent les jaquettes sur les cartes, la chronologie et l'en-tête des fiches, comme sur khdestiny.fr ; la jaquette reste affichée en visuel secondaire de la fiche.
+- Source : Kingdom Hearts Wiki (fichiers « <titre> logo.png ») ; les logos 0.2 et 2.8 ont été détourés (fond uni supprimé). All-in-One Package et Integrum Masterpiece n'ont pas de logo propre : visuel généré.
+- Droits : © Square Enix / Disney, crédit sous le logo sur chaque fiche.

@@ -95,7 +95,8 @@
       "spin": "Épisode annexe",
       "collection": "Compilation",
       "remake": "Remake"
-    }
+    },
+    "boxArt": "Jaquette"
   },
   "Timeline": {
     "title": "Chronologie des jeux",

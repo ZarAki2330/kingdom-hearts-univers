@@ -95,7 +95,8 @@
       "spin": "Side entry",
       "collection": "Collection",
       "remake": "Remake"
-    }
+    },
+    "boxArt": "Box art"
   },
   "Timeline": {
     "title": "Games timeline",

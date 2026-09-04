@@ -95,7 +95,8 @@
       "spin": "Nebenteil",
       "collection": "Sammlung",
       "remake": "Remake"
-    }
+    },
+    "boxArt": "Cover"
   },
   "Timeline": {
     "title": "Zeitleiste der Spiele",

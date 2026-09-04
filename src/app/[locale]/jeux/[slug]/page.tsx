@@ -52,10 +52,19 @@ export default async function GamePage({ params }: Props) {
         </Link>
       </nav>
 
-      <header className="mt-6 grid gap-8 md:grid-cols-[220px_1fr] md:items-start">
-        <div className="max-w-[220px]">
-          <GameCover game={game} className="aspect-[3/4] w-full" priority />
-          {game.cover && <p className="mt-2 text-xs text-text-2">{game.cover.credit}</p>}
+      <header className="mt-6 grid gap-8 md:grid-cols-[320px_1fr] md:items-start">
+        <div className="max-w-[320px]">
+          <GameCover game={game} className="aspect-[16/10] w-full" sizes="320px" priority />
+          {game.logo && <p className="mt-2 text-xs text-text-2">{game.logo.credit}</p>}
+          {game.cover && (
+            <figure className="mt-4 flex items-start gap-3">
+              <GameCover game={game} variant="box" className="h-24 w-[4.5rem] shrink-0 rounded-lg" sizes="72px" />
+              <figcaption className="text-xs text-text-2">
+                <span className="block font-semibold text-text">{t("boxArt")}</span>
+                {game.cover.credit}
+              </figcaption>
+            </figure>
+          )}
         </div>
         <div>
           <p className="eyebrow">{t(`kind.${game.kind}`)}</p>

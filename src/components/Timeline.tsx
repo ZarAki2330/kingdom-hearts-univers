@@ -12,7 +12,7 @@ function Entry({ game }: { game: Game }) {
   const year = releaseYear(game);
   return (
     <Link href={`/jeux/${game.slug}`} className="card card-link flex items-center gap-3 p-2.5">
-      <GameCover game={game} className="h-14 w-10 shrink-0 rounded-md" />
+      <GameCover game={game} className="h-14 w-[5.6rem] shrink-0 rounded-md" sizes="90px" />
       <span className="min-w-0">
         <span className="block font-bold leading-tight">{game.title}</span>
         <span className="tabular block text-xs text-text-2">

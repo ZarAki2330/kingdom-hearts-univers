@@ -8,8 +8,8 @@ export function GameCard({ game }: { game: Game }) {
   const year = releaseYear(game);
   return (
     <li className="card card-link">
-      <Link href={`/jeux/${game.slug}`} className="flex h-full gap-4 p-3">
-        <GameCover game={game} className="h-28 w-20 shrink-0" />
+      <Link href={`/jeux/${game.slug}`} className="flex h-full flex-col gap-3 p-3">
+        <GameCover game={game} className="aspect-[16/10] w-full" sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 90vw" />
         <div className="flex min-w-0 flex-col gap-1.5 py-1">
           <span className="eyebrow">{t(`kind.${game.kind}`)}</span>
           <h3 className="text-base font-bold leading-tight">{game.title}</h3>

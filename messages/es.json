@@ -95,7 +95,8 @@
       "spin": "Entrega secundaria",
       "collection": "Recopilación",
       "remake": "Remake"
-    }
+    },
+    "boxArt": "Carátula"
   },
   "Timeline": {
     "title": "Cronología de los juegos",
