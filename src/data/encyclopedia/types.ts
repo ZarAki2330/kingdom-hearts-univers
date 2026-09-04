@@ -47,10 +47,19 @@ export interface BaseEntry {
   tags?: string[];
 }
 
+/** Œuvre d'origine d'un personnage invité (film ou série Disney, jeu Final Fantasy…). */
+export interface CharacterSource {
+  fr: string;
+  en: string;
+  year?: number;
+}
+
 export interface CharacterEntry extends BaseEntry {
   category: "characters";
   kind: CharacterKind;
   alignment?: Alignment;
+  /** Œuvre d'origine (personnages Disney et invités) — voir disney-sources.ts. */
+  source?: CharacterSource;
   /** Monde d'origine (slug d'un monde ou texte libre). */
   homeworld?: string;
   /** Doubleurs (FR / EN / JA). */

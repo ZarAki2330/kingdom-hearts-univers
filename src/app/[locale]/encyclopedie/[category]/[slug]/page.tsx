@@ -32,6 +32,7 @@ function facts(entry: Entry, locale: Locale, t: (k: string) => string): [string,
   if (entry.aliases?.length) out.push([t("facts.aliases"), entry.aliases.join(", ")]);
   if (entry.category === "characters") {
     out.push([t("facts.kind"), t(`kinds.${entry.kind}`)]);
+    if (entry.source) out.push([t("facts.source"), `${locale === "fr" ? entry.source.fr : entry.source.en}${entry.source.year ? ` (${entry.source.year})` : ""}`]);
     if (entry.alignment) out.push([t("facts.alignment"), t(`alignment.${entry.alignment}`)]);
     if (entry.homeworld) out.push([t("facts.homeworld"), entry.homeworld]);
     if (entry.group) out.push([t("facts.group"), entry.group]);

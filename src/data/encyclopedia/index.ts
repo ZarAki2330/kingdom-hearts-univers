@@ -12,6 +12,7 @@ import { moreCharacters2 } from "./characters-more-2";
 import { moreEnemies2 } from "./enemies-more-2";
 import { moreKeyblades2 } from "./keyblades-more-2";
 import { entryImages } from "./images";
+import { disneySources } from "./disney-sources";
 import type { Category, Entry } from "./types";
 
 export * from "./types";
@@ -34,7 +35,11 @@ const rawEntries: Entry[] = [
 ];
 
 /** Illustrations fusionnées (src/data/encyclopedia/images.ts) ; une image déclarée dans l'entrée garde la priorité. */
-export const entries: Entry[] = rawEntries.map((e) => (e.image || !entryImages[e.slug] ? e : { ...e, image: entryImages[e.slug] }));
+export const entries: Entry[] = rawEntries.map((raw) => {
+  const e = raw.image || !entryImages[raw.slug] ? raw : { ...raw, image: entryImages[raw.slug] };
+  if (e.category === "characters" && !e.source && disneySources[e.slug]) return { ...e, source: disneySources[e.slug] };
+  return e;
+});
 
 const bySlug = new Map(entries.map((e) => [e.slug, e]));
 
