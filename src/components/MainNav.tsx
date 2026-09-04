@@ -1,4 +1,5 @@
 "use client";
+import type React from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 
@@ -10,7 +11,7 @@ const items = [
 
 const soon = ["story", "guides"] as const;
 
-export function MainNav() {
+export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
   const t = useTranslations("Nav");
   const pathname = usePathname();
   const list = (
@@ -54,11 +55,18 @@ export function MainNav() {
         {list}
       </nav>
       <details className="relative md:hidden">
-        <summary className="list-none cursor-pointer rounded-md border border-line bg-surface px-3 py-1.5 text-sm font-semibold [&::-webkit-details-marker]:hidden">
-          {t("menu")}
+        <summary
+          className="flex list-none cursor-pointer items-center gap-2 rounded-md border border-line bg-surface px-2.5 py-1.5 text-sm font-semibold [&::-webkit-details-marker]:hidden"
+          aria-label={t("menu")}
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <span className="sr-only">{t("menu")}</span>
         </summary>
         <nav aria-label={t("menu")} className="card absolute left-0 top-full z-50 mt-2 w-64 p-2">
           {list}
+          {extras && <div className="mt-2 border-t border-line pt-2">{extras}</div>}
         </nav>
       </details>
     </>
