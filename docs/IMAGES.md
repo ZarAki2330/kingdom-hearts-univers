@@ -42,6 +42,7 @@ Les jaquettes officielles ont pour texte alternatif « Jaquette de *Titre* ». L
 - Fichiers : `public/images/encyclopedia/<catégorie>/<slug>.webp` (320 px max, rendus officiels détourés), référencés par `src/data/encyclopedia/images.ts` (généré) et fusionnés dans les entrées par `src/data/encyclopedia/index.ts`.
 - Source : Kingdom Hearts Wiki (kingdomhearts.fandom.com), image principale de la page ou fichier nommé d'après l'entrée ; le nom du fichier d'origine figure dans `credit`.
 - Droits : © Square Enix / Disney (rendus promotionnels et in-game). Usage encyclopédique non commercial, avec crédit sur chaque fiche et mention de retrait sur demande dans le pied de page.
+- Concepts : 15/16 illustrés (Pouvoir de l'éveil sans visuel).
 - Entrées sans image fiable (médaillon généré) : Joueur (Union χ), Ténèbres, Vidar, Vali, Vala, Hoder, Helgi, Heimdall, Mère de Sora, Similis et Avale-Rêves (espèces), Flutterling, Vitality Vial, Gluttonous Goo, Beat Bomber, Helmet Bomber, et quelques Keyblades de Days / KH III (Pain of Solitude, Total Eclipse, Lunar Eclipse, Twilight Blaze, Omega Weapon, Crown Unlimit, Elemental Encoder, Advent Red, Darker Than Dark, Astral Blast, Silent Dirge, Moogle O' Glory).
 
 ## Logos des jeux
