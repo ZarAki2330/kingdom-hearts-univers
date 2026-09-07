@@ -21,6 +21,23 @@ export interface Relation {
   label: LocalizedText;
 }
 
+/** Section d'histoire détaillée, généralement liée à un jeu (slug de src/data/games.ts). */
+export interface LoreSection {
+  /** Slug du jeu concerné ; absent pour une section transversale (origines, thèmes…). */
+  game?: string;
+  /** Titre facultatif (sinon : titre du jeu). */
+  title?: LocalizedText;
+  /** Paragraphes séparés par une ligne vide. */
+  text: LocalizedText;
+}
+
+/** Contenu approfondi d'une fiche : histoire par jeu, anecdotes, sources. */
+export interface EntryLore {
+  sections: LoreSection[];
+  trivia?: LocalizedText[];
+  sources?: { label: string; url: string }[];
+}
+
 export interface BaseEntry {
   slug: string;
   category: Category;
@@ -41,6 +58,8 @@ export interface BaseEntry {
   relations?: Relation[];
   /** Portrait officiel (voir docs/IMAGES.md). */
   image?: { src: string; credit: string; width: number; height: number };
+  /** Histoire détaillée (fusionnée depuis src/data/encyclopedia/lore/). */
+  lore?: EntryLore;
   /** Couleur d'accent pour le portrait généré. */
   accent: string;
   /** Mots-clés pour la recherche. */

@@ -108,6 +108,60 @@ export default async function EntryPage({ params }: Props) {
             <p key={i} className="prose-max mt-4 text-lg leading-relaxed first:mt-0">{p}</p>
           ))}
 
+          {entry.lore && (
+            <section aria-labelledby="lore" className="mt-10">
+              <h2 id="lore" className="text-2xl font-bold">{t("lore.title")}</h2>
+              <details className="group mt-4 rounded-xl border border-line bg-surface">
+                <summary className="cursor-pointer list-none px-4 py-3 font-semibold text-accent [&::-webkit-details-marker]:hidden">
+                  <span className="group-open:hidden">▸ {t("lore.show")}</span>
+                  <span className="hidden group-open:inline">▾ {t("lore.hide")}</span>
+                  <span className="ml-2 text-sm font-normal text-text-2">{t("lore.spoilers")}</span>
+                </summary>
+                <div className="border-t border-line px-4 pb-5">
+                  {entry.lore.sections.map((sec, i) => {
+                    const game = sec.game ? getGame(sec.game) : undefined;
+                    const heading = sec.title ? localized(sec.title, locale) : game?.title ?? "";
+                    return (
+                      <section key={i} aria-labelledby={`lore-${i}`} className="mt-6">
+                        <h3 id={`lore-${i}`} className="flex items-center gap-3 text-lg font-bold">
+                          {game && <GameCover game={game} className="h-8 w-[3.2rem] shrink-0 rounded-md" sizes="52px" />}
+                          {game ? <Link href={`/jeux/${game.slug}`} className="hover:text-accent">{heading}</Link> : heading}
+                        </h3>
+                        {localized(sec.text, locale).split(/\n\n+/).map((p, j) => (
+                          <p key={j} className="prose-max mt-3 leading-relaxed">{p}</p>
+                        ))}
+                      </section>
+                    );
+                  })}
+                  {entry.lore.trivia && entry.lore.trivia.length > 0 && (
+                    <section aria-labelledby="lore-trivia" className="mt-8">
+                      <h3 id="lore-trivia" className="text-lg font-bold">{t("lore.trivia")}</h3>
+                      <ul className="mt-3 list-disc space-y-2 pl-5">
+                        {entry.lore.trivia.map((tr, j) => (
+                          <li key={j} className="prose-max leading-relaxed">{localized(tr, locale)}</li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+                  {entry.lore.sources && entry.lore.sources.length > 0 && (
+                    <section aria-labelledby="lore-sources" className="mt-8">
+                      <h3 id="lore-sources" className="text-lg font-bold">{t("lore.sources")}</h3>
+                      <ul className="mt-3 space-y-1 text-sm">
+                        {entry.lore.sources.map((src) => (
+                          <li key={src.url}>
+                            <a href={src.url} rel="noopener noreferrer" target="_blank" className="text-accent underline-offset-2 hover:underline">
+                              {src.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+                </div>
+              </details>
+            </section>
+          )}
+
           {obtained.length > 0 && (
             <section aria-labelledby="obtained" className="mt-10">
               <h2 id="obtained" className="text-2xl font-bold">{t("obtained")}</h2>

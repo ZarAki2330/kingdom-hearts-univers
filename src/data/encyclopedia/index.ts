@@ -13,6 +13,11 @@ import { moreEnemies2 } from "./enemies-more-2";
 import { moreKeyblades2 } from "./keyblades-more-2";
 import { entryImages } from "./images";
 import { disneySources } from "./disney-sources";
+import { lore as loreCharactersA } from "./lore/characters-a";
+import { lore as loreCharactersB } from "./lore/characters-b";
+import { lore as loreWorlds } from "./lore/worlds";
+import { lore as loreKeyblades } from "./lore/keyblades";
+import type { EntryLore } from "./types";
 import type { Category, Entry } from "./types";
 
 export * from "./types";
@@ -34,9 +39,13 @@ const rawEntries: Entry[] = [
   ...concepts,
 ];
 
+/** Histoires détaillées (src/data/encyclopedia/lore/*), fusionnées par slug. */
+const lores: Record<string, EntryLore> = { ...loreCharactersA, ...loreCharactersB, ...loreWorlds, ...loreKeyblades };
+
 /** Illustrations fusionnées (src/data/encyclopedia/images.ts) ; une image déclarée dans l'entrée garde la priorité. */
 export const entries: Entry[] = rawEntries.map((raw) => {
-  const e = raw.image || !entryImages[raw.slug] ? raw : { ...raw, image: entryImages[raw.slug] };
+  let e = raw.image || !entryImages[raw.slug] ? raw : { ...raw, image: entryImages[raw.slug] };
+  if (!e.lore && lores[e.slug]) e = { ...e, lore: lores[e.slug] };
   if (e.category === "characters" && !e.source && disneySources[e.slug]) return { ...e, source: disneySources[e.slug] };
   return e;
 });

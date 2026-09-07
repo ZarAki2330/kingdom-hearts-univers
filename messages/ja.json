@@ -207,6 +207,14 @@
       "next": "次のページ",
       "page": "ページ",
       "status": "{page} / {total} ページ"
+    },
+    "lore": {
+      "title": "詳しい物語",
+      "show": "物語を表示",
+      "hide": "物語を隠す",
+      "spoilers": "（ストーリーのネタバレを含みます）",
+      "trivia": "豆知識",
+      "sources": "出典"
     }
   },
   "Search": {

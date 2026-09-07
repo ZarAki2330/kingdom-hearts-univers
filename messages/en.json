@@ -207,6 +207,14 @@
       "next": "Next page",
       "page": "Page",
       "status": "Page {page} of {total}"
+    },
+    "lore": {
+      "title": "Full history",
+      "show": "Show the history",
+      "hide": "Hide the history",
+      "spoilers": "(contains story spoilers)",
+      "trivia": "Trivia",
+      "sources": "Sources"
     }
   },
   "Search": {

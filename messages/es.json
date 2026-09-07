@@ -207,6 +207,14 @@
       "next": "Página siguiente",
       "page": "Página",
       "status": "Página {page} de {total}"
+    },
+    "lore": {
+      "title": "Historia detallada",
+      "show": "Mostrar la historia",
+      "hide": "Ocultar la historia",
+      "spoilers": "(contiene spoilers de la trama)",
+      "trivia": "Curiosidades",
+      "sources": "Fuentes"
     }
   },
   "Search": {
