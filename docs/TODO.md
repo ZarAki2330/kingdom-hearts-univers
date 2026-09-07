@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 61 % (33/54 tâches)**
+**Avancement global : 65 % (35/54 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -52,7 +52,7 @@ Couverture exhaustive de l'univers
 - [x] Ajouter toutes les Keyblades — _120 Keyblades : toute la série, y compris gears de Days et Union χ_
 - [x] Ajouter tous les mondes — _50 mondes, toutes les visites de la série_
 
-## III ter. Enrichir l'encyclopédie — 4/7
+## III ter. Enrichir l'encyclopédie — 6/7
 
 Images, navigation, profondeur des fiches
 
@@ -60,9 +60,9 @@ Images, navigation, profondeur des fiches
 - [x] Pagination des listes de l'encyclopédie — _48 entrées par page, liens réels ?page=, aria-current, précédent/suivant, 6 langues_
 - [x] Filtres des listes (par jeu, type, camp…) — _Jeu (liste réelle des apparitions), type, camp (alignement / rôle) + recherche accentuée ; état dans l'URL, combinable avec la pagination_
 - [x] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _19 logos officiels (KH Wiki, webp 800 px, fond transparent ; 0.2 et 2.8 détourés) sur cartes, chronologie et fiches ; jaquette conservée en visuel secondaire ; All-in-One et Integrum en visuel généré_
-- [ ] Préciser le film d'origine des personnages Disney — _Champ `source` + affichage sur la fiche et la carte_
-- [ ] Réadapter le titre du site dans la barre de navigation
-- [ ] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _Sections par jeu, chronologie interne, sources_
+- [x] Préciser le film d'origine des personnages Disney — _139 personnages Disney : œuvre d'origine (fr/en, année) dérivée du monde + corrections manuelles, affichée sur la carte et la fiche_
+- [x] Réadapter le titre du site dans la barre de navigation — _Titre sur deux lignes compactes (Kingdom Hearts / UNIVERS), plus de retour à la ligne ; menu mobile en icône avec le sélecteur de thème intégré_
+- [~] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _Lot 1 : 52 personnages, 28 mondes, 22 Keyblades — histoire par jeu (ordre interne), anecdotes, sources, section repliée (spoilers). Lots suivants à la demande_
 
 ## IV. Histoire — 0/3
 
