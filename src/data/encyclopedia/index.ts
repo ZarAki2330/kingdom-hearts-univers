@@ -15,6 +15,8 @@ import { entryImages } from "./images";
 import { disneySources } from "./disney-sources";
 import { lore as loreCharactersA } from "./lore/characters-a";
 import { lore as loreCharactersB } from "./lore/characters-b";
+import { lore as loreCharactersC } from "./lore/characters-c";
+import { lore as loreCharactersD } from "./lore/characters-d";
 import { lore as loreWorlds } from "./lore/worlds";
 import { lore as loreKeyblades } from "./lore/keyblades";
 import type { EntryLore } from "./types";
@@ -40,7 +42,7 @@ const rawEntries: Entry[] = [
 ];
 
 /** Histoires détaillées (src/data/encyclopedia/lore/*), fusionnées par slug. */
-const lores: Record<string, EntryLore> = { ...loreCharactersA, ...loreCharactersB, ...loreWorlds, ...loreKeyblades };
+const lores: Record<string, EntryLore> = { ...loreCharactersA, ...loreCharactersB, ...loreCharactersC, ...loreCharactersD, ...loreWorlds, ...loreKeyblades };
 
 /** Illustrations fusionnées (src/data/encyclopedia/images.ts) ; une image déclarée dans l'entrée garde la priorité. */
 export const entries: Entry[] = rawEntries.map((raw) => {
