@@ -14,7 +14,8 @@
     "menu": "Hauptmenü",
     "language": "Sprache",
     "theme": "Anzeigethema",
-    "comingSoon": "Bald"
+    "comingSoon": "Bald",
+    "submenuOf": "Untermenü von {section}"
   },
   "Theme": {
     "dawn": "Morgendämmerung",

@@ -14,7 +14,8 @@
     "menu": "Menú principal",
     "language": "Idioma",
     "theme": "Tema de visualización",
-    "comingSoon": "Pronto"
+    "comingSoon": "Pronto",
+    "submenuOf": "Submenú de {section}"
   },
   "Theme": {
     "dawn": "Alba",

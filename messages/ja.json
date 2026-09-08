@@ -14,7 +14,8 @@
     "menu": "メインメニュー",
     "language": "言語",
     "theme": "表示テーマ",
-    "comingSoon": "近日公開"
+    "comingSoon": "近日公開",
+    "submenuOf": "{section} のサブメニュー"
   },
   "Theme": {
     "dawn": "夜明け",

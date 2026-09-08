@@ -14,7 +14,8 @@
     "menu": "Main menu",
     "language": "Language",
     "theme": "Display theme",
-    "comingSoon": "Soon"
+    "comingSoon": "Soon",
+    "submenuOf": "{section} submenu"
   },
   "Theme": {
     "dawn": "Dawn",

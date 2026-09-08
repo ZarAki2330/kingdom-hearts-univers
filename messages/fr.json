@@ -14,7 +14,8 @@
     "menu": "Menu principal",
     "language": "Langue",
     "theme": "Thème d'affichage",
-    "comingSoon": "Bientôt"
+    "comingSoon": "Bientôt",
+    "submenuOf": "Sous-menu de {section}"
   },
   "Theme": {
     "dawn": "Aube",
