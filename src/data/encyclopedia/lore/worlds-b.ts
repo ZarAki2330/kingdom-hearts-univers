@@ -35,13 +35,13 @@ export const lore: Record<string, EntryLore> = {
     ],
   },
 
-  // ─────────────────────────── Château des Rêves ───────────────────────────
+  // ─────────────────────────── Palais des Rêves ───────────────────────────
   "castle-of-dreams": {
     sections: [
       {
         title: L("Origines", "Origins"),
         text: L(
-          "Le Château des Rêves adapte Cendrillon (1950), et c'est le monde qui porte le plus directement le thème de Birth by Sleep : croire en un rêve jusqu'à ce qu'il se réalise. Le jeu suit le film de près, de la maison de la belle-mère à la robe déchirée, de l'intervention de la Bonne Fée au bal du prince, puis à la pantoufle de verre.\n\nSa particularité tient à une idée de mise en scène : Ventus, touché par la magie, est réduit à la taille des souris et parcourt les mêmes pièces vues d'en bas, entre pieds de meubles et trous de plinthe, avec Jaq pour guide et le chat Lucifer pour menace. Les autres zones — le manoir, la cour, la salle de bal et les jardins — se traversent à taille normale. Le boss du monde est le Cursed Coach, un carrosse possédé par les Nescients qui charge sur la route du château.",
+          "Le Palais des Rêves adapte Cendrillon (1950), et c'est le monde qui porte le plus directement le thème de Birth by Sleep : croire en un rêve jusqu'à ce qu'il se réalise. Le jeu suit le film de près, de la maison de la belle-mère à la robe déchirée, de l'intervention de la Bonne Fée au bal du prince, puis à la pantoufle de verre.\n\nSa particularité tient à une idée de mise en scène : Ventus, touché par la magie, est réduit à la taille des souris et parcourt les mêmes pièces vues d'en bas, entre pieds de meubles et trous de plinthe, avec Jaq pour guide et le chat Lucifer pour menace. Les autres zones — le manoir, la cour, la salle de bal et les jardins — se traversent à taille normale. Le boss du monde est le Cursed Coach, un carrosse possédé par les Nescients qui charge sur la route du château.",
           "Castle of Dreams adapts Cinderella (1950), and it is the world that carries Birth by Sleep's theme most directly: believing in a dream until it comes true. The game follows the film closely, from the stepmother's house to the torn dress, from the Fairy Godmother's intervention to the prince's ball, and then the glass slipper.\n\nIts distinctive touch is a staging idea: Ventus, caught by the magic, is shrunk to mouse size and crosses the same rooms seen from below, among furniture legs and skirting-board holes, with Jaq as a guide and the cat Lucifer as a threat. The other areas — the manor, the courtyard, the ballroom and the gardens — are travelled at normal size. The world's boss is the Cursed Coach, a carriage possessed by the Unversed that charges along the road to the castle.",
         ),
       },
@@ -164,7 +164,7 @@ export const lore: Record<string, EntryLore> = {
       {
         game: "chain-of-memories",
         text: L(
-          "Au Manoir Oblivion, Monstro est recréé à partir des souvenirs de Sora sous forme de carte de monde. La baleine est identique, mais l'épisode se réduit à l'essentiel : Pinocchio disparaît dans les couloirs, Geppetto s'inquiète, et Sora part le chercher jusqu'à l'estomac où l'attend de nouveau le Parasite Cage.\n\nComme dans tous les étages, la reconstitution est faussée : Jiminy note que ses souvenirs ne concordent pas, et l'illusion sert surtout à faire avancer la manipulation de Naminé. Monstro figure aussi parmi les mondes de la Rétro-genèse de Riku, où il permet de retrouver des ténèbres déjà vaincues. Le monde disparaît ensuite de la saga en tant que tel : seule sa carcasse est réutilisée dans Dream Drop Distance, comme seconde moitié du Paradis des Farceurs.",
+          "Au Manoir Oblivion, Monstro est recréé à partir des souvenirs de Sora sous forme de carte de monde. La baleine est identique, mais l'épisode se réduit à l'essentiel : Pinocchio disparaît dans les couloirs, Geppetto s'inquiète, et Sora part le chercher jusqu'à l'estomac où l'attend de nouveau le Parasite Cage.\n\nComme dans tous les étages, la reconstitution est faussée : Jiminy note que ses souvenirs ne concordent pas, et l'illusion sert surtout à faire avancer la manipulation de Naminé. Monstro figure aussi parmi les mondes de la Rétro-genèse de Riku, où il permet de retrouver des ténèbres déjà vaincues. Le monde disparaît ensuite de la saga en tant que tel : seule sa carcasse est réutilisée dans Dream Drop Distance, comme seconde moitié du Paradis des Garnements.",
           "In Castle Oblivion, Monstro is recreated from Sora's memories as a world card. The whale is identical, but the episode is boiled down to essentials: Pinocchio disappears into the passages, Geppetto worries, and Sora goes looking for him down to the stomach, where the Parasite Cage waits again.\n\nAs on every floor, the recreation is skewed: Jiminy notes that his records do not match, and the illusion mainly serves to advance Naminé's manipulation. Monstro also appears among the worlds of Riku's Reverse/Rebirth, where it lets him face darkness already defeated. The world then leaves the saga as such: only its carcass is reused in Dream Drop Distance, as the second half of Prankster's Paradise.",
         ),
       },
@@ -286,13 +286,13 @@ export const lore: Record<string, EntryLore> = {
     ],
   },
 
-  // ─────────────────────────── Paradis des Farceurs ───────────────────────────
+  // ─────────────────────────── Paradis des Garnements ───────────────────────────
   "pranksters-paradise": {
     sections: [
       {
         title: L("Origines", "Origins"),
         text: L(
-          "Le Paradis des Farceurs revient à Pinocchio (1940), mais sur une autre partie du film que Monstro : l'Île enchantée, ce parc d'attractions où les garçons paresseux sont attirés par le Cocher pour être changés en ânes et vendus. Le monde en fait un décor de fête foraine éclatant, avec grande roue, montagnes russes, salle de billard et rues de manèges, avant de basculer dans l'océan puis dans le ventre de Monstro, recyclé du premier jeu.\n\nComme les autres Mondes Endormis de Dream Drop Distance, le lieu n'existe que dans le sommeil : Sora et Riku le traversent au même endroit mais à des moments décalés, et n'y croisent que des rêves. Les affrontements majeurs opposent chacun des deux héros à un Avale-Rêves de type Clawbster, un crustacé de cauchemar qui se déplace le long des rails du parc.",
+          "Le Paradis des Garnements revient à Pinocchio (1940), mais sur une autre partie du film que Monstro : l'Île enchantée, ce parc d'attractions où les garçons paresseux sont attirés par le Cocher pour être changés en ânes et vendus. Le monde en fait un décor de fête foraine éclatant, avec grande roue, montagnes russes, salle de billard et rues de manèges, avant de basculer dans l'océan puis dans le ventre de Monstro, recyclé du premier jeu.\n\nComme les autres Mondes Endormis de Dream Drop Distance, le lieu n'existe que dans le sommeil : Sora et Riku le traversent au même endroit mais à des moments décalés, et n'y croisent que des rêves. Les affrontements majeurs opposent chacun des deux héros à un Avale-Rêves de type Clawbster, un crustacé de cauchemar qui se déplace le long des rails du parc.",
           "Prankster's Paradise returns to Pinocchio (1940), but to a different part of the film than Monstro: Pleasure Island, the amusement park where the Coachman lures lazy boys to be turned into donkeys and sold. The world turns it into a dazzling fairground, with a Ferris wheel, roller coasters, a pool hall and streets of rides, before tipping into the ocean and then into Monstro's belly, recycled from the first game.\n\nLike the other Sleeping Worlds of Dream Drop Distance, the place exists only in sleep: Sora and Riku cross it in the same locations but at offset moments, and meet only dreams. The major fights pit each hero against a Clawbster-type Dream Eater, a nightmare crustacean that travels along the park's rails.",
         ),
       },
@@ -313,13 +313,13 @@ export const lore: Record<string, EntryLore> = {
     ],
   },
 
-  // ─────────────────────────── Espace Lointain ───────────────────────────
+  // ─────────────────────────── Espace Profond ───────────────────────────
   "deep-space": {
     sections: [
       {
         title: L("Origines", "Origins"),
         text: L(
-          "Espace Lointain adapte Lilo & Stitch (2002), mais uniquement son prologue : le procès du savant Jumba et de son expérience 626, à bord du vaisseau de la Fédération galactique, avant que la créature ne s'échappe vers la Terre. Le monde se situe donc entièrement dans l'espace, ce qui en fait le seul de Birth by Sleep à ne pas poser le pied sur une planète.\n\nOn parcourt la salle du tribunal de la Grande Conseillère, les couloirs et les cellules de détention, la salle des machines et le hangar, certains passages se traversant en apesanteur, avec des changements d'orientation qui rendent la navigation particulière. Les adversaires y sont des Nescients, ainsi que le capitaine Gantu, chargé du transfert du prisonnier. Le boss du monde est le Nescient Metamorphosis, une créature volante qui change de forme, affrontée à bord du vaisseau.",
+          "Espace Profond adapte Lilo & Stitch (2002), mais uniquement son prologue : le procès du savant Jumba et de son expérience 626, à bord du vaisseau de la Fédération galactique, avant que la créature ne s'échappe vers la Terre. Le monde se situe donc entièrement dans l'espace, ce qui en fait le seul de Birth by Sleep à ne pas poser le pied sur une planète.\n\nOn parcourt la salle du tribunal de la Grande Conseillère, les couloirs et les cellules de détention, la salle des machines et le hangar, certains passages se traversant en apesanteur, avec des changements d'orientation qui rendent la navigation particulière. Les adversaires y sont des Nescients, ainsi que le capitaine Gantu, chargé du transfert du prisonnier. Le boss du monde est le Nescient Metamorphosis, une créature volante qui change de forme, affrontée à bord du vaisseau.",
           "Deep Space adapts Lilo & Stitch (2002), but only its prologue: the trial of the scientist Jumba and his Experiment 626 aboard the Galactic Federation ship, before the creature escapes to Earth. The world therefore takes place entirely in space, making it the only Birth by Sleep world that never sets foot on a planet.\n\nThe visit covers the Grand Councilwoman's courtroom, the corridors and detention cells, the machine room and the hangar, with some passages crossed in zero gravity and shifts of orientation that make navigation unusual. Its opponents are Unversed, along with Captain Gantu, in charge of transferring the prisoner. The world's boss is the Metamorphosis Unversed, a shape-shifting flying creature fought aboard the ship.",
         ),
       },
@@ -332,7 +332,7 @@ export const lore: Record<string, EntryLore> = {
       },
     ],
     trivia: [
-      L("Espace Lointain est le seul monde de Birth by Sleep entièrement situé à bord d'un vaisseau, avec des séquences en apesanteur.", "Deep Space is the only Birth by Sleep world set entirely aboard a ship, with zero-gravity sequences."),
+      L("Espace Profond est le seul monde de Birth by Sleep entièrement situé à bord d'un vaisseau, avec des séquences en apesanteur.", "Deep Space is the only Birth by Sleep world set entirely aboard a ship, with zero-gravity sequences."),
       L("Le Porte-bonheur copié par l'expérience 626 explique l'objet que Stitch conserve dans ses apparitions ultérieures.", "The Wayfinder copied by Experiment 626 explains the charm Stitch keeps in his later appearances."),
     ],
     sources: [

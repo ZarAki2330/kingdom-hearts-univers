@@ -81,7 +81,7 @@ export const concepts: ConceptEntry[] = [
     accent: "#f0d878",
     tagline: L("Les sept Porteurs réunis par Yen Sid contre Xehanort.", "The seven wielders gathered by Yen Sid against Xehanort."),
     description: L(
-      "Pour empêcher Xehanort de reforger la χ-blade à sa manière, Yen Sid réunit sept Porteurs de Keyblade : Sora, Riku, Mickey, Kairi, Lea, Aqua et Ventus, rejoints par Roxas, Xion, Terra, Donald et Dingo au Cimetière des Keyblades. Leur nombre répond aux sept fragments de lumière de la χ-blade.",
+      "Pour empêcher Xehanort de reforger la χ-blade à sa manière, Yen Sid réunit sept Porteurs de Keyblade : Sora, Riku, Mickey, Kairi, Lea, Aqua et Ventus, rejoints par Roxas, Xion, Terra, Donald et Dingo au Nécropole des Keyblades. Leur nombre répond aux sept fragments de lumière de la χ-blade.",
       "To stop Xehanort from reforging the χ-blade his way, Yen Sid gathers seven Keyblade wielders: Sora, Riku, Mickey, Kairi, Lea, Aqua and Ventus, joined by Roxas, Xion, Terra, Donald and Goofy at the Keyblade Graveyard. Their number answers the seven fragments of light of the χ-blade.",
     ),
     appearances: ["dream-drop-distance", "kingdom-hearts-iii"],
@@ -146,7 +146,7 @@ export const concepts: ConceptEntry[] = [
     accent: "#8a7a6a",
     tagline: L("Le conflit qui brisa la χ-blade et plongea le monde dans les ténèbres.", "The conflict that shattered the χ-blade and plunged the world into darkness."),
     description: L(
-      "À l'Âge des Fées, les cinq Unions de Porteurs s'affrontèrent pour la lumière et pour la χ-blade. La guerre détruisit le monde unique d'alors, le fragmentant en mondes séparés, et brisa la χ-blade en vingt morceaux. Le Cimetière des Keyblades en est le champ de bataille figé. Xehanort tente de la rejouer dans Kingdom Hearts III : c'est la seconde Guerre des Keyblades.",
+      "À l'Âge des Fées, les cinq Unions de Porteurs s'affrontèrent pour la lumière et pour la χ-blade. La guerre détruisit le monde unique d'alors, le fragmentant en mondes séparés, et brisa la χ-blade en vingt morceaux. Le Nécropole des Keyblades en est le champ de bataille figé. Xehanort tente de la rejouer dans Kingdom Hearts III : c'est la seconde Guerre des Keyblades.",
       "In the Age of Fairy Tales, the five Unions of wielders fought over the light and the χ-blade. The war destroyed the single world of the time, fragmenting it into separate worlds, and shattered the χ-blade into twenty pieces. The Keyblade Graveyard is its frozen battlefield. Xehanort tries to replay it in Kingdom Hearts III: the second Keyblade War.",
     ),
     appearances: ["kingdom-hearts-chi", "birth-by-sleep", "kingdom-hearts-iii"],

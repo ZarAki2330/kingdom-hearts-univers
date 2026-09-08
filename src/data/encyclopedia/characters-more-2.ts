@@ -660,7 +660,7 @@ export const moreCharacters2: CharacterEntry[] = [
     ],
     tags: ["boss", "scala ad caelum", "χ-blade"],
   },
-  // ------------------------------------------------------------ Disney — Château Disney et Ville Disney
+  // ------------------------------------------------------------ Disney — Château Disney et Disneyville
   {
     slug: "pluto",
     category: "characters",
@@ -691,12 +691,12 @@ export const moreCharacters2: CharacterEntry[] = [
     name: "Balthazar Picsou",
     names: { en: "Scrooge McDuck", ja: "スクルージ・マクダック" },
     alignment: "light",
-    homeworld: "Ville Disney",
+    homeworld: "Disneyville",
     voice: { en: "Alan Young", ja: "Kōji Yada" },
     accent: "#d84040",
     tagline: L("Le canard le plus riche des mondes, père de la glace à l'eau de mer.", "The richest duck in the worlds, father of sea-salt ice cream."),
     description: L(
-      "Oncle de Donald et homme d'affaires infatigable, Picsou tient une boutique à Hollow Bastion dans Kingdom Hearts II, où il cherche à recréer la recette de sa glace à l'eau de mer. Birth by Sleep montre qu'il s'était installé bien plus tôt à la Ville Disney, y lançant cette glace et le jeu de plateau Command Board.\n\nDans Kingdom Hearts III, il ouvre un bistrot à la Cité du Crépuscule dont il confie les cuisines au Petit Chef.",
+      "Oncle de Donald et homme d'affaires infatigable, Picsou tient une boutique à Hollow Bastion dans Kingdom Hearts II, où il cherche à recréer la recette de sa glace à l'eau de mer. Birth by Sleep montre qu'il s'était installé bien plus tôt à la Disneyville, y lançant cette glace et le jeu de plateau Command Board.\n\nDans Kingdom Hearts III, il ouvre un bistrot à la Cité du Crépuscule dont il confie les cuisines au Petit Chef.",
       "Donald's uncle and a tireless businessman, Scrooge runs a shop in Hollow Bastion in Kingdom Hearts II, where he is trying to recreate his sea-salt ice cream recipe. Birth by Sleep shows he had settled in Disney Town much earlier, launching that ice cream and the Command Board game there.\n\nIn Kingdom Hearts III he opens a bistro in Twilight Town and hands its kitchen to Little Chef.",
     ),
     appearances: ["birth-by-sleep", "kingdom-hearts-ii", "kingdom-hearts-iii"],
@@ -720,7 +720,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#e05030",
     tagline: L("Les trois neveux de Donald, marchands de tous les mondes.", "Donald's three nephews, shopkeepers across the worlds."),
     description: L(
-      "Neveux de Donald, les triplés tiennent la boutique d'objets de la Ville de Traverse dans Kingdom Hearts, puis les échoppes de Hollow Bastion dans Kingdom Hearts II. Birth by Sleep les montre plus jeunes à la Ville Disney, où ils se disputent le stand de glaces de leur oncle Picsou et enseignent la fabrication de glaces à Ventus, Aqua et Terra.",
+      "Neveux de Donald, les triplés tiennent la boutique d'objets de la Ville de Traverse dans Kingdom Hearts, puis les échoppes de Hollow Bastion dans Kingdom Hearts II. Birth by Sleep les montre plus jeunes à la Disneyville, où ils se disputent le stand de glaces de leur oncle Picsou et enseignent la fabrication de glaces à Ventus, Aqua et Terra.",
       "Donald's nephews, the triplets run the item shop in Traverse Town in Kingdom Hearts and the stalls of Hollow Bastion in Kingdom Hearts II. Birth by Sleep shows them younger in Disney Town, squabbling over their uncle Scrooge's ice cream stand and teaching Ventus, Aqua and Terra how to make ice cream.",
     ),
     appearances: ["birth-by-sleep", "kingdom-hearts", "kingdom-hearts-ii"],
@@ -743,7 +743,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#a87838",
     tagline: L("Les balais animés de L'Apprenti sorcier.", "The enchanted brooms of The Sorcerer's Apprentice."),
     description: L(
-      "Issus de la séquence L'Apprenti sorcier de Fantasia, les balais animés servent Yen Sid et Mickey. Dans Kingdom Hearts II, ils portent la Pierre Angulaire dans la salle du Château Disney ; dans Dream Drop Distance, ils peuplent la Symphonie de la Sorcellerie, et l'un d'eux nettoie la Tour Mystérieuse dans Kingdom Hearts III.",
+      "Issus de la séquence L'Apprenti sorcier de Fantasia, les balais animés servent Yen Sid et Mickey. Dans Kingdom Hearts II, ils portent la Pierre Angulaire dans la salle du Château Disney ; dans Dream Drop Distance, ils peuplent la Symphonie du Sorcier, et l'un d'eux nettoie la Tour Mystérieuse dans Kingdom Hearts III.",
       "Born of the Sorcerer's Apprentice segment of Fantasia, the enchanted brooms serve Yen Sid and Mickey. In Kingdom Hearts II they carry the Cornerstone into the Disney Castle hall; in Dream Drop Distance they populate Symphony of Sorcery, and one of them tidies the Mysterious Tower in Kingdom Hearts III.",
     ),
     appearances: ["kingdom-hearts-ii", "dream-drop-distance", "kingdom-hearts-iii"],
@@ -1141,7 +1141,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#8a3a8a",
     tagline: L("Les deux démons gaffeurs au service d'Hadès.", "Hades's two blundering imps."),
     description: L(
-      "Sbires d'Hadès, Peine et Panique passent leur temps à essuyer la colère de leur maître. Dans Kingdom Hearts II, ils gèrent l'inscription au tournoi du Colisée des Ombres et laissent échapper des informations utiles à Sora ; ils continuent de servir Hadès dans Kingdom Hearts III lors de l'assaut contre l'Olympe.",
+      "Sbires d'Hadès, Peine et Panique passent leur temps à essuyer la colère de leur maître. Dans Kingdom Hearts II, ils gèrent l'inscription au tournoi du Arène des Mirages et laissent échapper des informations utiles à Sora ; ils continuent de servir Hadès dans Kingdom Hearts III lors de l'assaut contre l'Olympe.",
       "Hades's minions, Pain and Panic spend their time weathering their master's rage. In Kingdom Hearts II they handle registration for the Underdrome tournaments and let slip information useful to Sora; they go on serving Hades in Kingdom Hearts III during the assault on Olympus.",
     ),
     appearances: ["kingdom-hearts-ii", "kingdom-hearts-iii"],
@@ -1626,7 +1626,7 @@ export const moreCharacters2: CharacterEntry[] = [
     ],
     tags: ["disney", "winnie l'ourson", "livre"],
   },
-  // ------------------------------------------------------------ Disney — Espace Lointain
+  // ------------------------------------------------------------ Disney — Espace Profond
   {
     slug: "jumba",
     category: "characters",
@@ -1634,7 +1634,7 @@ export const moreCharacters2: CharacterEntry[] = [
     name: "Jumba",
     names: { en: "Jumba Jookiba", ja: "ジャンバ" },
     alignment: "twilight",
-    homeworld: "Espace Lointain",
+    homeworld: "Espace Profond",
     voice: { en: "David Ogden Stiers", ja: "Chafurin" },
     accent: "#8a4ab0",
     tagline: L("Le savant fou créateur de l'Expérience 626.", "The mad scientist who created Experiment 626."),
@@ -1658,7 +1658,7 @@ export const moreCharacters2: CharacterEntry[] = [
     name: "Gantu",
     names: { en: "Captain Gantu", ja: "ガントゥ" },
     alignment: "darkness",
-    homeworld: "Espace Lointain",
+    homeworld: "Espace Profond",
     weapon: L("Canon à plasma", "Plasma cannon"),
     voice: { en: "Kevin Michael Richardson", ja: "Tesshō Genda" },
     accent: "#4a6a8a",
@@ -1676,7 +1676,7 @@ export const moreCharacters2: CharacterEntry[] = [
     ],
     tags: ["disney", "lilo et stitch", "boss"],
   },
-  // ------------------------------------------------------------ Disney — Château des Rêves
+  // ------------------------------------------------------------ Disney — Palais des Rêves
   {
     slug: "prince-charming",
     category: "characters",
@@ -1684,7 +1684,7 @@ export const moreCharacters2: CharacterEntry[] = [
     name: "Prince Charmant",
     names: { en: "Prince Charming", ja: "プリンス・チャーミング" },
     alignment: "light",
-    homeworld: "Château des Rêves",
+    homeworld: "Palais des Rêves",
     accent: "#e8e0d0",
     tagline: L("Le prince qui retrouve Cendrillon grâce à une pantoufle.", "The prince who finds Cinderella again thanks to a slipper."),
     description: L(
@@ -1707,7 +1707,7 @@ export const moreCharacters2: CharacterEntry[] = [
     names: { ja: "トレメイン夫人" },
     aliases: ["Madame de Trémaine"],
     alignment: "darkness",
-    homeworld: "Château des Rêves",
+    homeworld: "Palais des Rêves",
     voice: { en: "Susanne Blakeslee", ja: "Mariko Anzai" },
     accent: "#5a3a5a",
     tagline: L("La marâtre glaciale de Cendrillon.", "Cinderella's icy stepmother."),
@@ -1731,7 +1731,7 @@ export const moreCharacters2: CharacterEntry[] = [
     name: "Anastasie et Javotte",
     names: { en: "Anastasia and Drizella", ja: "アナスタシアとドリゼラ" },
     alignment: "darkness",
-    homeworld: "Château des Rêves",
+    homeworld: "Palais des Rêves",
     accent: "#a06a40",
     tagline: L("Les deux demi-sœurs jalouses de Cendrillon.", "Cinderella's two jealous stepsisters."),
     description: L(
@@ -1753,7 +1753,7 @@ export const moreCharacters2: CharacterEntry[] = [
     name: "Marraine la bonne fée",
     names: { en: "Fairy Godmother", ja: "フェアリー・ゴッドマザー" },
     alignment: "light",
-    homeworld: "Château des Rêves",
+    homeworld: "Palais des Rêves",
     weapon: L("Baguette magique", "Magic wand"),
     voice: { en: "Russi Taylor", ja: "Reiko Suzuki" },
     accent: "#a0c0f0",
@@ -2383,6 +2383,7 @@ export const moreCharacters2: CharacterEntry[] = [
     category: "characters",
     kind: "disney",
     name: "Will Turner",
+    aliases: ["William Turner"],
     names: { ja: "ウィル・ターナー" },
     alignment: "light",
     homeworld: "Port Royal",

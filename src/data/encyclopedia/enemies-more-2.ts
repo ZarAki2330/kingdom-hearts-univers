@@ -825,7 +825,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#3a80c0",
     tagline: L("Le Nescient volant qui tire des rayons en piqué.", "The flying Unversed that fires beams while diving."),
     description: L(
-      "Le Sonic Blaster est un Nescient aérien qui tourne au-dessus du champ de bataille et lance des projectiles d'énergie avant de charger. Il apparaît dans l'Espace Lointain et le Jardin Radieux. Il faut le rabattre au sol avec des attaques sautées ou de la magie.",
+      "Le Sonic Blaster est un Nescient aérien qui tourne au-dessus du champ de bataille et lance des projectiles d'énergie avant de charger. Il apparaît dans l'Espace Profond et le Jardin Radieux. Il faut le rabattre au sol avec des attaques sautées ou de la magie.",
       "The Sonic Blaster is an aerial Unversed that circles above the battlefield and fires energy shots before charging. It appears in Deep Space and Radiant Garden. It must be brought down with jumping attacks or magic.",
     ),
     appearances: ["birth-by-sleep"],
@@ -843,7 +843,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#4a4a9a",
     tagline: L("Le Nescient à trois boules d'acier.", "The Unversed with three steel balls."),
     description: L(
-      "Le Triple Wrecker balance trois lourdes boules attachées à son corps pour écraser ce qui l'entoure. Ses attaques circulaires touchent large mais sont lentes. Il apparaît dans les mondes tardifs de Birth by Sleep, comme l'Espace Lointain.",
+      "Le Triple Wrecker balance trois lourdes boules attachées à son corps pour écraser ce qui l'entoure. Ses attaques circulaires touchent large mais sont lentes. Il apparaît dans les mondes tardifs de Birth by Sleep, comme l'Espace Profond.",
       "The Triple Wrecker swings three heavy balls attached to its body to crush everything around it. Its circular attacks reach wide but are slow. It appears in the later worlds of Birth by Sleep, such as Deep Space.",
     ),
     appearances: ["birth-by-sleep"],
@@ -1105,7 +1105,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#7a7ab0",
     tagline: L("Le fantôme à chapeau qui traverse les murs.", "The hat-wearing ghost that passes through walls."),
     description: L(
-      "Le Ghostabocky est un Avale-Rêves spectral coiffé d'un chapeau, qui se rend invisible et surgit pour effrayer sa cible. Il apparaît dans la Ville de Traverse et le Paradis des Farceurs. Sa version farceuse, le Jestabocky, porte un costume de bouffon.",
+      "Le Ghostabocky est un Avale-Rêves spectral coiffé d'un chapeau, qui se rend invisible et surgit pour effrayer sa cible. Il apparaît dans la Ville de Traverse et le Paradis des Garnements. Sa version farceuse, le Jestabocky, porte un costume de bouffon.",
       "The Ghostabocky is a hat-wearing spectral Dream Eater that turns invisible and pops out to frighten its target. It appears in Traverse Town and Prankster's Paradise. Its mischievous version, the Jestabocky, wears a jester's outfit.",
     ),
     appearances: ["dream-drop-distance"],
@@ -1124,7 +1124,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#c04aa0",
     tagline: L("Le fantôme bouffon qui jongle avec des sorts.", "The jester ghost that juggles spells."),
     description: L(
-      "Variante costumée du Ghostabocky, le Jestabocky porte un habit de bouffon et lance des sorts variés en riant. Il apparaît dans le Paradis des Farceurs, où son allure colle au décor de fête foraine. Comme son cousin, il disparaît pour échapper aux coups.",
+      "Variante costumée du Ghostabocky, le Jestabocky porte un habit de bouffon et lance des sorts variés en riant. Il apparaît dans le Paradis des Garnements, où son allure colle au décor de fête foraine. Comme son cousin, il disparaît pour échapper aux coups.",
       "A costumed variant of the Ghostabocky, the Jestabocky wears a jester's suit and casts assorted spells while cackling. It appears in Prankster's Paradise, where its look fits the funfair scenery. Like its cousin, it vanishes to dodge blows.",
     ),
     appearances: ["dream-drop-distance"],
@@ -1143,7 +1143,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#d05a3a",
     tagline: L("Le crabe artilleur qui tire depuis sa carapace.", "The gunner crab that fires from its shell."),
     description: L(
-      "Le Kab Kannon est un crabe Avale-Rêves dont la carapace abrite un canon. Il se replie sur lui-même pour tirer des boulets à distance puis pince quiconque s'approche. On le rencontre dans le Paradis des Farceurs et le Pays des Mousquetaires.",
+      "Le Kab Kannon est un crabe Avale-Rêves dont la carapace abrite un canon. Il se replie sur lui-même pour tirer des boulets à distance puis pince quiconque s'approche. On le rencontre dans le Paradis des Garnements et le Pays des Mousquetaires.",
       "The Kab Kannon is a crab Dream Eater whose shell houses a cannon. It hunkers down to fire cannonballs from afar, then pinches anyone who closes in. It is found in Prankster's Paradise and the Country of the Musketeers.",
     ),
     appearances: ["dream-drop-distance"],
@@ -1276,7 +1276,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#2a5a9a",
     tagline: L("Le scarabée boxeur qui met KO d'un uppercut.", "The boxing beetle that knocks you out with an uppercut."),
     description: L(
-      "Le KO Kabuto est un scarabée rhinocéros Avale-Rêves ganté comme un boxeur, qui enchaîne crochets et uppercuts. Il apparaît dans le Paradis des Farceurs et le Monde qui n'existe pas. Sa garde haute rend les attaques frontales peu efficaces.",
+      "Le KO Kabuto est un scarabée rhinocéros Avale-Rêves ganté comme un boxeur, qui enchaîne crochets et uppercuts. Il apparaît dans le Paradis des Garnements et le Monde qui n'existe pas. Sa garde haute rend les attaques frontales peu efficaces.",
       "The KO Kabuto is a rhinoceros beetle Dream Eater gloved like a boxer, chaining hooks and uppercuts. It appears in Prankster's Paradise and The World That Never Was. Its high guard makes frontal attacks ineffective.",
     ),
     appearances: ["dream-drop-distance"],
@@ -1295,7 +1295,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#3a6ab0",
     tagline: L("Le requin qui nage dans le sol pour surgir.", "The shark that swims through the floor to strike."),
     description: L(
-      "Le Fin Fatale est un requin Avale-Rêves qui plonge dans le sol comme dans l'eau, ne laissant dépasser que sa nageoire, avant de jaillir et de mordre. Il apparaît dans le Paradis des Farceurs et La Grille. Le frapper au moment où il émerge est la seule fenêtre sûre.",
+      "Le Fin Fatale est un requin Avale-Rêves qui plonge dans le sol comme dans l'eau, ne laissant dépasser que sa nageoire, avant de jaillir et de mordre. Il apparaît dans le Paradis des Garnements et La Grille. Le frapper au moment où il émerge est la seule fenêtre sûre.",
       "The Fin Fatale is a shark Dream Eater that dives into the floor as if it were water, leaving only its fin showing, before bursting out to bite. It appears in Prankster's Paradise and The Grid. Hitting it as it emerges is the only safe window.",
     ),
     appearances: ["dream-drop-distance"],
@@ -1333,7 +1333,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#e0c0e0",
     tagline: L("Le lapin qui se dédouble pour semer la confusion.", "The rabbit that duplicates itself to confuse."),
     description: L(
-      "Le Me Me Bunny est un lapin Avale-Rêves qui crée des copies de lui-même et bondit en tous sens. Ses clones disparaissent au premier coup, mais l'original continue de harceler sa cible. Il apparaît dans le Paradis des Farceurs et le Pays des Mousquetaires.",
+      "Le Me Me Bunny est un lapin Avale-Rêves qui crée des copies de lui-même et bondit en tous sens. Ses clones disparaissent au premier coup, mais l'original continue de harceler sa cible. Il apparaît dans le Paradis des Garnements et le Pays des Mousquetaires.",
       "The Me Me Bunny is a rabbit Dream Eater that spawns copies of itself and hops all over the place. Its clones vanish at the first hit, but the original keeps pestering its target. It appears in Prankster's Paradise and the Country of the Musketeers.",
     ),
     appearances: ["dream-drop-distance"],
@@ -1352,7 +1352,7 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#8a4ab0",
     tagline: L("Le lapin magicien sorti de son chapeau.", "The magician rabbit that pops out of its hat."),
     description: L(
-      "Le Majik Lapin est un lapin Avale-Rêves coiffé d'un haut-de-forme, qui enchaîne les sorts et disparaît dans son chapeau pour réapparaître ailleurs. Il apparaît dans la Symphonie des Sorciers et le Paradis des Farceurs. Ses tours de passe-passe le rendent difficile à suivre.",
+      "Le Majik Lapin est un lapin Avale-Rêves coiffé d'un haut-de-forme, qui enchaîne les sorts et disparaît dans son chapeau pour réapparaître ailleurs. Il apparaît dans la Symphonie des Sorciers et le Paradis des Garnements. Ses tours de passe-passe le rendent difficile à suivre.",
       "The Majik Lapin is a rabbit Dream Eater in a top hat that chains spells and disappears into its hat to reappear elsewhere. It appears in Symphony of Sorcery and Prankster's Paradise. Its sleight of hand makes it hard to track.",
     ),
     appearances: ["dream-drop-distance"],

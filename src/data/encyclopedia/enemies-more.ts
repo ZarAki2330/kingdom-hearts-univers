@@ -1340,7 +1340,7 @@ export const moreEnemies: EnemyEntry[] = [
     accent: "#2a0a1a",
     tagline: L("Le duelliste des ténèbres, boss secret des portails de combat.", "The darkness duellist, secret boss of the battlegates."),
     description: L(
-      "Sans-cœur pur-sang de Kingdom Hearts III, le Dark Inferno se cache derrière l'un des portails de combat du Cimetière des Keyblades. Il combat à l'épée avec une vitesse redoutable et s'entoure de flammes noires. Une version encore plus puissante, le Dark Inferno χ, l'attend dans le contenu Re:Mind.",
+      "Sans-cœur pur-sang de Kingdom Hearts III, le Dark Inferno se cache derrière l'un des portails de combat du Nécropole des Keyblades. Il combat à l'épée avec une vitesse redoutable et s'entoure de flammes noires. Une version encore plus puissante, le Dark Inferno χ, l'attend dans le contenu Re:Mind.",
       "A Pureblood Heartless of Kingdom Hearts III, the Dark Inferno lurks behind one of the battlegates in the Keyblade Graveyard. It fights with a sword at fearsome speed and wreathes itself in black flames. An even stronger version, the Dark Inferno χ, awaits in the Re:Mind content.",
     ),
     appearances: ["kingdom-hearts-iii"],
@@ -1599,7 +1599,7 @@ export const moreEnemies: EnemyEntry[] = [
     accent: "#6a8ab0",
     tagline: L("Le lièvre Nescient qui bondit et fuit.", "The hare Unversed that hops and flees."),
     description: L(
-      "Le Hareraiser est un Nescient en forme de lapin qui saute partout et donne des coups de pied avant de détaler. Rapide et peu résistant, il apparaît dans la Forêt des Nains et au Château des Rêves. Un sort de zone ou un Shotlock en vient facilement à bout.",
+      "Le Hareraiser est un Nescient en forme de lapin qui saute partout et donne des coups de pied avant de détaler. Rapide et peu résistant, il apparaît dans la Forêt des Nains et au Palais des Rêves. Un sort de zone ou un Shotlock en vient facilement à bout.",
       "The Hareraiser is a rabbit-shaped Unversed that hops around and kicks before darting away. Fast and frail, it appears in Dwarf Woodlands and Castle of Dreams. An area spell or a Shotlock takes care of it easily.",
     ),
     appearances: ["birth-by-sleep"],
@@ -1689,7 +1689,7 @@ export const moreEnemies: EnemyEntry[] = [
     accent: "#7a5a9a",
     tagline: L("Le coffre Nescient qui cache des trésors.", "The chest Unversed that hides treasures."),
     description: L(
-      "Nescient timide en forme de coffre sur pattes, le Shoegazer garde son couvercle fermé et se dérobe aux attaques. Il faut l'ouvrir de force pour en récupérer le contenu, souvent des objets précieux. Il apparaît dans la Forêt des Nains et au Château des Rêves.",
+      "Nescient timide en forme de coffre sur pattes, le Shoegazer garde son couvercle fermé et se dérobe aux attaques. Il faut l'ouvrir de force pour en récupérer le contenu, souvent des objets précieux. Il apparaît dans la Forêt des Nains et au Palais des Rêves.",
       "A shy Unversed shaped like a chest on legs, the Shoegazer keeps its lid shut and dodges attacks. Force it open to claim its contents, often valuable items. It appears in Dwarf Woodlands and Castle of Dreams.",
     ),
     appearances: ["birth-by-sleep"],
@@ -1725,7 +1725,7 @@ export const moreEnemies: EnemyEntry[] = [
     accent: "#8a6a30",
     tagline: L("Le sablier Nescient qui manipule le temps.", "The hourglass Unversed that toys with time."),
     description: L(
-      "Nescient en forme de sablier, le Chrono Twister ralentit ou arrête ses adversaires et frappe de ses bras-aiguilles. Il apparaît au Château des Rêves et dans quelques mondes ultérieurs. Le tuer vite, ou le faire tomber au sol en le renversant, évite son effet de lenteur.",
+      "Nescient en forme de sablier, le Chrono Twister ralentit ou arrête ses adversaires et frappe de ses bras-aiguilles. Il apparaît au Palais des Rêves et dans quelques mondes ultérieurs. Le tuer vite, ou le faire tomber au sol en le renversant, évite son effet de lenteur.",
       "An hourglass-shaped Unversed, the Chrono Twister slows or stops its foes and strikes with its clock-hand arms. It appears in Castle of Dreams and a few later worlds. Killing it quickly, or toppling it over, avoids its slow effect.",
     ),
     appearances: ["birth-by-sleep"],
@@ -1761,7 +1761,7 @@ export const moreEnemies: EnemyEntry[] = [
     accent: "#6a2a6a",
     tagline: L("Le carrosse maudit né de la jalousie de la belle-mère.", "The cursed carriage born from the stepmother's envy."),
     description: L(
-      "Au Château des Rêves, Aqua affronte ce Nescient en forme de carrosse-citrouille corrompu, apparu de la rancœur de Lady Trémaine et de ses filles. Il roule sur ses adversaires, lâche des bombes et lance des Floods depuis son toit. Ses roues sont vulnérables après une charge.",
+      "Au Palais des Rêves, Aqua affronte ce Nescient en forme de carrosse-citrouille corrompu, apparu de la rancœur de Lady Trémaine et de ses filles. Il roule sur ses adversaires, lâche des bombes et lance des Floods depuis son toit. Ses roues sont vulnérables après une charge.",
       "In Castle of Dreams, Aqua fights this Unversed shaped like a corrupted pumpkin carriage, born from the spite of Lady Tremaine and her daughters. It runs over foes, drops bombs and launches Floods from its roof. Its wheels are vulnerable after a charge.",
     ),
     appearances: ["birth-by-sleep"],
@@ -1779,7 +1779,7 @@ export const moreEnemies: EnemyEntry[] = [
     accent: "#3a4a9a",
     tagline: L("Le chef d'orchestre Nescient du bal de Cendrillon.", "The conductor Unversed of Cinderella's ball."),
     description: L(
-      "Terra affronte ce Nescient dans la salle de bal du Château des Rêves. Le Symphony Master dirige trois instruments vivants — tambour, trompette et violon — qui attaquent à sa baguette. Détruire les instruments le laisse sans défense pour quelques secondes.",
+      "Terra affronte ce Nescient dans la salle de bal du Palais des Rêves. Le Symphony Master dirige trois instruments vivants — tambour, trompette et violon — qui attaquent à sa baguette. Détruire les instruments le laisse sans défense pour quelques secondes.",
       "Terra fights this Unversed in the ballroom of Castle of Dreams. The Symphony Master conducts three living instruments — drum, horn and violin — that attack at its baton's command. Destroying the instruments leaves it defenceless for a few seconds.",
     ),
     appearances: ["birth-by-sleep"],

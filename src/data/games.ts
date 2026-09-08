@@ -160,8 +160,8 @@ const rawGames: Game[] = [
     accent: "#d2b21f",
     cover: { src: "/images/games/re-coded.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 900, height: 813 },
     synopsis: {
-      fr: "Après Kingdom Hearts II, Jiminy Cricket découvre un message inconnu dans son journal. Le roi Mickey numérise le carnet et envoie un Sora de données explorer des mondes corrompus par des bugs, jusqu'à révéler ceux qui souffrent et qu'il faut sauver. Remake du jeu mobile coded (2008).",
-      en: "After Kingdom Hearts II, Jiminy Cricket finds an unknown message in his journal. King Mickey digitises the journal and sends a Data Sora to explore worlds corrupted by bugs, until the message reveals those who hurt and must be saved. Remake of the mobile game coded (2008).",
+      fr: "Après Kingdom Hearts II, Jiminy Criquet découvre un message inconnu dans son journal. Le roi Mickey numérise le carnet et envoie un Sora de données explorer des mondes corrompus par des bugs, jusqu'à révéler ceux qui souffrent et qu'il faut sauver. Remake du jeu mobile coded (2008).",
+      en: "After Kingdom Hearts II, Jiminy Criquet finds an unknown message in his journal. King Mickey digitises the journal and sends a Data Sora to explore worlds corrupted by bugs, until the message reveals those who hurt and must be saved. Remake of the mobile game coded (2008).",
     },
   },
   {
@@ -231,7 +231,7 @@ const rawGames: Game[] = [
     accent: "#34509b",
     cover: { src: "/images/games/kingdom-hearts-iii.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 718, height: 900 },
     synopsis: {
-      fr: "Conclusion de la Saga des Ténèbres de Xehanort. Sora, Donald et Dingo cherchent le pouvoir de l'éveil pour rassembler les sept Gardiens de la Lumière, tandis que la véritable Organisation XIII prépare la seconde Guerre des Keyblades au Cimetière des Keyblades. Le DLC Re Mind prolonge le dénouement.",
+      fr: "Conclusion de la Saga des Ténèbres de Xehanort. Sora, Donald et Dingo cherchent le pouvoir de l'éveil pour rassembler les sept Gardiens de la Lumière, tandis que la véritable Organisation XIII prépare la seconde Guerre des Keyblades au Nécropole des Keyblades. Le DLC Re Mind prolonge le dénouement.",
       en: "Conclusion of the Dark Seeker Saga. Sora, Donald and Goofy seek the power of waking to gather the seven Guardians of Light, while the true Organization XIII prepares the second Keyblade War at the Keyblade Graveyard. The Re Mind DLC extends the ending.",
     },
   },

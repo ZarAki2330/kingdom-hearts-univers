@@ -200,13 +200,13 @@ export const lore: Record<string, EntryLore> = {
     sources: [{ label: "Kingdom Hearts Wiki — Roo", url: "https://kingdomhearts.fandom.com/wiki/Roo" }],
   },
 
-  // ─────────────────────── Espace Lointain ───────────────────────
+  // ─────────────────────── Espace Profond ───────────────────────
   "jumba": {
     sections: [
       {
         title: L("Origines", "Origins"),
         text: L(
-          "Jumba Jookiba est le savant fou de Lilo et Stitch (2002), condamné par la Fédération galactique pour avoir créé une expérience génétique illégale : la créature numérotée 626, indestructible et incapable de faire autre chose que détruire.\n\nBirth by Sleep récupère ce point de départ, mais se place avant le film : 626 n'a pas encore rencontré Lilo, et Jumba est encore prisonnier. Le jeu en fait un personnage ambigu, à mi-chemin entre le savant vaniteux et le complice des ennuis qui frappent le vaisseau. Ses expériences y côtoient les Nescients, ce qui donne à l'Espace Lointain une atmosphère de laboratoire hors de contrôle.",
+          "Jumba Jookiba est le savant fou de Lilo et Stitch (2002), condamné par la Fédération galactique pour avoir créé une expérience génétique illégale : la créature numérotée 626, indestructible et incapable de faire autre chose que détruire.\n\nBirth by Sleep récupère ce point de départ, mais se place avant le film : 626 n'a pas encore rencontré Lilo, et Jumba est encore prisonnier. Le jeu en fait un personnage ambigu, à mi-chemin entre le savant vaniteux et le complice des ennuis qui frappent le vaisseau. Ses expériences y côtoient les Nescients, ce qui donne à l'Espace Profond une atmosphère de laboratoire hors de contrôle.",
           "Jumba Jookiba is the mad scientist of Lilo & Stitch (2002), sentenced by the Galactic Federation for creating an illegal genetic experiment: creature number 626, indestructible and able to do nothing but destroy.\n\nBirth by Sleep picks up that premise but sets itself before the film: 626 has not yet met Lilo, and Jumba is still a prisoner. The game makes him an ambiguous figure, halfway between vain scientist and accomplice to the trouble sweeping the ship. His experiments rub shoulders with the Unversed there, giving Deep Space the air of a laboratory out of control.",
         ),
       },
@@ -226,7 +226,7 @@ export const lore: Record<string, EntryLore> = {
       {
         title: L("Origines", "Origins"),
         text: L(
-          "Capitaine de la Fédération galactique dans Lilo et Stitch, Gantu est un colosse à tête de requin chargé de capturer l'Expérience 626. Rigide, obsédé par le règlement et humilié à chaque échec, il incarne l'autorité dépassée par une créature plus rapide et plus maligne que lui.\n\nBirth by Sleep en fait le maître du vaisseau qui sert de décor à l'Espace Lointain, et l'un des rares antagonistes Disney du jeu à n'avoir aucun lien avec les ténèbres de Xehanort. Sa méfiance envers les intrus, plus que la malveillance, le place en travers de la route des trois porteurs de Keyblade.",
+          "Capitaine de la Fédération galactique dans Lilo et Stitch, Gantu est un colosse à tête de requin chargé de capturer l'Expérience 626. Rigide, obsédé par le règlement et humilié à chaque échec, il incarne l'autorité dépassée par une créature plus rapide et plus maligne que lui.\n\nBirth by Sleep en fait le maître du vaisseau qui sert de décor à l'Espace Profond, et l'un des rares antagonistes Disney du jeu à n'avoir aucun lien avec les ténèbres de Xehanort. Sa méfiance envers les intrus, plus que la malveillance, le place en travers de la route des trois porteurs de Keyblade.",
           "A Galactic Federation captain in Lilo & Stitch, Gantu is a shark-headed giant tasked with capturing Experiment 626. Rigid, obsessed with regulations and humiliated by every failure, he embodies authority outmatched by a creature faster and cleverer than himself.\n\nBirth by Sleep makes him master of the ship that serves as Deep Space's setting, and one of the few Disney antagonists in the game with no ties to Xehanort's darkness. It is suspicion of intruders, rather than malice, that puts him in the way of the three Keyblade wielders.",
         ),
       },
@@ -241,13 +241,13 @@ export const lore: Record<string, EntryLore> = {
     sources: [{ label: "Kingdom Hearts Wiki — Gantu", url: "https://kingdomhearts.fandom.com/wiki/Gantu" }],
   },
 
-  // ─────────────────────── Château des Rêves ───────────────────────
+  // ─────────────────────── Palais des Rêves ───────────────────────
   "prince-charming": {
     sections: [
       {
         title: L("Origines", "Origins"),
         text: L(
-          "Le Prince Charmant de Cendrillon (1950) est un personnage volontairement schématique : il danse avec l'inconnue du bal, la perd à minuit et fait fouiller le royaume pour retrouver la propriétaire de la pantoufle de verre. Le film lui donne peu de répliques et lui confie surtout une fonction, celle de la promesse tenue.\n\nBirth by Sleep respecte cette économie. Dans le Château des Rêves, le prince n'a pas de rôle de combattant, ne rencontre jamais les Nescients de face et ne connaît rien des porteurs de Keyblade. Il sert de point d'arrivée à l'histoire de Cendrillon, à laquelle Terra puis Aqua contribuent chacun à leur manière.",
+          "Le Prince Charmant de Cendrillon (1950) est un personnage volontairement schématique : il danse avec l'inconnue du bal, la perd à minuit et fait fouiller le royaume pour retrouver la propriétaire de la pantoufle de verre. Le film lui donne peu de répliques et lui confie surtout une fonction, celle de la promesse tenue.\n\nBirth by Sleep respecte cette économie. Dans le Palais des Rêves, le prince n'a pas de rôle de combattant, ne rencontre jamais les Nescients de face et ne connaît rien des porteurs de Keyblade. Il sert de point d'arrivée à l'histoire de Cendrillon, à laquelle Terra puis Aqua contribuent chacun à leur manière.",
           "Prince Charming in Cinderella (1950) is a deliberately schematic figure: he dances with the stranger at the ball, loses her at midnight and has the kingdom searched for the owner of the glass slipper. The film gives him few lines and mostly one function, that of the promise kept.\n\nBirth by Sleep respects that economy. In the Castle of Dreams the prince is no fighter, never faces the Unversed directly and knows nothing of the Keyblade wielders. He is the destination of Cinderella's story, to which Terra and then Aqua each contribute in their own way.",
         ),
       },
@@ -267,7 +267,7 @@ export const lore: Record<string, EntryLore> = {
       {
         title: L("Origines", "Origins"),
         text: L(
-          "Lady Tremaine, la belle-mère de Cendrillon, est l'une des méchantes Disney les plus froides : elle ne recourt ni à la magie ni à la violence, mais à l'humiliation quotidienne et à une cruauté administrée avec calme. Son pouvoir tient à sa position dans la maison, pas à un sortilège.\n\nKingdom Hearts la fait entrer dans sa mécanique propre en reliant sa jalousie aux Nescients, les créatures nées des émotions négatives que Vanitas répand dans les mondes. Le Château des Rêves illustre ainsi, à petite échelle, le principe du jeu : une rancune humaine suffit à faire naître un monstre.",
+          "Lady Tremaine, la belle-mère de Cendrillon, est l'une des méchantes Disney les plus froides : elle ne recourt ni à la magie ni à la violence, mais à l'humiliation quotidienne et à une cruauté administrée avec calme. Son pouvoir tient à sa position dans la maison, pas à un sortilège.\n\nKingdom Hearts la fait entrer dans sa mécanique propre en reliant sa jalousie aux Nescients, les créatures nées des émotions négatives que Vanitas répand dans les mondes. Le Palais des Rêves illustre ainsi, à petite échelle, le principe du jeu : une rancune humaine suffit à faire naître un monstre.",
           "Lady Tremaine, Cinderella's stepmother, is one of Disney's coldest villains: she uses neither magic nor violence, but daily humiliation and calmly administered cruelty. Her power lies in her position in the household, not in any spell.\n\nKingdom Hearts folds her into its own machinery by tying her jealousy to the Unversed, the creatures born of the negative emotions Vanitas spreads across the worlds. On a small scale, the Castle of Dreams illustrates the game's principle: a human grudge is enough to give birth to a monster.",
         ),
       },
@@ -314,7 +314,7 @@ export const lore: Record<string, EntryLore> = {
       {
         game: "birth-by-sleep",
         text: L(
-          "Dans le Château des Rêves, la bonne fée apparaît à Cendrillon après que ses demi-sœurs ont détruit sa robe, et lui offre le carrosse, la tenue et les pantoufles de verre pour une nuit. Terra puis Aqua la croisent au cours de leurs visites.\n\nElle leur tient à chaque fois le même discours : un rêve auquel on croit vraiment est une force capable d'éclairer un cœur, même quand tout paraît perdu. Ces conversations donnent au monde sa fonction dans l'intrigue générale, en formulant l'idée que la lumière ne vient pas seulement de la Keyblade. La fée aide aussi indirectement Aqua à comprendre pourquoi les Nescients s'attachent aux détresses les plus intimes.",
+          "Dans le Palais des Rêves, la bonne fée apparaît à Cendrillon après que ses demi-sœurs ont détruit sa robe, et lui offre le carrosse, la tenue et les pantoufles de verre pour une nuit. Terra puis Aqua la croisent au cours de leurs visites.\n\nElle leur tient à chaque fois le même discours : un rêve auquel on croit vraiment est une force capable d'éclairer un cœur, même quand tout paraît perdu. Ces conversations donnent au monde sa fonction dans l'intrigue générale, en formulant l'idée que la lumière ne vient pas seulement de la Keyblade. La fée aide aussi indirectement Aqua à comprendre pourquoi les Nescients s'attachent aux détresses les plus intimes.",
           "In the Castle of Dreams the Fairy Godmother appears to Cinderella after her stepsisters have destroyed her dress, and grants her the coach, the gown and the glass slippers for one night. Terra and then Aqua meet her during their visits.\n\nShe gives them the same message each time: a dream truly believed in is a force able to light up a heart, even when all seems lost. These conversations give the world its place in the wider plot by voicing the idea that light does not come from the Keyblade alone. The fairy also helps Aqua understand, indirectly, why the Unversed fasten onto the most intimate distress.",
         ),
       },
