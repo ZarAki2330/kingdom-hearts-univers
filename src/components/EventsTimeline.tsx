@@ -25,7 +25,7 @@ export async function EventsTimeline({ locale }: { locale: Locale }) {
           {groups.map(({ era, events }, i) => (
             <li key={era.id} className="mb-1.5 break-inside-avoid text-sm">
               <a href={`#${era.id}`} className="font-semibold hover:text-accent hover:underline">
-                <span className="mr-2.5 inline-block min-w-9 pr-1.5 font-display font-bold text-accent">{roman(i + 1)}.</span>
+                <span className="mr-1.5 inline-block min-w-8 font-display font-bold text-accent">{roman(i + 1)}.</span>
                 {localized(era.title, locale)}
               </a>
               <span className="tabular ml-1.5 text-xs text-text-2">({events.length})</span>

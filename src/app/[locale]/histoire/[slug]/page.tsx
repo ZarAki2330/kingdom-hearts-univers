@@ -83,7 +83,7 @@ export default async function GameStoryPage({ params }: Props) {
           {story.chapters.map((c, i) => (
             <li key={c.id} className="mb-1.5 break-inside-avoid text-sm">
               <a href={`#${c.id}`} className="font-semibold hover:text-accent hover:underline">
-                <span className="mr-2.5 inline-block min-w-9 pr-1.5 font-display font-bold text-accent">{roman(i + 1)}.</span>
+                <span className="mr-1.5 inline-block min-w-8 font-display font-bold text-accent">{roman(i + 1)}.</span>
                 {localized(c.title, locale)}
               </a>
             </li>
