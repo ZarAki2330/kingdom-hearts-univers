@@ -52,7 +52,7 @@ Couverture exhaustive de l'univers
 - [x] Ajouter toutes les Keyblades — _120 Keyblades : toute la série, y compris gears de Days et Union χ_
 - [x] Ajouter tous les mondes — _50 mondes, toutes les visites de la série_
 
-## III ter. Enrichir l'encyclopédie — 7/7
+## III ter. Enrichir l'encyclopédie — 7/8
 
 Images, navigation, profondeur des fiches
 
@@ -63,6 +63,7 @@ Images, navigation, profondeur des fiches
 - [x] Préciser le film d'origine des personnages Disney — _139 personnages Disney : œuvre d'origine (fr/en, année) dérivée du monde + corrections manuelles, affichée sur la carte et la fiche_
 - [x] Réadapter le titre du site dans la barre de navigation — _Titre sur deux lignes compactes (Kingdom Hearts / UNIVERS), plus de retour à la ligne ; menu mobile en icône avec le sélecteur de thème intégré_
 - [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
+- [ ] Afficher les statistiques des Keyblades par jeu — _Force, Magie et capacité varient d'un jeu à l'autre : un tableau par jeu sur la fiche, au lieu d'une seule valeur_
 
 ## III quater. Finitions de l'interface — 5/8
 
