@@ -549,27 +549,7 @@ export const lore: Record<string, EntryLore> = {
   },
 
   // ─────────────────────────── Gluttonous Goo ───────────────────────────
-  "gluttonous-goo": {
-    sections: [
-      {
-        title: NATURE,
-        text: L(
-          "Le Gluttonous Goo est un Nescient, l'une des créatures nées des émotions négatives de Vanitas dans Birth by Sleep. Il se présente comme une énorme masse gélatineuse verdâtre, molle et tremblante, dont la surface laisse apparaître le blason rouge et noir de l'espèce. Son nom dit sa fonction : il engloutit tout ce qu'il touche.\n\nOn l'affronte dans l'Arène des Mirages, l'espace de combat virtuel de Birth by Sleep où les trois apprentis peuvent relever des défis indépendants du récit principal. Sa gelée se divise en fragments plus petits qui poursuivent séparément l'adversaire, puis se reforment ; il faut donc réduire toutes ses parties presque en même temps pour l'empêcher de se reconstituer indéfiniment.",
-          "The Gluttonous Goo is an Unversed, one of the creatures born from Vanitas's negative emotions in Birth by Sleep. It appears as an enormous greenish jelly, soft and quivering, its surface showing the species' red and black crest. Its name says what it does: it swallows whatever it touches.\n\nIt is fought in the Mirage Arena, Birth by Sleep's virtual battle space where the three apprentices can take on challenges outside the main story. Its jelly splits into smaller fragments that chase the player separately before merging again, so every part must be worn down at nearly the same time to keep it from endlessly re-forming.",
-        ),
-      },
-      {
-        game: "birth-by-sleep",
-        text: L(
-          "Le Gluttonous Goo n'apparaît dans aucune scène de l'histoire : c'est un adversaire propre à l'Arène des Mirages, ce lieu d'entraînement où Terra, Ventus et Aqua affrontent des vagues d'ennemis, seuls ou à plusieurs joueurs selon les modes.\n\nSon combat est un exercice de gestion de cibles multiples plutôt qu'un duel : il faut disperser ses attaques sur toutes les fractions de gelée, exploiter les sorts de zone et les Styles de Combat pour les affaiblir simultanément. Les récompenses de l'arène, commandes rares et objets de renforcement, en font un passage obligé pour les joueurs qui veulent préparer les combats optionnels les plus exigeants du jeu, comme les quatre versions de l'Iron Imprisoner ou le Vanitas Remnant.",
-          "The Gluttonous Goo appears in no story scene: it is an opponent specific to the Mirage Arena, the training ground where Terra, Ventus and Aqua face waves of enemies, alone or in multiplayer depending on the mode.\n\nIts fight is an exercise in handling multiple targets rather than a duel: attacks must be spread across every jelly fragment, using area spells and Command Styles to weaken them at once. The arena's rewards, rare commands and upgrade items, make it a required stop for players preparing the game's most demanding optional battles, such as the four Iron Imprisoners or the Vanitas Remnant.",
-        ),
-      },
-    ],
-    sources: [{ label: "Kingdom Hearts Wiki — Gluttonous Goo", url: "https://kingdomhearts.fandom.com/wiki/Gluttonous_Goo" }],
-  },
-
-  // ─────────────────────────── Queen Buzzerfly ───────────────────────────
+// ─────────────────────────── Queen Buzzerfly ───────────────────────────
   "queen-buzzerfly": {
     sections: [
       {
