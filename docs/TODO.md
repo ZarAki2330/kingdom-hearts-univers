@@ -69,7 +69,7 @@ Images, navigation, profondeur des fiches
 Navigation, visuels et détails de présentation
 
 - [x] Drapeaux dans le sélecteur de langue — _Drapeaux dessinés en SVG (les emojis drapeaux ne s'affichent pas sous Windows) + nom de la langue ; menu de liens réels qui conservent la page courante, clavier et Échap_
-- [x] Sous-menus dans la barre de navigation — _Encyclopédie → les 5 catégories ; au survol et au clavier sur ordinateur (aria-expanded, Échap), sous-liste dépliée dans le menu mobile_
+- [x] Sous-menus dans la barre de navigation — _Encyclopédie → les 5 catégories, Histoire → les jeux résumés ; au survol et au clavier sur ordinateur (aria-expanded, Échap), sous-liste dépliée dans le menu mobile_
 - [x] Supprimer les encadrés vides des fiches — _L'encadré des caractéristiques ne s'affiche plus quand l'entrée n'a aucune donnée à montrer (ex. Keyblades sans statistiques)_
 - [ ] Remplacer les images peu flatteuses de certaines fiches — _Captures d'écran et visuels mal cadrés à remplacer par de meilleurs rendus_
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
@@ -77,11 +77,11 @@ Navigation, visuels et détails de présentation
 - [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_
 - [ ] Revoir les fonds de couleur des jeux — _Dégradés des cartes et des fiches de jeu_
 
-## IV. Histoire — 0/3
+## IV. Histoire — 1/3
 
 Récit de chaque jeu et chronologie de l'univers
 
-- [ ] Résumé détaillé de l'histoire de chaque jeu — _Avec balises spoilers_
+- [x] Résumé détaillé de l'histoire de chaque jeu — _Section /histoire : les 14 jeux résumés (≈ 47 000 mots fr + en), index chronologique, sommaire ancré, avertissement spoilers, personnages et lieux clés liés à l'encyclopédie ; sous-menu Histoire dans la navbar_
 - [ ] Frise chronologique des événements importants — _De l'Âge des Fées à Quadratum_
 - [ ] Glossaire des termes
 
