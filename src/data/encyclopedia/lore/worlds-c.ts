@@ -183,8 +183,8 @@ export const lore: Record<string, EntryLore> = {
     ],
   },
 
-  // ─────────────────────────── Entre-deux ───────────────────────────
-  "betwixt-and-between": {
+  // ─────────────────────────── Couloirs des Ténèbres ───────────────────────────
+  "corridors-of-darkness": {
     sections: [
       {
         title: L("Origines / nature du lieu", "Origins / nature of the place"),
