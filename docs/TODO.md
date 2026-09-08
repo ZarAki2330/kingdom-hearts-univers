@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 58 % (36/62 tâches)**
+**Avancement global : 61 % (38/62 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -64,12 +64,12 @@ Images, navigation, profondeur des fiches
 - [x] Réadapter le titre du site dans la barre de navigation — _Titre sur deux lignes compactes (Kingdom Hearts / UNIVERS), plus de retour à la ligne ; menu mobile en icône avec le sélecteur de thème intégré_
 - [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
 
-## III quater. Finitions de l'interface — 0/8
+## III quater. Finitions de l'interface — 2/8
 
 Navigation, visuels et détails de présentation
 
-- [ ] Drapeaux dans le sélecteur de langue — _Drapeau + nom de la langue, accessible (pas seulement le drapeau)_
-- [ ] Sous-menus dans la barre de navigation — _Ex. Encyclopédie → Personnages, Ennemis, Mondes, Keyblades, Concepts ; clavier et mobile_
+- [x] Drapeaux dans le sélecteur de langue — _Drapeaux dessinés en SVG (les emojis drapeaux ne s'affichent pas sous Windows) + nom de la langue ; menu de liens réels qui conservent la page courante, clavier et Échap_
+- [x] Sous-menus dans la barre de navigation — _Encyclopédie → les 5 catégories ; au survol et au clavier sur ordinateur (aria-expanded, Échap), sous-liste dépliée dans le menu mobile_
 - [ ] Supprimer les encadrés vides des fiches — _Ex. fiches de Keyblades : ne pas afficher un bloc quand la donnée manque_
 - [ ] Remplacer les images peu flatteuses de certaines fiches — _Captures d'écran et visuels mal cadrés à remplacer par de meilleurs rendus_
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
