@@ -171,11 +171,17 @@ export function EntryList({ entries, kinds, games, category }: { entries: Entry[
       {visible.length === 0 ? (
         <p className="mt-6 rounded-xl border border-dashed border-line p-6 text-center text-text-2">{t("noResult")}</p>
       ) : (
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {visible.map((e) => (
-            <EntryCard key={e.slug} entry={e} kindLabel={(e as Kinded).kind ? tk(`kinds.${(e as Kinded).kind}`) : ""} />
-          ))}
-        </ul>
+        <section aria-labelledby="resultats">
+          {/* Titre de niveau 2 : les cartes portent des h3, la hiérarchie reste continue. */}
+          <h2 id="resultats" className="sr-only">
+            {t("results")}
+          </h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {visible.map((e) => (
+              <EntryCard key={e.slug} entry={e} kindLabel={(e as Kinded).kind ? tk(`kinds.${(e as Kinded).kind}`) : ""} />
+            ))}
+          </ul>
+        </section>
       )}
       <Pagination page={current} total={totalPages} pathname={pathname} query={query} />
     </>

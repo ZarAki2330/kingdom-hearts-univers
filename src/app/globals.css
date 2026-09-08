@@ -15,6 +15,9 @@
   --text: #1b1f33;
   --text-2: #5b6078;
   --accent: #a8791a;
+  /* Accent assombri pour le texte et les aplats : 4.5:1 minimum sur fond clair (WCAG AA). */
+  --accent-text: #8a6212;
+  --accent-fill: #8a6212;
   --accent-2: #2f6fb5;
   --accent-contrast: #ffffff;
   --glow: rgba(168, 121, 26, 0.25);
@@ -33,6 +36,8 @@
   --text: #2b1f2e;
   --text-2: #6f5a6b;
   --accent: #c2622e;
+  --accent-text: #a8481f;
+  --accent-fill: #a8481f;
   --accent-2: #8d5ba6;
   --accent-contrast: #ffffff;
   --glow: rgba(194, 98, 46, 0.25);
@@ -50,6 +55,8 @@
   --text: #f3ecf9;
   --text-2: #b7aacd;
   --accent: #f0a35c;
+  --accent-text: #f0a35c;
+  --accent-fill: #f0a35c;
   --accent-2: #c58ff5;
   --accent-contrast: #1d1730;
   --glow: rgba(240, 163, 92, 0.3);
@@ -69,6 +76,8 @@
     --text: #eae6f5;
     --text-2: #9ba1be;
     --accent: #e8b84a;
+    --accent-text: #e8b84a;
+    --accent-fill: #e8b84a;
     --accent-2: #7cc4ff;
     --accent-contrast: #0b1020;
     --glow: rgba(232, 184, 74, 0.3);
@@ -88,6 +97,8 @@
   --text: #eae6f5;
   --text-2: #9ba1be;
   --accent: #e8b84a;
+  --accent-text: #e8b84a;
+  --accent-fill: #e8b84a;
   --accent-2: #7cc4ff;
   --accent-contrast: #0b1020;
   --glow: rgba(232, 184, 74, 0.3);
@@ -162,7 +173,21 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
+}
+
+/*
+ * Contraste AA : le doré décoratif (--accent) reste pour les bordures et les halos,
+ * mais tout ce qui porte du texte utilise sa version assombrie sur les thèmes clairs.
+ * Ces règles sont hors couche, donc elles l'emportent sur les utilitaires Tailwind.
+ */
+.text-accent,
+.hover\:text-accent:hover {
+  color: var(--accent-text);
+}
+
+.bg-accent {
+  background-color: var(--accent-fill);
 }
 
 /* Cartes : élévation réservée aux objets cliquables */

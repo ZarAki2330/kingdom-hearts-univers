@@ -82,7 +82,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <h2 id="explore" className="text-2xl font-bold sm:text-3xl">{t("sectionsTitle")}</h2>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {sections.map((s) => (
-            <li key={s.key} className={`card ${s.live ? "card-link" : "opacity-80"}`}>
+            <li key={s.key} className={`card ${s.live ? "card-link" : "border-dashed"}`}>
               {s.live ? (
                 <Link href={s.href} className="block h-full p-5">
                   <h3 className="text-lg font-bold">{t(`sections.${s.key}.title`)}</h3>

@@ -98,7 +98,8 @@
       "collection": "Sammlung",
       "remake": "Remake"
     },
-    "boxArt": "Cover"
+    "boxArt": "Cover",
+    "results": "Ergebnisse"
   },
   "Timeline": {
     "title": "Zeitleiste der Spiele",
@@ -218,7 +219,8 @@
       "spoilers": "(enthält Handlungsspoiler)",
       "trivia": "Wissenswertes",
       "sources": "Quellen"
-    }
+    },
+    "results": "Ergebnisse"
   },
   "Search": {
     "label": "Suchen",

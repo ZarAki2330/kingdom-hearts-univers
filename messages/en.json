@@ -98,7 +98,8 @@
       "collection": "Collection",
       "remake": "Remake"
     },
-    "boxArt": "Box art"
+    "boxArt": "Box art",
+    "results": "Results"
   },
   "Timeline": {
     "title": "Games timeline",
@@ -218,7 +219,8 @@
       "spoilers": "(contains story spoilers)",
       "trivia": "Trivia",
       "sources": "Sources"
-    }
+    },
+    "results": "Results"
   },
   "Search": {
     "label": "Search",

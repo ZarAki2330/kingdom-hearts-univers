@@ -98,7 +98,8 @@
       "collection": "Recopilación",
       "remake": "Remake"
     },
-    "boxArt": "Carátula"
+    "boxArt": "Carátula",
+    "results": "Resultados"
   },
   "Timeline": {
     "title": "Cronología de los juegos",
@@ -218,7 +219,8 @@
       "spoilers": "(contiene spoilers de la trama)",
       "trivia": "Curiosidades",
       "sources": "Fuentes"
-    }
+    },
+    "results": "Resultados"
   },
   "Search": {
     "label": "Buscar",

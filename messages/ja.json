@@ -98,7 +98,8 @@
       "collection": "コレクション",
       "remake": "リメイク"
     },
-    "boxArt": "パッケージ"
+    "boxArt": "パッケージ",
+    "results": "検索結果"
   },
   "Timeline": {
     "title": "ゲームの年表",
@@ -218,7 +219,8 @@
       "spoilers": "（ストーリーのネタバレを含みます）",
       "trivia": "豆知識",
       "sources": "出典"
-    }
+    },
+    "results": "検索結果"
   },
   "Search": {
     "label": "検索",

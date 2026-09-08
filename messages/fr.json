@@ -98,7 +98,8 @@
       "collection": "Compilation",
       "remake": "Remake"
     },
-    "boxArt": "Jaquette"
+    "boxArt": "Jaquette",
+    "results": "Résultats"
   },
   "Timeline": {
     "title": "Chronologie des jeux",
@@ -218,7 +219,8 @@
       "spoilers": "(contient des révélations sur l'intrigue)",
       "trivia": "Anecdotes",
       "sources": "Sources"
-    }
+    },
+    "results": "Résultats"
   },
   "Search": {
     "label": "Rechercher",

@@ -45,11 +45,16 @@ export function GamesList({ games }: { games: Game[] }) {
       <p className="sr-only" aria-live="polite">
         {visible.length} / {games.length}
       </p>
-      <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {visible.map((g) => (
-          <GameCard key={g.slug} game={g} />
-        ))}
-      </ul>
+      <section aria-labelledby="jeux-resultats">
+        <h2 id="jeux-resultats" className="sr-only">
+          {t("results")}
+        </h2>
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {visible.map((g) => (
+            <GameCard key={g.slug} game={g} />
+          ))}
+        </ul>
+      </section>
     </>
   );
 }

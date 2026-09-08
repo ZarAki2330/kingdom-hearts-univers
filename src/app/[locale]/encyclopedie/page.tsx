@@ -26,7 +26,7 @@ export default async function EncyclopediaPage({ params }: { params: Promise<{ l
           const n = entriesOf(c).length;
           const live = n > 0;
           return (
-            <li key={c} className={`card ${live ? "card-link" : "opacity-80"}`}>
+            <li key={c} className={`card ${live ? "card-link" : "border-dashed"}`}>
               {live ? (
                 <Link href={`/encyclopedie/${CATEGORY_SLUG[c]}`} className="block h-full p-5">
                   <h2 className="text-xl font-bold">{t(`categories.${c}.title`)}</h2>
