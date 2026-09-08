@@ -77,9 +77,10 @@ export default async function GameStoryPage({ params }: Props) {
         <h2 id="sommaire" className="eyebrow">
           {t("contents")}
         </h2>
-        <ol className="mt-3 grid gap-x-8 gap-y-1.5 sm:grid-cols-2">
+        {/* Colonnes CSS (et non une grille) : le sommaire se lit de haut en bas, colonne par colonne. */}
+        <ol className="mt-3 sm:columns-2 sm:gap-8">
           {story.chapters.map((c, i) => (
-            <li key={c.id} className="text-sm">
+            <li key={c.id} className="mb-1.5 break-inside-avoid text-sm">
               <a href={`#${c.id}`} className="font-semibold hover:text-accent hover:underline">
                 <span className="tabular text-text-2">{String(i + 1).padStart(2, "0")}. </span>
                 {localized(c.title, locale)}

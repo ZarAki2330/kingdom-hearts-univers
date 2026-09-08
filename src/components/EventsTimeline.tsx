@@ -19,9 +19,10 @@ export async function EventsTimeline({ locale }: { locale: Locale }) {
         <h3 id="eras" className="eyebrow">
           {t("eras")}
         </h3>
-        <ol className="mt-3 grid gap-x-8 gap-y-1.5 sm:grid-cols-2">
+        {/* Colonnes CSS (et non une grille) : la liste se lit de haut en bas, colonne par colonne. */}
+        <ol className="mt-3 sm:columns-2 sm:gap-8">
           {groups.map(({ era, events }, i) => (
-            <li key={era.id} className="text-sm">
+            <li key={era.id} className="mb-1.5 break-inside-avoid text-sm">
               <a href={`#${era.id}`} className="font-semibold hover:text-accent hover:underline">
                 <span className="tabular text-text-2">{String(i + 1).padStart(2, "0")}. </span>
                 {localized(era.title, locale)}
