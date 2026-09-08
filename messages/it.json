@@ -235,5 +235,22 @@
       "keyblades": "Keyblade",
       "concepts": "Concetto"
     }
+  },
+  "Story": {
+    "title": "La storia della saga",
+    "lead": "Il racconto completo di ogni gioco, nell'ordine in cui si svolgono gli eventi: per capire la saga senza averla giocata o per ritrovare il filo prima di un nuovo capitolo.",
+    "progress": "{done} giochi riassunti su {total}.",
+    "summary": "Riassunto",
+    "soon": "Presto",
+    "eyebrow": "Riassunto della storia",
+    "gameTitle": "Storia di {game}",
+    "gameSheet": "Scheda del gioco",
+    "back": "Torna alla storia",
+    "breadcrumb": "Percorso di navigazione",
+    "spoilers": "Attenzione: questa pagina racconta l'intera trama del gioco, finale compreso.",
+    "contents": "Indice",
+    "outcome": "Ciò che il gioco lascia in sospeso",
+    "readNext": "Da leggere dopo:",
+    "keyEntries": "Personaggi e luoghi chiave"
   }
 }

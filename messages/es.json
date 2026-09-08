@@ -235,5 +235,22 @@
       "keyblades": "Llave Espada",
       "concepts": "Concepto"
     }
+  },
+  "Story": {
+    "title": "La historia de la saga",
+    "lead": "El relato completo de cada juego, en el orden en que ocurren los acontecimientos: para entender la saga sin haberla jugado o para retomar el hilo antes de una nueva entrega.",
+    "progress": "{done} de {total} juegos resumidos.",
+    "summary": "Resumen",
+    "soon": "Próximamente",
+    "eyebrow": "Resumen de la historia",
+    "gameTitle": "Historia de {game}",
+    "gameSheet": "Ficha del juego",
+    "back": "Volver a la historia",
+    "breadcrumb": "Ruta de navegación",
+    "spoilers": "Atención: esta página cuenta toda la trama del juego, incluido el desenlace.",
+    "contents": "Índice",
+    "outcome": "Lo que el juego deja planteado",
+    "readNext": "Continuar con:",
+    "keyEntries": "Personajes y lugares clave"
   }
 }

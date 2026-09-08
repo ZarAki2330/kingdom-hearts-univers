@@ -235,5 +235,22 @@
       "keyblades": "Keyblade",
       "concepts": "Concept"
     }
+  },
+  "Story": {
+    "title": "L'histoire de la saga",
+    "lead": "Le récit complet de chaque jeu, dans l'ordre où les événements se déroulent : de quoi comprendre la saga sans y avoir joué, ou retrouver le fil avant un nouvel épisode.",
+    "progress": "{done} jeux résumés sur {total}.",
+    "summary": "Résumé",
+    "soon": "Bientôt",
+    "eyebrow": "Résumé de l'histoire",
+    "gameTitle": "Histoire de {game}",
+    "gameSheet": "Fiche du jeu",
+    "back": "Retour à l'histoire",
+    "breadcrumb": "Fil d'Ariane",
+    "spoilers": "Attention : cette page raconte toute l'intrigue du jeu, dénouement compris.",
+    "contents": "Sommaire",
+    "outcome": "Ce que le jeu laisse en place",
+    "readNext": "À lire ensuite :",
+    "keyEntries": "Personnages et lieux clés"
   }
 }

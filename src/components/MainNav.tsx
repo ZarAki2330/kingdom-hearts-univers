@@ -9,9 +9,10 @@ const items = [
   { href: "/jeux", key: "games" },
   { href: "/chronologie", key: "timeline" },
   { href: "/encyclopedie", key: "encyclopedia", submenu: "encyclopedia" },
+  { href: "/histoire", key: "story" },
 ] as const;
 
-const soon = ["story", "guides"] as const;
+const soon = ["guides"] as const;
 
 export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
   const t = useTranslations("Nav");

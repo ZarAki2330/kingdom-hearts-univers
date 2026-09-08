@@ -235,5 +235,22 @@
       "keyblades": "Schlüsselschwert",
       "concepts": "Begriff"
     }
+  },
+  "Story": {
+    "title": "Die Geschichte der Reihe",
+    "lead": "Die vollständige Handlung jedes Spiels, in der Reihenfolge der Ereignisse: um die Serie zu verstehen, ohne sie gespielt zu haben, oder um vor einem neuen Teil wieder hineinzufinden.",
+    "progress": "{done} von {total} Spielen zusammengefasst.",
+    "summary": "Zusammenfassung",
+    "soon": "Demnächst",
+    "eyebrow": "Handlungszusammenfassung",
+    "gameTitle": "Handlung von {game}",
+    "gameSheet": "Spielseite",
+    "back": "Zurück zur Geschichte",
+    "breadcrumb": "Navigationspfad",
+    "spoilers": "Achtung: Diese Seite erzählt die gesamte Handlung des Spiels, einschließlich des Endes.",
+    "contents": "Inhalt",
+    "outcome": "Was das Spiel offenlässt",
+    "readNext": "Weiterlesen:",
+    "keyEntries": "Wichtige Figuren und Orte"
   }
 }

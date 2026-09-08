@@ -235,5 +235,22 @@
       "keyblades": "Keyblade",
       "concepts": "Concept"
     }
+  },
+  "Story": {
+    "title": "The story of the series",
+    "lead": "The full story of every game, in the order the events happen: enough to follow the series without playing it, or to catch up before a new entry.",
+    "progress": "{done} of {total} games summarised.",
+    "summary": "Summary",
+    "soon": "Coming soon",
+    "eyebrow": "Story summary",
+    "gameTitle": "{game} story",
+    "gameSheet": "Game page",
+    "back": "Back to the story",
+    "breadcrumb": "Breadcrumb",
+    "spoilers": "Warning: this page tells the entire plot of the game, ending included.",
+    "contents": "Contents",
+    "outcome": "Where the game leaves things",
+    "readNext": "Read next:",
+    "keyEntries": "Key characters and places"
   }
 }
