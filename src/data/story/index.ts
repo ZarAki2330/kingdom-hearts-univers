@@ -6,11 +6,33 @@ import { story as days } from "./358-2-days";
 import { story as birthBySleep } from "./birth-by-sleep";
 import { story as reCoded } from "./re-coded";
 import { story as dreamDropDistance } from "./dream-drop-distance";
+import { story as chi } from "./kingdom-hearts-chi";
+import { story as darkRoad } from "./dark-road";
+import { story as fragmentaryPassage } from "./0-2-birth-by-sleep-a-fragmentary-passage";
+import { story as kingdomHeartsIII } from "./kingdom-hearts-iii";
+import { story as melodyOfMemory } from "./melody-of-memory";
+import { story as missingLink } from "./missing-link";
+import { story as kingdomHeartsIV } from "./kingdom-hearts-iv";
 
 export * from "./types";
 
 /** Résumés détaillés disponibles, dans l'ordre où ils sont écrits. */
-export const stories: GameStory[] = [birthBySleep, kingdomHearts, chainOfMemories, days, kingdomHeartsII, reCoded, dreamDropDistance];
+export const stories: GameStory[] = [
+  chi,
+  darkRoad,
+  birthBySleep,
+  kingdomHearts,
+  chainOfMemories,
+  days,
+  kingdomHeartsII,
+  reCoded,
+  dreamDropDistance,
+  fragmentaryPassage,
+  kingdomHeartsIII,
+  melodyOfMemory,
+  missingLink,
+  kingdomHeartsIV,
+];
 
 const byGame = new Map(stories.map((s) => [s.game, s]));
 

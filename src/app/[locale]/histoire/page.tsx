@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { byStory, localized } from "@/data/games";
-import { getStory } from "@/data/story";
+import { byStory, getGame, localized } from "@/data/games";
+import { getStory, stories } from "@/data/story";
 import { GameCover } from "@/components/GameCover";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -18,9 +18,15 @@ export default async function StoryIndexPage({ params }: { params: Promise<{ loc
   const locale = rawLocale as Locale;
   setRequestLocale(locale);
   const t = await getTranslations("Story");
-  const groups = byStory();
-  const done = groups.flatMap((g) => g.games).filter((g) => getStory(g.slug)).length;
-  const total = groups.flatMap((g) => g.games).length;
+  // Ordre chronologique interne, puis les jeux résumés qui n'ont pas de place dans la chronologie
+  // (Missing-Link, annulé) pour qu'aucun résumé ne soit inaccessible depuis cette page.
+  const chrono = byStory().flatMap((g) => g.games);
+  const extra = stories
+    .map((s) => getGame(s.game))
+    .filter((g): g is NonNullable<typeof g> => g !== undefined && !chrono.includes(g));
+  const listed = [...chrono, ...extra];
+  const done = listed.filter((g) => getStory(g.slug)).length;
+  const total = listed.length;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -30,8 +36,7 @@ export default async function StoryIndexPage({ params }: { params: Promise<{ loc
       <p className="mt-3 text-sm text-text-2">{t("progress", { done, total })}</p>
 
       <ol className="mt-10 space-y-4">
-        {groups.flatMap((group) =>
-          group.games.map((game) => {
+        {listed.map((game) => {
             const story = getStory(game.slug);
             const inner = (
               <>
@@ -56,8 +61,7 @@ export default async function StoryIndexPage({ params }: { params: Promise<{ loc
                 )}
               </li>
             );
-          }),
-        )}
+        })}
       </ol>
     </div>
   );
