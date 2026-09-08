@@ -49,7 +49,7 @@ const rawGames: Game[] = [
     developer: "Square",
     mainStoryHours: 29,
     chronoOrder: 40,
-    accent: "#1d6fd0",
+    accent: "#1f7fd6",
     cover: { src: "/images/games/kingdom-hearts.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 637, height: 900 },
     synopsis: {
       fr: "Sora, Riku et Kairi rêvent de quitter les Îles du Destin. Quand les Sans-cœur engloutissent leur monde, Sora reçoit la Keyblade et, aux côtés de Donald et Dingo, parcourt les mondes Disney à la recherche de ses amis et du roi Mickey, jusqu'à affronter Ansem devant la porte de Kingdom Hearts.",
@@ -67,7 +67,7 @@ const rawGames: Game[] = [
     developer: "Square Enix, Jupiter",
     mainStoryHours: 22,
     chronoOrder: 50,
-    accent: "#6d4bb0",
+    accent: "#a08b57",
     cover: { src: "/images/games/chain-of-memories.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 500, height: 500 },
     synopsis: {
       fr: "Juste après Kingdom Hearts, Sora, Donald et Dingo pénètrent dans le Manoir Oblivion, où chaque étage leur coûte des souvenirs. Manipulé par des membres de l'Organisation XIII et par la jeune Naminé, Sora doit choisir entre ses vrais souvenirs et ceux qu'on lui a fabriqués. En parallèle, Riku affronte ses propres ténèbres dans les sous-sols.",
@@ -85,7 +85,7 @@ const rawGames: Game[] = [
     developer: "Square Enix",
     mainStoryHours: 32,
     chronoOrder: 60,
-    accent: "#a97516",
+    accent: "#22357e",
     cover: { src: "/images/games/kingdom-hearts-ii.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 641, height: 900 },
     synopsis: {
       fr: "Un an après Chain of Memories, un garçon nommé Roxas vit ses derniers jours d'été dans une Cité du Crépuscule virtuelle. Sora s'éveille enfin et repart avec Donald et Dingo affronter l'Organisation XIII, dont le chef Xemnas veut s'emparer de Kingdom Hearts pour retrouver un cœur.",
@@ -103,7 +103,7 @@ const rawGames: Game[] = [
     developer: "Square Enix",
     mainStoryHours: 25,
     remakeOf: "chain-of-memories",
-    accent: "#5d3a8f",
+    accent: "#8f8467",
     cover: { src: "/images/games/re-chain-of-memories.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 423, height: 599 },
     synopsis: {
       fr: "Remake en 3D de Chain of Memories, avec des cinématiques doublées et de nouvelles scènes. Sorti au Japon dans Kingdom Hearts II Final Mix+, puis seul en Amérique du Nord ; l'Europe l'a découvert dans la compilation HD 1.5 ReMIX.",
@@ -121,7 +121,7 @@ const rawGames: Game[] = [
     developer: "h.a.n.d.",
     mainStoryHours: 24,
     chronoOrder: 50,
-    accent: "#4b5878",
+    accent: "#b02a24",
     cover: { src: "/images/games/358-2-days.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 900, height: 810 },
     synopsis: {
       fr: "Les 358 jours de Roxas au sein de l'Organisation XIII, entre le sommeil de Sora et Kingdom Hearts II. Avec Axel et la mystérieuse Xion, quatorzième membre, il découvre l'amitié, les glaces à l'eau de mer et la vérité sur son existence.",
@@ -139,7 +139,7 @@ const rawGames: Game[] = [
     developer: "Square Enix",
     mainStoryHours: 27,
     chronoOrder: 30,
-    accent: "#14a08b",
+    accent: "#4fa8e0",
     cover: { src: "/images/games/birth-by-sleep.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 522, height: 900 },
     synopsis: {
       fr: "Dix ans avant Kingdom Hearts, trois apprentis Porteurs de Keyblade — Terra, Ventus et Aqua — quittent la Contrée du Départ à la poursuite du Maître Xehanort et des Nescients. Trois histoires entrelacées qui posent les fondations de toute la saga.",
@@ -157,7 +157,7 @@ const rawGames: Game[] = [
     developer: "h.a.n.d., Square Enix",
     mainStoryHours: 17,
     chronoOrder: 70,
-    accent: "#1e8b57",
+    accent: "#d2b21f",
     cover: { src: "/images/games/re-coded.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 900, height: 813 },
     synopsis: {
       fr: "Après Kingdom Hearts II, Jiminy Cricket découvre un message inconnu dans son journal. Le roi Mickey numérise le carnet et envoie un Sora de données explorer des mondes corrompus par des bugs, jusqu'à révéler ceux qui souffrent et qu'il faut sauver. Remake du jeu mobile coded (2008).",
@@ -175,7 +175,7 @@ const rawGames: Game[] = [
     developer: "Square Enix",
     mainStoryHours: 22,
     chronoOrder: 80,
-    accent: "#3f4fa8",
+    accent: "#7a4fb5",
     cover: { src: "/images/games/dream-drop-distance.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 900, height: 806 },
     synopsis: {
       fr: "Pour devenir Maîtres de la Keyblade, Sora et Riku passent l'Épreuve de Maîtrise : réveiller sept mondes endormis avec l'aide des Avale-Rêves. Mais un jeune Xehanort les traque à travers le temps, et l'Organisation XIII révèle sa véritable nature.",
@@ -192,7 +192,7 @@ const rawGames: Game[] = [
     platforms: ["Navigateur (χ)", "iOS", "Android", "Amazon"],
     developer: "Square Enix, BitGroove, Success",
     chronoOrder: 10,
-    accent: "#b3872b",
+    accent: "#2f9d72",
     cover: { src: "/images/games/kingdom-hearts-chi.jpg", credit: "© Square Enix / Disney — logo officiel, via Kingdom Hearts Wiki", width: 900, height: 657 },
     synopsis: {
       fr: "À l'Âge des Fées, bien avant tous les autres jeux, des Porteurs de Keyblade répartis en cinq Unions collectent la lumière sous l'autorité des Prophètes. Le joueur suit la Guerre des Keyblades et, dans Union χ, le destin des nouveaux chefs d'Union et du Dandelion. Les serveurs ont fermé en 2021 ; l'histoire reste jouable hors ligne.",
@@ -210,7 +210,7 @@ const rawGames: Game[] = [
     developer: "Square Enix",
     mainStoryHours: 3,
     chronoOrder: 90,
-    accent: "#245c9c",
+    accent: "#4a6f96",
     cover: { src: "/images/games/0-2-birth-by-sleep-a-fragmentary-passage.jpg", credit: "© Square Enix / Disney — logo officiel, via Kingdom Hearts Wiki", width: 900, height: 633 },
     synopsis: {
       fr: "Après Dream Drop Distance, Aqua poursuit son errance dans le Domaine des Ténèbres depuis dix ans. Ce court épisode, premier du moteur de Kingdom Hearts III, la mène jusqu'à la retrouvaille avec Mickey et à la promesse de sauver Terra et Ventus.",
@@ -228,7 +228,7 @@ const rawGames: Game[] = [
     developer: "Square Enix",
     mainStoryHours: 29,
     chronoOrder: 100,
-    accent: "#2f8fd0",
+    accent: "#34509b",
     cover: { src: "/images/games/kingdom-hearts-iii.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 718, height: 900 },
     synopsis: {
       fr: "Conclusion de la Saga des Ténèbres de Xehanort. Sora, Donald et Dingo cherchent le pouvoir de l'éveil pour rassembler les sept Gardiens de la Lumière, tandis que la véritable Organisation XIII prépare la seconde Guerre des Keyblades au Cimetière des Keyblades. Le DLC Re Mind prolonge le dénouement.",
@@ -245,7 +245,7 @@ const rawGames: Game[] = [
     platforms: ["iOS", "Android"],
     developer: "Square Enix",
     chronoOrder: 20,
-    accent: "#a33146",
+    accent: "#2e7f7f",
     cover: { src: "/images/games/dark-road.jpg", credit: "© Square Enix / Disney — illustration officielle, via Kingdom Hearts Wiki", width: 775, height: 900 },
     synopsis: {
       fr: "Comment Xehanort est-il devenu le Chercheur des Ténèbres ? Dark Road suit le jeune Xehanort et ses camarades de Scala ad Caelum, élèves du Maître Odin, dans une enquête qui les mène vers les ténèbres. Conclu en 2022 ; jouable hors ligne.",
@@ -263,7 +263,7 @@ const rawGames: Game[] = [
     developer: "Square Enix, indieszero",
     mainStoryHours: 10,
     chronoOrder: 110,
-    accent: "#6b5ccc",
+    accent: "#c9a53c",
     cover: { src: "/images/games/melody-of-memory.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 600, height: 900 },
     synopsis: {
       fr: "Jeu de rythme qui retraverse toute la saga à travers ses musiques, racontée par Kairi qui plonge dans ses souvenirs pour retrouver Sora. Son épilogue ouvre la voie à Kingdom Hearts IV.",
@@ -279,7 +279,7 @@ const rawGames: Game[] = [
     release: {},
     platforms: ["iOS", "Android"],
     developer: "Square Enix",
-    accent: "#31909e",
+    accent: "#9c7f36",
     cover: { src: "/images/games/missing-link.jpg", credit: "© Square Enix / Disney — illustration officielle, via Kingdom Hearts Wiki", width: 563, height: 900 },
     synopsis: {
       fr: "Jeu mobile annoncé en 2022, situé à Scala ad Caelum après la Guerre des Keyblades. Après plusieurs bêtas, Square Enix a annulé son développement en mai 2025 pour concentrer l'équipe sur Kingdom Hearts IV.",
@@ -296,7 +296,7 @@ const rawGames: Game[] = [
     platforms: ["PlayStation 5", "Xbox Series X|S", "Nintendo Switch 2", "PC"],
     developer: "Square Enix",
     chronoOrder: 120,
-    accent: "#2f4a86",
+    accent: "#2c4270",
     cover: { src: "/images/games/kingdom-hearts-iv.jpg", credit: "© Square Enix / Disney — logo officiel, via Kingdom Hearts Wiki", width: 900, height: 449 },
     synopsis: {
       fr: "Début de la Saga de la Perte du Maître. Sora s'éveille à Quadratum, une métropole moderne, tandis que Donald et Dingo descendent aux Enfers chercher des indices. Annoncé pour fin 2027, avec notamment le monde de Coco.",
@@ -331,7 +331,7 @@ const rawGames: Game[] = [
     platforms: ["PlayStation 3"],
     developer: "Square Enix",
     includes: ["kingdom-hearts-ii", "birth-by-sleep", "re-coded"],
-    accent: "#a8811a",
+    accent: "#3a3f76",
     cover: { src: "/images/games/hd-2-5-remix.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 783, height: 900 },
     synopsis: {
       fr: "Kingdom Hearts II Final Mix, Birth by Sleep Final Mix et les cinématiques de Re:coded en film.",
@@ -348,7 +348,7 @@ const rawGames: Game[] = [
     platforms: ["PlayStation 4", "Xbox One", "Nintendo Switch (cloud)", "PC"],
     developer: "Square Enix",
     includes: ["dream-drop-distance", "0-2-birth-by-sleep-a-fragmentary-passage", "kingdom-hearts-chi"],
-    accent: "#16a085",
+    accent: "#6b5f86",
     cover: { src: "/images/games/hd-2-8-final-chapter-prologue.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 723, height: 900 },
     synopsis: {
       fr: "Dream Drop Distance HD, l'épisode inédit 0.2 Birth by Sleep et le film χ Back Cover, qui raconte les Prophètes de l'Âge des Fées.",
@@ -365,7 +365,7 @@ const rawGames: Game[] = [
     platforms: ["PlayStation 4", "Xbox One", "Nintendo Switch (cloud)", "PC"],
     developer: "Square Enix",
     includes: ["hd-1-5-remix", "hd-2-5-remix"],
-    accent: "#5b2c6f",
+    accent: "#5a6f92",
     cover: { src: "/images/games/hd-1-5-2-5-remix.jpg", credit: "© Square Enix / Disney — logo officiel, via Kingdom Hearts Wiki", width: 900, height: 615 },
     synopsis: {
       fr: "Les six titres des compilations 1.5 et 2.5 réunis sur une seule galette, en 60 images par seconde.",
@@ -382,7 +382,7 @@ const rawGames: Game[] = [
     platforms: ["PlayStation 4"],
     developer: "Square Enix",
     includes: ["hd-1-5-2-5-remix", "hd-2-8-final-chapter-prologue", "kingdom-hearts-iii"],
-    accent: "#c04141",
+    accent: "#3f4f8c",
     cover: { src: "/images/games/all-in-one-package.jpg", credit: "© Square Enix / Disney — jaquette, via Kingdom Hearts Wiki", width: 711, height: 900 },
     synopsis: {
       fr: "Dix histoires en un coffret : l'intégralité de la Saga des Ténèbres de Xehanort, de Kingdom Hearts à Kingdom Hearts III.",

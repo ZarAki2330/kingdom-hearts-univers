@@ -75,7 +75,7 @@ Navigation, visuels et détails de présentation
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
 - [x] Retirer le lien « code source sur GitHub » — _Lien et clé de traduction supprimés dans les 6 langues_
 - [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_
-- [x] Revoir les fonds de couleur des jeux — _La couleur du jeu forme un halo dans les angles et le centre reste sombre, là où se pose le logo, plus une vignette sur les bords ; 17 couleurs revues pour éviter les collisions avec la teinte des logos (Days en gris-bleu, DDD en indigo, KH III en bleu ciel)_
+- [x] Revoir les fonds de couleur des jeux — _La couleur du jeu forme un halo dans les angles et le centre reste sombre, là où se pose le logo, plus une vignette sur les bords ; les 21 couleurs reprennent la teinte du logo (rouge pour Days, mauve pour 3D, jaune pour Re:coded, vert pour Union χ, doré pour Melody of Memory, gris-mauve pour 2.8, gris-bleu pour 1.5+2.5, bleu ciel pour Birth by Sleep, argent doré pour Chain of Memories, bleu foncé pour KH II)_
 
 ## IV. Histoire — 3/3
 
