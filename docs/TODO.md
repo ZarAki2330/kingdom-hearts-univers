@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 73 % (45/62 tâches)**
+**Avancement global : 71 % (45/63 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -95,13 +95,14 @@ Guides et cheminement
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)
 
-## VI. Traductions — 3/4
+## VI. Traductions — 3/5
 
 Contenu multilingue
 
 - [x] Interface traduite : en, es, de, it — _Fichiers messages/*.json_
 - [x] Interface traduite : ja — _Optionnel — première version_
 - [ ] Contenu encyclopédique traduit (priorité : en)
+- [ ] Vérifier les traductions existantes — _Certaines sont fausses ou absentes : noms français officiels des Keyblades, ennemis, mondes et concepts, textes non traduits dans les six langues_
 - [x] Sélecteur de langue accessible + hreflang SEO — _Balises alternates générées par Next_
 
 ## VII. Accessibilité & qualité — 0/5
