@@ -26,7 +26,7 @@ export function GameCover({
   const base = "#070b16";
   const halo = `color-mix(in oklab, ${game.accent} 82%, white 10%)`;
   const mid = `color-mix(in oklab, ${game.accent} 62%, ${base})`;
-  const deep = `color-mix(in oklab, ${game.accent} 30%, ${base})`;
+  const deep = `color-mix(in oklab, ${game.accent} 40%, ${base})`;
   // La couleur vit dans les angles, le centre reste sombre : c'est là que se pose le logo.
   const bg = [
     `radial-gradient(105% 85% at 8% -5%, ${halo} 0%, transparent 58%)`,

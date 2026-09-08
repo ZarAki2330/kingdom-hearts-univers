@@ -205,8 +205,8 @@ h1, h2, h3, h4 {
  */
 .cover-vignette {
   background:
-    radial-gradient(62% 58% at 50% 50%, rgba(5, 8, 18, 0.62) 0%, rgba(5, 8, 18, 0.28) 60%, transparent 100%),
-    linear-gradient(to top, rgba(5, 8, 18, 0.4) 0%, transparent 55%);
+    radial-gradient(62% 58% at 50% 50%, rgba(5, 8, 18, 0.34) 0%, rgba(5, 8, 18, 0.14) 60%, transparent 100%),
+    linear-gradient(to top, rgba(5, 8, 18, 0.3) 0%, transparent 55%);
   pointer-events: none;
 }
 
