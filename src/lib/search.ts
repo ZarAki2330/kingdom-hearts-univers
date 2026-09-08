@@ -15,6 +15,18 @@ export interface SearchItem {
   /** Tout ce qui sert à la correspondance, en minuscules sans accents */
   haystack: string;
   accent: string;
+  /** Vignette : image officielle de l'entrée, logo du jeu. `fit` dit comment la cadrer. */
+  img?: { src: string; fit: "cover" | "top" | "contain" };
+}
+
+/**
+ * Cadrage de la vignette, comme sur les cartes : les rendus en pied (personnages, ennemis)
+ * sont recadrés sur le haut quand ils sont très verticaux, le reste est affiché entier.
+ */
+function figureFit(e: (typeof entries)[number]): "cover" | "top" | "contain" {
+  const figure = e.category === "characters" || e.category === "enemies";
+  if (!figure) return "contain";
+  return e.image && e.image.height > e.image.width * 1.3 ? "top" : "cover";
 }
 
 function fold(s: string): string {
@@ -32,6 +44,8 @@ export function buildIndex(): SearchItem[] {
       sub: { fr: g.platforms.join(" · "), en: g.platforms.join(" · ") },
       haystack: fold([g.title, g.shortTitle, g.developer, ...g.platforms].join(" ")),
       accent: g.accent,
+      // La jaquette est plus lisible que le logo dans une pastille de 32 px.
+      img: g.cover ? { src: g.cover.src, fit: "cover" } : g.logo ? { src: g.logo.src, fit: "contain" } : undefined,
     });
   }
   for (const e of entries) {
@@ -44,6 +58,7 @@ export function buildIndex(): SearchItem[] {
       sub: { fr: e.tagline.fr, en: e.tagline.en },
       haystack: fold([e.name, ...(e.aliases ?? []), ...(e.tags ?? []), ...Object.values(e.names ?? {}), e.tagline.fr, e.tagline.en].join(" ")),
       accent: e.accent,
+      img: e.image ? { src: e.image.src, fit: figureFit(e) } : undefined,
     });
   }
   return out;

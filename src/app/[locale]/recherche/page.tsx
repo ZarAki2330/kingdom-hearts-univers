@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -45,7 +46,27 @@ export default async function SearchPage({ params, searchParams }: Props) {
         {results.map((r) => (
           <li key={r.href} className="card card-link">
             <Link href={r.href} className="flex items-center gap-3 p-3">
-              <span aria-hidden="true" className="h-10 w-10 shrink-0 rounded-full" style={{ background: `linear-gradient(160deg, ${r.accent}, #0b1020)` }} />
+              <span
+                aria-hidden="true"
+                className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                style={{ background: `linear-gradient(160deg, ${r.accent}, #0b1020)` }}
+              >
+                {r.img && (
+                  <Image
+                    src={r.img.src}
+                    alt=""
+                    fill
+                    sizes="40px"
+                    className={
+                      r.img.fit === "contain"
+                        ? "object-contain p-0.5"
+                        : r.img.fit === "top"
+                          ? "object-cover object-top"
+                          : "object-cover"
+                    }
+                  />
+                )}
+              </span>
               <span className="min-w-0 flex-1">
                 <span className="block font-bold">{locale !== "fr" && r.nameEn ? r.nameEn : r.name}</span>
                 <span className="block text-sm text-text-2">{locale === "fr" ? r.sub.fr : r.sub.en}</span>

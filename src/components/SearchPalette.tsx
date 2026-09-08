@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
@@ -152,7 +153,27 @@ export function SearchPalette() {
                     onMouseEnter={() => setActive(i)}
                     className={`flex items-center gap-3 rounded-lg px-3 py-2 ${i === active ? "bg-surface-2" : ""}`}
                   >
-                    <span aria-hidden="true" className="h-8 w-8 shrink-0 rounded-full" style={{ background: `linear-gradient(160deg, ${r.accent}, #0b1020)` }} />
+                    <span
+                      aria-hidden="true"
+                      className="relative h-8 w-8 shrink-0 overflow-hidden rounded-full"
+                      style={{ background: `linear-gradient(160deg, ${r.accent}, #0b1020)` }}
+                    >
+                      {r.img && (
+                        <Image
+                          src={r.img.src}
+                          alt=""
+                          fill
+                          sizes="32px"
+                          className={
+                            r.img.fit === "contain"
+                              ? "object-contain p-0.5"
+                              : r.img.fit === "top"
+                                ? "object-cover object-top"
+                                : "object-cover"
+                          }
+                        />
+                      )}
+                    </span>
                     <span className="min-w-0 flex-1">
                       <span className="block truncate text-sm font-bold">{name(r)}</span>
                       <span className="block truncate text-xs text-text-2">{sub(r)}</span>
