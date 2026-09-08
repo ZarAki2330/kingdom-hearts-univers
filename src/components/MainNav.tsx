@@ -19,6 +19,17 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
   const pathname = usePathname();
   const [open, setOpen] = useState<string | null>(null);
   const bar = useRef<HTMLElement>(null);
+  // Fermeture différée : laisse le temps d'aller du bouton au sous-menu à la souris.
+  const closeTimer = useRef<number | undefined>(undefined);
+
+  function openNow(key: string) {
+    window.clearTimeout(closeTimer.current);
+    setOpen(key);
+  }
+  function closeSoon() {
+    window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(() => setOpen(null), 250);
+  }
 
   useEffect(() => {
     if (!open) return;
@@ -35,6 +46,8 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
       document.removeEventListener("keydown", onKey);
     };
   }, [open]);
+
+  useEffect(() => () => window.clearTimeout(closeTimer.current), []);
 
   /** Sous-entrées de l'Encyclopédie : les cinq catégories. */
   const subItems = CATEGORIES.map((c) => ({
@@ -86,10 +99,14 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
           <li
             key={it.key}
             className="relative"
-            onMouseEnter={() => setOpen(it.key)}
-            onMouseLeave={() => setOpen((v) => (v === it.key ? null : v))}
+            onMouseEnter={() => openNow(it.key)}
+            onMouseLeave={closeSoon}
+            onFocus={() => openNow(it.key)}
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(null);
+            }}
           >
-            <span className="flex items-center">
+            <span className="flex items-center pb-0.5">
               <Link href={it.href} aria-current={active ? "page" : undefined} className={`${linkClass(active)} pr-1.5`}>
                 {t(it.key)}
               </Link>
@@ -105,7 +122,11 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
                 </svg>
               </button>
             </span>
-            {expanded && <div className="card absolute left-0 top-full z-50 mt-1 w-52 p-1.5">{subList}</div>}
+            {expanded && (
+              <div className="absolute left-0 top-full z-50 w-52 pt-1.5">
+                <div className="card p-1.5">{subList}</div>
+              </div>
+            )}
           </li>
         );
       })}
