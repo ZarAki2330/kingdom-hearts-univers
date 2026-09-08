@@ -109,7 +109,9 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "darker-than-dark",
     category: "keyblades",
-    name: "Darker Than Dark",
+    name: "Noir ultra profond",
+    names: { en: "Darker Than Dark" },
+    aliases: ["Darker Than Dark"],
     accent: "#202030",
     tagline: L("La Keyblade la plus noire de Roxas, héritière de Total Eclipse.", "Roxas's blackest Keyblade, heir to Total Eclipse."),
     description: L(
@@ -125,7 +127,9 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "astral-blast",
     category: "keyblades",
-    name: "Astral Blast",
+    name: "Frappe astrale",
+    names: { en: "Astral Blast" },
+    aliases: ["Astral Blast"],
     accent: "#4a9ad0",
     tagline: L("La Keyblade céleste et rapide de Roxas.", "Roxas's swift, celestial Keyblade."),
     description: L(
@@ -157,7 +161,9 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "silent-dirge",
     category: "keyblades",
-    name: "Silent Dirge",
+    name: "Hymne muet",
+    names: { en: "Silent Dirge" },
+    aliases: ["Silent Dirge"],
     accent: "#5a6a7a",
     tagline: L("La Keyblade grise et funèbre de Roxas.", "Roxas's grey, funereal Keyblade."),
     description: L(
@@ -257,7 +263,9 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "moogle-o-glory",
     category: "keyblades",
-    name: "Moogle O' Glory",
+    name: "Gloire Mog",
+    names: { en: "Moogle O' Glory" },
+    aliases: ["Moogle O' Glory"],
     accent: "#f0d0d8",
     tagline: L("La Keyblade Mog d'Union χ, en hommage aux marchands ailés.", "The Moogle Keyblade of Union χ, honouring the winged shopkeepers."),
     description: L(

@@ -284,27 +284,7 @@ export const lore: Record<string, EntryLore> = {
     sources: [{ label: "Kingdom Hearts Wiki — Darkgnaw", url: "https://kingdomhearts.fandom.com/wiki/Darkgnaw" }],
   },
 
-  "crown-unlimit": {
-    sections: [
-      {
-        title: L("Apparence et symbolique", "Appearance and symbolism"),
-        text: L(
-          "Crown Unlimit est une Keyblade dorée, fine et ornementée, dont la lame se termine par une couronne à cinq pointes qui lui sert de dents. Sa garde dessine des volutes de joaillerie, le manche est bleu profond, et l'ensemble tient autant du sceptre que de l'arme : c'est l'une des Keyblades les plus solennelles de Birth by Sleep.\n\nLa couronne est l'emblème récurrent de la saga, celui-là même que Sora porte au cou et que l'on retrouve sur la Chaîne Royale. Ici, elle renvoie au titre de Maître : Aqua est la seule des trois apprentis à réussir l'Examen de Maîtrise devant Eraqus et Xehanort, et la seule à porter cette responsabilité jusqu'au bout, y compris quand il faudra sceller la Contrée du Départ et se perdre dans le Domaine des Ténèbres.",
-          "Crown Unlimit is a golden, slim and ornate Keyblade whose blade ends in a five-pointed crown that serves as its teeth. Its guard traces jeweller's scrollwork, the grip is deep blue, and the whole is as much a sceptre as a weapon: one of the most solemn Keyblades in Birth by Sleep.\n\nThe crown is the series' recurring emblem, the very one Sora wears at his neck and that sits atop the Kingdom Key. Here it points to the title of Master: Aqua is the only one of the three apprentices to pass the Mark of Mastery before Eraqus and Xehanort, and the only one to carry that responsibility to the end, including when the Land of Departure must be sealed and she is lost in the Realm of Darkness.",
-        ),
-      },
-      {
-        game: "birth-by-sleep",
-        text: L(
-          "Crown Unlimit est exclusive au scénario d'Aqua dans Birth by Sleep et s'obtient en progressant dans son histoire, alors qu'elle suit Terra et Ventus de monde en monde en essayant de les ramener sans les trahir.\n\nElle est franchement orientée magie, avec l'un des meilleurs bonus du jeu dans ce domaine, ce qui correspond exactement au style d'Aqua : sorts en rafale, esquives glissées et Styles de Combat magiques. Elle est l'une des armes les plus efficaces de son scénario, et sert notamment lors des affrontements de fin de parcours, du Cimetière des Keyblades à la chute dans le Domaine des Ténèbres. Comme les autres Keyblades de l'épisode, elle influence aussi les Styles de Combat qu'Aqua débloque au fil des combats, et n'a pas de transformation à proprement parler.",
-          "Crown Unlimit is exclusive to Aqua's episode in Birth by Sleep and is obtained as her story progresses, while she follows Terra and Ventus from world to world trying to bring them home without betraying them.\n\nIt is squarely magic-oriented, with one of the game's best bonuses in that area, which matches Aqua's style exactly: volleys of spells, sliding dodges and magical Command Styles. It is among the most effective weapons of her episode, and serves in particular through the closing confrontations, from the Keyblade Graveyard to her fall into the Realm of Darkness. Like the episode's other Keyblades it also shapes the Command Styles Aqua unlocks in battle, and has no formchange as such.",
-        ),
-      },
-    ],
-    sources: [{ label: "Kingdom Hearts Wiki — Crown Unlimit", url: "https://kingdomhearts.fandom.com/wiki/Crown_Unlimit" }],
-  },
-
-  "brightcrest": {
+"brightcrest": {
     sections: [
       {
         title: L("Apparence et symbolique", "Appearance and symbolism"),

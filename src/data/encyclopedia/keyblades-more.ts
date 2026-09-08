@@ -442,7 +442,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "pain-of-solitude",
     category: "keyblades",
-    name: "Pain of Solitude",
+    name: "Solitude pénible",
+    names: { en: "Pain of Solitude" },
+    aliases: ["Pain of Solitude"],
     accent: "#5a4a8a",
     tagline: L("Une Keyblade sombre et anguleuse de Roxas, orientée technique.", "A dark, angular Keyblade of Roxas's, geared toward technique."),
     description: L(
@@ -474,7 +476,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "abyssal-tide",
     category: "keyblades",
-    name: "Abyssal Tide",
+    name: "Marée abyssale",
+    names: { en: "Abyssal Tide" },
+    aliases: ["Abyssal Tide"],
     accent: "#2a5a9a",
     tagline: L("La Keyblade marine de Roxas, aux reflets d'abysses.", "Roxas's sea-toned Keyblade, with abyssal hues."),
     description: L(
@@ -522,7 +526,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "total-eclipse",
     category: "keyblades",
-    name: "Total Eclipse",
+    name: "Éclipse totale",
+    names: { en: "Total Eclipse" },
+    aliases: ["Total Eclipse"],
     accent: "#4a4a5a",
     tagline: L("La Keyblade de l'éclipse, noire et argent.", "The eclipse Keyblade, black and silver."),
     description: L(
@@ -538,7 +544,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "lunar-eclipse",
     category: "keyblades",
-    name: "Lunar Eclipse",
+    name: "Éclipse lunaire",
+    names: { en: "Lunar Eclipse" },
+    aliases: ["Lunar Eclipse"],
     accent: "#8a6ab0",
     tagline: L("La Keyblade lunaire de Roxas, sous le regard de Kingdom Hearts.", "Roxas's lunar Keyblade, under the gaze of Kingdom Hearts."),
     description: L(
@@ -554,7 +562,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "twilight-blaze",
     category: "keyblades",
-    name: "Twilight Blaze",
+    name: "Flambée vespérale",
+    names: { en: "Twilight Blaze" },
+    aliases: ["Twilight Blaze"],
     accent: "#e07a30",
     tagline: L("La Keyblade flamboyante de Roxas, couleur crépuscule.", "Roxas's blazing Keyblade, the colour of twilight."),
     description: L(
@@ -570,7 +580,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "omega-weapon",
     category: "keyblades",
-    name: "Omega Weapon",
+    name: "Arme oméga",
+    names: { en: "Omega Weapon" },
+    aliases: ["Omega Weapon"],
     accent: "#c0c0d0",
     tagline: L("La Keyblade ultime de Roxas dans 358/2 Days.", "Roxas's ultimate Keyblade in 358/2 Days."),
     description: L(
@@ -775,22 +787,6 @@ export const moreKeyblades: KeybladeEntry[] = [
     tags: ["terra", "ténèbres"],
   },
   {
-    slug: "crown-unlimit",
-    category: "keyblades",
-    name: "Crown Unlimit",
-    accent: "#e0c060",
-    tagline: L("La Keyblade royale d'Aqua, dorée et rayonnante.", "Aqua's regal Keyblade, golden and radiant."),
-    description: L(
-      "Dorée et surmontée d'une couronne, Crown Unlimit est une Keyblade exclusive à Aqua dans Birth by Sleep. Son design évoque la royauté et la lumière, en accord avec le rôle de Maîtresse qu'Eraqus lui confie.\n\nSon bonus de magie élevé en fait une arme idéale pour le style d'Aqua.",
-      "Golden and topped with a crown, Crown Unlimit is a Keyblade exclusive to Aqua in Birth by Sleep. Its design evokes royalty and light, in keeping with the Master's role Eraqus entrusts to her.\n\nIts high magic bonus makes it an ideal weapon for Aqua's style.",
-    ),
-    obtained: { "birth-by-sleep": L("Scénario d'Aqua, obtenue au cours de l'histoire.", "Aqua's episode, obtained during the story.") },
-    appearances: ["birth-by-sleep"],
-    debut: "birth-by-sleep",
-    relations: [{ slug: "aqua", label: L("Porteuse", "Wielder") }],
-    tags: ["aqua", "lumière"],
-  },
-  {
     slug: "brightcrest",
     category: "keyblades",
     name: "Brightcrest",
@@ -981,7 +977,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "all-for-one",
     category: "keyblades",
-    name: "All for One",
+    name: "Tous pour Un",
+    names: { en: "All for One" },
+    aliases: ["All for One"],
     accent: "#3a58a0",
     tagline: L("La Keyblade des Trois Mousquetaires.", "The Three Musketeers Keyblade."),
     description: L(
@@ -1187,7 +1185,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "elemental-encoder",
     category: "keyblades",
-    name: "Elemental Encoder",
+    name: "Encodeur élémentaire",
+    names: { en: "Elemental Encoder" },
+    aliases: ["Elemental Encoder"],
     accent: "#5060c0",
     tagline: L("La Keyblade des trois éléments, bonus japonais.", "The three-element Keyblade, Japanese bonus."),
     description: L(
@@ -1202,7 +1202,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "advent-red",
     category: "keyblades",
-    name: "Advent Red",
+    name: "Réunion rouge",
+    names: { en: "Advent Red" },
+    aliases: ["Advent Red"],
     accent: "#a02030",
     tagline: L("La Keyblade rouge et noire, hommage à Advent Children.", "The red-and-black Keyblade, homage to Advent Children."),
     description: L(
