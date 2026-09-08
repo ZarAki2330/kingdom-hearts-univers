@@ -112,7 +112,6 @@ export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode;
             className="relative"
             onMouseEnter={() => openNow(it.key)}
             onMouseLeave={closeSoon}
-            onFocus={() => openNow(it.key)}
             onBlur={(e) => {
               if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(null);
             }}

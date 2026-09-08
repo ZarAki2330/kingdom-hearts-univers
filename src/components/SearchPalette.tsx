@@ -18,9 +18,33 @@ export function SearchPalette() {
   const [index, setIndex] = useState<SearchItem[] | null>(null);
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  // Élément à qui rendre le focus à la fermeture (celui qui avait le focus à l'ouverture).
+  const returnRef = useRef<HTMLElement | null>(null);
   const id = useId();
 
   const close = useCallback(() => setOpen(false), []);
+
+  /** Piège de focus : la tabulation tourne en boucle à l'intérieur de la boîte de dialogue. */
+  function onDialogKey(e: React.KeyboardEvent) {
+    if (e.key !== "Tab") return;
+    const box = dialogRef.current;
+    if (!box) return;
+    const f = [...box.querySelectorAll<HTMLElement>('a[href], button, input, [tabindex]:not([tabindex="-1"])')].filter(
+      (el) => el.offsetParent !== null || el === document.activeElement,
+    );
+    if (f.length === 0) return;
+    const first = f[0]!;
+    const last = f[f.length - 1]!;
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -35,7 +59,17 @@ export function SearchPalette() {
   }, [close]);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open) {
+      // Retour du focus là où l'utilisateur l'avait laissé (le bouton de recherche, en général).
+      const back = returnRef.current;
+      returnRef.current = null;
+      if (back?.isConnected) back.focus();
+      return;
+    }
+    if (!returnRef.current) {
+      const cur = document.activeElement as HTMLElement | null;
+      returnRef.current = cur && cur !== document.body ? cur : triggerRef.current;
+    }
     inputRef.current?.focus();
     if (index) return;
     fetch("/api/search-index")
@@ -62,6 +96,7 @@ export function SearchPalette() {
   return (
     <>
       <button
+        ref={triggerRef}
         type="button"
         onClick={() => setOpen(true)}
         className="flex items-center gap-2 rounded-md border border-line bg-surface px-2.5 py-1.5 text-sm text-text-2 hover:border-accent"
@@ -78,11 +113,13 @@ export function SearchPalette() {
       {open && (
         <div className="fixed inset-0 z-[100] flex items-start justify-center bg-black/50 p-4 pt-[10vh]" onClick={close}>
           <div
+            ref={dialogRef}
             role="dialog"
             aria-modal="true"
             aria-label={t("label")}
             className="card w-full max-w-xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
+            onKeyDown={onDialogKey}
           >
             <div className="flex items-center gap-2 border-b border-line px-4 transition-colors focus-within:border-accent">
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 text-text-2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
