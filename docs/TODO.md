@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 68 % (42/62 tâches)**
+**Avancement global : 71 % (44/62 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -77,13 +77,13 @@ Navigation, visuels et détails de présentation
 - [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_
 - [ ] Revoir les fonds de couleur des jeux — _Dégradés des cartes et des fiches de jeu_
 
-## IV. Histoire — 1/3
+## IV. Histoire — 3/3
 
 Récit de chaque jeu et chronologie de l'univers
 
 - [x] Résumé détaillé de l'histoire de chaque jeu — _Section /histoire : les 14 jeux résumés (≈ 47 000 mots fr + en), index chronologique, sommaire ancré, avertissement spoilers, personnages et lieux clés liés à l'encyclopédie ; sous-menu Histoire dans la navbar_
-- [ ] Frise chronologique des événements importants — _De l'Âge des Fées à Quadratum_
-- [ ] Glossaire des termes
+- [x] Frise chronologique des événements importants — _Onglet « Par événements » de la chronologie : 60 événements en 8 ères, de l'Âge des Fées à Quadratum, avec repère temporel, jeu où l'événement est raconté et entrées liées_
+- [x] Glossaire des termes — _Page /glossaire : 60 termes (cœur, créatures, armes, lieux, groupes, jeu) triés par ordre alphabétique, index par lettre, définition courte puis explication, renvoi vers la fiche et les termes liés_
 
 ## V. Soluces — 0/5
 
