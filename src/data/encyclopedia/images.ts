@@ -106,7 +106,7 @@ export const entryImages: Record<string, EntryImage> = {
   "clu": { src: "/images/encyclopedia/characters/clu.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (CLU_KH3D.png)", width: 183, height: 320 },
   "cogsworth": { src: "/images/encyclopedia/characters/cogsworth.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Cogsworth_KHII.png)", width: 153, height: 320 },
   "commantis": { src: "/images/encyclopedia/enemies/commantis.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Commantis_(Nightmare).png)", width: 275, height: 320 },
-  "corridors-of-darkness": { src: "/images/encyclopedia/worlds/corridors-of-darkness.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Betwixt_and_Between_KHII.png)", width: 320, height: 200 },
+  "corridors-of-darkness": { src: "/images/encyclopedia/worlds/corridors-of-darkness.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki FR (Couloirs_des_Ténèbres_KHII.png)", width: 322, height: 360 },
   "counterpoint": { src: "/images/encyclopedia/keyblades/counterpoint.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Counterpoint_KH3D.png)", width: 256, height: 320 },
   "country-of-the-musketeers": { src: "/images/encyclopedia/worlds/country-of-the-musketeers.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Country_of_the_Musketeers.png)", width: 320, height: 320 },
   "crabclaw": { src: "/images/encyclopedia/keyblades/crabclaw.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Crabclaw_KH.png)", width: 260, height: 260 },
