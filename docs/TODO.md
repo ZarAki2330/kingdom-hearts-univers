@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 61 % (38/62 tâches)**
+**Avancement global : 66 % (41/62 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -64,17 +64,17 @@ Images, navigation, profondeur des fiches
 - [x] Réadapter le titre du site dans la barre de navigation — _Titre sur deux lignes compactes (Kingdom Hearts / UNIVERS), plus de retour à la ligne ; menu mobile en icône avec le sélecteur de thème intégré_
 - [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
 
-## III quater. Finitions de l'interface — 2/8
+## III quater. Finitions de l'interface — 5/8
 
 Navigation, visuels et détails de présentation
 
 - [x] Drapeaux dans le sélecteur de langue — _Drapeaux dessinés en SVG (les emojis drapeaux ne s'affichent pas sous Windows) + nom de la langue ; menu de liens réels qui conservent la page courante, clavier et Échap_
 - [x] Sous-menus dans la barre de navigation — _Encyclopédie → les 5 catégories ; au survol et au clavier sur ordinateur (aria-expanded, Échap), sous-liste dépliée dans le menu mobile_
-- [ ] Supprimer les encadrés vides des fiches — _Ex. fiches de Keyblades : ne pas afficher un bloc quand la donnée manque_
+- [x] Supprimer les encadrés vides des fiches — _L'encadré des caractéristiques ne s'affiche plus quand l'entrée n'a aucune donnée à montrer (ex. Keyblades sans statistiques)_
 - [ ] Remplacer les images peu flatteuses de certaines fiches — _Captures d'écran et visuels mal cadrés à remplacer par de meilleurs rendus_
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
-- [ ] Retirer le lien « code source sur GitHub » — _Pied de page_
-- [ ] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour bleu disgracieux sur le champ ; utiliser la couleur d'accent du thème_
+- [x] Retirer le lien « code source sur GitHub » — _Lien et clé de traduction supprimés dans les 6 langues_
+- [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_
 - [ ] Revoir les fonds de couleur des jeux — _Dégradés des cartes et des fiches de jeu_
 
 ## IV. Histoire — 0/3
