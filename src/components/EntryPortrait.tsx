@@ -3,9 +3,17 @@ import { useLocale } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { displayName, type Entry } from "@/data/encyclopedia";
 
+/** Mots vides ignorés dans les initiales : « Pouvoir de l'éveil » donne PE, et non PD. */
+const SKIP = new Set(["de", "du", "des", "la", "le", "les", "l", "d", "et", "au", "aux", "en", "un", "une", "of", "the", "a", "to"]);
+
 /** Initiales pour le portrait généré : « Roi Mickey » → « RM », « Sora » → « S ». */
 function initials(name: string) {
-  const words = name.replace(/\(.*?\)/g, "").trim().split(/[\s,-]+/).filter(Boolean);
+  const words = name
+    .replace(/\(.*?\)/g, "")
+    .trim()
+    .split(/[\s,\-'’]+/)
+    .filter(Boolean)
+    .filter((w) => !SKIP.has(w.toLowerCase()));
   return words.slice(0, 2).map((w) => w[0]!.toUpperCase()).join("");
 }
 

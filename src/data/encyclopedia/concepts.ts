@@ -253,8 +253,9 @@ export const concepts: ConceptEntry[] = [
   {
     slug: "wayfinder",
     category: "concepts",
-    name: "Porte-bonheur Wayfinder",
+    name: "Éclaireuse",
     names: { en: "Wayfinder", ja: "ウェイファインダー" },
+    aliases: ["Porte-bonheur", "Wayfinder"],
     accent: "#4ec1a5",
     tagline: L("Les trois étoiles en verre qui lient Terra, Aqua et Ventus.", "The three glass stars that bind Terra, Aqua and Ventus."),
     description: L(

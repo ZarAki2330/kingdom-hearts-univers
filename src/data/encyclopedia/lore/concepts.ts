@@ -621,7 +621,7 @@ export const lore: Record<string, EntryLore> = {
     ],
   },
 
-  // ─────────────────────────── Porte-bonheur Wayfinder ───────────────────────────
+  // ─────────────────────────── Éclaireuse (porte-bonheur) ───────────────────────────
   "wayfinder": {
     sections: [
       {
