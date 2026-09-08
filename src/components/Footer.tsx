@@ -15,11 +15,6 @@ export function Footer() {
         </div>
         <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
           <li>
-            <a href="https://github.com/ZarAki2330/kingdom-hearts-univers" className="hover:text-accent">
-              {t("github")}
-            </a>
-          </li>
-          <li>
             <span className="text-text-2">{t("sources")}</span>
           </li>
           <li>

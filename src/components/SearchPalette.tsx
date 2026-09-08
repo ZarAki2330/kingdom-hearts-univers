@@ -84,7 +84,7 @@ export function SearchPalette() {
             className="card w-full max-w-xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center gap-2 border-b border-line px-4">
+            <div className="flex items-center gap-2 border-b border-line px-4 transition-colors focus-within:border-accent">
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 text-text-2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" />
               </svg>
@@ -99,6 +99,7 @@ export function SearchPalette() {
                 onChange={(e) => { setQ(e.target.value); setActive(0); }}
                 onKeyDown={onInputKey}
                 placeholder={t("placeholder")}
+                data-no-focus-ring
                 className="w-full bg-transparent py-3.5 text-base outline-none"
               />
               <button type="button" onClick={close} className="rounded px-2 py-1 text-xs text-text-2 hover:bg-surface-2" aria-label={t("close")}>Esc</button>

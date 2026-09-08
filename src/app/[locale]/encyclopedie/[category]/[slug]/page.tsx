@@ -78,6 +78,7 @@ export default async function EntryPage({ params }: Props) {
   const residents = entry.category === "worlds"
     ? entriesOf("characters").filter((c) => c.category === "characters" && c.homeworld && c.homeworld.split(/\s*\/\s*/).some((h) => entry.name.split(/\s*\/\s*/).includes(h)))
     : [];
+  const entryFacts = facts(entry, locale, tk);
   const homeworld = entry.category === "characters" && entry.homeworld
     ? entriesOf("worlds").find((w) => entry.homeworld!.split(/\s*\/\s*/).some((h) => w.name.split(/\s*\/\s*/).includes(h)))
     : undefined;
@@ -218,9 +219,10 @@ export default async function EntryPage({ params }: Props) {
         </section>
 
         <aside className="flex flex-col gap-6">
+          {entryFacts.length > 0 && (
           <div className="card p-5">
             <dl className="grid gap-3 text-sm">
-              {facts(entry, locale, tk).map(([k, v]) => (
+              {entryFacts.map(([k, v]) => (
                 <div key={k}>
                   <dt className="eyebrow">{k}</dt>
                   <dd className="mt-0.5 font-semibold">
@@ -232,6 +234,7 @@ export default async function EntryPage({ params }: Props) {
               ))}
             </dl>
           </div>
+          )}
           {related.length > 0 && (
             <div className="card p-5">
               <h2 className="eyebrow">{t("relations")}</h2>
