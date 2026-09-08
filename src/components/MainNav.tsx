@@ -9,12 +9,15 @@ const items = [
   { href: "/jeux", key: "games" },
   { href: "/chronologie", key: "timeline" },
   { href: "/encyclopedie", key: "encyclopedia", submenu: "encyclopedia" },
-  { href: "/histoire", key: "story" },
+  { href: "/histoire", key: "story", submenu: "story" },
 ] as const;
 
 const soon = ["guides"] as const;
 
-export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
+/** Entrée de sous-menu fournie par le serveur (les résumés d'histoire disponibles). */
+export type NavSubItem = { href: string; label: string };
+
+export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode; storyItems?: NavSubItem[] } = {}) {
   const t = useTranslations("Nav");
   const te = useTranslations("Encyclopedia");
   const pathname = usePathname();
@@ -50,11 +53,14 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
 
   useEffect(() => () => window.clearTimeout(closeTimer.current), []);
 
-  /** Sous-entrées de l'Encyclopédie : les cinq catégories. */
-  const subItems = CATEGORIES.map((c) => ({
-    href: `/encyclopedie/${CATEGORY_SLUG[c]}`,
-    label: te(`categories.${c}.title`),
-  }));
+  /** Sous-entrées par section : les cinq catégories de l'encyclopédie, les jeux résumés pour l'histoire. */
+  const submenus: Record<string, NavSubItem[]> = {
+    encyclopedia: CATEGORIES.map((c) => ({
+      href: `/encyclopedie/${CATEGORY_SLUG[c]}`,
+      label: te(`categories.${c}.title`),
+    })),
+    story: storyItems,
+  };
 
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
 
@@ -63,7 +69,7 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
       active ? "text-accent underline decoration-2 underline-offset-8" : "text-text"
     }`;
 
-  const subList = (
+  const subList = (subItems: NavSubItem[]) => (
     <ul className="flex flex-col gap-0.5">
       {subItems.map((s) => (
         <li key={s.href}>
@@ -86,7 +92,8 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
     <ul className="flex items-center gap-1">
       {items.map((it) => {
         const active = isActive(it.href);
-        if (!("submenu" in it)) {
+        const sub = "submenu" in it ? submenus[it.submenu] ?? [] : [];
+        if (sub.length === 0) {
           return (
             <li key={it.key}>
               <Link href={it.href} aria-current={active ? "page" : undefined} className={linkClass(active)}>
@@ -124,8 +131,8 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
               </button>
             </span>
             {expanded && (
-              <div className="absolute left-0 top-full z-50 w-52 pt-1.5">
-                <div className="card p-1.5">{subList}</div>
+              <div className="absolute left-0 top-full z-50 w-max min-w-52 max-w-[20rem] pt-1.5">
+                <div className="card p-1.5">{subList(sub)}</div>
               </div>
             )}
           </li>
@@ -149,7 +156,9 @@ export function MainNav({ extras }: { extras?: React.ReactNode } = {}) {
           <Link href={it.href} aria-current={isActive(it.href) ? "page" : undefined} className={`block ${linkClass(isActive(it.href))}`}>
             {t(it.key)}
           </Link>
-          {"submenu" in it && <div className="ml-3 border-l border-line pl-2">{subList}</div>}
+          {"submenu" in it && (submenus[it.submenu] ?? []).length > 0 && (
+            <div className="ml-3 border-l border-line pl-2">{subList(submenus[it.submenu])}</div>
+          )}
         </li>
       ))}
       {soon.map((k) => (

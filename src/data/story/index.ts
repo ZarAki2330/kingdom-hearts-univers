@@ -2,11 +2,15 @@ import type { GameStory } from "./types";
 import { story as kingdomHearts } from "./kingdom-hearts";
 import { story as chainOfMemories } from "./chain-of-memories";
 import { story as kingdomHeartsII } from "./kingdom-hearts-ii";
+import { story as days } from "./358-2-days";
+import { story as birthBySleep } from "./birth-by-sleep";
+import { story as reCoded } from "./re-coded";
+import { story as dreamDropDistance } from "./dream-drop-distance";
 
 export * from "./types";
 
 /** Résumés détaillés disponibles, dans l'ordre où ils sont écrits. */
-export const stories: GameStory[] = [kingdomHearts, chainOfMemories, kingdomHeartsII];
+export const stories: GameStory[] = [birthBySleep, kingdomHearts, chainOfMemories, days, kingdomHeartsII, reCoded, dreamDropDistance];
 
 const byGame = new Map(stories.map((s) => [s.game, s]));
 
