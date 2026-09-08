@@ -25,7 +25,7 @@ export async function EventsTimeline({ locale }: { locale: Locale }) {
           {groups.map(({ era, events }, i) => (
             <li key={era.id} className="mb-1.5 break-inside-avoid text-sm">
               <a href={`#${era.id}`} className="font-semibold hover:text-accent hover:underline">
-                <span className="mr-1.5 inline-block min-w-8 font-display font-bold text-accent">{roman(i + 1)}.</span>
+                <span className="mr-2.5 inline-block min-w-9 pr-1.5 font-display font-bold text-accent">{roman(i + 1)}.</span>
                 {localized(era.title, locale)}
               </a>
               <span className="tabular ml-1.5 text-xs text-text-2">({events.length})</span>
@@ -38,7 +38,7 @@ export async function EventsTimeline({ locale }: { locale: Locale }) {
         {groups.map(({ era, events }) => (
           <section key={era.id} id={era.id} aria-labelledby={`era-${era.id}`} className="scroll-mt-24">
             <h3 id={`era-${era.id}`} className="font-display text-2xl font-bold text-accent">
-              <span className="mr-2.5">{roman(groups.findIndex((g) => g.era.id === era.id) + 1)}.</span>
+              <span className="mr-3.5">{roman(groups.findIndex((g) => g.era.id === era.id) + 1)}.</span>
               {localized(era.title, locale)}
             </h3>
             <p className="prose-max mt-2 text-text-2">{localized(era.summary, locale)}</p>
