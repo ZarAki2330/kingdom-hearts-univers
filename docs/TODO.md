@@ -122,3 +122,11 @@ Devenir LA référence
 - [ ] Nom de domaine et hébergement définitif
 - [ ] Page À propos, mentions légales, crédits (Square Enix/Disney)
 - [ ] Contributions communautaires (issues, formulaire)
+
+## IX. Édition et confort de lecture — 0/3
+
+Gérer le contenu sans passer par le code, et regarder les images de près
+
+- [ ] Mode administrateur pour modifier les fiches à la main — _Édition du contenu des fiches, envoi de photos et création de nouvelles fiches depuis le site, sans toucher au code_
+- [ ] Agrandir une image au clic — _Visionneuse plein écran (fermeture à Échap, navigation au clavier, crédit conservé)_
+- [ ] Masquer le menu accessibilité dans le pied de page
