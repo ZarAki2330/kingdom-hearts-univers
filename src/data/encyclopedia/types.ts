@@ -71,6 +71,8 @@ export interface CharacterSource {
   fr: string;
   en: string;
   year?: number;
+  /** Forme courte affichée sur les cartes (le titre complet reste sur la fiche). */
+  short?: { fr: string; en: string };
 }
 
 export interface CharacterEntry extends BaseEntry {
