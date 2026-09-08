@@ -196,7 +196,6 @@ export const entryImages: Record<string, EntryImage> = {
   "ferris-gear": { src: "/images/encyclopedia/keyblades/ferris-gear.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Ferris_Gear_KH3D.png)", width: 284, height: 320 },
   "fiery-globe": { src: "/images/encyclopedia/enemies/fiery-globe.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Fiery_Globe.png)", width: 81, height: 150 },
   "fin-fatale": { src: "/images/encyclopedia/enemies/fin-fatale.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Fin_Fatale_(Spirit).png)", width: 320, height: 257 },
-  "fire-core": { src: "/images/encyclopedia/enemies/fire-core.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Flame_Core_KHIII.png)", width: 309, height: 320 },
   "fishbone": { src: "/images/encyclopedia/enemies/fishbone.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Fishboné_(Spirit).png)", width: 320, height: 245 },
   "flame-box": { src: "/images/encyclopedia/enemies/flame-box.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Flame_Box_KHBBSFM.png)", width: 225, height: 171 },
   "flame-core": { src: "/images/encyclopedia/enemies/flame-core.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Flame_Core_KHIII.png)", width: 309, height: 320 },

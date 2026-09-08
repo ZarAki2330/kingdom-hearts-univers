@@ -1720,7 +1720,7 @@ export const moreEnemies2: EnemyEntry[] = [
     ),
     appearances: ["kingdom-hearts-iii"],
     debut: "kingdom-hearts-iii",
-    relations: [relHeartless, { slug: "fire-core", label: L("cousin de", "cousin of") }, { slug: "water-core", label: L("cousin de", "cousin of") }],
+    relations: [relHeartless, { slug: "flame-core", label: L("cousin de", "cousin of") }, { slug: "water-core", label: L("cousin de", "cousin of") }],
     tags: ["emblème", "terre"],
   },
   {
@@ -1739,7 +1739,7 @@ export const moreEnemies2: EnemyEntry[] = [
     ),
     appearances: ["kingdom-hearts-iii"],
     debut: "kingdom-hearts-iii",
-    relations: [relHeartless, { slug: "fire-core", label: L("cousin de", "cousin of") }, { slug: "olympus", label: L("monde", "world") }],
+    relations: [relHeartless, { slug: "earth-core", label: L("cousin de", "cousin of") }, { slug: "olympus", label: L("monde", "world") }],
     tags: ["emblème", "feu", "olympe"],
   },
   {
