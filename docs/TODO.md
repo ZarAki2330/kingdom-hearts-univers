@@ -62,7 +62,7 @@ Images, navigation, profondeur des fiches
 - [x] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _19 logos officiels (KH Wiki, webp 800 px, fond transparent ; 0.2 et 2.8 détourés) sur cartes, chronologie et fiches ; jaquette conservée en visuel secondaire ; All-in-One et Integrum en visuel généré_
 - [x] Préciser le film d'origine des personnages Disney — _139 personnages Disney : œuvre d'origine (fr/en, année) dérivée du monde + corrections manuelles, affichée sur la carte et la fiche_
 - [x] Réadapter le titre du site dans la barre de navigation — _Titre sur deux lignes compactes (Kingdom Hearts / UNIVERS), plus de retour à la ligne ; menu mobile en icône avec le sélecteur de thème intégré_
-- [~] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _Lots 1 et 3 : 154 fiches (104 personnages, 28 mondes, 22 Keyblades) — histoire par jeu, anecdotes, sources, section repliée (spoilers). Reste : lot 2 (secondaires originaux), 5 (mondes), 8 (concepts), 6 (Keyblades), 7 (boss), 4 (Disney secondaires)_
+- [~] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _Lots 1, 2 et 3 : 200 fiches (150 personnages, 28 mondes, 22 Keyblades) — histoire par jeu, anecdotes, sources, section repliée (spoilers). Tous les personnages majeurs sont couverts. Reste : mondes restants, concepts, Keyblades, boss, Disney secondaires_
 
 ## IV. Histoire — 0/3
 
