@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 65 % (35/54 tâches)**
+**Avancement global : 67 % (36/54 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -52,7 +52,7 @@ Couverture exhaustive de l'univers
 - [x] Ajouter toutes les Keyblades — _120 Keyblades : toute la série, y compris gears de Days et Union χ_
 - [x] Ajouter tous les mondes — _50 mondes, toutes les visites de la série_
 
-## III ter. Enrichir l'encyclopédie — 6/7
+## III ter. Enrichir l'encyclopédie — 7/7
 
 Images, navigation, profondeur des fiches
 
@@ -62,7 +62,7 @@ Images, navigation, profondeur des fiches
 - [x] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _19 logos officiels (KH Wiki, webp 800 px, fond transparent ; 0.2 et 2.8 détourés) sur cartes, chronologie et fiches ; jaquette conservée en visuel secondaire ; All-in-One et Integrum en visuel généré_
 - [x] Préciser le film d'origine des personnages Disney — _139 personnages Disney : œuvre d'origine (fr/en, année) dérivée du monde + corrections manuelles, affichée sur la carte et la fiche_
 - [x] Réadapter le titre du site dans la barre de navigation — _Titre sur deux lignes compactes (Kingdom Hearts / UNIVERS), plus de retour à la ligne ; menu mobile en icône avec le sélecteur de thème intégré_
-- [~] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _404 fiches approfondies : tous les mondes (50), toutes les Keyblades (120), tous les concepts (16), les 4 espèces d'ennemis et 65 boss, 149 personnages. Histoire par jeu, anecdotes, sources, section repliée (spoilers). Reste : Disney secondaires et ennemis communs_
+- [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
 
 ## IV. Histoire — 0/3
 
