@@ -199,6 +199,17 @@ h1, h2, h3, h4 {
   opacity: 0.5;
 }
 
+/*
+ * Vignette des visuels de jeu : assombrit les bords et pose un léger voile au centre bas,
+ * pour détacher les logos clairs du fond coloré sans changer la teinte du jeu.
+ */
+.cover-vignette {
+  background:
+    radial-gradient(62% 58% at 50% 50%, rgba(5, 8, 18, 0.62) 0%, rgba(5, 8, 18, 0.28) 60%, transparent 100%),
+    linear-gradient(to top, rgba(5, 8, 18, 0.4) 0%, transparent 55%);
+  pointer-events: none;
+}
+
 /* Frise chronologique */
 .timeline {
   position: relative;
