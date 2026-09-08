@@ -15,7 +15,8 @@
     "language": "Langue",
     "theme": "Thème d'affichage",
     "comingSoon": "Bientôt",
-    "submenuOf": "Sous-menu de {section}"
+    "submenuOf": "Sous-menu de {section}",
+    "glossary": "Glossaire"
   },
   "Theme": {
     "dawn": "Aube",
@@ -107,7 +108,9 @@
     "releaseHelp": "Année de première sortie (Japon).",
     "storyHelp": "Position des événements dans l'histoire de l'univers. Les jeux marqués d'une accolade se déroulent en parallèle.",
     "parallel": "En parallèle",
-    "eventsSoon": "La frise des événements de l'univers arrive bientôt."
+    "byEvents": "Par événements",
+    "eventsHelp": "Les moments marquants de l'univers, de l'Âge des Fées à Quadratum. Attention : cette frise dévoile l'intrigue de tous les jeux.",
+    "eras": "Les grandes périodes"
   },
   "Footer": {
     "about": "Kingdom Hearts Univers est un site de fans, sans lien avec Square Enix ou Disney. Kingdom Hearts est une marque de Square Enix Co., Ltd. et de Disney.",
@@ -252,5 +255,21 @@
     "outcome": "Ce que le jeu laisse en place",
     "readNext": "À lire ensuite :",
     "keyEntries": "Personnages et lieux clés"
+  },
+  "Glossary": {
+    "title": "Glossaire",
+    "lead": "Les termes de la saga expliqués simplement : le cœur et ses mécaniques, les créatures, les armes, les lieux et les groupes.",
+    "count": "{count} termes",
+    "index": "Index alphabétique",
+    "seeEntry": "Voir la fiche",
+    "categories": {
+      "heart": "Le cœur",
+      "creature": "Créatures",
+      "weapon": "Armes et objets",
+      "place": "Lieux",
+      "group": "Groupes",
+      "gameplay": "Jeu",
+      "other": "Divers"
+    }
   }
 }

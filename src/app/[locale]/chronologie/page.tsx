@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { byRelease, byStory } from "@/data/games";
 import { Timeline } from "@/components/Timeline";
+import { EventsTimeline } from "@/components/EventsTimeline";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
@@ -22,8 +23,7 @@ export default async function TimelinePage({ params }: { params: Promise<{ local
       <p className="eyebrow">Kingdom Hearts</p>
       <h1 className="mt-2 text-4xl font-bold sm:text-5xl">{t("title")}</h1>
       <p className="prose-max mt-4 text-lg text-text-2">{t("lead")}</p>
-      <Timeline release={byRelease()} story={byStory()} />
-      <p className="mt-12 rounded-xl border border-dashed border-line p-5 text-sm text-text-2">{t("eventsSoon")}</p>
+      <Timeline release={byRelease()} story={byStory()} events={<EventsTimeline locale={locale} />} />
     </div>
   );
 }

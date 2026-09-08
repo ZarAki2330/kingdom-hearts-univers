@@ -55,10 +55,13 @@ export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode;
 
   /** Sous-entrées par section : les cinq catégories de l'encyclopédie, les jeux résumés pour l'histoire. */
   const submenus: Record<string, NavSubItem[]> = {
-    encyclopedia: CATEGORIES.map((c) => ({
-      href: `/encyclopedie/${CATEGORY_SLUG[c]}`,
-      label: te(`categories.${c}.title`),
-    })),
+    encyclopedia: [
+      ...CATEGORIES.map((c) => ({
+        href: `/encyclopedie/${CATEGORY_SLUG[c]}`,
+        label: te(`categories.${c}.title`),
+      })),
+      { href: "/glossaire", label: t("glossary") },
+    ],
     story: storyItems,
   };
 

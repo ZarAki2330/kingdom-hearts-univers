@@ -1,11 +1,12 @@
 "use client";
+import type React from "react";
 import { useId, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { releaseYear, type Game } from "@/data/games";
 import { GameCover } from "./GameCover";
 
-type Mode = "release" | "story";
+type Mode = "release" | "story" | "events";
 
 function Entry({ game }: { game: Game }) {
   const t = useTranslations("Games");
@@ -24,7 +25,16 @@ function Entry({ game }: { game: Game }) {
   );
 }
 
-export function Timeline({ release, story }: { release: Game[]; story: { order: number; games: Game[] }[] }) {
+export function Timeline({
+  release,
+  story,
+  events,
+}: {
+  release: Game[];
+  story: { order: number; games: Game[] }[];
+  /** Frise des événements, rendue côté serveur et passée en enfant. */
+  events?: React.ReactNode;
+}) {
   const t = useTranslations("Timeline");
   const [mode, setMode] = useState<Mode>("release");
   const id = useId();
@@ -39,7 +49,7 @@ export function Timeline({ release, story }: { release: Game[]; story: { order: 
   return (
     <section className="mt-8">
       <div role="tablist" aria-label={t("title")} className="inline-flex rounded-full border border-line bg-surface p-1">
-        {(["release", "story"] as Mode[]).map((m) => (
+        {(["release", "story", "events"] as Mode[]).map((m) => (
           <button
             key={m}
             role="tab"
@@ -49,21 +59,24 @@ export function Timeline({ release, story }: { release: Game[]; story: { order: 
             tabIndex={mode === m ? 0 : -1}
             onClick={() => setMode(m)}
             onKeyDown={(e) => {
-              if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
-                const next = m === "release" ? "story" : "release";
-                setMode(next);
-                document.getElementById(`${id}-tab-${next}`)?.focus();
-              }
+              if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+              const order: Mode[] = ["release", "story", "events"];
+              const step = e.key === "ArrowRight" ? 1 : -1;
+              const next = order[(order.indexOf(m) + step + order.length) % order.length];
+              setMode(next);
+              document.getElementById(`${id}-tab-${next}`)?.focus();
             }}
             className={`rounded-full px-4 py-2 text-sm font-semibold ${
               mode === m ? "bg-accent text-accent-contrast" : "text-text hover:bg-surface-2"
             }`}
           >
-            {m === "release" ? t("byRelease") : t("byStory")}
+            {m === "release" ? t("byRelease") : m === "story" ? t("byStory") : t("byEvents")}
           </button>
         ))}
       </div>
-      <p className="mt-3 text-sm text-text-2">{mode === "release" ? t("releaseHelp") : t("storyHelp")}</p>
+      <p className="mt-3 text-sm text-text-2">
+        {mode === "release" ? t("releaseHelp") : mode === "story" ? t("storyHelp") : t("eventsHelp")}
+      </p>
 
       <div
         role="tabpanel"
@@ -127,6 +140,9 @@ export function Timeline({ release, story }: { release: Game[]; story: { order: 
             </li>
           ))}
         </ol>
+      </div>
+      <div role="tabpanel" id={`${id}-panel-events`} aria-labelledby={`${id}-tab-events`} hidden={mode !== "events"}>
+        {events}
       </div>
     </section>
   );

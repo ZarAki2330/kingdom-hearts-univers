@@ -15,7 +15,8 @@
     "language": "Sprache",
     "theme": "Anzeigethema",
     "comingSoon": "Bald",
-    "submenuOf": "Untermenü von {section}"
+    "submenuOf": "Untermenü von {section}",
+    "glossary": "Glossar"
   },
   "Theme": {
     "dawn": "Morgendämmerung",
@@ -107,7 +108,9 @@
     "releaseHelp": "Jahr der Erstveröffentlichung (Japan).",
     "storyHelp": "Position der Ereignisse in der Geschichte des Universums. Mit einer Klammer markierte Spiele laufen parallel.",
     "parallel": "Parallel",
-    "eventsSoon": "Die Zeitleiste der Ereignisse des Universums folgt bald."
+    "byEvents": "Nach Ereignissen",
+    "eventsHelp": "Die entscheidenden Momente des Universums, vom Zeitalter der Märchen bis Quadratum. Achtung: Diese Zeitleiste verrät die Handlung aller Spiele.",
+    "eras": "Die großen Epochen"
   },
   "Footer": {
     "about": "Kingdom Hearts Univers ist eine Fanseite ohne Verbindung zu Square Enix oder Disney. Kingdom Hearts ist eine Marke von Square Enix Co., Ltd. und Disney.",
@@ -252,5 +255,21 @@
     "outcome": "Was das Spiel offenlässt",
     "readNext": "Weiterlesen:",
     "keyEntries": "Wichtige Figuren und Orte"
+  },
+  "Glossary": {
+    "title": "Glossar",
+    "lead": "Die Begriffe der Reihe verständlich erklärt: das Herz und seine Regeln, die Kreaturen, die Waffen, die Orte und die Gruppen.",
+    "count": "{count} Begriffe",
+    "index": "Alphabetisches Verzeichnis",
+    "seeEntry": "Zum Eintrag",
+    "categories": {
+      "heart": "Das Herz",
+      "creature": "Kreaturen",
+      "weapon": "Waffen und Gegenstände",
+      "place": "Orte",
+      "group": "Gruppen",
+      "gameplay": "Spiel",
+      "other": "Sonstiges"
+    }
   }
 }

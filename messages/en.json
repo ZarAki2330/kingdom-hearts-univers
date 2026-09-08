@@ -15,7 +15,8 @@
     "language": "Language",
     "theme": "Display theme",
     "comingSoon": "Soon",
-    "submenuOf": "{section} submenu"
+    "submenuOf": "{section} submenu",
+    "glossary": "Glossary"
   },
   "Theme": {
     "dawn": "Dawn",
@@ -107,7 +108,9 @@
     "releaseHelp": "Year of first release (Japan).",
     "storyHelp": "Position of the events in the universe's history. Games marked with a brace happen in parallel.",
     "parallel": "In parallel",
-    "eventsSoon": "The universe events timeline is coming soon."
+    "byEvents": "By events",
+    "eventsHelp": "The turning points of the universe, from the Age of Fairy Tales to Quadratum. Warning: this timeline reveals the plot of every game.",
+    "eras": "The major eras"
   },
   "Footer": {
     "about": "Kingdom Hearts Univers is a fan site with no affiliation to Square Enix or Disney. Kingdom Hearts is a trademark of Square Enix Co., Ltd. and Disney.",
@@ -252,5 +255,21 @@
     "outcome": "Where the game leaves things",
     "readNext": "Read next:",
     "keyEntries": "Key characters and places"
+  },
+  "Glossary": {
+    "title": "Glossary",
+    "lead": "The terms of the series explained plainly: hearts and how they work, the creatures, the weapons, the places and the groups.",
+    "count": "{count} terms",
+    "index": "Alphabetical index",
+    "seeEntry": "See the entry",
+    "categories": {
+      "heart": "Hearts",
+      "creature": "Creatures",
+      "weapon": "Weapons and items",
+      "place": "Places",
+      "group": "Groups",
+      "gameplay": "Gameplay",
+      "other": "Other"
+    }
   }
 }

@@ -15,7 +15,8 @@
     "language": "言語",
     "theme": "表示テーマ",
     "comingSoon": "近日公開",
-    "submenuOf": "{section} のサブメニュー"
+    "submenuOf": "{section} のサブメニュー",
+    "glossary": "用語集"
   },
   "Theme": {
     "dawn": "夜明け",
@@ -107,7 +108,9 @@
     "releaseHelp": "初発売の年（日本）。",
     "storyHelp": "世界の歴史における出来事の位置。括弧で示された作品は同時期に進行します。",
     "parallel": "同時期",
-    "eventsSoon": "世界の出来事の年表は近日公開。"
+    "byEvents": "出来事順",
+    "eventsHelp": "おとぎ話の時代からクアドラタムまで、物語の転換点をたどります。全作品の結末に触れるのでご注意ください。",
+    "eras": "主な時代"
   },
   "Footer": {
     "about": "Kingdom Hearts Universはファンサイトであり、スクウェア・エニックスおよびディズニーとは関係ありません。KINGDOM HEARTSは株式会社スクウェア・エニックスおよびディズニーの商標です。",
@@ -252,5 +255,21 @@
     "outcome": "この作品が残したもの",
     "readNext": "次に読む：",
     "keyEntries": "主要な人物と場所"
+  },
+  "Glossary": {
+    "title": "用語集",
+    "lead": "シリーズの用語をわかりやすく解説します。心のしくみ、生き物、武器、場所、組織。",
+    "count": "{count}語",
+    "index": "五十音・アルファベット索引",
+    "seeEntry": "詳細ページへ",
+    "categories": {
+      "heart": "心",
+      "creature": "生き物",
+      "weapon": "武器と道具",
+      "place": "場所",
+      "group": "組織",
+      "gameplay": "ゲーム",
+      "other": "その他"
+    }
   }
 }
