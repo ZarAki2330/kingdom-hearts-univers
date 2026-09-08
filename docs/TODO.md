@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 71 % (45/63 tâches)**
+**Avancement global : 66 % (41/62 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -64,26 +64,26 @@ Images, navigation, profondeur des fiches
 - [x] Réadapter le titre du site dans la barre de navigation — _Titre sur deux lignes compactes (Kingdom Hearts / UNIVERS), plus de retour à la ligne ; menu mobile en icône avec le sélecteur de thème intégré_
 - [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
 
-## III quater. Finitions de l'interface — 6/8
+## III quater. Finitions de l'interface — 5/8
 
 Navigation, visuels et détails de présentation
 
 - [x] Drapeaux dans le sélecteur de langue — _Drapeaux dessinés en SVG (les emojis drapeaux ne s'affichent pas sous Windows) + nom de la langue ; menu de liens réels qui conservent la page courante, clavier et Échap_
-- [x] Sous-menus dans la barre de navigation — _Encyclopédie → les 5 catégories, Histoire → les jeux résumés ; au survol et au clavier sur ordinateur (aria-expanded, Échap), sous-liste dépliée dans le menu mobile_
+- [x] Sous-menus dans la barre de navigation — _Encyclopédie → les 5 catégories ; au survol et au clavier sur ordinateur (aria-expanded, Échap), sous-liste dépliée dans le menu mobile_
 - [x] Supprimer les encadrés vides des fiches — _L'encadré des caractéristiques ne s'affiche plus quand l'entrée n'a aucune donnée à montrer (ex. Keyblades sans statistiques)_
 - [ ] Remplacer les images peu flatteuses de certaines fiches — _Captures d'écran et visuels mal cadrés à remplacer par de meilleurs rendus_
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
 - [x] Retirer le lien « code source sur GitHub » — _Lien et clé de traduction supprimés dans les 6 langues_
 - [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_
-- [x] Revoir les fonds de couleur des jeux — _La couleur du jeu forme un halo dans les angles et le centre reste sombre, là où se pose le logo, plus une vignette sur les bords ; les 21 couleurs reprennent la teinte du logo (rouge pour Days, mauve pour 3D, jaune pour Re:coded, vert pour Union χ, doré pour Melody of Memory, gris-mauve pour 2.8, gris-bleu pour 1.5+2.5, bleu ciel pour Birth by Sleep, argent doré pour Chain of Memories, bleu foncé pour KH II)_
+- [ ] Revoir les fonds de couleur des jeux — _Dégradés des cartes et des fiches de jeu_
 
-## IV. Histoire — 3/3
+## IV. Histoire — 0/3
 
 Récit de chaque jeu et chronologie de l'univers
 
-- [x] Résumé détaillé de l'histoire de chaque jeu — _Section /histoire : les 14 jeux résumés (≈ 47 000 mots fr + en), index chronologique, sommaire ancré, avertissement spoilers, personnages et lieux clés liés à l'encyclopédie ; sous-menu Histoire dans la navbar_
-- [x] Frise chronologique des événements importants — _Onglet « Par événements » de la chronologie : 60 événements en 8 ères, de l'Âge des Fées à Quadratum, avec repère temporel, jeu où l'événement est raconté et entrées liées_
-- [x] Glossaire des termes — _Page /glossaire : 60 termes (cœur, créatures, armes, lieux, groupes, jeu) triés par ordre alphabétique, index par lettre, définition courte puis explication, renvoi vers la fiche et les termes liés_
+- [ ] Résumé détaillé de l'histoire de chaque jeu — _Avec balises spoilers_
+- [ ] Frise chronologique des événements importants — _De l'Âge des Fées à Quadratum_
+- [ ] Glossaire des termes
 
 ## V. Soluces — 0/5
 
@@ -95,22 +95,21 @@ Guides et cheminement
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)
 
-## VI. Traductions — 3/5
+## VI. Traductions — 3/4
 
 Contenu multilingue
 
 - [x] Interface traduite : en, es, de, it — _Fichiers messages/*.json_
 - [x] Interface traduite : ja — _Optionnel — première version_
 - [ ] Contenu encyclopédique traduit (priorité : en)
-- [ ] Vérifier les traductions existantes — _Certaines sont fausses ou absentes : noms français officiels des Keyblades, ennemis, mondes et concepts, textes non traduits dans les six langues_
 - [x] Sélecteur de langue accessible + hreflang SEO — _Balises alternates générées par Next_
 
-## VII. Accessibilité & qualité — 0/5
+## VII. Accessibilité & qualité — 2/5
 
 Le site doit être utilisable par tous
 
-- [ ] Audit WCAG 2.2 AA (contrastes, focus, landmarks, ARIA)
-- [ ] Navigation clavier complète et skip-links
+- [x] Audit WCAG 2.2 AA (contrastes, focus, landmarks, ARIA) — _axe-core sur 11 pages × 4 thèmes : 0 violation ; accent assombri (--accent-text / --accent-fill) pour 4,5:1, titres de résultats masqués, initiales sans mots-outils_
+- [x] Navigation clavier complète et skip-links — _Piège de focus et retour du focus dans la palette Ctrl+K, sous-menus ouvrables à Entrée/Espace, ordre de tabulation vérifié, indicateur de focus sur tous les éléments (script `scratchpad/keyboard.mjs`)_
 - [ ] Mode contraste élevé, réduction des animations, taille de texte
 - [ ] Tests lecteur d'écran (NVDA) sur les pages clés
 - [ ] Performance Lighthouse ≥ 95, SEO, sitemap, Open Graph
