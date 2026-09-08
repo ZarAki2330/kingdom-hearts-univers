@@ -20,6 +20,8 @@ import { lore as loreCharactersD } from "./lore/characters-d";
 import { lore as loreCharactersE } from "./lore/characters-e";
 import { lore as loreCharactersF } from "./lore/characters-f";
 import { lore as loreWorlds } from "./lore/worlds";
+import { lore as loreWorldsB } from "./lore/worlds-b";
+import { lore as loreWorldsC } from "./lore/worlds-c";
 import { lore as loreKeyblades } from "./lore/keyblades";
 import type { EntryLore } from "./types";
 import type { Category, Entry } from "./types";
@@ -44,7 +46,7 @@ const rawEntries: Entry[] = [
 ];
 
 /** Histoires détaillées (src/data/encyclopedia/lore/*), fusionnées par slug. */
-const lores: Record<string, EntryLore> = { ...loreCharactersA, ...loreCharactersB, ...loreCharactersC, ...loreCharactersD, ...loreCharactersE, ...loreCharactersF, ...loreWorlds, ...loreKeyblades };
+const lores: Record<string, EntryLore> = { ...loreCharactersA, ...loreCharactersB, ...loreCharactersC, ...loreCharactersD, ...loreCharactersE, ...loreCharactersF, ...loreWorlds, ...loreWorldsB, ...loreWorldsC, ...loreKeyblades };
 
 /** Illustrations fusionnées (src/data/encyclopedia/images.ts) ; une image déclarée dans l'entrée garde la priorité. */
 export const entries: Entry[] = rawEntries.map((raw) => {
