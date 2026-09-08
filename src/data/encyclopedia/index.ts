@@ -22,6 +22,8 @@ import { lore as loreCharactersF } from "./lore/characters-f";
 import { lore as loreWorlds } from "./lore/worlds";
 import { lore as loreWorldsB } from "./lore/worlds-b";
 import { lore as loreWorldsC } from "./lore/worlds-c";
+import { lore as loreCharactersG } from "./lore/characters-g";
+import { lore as loreCharactersH } from "./lore/characters-h";
 import { lore as loreEnemiesA } from "./lore/enemies-a";
 import { lore as loreEnemiesB } from "./lore/enemies-b";
 import { lore as loreConcepts } from "./lore/concepts";
@@ -52,7 +54,7 @@ const rawEntries: Entry[] = [
 ];
 
 /** Histoires détaillées (src/data/encyclopedia/lore/*), fusionnées par slug. */
-const lores: Record<string, EntryLore> = { ...loreCharactersA, ...loreCharactersB, ...loreCharactersC, ...loreCharactersD, ...loreCharactersE, ...loreCharactersF, ...loreWorlds, ...loreWorldsB, ...loreWorldsC, ...loreEnemiesA, ...loreEnemiesB, ...loreConcepts, ...loreKeyblades, ...loreKeybladesB, ...loreKeybladesC, ...loreKeybladesD };
+const lores: Record<string, EntryLore> = { ...loreCharactersA, ...loreCharactersB, ...loreCharactersC, ...loreCharactersD, ...loreCharactersE, ...loreCharactersF, ...loreWorlds, ...loreWorldsB, ...loreWorldsC, ...loreCharactersG, ...loreCharactersH, ...loreEnemiesA, ...loreEnemiesB, ...loreConcepts, ...loreKeyblades, ...loreKeybladesB, ...loreKeybladesC, ...loreKeybladesD };
 
 /** Illustrations fusionnées (src/data/encyclopedia/images.ts) ; une image déclarée dans l'entrée garde la priorité. */
 export const entries: Entry[] = rawEntries.map((raw) => {
