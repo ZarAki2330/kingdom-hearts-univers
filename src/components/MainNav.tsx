@@ -176,10 +176,10 @@ export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode;
 
   return (
     <>
-      <nav ref={bar} aria-label={t("menu")} className="hidden md:block">
+      <nav ref={bar} aria-label={t("menu")} className="hidden lg:block">
         {desktopList}
       </nav>
-      <details className="relative md:hidden">
+      <details className="relative lg:hidden">
         <summary
           className="flex list-none cursor-pointer items-center gap-2 rounded-md border border-line bg-surface px-2.5 py-1.5 text-sm font-semibold [&::-webkit-details-marker]:hidden"
           aria-label={t("menu")}
@@ -189,7 +189,7 @@ export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode;
           </svg>
           <span className="sr-only">{t("menu")}</span>
         </summary>
-        <nav aria-label={t("menu")} className="card absolute left-0 top-full z-50 mt-2 w-64 p-2">
+        <nav aria-label={t("menu")} className="card absolute right-0 top-full z-50 mt-2 w-[min(16rem,calc(100vw-1.5rem))] p-2">
           {mobileList}
           {extras && <div className="mt-2 border-t border-line pt-2">{extras}</div>}
         </nav>

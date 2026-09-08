@@ -21,7 +21,8 @@ export function Header({ locale }: { locale: Locale }) {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur supports-[backdrop-filter]:bg-bg/70">
       <SkipLink />
-      <div className="mx-auto flex max-w-6xl items-center gap-3 px-3 py-3 sm:gap-4 sm:px-6">
+      {/* flex-wrap : aux grandes tailles de texte, le bloc de droite passe à la ligne au lieu de déborder. */}
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-3 py-3 sm:gap-4 sm:px-6">
         <Link href="/" className="flex shrink-0 items-center gap-2.5 text-accent" aria-label={t("home")}>
           <Emblem className="h-9 w-9" />
           <span className="flex flex-col whitespace-nowrap font-display font-bold leading-none">

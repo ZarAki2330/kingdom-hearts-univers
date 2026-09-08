@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Emblem } from "./Emblem";
 
 export function Footer() {
@@ -18,7 +19,9 @@ export function Footer() {
             <span className="text-text-2">{t("sources")}</span>
           </li>
           <li>
-            <span className="text-text-2">{t("accessibility")}</span>
+            <Link href="/accessibilite" className="text-accent hover:underline">
+              {t("accessibility")}
+            </Link>
           </li>
         </ul>
       </div>

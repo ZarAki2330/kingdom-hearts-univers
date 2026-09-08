@@ -16,8 +16,8 @@
   --text-2: #5b6078;
   --accent: #a8791a;
   /* Accent assombri pour le texte et les aplats : 4.5:1 minimum sur fond clair (WCAG AA). */
-  --accent-text: #8a6212;
-  --accent-fill: #8a6212;
+  --accent-text: #7d5a0f;
+  --accent-fill: #7d5a0f;
   --accent-2: #2f6fb5;
   --accent-contrast: #ffffff;
   --glow: rgba(168, 121, 26, 0.25);
@@ -129,6 +129,9 @@ html {
 }
 
 body {
+  /* Un mot très long (nom japonais, URL) se coupe au lieu d'élargir la page,
+     notamment quand la taille du texte est augmentée. */
+  overflow-wrap: break-word;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
@@ -192,6 +195,7 @@ h1, h2, h3, h4 {
 
 /* Cartes : élévation réservée aux objets cliquables */
 .card {
+  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -267,6 +271,14 @@ h1, h2, h3, h4 {
   border-radius: 6px;
 }
 
+/* ---------------------------------------------------------------------------
+   Préférences d'accessibilité (page /accessibilite)
+   Trois réglages mémorisés sur l'appareil et appliqués sur <html> :
+   data-motion="reduce" | data-contrast="more" | data-text="large" | "xlarge".
+   Chacun suit d'abord la préférence du système, que le réglage peut forcer.
+--------------------------------------------------------------------------- */
+
+/* Animations réduites : préférence système ou réglage du site. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -275,6 +287,75 @@ h1, h2, h3, h4 {
     animation: none !important;
     transition: none !important;
   }
+}
+
+html[data-motion="reduce"] {
+  scroll-behavior: auto;
+}
+html[data-motion="reduce"] *,
+html[data-motion="reduce"] *::before,
+html[data-motion="reduce"] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+/* Les effets de survol qui déplacent un élément sont neutralisés, pas seulement ralentis. */
+html[data-motion="reduce"] .card-link:hover {
+  transform: none;
+}
+
+/* Taille du texte : agit sur la racine, donc sur toutes les tailles en rem. */
+html[data-text="large"] {
+  font-size: 112.5%;
+}
+html[data-text="xlarge"] {
+  font-size: 125%;
+}
+
+/*
+ * Contraste renforcé : texte secondaire aussi lisible que le texte principal,
+ * bordures franches, halos et voiles décoratifs supprimés, liens soulignés.
+ */
+html[data-contrast="more"] {
+  --text-2: var(--text);
+  --line: var(--text);
+  --glow: transparent;
+  --shadow: 0 0 0 1px var(--text);
+}
+html[data-contrast="more"]:not([data-theme="dusk"]):not([data-theme="night"]) {
+  --bg: #ffffff;
+  --bg-2: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #ffffff;
+  --text: #000000;
+  --accent-text: #6b4a0a;
+  --accent-fill: #6b4a0a;
+  --accent-2: #14498f;
+}
+html[data-contrast="more"][data-theme="dusk"],
+html[data-contrast="more"][data-theme="night"] {
+  --bg: #000000;
+  --bg-2: #000000;
+  --surface: #0a0d1a;
+  --surface-2: #0a0d1a;
+  --text: #ffffff;
+  --accent-text: #ffd166;
+  --accent-fill: #ffd166;
+  --accent-2: #9fd4ff;
+}
+html[data-contrast="more"] .hero,
+html[data-contrast="more"] .stars,
+html[data-contrast="more"] .cover-vignette {
+  background: none;
+  opacity: 1;
+}
+/* Les liens de texte sont soulignés ; ceux qui enveloppent une carte entière (titre,
+   image, résumé) gardent leur mise en forme, c'est leur cadre qui les signale. */
+html[data-contrast="more"] main a:not(.card):not(.card-link):not(.card *):not(.card-link *):not(:has(h1, h2, h3, h4, img)) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+html[data-contrast="more"] :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline-width: 4px;
 }
 
 @media (forced-colors: active) {

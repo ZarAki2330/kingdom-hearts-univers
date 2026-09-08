@@ -104,13 +104,13 @@ Contenu multilingue
 - [ ] Contenu encyclopédique traduit (priorité : en)
 - [x] Sélecteur de langue accessible + hreflang SEO — _Balises alternates générées par Next_
 
-## VII. Accessibilité & qualité — 2/5
+## VII. Accessibilité & qualité — 3/5
 
 Le site doit être utilisable par tous
 
 - [x] Audit WCAG 2.2 AA (contrastes, focus, landmarks, ARIA) — _axe-core sur 11 pages × 4 thèmes : 0 violation ; accent assombri (--accent-text / --accent-fill) pour 4,5:1, titres de résultats masqués, initiales sans mots-outils_
 - [x] Navigation clavier complète et skip-links — _Piège de focus et retour du focus dans la palette Ctrl+K, sous-menus ouvrables à Entrée/Espace, ordre de tabulation vérifié, indicateur de focus sur tous les éléments (script `scratchpad/keyboard.mjs`)_
-- [ ] Mode contraste élevé, réduction des animations, taille de texte
+- [x] Mode contraste élevé, réduction des animations, taille de texte — _Page `/accessibilite` (6 langues) : contraste élevé, animations réduites, texte 112 %/125 %, mémorisés par appareil et appliqués avant le premier rendu ; en-tête qui passe à la ligne, plus aucun débordement horizontal de 390 à 1440 px dans les trois tailles ; menu compact jusqu'à 1024 px_
 - [ ] Tests lecteur d'écran (NVDA) sur les pages clés
 - [ ] Performance Lighthouse ≥ 95, SEO, sitemap, Open Graph
 

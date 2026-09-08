@@ -79,7 +79,7 @@ export function EntryList({ entries, kinds, games, category }: { entries: Entry[
   const visible = filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
   const query = { q: q || undefined, type: kind !== "all" ? kind : undefined, jeu: game !== "all" ? game : undefined, camp: camp !== "all" ? camp : undefined };
   const active = Boolean(q || kind !== "all" || game !== "all" || camp !== "all");
-  const selectCls = "min-h-10 rounded-full border border-line bg-surface px-3 py-2 text-sm";
+  const selectCls = "min-h-10 min-w-0 max-w-full rounded-full border border-line bg-surface px-3 py-2 text-sm";
 
   return (
     <>
@@ -108,7 +108,7 @@ export function EntryList({ entries, kinds, games, category }: { entries: Entry[
               className="w-full rounded-full border border-line bg-surface px-4 py-2.5 text-sm"
             />
           </label>
-          <label className="flex items-center gap-2 text-sm">
+          <label className="flex min-w-0 max-w-full items-center gap-2 text-sm">
             <span className="font-semibold">{t("filters.game")}</span>
             <select name="jeu" value={game} onChange={(e) => update({ jeu: e.target.value })} className={selectCls}>
               <option value="all">{t("filters.allGames")}</option>
@@ -120,7 +120,7 @@ export function EntryList({ entries, kinds, games, category }: { entries: Entry[
             </select>
           </label>
           {side && (
-            <label className="flex items-center gap-2 text-sm">
+            <label className="flex min-w-0 max-w-full items-center gap-2 text-sm">
               <span className="font-semibold">{t("filters.side")}</span>
               <select name="camp" value={camp} onChange={(e) => update({ camp: e.target.value })} className={selectCls}>
                 <option value="all">{t("filterAll")}</option>
