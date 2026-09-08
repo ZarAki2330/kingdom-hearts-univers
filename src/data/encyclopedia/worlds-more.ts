@@ -295,10 +295,11 @@ export const moreWorlds: WorldEntry[] = [
     kind: "original",
     name: "Entre-deux",
     names: { en: "Betwixt and Between", ja: "狭間の世界" },
+    aliases: ["Betwixt and Between"],
     accent: "#8a3a5a",
     tagline: L("Le passage entre les mondes où Axel dit adieu.", "The passage between worlds where Axel says goodbye."),
     description: L(
-      "L'Entre-deux est le couloir de ténèbres que Sora emprunte dans Kingdom Hearts II depuis le manoir de la Cité du Crépuscule pour rejoindre le Monde qui n'existe pas. Assailli par une nuée de Reflets, Sora y est sauvé par Axel, qui brûle toute son énergie dans une ultime attaque et disparaît en lui ouvrant la voie. Le lieu n'est visité que pour cette scène et ce combat, mais il reste l'un des moments les plus marquants de la saga.",
+      "L'Entre-deux — Betwixt and Between en version originale, la version française du jeu ne lui donnant pas de nom — est le couloir de ténèbres que Sora emprunte dans Kingdom Hearts II depuis le manoir de la Cité du Crépuscule pour rejoindre le Monde qui n'existe pas. Assailli par une nuée de Reflets, Sora y est sauvé par Axel, qui brûle toute son énergie dans une ultime attaque et disparaît en lui ouvrant la voie. Le lieu n'est visité que pour cette scène et ce combat, mais il reste l'un des moments les plus marquants de la saga.",
       "Betwixt and Between is the corridor of darkness Sora takes in Kingdom Hearts II from the Twilight Town mansion to reach The World That Never Was. Beset by a swarm of Dusks, Sora is saved there by Axel, who burns all his energy in one final attack and fades away as he opens the path. The place is only visited for this scene and battle, but it remains one of the saga's most memorable moments.",
     ),
     appearances: ["kingdom-hearts-ii"],
