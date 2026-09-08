@@ -54,7 +54,7 @@ Les jaquettes officielles ont pour texte alternatif « Jaquette de *Titre* ». L
 ## Remplacer une image existante
 
 Quand un fichier est remplacé sans changer de nom, Next.js continue de servir
-la version redimensionnée qu' il garde dans `.next/dev/cache/images` (clé = chemin
+la version redimensionnée qu'il garde dans `.next/dev/cache/images` (clé = chemin
 du fichier, pas son contenu). Après tout remplacement : supprimer ce dossier,
 redémarrer le serveur, puis recharger avec Ctrl+Shift+R. Sans cela, une partie
 des images semble ne pas avoir changé — seules celles dont les dimensions ont
