@@ -10,55 +10,6 @@ const L = (fr: string, en: string): LocalizedText => ({ fr, en });
  */
 export const lore: Record<string, EntryLore> = {
   // ─────────────────────────── Xehanort (l'apprenti) ───────────────────────────
-  "xehanort": {
-    sections: [
-      {
-        title: L("Origines", "Origins"),
-        text: L(
-          "Ce Xehanort-là n'est ni le vieux maître de la Contrée du Départ ni le Jeune Xehanort venu du passé : c'est le jeune homme aux cheveux argentés retrouvé sans mémoire au Jardin Radieux, celui que la série appelle simplement « l'apprenti d'Ansem ». Son corps est en réalité celui de Terra, et le cœur qui l'habite celui du Maître Xehanort, qui s'y est implanté au Cimetière des Keyblades. L'amnésie qui suit ce transfert ne lui laisse qu'un nom.\n\nSa silhouette annonce déjà les deux figures qu'il engendrera : Ansem, Chercheur des Ténèbres, en reprendra les traits presque à l'identique, et Xemnas en héritera la voix et la démarche. Dans les jeux japonais comme occidentaux, il partage d'ailleurs ses comédiens avec ces deux entités, ce qui souligne qu'il s'agit d'une seule et même personne fragmentée.",
-          "This Xehanort is neither the old master of the Land of Departure nor the Young Xehanort brought from the past: he is the silver-haired young man found without memory in Radiant Garden, the one the series simply calls “Ansem's apprentice”. His body is in fact Terra's, and the heart inhabiting it is Master Xehanort's, implanted there at the Keyblade Graveyard. The amnesia that follows leaves him nothing but a name.\n\nHis silhouette already announces the two figures he will produce: Ansem, Seeker of Darkness, takes on almost identical features, and Xemnas inherits his voice and bearing. In both the Japanese and Western games he shares his actors with those two entities, underlining that they are one fractured person.",
-        ),
-      },
-      {
-        game: "birth-by-sleep",
-        text: L(
-          "Au terme de Birth by Sleep, Terra perd son corps au Cimetière des Keyblades lorsque le Maître Xehanort y transfère son propre cœur. Le nouvel occupant du corps est aussitôt affronté par l'armure sans maître de Terra, et le choc lui coûte ses souvenirs : il s'effondre au Jardin Radieux, incapable de dire d'où il vient.\n\nAnsem le Sage, souverain et savant du monde, le recueille. Frappé par son intelligence, il en fait son sixième apprenti aux côtés de Braig, Dilan, Even, Aeleus et Ienzo. Xehanort se montre studieux, docile en apparence, et gagne rapidement la confiance de son maître, jusqu'à être associé aux recherches sur le cœur humain menées dans les laboratoires du château.",
-          "At the end of Birth by Sleep, Terra loses his body at the Keyblade Graveyard when Master Xehanort transfers his own heart into it. The new occupant is immediately fought by Terra's masterless armor, and the clash costs him his memories: he collapses in Radiant Garden, unable to say where he comes from.\n\nAnsem the Wise, the world's ruler and scholar, takes him in. Struck by his intelligence, he makes him his sixth apprentice alongside Braig, Dilan, Even, Aeleus and Ienzo. Xehanort proves studious and outwardly docile, quickly earning his master's trust until he is brought into the research on the human heart carried out in the castle laboratories.",
-        ),
-      },
-      {
-        game: "kingdom-hearts",
-        text: L(
-          "Les rapports laissés dans la Forteresse Oubliée racontent la suite. Ansem le Sage renonce à ses expériences, jugeant qu'on ne doit pas sonder les ténèbres du cœur ; ses apprentis, menés par Xehanort, poursuivent en secret. Ils enferment des cobayes dans les salles souterraines, provoquent l'apparition des premiers Sans-cœur, puis se débarrassent de leur maître en le précipitant dans le Domaine des Ténèbres.\n\nXehanort s'approprie alors le nom et le titre d'Ansem, signe les rapports à sa place et laisse les Sans-cœur dévorer le Jardin Radieux, qui devient la Forteresse Oubliée. Pour aller plus loin, il abandonne volontairement son propre cœur aux ténèbres : de cet acte naissent Ansem, Chercheur des Ténèbres, le Sans-cœur que Sora affrontera au Bout du Monde, et Xemnas, son Simili.",
-          "The reports left behind in Hollow Bastion tell what follows. Ansem the Wise abandons his experiments, judging that the darkness of the heart must not be probed; his apprentices, led by Xehanort, carry on in secret. They lock test subjects in the underground chambers, cause the first Heartless to appear, then rid themselves of their master by casting him into the Realm of Darkness.\n\nXehanort then takes Ansem's name and title, signs the reports in his place, and lets the Heartless devour Radiant Garden, which becomes Hollow Bastion. To go further still, he willingly surrenders his own heart to darkness: from that act are born Ansem, Seeker of Darkness, the Heartless Sora will fight at the End of the World, and Xemnas, his Nobody.",
-        ),
-      },
-      {
-        game: "kingdom-hearts-ii",
-        text: L(
-          "Kingdom Hearts II démêle enfin l'imposture. Mickey explique à Sora que l'homme vaincu un an plus tôt n'était pas Ansem le Sage mais le Sans-cœur de son apprenti, et le véritable Ansem, revenu du Domaine des Ténèbres sous le nom de DiZ, confirme le récit. Les rapports d'Ansem, disséminés dans les mondes, retracent l'engrenage : la curiosité du maître, la trahison des six, la naissance des Sans-cœur.\n\nLe corps volé, lui, n'a pas disparu. Privé de son cœur, il a laissé derrière lui Xemnas, qui bâtit le Monde qui n'existe pas et prend la tête de l'Organisation XIII. Ainsi, l'apprenti amnésique du Jardin Radieux se retrouve à l'origine des deux grandes menaces de la première saga, sans jamais apparaître lui-même en scène.",
-          "Kingdom Hearts II finally unravels the deception. Mickey explains to Sora that the man defeated a year earlier was not Ansem the Wise but his apprentice's Heartless, and the real Ansem, returned from the Realm of Darkness under the name DiZ, confirms the account. Ansem's reports, scattered across the worlds, retrace the chain of events: the master's curiosity, the betrayal of the six, the birth of the Heartless.\n\nThe stolen body has not vanished either. Emptied of its heart, it left behind Xemnas, who builds The World That Never Was and leads Organization XIII. The amnesiac apprentice of Radiant Garden thus stands at the origin of both great threats of the first saga, without ever appearing on screen himself.",
-        ),
-      },
-      {
-        game: "kingdom-hearts-iii",
-        text: L(
-          "Lorsque Sans-cœur et Simili sont tous deux vaincus, le corps de l'apprenti se recompose : c'est Terra-Xehanort, réceptacle du cœur du Maître Xehanort, qui rejoint la véritable Organisation XIII. Au Cimetière des Keyblades, il affronte Aqua et Ventus, ceux-là mêmes qu'il avait perdus de vue dix ans plus tôt.\n\nLe combat tourne quand l'armure sans maître de Terra, restée là depuis Birth by Sleep, se dresse une seconde fois contre l'usurpateur. La volonté de Terra reprend enfin le dessus, chasse le cœur de Xehanort du corps qu'il occupait et rend au porteur son visage d'origine. L'apprenti d'Ansem cesse alors d'exister : il n'était qu'un masque posé sur Terra, et sa disparition permet aux trois amis de la Contrée du Départ de se retrouver.",
-          "Once both Heartless and Nobody are defeated, the apprentice's body reforms: it is Terra-Xehanort, vessel of Master Xehanort's heart, who joins the real Organization XIII. At the Keyblade Graveyard he faces Aqua and Ventus, the very people he lost sight of ten years earlier.\n\nThe fight turns when Terra's masterless armor, still standing there since Birth by Sleep, rises a second time against the usurper. Terra's will finally regains the upper hand, drives Xehanort's heart from the body it occupied and gives the wielder back his own face. Ansem's apprentice then ceases to exist: he was only a mask laid over Terra, and his disappearance lets the three friends of the Land of Departure reunite.",
-        ),
-      },
-    ],
-    trivia: [
-      L("Son nom japonais, ゼアノート, est le même que celui du Maître Xehanort : rien ne distingue les deux personnages à l'écrit, ce qui alimentait la confusion avant Birth by Sleep.", "His Japanese name, ゼアノート, is the same as Master Xehanort's: nothing distinguishes the two in writing, which fuelled confusion before Birth by Sleep."),
-      L("Richard Epcar et Akio Ōtsuka doublent à la fois l'apprenti, Ansem Chercheur des Ténèbres et Xemnas, soulignant leur unité.", "Richard Epcar and Akio Ōtsuka voice the apprentice, Ansem Seeker of Darkness and Xemnas alike, underlining their unity."),
-      L("Le premier Kingdom Hearts le montrait déjà, sans le nommer, dans les illustrations des rapports d'Ansem découverts à la Forteresse Oubliée.", "The first Kingdom Hearts already showed him, unnamed, in the illustrations of Ansem's reports found in Hollow Bastion."),
-    ],
-    sources: [
-      { label: "Kingdom Hearts Wiki — Terra-Xehanort", url: "https://kingdomhearts.fandom.com/wiki/Terra-Xehanort" },
-      { label: "Kingdom Hearts Wiki — Ansem's Reports", url: "https://kingdomhearts.fandom.com/wiki/Ansem_Report" },
-    ],
-  },
-
   // ─────────────────────────── Even ───────────────────────────
   "even": {
     sections: [

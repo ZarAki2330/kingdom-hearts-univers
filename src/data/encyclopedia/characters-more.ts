@@ -62,7 +62,7 @@ export const moreCharacters: CharacterEntry[] = [
     kind: "original",
     name: "Terra-Xehanort",
     names: { ja: "テラ＝ゼアノート" },
-    aliases: ["Xehanort (apprenti d'Ansem)"],
+    aliases: ["Xehanort (apprenti d'Ansem)", "Xehanort", "Terranort"],
     alignment: "darkness",
     homeworld: "Jardin Radieux",
     group: "Véritable Organisation XIII",
