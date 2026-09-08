@@ -232,7 +232,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#d86aa0",
     tagline: L("Le frère de Strelitzia, futur Marluxia.", "Strelitzia's brother, the future Marluxia."),
     description: L(
-      "Porteur de Keyblade de Daybreak Town, Lauriam est choisi comme l'un des cinq nouveaux chefs d'Union parmi les Dandelions après la Guerre des Keyblades. Il consacre son temps à rechercher sa sœur Strelitzia, disparue sans explication.\n\nRéveillé dans une époque bien postérieure, il perd son cœur et devient Marluxia ; dans Kingdom Hearts III, le Simili ne conserve qu'un vague souvenir de la sœur qu'il cherchait.",
+      "Porteur de Keyblade de Ville de l'Aube, Lauriam est choisi comme l'un des cinq nouveaux chefs d'Union parmi les Dandelions après la Guerre des Keyblades. Il consacre son temps à rechercher sa sœur Strelitzia, disparue sans explication.\n\nRéveillé dans une époque bien postérieure, il perd son cœur et devient Marluxia ; dans Kingdom Hearts III, le Simili ne conserve qu'un vague souvenir de la sœur qu'il cherchait.",
       "A Keyblade wielder from Daybreak Town, Lauriam is picked as one of the five new Union leaders among the Dandelions after the Keyblade War. He spends his time searching for his sister Strelitzia, who vanished without explanation.\n\nAwakening in a much later era, he loses his heart and becomes Marluxia; in Kingdom Hearts III, the Nobody retains only a faint memory of the sister he was seeking.",
     ),
     appearances: ["kingdom-hearts-chi", "kingdom-hearts-iii"],
@@ -259,7 +259,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#e8d84a",
     tagline: L("La porteuse au caractère électrique, future Larxene.", "The sharp-tongued wielder who becomes Larxene."),
     description: L(
-      "Porteuse de Keyblade de Daybreak Town, Elrena fait partie des Dandelions qui survivent à la Guerre des Keyblades. Aussi mordante que sera son Simili, elle seconde Lauriam dans sa quête pour retrouver Strelitzia.\n\nPrivée de son cœur à une époque ultérieure, elle devient Larxene, numéro XII de l'Organisation XIII, et ne se souvient que confusément de son passé.",
+      "Porteuse de Keyblade de Ville de l'Aube, Elrena fait partie des Dandelions qui survivent à la Guerre des Keyblades. Aussi mordante que sera son Simili, elle seconde Lauriam dans sa quête pour retrouver Strelitzia.\n\nPrivée de son cœur à une époque ultérieure, elle devient Larxene, numéro XII de l'Organisation XIII, et ne se souvient que confusément de son passé.",
       "A Keyblade wielder from Daybreak Town, Elrena is one of the Dandelions who survive the Keyblade War. As biting as her Nobody will be, she assists Lauriam in his search for Strelitzia.\n\nStripped of her heart in a later age, she becomes Larxene, Number XII of Organization XIII, and remembers her past only dimly.",
     ),
     appearances: ["kingdom-hearts-chi", "kingdom-hearts-iii"],
@@ -283,7 +283,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#9aa8c8",
     tagline: L("L'Avale-Rêves confié à chaque porteur de Keyblade.", "The Dream Eater given to every Keyblade wielder."),
     description: L(
-      "Les Chirithy sont des Esprits Avale-Rêves créés par le Maître des Maîtres pour accompagner chaque porteur de Keyblade de Daybreak Town, les guider et veiller sur leurs rêves. Un Chirithy qui cède aux ténèbres se transforme en Cauchemar.\n\nDans Kingdom Hearts III, un Chirithy attend dans le Monde Final le retour de son porteur disparu et aide Sora à comprendre ce lieu ; il reprend du service dans Missing-Link.",
+      "Les Chirithy sont des Esprits Avale-Rêves créés par le Maître des Maîtres pour accompagner chaque porteur de Keyblade de Ville de l'Aube, les guider et veiller sur leurs rêves. Un Chirithy qui cède aux ténèbres se transforme en Cauchemar.\n\nDans Kingdom Hearts III, un Chirithy attend dans le Monde Final le retour de son porteur disparu et aide Sora à comprendre ce lieu ; il reprend du service dans Missing-Link.",
       "Chirithy are Spirit Dream Eaters created by the Master of Masters to accompany every Keyblade wielder of Daybreak Town, guide them and watch over their dreams. A Chirithy that gives in to darkness becomes a Nightmare.\n\nIn Kingdom Hearts III, one Chirithy waits in the Final World for its lost wielder and helps Sora understand the place; it returns to duty in Missing-Link.",
     ),
     appearances: ["kingdom-hearts-chi", "kingdom-hearts-iii", "missing-link"],
@@ -310,7 +310,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#c8b060",
     tagline: L("Le porteur anonyme dont l'histoire est celle d'Union χ.", "The nameless wielder whose story is that of Union χ."),
     description: L(
-      "Protagoniste personnalisable de Kingdom Hearts Union χ, le Joueur est un porteur de Keyblade de Daybreak Town accompagné d'un Chirithy. Ami d'Ephemer et de Skuld, il rejoint les Dandelions et survit ainsi à la Guerre des Keyblades.\n\nSon parcours croise celui des nouveaux chefs d'Union et la manipulation des Prophètes ; à la fin du jeu, il se sacrifie face aux ténèbres, et son Chirithy l'attend depuis dans le Monde Final.",
+      "Protagoniste personnalisable de Kingdom Hearts Union χ, le Joueur est un porteur de Keyblade de Ville de l'Aube accompagné d'un Chirithy. Ami d'Ephemer et de Skuld, il rejoint les Dandelions et survit ainsi à la Guerre des Keyblades.\n\nSon parcours croise celui des nouveaux chefs d'Union et la manipulation des Prophètes ; à la fin du jeu, il se sacrifie face aux ténèbres, et son Chirithy l'attend depuis dans le Monde Final.",
       "The customizable protagonist of Kingdom Hearts Union χ, the Player is a Keyblade wielder from Daybreak Town accompanied by a Chirithy. A friend of Ephemer and Skuld, they join the Dandelions and so survive the Keyblade War.\n\nTheir path crosses the new Union leaders and the Foretellers' schemes; at the end of the game they sacrifice themselves against the darkness, and their Chirithy has waited for them in the Final World ever since.",
     ),
     appearances: ["kingdom-hearts-chi"],

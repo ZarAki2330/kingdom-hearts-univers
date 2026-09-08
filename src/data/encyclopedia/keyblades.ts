@@ -298,12 +298,13 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "wayward-wind",
     category: "keyblades",
-    name: "Wayward Wind",
-    names: { ja: "ウェイワードウインド" },
+    name: "Brise Légère",
+    names: { en: "Wayward Wind", ja: "ウェイワードウインド" },
+    aliases: ["Wayward Wind"],
     accent: "#4ec1a5",
     tagline: L("La Keyblade de Ventus, tenue à l'envers.", "Ventus's Keyblade, held backhand."),
     description: L(
-      "Légère et effilée, Wayward Wind est maniée à revers par Ventus, ce qui lui donne son style de combat rapide. Ven la porte dans Birth by Sleep et de nouveau au Nécropole des Keyblades dans Kingdom Hearts III. Son porte-clés est un symbole de vent.",
+      "Légère et effilée, Brise Légère est maniée à revers par Ventus, ce qui lui donne son style de combat rapide. Ven la porte dans Birth by Sleep et de nouveau au Nécropole des Keyblades dans Kingdom Hearts III. Son porte-clés est un symbole de vent.",
       "Light and slender, Wayward Wind is held backhand by Ventus, which gives him his fast fighting style. Ven carries it in Birth by Sleep and again at the Keyblade Graveyard in Kingdom Hearts III. Its keychain is a wind symbol.",
     ),
     obtained: { "birth-by-sleep": L("Keyblade de départ de Ventus.", "Ventus's starting Keyblade.") },

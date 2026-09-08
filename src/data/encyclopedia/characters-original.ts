@@ -219,7 +219,7 @@ export const originalCharacters: CharacterEntry[] = [
     alignment: "light",
     homeworld: "Contrée du Départ",
     group: "Trio Wayfinder",
-    weapon: L("Keyblade (Wayward Wind)", "Keyblade (Wayward Wind)"),
+    weapon: L("Keyblade (Brise Légère)", "Keyblade (Wayward Wind)"),
     voice: { fr: "Hervé Grull", en: "Jesse McCartney", ja: "Kōki Uchiyama" },
     accent: "#4ec1a5",
     tagline: L("Le cœur de pure lumière endormi dans celui de Sora.", "The heart of pure light that slept inside Sora's."),

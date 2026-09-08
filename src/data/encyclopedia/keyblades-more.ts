@@ -129,8 +129,9 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "olympia",
     category: "keyblades",
-    name: "Olympia",
-    names: { ja: "オリンピア" },
+    name: "Âme de héros",
+    names: { en: "Olympia", ja: "オリンピア" },
+    aliases: ["Olympia"],
     accent: "#e0a040",
     tagline: L("La Keyblade des champions du Colisée de l'Olympe.", "The Keyblade of Olympus Coliseum champions."),
     description: L(
@@ -600,11 +601,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "treasure-trove",
     category: "keyblades",
-    name: "Treasure Trove",
+    name: "Mine de joyaux",
+    names: { en: "Treasure Trove" },
+    aliases: ["Treasure Trove"],
     accent: "#c09040",
     tagline: L("La Keyblade des Sept Nains, remplie de pierres précieuses.", "The Seven Dwarfs' Keyblade, full of gems."),
     description: L(
-      "Treasure Trove est ornée de pioches, de gemmes multicolores et d'un porte-clés en diamant, à l'image de la mine des Sept Nains. Terra, Ventus et Aqua l'obtiennent chacun après leur passage au Bois des Nains dans Birth by Sleep.\n\nC'est une Keyblade de début de partie, mais son bonus aux points de commande est utile pour faire progresser les techniques.",
+      "Mine de joyaux est ornée de pioches, de gemmes multicolores et d'un porte-clés en diamant, à l'image de la mine des Sept Nains. Terra, Ventus et Aqua l'obtiennent chacun après leur passage au Bois des Nains dans Birth by Sleep.\n\nC'est une Keyblade de début de partie, mais son bonus aux points de commande est utile pour faire progresser les techniques.",
       "Treasure Trove is decorated with pickaxes, multicoloured gems and a diamond keychain, in the image of the Seven Dwarfs' mine. Terra, Ventus and Aqua each obtain it after their visit to Dwarf Woodlands in Birth by Sleep.\n\nIt is an early-game Keyblade, but its command point bonus helps level up techniques.",
     ),
     obtained: { "birth-by-sleep": L("Bois des Nains, à la fin du scénario de chaque personnage.", "Dwarf Woodlands, at the end of each character's episode.") },
@@ -616,11 +619,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "stroke-of-midnight",
     category: "keyblades",
-    name: "Stroke of Midnight",
+    name: "Coup de minuit",
+    names: { en: "Stroke of Midnight" },
+    aliases: ["Stroke of Midnight"],
     accent: "#7ab0e0",
     tagline: L("La Keyblade de Cendrillon, entre carrosse et pantoufle de verre.", "Cinderella's Keyblade, between pumpkin coach and glass slipper."),
     description: L(
-      "Bleu pâle et argent, Stroke of Midnight reprend les volutes du carrosse-citrouille et se termine par une pantoufle de verre en porte-clés. Les trois héros de Birth by Sleep la reçoivent après leur visite du Palais des Rêves.\n\nOrientée magie, elle convient particulièrement à Aqua.",
+      "Bleu pâle et argent, Coup de minuit reprend les volutes du carrosse-citrouille et se termine par une pantoufle de verre en porte-clés. Les trois héros de Birth by Sleep la reçoivent après leur visite du Palais des Rêves.\n\nOrientée magie, elle convient particulièrement à Aqua.",
       "Pale blue and silver, Stroke of Midnight borrows the pumpkin coach's curls and ends with a glass slipper keychain. The three heroes of Birth by Sleep receive it after their visit to the Castle of Dreams.\n\nMagic-oriented, it suits Aqua especially well.",
     ),
     obtained: { "birth-by-sleep": L("Palais des Rêves, à la fin du scénario de chaque personnage.", "Castle of Dreams, at the end of each character's episode.") },
@@ -632,11 +637,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "fairy-stars",
     category: "keyblades",
-    name: "Fairy Stars",
+    name: "Astres féériques",
+    names: { en: "Fairy Stars" },
+    aliases: ["Fairy Stars"],
     accent: "#d090c0",
     tagline: L("La Keyblade des trois bonnes fées du Domaine Enchanté.", "The Keyblade of the three good fairies of Enchanted Dominion."),
     description: L(
-      "Rose, bleue et verte comme Flora, Pâquerette et Pimprenelle, Fairy Stars est entourée d'étoiles et de rubans. Elle est remise aux héros de Birth by Sleep à l'issue du Domaine Enchanté, le monde de la Belle au bois dormant.\n\nSon bonus de magie important en fait une alliée précieuse pour les sorts de soin et d'attaque.",
+      "Rose, bleue et verte comme Flora, Pâquerette et Pimprenelle, Astres féériques est entourée d'étoiles et de rubans. Elle est remise aux héros de Birth by Sleep à l'issue du Domaine Enchanté, le monde de la Belle au bois dormant.\n\nSon bonus de magie important en fait une alliée précieuse pour les sorts de soin et d'attaque.",
       "Pink, blue and green like Flora, Fauna and Merryweather, Fairy Stars is wreathed in stars and ribbons. It is given to the heroes of Birth by Sleep at the end of Enchanted Dominion, the world of Sleeping Beauty.\n\nIts sizeable magic bonus makes it a precious ally for healing and attack spells.",
     ),
     obtained: { "birth-by-sleep": L("Domaine Enchanté, à la fin du scénario de chaque personnage.", "Enchanted Dominion, at the end of each character's episode.") },
@@ -710,11 +717,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "sweetstack",
     category: "keyblades",
-    name: "Sweetstack",
+    name: "Gourmandises",
+    names: { en: "Sweetstack" },
+    aliases: ["Sweetstack"],
     accent: "#e88ab0",
     tagline: L("La Keyblade en cornet de glace de la Ville de Disney.", "The ice-cream-cone Keyblade of Disney Town."),
     description: L(
-      "Sweetstack empile des boules de glace multicolores sur un cornet, avec une cerise en porte-clés : elle célèbre les glaces que Huey, Dewey et Louie vendent dans la Ville de Disney. Elle récompense les performances dans les mini-jeux de la ville, en particulier le rythme des Glaces.\n\nElle fait partie des Keyblades les plus fantaisistes de la saga.",
+      "Gourmandises empile des boules de glace multicolores sur un cornet, avec une cerise en porte-clés : elle célèbre les glaces que Huey, Dewey et Louie vendent dans la Ville de Disney. Elle récompense les performances dans les mini-jeux de la ville, en particulier le rythme des Glaces.\n\nElle fait partie des Keyblades les plus fantaisistes de la saga.",
       "Sweetstack piles multicoloured ice cream scoops on a cone, with a cherry keychain: it celebrates the ice creams Huey, Dewey and Louie sell in Disney Town. It rewards performance in the town's mini-games, notably Ice Cream Beat.\n\nIt is one of the most whimsical Keyblades of the saga.",
     ),
     obtained: { "birth-by-sleep": L("Ville de Disney : récompense des mini-jeux (Rythme des Glaces).", "Disney Town: mini-game reward (Ice Cream Beat).") },
@@ -745,7 +754,7 @@ export const moreKeyblades: KeybladeEntry[] = [
     accent: "#c8d0e0",
     tagline: L("La Keyblade blanche de Ventus, écho d'un passé oublié.", "Ventus's white Keyblade, echo of a forgotten past."),
     description: L(
-      "Blanche et argentée, Lost Memory est une Keyblade exclusive à Ventus dans Birth by Sleep. Sa silhouette rappelle Wayward Wind, et son nom renvoie aux souvenirs effacés de Ven depuis sa séparation d'avec Vanitas.\n\nElle offre des statistiques supérieures à sa Keyblade de départ et un bonus de magie appréciable.",
+      "Blanche et argentée, Lost Memory est une Keyblade exclusive à Ventus dans Birth by Sleep. Sa silhouette rappelle Brise Légère, et son nom renvoie aux souvenirs effacés de Ven depuis sa séparation d'avec Vanitas.\n\nElle offre des statistiques supérieures à sa Keyblade de départ et un bonus de magie appréciable.",
       "White and silver, Lost Memory is a Keyblade exclusive to Ventus in Birth by Sleep. Its silhouette recalls Wayward Wind, and its name points to Ven's memories erased since his separation from Vanitas.\n\nIt offers better stats than his starting Keyblade and a welcome magic bonus.",
     ),
     obtained: { "birth-by-sleep": L("Scénario de Ventus, obtenue au cours de l'histoire.", "Ventus's episode, obtained during the story.") },
@@ -840,11 +849,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "skull-noise",
     category: "keyblades",
-    name: "Skull Noise",
+    name: "Craque-crâne",
+    names: { en: "Skull Noise" },
+    aliases: ["Skull Noise"],
     accent: "#e05a30",
     tagline: L("La Keyblade de The World Ends with You, offerte à la Ville de Traverse.", "The Keyblade from The World Ends with You, earned in Traverse Town."),
     description: L(
-      "Rouge et noire, Skull Noise reprend le crâne stylisé des Reapers et les pins de The World Ends with You, dont les personnages (Neku, Shiki, Joshua, Beat, Rhyme) apparaissent à la Ville de Traverse. Sora et Riku l'obtiennent chacun après leur première visite de la ville.\n\nSon bonus de force en fait un bon remplaçant de la Chaîne Royale au tout début de Dream Drop Distance.",
+      "Rouge et noire, Craque-crâne reprend le crâne stylisé des Reapers et les pins de The World Ends with You, dont les personnages (Neku, Shiki, Joshua, Beat, Rhyme) apparaissent à la Ville de Traverse. Sora et Riku l'obtiennent chacun après leur première visite de la ville.\n\nSon bonus de force en fait un bon remplaçant de la Chaîne Royale au tout début de Dream Drop Distance.",
       "Red and black, Skull Noise reprises the stylised skull of the Reapers and the pins of The World Ends with You, whose characters (Neku, Shiki, Joshua, Beat, Rhyme) appear in Traverse Town. Sora and Riku each obtain it after their first visit to the town.\n\nIts strength bonus makes it a good replacement for the Kingdom Key at the very start of Dream Drop Distance.",
     ),
     obtained: { "dream-drop-distance": L("Ville de Traverse, à la fin de la première visite.", "Traverse Town, at the end of the first visit.") },
@@ -856,11 +867,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "guardian-bell",
     category: "keyblades",
-    name: "Guardian Bell",
+    name: "Cloche gardienne",
+    names: { en: "Guardian Bell" },
+    aliases: ["Guardian Bell"],
     accent: "#8a6a4a",
     tagline: L("La Keyblade de Notre-Dame, cloche et gargouille.", "The Notre-Dame Keyblade, bell and gargoyle."),
     description: L(
-      "Ornée d'une cloche, d'une rosace et de gargouilles, Guardian Bell est la Keyblade de La Cité des Cloches, le monde du Bossu de Notre-Dame. Sora et Riku la reçoivent après avoir aidé Quasimodo et vaincu le Rêve Cauchemar du monde.\n\nElle possède un bon bonus de magie et une allonge appréciable.",
+      "Ornée d'une cloche, d'une rosace et de gargouilles, Cloche gardienne est la Keyblade de La Cité des Cloches, le monde du Bossu de Notre-Dame. Sora et Riku la reçoivent après avoir aidé Quasimodo et vaincu le Rêve Cauchemar du monde.\n\nElle possède un bon bonus de magie et une allonge appréciable.",
       "Decorated with a bell, a rose window and gargoyles, Guardian Bell is the Keyblade of La Cité des Cloches, the world of The Hunchback of Notre Dame. Sora and Riku receive it after helping Quasimodo and defeating the world's Nightmare boss.\n\nIt has a good magic bonus and a welcome reach.",
     ),
     obtained: { "dream-drop-distance": L("La Cité des Cloches, à la fin du monde.", "La Cité des Cloches, at the end of the world.") },
@@ -872,11 +885,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "dual-disc",
     category: "keyblades",
-    name: "Dual Disc",
+    name: "Double disque",
+    names: { en: "Dual Disc" },
+    aliases: ["Dual Disc"],
     accent: "#30a0d0",
     tagline: L("La Keyblade de la Grille, deux disques d'identité en une lame.", "The Grid Keyblade, two identity discs in one blade."),
     description: L(
-      "Noire et bleu lumineux, Dual Disc reprend l'esthétique de Tron : L'Héritage avec ses deux disques d'identité et son porte-clés en forme de disque. Elle succède au Débogueur Photon de Kingdom Hearts II. Sora et Riku l'obtiennent à la fin de la Grille.\n\nElle est bien équilibrée entre force et magie.",
+      "Noire et bleu lumineux, Double disque reprend l'esthétique de Tron : L'Héritage avec ses deux disques d'identité et son porte-clés en forme de disque. Elle succède au Débogueur Photon de Kingdom Hearts II. Sora et Riku l'obtiennent à la fin de la Grille.\n\nElle est bien équilibrée entre force et magie.",
       "Black and glowing blue, Dual Disc borrows the look of Tron: Legacy with its two identity discs and a disc keychain. It succeeds Photon Debugger from Kingdom Hearts II. Sora and Riku obtain it at the end of The Grid.\n\nIt is well balanced between strength and magic.",
     ),
     obtained: { "dream-drop-distance": L("La Grille, à la fin du monde.", "The Grid, at the end of the world.") },
@@ -892,7 +907,7 @@ export const moreKeyblades: KeybladeEntry[] = [
     accent: "#d04040",
     tagline: L("La Keyblade en gant de boxe de Dream Drop Distance.", "The boxing-glove Keyblade of Dream Drop Distance."),
     description: L(
-      "Knockout Punch se termine par un gant de boxe rouge et porte un porte-clés en forme de trophée. Elle est liée aux défis annexes de Dream Drop Distance et se distingue par un très fort bonus de force.\n\nSon style cartoon la rapproche des Keyblades les plus fantaisistes de la saga, à l'image de Sweetstack.",
+      "Knockout Punch se termine par un gant de boxe rouge et porte un porte-clés en forme de trophée. Elle est liée aux défis annexes de Dream Drop Distance et se distingue par un très fort bonus de force.\n\nSon style cartoon la rapproche des Keyblades les plus fantaisistes de la saga, à l'image de Gourmandises.",
       "Knockout Punch ends in a red boxing glove and carries a trophy keychain. It is tied to the side challenges of Dream Drop Distance and stands out for a very high strength bonus.\n\nIts cartoonish style places it alongside the saga's most whimsical Keyblades, like Sweetstack.",
     ),
     appearances: ["dream-drop-distance"],
@@ -902,11 +917,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "ferris-gear",
     category: "keyblades",
-    name: "Ferris Gear",
+    name: "Rouage",
+    names: { en: "Ferris Gear" },
+    aliases: ["Ferris Gear"],
     accent: "#e0a030",
     tagline: L("La Keyblade grande roue du Paradis des Garnements.", "The Ferris-wheel Keyblade of Prankster's Paradise."),
     description: L(
-      "Colorée comme une fête foraine, Ferris Gear reprend la grande roue et les manèges du Paradis des Garnements, le monde de Pinocchio dans Dream Drop Distance. Son porte-clés est un ballon.\n\nSora et Riku la reçoivent après avoir traversé l'île et le ventre de Monstro.",
+      "Colorée comme une fête foraine, Rouage reprend la grande roue et les manèges du Paradis des Garnements, le monde de Pinocchio dans Dream Drop Distance. Son porte-clés est un ballon.\n\nSora et Riku la reçoivent après avoir traversé l'île et le ventre de Monstro.",
       "Colourful as a funfair, Ferris Gear reprises the Ferris wheel and rides of Prankster's Paradise, Pinocchio's world in Dream Drop Distance. Its keychain is a balloon.\n\nSora and Riku receive it after crossing the island and Monstro's belly.",
     ),
     obtained: { "dream-drop-distance": L("Paradis des Garnements, à la fin du monde.", "Prankster's Paradise, at the end of the world.") },
@@ -963,11 +980,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "end-of-pain",
     category: "keyblades",
-    name: "End of Pain",
+    name: "Dolor Fina",
+    names: { en: "End of Pain" },
+    aliases: ["End of Pain"],
     accent: "#4a3060",
     tagline: L("La Keyblade dentelée qui met fin aux Cauchemars.", "The jagged Keyblade that ends the Nightmares."),
     description: L(
-      "Noire et violette, hérissée de dents, End of Pain est l'une des Keyblades les plus puissantes de Dream Drop Distance. Son nom fait écho aux Keyblades de Roxas dans 358/2 Days et son design aux Cauchemars que Sora et Riku combattent dans les mondes endormis.\n\nElle se destine aux combats les plus difficiles du jeu.",
+      "Noire et violette, hérissée de dents, Dolor Fina est l'une des Keyblades les plus puissantes de Dream Drop Distance. Son nom fait écho aux Keyblades de Roxas dans 358/2 Days et son design aux Cauchemars que Sora et Riku combattent dans les mondes endormis.\n\nElle se destine aux combats les plus difficiles du jeu.",
       "Black and purple, bristling with teeth, End of Pain is one of the most powerful Keyblades of Dream Drop Distance. Its name echoes Roxas's Keyblades in 358/2 Days and its design the Nightmares Sora and Riku fight in the sleeping worlds.\n\nIt is meant for the game's hardest battles.",
     ),
     appearances: ["dream-drop-distance"],
