@@ -220,7 +220,23 @@
       "trivia": "Curiosidades",
       "sources": "Fuentes"
     },
-    "results": "Resultados"
+    "results": "Resultados",
+    "stats": {
+      "title": "Estadísticas por juego",
+      "lead": "Una Llave espada no tiene los mismos valores de un juego a otro. Kingdom Hearts y Chain of Memories puntúan la hoja a su manera; en Kingdom Hearts III evoluciona del nivel 0 al nivel 10.",
+      "game": "Juego",
+      "grades": "Golpe / Estocada / Final",
+      "reach": "Alcance",
+      "abilities": "Habilidades",
+      "abilitiesNote": "Los nombres de las habilidades se dan en inglés, como en la fuente.",
+      "source": "Fuente: KH Wiki (khwiki.com).",
+      "reachValues": {
+        "short": "Corto",
+        "medium": "Medio",
+        "long": "Largo",
+        "very-long": "Muy largo"
+      }
+    }
   },
   "Search": {
     "label": "Buscar",
@@ -273,5 +289,63 @@
       "gameplay": "Juego",
       "other": "Otros"
     }
+  },
+  "A11y": {
+    "title": "Accesibilidad",
+    "lead": "Kingdom Hearts Univers debe seguir siendo utilizable por todo el mundo, sea cual sea el dispositivo, la vista o la forma de navegar. Esta página explica lo que ya existe y te deja ajustar la presentación.",
+    "settings": "Ajustar la presentación",
+    "settingsHelp": "Estos ajustes se guardan en este dispositivo, en este navegador. No se envían a ninguna parte. «Sistema» sigue la preferencia de tu sistema operativo.",
+    "reset": "Restablecer los ajustes del sistema",
+    "saved": "Los ajustes se aplican de inmediato y se conservan para tus próximas visitas.",
+    "contrast": {
+      "title": "Contraste",
+      "help": "Refuerza el contraste: fondos lisos, bordes nítidos, texto secundario tan legible como el principal, enlaces subrayados.",
+      "options": {
+        "auto": "Sistema",
+        "more": "Contraste alto"
+      }
+    },
+    "motion": {
+      "title": "Animaciones",
+      "help": "Elimina las transiciones, el movimiento al pasar el ratón y el desplazamiento animado.",
+      "options": {
+        "auto": "Sistema",
+        "reduce": "Animaciones reducidas"
+      }
+    },
+    "text": {
+      "title": "Tamaño del texto",
+      "help": "Amplía todo el contenido, maquetación incluida. El zoom del navegador (Ctrl y +) sigue funcionando además de esto.",
+      "options": {
+        "auto": "Normal",
+        "large": "Grande (112 %)",
+        "xlarge": "Muy grande (125 %)"
+      }
+    },
+    "commitments": "Lo que ya está en marcha",
+    "items": {
+      "keyboard": {
+        "title": "Todo con el teclado",
+        "text": "Enlace para saltar al contenido, orden de tabulación lógico, submenús y búsqueda (Ctrl + K) sin ratón, contorno de foco visible en todas partes."
+      },
+      "contrast": {
+        "title": "Contrastes verificados",
+        "text": "Los cuatro temas (Alba, Día, Ocaso, Noche) cumplen la relación 4,5:1 del nivel AA, comprobada automáticamente en las páginas clave."
+      },
+      "structure": {
+        "title": "Estructura explícita",
+        "text": "Regiones, títulos jerarquizados, listas anunciadas y estados ARIA al día: el contenido se recorre igual de bien con un lector de pantalla."
+      },
+      "images": {
+        "title": "Imágenes descritas",
+        "text": "Cada ilustración lleva texto alternativo o se marca como decorativa, con su fuente acreditada en la ficha."
+      },
+      "language": {
+        "title": "Idioma declarado",
+        "text": "Cada página declara su idioma al navegador, y los títulos originales se etiquetan en su lengua para una pronunciación correcta."
+      }
+    },
+    "feedback": "¿Algún problema?",
+    "feedbackText": "Un obstáculo que encuentres es un defecto que corregir. Comunícalo en el repositorio GitHub del proyecto describiendo la página y tu forma de navegar: se tratará de forma prioritaria."
   }
 }

@@ -7,6 +7,7 @@ import { CATEGORY_SLUG, categoryFromSlug, displayName, entries, getEntry, locali
 import { getGame } from "@/data/games";
 import { entriesOf } from "@/data/encyclopedia";
 import { EntryPortrait } from "@/components/EntryPortrait";
+import { KeybladeStats } from "@/components/KeybladeStats";
 import { GameCover } from "@/components/GameCover";
 
 type Props = { params: Promise<{ locale: string; category: string; slug: string }> };
@@ -51,7 +52,7 @@ function facts(entry: Entry, locale: Locale, t: (k: string) => string): [string,
     out.push([t("facts.kind"), t(`kinds.${entry.kind}`)]);
     if (entry.source) out.push([t("facts.source"), entry.source]);
   } else if (entry.category === "keyblades") {
-    if (entry.stats) out.push([t("facts.stats"), `${t("facts.strength")} ${entry.stats.strength ?? "–"} · ${t("facts.magic")} ${entry.stats.magic ?? "–"}`]);
+    if (entry.stats && !entry.gameStats?.length) out.push([t("facts.stats"), `${t("facts.strength")} ${entry.stats.strength ?? "–"} · ${t("facts.magic")} ${entry.stats.magic ?? "–"}`]);
     if (entry.ability) out.push([t("facts.ability"), localized(entry.ability, locale)]);
   }
   return out;
@@ -161,6 +162,10 @@ export default async function EntryPage({ params }: Props) {
                 </div>
               </details>
             </section>
+          )}
+
+          {entry.category === "keyblades" && entry.gameStats && entry.gameStats.length > 0 && (
+            <KeybladeStats stats={entry.gameStats} />
           )}
 
           {obtained.length > 0 && (

@@ -107,9 +107,32 @@ export interface WorldEntry extends BaseEntry {
   source?: string;
 }
 
+/**
+ * Statistiques d'une Keyblade dans un jeu donné : les valeurs changent d'un titre à l'autre,
+ * et tous les jeux ne mesurent pas la même chose (notes de carte dans Chain of Memories,
+ * fourchette du niveau 0 au niveau 10 dans Kingdom Hearts III).
+ */
+export interface KeybladeGameStat {
+  /** Slug du jeu (src/data/games.ts). */
+  game: string;
+  /** Force : « +3 », « +4 → +9 ». */
+  strength?: string;
+  /** Magie, même format. */
+  magic?: string;
+  /** Notes de Chain of Memories : frappe / estoc / coup final. */
+  grades?: string;
+  /** Portée : valeur du jeu (« 100 ») ou mot-clé traduit (short, medium, long, very-long). */
+  reach?: string;
+  /** Capacités accordées par la Keyblade dans ce jeu (noms anglais). */
+  abilities?: string[];
+}
+
 export interface KeybladeEntry extends BaseEntry {
   category: "keyblades";
+  /** Ancienne valeur unique, conservée pour les entrées sans détail par jeu. */
   stats?: { strength?: number; magic?: number };
+  /** Statistiques jeu par jeu (src/data/encyclopedia/keyblade-stats.ts). */
+  gameStats?: KeybladeGameStat[];
   ability?: LocalizedText;
   /** Comment l'obtenir, par jeu (slug de jeu → texte). */
   obtained?: Record<string, LocalizedText>;

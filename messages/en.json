@@ -220,7 +220,23 @@
       "trivia": "Trivia",
       "sources": "Sources"
     },
-    "results": "Results"
+    "results": "Results",
+    "stats": {
+      "title": "Stats by game",
+      "lead": "A Keyblade does not carry the same values from one game to the next. Kingdom Hearts and Chain of Memories rate the blade their own way; in Kingdom Hearts III it grows from level 0 to level 10.",
+      "game": "Game",
+      "grades": "Strike / Thrust / Finish",
+      "reach": "Reach",
+      "abilities": "Abilities",
+      "abilitiesNote": "Ability names are given in English, as in the source.",
+      "source": "Source: KH Wiki (khwiki.com).",
+      "reachValues": {
+        "short": "Short",
+        "medium": "Medium",
+        "long": "Long",
+        "very-long": "Very long"
+      }
+    }
   },
   "Search": {
     "label": "Search",
@@ -273,5 +289,63 @@
       "gameplay": "Gameplay",
       "other": "Other"
     }
+  },
+  "A11y": {
+    "title": "Accessibility",
+    "lead": "Kingdom Hearts Univers should stay usable by everyone, whatever the device, eyesight or way of browsing. This page explains what is in place and lets you adjust the display.",
+    "settings": "Adjust the display",
+    "settingsHelp": "These settings are stored on this device, in this browser. They are never sent anywhere. “System” follows your operating system preference.",
+    "reset": "Restore system settings",
+    "saved": "Settings apply straight away and are kept for your next visits.",
+    "contrast": {
+      "title": "Contrast",
+      "help": "Increases contrast: plain backgrounds, sharp borders, secondary text as legible as body text, underlined links.",
+      "options": {
+        "auto": "System",
+        "more": "High contrast"
+      }
+    },
+    "motion": {
+      "title": "Motion",
+      "help": "Removes transitions, hover movement and smooth scrolling.",
+      "options": {
+        "auto": "System",
+        "reduce": "Reduced motion"
+      }
+    },
+    "text": {
+      "title": "Text size",
+      "help": "Enlarges all content, layout included. Your browser zoom (Ctrl and +) still works on top of it.",
+      "options": {
+        "auto": "Normal",
+        "large": "Large (112%)",
+        "xlarge": "Extra large (125%)"
+      }
+    },
+    "commitments": "What is already in place",
+    "items": {
+      "keyboard": {
+        "title": "Everything by keyboard",
+        "text": "Skip link, logical tab order, submenus and search (Ctrl + K) usable without a mouse, visible focus outline everywhere."
+      },
+      "contrast": {
+        "title": "Checked contrast",
+        "text": "All four themes (Dawn, Day, Dusk, Night) meet the 4.5:1 AA ratio, verified automatically on the key pages."
+      },
+      "structure": {
+        "title": "Explicit structure",
+        "text": "Landmarks, ranked headings, announced lists and up-to-date ARIA states: the content reads just as well with a screen reader."
+      },
+      "images": {
+        "title": "Described images",
+        "text": "Every illustration carries alternative text or is marked decorative, with its source credited on the entry."
+      },
+      "language": {
+        "title": "Declared language",
+        "text": "Each page declares its language to the browser, and original titles are tagged in their own language for correct pronunciation."
+      }
+    },
+    "feedback": "Something wrong?",
+    "feedbackText": "An obstacle you run into is a defect to fix. Report it on the project's GitHub repository, describing the page and how you browse: it will be handled as a priority."
   }
 }

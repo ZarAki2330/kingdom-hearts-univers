@@ -12,6 +12,7 @@ import { moreCharacters2 } from "./characters-more-2";
 import { moreEnemies2 } from "./enemies-more-2";
 import { moreKeyblades2 } from "./keyblades-more-2";
 import { entryImages } from "./images";
+import { keybladeStats } from "./keyblade-stats";
 import { disneySources } from "./disney-sources";
 import { lore as loreCharactersA } from "./lore/characters-a";
 import { lore as loreCharactersB } from "./lore/characters-b";
@@ -61,6 +62,7 @@ export const entries: Entry[] = rawEntries.map((raw) => {
   let e = raw.image || !entryImages[raw.slug] ? raw : { ...raw, image: entryImages[raw.slug] };
   if (!e.lore && lores[e.slug]) e = { ...e, lore: lores[e.slug] };
   if (e.category === "characters" && !e.source && disneySources[e.slug]) return { ...e, source: disneySources[e.slug] };
+  if (e.category === "keyblades" && keybladeStats[e.slug]) return { ...e, gameStats: keybladeStats[e.slug] };
   return e;
 });
 

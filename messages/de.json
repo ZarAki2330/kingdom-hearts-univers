@@ -220,7 +220,23 @@
       "trivia": "Wissenswertes",
       "sources": "Quellen"
     },
-    "results": "Ergebnisse"
+    "results": "Ergebnisse",
+    "stats": {
+      "title": "Werte pro Spiel",
+      "lead": "Ein Schlüsselschwert hat nicht in jedem Spiel dieselben Werte. Kingdom Hearts und Chain of Memories bewerten die Klinge auf eigene Weise; in Kingdom Hearts III wächst sie von Stufe 0 bis Stufe 10.",
+      "game": "Spiel",
+      "grades": "Schlag / Stoß / Finish",
+      "reach": "Reichweite",
+      "abilities": "Fähigkeiten",
+      "abilitiesNote": "Die Namen der Fähigkeiten stehen auf Englisch, wie in der Quelle.",
+      "source": "Quelle: KH Wiki (khwiki.com).",
+      "reachValues": {
+        "short": "Kurz",
+        "medium": "Mittel",
+        "long": "Lang",
+        "very-long": "Sehr lang"
+      }
+    }
   },
   "Search": {
     "label": "Suchen",
@@ -273,5 +289,63 @@
       "gameplay": "Spiel",
       "other": "Sonstiges"
     }
+  },
+  "A11y": {
+    "title": "Barrierefreiheit",
+    "lead": "Kingdom Hearts Univers soll für alle nutzbar bleiben – unabhängig von Gerät, Sehvermögen oder Art der Bedienung. Diese Seite erklärt, was umgesetzt ist, und lässt Sie die Darstellung anpassen.",
+    "settings": "Darstellung anpassen",
+    "settingsHelp": "Diese Einstellungen werden auf diesem Gerät in diesem Browser gespeichert. Sie werden nirgendwohin übertragen. „System“ folgt der Einstellung Ihres Betriebssystems.",
+    "reset": "Systemeinstellungen wiederherstellen",
+    "saved": "Die Einstellungen wirken sofort und bleiben für Ihre nächsten Besuche erhalten.",
+    "contrast": {
+      "title": "Kontrast",
+      "help": "Verstärkt den Kontrast: einfarbige Flächen, klare Rahmen, Zweittext so lesbar wie der Fließtext, unterstrichene Links.",
+      "options": {
+        "auto": "System",
+        "more": "Hoher Kontrast"
+      }
+    },
+    "motion": {
+      "title": "Animationen",
+      "help": "Entfernt Übergänge, Bewegung beim Überfahren und weiches Scrollen.",
+      "options": {
+        "auto": "System",
+        "reduce": "Reduzierte Animationen"
+      }
+    },
+    "text": {
+      "title": "Textgröße",
+      "help": "Vergrößert den gesamten Inhalt samt Layout. Der Browser-Zoom (Strg und +) funktioniert zusätzlich weiterhin.",
+      "options": {
+        "auto": "Normal",
+        "large": "Groß (112 %)",
+        "xlarge": "Sehr groß (125 %)"
+      }
+    },
+    "commitments": "Was bereits umgesetzt ist",
+    "items": {
+      "keyboard": {
+        "title": "Alles per Tastatur",
+        "text": "Sprunglink, logische Tabulatorreihenfolge, Untermenüs und Suche (Strg + K) ohne Maus bedienbar, überall sichtbarer Fokusrahmen."
+      },
+      "contrast": {
+        "title": "Geprüfte Kontraste",
+        "text": "Alle vier Themen (Morgen, Tag, Dämmerung, Nacht) erreichen das AA-Verhältnis von 4,5:1, automatisch auf den wichtigsten Seiten geprüft."
+      },
+      "structure": {
+        "title": "Klare Struktur",
+        "text": "Landmarken, gestufte Überschriften, angesagte Listen und aktuelle ARIA-Zustände: Der Inhalt lässt sich mit Screenreader ebenso gut durchgehen."
+      },
+      "images": {
+        "title": "Beschriebene Bilder",
+        "text": "Jede Abbildung hat einen Alternativtext oder ist als dekorativ gekennzeichnet, mit Quellenangabe auf der Seite."
+      },
+      "language": {
+        "title": "Angegebene Sprache",
+        "text": "Jede Seite gibt dem Browser ihre Sprache an, Originaltitel sind in ihrer eigenen Sprache ausgezeichnet – für die richtige Aussprache."
+      }
+    },
+    "feedback": "Etwas funktioniert nicht?",
+    "feedbackText": "Jede Hürde ist ein Fehler, der behoben gehört. Melden Sie sie im GitHub-Repository des Projekts mit Angabe der Seite und Ihrer Bedienweise – sie wird vorrangig behandelt."
   }
 }

@@ -220,7 +220,23 @@
       "trivia": "Anecdotes",
       "sources": "Sources"
     },
-    "results": "Résultats"
+    "results": "Résultats",
+    "stats": {
+      "title": "Statistiques par jeu",
+      "lead": "Une Keyblade n'a pas les mêmes valeurs d'un jeu à l'autre. Kingdom Hearts et Chain of Memories notent la lame à leur façon ; dans Kingdom Hearts III, elle progresse du niveau 0 au niveau 10.",
+      "game": "Jeu",
+      "grades": "Frappe / Estoc / Final",
+      "reach": "Portée",
+      "abilities": "Capacités",
+      "abilitiesNote": "Les noms de capacités sont donnés en anglais : les versions françaises des jeux n'ont pas de nomenclature commune vérifiable.",
+      "source": "Source : KH Wiki (khwiki.com).",
+      "reachValues": {
+        "short": "Courte",
+        "medium": "Moyenne",
+        "long": "Longue",
+        "very-long": "Très longue"
+      }
+    }
   },
   "Search": {
     "label": "Rechercher",
@@ -273,5 +289,63 @@
       "gameplay": "Jeu",
       "other": "Divers"
     }
+  },
+  "A11y": {
+    "title": "Accessibilité",
+    "lead": "Kingdom Hearts Univers doit rester consultable par tout le monde, quel que soit le matériel, la vue ou la façon de naviguer. Cette page explique ce qui est en place et vous laisse régler l'affichage.",
+    "settings": "Régler l'affichage",
+    "settingsHelp": "Ces réglages sont mémorisés sur cet appareil, dans ce navigateur. Ils ne sont envoyés nulle part. « Système » suit la préférence de votre système d'exploitation.",
+    "reset": "Rétablir les réglages du système",
+    "saved": "Les réglages sont appliqués immédiatement et retenus pour vos prochaines visites.",
+    "contrast": {
+      "title": "Contraste",
+      "help": "Renforce le contraste : fonds unis, bordures franches, textes secondaires aussi lisibles que le texte principal, liens soulignés.",
+      "options": {
+        "auto": "Système",
+        "more": "Contraste élevé"
+      }
+    },
+    "motion": {
+      "title": "Animations",
+      "help": "Supprime les transitions, les mouvements au survol et le défilement animé.",
+      "options": {
+        "auto": "Système",
+        "reduce": "Animations réduites"
+      }
+    },
+    "text": {
+      "title": "Taille du texte",
+      "help": "Agrandit tout le contenu, mise en page comprise. Le zoom de votre navigateur (Ctrl et +) reste utilisable en plus.",
+      "options": {
+        "auto": "Normale",
+        "large": "Grande (112 %)",
+        "xlarge": "Très grande (125 %)"
+      }
+    },
+    "commitments": "Ce qui est déjà en place",
+    "items": {
+      "keyboard": {
+        "title": "Tout au clavier",
+        "text": "Lien d'évitement, ordre de tabulation logique, sous-menus et recherche (Ctrl + K) utilisables sans souris, contour de focus visible partout."
+      },
+      "contrast": {
+        "title": "Contrastes vérifiés",
+        "text": "Les quatre thèmes (Aube, Jour, Crépuscule, Nuit) respectent le rapport de 4,5:1 du niveau AA, vérifié automatiquement sur les pages clés."
+      },
+      "structure": {
+        "title": "Structure explicite",
+        "text": "Repères de page, titres hiérarchisés, listes annoncées et états ARIA à jour : le contenu se parcourt aussi bien au lecteur d'écran."
+      },
+      "images": {
+        "title": "Images décrites",
+        "text": "Chaque illustration porte un texte de remplacement ou est marquée comme décorative, avec sa source créditée sur la fiche."
+      },
+      "language": {
+        "title": "Langue déclarée",
+        "text": "La langue de chaque page est indiquée au navigateur, et les titres originaux sont balisés dans leur langue pour une bonne prononciation."
+      }
+    },
+    "feedback": "Un problème ?",
+    "feedbackText": "Un obstacle rencontré est un défaut à corriger. Signalez-le sur le dépôt GitHub du projet en décrivant la page et votre façon de naviguer : la correction sera traitée en priorité."
   }
 }

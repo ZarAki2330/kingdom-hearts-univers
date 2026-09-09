@@ -220,7 +220,23 @@
       "trivia": "Curiosità",
       "sources": "Fonti"
     },
-    "results": "Risultati"
+    "results": "Risultati",
+    "stats": {
+      "title": "Statistiche per gioco",
+      "lead": "Un Keyblade non ha gli stessi valori da un gioco all'altro. Kingdom Hearts e Chain of Memories valutano la lama a modo loro; in Kingdom Hearts III cresce dal livello 0 al livello 10.",
+      "game": "Gioco",
+      "grades": "Colpo / Affondo / Finale",
+      "reach": "Portata",
+      "abilities": "Abilità",
+      "abilitiesNote": "I nomi delle abilità sono in inglese, come nella fonte.",
+      "source": "Fonte: KH Wiki (khwiki.com).",
+      "reachValues": {
+        "short": "Corta",
+        "medium": "Media",
+        "long": "Lunga",
+        "very-long": "Molto lunga"
+      }
+    }
   },
   "Search": {
     "label": "Cerca",
@@ -273,5 +289,63 @@
       "gameplay": "Gioco",
       "other": "Altro"
     }
+  },
+  "A11y": {
+    "title": "Accessibilità",
+    "lead": "Kingdom Hearts Univers deve restare consultabile da tutti, qualunque sia il dispositivo, la vista o il modo di navigare. Questa pagina spiega ciò che è già previsto e permette di regolare la visualizzazione.",
+    "settings": "Regolare la visualizzazione",
+    "settingsHelp": "Queste impostazioni sono memorizzate su questo dispositivo, in questo browser. Non vengono inviate da nessuna parte. «Sistema» segue la preferenza del sistema operativo.",
+    "reset": "Ripristinare le impostazioni di sistema",
+    "saved": "Le impostazioni si applicano subito e vengono conservate per le prossime visite.",
+    "contrast": {
+      "title": "Contrasto",
+      "help": "Aumenta il contrasto: sfondi pieni, bordi netti, testo secondario leggibile quanto quello principale, link sottolineati.",
+      "options": {
+        "auto": "Sistema",
+        "more": "Contrasto elevato"
+      }
+    },
+    "motion": {
+      "title": "Animazioni",
+      "help": "Elimina le transizioni, il movimento al passaggio del mouse e lo scorrimento animato.",
+      "options": {
+        "auto": "Sistema",
+        "reduce": "Animazioni ridotte"
+      }
+    },
+    "text": {
+      "title": "Dimensione del testo",
+      "help": "Ingrandisce tutto il contenuto, impaginazione compresa. Lo zoom del browser (Ctrl e +) resta utilizzabile in aggiunta.",
+      "options": {
+        "auto": "Normale",
+        "large": "Grande (112 %)",
+        "xlarge": "Molto grande (125 %)"
+      }
+    },
+    "commitments": "Ciò che è già in atto",
+    "items": {
+      "keyboard": {
+        "title": "Tutto da tastiera",
+        "text": "Link di salto, ordine di tabulazione logico, sottomenu e ricerca (Ctrl + K) utilizzabili senza mouse, contorno di focus visibile ovunque."
+      },
+      "contrast": {
+        "title": "Contrasti verificati",
+        "text": "I quattro temi (Alba, Giorno, Crepuscolo, Notte) rispettano il rapporto 4,5:1 del livello AA, verificato automaticamente sulle pagine principali."
+      },
+      "structure": {
+        "title": "Struttura esplicita",
+        "text": "Punti di riferimento, titoli gerarchici, elenchi annunciati e stati ARIA aggiornati: il contenuto si percorre altrettanto bene con uno screen reader."
+      },
+      "images": {
+        "title": "Immagini descritte",
+        "text": "Ogni illustrazione ha un testo alternativo o è marcata come decorativa, con la fonte accreditata nella scheda."
+      },
+      "language": {
+        "title": "Lingua dichiarata",
+        "text": "Ogni pagina dichiara la propria lingua al browser e i titoli originali sono marcati nella loro lingua per una pronuncia corretta."
+      }
+    },
+    "feedback": "Qualcosa non va?",
+    "feedbackText": "Un ostacolo incontrato è un difetto da correggere. Segnalalo sul repository GitHub del progetto descrivendo la pagina e il tuo modo di navigare: sarà trattato con priorità."
   }
 }

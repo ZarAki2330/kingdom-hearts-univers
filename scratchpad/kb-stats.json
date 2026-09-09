@@ -1,0 +1,1298 @@
+{
+"kingdom-key": {
+"kh1": {
+"s": "+3",
+"l": "Medium"
+},
+"com": {
+"g": "D+ / D+ / D+"
+},
+"kh2": {
+"s": "+3",
+"m": "+1",
+"l": "100",
+"a": [
+"Defender",
+"Damage Control"
+]
+},
+"days": {
+"s": "+15"
+},
+"recoded": {
+"l": "Medium",
+"a": [
+"Auto-Potion",
+"Medic",
+"Magic Upgrade",
+"Attack Upgrade"
+]
+},
+"ddd": {
+"s": "5",
+"m": "4",
+"l": "75"
+},
+"kh3": {
+"s": "+4→+9",
+"m": "+3→+8",
+"l": "100",
+"a": [
+"Treasure Magnet",
+"Formchange Extender"
+]
+}
+},
+"kingdom-key-d": {
+"kh2": {
+"s": "+3"
+},
+"days": {
+"s": "+80",
+"m": "+10",
+"a": [
+"Defender",
+"Damage Control",
+"Second Chance"
+]
+}
+},
+"oathkeeper": {
+"kh1": {
+"s": "+9",
+"m": "+1",
+"l": "Medium"
+},
+"com": {
+"g": "B / – / B+"
+},
+"kh2": {
+"s": "+3",
+"m": "+3",
+"l": "98",
+"a": [
+"Form Boost"
+]
+},
+"days": {
+"s": "+100",
+"m": "+30",
+"a": [
+"Defender"
+]
+},
+"recoded": {
+"l": "Medium",
+"a": [
+"Undo",
+"Regen",
+"Auto-Life",
+"Protect"
+]
+},
+"kh3": {
+"s": "+7→+12",
+"m": "+7→+12",
+"a": [
+"MP Converter",
+"Situation Boost",
+"Formchange Extender"
+]
+}
+},
+"oblivion": {
+"kh1": {
+"s": "+11",
+"m": "-1",
+"l": "Long"
+},
+"com": {
+"g": "A / A / D"
+},
+"kh2": {
+"s": "+6",
+"m": "+2",
+"l": "122",
+"a": [
+"Drive Boost"
+]
+},
+"days": {
+"s": "+110",
+"m": "+30",
+"a": [
+"Defender",
+"Damage Control",
+"Second Chance"
+]
+},
+"recoded": {
+"l": "Long",
+"a": [
+"Attack Haste",
+"Auto-Payback",
+"Two-Edged Blade",
+"Auto-Counter"
+]
+},
+"kh3": {
+"s": "+8→+13",
+"m": "+6→+11",
+"a": [
+"HP Converter",
+"Situation Boost",
+"Formchange Extender"
+]
+}
+},
+"ultima-weapon": {
+"kh1": {
+"s": "+12",
+"m": "+2",
+"l": "Long"
+},
+"com": {
+"g": "– / – / A"
+},
+"kh2": {
+"s": "+6",
+"m": "+4",
+"l": "166",
+"a": [
+"MP Hastega"
+]
+},
+"recoded": {
+"l": "Very Long",
+"a": [
+"Heavy Blade",
+"Brick Wall",
+"Protect",
+"Undo"
+]
+},
+"bbs": {
+"s": "+7",
+"m": "+6"
+},
+"ddd": {
+"s": "16",
+"m": "16",
+"l": "113"
+},
+"kh3": {
+"s": "+8→+13",
+"m": "+3→+13",
+"l": "165",
+"a": [
+"Combo Boost",
+"Air Combo Boost",
+"Situation Boost"
+]
+}
+},
+"way-to-the-dawn": {
+"kh2": {
+"s": "+3"
+},
+"days": {
+"s": "+124",
+"m": "+30",
+"a": [
+"Vitality Surge",
+"Vitality Barrier",
+"Alive 'n' Kicking"
+]
+},
+"ddd": {
+"s": "5",
+"m": "4",
+"l": "85"
+}
+},
+"destinys-embrace": {
+"bbs": {
+"s": "+3",
+"m": "+3",
+"l": "85"
+}
+},
+"star-seeker": {
+"com": {
+"g": "C / D+ / B+"
+},
+"kh2": {
+"s": "+3",
+"m": "+1",
+"l": "128",
+"a": [
+"Air Combo Plus"
+]
+},
+"days": {
+"s": "+115",
+"m": "+30",
+"a": [
+"Combo Boost",
+"Combo-Jump",
+"Combo-Air Slide"
+]
+}
+},
+"two-become-one": {
+"com": {
+"g": "B+ / B+ / B+"
+},
+"kh2": {
+"s": "+5",
+"m": "+4",
+"l": "112",
+"a": [
+"Light & Darkness"
+]
+},
+"days": {
+"s": "+110",
+"m": "+30",
+"a": [
+"Defender",
+"Damage Control"
+]
+}
+},
+"fenrir": {
+"kh2": {
+"s": "+7",
+"m": "+1",
+"l": "168",
+"a": [
+"Negative Combo"
+]
+}
+},
+"sleeping-lion": {
+"kh2": {
+"s": "+5",
+"m": "+3",
+"l": "152",
+"a": [
+"Combo Plus"
+]
+}
+},
+"bond-of-flame": {
+"com": {
+"g": "– / C+ / B+"
+},
+"kh2": {
+"s": "+4",
+"m": "+4",
+"l": "114",
+"a": [
+"Fire Boost"
+]
+},
+"days": {
+"s": "+118",
+"m": "+28",
+"a": [
+"Fire Finish",
+"Magic Finale",
+"Second Chance"
+]
+}
+},
+"decisive-pumpkin": {
+"kh2": {
+"s": "+6",
+"m": "+1",
+"l": "126",
+"a": [
+"Combo Boost"
+]
+}
+},
+"earthshaker": {
+"bbs": {
+"s": "+3",
+"m": "+1",
+"l": "98"
+}
+},
+"wayward-wind": {
+"bbs": {
+"s": "+3",
+"m": "+1",
+"l": "65"
+}
+},
+"rainfell": {
+"bbs": {
+"s": "+2",
+"m": "+2",
+"l": "75"
+}
+},
+"masters-defender": {
+"bbs": {
+"s": "+7",
+"m": "+7",
+"l": "Long"
+}
+},
+"void-gear": {
+"bbs": {
+"s": "+8",
+"m": "+4",
+"l": "Long"
+}
+},
+"divine-rose": {
+"kh1": {
+"s": "+10",
+"l": "Short"
+},
+"com": {
+"g": "A / D+ / C"
+}
+},
+"lionheart": {
+"kh1": {
+"s": "+10",
+"m": "+1",
+"l": "Long"
+},
+"com": {
+"g": "B / B / B"
+},
+"recoded": {
+"l": "Long",
+"a": [
+"Sonic Arts",
+"Brick Wall",
+"Magic Bracer",
+"Auto-Dodge"
+]
+}
+},
+"one-winged-angel": {
+"kh1": {
+"s": "+8",
+"m": "-2",
+"l": "Long"
+},
+"com": {
+"g": "C / C / –"
+}
+},
+"metal-chocobo": {
+"kh1": {
+"s": "+10",
+"m": "-1",
+"l": "Long"
+},
+"com": {
+"g": "C+ / C+ / B+"
+},
+"recoded": {
+"l": "Very Long",
+"a": [
+"Impact Arts",
+"Attack Upgrade",
+"Full Swing",
+"Brick Wall"
+]
+}
+},
+"diamond-dust": {
+"kh1": {
+"s": "+3",
+"m": "+3",
+"l": "Medium"
+},
+"com": {
+"g": "B+ / B+ / B"
+}
+},
+"heros-origin": {
+"kh3": {
+"s": "+5→+10",
+"m": "+2→+7",
+"l": "130",
+"a": [
+"Defender",
+"Formchange Extender"
+]
+}
+},
+"shooting-star": {
+"kh3": {
+"s": "+3→+8",
+"m": "+5→+10",
+"l": "130",
+"a": [
+"Magic Treasure Magnet",
+"Formchange Extender"
+]
+}
+},
+"ever-after": {
+"kh3": {
+"s": "+2→+7",
+"m": "+6→+11",
+"l": "130",
+"a": [
+"Leaf Bracer",
+"Aeroza",
+"Aero Boost"
+]
+}
+},
+"starlight": {
+"kh3": {
+"s": "+4→+9",
+"m": "+4→+9",
+"l": "100",
+"a": [
+"MP Haste",
+"Formchange Extender"
+]
+}
+},
+"classic-tone": {
+"kh3": {
+"s": "+6→+11",
+"m": "+9→+14",
+"l": "157",
+"a": [
+"MP Haste"
+]
+}
+},
+"master-keeper": {
+"bbs": {
+"s": "+7",
+"m": "+7",
+"l": "Long"
+}
+},
+"jungle-king": {
+"kh1": {
+"s": "+5",
+"l": "Long"
+}
+},
+"three-wishes": {
+"kh1": {
+"s": "+6",
+"l": "Medium"
+},
+"com": {
+"g": "C+ / D+ / B"
+},
+"recoded": {
+"l": "Medium",
+"a": [
+"Sonic Arts",
+"Magic Bracer",
+"Aero Counter",
+"Steal Munny"
+]
+}
+},
+"crabclaw": {
+"kh1": {
+"s": "+6",
+"m": "+1",
+"l": "Medium"
+},
+"com": {
+"g": "C / C / B+"
+}
+},
+"pumpkinhead": {
+"kh1": {
+"s": "+7",
+"l": "Long"
+},
+"com": {
+"g": "C+ / C+ / D+"
+}
+},
+"fairy-harp": {
+"kh1": {
+"s": "+8",
+"m": "+1",
+"l": "Short"
+},
+"com": {
+"g": "C+ / C+ / C"
+}
+},
+"wishing-star": {
+"kh1": {
+"s": "+5",
+"l": "Short"
+},
+"com": {
+"g": "C / C / D+"
+},
+"recoded": {
+"l": "Medium",
+"a": [
+"Medic",
+"Auto-Dodge",
+"Attack Haste",
+"Brick Wall"
+]
+}
+},
+"spellbinder": {
+"kh1": {
+"s": "+4",
+"m": "+2",
+"l": "Medium"
+},
+"com": {
+"g": "D+ / A / D+"
+}
+},
+"olympia": {
+"kh1": {
+"s": "+9",
+"l": "Medium"
+},
+"com": {
+"g": "C+ / D+ / B"
+},
+"recoded": {
+"l": "Medium",
+"a": [
+"Impact Arts",
+"Brick Wall",
+"Protect",
+"Blade Bash"
+]
+}
+},
+"lady-luck": {
+"kh1": {
+"s": "+8",
+"m": "+2",
+"l": "Medium"
+},
+"com": {
+"g": "C+ / C+ / D"
+},
+"recoded": {
+"l": "Medium",
+"a": [
+"Drain Counter",
+"Shell",
+"Magic Upgrade",
+"Attach Fire"
+]
+}
+},
+"heros-crest": {
+"kh2": {
+"s": "+4",
+"l": "124",
+"a": [
+"Air Combo Boost"
+]
+}
+},
+"monochrome": {
+"com": {
+"g": "D+ / B / B+"
+},
+"kh2": {
+"s": "+3",
+"m": "+2",
+"l": "102",
+"a": [
+"Item Boost"
+]
+}
+},
+"follow-the-wind": {
+"com": {
+"g": "C+ / A / D"
+},
+"kh2": {
+"s": "+3",
+"m": "+1",
+"l": "130",
+"a": [
+"Draw"
+]
+}
+},
+"circle-of-life": {
+"kh2": {
+"s": "+4",
+"m": "+1",
+"l": "114",
+"a": [
+"MP Haste"
+]
+}
+},
+"photon-debugger": {
+"com": {
+"g": "B / C+ / B+"
+},
+"kh2": {
+"s": "+3",
+"m": "+2",
+"l": "104",
+"a": [
+"Thunder Boost"
+]
+}
+},
+"gull-wing": {
+"kh2": {
+"s": "+3",
+"l": "112",
+"a": [
+"Experience Boost"
+]
+}
+},
+"rumbling-rose": {
+"kh2": {
+"s": "+5",
+"l": "100",
+"a": [
+"Finishing Plus"
+]
+}
+},
+"guardian-soul": {
+"kh2": {
+"s": "+5",
+"m": "+1",
+"l": "156",
+"a": [
+"Reaction Boost"
+]
+}
+},
+"wishing-lamp": {
+"kh2": {
+"s": "+4",
+"m": "+3",
+"l": "116",
+"a": [
+"Jackpot"
+]
+}
+},
+"hidden-dragon": {
+"com": {
+"g": "D+ / C+ / B+"
+},
+"kh2": {
+"s": "+2",
+"m": "+2",
+"l": "104",
+"a": [
+"MP Rage"
+]
+}
+},
+"mysterious-abyss": {
+"kh2": {
+"s": "+3",
+"m": "+3",
+"l": "98",
+"a": [
+"Blizzard Boost"
+]
+}
+},
+"sweet-memories": {
+"kh2": {
+"l": "102",
+"a": [
+"Lucky Lucky",
+"Drive Converter"
+]
+}
+},
+"winners-proof": {
+"kh2": {
+"s": "+5",
+"m": "+7",
+"l": "166",
+"a": [
+"No Experience"
+]
+}
+},
+"fatal-crest": {
+"kh2": {
+"s": "+3",
+"m": "+5",
+"l": "148",
+"a": [
+"Berserk Charge"
+]
+}
+},
+"missing-ache": {
+"days": {
+"s": "+20",
+"m": "+0"
+}
+},
+"pain-of-solitude": {
+"days": {
+"s": "+24",
+"m": "+12"
+}
+},
+"sign-of-innocence": {
+"days": {
+"s": "+60",
+"m": "+18",
+"a": [
+"Thunder Finish",
+"Magic Bracer"
+]
+}
+},
+"abyssal-tide": {
+"days": {
+"s": "+55",
+"m": "+0",
+"a": [
+"Combo Boost",
+"Combo-Jump"
+]
+}
+},
+"true-lights-flight": {
+"days": {
+"s": "+55",
+"m": "+0",
+"a": [
+"Offensive Block",
+"Defender"
+]
+}
+},
+"midnight-roar": {
+"com": {
+"g": "C+ / A / D"
+},
+"days": {
+"s": "+70",
+"m": "+0",
+"a": [
+"Defender"
+]
+}
+},
+"total-eclipse": {
+"com": {
+"g": "D+ / B / B+"
+},
+"days": {
+"s": "+65",
+"m": "+0",
+"a": [
+"Defender",
+"Striker",
+"Combo-Block"
+]
+}
+},
+"lunar-eclipse": {
+"days": {
+"s": "+100",
+"m": "+31",
+"a": [
+"Striker",
+"Grand Slam",
+"Damage Control"
+]
+}
+},
+"twilight-blaze": {
+"days": {
+"s": "+120",
+"m": "+0",
+"a": [
+"Combo-Jump",
+"Combo-Block",
+"Critical Boost"
+]
+}
+},
+"omega-weapon": {
+"days": {
+"s": "+90",
+"m": "+30",
+"a": [
+"Vitality Surge",
+"Vitality Barrier",
+"Alive 'n' Kicking"
+]
+}
+},
+"treasure-trove": {
+"bbs": {
+"s": "+3",
+"m": "+2"
+}
+},
+"stroke-of-midnight": {
+"bbs": {
+"s": "+2",
+"m": "+2"
+}
+},
+"fairy-stars": {
+"bbs": {
+"s": "+2",
+"m": "+3"
+}
+},
+"victory-line": {
+"bbs": {
+"s": "+4",
+"m": "+2"
+}
+},
+"mark-of-a-hero": {
+"bbs": {
+"s": "+5",
+"m": "+1"
+}
+},
+"hyperdrive": {
+"bbs": {
+"s": "+4",
+"m": "+3"
+}
+},
+"pixie-petal": {
+"bbs": {
+"s": "+3",
+"m": "+6"
+}
+},
+"sweetstack": {
+"bbs": {
+"s": "+6",
+"m": "+4"
+}
+},
+"frolic-flame": {
+"bbs": {
+"s": "+3",
+"m": "+3",
+"l": "85"
+}
+},
+"lost-memory": {
+"bbs": {
+"s": "+6",
+"m": "+5",
+"l": "98"
+}
+},
+"chaos-ripper": {
+"bbs": {
+"s": "+10",
+"m": "-2",
+"l": "150"
+}
+},
+"darkgnaw": {
+"bbs": {
+"s": "+5",
+"m": "+2",
+"l": "98"
+}
+},
+"brightcrest": {
+"bbs": {
+"s": "+4",
+"m": "+7",
+"l": "113"
+}
+},
+"royal-radiance": {
+"bbs": {
+"s": "+8",
+"m": "+7",
+"l": "Long"
+}
+},
+"zero-one": {
+"recoded": {
+"l": "Long",
+"a": [
+"Attack Upgrade",
+"Auto-Dodge",
+"Magic Upgrade",
+"Attach Slow"
+]
+}
+},
+"skull-noise": {
+"ddd": {
+"s": "+7",
+"m": "+7",
+"l": "85"
+}
+},
+"guardian-bell": {
+"ddd": {
+"s": "+7",
+"m": "+10",
+"l": "98"
+}
+},
+"dual-disc": {
+"ddd": {
+"s": "+10",
+"m": "+7",
+"l": "98"
+}
+},
+"knockout-punch": {
+"ddd": {
+"s": "12",
+"m": "10",
+"l": "113"
+}
+},
+"ferris-gear": {
+"ddd": {
+"s": "+8",
+"m": "+8",
+"l": "85"
+}
+},
+"counterpoint": {
+"ddd": {
+"s": "+12",
+"m": "+14",
+"l": "113"
+}
+},
+"divewing": {
+"ddd": {
+"s": "+12",
+"m": "+15",
+"l": "113"
+}
+},
+"sweet-dreams": {
+"ddd": {
+"s": "+14",
+"m": "+12",
+"l": "113"
+}
+},
+"end-of-pain": {
+"ddd": {
+"s": "+14",
+"m": "+16",
+"l": "113"
+}
+},
+"all-for-one": {
+"ddd": {
+"s": "+10",
+"m": "+12",
+"l": "98"
+}
+},
+"unbound": {
+"ddd": {
+"s": "+18",
+"m": "+14",
+"l": "113"
+}
+},
+"favorite-deputy": {
+"kh3": {
+"s": "+5→+10",
+"m": "+3→+8",
+"l": "115",
+"a": [
+"Lucky Strike",
+"Formchange Extender"
+]
+}
+},
+"happy-gear": {
+"kh3": {
+"s": "+6→+11",
+"m": "+2→+7",
+"l": "115",
+"a": [
+"Focus Converter",
+"Full MP Blast"
+]
+}
+},
+"crystal-snow": {
+"kh3": {
+"s": "+3→+8",
+"m": "+6→+11",
+"l": "130",
+"a": [
+"Freeze Protection",
+"Blizzard Boost"
+]
+}
+},
+"hunny-spout": {
+"kh3": {
+"s": "+4→+9",
+"m": "+4→+9",
+"l": "82",
+"a": [
+"Harvester",
+"Formchange Extender"
+]
+}
+},
+"nano-gear": {
+"kh3": {
+"s": "+5→+10",
+"m": "+4→+9",
+"l": "150",
+"a": [
+"Stun Protection",
+"Formchange Extender"
+]
+}
+},
+"wheel-of-fate": {
+"kh3": {
+"s": "+6→+11",
+"m": "+4→+9",
+"l": "150",
+"a": [
+"Waterza",
+"Formchange Extender"
+]
+}
+},
+"grand-chef": {
+"kh3": {
+"s": "+4→+9",
+"m": "+6→+11",
+"l": "157",
+"a": [
+"Wizard's Ruse",
+"Chef Extraordinaire"
+]
+}
+},
+"midnight-blue": {
+"kh3": {
+"s": "+4→+9",
+"m": "+4→+9",
+"l": "115",
+"a": [
+"Blizzard Boost, Blizzaza",
+"Formchange Extender"
+]
+}
+},
+"phantom-green": {
+"kh3": {
+"s": "+4→+9",
+"m": "+4→+9",
+"l": "115",
+"a": [
+"Thunder Boost, Thundaza",
+"Formchange Extender"
+]
+}
+},
+"dawn-till-dusk": {
+"kh3": {
+"s": "+4→+9",
+"m": "+4→+9",
+"l": "100",
+"a": [
+"Fire Boost, Firaza",
+"Formchange Extender"
+]
+}
+},
+"elemental-encoder": {
+"kh3": {
+"s": "+4→+9",
+"m": "+4→+9",
+"a": [
+"Lucky Strike, Magic Roulette",
+"Formchange Extender"
+]
+}
+},
+"advent-red": {
+"kh3": {
+"s": "+4→+9",
+"m": "+4→+9",
+"a": [
+"MP Converter, Magic Roulette",
+"Full MP Blast"
+]
+}
+},
+"ominous-blight": {
+"days": {
+"s": "+45",
+"m": "+0",
+"a": [
+"Combo Boost",
+"Combo-Jump"
+]
+}
+},
+"abaddon-plasma": {
+"days": {
+"s": "+71",
+"m": "+0",
+"a": [
+"Chain Power",
+"Chain Time",
+"Heart Bonus"
+]
+}
+},
+"crown-of-guilt": {
+"days": {
+"s": "+67",
+"m": "+29",
+"a": [
+"Fire Finish",
+"Magic Bracer",
+"Magic Finale"
+]
+}
+},
+"leviathan": {
+"days": {
+"s": "+54",
+"m": "+0",
+"a": [
+"Chain Power",
+"Combo Jump",
+"Combo-Air Slide"
+]
+}
+},
+"rejection-of-fate": {
+"days": {
+"s": "+52",
+"m": "+0",
+"a": [
+"Offensive Block",
+"Defender",
+"Second Chance"
+]
+}
+},
+"glimpse-of-darkness": {
+"days": {
+"s": "+70",
+"m": "+0",
+"a": [
+"Defender",
+"Striker"
+]
+}
+},
+"darker-than-dark": {
+"days": {
+"s": "+75",
+"m": "+37",
+"a": [
+"Magic Bracer",
+"Vitality Barrier",
+"Damage Control"
+]
+}
+},
+"astral-blast": {
+"days": {
+"s": "+88",
+"m": "+0",
+"a": [
+"Chain Power",
+"Combo-Jump",
+"Combo-Air Slide"
+]
+}
+},
+"maverick-flare": {
+"com": {
+"g": "D+ / C+ / B+"
+},
+"days": {
+"s": "+80",
+"m": "+0",
+"a": [
+"Combo Boost",
+"Combo-Jump",
+"Critical Boost"
+]
+}
+},
+"silent-dirge": {
+"days": {
+"s": "+64",
+"m": "+23",
+"a": [
+"Defender",
+"Combo-Block",
+"Brick Wall"
+]
+}
+},
+"umbrella": {
+"days": {
+"s": "+40",
+"m": "+0",
+"a": [
+"Offensive Block"
+]
+}
+},
+"aubade": {
+"days": {
+"s": "+80",
+"m": "+0",
+"a": [
+"Striker",
+"Grand Slam"
+]
+}
+},
+"stormfall": {
+"bbs": {
+"s": "+5",
+"m": "+4",
+"l": "98"
+}
+},
+"ends-of-the-earth": {
+"bbs": {
+"s": "+5",
+"m": "+3",
+"l": "130"
+}
+}
+}
