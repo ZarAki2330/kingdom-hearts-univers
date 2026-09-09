@@ -57,6 +57,8 @@ export interface WalkBoss {
   name: LocalizedText;
   /** Slug de la fiche encyclopédique correspondante, quand elle existe. */
   entry?: string;
+  /** Visuel du combat ; à défaut, l'illustration de la fiche liée est utilisée. */
+  image?: WalkImage;
   /** Niveau conseillé pour aborder le combat sereinement. */
   level?: string;
   /** Ce que le combat rapporte (objets, capacités, points de compétence). */

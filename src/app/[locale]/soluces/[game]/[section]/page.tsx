@@ -6,7 +6,8 @@ import { Link } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
-import { getSection, getWalkthrough, neighbours, walkthroughs, writtenSections } from "@/data/walkthrough";
+import { getSection, getWalkthrough, neighbours, tileAccent, tileImage, walkthroughs, writtenSections } from "@/data/walkthrough";
+import type { WalkSection } from "@/data/walkthrough";
 import { BossCard, CollectibleList, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
@@ -48,6 +49,8 @@ export default async function WalkthroughSectionPage({ params }: Props) {
   const { previous, next } = neighbours(w, id);
   const world = section.world ? getEntry(section.world) : undefined;
   const steps = section.steps ?? [];
+  const visual = tileImage(section);
+  const accent = tileAccent(section);
   const tableLabels = { world: t("tableWorld"), what: t("tableWhat"), where: t("tableWhere"), requires: t("requires") };
 
   return (
@@ -64,33 +67,51 @@ export default async function WalkthroughSectionPage({ params }: Props) {
         </Link>
       </nav>
 
-      <header className="mt-6">
-        <p className="eyebrow">{game.title}</p>
-        <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{localized(section.title, locale)}</h1>
-        {section.subtitle && <p className="mt-1 text-lg text-text-2">{localized(section.subtitle, locale)}</p>}
-        <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-text-2">
-          {section.level && (
-            <li>
-              {t("level")} <span className="tabular font-semibold text-text">{section.level}</span>
-            </li>
-          )}
-          {world && (
-            <li>
-              <Link
-                href={`/encyclopedie/${CATEGORY_SLUG[world.category]}/${world.slug}`}
-                className="font-semibold text-accent hover:underline"
-              >
-                {t("worldEntry")}
-              </Link>
-            </li>
-          )}
-        </ul>
-        {section.intro &&
-          paragraphs(localized(section.intro, locale)).map((p, i) => (
-            <p key={i} className="prose-max mt-4 text-lg leading-relaxed">
-              {p}
-            </p>
-          ))}
+      <header className="mt-6 grid gap-6 sm:grid-cols-[220px_1fr] sm:items-start">
+        {visual && (
+          <figure className="order-first">
+            {/* Le visuel du monde, sur un fond teinté de sa couleur, comme les tuiles du sommaire. */}
+            <span
+              className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line"
+              style={{
+                background: accent
+                  ? `radial-gradient(120% 100% at 50% 120%, color-mix(in oklab, ${accent} 55%, #070b16) 0%, #070b16 70%)`
+                  : "linear-gradient(160deg, #131a2c 0%, #070b16 70%)",
+              }}
+            >
+              <Image src={visual.src} alt="" fill sizes="220px" className="object-contain p-2" priority />
+            </span>
+            <figcaption className="mt-1.5 text-xs text-text-2">{visual.credit}</figcaption>
+          </figure>
+        )}
+        <div className={visual ? "" : "sm:col-span-2"}>
+          <p className="eyebrow">{game.title}</p>
+          <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{localized(section.title, locale)}</h1>
+          {section.subtitle && <p className="mt-1 text-lg text-text-2">{localized(section.subtitle, locale)}</p>}
+          <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-text-2">
+            {section.level && (
+              <li>
+                {t("level")} <span className="tabular font-semibold text-text">{section.level}</span>
+              </li>
+            )}
+            {world && (
+              <li>
+                <Link
+                  href={`/encyclopedie/${CATEGORY_SLUG[world.category]}/${world.slug}`}
+                  className="font-semibold text-accent hover:underline"
+                >
+                  {t("worldEntry")}
+                </Link>
+              </li>
+            )}
+          </ul>
+          {section.intro &&
+            paragraphs(localized(section.intro, locale)).map((p, i) => (
+              <p key={i} className="prose-max mt-4 leading-relaxed">
+                {p}
+              </p>
+            ))}
+        </div>
       </header>
 
       {steps.length > 1 && (
@@ -195,26 +216,55 @@ export default async function WalkthroughSectionPage({ params }: Props) {
 
       <nav aria-label={t("sectionNav")} className="mt-14 grid gap-3 sm:grid-cols-2">
         {previous && previous.status === "done" ? (
-          <Link href={`/soluces/${slug}/${previous.id}`} className="card card-link p-4">
-            <span className="text-sm text-text-2">← {t("previous")}</span>
-            <span className="mt-1 block font-semibold">{localized(previous.title, locale)}</span>
+          <Link href={`/soluces/${slug}/${previous.id}`} className="card card-link flex items-center gap-3 p-3">
+            <SectionThumb section={previous} />
+            <span className="min-w-0">
+              <span className="block text-sm text-text-2">← {t("previous")}</span>
+              <span className="mt-0.5 block font-semibold">{localized(previous.title, locale)}</span>
+            </span>
           </Link>
         ) : (
           <span />
         )}
         {next && next.status === "done" ? (
-          <Link href={`/soluces/${slug}/${next.id}`} className="card card-link p-4 sm:text-right">
-            <span className="text-sm text-text-2">{t("next")} →</span>
-            <span className="mt-1 block font-semibold">{localized(next.title, locale)}</span>
+          <Link href={`/soluces/${slug}/${next.id}`} className="card card-link flex items-center gap-3 p-3 sm:flex-row-reverse sm:text-right">
+            <SectionThumb section={next} />
+            <span className="min-w-0">
+              <span className="block text-sm text-text-2">{t("next")} →</span>
+              <span className="mt-0.5 block font-semibold">{localized(next.title, locale)}</span>
+            </span>
           </Link>
         ) : next ? (
-          <span className="card border-dashed p-4 text-text-2 sm:text-right">
-            <span className="text-sm">{t("next")}</span>
-            <span className="mt-1 block font-semibold">{localized(next.title, locale)}</span>
-            <span className="text-sm">{t("soon")}</span>
+          <span className="card flex items-center gap-3 border-dashed p-3 text-text-2 sm:flex-row-reverse sm:text-right">
+            <SectionThumb section={next} dim />
+            <span className="min-w-0">
+              <span className="block text-sm">{t("next")}</span>
+              <span className="mt-0.5 block font-semibold">{localized(next.title, locale)}</span>
+              <span className="block text-sm">{t("soon")}</span>
+            </span>
           </span>
         ) : null}
       </nav>
     </article>
+  );
+}
+
+/** Vignette carrée d'une section, pour les boutons « section précédente / suivante ». */
+function SectionThumb({ section, dim = false }: { section: WalkSection; dim?: boolean }) {
+  const image = tileImage(section);
+  const accent = tileAccent(section);
+  return (
+    <span
+      className="relative block h-14 w-20 shrink-0 overflow-hidden rounded-md border border-line"
+      style={{
+        background: accent
+          ? `radial-gradient(120% 100% at 50% 120%, color-mix(in oklab, ${accent} 55%, #070b16) 0%, #070b16 70%)`
+          : "linear-gradient(160deg, #131a2c 0%, #070b16 70%)",
+      }}
+    >
+      {image && (
+        <Image src={image.src} alt="" fill sizes="80px" className={`object-contain p-1 ${dim ? "opacity-45 saturate-50" : ""}`} />
+      )}
+    </span>
   );
 }

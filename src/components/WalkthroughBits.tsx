@@ -1,5 +1,7 @@
+import Image from "next/image";
 import type { Locale } from "@/i18n/routing";
 import { localized } from "@/data/games";
+import { tileImage } from "@/data/walkthrough";
 import type { CollectibleKind, WalkBoss, WalkCollectible, WalkTable } from "@/data/walkthrough";
 
 /** Paragraphes d'un texte de données : séparés par une ligne vide. */
@@ -41,6 +43,9 @@ export function BossCard({
   locale: Locale;
   labels: { level: string; reward: string; attacks: string };
 }) {
+  // Le visuel du combat, ou à défaut l'illustration de la fiche de l'ennemi.
+  const visual = tileImage(boss);
+
   return (
     <section aria-labelledby={`boss-${boss.id}`} className="card kind-edge k-heartless mt-6 p-5 sm:p-6">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
@@ -54,25 +59,38 @@ export function BossCard({
         )}
       </div>
 
-      {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
-        <p key={i} className="prose-max mt-3 leading-relaxed">
-          {p}
-        </p>
-      ))}
+      <div className={visual ? "mt-3 grid gap-5 sm:grid-cols-[1fr_220px] sm:items-start" : ""}>
+        <div>
+          {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
+            <p key={i} className="prose-max mt-3 leading-relaxed first:mt-0">
+              {p}
+            </p>
+          ))}
 
-      {boss.attacks && boss.attacks.length > 0 && (
-        <>
-          <h4 className="mt-5 text-sm font-bold uppercase tracking-wider text-text-2">{labels.attacks}</h4>
-          <dl className="mt-2 space-y-2">
-            {boss.attacks.map((a, i) => (
-              <div key={i} className="prose-max">
-                <dt className="inline font-semibold">{localized(a.name, locale)} — </dt>
-                <dd className="inline text-text-2">{localized(a.note, locale)}</dd>
-              </div>
-            ))}
-          </dl>
-        </>
-      )}
+          {boss.attacks && boss.attacks.length > 0 && (
+            <>
+              <h4 className="mt-5 text-sm font-bold uppercase tracking-wider text-text-2">{labels.attacks}</h4>
+              <dl className="mt-2 space-y-2">
+                {boss.attacks.map((a, i) => (
+                  <div key={i} className="prose-max">
+                    <dt className="inline font-semibold">{localized(a.name, locale)} — </dt>
+                    <dd className="inline text-text-2">{localized(a.note, locale)}</dd>
+                  </div>
+                ))}
+              </dl>
+            </>
+          )}
+        </div>
+
+        {visual && (
+          <figure className="order-first sm:order-none">
+            <span className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line bg-[#0b1020]">
+              <Image src={visual.src} alt="" fill sizes="220px" className="object-contain p-2" />
+            </span>
+            <figcaption className="mt-1.5 text-xs text-text-2">{visual.credit}</figcaption>
+          </figure>
+        )}
+      </div>
 
       {boss.reward && (
         <p className="mt-4 text-sm text-text-2">
