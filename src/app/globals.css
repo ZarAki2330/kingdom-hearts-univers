@@ -193,6 +193,52 @@ h1, h2, h3, h4 {
   background-color: var(--accent-fill);
 }
 
+/* ---------------------------------------------------------------------------
+   Couleurs par famille (personnages, ennemis, mondes)
+   Chaque famille pose --kind, repris par l'ancre des cartes, la surtitre et
+   le liseré des fiches. Deux jeux de valeurs : sombres sur les thèmes clairs
+   (4,5:1 minimum), clairs sur les thèmes sombres.
+--------------------------------------------------------------------------- */
+.k-original,
+.k-species { --kind: var(--accent-text); }
+.k-disney { --kind: #17558f; }
+.k-final-fantasy { --kind: #5a6472; }
+.k-heartless { --kind: #6b3aa8; }
+.k-nobody { --kind: #4f6076; }
+.k-unversed { --kind: #a9372f; }
+.k-dream-eater { --kind: #9c2f78; }
+.k-other { --kind: var(--text-2); }
+
+:root[data-theme="dusk"] .k-disney,
+:root[data-theme="night"] .k-disney { --kind: #7cc4ff; }
+:root[data-theme="dusk"] .k-final-fantasy,
+:root[data-theme="night"] .k-final-fantasy { --kind: #c2cbd8; }
+:root[data-theme="dusk"] .k-heartless,
+:root[data-theme="night"] .k-heartless { --kind: #c19bff; }
+:root[data-theme="dusk"] .k-nobody,
+:root[data-theme="night"] .k-nobody { --kind: #b8c6d8; }
+:root[data-theme="dusk"] .k-unversed,
+:root[data-theme="night"] .k-unversed { --kind: #ff9c8f; }
+:root[data-theme="dusk"] .k-dream-eater,
+:root[data-theme="night"] .k-dream-eater { --kind: #ff9ad9; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-disney { --kind: #7cc4ff; }
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-final-fantasy { --kind: #c2cbd8; }
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-heartless { --kind: #c19bff; }
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-nobody { --kind: #b8c6d8; }
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-unversed { --kind: #ff9c8f; }
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-dream-eater { --kind: #ff9ad9; }
+}
+
+/* La surtitre et le liseré des cartes prennent la couleur de la famille. */
+.eyebrow { color: var(--kind, var(--accent-text)); }
+
+.card.kind-edge {
+  border-left: 3px solid var(--kind, var(--accent));
+}
+.card-link:hover { border-color: var(--kind, var(--accent)); }
+
 /* Cartes : élévation réservée aux objets cliquables */
 .card {
   min-width: 0;

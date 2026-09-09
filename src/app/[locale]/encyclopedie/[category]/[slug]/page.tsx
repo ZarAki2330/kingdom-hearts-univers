@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { CATEGORY_SLUG, categoryFromSlug, displayName, entries, getEntry, localized, type Entry } from "@/data/encyclopedia";
 import { getGame } from "@/data/games";
-import { entriesOf } from "@/data/encyclopedia";
+import { entriesOf, kindClass } from "@/data/encyclopedia";
 import { EntryPortrait } from "@/components/EntryPortrait";
 import { KeybladeStats } from "@/components/KeybladeStats";
 import { GameCover } from "@/components/GameCover";
@@ -85,7 +85,7 @@ export default async function EntryPage({ params }: Props) {
     : undefined;
 
   return (
-    <article className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <article className={`mx-auto max-w-6xl px-4 py-12 sm:px-6 ${kindClass(entry)}`}>
       <nav aria-label="Fil d'Ariane" className="flex flex-wrap gap-2 text-sm">
         <Link href="/encyclopedie" className="font-semibold text-accent hover:underline">{t("title")}</Link>
         <span aria-hidden="true">›</span>

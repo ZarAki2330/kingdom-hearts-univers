@@ -65,7 +65,7 @@ Images, navigation, profondeur des fiches
 - [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
 - [x] Afficher les statistiques des Keyblades par jeu — _Tableau « Statistiques par jeu » sur les fiches : 114 Keyblades, 171 lignes (Force, Magie, notes de Chain of Memories, portée, capacités), extraites du KH Wiki ; fourchettes du niveau 0 au niveau 10 pour KH III ; colonnes affichées seulement si renseignées_
 
-## III quater. Finitions de l'interface — 5/9
+## III quater. Finitions de l'interface — 6/9
 
 Navigation, visuels et détails de présentation
 
@@ -73,7 +73,7 @@ Navigation, visuels et détails de présentation
 - [x] Sous-menus dans la barre de navigation — _Encyclopédie → les 5 catégories ; au survol et au clavier sur ordinateur (aria-expanded, Échap), sous-liste dépliée dans le menu mobile_
 - [x] Supprimer les encadrés vides des fiches — _L'encadré des caractéristiques ne s'affiche plus quand l'entrée n'a aucune donnée à montrer (ex. Keyblades sans statistiques)_
 - [ ] Remplacer les images peu flatteuses de certaines fiches — _Captures d'écran et visuels mal cadrés à remplacer par de meilleurs rendus_
-- [ ] Colorer les fiches selon la catégorie — _Personnages, ennemis et mondes : Disney en bleu, Final Fantasy en argent, originaux en doré (couleur actuelle)_
+- [x] Colorer les fiches selon la catégorie — _Chaque famille pose une variable `--kind` : Disney en bleu, Final Fantasy en argent, originaux en doré ; Sans-cœur violet, Similis gris-bleu, Nescients rouge, Avale-Rêves rose. Liseré à gauche des cartes, surtitre et survol colorés, jeu de teintes clair et sombre vérifié à 4,5:1 sur les 4 thèmes_
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
 - [x] Retirer le lien « code source sur GitHub » — _Lien et clé de traduction supprimés dans les 6 langues_
 - [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_

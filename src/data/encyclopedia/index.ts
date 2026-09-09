@@ -87,3 +87,16 @@ export function brokenRelations(): { from: string; to: string }[] {
   for (const e of entries) for (const r of e.relations ?? []) if (!bySlug.has(r.slug)) out.push({ from: e.slug, to: r.slug });
   return out;
 }
+
+/**
+ * Classe de famille d'une entrée : « k-disney », « k-final-fantasy », « k-heartless »…
+ * Elle pose la variable --kind lue par globals.css (surtitre, liseré et survol des cartes).
+ * Les Keyblades et les concepts gardent le doré du site.
+ */
+export function kindClass(entry: Entry): string {
+  if (entry.category === "characters" || entry.category === "enemies" || entry.category === "worlds") {
+    if (entry.category === "enemies" && entry.role === "species") return "k-species";
+    return `k-${entry.kind}`;
+  }
+  return "k-original";
+}

@@ -1,7 +1,7 @@
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { CATEGORY_SLUG, displayName, localized, type Entry } from "@/data/encyclopedia";
+import { CATEGORY_SLUG, displayName, kindClass, localized, type Entry } from "@/data/encyclopedia";
 import { EntryPortrait } from "./EntryPortrait";
 
 export function EntryCard({ entry, kindLabel }: { entry: Entry; kindLabel: string }) {
@@ -13,7 +13,7 @@ export function EntryCard({ entry, kindLabel }: { entry: Entry; kindLabel: strin
   const source = src ? (src.short ? (locale === "fr" ? src.short.fr : src.short.en) : locale === "fr" ? src.fr : src.en) : undefined;
   const sourceFull = src ? (locale === "fr" ? src.fr : src.en) : undefined;
   return (
-    <li className="card card-link">
+    <li className={`card card-link kind-edge ${kindClass(entry)}`}>
       <Link href={`/encyclopedie/${CATEGORY_SLUG[entry.category]}/${entry.slug}`} className="flex h-full items-center gap-4 p-3">
         <EntryPortrait entry={entry} className="h-16 w-16 shrink-0" />
         <div className="min-w-0">

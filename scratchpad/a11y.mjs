@@ -21,7 +21,7 @@ for (const theme of themes) {
   for (const [name, url] of pages) {
     if (theme !== 'dawn' && !['accueil','liste personnages','fiche personnage','glossaire'].includes(name)) continue;
     const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
-    await p.goto('http://127.0.0.1:3018' + url, { waitUntil: 'networkidle' });
+    await p.goto('http://127.0.0.1:3020' + url, { waitUntil: 'networkidle' });
     await p.evaluate((t) => document.documentElement.setAttribute('data-theme', t), theme);
     await p.addScriptTag({ content: AXE });
     const res = await p.evaluate(async () => await window.axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa','best-practice'] } }));
