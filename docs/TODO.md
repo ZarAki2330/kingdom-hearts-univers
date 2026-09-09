@@ -125,10 +125,10 @@ Devenir LA référence
 - [ ] Page À propos, mentions légales, crédits (Square Enix/Disney)
 - [ ] Contributions communautaires (issues, formulaire)
 
-## IX. Édition et confort de lecture — 0/3
+## IX. Édition et confort de lecture — 1/3
 
 Gérer le contenu sans passer par le code, et regarder les images de près
 
 - [ ] Mode administrateur pour modifier les fiches à la main — _Édition du contenu des fiches, envoi de photos et création de nouvelles fiches depuis le site, sans toucher au code_
-- [ ] Agrandir une image au clic — _Visionneuse plein écran (fermeture à Échap, navigation au clavier, crédit conservé)_
+- [x] Agrandir une image au clic — _Visionneuse plein écran sur les fiches de l'encyclopédie et les jaquettes : Échap ou clic à côté pour fermer, tabulation piégée, focus rendu à la vignette, défilement de la page bloqué, crédit conservé sous l'image. Agrandissement limité au double du fichier (320 px de haut) pour rester net_
 - [ ] Masquer le menu accessibilité dans le pied de page

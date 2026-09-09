@@ -16,7 +16,7 @@ const active = () => p.evaluate(() => {
 });
 
 console.log('\n=== 1. Skip-link ===');
-await p.goto('http://127.0.0.1:3020/fr', { waitUntil: 'networkidle' });
+await p.goto('http://127.0.0.1:3025/fr', { waitUntil: 'networkidle' });
 await p.keyboard.press('Tab');
 let a = await active();
 info('premier Tab : ' + JSON.stringify(a));
@@ -34,7 +34,7 @@ info('cible du skip-link : ' + JSON.stringify(afterSkip));
 if (!afterSkip) problems.push('Le skip-link ne pointe pas sur une cible existante');
 
 console.log('\n=== 2. Ordre de tabulation dans l’en-tête ===');
-await p.goto('http://127.0.0.1:3020/fr', { waitUntil: 'networkidle' });
+await p.goto('http://127.0.0.1:3025/fr', { waitUntil: 'networkidle' });
 const order = [];
 for (let i = 0; i < 14; i++) { await p.keyboard.press('Tab'); order.push((await active()).label); }
 info(order.join(' → '));
@@ -74,7 +74,7 @@ else {
 }
 
 console.log('\n=== 4. Sous-menus de la navigation ===');
-await p.goto('http://127.0.0.1:3020/fr', { waitUntil: 'networkidle' });
+await p.goto('http://127.0.0.1:3025/fr', { waitUntil: 'networkidle' });
 const chevron = p.locator('button[aria-label*="Sous-menu"]').first();
 await chevron.focus();
 await p.keyboard.press('Enter');
@@ -95,7 +95,7 @@ info('après Échap : aria-expanded=' + afterEsc);
 if (afterEsc !== 'false') problems.push('Échap ne referme pas le sous-menu');
 
 console.log('\n=== 5. Visibilité du focus ===');
-await p.goto('http://127.0.0.1:3020/fr/encyclopedie/personnages', { waitUntil: 'networkidle' });
+await p.goto('http://127.0.0.1:3025/fr/encyclopedie/personnages', { waitUntil: 'networkidle' });
 // Vraies tabulations : :focus-visible ne s'applique pas à un focus programmatique sur un lien.
 const noRing = [];
 const seen = new Set();

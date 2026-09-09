@@ -349,5 +349,10 @@
     },
     "feedback": "Etwas funktioniert nicht?",
     "feedbackText": "Jede Hürde ist ein Fehler, der behoben gehört. Melden Sie sie im GitHub-Repository des Projekts mit Angabe der Seite und Ihrer Bedienweise – sie wird vorrangig behandelt."
+  },
+  "Media": {
+    "zoom": "Bild vergrößern",
+    "zoomOf": "Bild vergrößern: {name}",
+    "close": "Schließen"
   }
 }

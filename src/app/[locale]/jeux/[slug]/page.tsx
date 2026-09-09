@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { byStory, games, getGame, localized } from "@/data/games";
 import { GameCover } from "@/components/GameCover";
+import { ImageZoom } from "@/components/ImageZoom";
 import { formatDate } from "@/lib/format";
 import { CATEGORY_SLUG, displayName, entriesInGame, localized as localizedEntry } from "@/data/encyclopedia";
 import { EntryPortrait } from "@/components/EntryPortrait";
@@ -58,7 +59,16 @@ export default async function GamePage({ params }: Props) {
           {game.logo && <p className="mt-2 text-xs text-text-2">{game.logo.credit}</p>}
           {game.cover && (
             <figure className="mt-4 flex items-start gap-3">
-              <GameCover game={game} variant="box" className="h-24 w-[4.5rem] shrink-0 rounded-lg" sizes="72px" />
+              <ImageZoom
+                src={game.cover.src}
+                alt={`${game.title} — ${t("boxArt")}`}
+                width={game.cover.width}
+                height={game.cover.height}
+                credit={game.cover.credit}
+                className="shrink-0"
+              >
+                <GameCover game={game} variant="box" className="h-24 w-[4.5rem] rounded-lg" sizes="72px" />
+              </ImageZoom>
               <figcaption className="text-xs text-text-2">
                 <span className="block font-semibold text-text">{t("boxArt")}</span>
                 {game.cover.credit}

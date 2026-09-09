@@ -349,5 +349,10 @@
     },
     "feedback": "Qualcosa non va?",
     "feedbackText": "Un ostacolo incontrato è un difetto da correggere. Segnalalo sul repository GitHub del progetto descrivendo la pagina e il tuo modo di navigare: sarà trattato con priorità."
+  },
+  "Media": {
+    "zoom": "Ingrandisci l'immagine",
+    "zoomOf": "Ingrandisci l'immagine: {name}",
+    "close": "Chiudi"
   }
 }

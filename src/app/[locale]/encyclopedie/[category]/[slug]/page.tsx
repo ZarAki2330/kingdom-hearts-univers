@@ -7,6 +7,7 @@ import { CATEGORY_SLUG, categoryFromSlug, displayName, entries, getEntry, locali
 import { getGame } from "@/data/games";
 import { entriesOf, kindClass } from "@/data/encyclopedia";
 import { EntryPortrait } from "@/components/EntryPortrait";
+import { ImageZoom } from "@/components/ImageZoom";
 import { KeybladeStats } from "@/components/KeybladeStats";
 import { GameCover } from "@/components/GameCover";
 
@@ -94,7 +95,20 @@ export default async function EntryPage({ params }: Props) {
 
       <header className="mt-6 grid gap-6 md:grid-cols-[224px_1fr] md:items-start">
         <figure className="m-0">
-          <EntryPortrait entry={entry} shape="panel" informative className="h-44 w-44 md:h-56 md:w-56" sizes="(min-width: 768px) 224px, 176px" />
+          {entry.image ? (
+            <ImageZoom
+              src={entry.image.src}
+              alt={displayName(entry, locale)}
+              width={entry.image.width}
+              height={entry.image.height}
+              credit={entry.image.credit}
+            >
+              {/* Le bouton porte déjà le nom de l'entrée : la vignette reste décorative. */}
+              <EntryPortrait entry={entry} shape="panel" className="h-44 w-44 md:h-56 md:w-56" sizes="(min-width: 768px) 224px, 176px" />
+            </ImageZoom>
+          ) : (
+            <EntryPortrait entry={entry} shape="panel" informative className="h-44 w-44 md:h-56 md:w-56" sizes="(min-width: 768px) 224px, 176px" />
+          )}
           {entry.image && <figcaption className="mt-2 max-w-56 text-xs text-text-2">{entry.image.credit}</figcaption>}
         </figure>
         <div>

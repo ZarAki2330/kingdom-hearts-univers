@@ -349,5 +349,10 @@
     },
     "feedback": "Something wrong?",
     "feedbackText": "An obstacle you run into is a defect to fix. Report it on the project's GitHub repository, describing the page and how you browse: it will be handled as a priority."
+  },
+  "Media": {
+    "zoom": "Enlarge the image",
+    "zoomOf": "Enlarge the image: {name}",
+    "close": "Close"
   }
 }
