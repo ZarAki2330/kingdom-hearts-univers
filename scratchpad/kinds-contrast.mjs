@@ -6,11 +6,11 @@ const pages = ['/fr/encyclopedie/personnages', '/fr/encyclopedie/ennemis', '/fr/
   '/fr/encyclopedie/personnages/aerith', '/fr/encyclopedie/ennemis/dusk', '/fr/encyclopedie/mondes/agrabah'];
 for (const theme of ['dawn', 'day', 'dusk', 'night']) {
   const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
-  await p.goto('http://127.0.0.1:3020/fr', { waitUntil: 'domcontentloaded' });
+  await p.goto('http://127.0.0.1:3021/fr', { waitUntil: 'domcontentloaded' });
   await p.evaluate((t) => localStorage.setItem('khu-theme', t), theme);
   const bad = [];
   for (const u of pages) {
-    const r0 = await p.goto('http://127.0.0.1:3020' + u, { waitUntil: 'networkidle' });
+    const r0 = await p.goto('http://127.0.0.1:3021' + u, { waitUntil: 'networkidle' });
     if (r0.status() >= 400) { bad.push(u + ' ' + r0.status()); continue; }
     await p.evaluate((a) => { const s = document.createElement('script'); s.textContent = a; document.head.appendChild(s); }, axe);
     const r = await p.evaluate(() => axe.run(document, { runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa'] }));

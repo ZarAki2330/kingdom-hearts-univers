@@ -203,9 +203,9 @@ h1, h2, h3, h4 {
 .k-species { --kind: var(--accent-text); }
 .k-disney { --kind: #17558f; }
 .k-final-fantasy { --kind: #5a6472; }
-.k-heartless { --kind: #6b3aa8; }
+.k-heartless { --kind: #a9372f; }
 .k-nobody { --kind: #4f6076; }
-.k-unversed { --kind: #a9372f; }
+.k-unversed { --kind: #6b3aa8; }
 .k-dream-eater { --kind: #9c2f78; }
 .k-other { --kind: var(--text-2); }
 
@@ -214,20 +214,20 @@ h1, h2, h3, h4 {
 :root[data-theme="dusk"] .k-final-fantasy,
 :root[data-theme="night"] .k-final-fantasy { --kind: #c2cbd8; }
 :root[data-theme="dusk"] .k-heartless,
-:root[data-theme="night"] .k-heartless { --kind: #c19bff; }
+:root[data-theme="night"] .k-heartless { --kind: #ff9c8f; }
 :root[data-theme="dusk"] .k-nobody,
 :root[data-theme="night"] .k-nobody { --kind: #b8c6d8; }
 :root[data-theme="dusk"] .k-unversed,
-:root[data-theme="night"] .k-unversed { --kind: #ff9c8f; }
+:root[data-theme="night"] .k-unversed { --kind: #c19bff; }
 :root[data-theme="dusk"] .k-dream-eater,
 :root[data-theme="night"] .k-dream-eater { --kind: #ff9ad9; }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-disney { --kind: #7cc4ff; }
   :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-final-fantasy { --kind: #c2cbd8; }
-  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-heartless { --kind: #c19bff; }
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-heartless { --kind: #ff9c8f; }
   :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-nobody { --kind: #b8c6d8; }
-  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-unversed { --kind: #ff9c8f; }
+  :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-unversed { --kind: #c19bff; }
   :root:not([data-theme="day"]):not([data-theme="dawn"]) .k-dream-eater { --kind: #ff9ad9; }
 }
 
