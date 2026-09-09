@@ -5,5 +5,6 @@ import nextTs from "eslint-config-next/typescript";
 export default defineConfig([
   ...nextVitals,
   ...nextTs,
-  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
+  // scratchpad : scripts de mesure et de contrôle, hors application.
+  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts", "scratchpad/**"]),
 ]);

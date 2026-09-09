@@ -9,7 +9,7 @@ Objectif : devenir *la* référence francophone sur la saga, traduite en anglais
 - [Next.js 16](https://nextjs.org/) (App Router, TypeScript, Turbopack)
 - [Tailwind CSS 4](https://tailwindcss.com/)
 - [next-intl](https://next-intl.dev/) — locales `fr` (défaut), `en`, `es`, `de`, `it`, `ja`
-- Polices auto-hébergées (Cinzel, Nunito) via Fontsource — aucun appel à Google Fonts
+- Polices auto-hébergées (Cinzel, Nunito) via `next/font` — aucun appel à Google Fonts
 
 ## Démarrer
 
@@ -18,6 +18,19 @@ npm install
 npm run dev      # http://localhost:3000
 npm run build    # build de production
 npm run lint
+```
+
+## Déploiement
+
+Le site est prêt pour [Vercel](https://vercel.com) (Next.js détecté automatiquement, aucun
+fichier de configuration à ajouter). La marche à suivre — création du compte, import du
+dépôt, variable `NEXT_PUBLIC_SITE_URL`, nom de domaine — est dans
+[`docs/DEPLOIEMENT.md`](docs/DEPLOIEMENT.md).
+
+Une seule variable d'environnement, facultative en développement :
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://exemple.fr   # plan du site, robots.txt, adresses canoniques, aperçus de liens
 ```
 
 ## Structure

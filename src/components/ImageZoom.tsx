@@ -44,10 +44,12 @@ export function ImageZoom({ src, alt, width, height, credit, children, className
     // La page derrière ne défile plus tant que la visionneuse est ouverte.
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    // La vignette est capturée maintenant : au nettoyage, la référence pourrait avoir changé.
+    const trigger = triggerRef.current;
     return () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = previous;
-      triggerRef.current?.focus();
+      trigger?.focus();
     };
   }, [open, close]);
 

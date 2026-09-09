@@ -16,7 +16,7 @@ Repo, outillage, squelette du site
 - [x] Design system (couleurs, typos, composants accessibles) — _Thèmes Aube/Jour/Crépuscule/Nuit, Cinzel + Nunito auto-hébergées_
 - [x] Page d'accueil + header/footer + sélecteur de langue — _Skip-link, menu mobile, sélecteur de thème et de langue_
 - [x] README, licence, .gitignore, CI GitHub Actions (lint + build) — _Code MIT, textes CC BY-NC-SA 4.0 ; README, CI, premier push_
-- [ ] Choisir l'hébergement (Vercel / GitHub Pages) et déployer — _Décision reportée_
+- [ ] Choisir l'hébergement (Vercel / GitHub Pages) et déployer — _**Vercel retenu** (GitHub Pages ne sait pas exécuter le filtrage serveur des listes). Préparation faite : en-têtes de sécurité, cache d'un an sur /images, adresse publique résolue depuis `NEXT_PUBLIC_SITE_URL` ou l'adresse Vercel, install propre vérifiée (npm ci + lint + types + build). Marche à suivre dans `docs/DEPLOIEMENT.md` — reste la création du compte, à faire par Adam_
 
 ## II. Les jeux — 7/7
 
