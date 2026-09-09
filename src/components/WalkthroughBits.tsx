@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/routing";
 import { localized } from "@/data/games";
-import type { CollectibleKind, WalkBoss, WalkCollectible } from "@/data/walkthrough";
+import type { CollectibleKind, WalkBoss, WalkCollectible, WalkTable } from "@/data/walkthrough";
 
 /** Paragraphes d'un texte de données : séparés par une ligne vide. */
 export function paragraphs(text: string) {
@@ -113,5 +113,65 @@ export function CollectibleList({
         </li>
       ))}
     </ul>
+  );
+}
+
+/**
+ * Tableau à trois colonnes des soluces. Les filets verticaux et les lignes alternées
+ * viennent d'un constat : ces tableaux comptent parfois trente lignes, et sans repères
+ * l'œil saute d'une ligne à l'autre. Le tableau défile seul quand la fenêtre est étroite.
+ */
+export function WalkDataTable({
+  table,
+  locale,
+  labels,
+}: {
+  table: WalkTable;
+  locale: Locale;
+  labels: { world: string; what: string; where: string; requires: string };
+}) {
+  const headers = table.columns
+    ? table.columns.map((c) => localized(c, locale))
+    : [labels.world, labels.what, labels.where];
+  // Les tableaux d'emplacements ont une première colonne courte (un nom de monde) ; les
+  // tableaux sur mesure, eux, y mettent des phrases : on leur laisse plus de place.
+  const w1 = table.columns ? "w-44" : "w-36";
+  const w2 = table.columns ? "w-56" : "w-40";
+
+  return (
+    <div role="region" aria-labelledby={`t-${table.id}`} tabIndex={0} className="mt-4 overflow-x-auto">
+      <table className="w-full min-w-[40rem] border-collapse overflow-hidden rounded-lg border border-line text-sm">
+        <thead>
+          <tr className="bg-bg-2 text-left">
+            <th scope="col" className={`${w1} border-b border-r border-line px-3 py-2 font-bold`}>
+              {headers[0]}
+            </th>
+            <th scope="col" className={`${w2} border-b border-r border-line px-3 py-2 font-bold`}>
+              {headers[1]}
+            </th>
+            <th scope="col" className="border-b border-line px-3 py-2 font-bold">
+              {headers[2]}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((row, i) => (
+            <tr key={i} className={`align-top ${i % 2 === 1 ? "bg-bg-2/50" : ""}`}>
+              <td className="border-b border-r border-line px-3 py-2 font-semibold">{localized(row.world, locale)}</td>
+              <td className="border-b border-r border-line px-3 py-2">{localized(row.what, locale)}</td>
+              <td className="border-b border-line px-3 py-2 text-text-2">
+                {localized(row.where, locale)}
+                {row.requires && (
+                  <span className="mt-1 block text-xs">
+                    <span className="font-semibold">{labels.requires} </span>
+                    {localized(row.requires, locale)}
+                  </span>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

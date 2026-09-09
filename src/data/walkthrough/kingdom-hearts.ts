@@ -4,6 +4,9 @@ import type { Walkthrough, WalkSection } from "./types";
 
 const L = (fr: string, en: string): LocalizedText => ({ fr, en });
 
+/** Crédit commun des visuels repris du Kingdom Hearts Wiki (voir docs/IMAGES.md). */
+const credit = (file: string) => `© Square Enix / Disney — via Kingdom Hearts Wiki (${file})`;
+
 /** Section annoncée au sommaire mais pas encore rédigée. */
 const soon = (id: string, title: LocalizedText, world?: string, subtitle?: LocalizedText): WalkSection => ({
   id,
@@ -20,43 +23,9 @@ export const walkthrough: Walkthrough = {
     "Kingdom Hearts Final Mix, as played today in Kingdom Hearts HD 1.5 + 2.5 ReMIX.",
   ),
   intro: L(
-    "Cette soluce couvre le premier Kingdom Hearts du début à la fin, et pas seulement le fil de l'histoire : chaque section indique aussi les coffres, les trinités, les dalmatiens et les mini-jeux qu'on y trouve, pour terminer le jeu à 100 %.\n\nElle est écrite pour la version Final Mix, la seule disponible aujourd'hui. Quand une chose diffère de la version d'origine sortie en 2002, c'est signalé.\n\nLes sections se lisent dans l'ordre de la partie. Si vous jouez sans chercher le 100 %, suivez les étapes et ignorez les listes de ramassage : elles sont toujours à part.",
-    "This guide covers the first Kingdom Hearts from beginning to end, and not only the main story: each section also lists the chests, Trinity Marks, puppies and mini-games found there, so the game can be finished at 100%.\n\nIt is written for the Final Mix version, the only one available today. Whenever something differs from the original 2002 release, it is pointed out.\n\nSections follow the order of a normal playthrough. If you are not chasing 100%, follow the steps and ignore the collection lists: they are always kept separate.",
+    "Cette soluce couvre le premier Kingdom Hearts du début à la fin, et pas seulement le fil de l'histoire : chaque section indique aussi les coffres, les trinités, les dalmatiens et les mini-jeux qu'on y trouve, pour terminer le jeu à 100 %.\n\nElle est écrite pour la version Final Mix, la seule disponible aujourd'hui. Quand une chose diffère de la version d'origine sortie en 2002, c'est signalé.\n\nLes sections se lisent dans l'ordre de la partie. Si vous jouez sans chercher le 100 %, suivez les étapes et ignorez les listes de ramassage : elles sont toujours à part.\n\nUn mot sur la difficulté avant de lancer une partie : Débutant offre d'emblée des objets de renfort, Expert double les dégâts encaissés. Le choix change aussi les conditions des fins secrètes — en Expert, terminer le jeu suffit pour la première ; en Normal, il faut sceller tous les trous de serrure, réunir les 99 dalmatiens et gagner la coupe de l'Hadès. Pour une partie visant le 100 %, Normal est le bon compromis.",
+    "This guide covers the first Kingdom Hearts from beginning to end, and not only the main story: each section also lists the chests, Trinity Marks, puppies and mini-games found there, so the game can be finished at 100%.\n\nIt is written for the Final Mix version, the only one available today. Whenever something differs from the original 2002 release, it is pointed out.\n\nSections follow the order of a normal playthrough. If you are not chasing 100%, follow the steps and ignore the collection lists: they are always kept separate.\n\nA word on difficulty before you start: Beginner hands you stat-boosting items straight away, Proud doubles the damage you take. The choice also changes the secret-ending conditions — on Proud, finishing the game is enough for the first; on Normal you must seal every keyhole, gather all 99 puppies and win the Hades Cup. For a 100% run, Normal is the right compromise.",
   ),
-  before: [
-    {
-      id: "version",
-      title: L("Quelle version jouer", "Which version to play"),
-      text: L(
-        "Final Mix est la version japonaise enrichie de 2002 : nouveaux Sans-cœur, nouvelles capacités, deux Keyblades supplémentaires, les rapports d'Ansem 11 à 13 et deux boss optionnels inédits. Elle est restée exclusive au Japon sur PlayStation 2, mais c'est elle qui a été remastérisée dans Kingdom Hearts HD 1.5 ReMIX, puis dans la compilation HD 1.5 + 2.5 ReMIX.\n\nAutrement dit : si vous jouez à Kingdom Hearts aujourd'hui, vous jouez à Final Mix, quelle que soit la plateforme. C'est cette version que la soluce décrit.",
-        "Final Mix is the enriched Japanese release of 2002: new Heartless, new abilities, two extra Keyblades, Ansem's Reports 11 to 13 and two new optional bosses. It stayed exclusive to Japan on PlayStation 2, but it is the version that was remastered in Kingdom Hearts HD 1.5 ReMIX, then in the HD 1.5 + 2.5 ReMIX collection.\n\nIn other words: if you play Kingdom Hearts today, you play Final Mix, whatever the platform. That is the version this guide describes.",
-      ),
-    },
-    {
-      id: "difficulte",
-      title: L("Choisir sa difficulté", "Choosing a difficulty"),
-      text: L(
-        "Trois modes : Débutant, Normal et Expert. Débutant vous offre d'emblée un stock d'objets de renfort et divise par deux les dégâts subis en vaisseau Gummi ; Expert double les dégâts que vous encaissez.\n\nLe choix ne change pas seulement la difficulté : il change ce qu'il faut accomplir pour débloquer les fins secrètes. En Expert, terminer le jeu suffit pour la première ; en Normal, il faut sceller tous les trous de serrure, réunir les 99 dalmatiens et gagner la coupe de l'Hadès. La seconde fin secrète, elle, demande de compléter le Journal de Jiminy — c'est-à-dire, à peu de chose près, le 100 %.\n\nPour une première partie visant la complétion, Normal est le bon compromis : le jeu reste exigeant sur les boss optionnels sans rendre le remplissage du Journal pénible.",
-        "Three modes: Beginner, Normal and Proud. Beginner hands you a stock of stat-boosting items straight away and halves the damage your Gummi Ship takes; Proud doubles the damage you take.\n\nThe choice does not only change difficulty: it changes what unlocks the secret endings. On Proud, simply finishing the game unlocks the first one; on Normal you must seal every keyhole, gather all 99 puppies and win the Hades Cup. The second secret ending requires completing Jiminy's Journal — which is, near enough, 100%.\n\nFor a first completion run, Normal is the right compromise: the game stays demanding on the optional bosses without making the Journal a chore.",
-      ),
-    },
-    {
-      id: "arme",
-      title: L("L'épée, le bouclier ou le bâton", "Sword, shield or staff"),
-      text: L(
-        "Au tout début, sur les vitraux, on vous demande de choisir une arme et d'en abandonner une autre. Ce choix suit toute la partie : il fixe la répartition des statistiques de Sora et surtout l'ordre dans lequel il apprend ses capacités.\n\nL'épée donne la force, le bâton la magie, le bouclier la défense. Ce qu'on abandonne compte autant que ce qu'on prend : renoncer au bouclier repousse très loin l'apprentissage des capacités défensives, dont la Parade, tandis que renoncer au bâton retarde les capacités de soutien.\n\nUn conseil solide pour une première partie : prendre l'épée et abandonner le bâton. Sora frappe fort tôt, garde la Parade, et la magie reste largement suffisante puisque Donald s'en charge. Les trois questions posées ensuite ne changent que la vitesse de montée en niveau — vite au début, ou plus vite en fin de partie. Au niveau 100, tout le monde arrive au même endroit.",
-        "Right at the start, on the stained-glass platforms, you are asked to choose one weapon and give up another. That choice follows the whole run: it sets Sora's stat growth and, above all, the order in which he learns abilities.\n\nThe sword gives strength, the staff magic, the shield defence. What you give up matters as much as what you take: dropping the shield pushes the defensive abilities, Guard included, very late, while dropping the staff delays the support abilities.\n\nA safe pick for a first run: take the sword, give up the staff. Sora hits hard early, keeps Guard, and magic stays plenty since Donald handles it. The three questions asked afterwards only change how fast you level — quickly at the start, or faster late on. At level 100 everyone ends up in the same place.",
-      ),
-    },
-    {
-      id: "reflexes",
-      title: L("Trois réflexes à prendre tout de suite", "Three habits to pick up right away"),
-      text: L(
-        "Sauvegardez souvent : les points de sauvegarde soignent l'équipe et servent aussi de raccourcis entre les zones d'un monde.\n\nÉquipez vos capacités. Une capacité apprise n'est pas active tant qu'elle n'est pas équipée dans le menu, et les points de compétence sont comptés — c'est le principal piège du jeu pour qui vient d'un autre action-RPG.\n\nOuvrez tout ce que vous croisez. Les coffres du premier Kingdom Hearts ne se referment pas et la plupart des mondes restent accessibles jusqu'à la fin, mais quelques passages se ferment définitivement : ils sont signalés dans chaque section sous « À ne pas rater ».",
-        "Save often: save points heal the party and double as shortcuts between the areas of a world.\n\nEquip your abilities. A learned ability does nothing until it is equipped in the menu, and ability points are limited — this is the game's main trap for anyone coming from another action RPG.\n\nOpen everything you walk past. Chests in the first Kingdom Hearts stay open and most worlds remain reachable until the end, but a few passages close for good: those are flagged in each section under \"Don't miss\".",
-      ),
-    },
-  ],
   completion: [
     {
       id: "journal",
@@ -114,45 +83,105 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Le prologue rêvé", "The dreamed prologue"),
       entry: "kingdom-key",
       status: "done",
-      level: L("1", "1").fr,
+      level: "1",
       intro: L(
-        "Le jeu s'ouvre sur un rêve : Sora tombe dans le noir et se pose sur un vitrail. Rien n'est perdu ici, mais deux choix engagent toute la partie — l'arme que l'on prend et celle que l'on abandonne.",
-        "The game opens on a dream: Sora falls through the dark and lands on a stained-glass platform. Nothing can be lost here, but two choices shape the whole run — the weapon you take and the one you give up.",
+        "Le jeu s'ouvre sur un rêve. Sora tombe dans le noir et se pose sur un vitrail de Blanche-Neige : c'est la Salle de l'Éveil, un tutoriel dont on ne peut pas sortir perdant. Deux choix y sont pourtant définitifs — l'arme que l'on prend, l'arme que l'on abandonne — et trois questions y règlent discrètement toute la courbe d'expérience de la partie.",
+        "The game opens on a dream. Sora falls through the dark and lands on a stained-glass platform of Snow White: this is the Station of Awakening, a tutorial you cannot lose. Two choices are permanent, though — the weapon you take and the one you give up — and three questions quietly set the experience curve for the whole run.",
       ),
-      steps: [
+      tables: [
         {
-          id: "choix",
+          id: "armes",
           title: L("Le choix des armes", "Choosing your weapon"),
-          text: L(
-            "Trois socles apparaissent : l'épée, le bouclier, le bâton. Approchez-vous d'une arme, saisissez-la, puis choisissez celle que vous laissez.\n\nLe détail des conséquences est expliqué plus haut, dans « Avant de commencer ». En résumé : l'épée pour frapper fort, le bouclier pour encaisser, le bâton pour la magie ; abandonner le bâton est le renoncement le moins gênant pour une première partie.",
-            "Three pedestals appear: sword, shield, staff. Walk up to one, take it, then choose the one you leave behind.\n\nThe consequences are explained above, in \"Before you start\". In short: sword to hit hard, shield to take hits, staff for magic; giving up the staff is the least painful choice for a first run.",
+          intro: L(
+            "Trois socles : l'Épée des Rêves, le Bouclier des Rêves, le Sceptre des Rêves. On en prend une, on en abandonne une autre. L'arme prise donne un bonus immédiat ; l'arme abandonnée décale l'ordre d'apprentissage des capacités pour toute la partie. Au niveau 100, les trois chemins arrivent au même endroit.",
+            "Three pedestals: the Dream Sword, the Dream Shield, the Dream Rod. You take one and give up another. The weapon you take gives an immediate bonus; the one you give up shifts the order in which abilities are learned for the whole run. At level 100 all three paths end up in the same place.",
           ),
+          columns: [
+            L("Arme", "Weapon"),
+            L("Si vous la prenez", "If you take it"),
+            L("Si vous l'abandonnez", "If you give it up"),
+          ],
+          rows: [
+            {
+              world: L("Épée des Rêves", "Dream Sword"),
+              what: L("La Force la plus élevée, et un emplacement d'objet supplémentaire. Capacités offensives apprises tôt.", "The highest Strength, and one extra item slot. Offensive abilities learned early."),
+              where: L("Les capacités offensives arrivent nettement plus tard : les combats du début demandent plus de patience.", "Offensive abilities arrive much later: the early fights ask for more patience."),
+            },
+            {
+              world: L("Bouclier des Rêves", "Dream Shield"),
+              what: L("La Défense la plus élevée, et deux emplacements d'objets supplémentaires. C'est le chemin qui donne les meilleures capacités défensives, et tôt.", "The highest Defense, and two extra item slots. This is the path that gives the best defensive abilities, and early."),
+              where: L("La Parade et les capacités défensives sont repoussées très loin dans la partie : c'est le renoncement le plus douloureux.", "Guard and the defensive abilities are pushed very late: this is the most painful sacrifice."),
+            },
+            {
+              world: L("Sceptre des Rêves", "Dream Rod"),
+              what: L("Deux points de magie en plus — le seul moyen d'en avoir trois au départ, et les PM maximum augmentent les dégâts des sorts.", "Two extra Magic Points — the only way to start with three, and maximum MP raises spell damage."),
+              where: L("Les capacités de soutien et les passifs arrivent plus tard. C'est le renoncement le plus confortable pour une première partie, Donald se chargeant de la magie.", "Support abilities and passives come later. This is the most comfortable sacrifice for a first run, since Donald handles the magic."),
+            },
+          ],
         },
         {
+          id: "questions",
+          title: L("Les trois questions", "The three questions"),
+          intro: L(
+            "Sur le vitrail suivant, Wakka, Tidus et Selphie posent chacun une question à trois réponses. Le contenu des réponses n'a aucune importance : seul compte leur rang. Le choix majoritaire fixe la vitesse de montée en niveau.",
+            "On the next platform, Wakka, Tidus and Selphie each ask a question with three answers. The wording is irrelevant: only the rank of the answer counts. The majority choice sets your levelling speed.",
+          ),
+          columns: [
+            L("Réponses", "Answers"),
+            L("Chemin", "Path"),
+            L("Effet sur l'expérience", "Effect on experience"),
+          ],
+          rows: [
+            {
+              world: L("La première, au moins deux fois", "The first, at least twice"),
+              what: L("Aube", "Dawn"),
+              where: L("Vous gagnez 20 % d'expérience en plus jusqu'au niveau 40, puis la progression ralentit. Le bon choix pour être fort tôt.", "You gain 20% more experience up to level 40, then progress slows. The right pick to be strong early."),
+            },
+            {
+              world: L("Un mélange", "A mix"),
+              what: L("Midi", "Midday"),
+              where: L("Progression régulière du début à la fin. Aucun pic, aucun creux.", "Steady progress from beginning to end. No peak, no trough."),
+            },
+            {
+              world: L("La troisième, au moins deux fois", "The third, at least twice"),
+              what: L("Crépuscule", "Dusk"),
+              where: L("30 % d'expérience en moins jusqu'au niveau 40, puis nettement plus vite — et le niveau 100 demande beaucoup moins d'expérience au total.", "30% less experience up to level 40, then much faster — and level 100 costs far less experience overall."),
+            },
+          ],
+        },
+      ],
+      steps: [
+        {
           id: "vitraux",
-          title: L("Les vitraux et les questions", "The platforms and the questions"),
+          title: L("Les vitraux, un par leçon", "One platform, one lesson"),
+          image: { src: "/images/walkthrough/dive-heart.webp", credit: credit("Dive to the Heart from KH1 gameplay 1.png"), width: 420, height: 236 },
           text: L(
-            "Suivent quelques leçons : marcher, frapper les premières Ombres, ouvrir un coffre, lire le panneau qui sert de tutoriel. Trois voix vous posent ensuite des questions sur ce que vous craignez et ce que vous voulez : les réponses ne font qu'avancer ou reculer votre courbe d'expérience, sans jamais bloquer quoi que ce soit.\n\nLa descente se termine par une porte, une plage de rêve, puis une chute vers le dernier vitrail où attend une ombre immense.",
-            "A few lessons follow: walking, striking the first Shadows, opening a chest, reading the tutorial signs. Three voices then ask what you fear and what you want: the answers only shift your experience curve forward or back, and never lock anything away.\n\nThe descent ends with a door, a dreamed beach, then a fall to the last platform where a huge shadow waits.",
+            "Vitrail de Blanche-Neige : avancez, la voix vous fait choisir votre arme. Vitrail de Cendrillon : premières Ombres. Tuez-en une et les autres reculent ; ramassez les sphères de vie, on ne peut pas mourir ici.\n\nFinissez toujours vos enchaînements : le troisième coup frappe le plus fort et balaie plus large, ce qui compte contre un groupe.\n\nVitrail suivant, la porte translucide sert de leçon d'interaction : examinez la porte, ouvrez le coffre, poussez la grande caisse puis brisez-la — une Potion en tombe. Pensez à la mettre dans l'inventaire, elle servira contre le boss. Brisez enfin le tonneau pour rendre la porte solide.\n\nAprès les trois questions, un dernier vitrail : une embuscade d'Ombres, puis un point de sauvegarde, puis le chemin vers la tour du boss.",
+            "Snow White's platform: step forward, and the voice asks you to choose. Cinderella's platform: the first Shadows. Kill one and the rest back off; pick up the health orbs, you cannot die here.\n\nAlways finish your combos: the third hit is the strongest and sweeps widest, which matters against a group.\n\nOn the next platform, the see-through door is the interaction lesson: examine the door, open the chest, push the large crate then break it — a Potion falls out. Put it in your inventory, it will help against the boss. Finally break the barrel to make the door solid.\n\nAfter the three questions, one last platform: an ambush of Shadows, then a save point, then the path to the boss's tower.",
           ),
         },
       ],
       bosses: [
         {
           id: "darkside-reve",
-          name: L("Darkside (rêve)", "Darkside (dream)"),
+          name: L("Darkside", "Darkside"),
           entry: "darkside",
           level: "1",
+          reward: L("Aucune conséquence : perdre ne donne pas de game over, seulement un peu d'expérience en moins.", "No consequence: losing gives no game over, only a little less experience."),
           tactics: L(
-            "Le géant ne peut pas vous tuer ici : perdre relance simplement le combat. Frappez les mains quand elles se posent au sol, et surtout la tête quand il s'agenouille — c'est la seule partie qui encaisse vraiment.\n\nQuand il plonge un poing dans le sol, une flaque sombre crache des Ombres : reculez, laissez-les venir, et profitez du bras immobilisé pour taper la tête. Évitez de rester sous lui lorsqu'il se redresse.",
-            "The giant cannot kill you here: losing simply restarts the fight. Hit the hands when they land on the ground, and above all the head when it kneels — that is the only part that really takes damage.\n\nWhen it drives a fist into the ground, a dark pool spits out Shadows: back off, let them come, and use the pinned arm to hit the head. Avoid standing under it as it straightens up.",
+            "Le géant ne bouge pas de sa place et n'a que deux points vulnérables : les mains et la tête. Il ouvre toujours par un poing planté dans le sol, facile à éviter, qui fait surgir des Ombres — gênantes, mais elles lâchent des sphères de vie bienvenues.\n\nSi vous y arrivez, grimpez le long du bras jusqu'à l'épaule pour frapper la tête : les dégâts sont meilleurs et les points de technique rapportent de l'expérience en prime. Sinon, tapez le poing.\n\nDébarrassez-vous des Ombres avant l'attaque suivante : il s'agenouille, écarte les bras et tire des sphères qui vous suivent depuis le trou de sa poitrine. On peut les renvoyer au sabre, mais rester derrière lui et profiter du moment pour frapper une main est plus rentable. Il alterne ces deux attaques jusqu'à la fin : répétez, et gardez la Potion pour la mauvaise passe.",
+            "The giant never moves and has only two weak points: the hands and the head. It always opens with a fist driven into the ground, easy to dodge, which spawns Shadows — a nuisance, but they drop welcome health orbs.\n\nIf you can, climb up its arm to its shoulder to hit the head: the damage is better and the tech points bring bonus experience. Otherwise, hit the fist.\n\nClear the Shadows before the next attack: it kneels, spreads its arms and fires homing orbs from the hole in its chest. They can be batted back, but staying behind it and using the window to hit a hand pays better. It alternates between those two attacks to the end: repeat, and keep the Potion for a bad moment.",
           ),
+          attacks: [
+            { name: L("Poing au sol", "Fist slam"), note: L("Écartez-vous, tuez les Ombres, puis grimpez le bras.", "Step aside, kill the Shadows, then climb the arm.") },
+            { name: L("Sphères à tête chercheuse", "Homing orbs"), note: L("Placez-vous derrière lui, ou renvoyez-les au sabre.", "Get behind it, or bat them back.") },
+          ],
         },
       ],
       missable: [
         L(
-          "Rien ne se perd dans ce prologue : les coffres du rêve ne comptent pas pour le Journal.",
-          "Nothing is lost in this prologue: the dream chests do not count towards the Journal.",
+          "Rien ne se perd dans ce prologue : les coffres du rêve ne comptent pas pour le Journal. Seuls le choix des armes et celui des réponses vous suivent.",
+          "Nothing is lost in this prologue: the dream chests do not count towards the Journal. Only the weapon choice and the answers follow you.",
         ),
       ],
     },
@@ -164,40 +193,82 @@ export const walkthrough: Walkthrough = {
       status: "done",
       level: "1 → 6",
       intro: L(
-        "Le vrai début du jeu, et le seul moment où l'on peut monter tranquillement de niveau contre des adversaires qui ne rendent pas les coups mortels. Les îles ne sont plus jamais jouables après le troisième jour : tout ce qui s'y trouve doit être pris maintenant.",
-        "The real start of the game, and the only moment where you can level up quietly against opponents whose hits are never lethal. The islands are never playable again after the third day: everything here has to be taken now.",
+        "Le vrai début du jeu, et le seul moment où l'on peut monter de niveau contre des adversaires qui ne tuent pas. Les îles ne sont plus jamais jouables après le troisième jour : tout ce qui s'y trouve doit être pris maintenant.",
+        "The real start of the game, and the only moment where you can level up against opponents who cannot kill you. The islands are never playable again after the third day: everything here has to be taken now.",
       ),
-      steps: [
+      tables: [
         {
-          id: "jour-1",
-          title: L("Premier jour : le radeau", "Day one: the raft"),
-          text: L(
-            "Kairi réclame quatre matériaux. Deux rondins : l'un sur la plage toute proche, l'autre sur le petit îlot où se tient Riku. Le tissu est dans la cabane perchée, au centre de l'île, par la passerelle en bois. La corde est en face, sur la plateforme de guet de Tidus, en haut de l'échelle.\n\nLa cabane sur la plage abrite un point de sauvegarde. Rapportez le tout à Kairi : elle donne une Méga-Potion si vous ne lui avez pas demandé d'indices, une simple Potion sinon.",
-            "Kairi asks for four materials. Two logs: one on the nearby beach, the other on the small islet where Riku stands. The cloth is in the tree house at the centre of the island, across the wooden walkway. The rope is opposite, on Tidus's lookout platform, at the top of the ladder.\n\nThe seaside shack holds a save point. Bring everything back to Kairi: she gives a Hi-Potion if you never asked her for hints, a plain Potion otherwise.",
+          id: "radeau",
+          title: L("Premier jour : les matériaux du radeau", "Day one: the raft materials"),
+          intro: L(
+            "Kairi réclame quatre matériaux. Les rapporter sans lui avoir demandé d'indices donne une Méga-Potion ; avec indices, une simple Potion.",
+            "Kairi asks for four materials. Bringing them back without ever asking her for hints gives a Hi-Potion; with hints, a plain Potion.",
           ),
+          columns: [L("Matériau", "Material"), L("Combien", "How many"), L("Où le trouver", "Where to find it")],
+          rows: [
+            { world: L("Rondin", "Log"), what: L("2", "2"), where: L("Un sur la plage toute proche, l'autre sur le petit îlot où se tient Riku.", "One on the nearby beach, the other on the small islet where Riku stands.") },
+            { world: L("Tissu", "Cloth"), what: L("1", "1"), where: L("Dans la cabane perchée au centre de l'île, par la passerelle en bois.", "In the tree house at the centre of the island, across the wooden walkway.") },
+            { world: L("Corde", "Rope"), what: L("1", "1"), where: L("En face de la cabane, sur la plateforme de guet de Tidus, en haut de l'échelle.", "Opposite the tree house, on Tidus's lookout platform, at the top of the ladder.") },
+          ],
         },
         {
           id: "duels",
-          title: L("Les duels contre les autres enfants", "Duelling the other kids"),
+          title: L("Les duels : la meilleure expérience du début", "The duels: the best experience of the early game"),
+          intro: L(
+            "Répétables, sans aucun risque, et de loin la meilleure source d'expérience de ce début de partie. Viser le niveau 6 ici rend les premières heures nettement plus confortables. Chaque victoire donne une Potion.",
+            "Repeatable, completely safe, and by far the best source of experience this early. Reaching level 6 here makes the first hours far more comfortable. Each win gives a Potion.",
+          ),
+          columns: [L("Adversaire", "Opponent"), L("Où", "Where"), L("Comment le battre", "How to beat them")],
+          rows: [
+            { world: L("Selphie", "Selphie"), what: L("Sur le ponton", "On the pier"), where: L("Sa corde à sauter a de l'allonge mais se pare facilement : parez, puis enchaînez. La plus simple des trois.", "Her skipping rope has reach but parries easily: parry, then follow up. The easiest of the three.") },
+            { world: L("Wakka", "Wakka"), what: L("Sur la plage", "On the beach"), where: L("Renvoyez son ballon d'un coup d'épée : chaque renvoi rapporte des points de technique et finit par l'étourdir. Méfiez-vous du tir qu'il annonce en s'étirant.", "Knock his ball back with a swing: each return earns tech points and eventually stuns him. Watch for the throw he telegraphs by stretching.") },
+            { world: L("Tidus", "Tidus"), what: L("Sur la plateforme de guet", "On the lookout platform"), where: L("Ne le poursuivez pas. Esquivez de côté et frappez juste après sa fente ; s'il recule d'un bond, il enchaîne toujours par un coup d'estoc.", "Do not chase him. Dodge sideways and strike right after his lunge; if he jumps back, he always follows with a thrust.") },
+            { world: L("Les trois ensemble", "All three at once"), what: L("Parlez à Tidus", "Talk to Tidus"), where: L("Plus dur que Riku : le ballon de Wakka arrive pendant que vous gérez les deux autres. Éliminez Tidus en premier.", "Harder than Riku: Wakka's ball arrives while you deal with the other two. Take Tidus down first.") },
+            { world: L("Riku", "Riku"), what: L("Sur son îlot", "On his islet"), where: L("Beaucoup de vie, de vitesse et de force, et une parade souvent levée. Attendez qu'il attaque pour riposter, et méfiez-vous de sa charge quand il est au sol.", "Plenty of HP, speed and power, and his guard is often up. Wait for him to attack before answering, and watch for his charge when knocked down.") },
+          ],
+        },
+        {
+          id: "provisions",
+          title: L("Deuxième jour : les provisions de Kairi", "Day two: Kairi's provisions"),
+          intro: L(
+            "Après la course contre Riku, Kairi donne sa liste. Tout se trouve sur l'île, sans capacité particulière.",
+            "After the race against Riku, Kairi gives her list. Everything is on the island, no special ability needed.",
+          ),
+          columns: [L("Provision", "Provision"), L("Combien", "How many"), L("Où la trouver", "Where to find it")],
+          rows: [
+            { world: L("Noix de coco", "Coconuts"), what: L("2", "2"), where: L("En frappant les palmiers près du radeau. Ignorez les brunes, seules les jaunes comptent.", "By hitting the palm trees near the raft. Ignore the brown ones, only the yellow count.") },
+            { world: L("Champignons", "Mushrooms"), what: L("3", "3"), where: L("Un dans la grotte débloquée en poussant le rocher, un dans les buissons au pied de la tour, le dernier dans la Grotte Secrète.", "One in the cave opened by pushing the boulder, one in the bushes at the foot of the tower, the last in the Secret Place.") },
+            { world: L("Poissons", "Fish"), what: L("3", "3"), where: L("Dans l'eau, juste au bord de la plage : il suffit de leur courir dessus.", "In the water right off the beach: just run them down.") },
+            { world: L("Œuf de mouette", "Seagull egg"), what: L("1", "1"), where: L("En haut du grand palmier près du pont, en sautant depuis le petit palmier voisin.", "On top of the tall palm by the bridge, jumping from the smaller one next to it.") },
+            { world: L("Eau douce", "Drinking water"), what: L("1", "1"), where: L("À la source sous le pont, avec la gourde donnée par Kairi.", "At the spring under the bridge, with the bottle Kairi gives you.") },
+          ],
+        },
+      ],
+      steps: [
+        {
+          id: "jour-1",
+          title: L("Premier jour : le radeau et les duels", "Day one: the raft and the duels"),
+          image: { src: "/images/walkthrough/destiny-1.webp", credit: credit("Destiny Islands from KH1 gameplay 1.png"), width: 420, height: 236 },
           text: L(
-            "Avant de rendre les matériaux, allez vous battre. Selphie, Wakka, Tidus, puis les trois ensemble, puis Riku : ces duels sont répétables, sans aucun risque, et c'est de loin la meilleure source d'expérience du début de partie. Viser le niveau 6 ici rend les premières heures nettement plus confortables.\n\nSelphie, sur le ponton, se contente de sa corde à sauter : parez-la et enchaînez. Wakka lance son ballon de loin ; renvoyez-le d'un coup d'épée, chaque renvoi rapporte des points de technique et finit par l'étourdir. Tidus est vif : ne le poursuivez pas, esquivez de côté et frappez juste après sa fente. Les trois d'un coup sont plus durs que Riku, à cause du ballon de Wakka qui arrive pendant que vous gérez les deux autres — éliminez Tidus en premier.\n\nRiku frappe fort, saute haut et garde souvent sa parade. Attendez qu'il attaque pour riposter, et méfiez-vous de sa charge quand il est au sol.",
-            "Before handing the materials in, go and fight. Selphie, Wakka, Tidus, then all three at once, then Riku: these duels are repeatable, completely safe, and by far the best source of early experience. Reaching level 6 here makes the first hours far more comfortable.\n\nSelphie, on the pier, only has her skipping rope: parry it and follow up. Wakka throws his ball from range; knock it back with a swing — each return earns tech points and eventually stuns him. Tidus is quick: do not chase him, dodge sideways and strike right after his lunge. All three at once is harder than Riku, because Wakka's ball arrives while you deal with the other two — take Tidus down first.\n\nRiku hits hard, jumps high and often keeps his guard up. Wait for him to attack before answering, and watch for his charge when he is knocked down.",
+            "Parlez à Kairi, récupérez les quatre matériaux du tableau ci-dessus, mais ne les rendez pas tout de suite : allez d'abord vous battre. Les duels ne coûtent rien et rapportent l'essentiel de l'expérience du début de partie.\n\nLa cabane sur la plage abrite un point de sauvegarde. Une fois le niveau 6 atteint, rapportez les matériaux à Kairi.\n\nUn mot sur les commandes : au début, l'enchaînement au sol de Sora est lent, et on se retrouve vite bloqué dans une animation au mauvais moment. L'enchaînement aérien — un petit saut, puis l'attaque — est bien plus rapide, et c'est lui qu'il faut prendre l'habitude d'utiliser.",
+            "Talk to Kairi, gather the four materials from the table above, but do not hand them in yet: go and fight first. The duels cost nothing and provide most of the early experience.\n\nThe seaside shack holds a save point. Once you reach level 6, bring the materials back to Kairi.\n\nA word on the controls: early on, Sora's ground combo is slow, and it is easy to get stuck in an animation at the wrong moment. The aerial combo — a small jump, then attack — is much faster, and it is the habit worth building.",
           ),
         },
         {
           id: "jour-2",
-          title: L("Deuxième jour : la course et les provisions", "Day two: the race and the provisions"),
+          title: L("Deuxième jour : la course, puis les provisions", "Day two: the race, then the provisions"),
+          image: { src: "/images/walkthrough/destiny-3.webp", credit: credit("Destiny Islands from KH1 gameplay 3.png"), width: 420, height: 236 },
           text: L(
-            "Riku vous propose une course avant même d'arriver chez Kairi : traverser le pont, franchir la tour, toucher l'arbre en étoile. La tyrolienne est plus rapide, mais il faut ensuite sauter de cime en cime plutôt que contourner. Gagner rapporte une Jolie Pierre, revendable, et la course se rejoue autant de fois qu'on veut.\n\nKairi donne ensuite sa liste : deux noix de coco jaunes, obtenues en frappant les palmiers près du radeau (ignorez les brunes) ; trois champignons, un dans la grotte débloquée en poussant le rocher, un dans les buissons au pied de la tour, le dernier dans la Grotte Secrète ; trois poissons, à attraper dans l'eau juste au bord de la plage ; un œuf de mouette, en haut du grand palmier près du pont, atteignable en sautant depuis le petit ; et de l'eau douce, à puiser à la source sous le pont avec la gourde de Kairi.\n\nRapportez le tout : une seconde Méga-Potion vous attend si vous n'avez toujours pas demandé d'indices.",
-            "Riku offers a race before you even reach Kairi: cross the bridge, get past the tower, touch the star-shaped tree. The zip line is faster, but you then have to jump from treetop to treetop rather than going around. Winning gives a Pretty Stone, which can be sold, and the race can be replayed as often as you like.\n\nKairi then gives her list: two yellow coconuts, knocked down from the palm trees near the raft (ignore the brown ones); three mushrooms, one in the cave opened by pushing the boulder, one in the bushes at the foot of the tower, the last in the Secret Place; three fish, caught in the water right off the beach; a seagull egg, on top of the tall palm by the bridge, reached by jumping from the smaller one; and drinking water, drawn from the spring under the bridge with Kairi's bottle.\n\nBring it all back: a second Hi-Potion is waiting if you still have not asked for hints.",
+            "Riku vous arrête avant même que vous n'arriviez chez Kairi et propose une course : traverser le pont, franchir la tour, toucher l'arbre en étoile. La tyrolienne du guet est plus rapide, à condition de sauter ensuite de cime en cime plutôt que de contourner — bloquez Riku dans l'échelle si vous voulez la prendre le premier.\n\nGagner rapporte une Jolie Pierre, revendable, et la course se rejoue autant de fois qu'on veut : c'est une petite source d'argent. Le nom du radeau, lui, n'a aucune conséquence.\n\nRécupérez ensuite les provisions du tableau ci-dessus. Une seconde Méga-Potion attend si vous n'avez toujours demandé aucun indice à Kairi.",
+            "Riku stops you before you even reach Kairi and offers a race: cross the bridge, get past the tower, touch the star-shaped tree. The lookout's zip line is faster, provided you then jump from treetop to treetop rather than going around — block Riku on the ladder if you want it first.\n\nWinning gives a Pretty Stone, which can be sold, and the race can be replayed as often as you like: a small source of money. The raft's name has no consequence at all.\n\nThen collect the provisions from the table above. A second Hi-Potion is waiting if you still have not asked Kairi for a single hint.",
           ),
         },
         {
           id: "jour-3",
-          title: L("Troisième jour : la nuit et la Keyblade", "Day three: the night and the Keyblade"),
+          title: L("Troisième jour : la tempête et la Keyblade", "Day three: the storm and the Keyblade"),
           text: L(
-            "La tempête réveille l'île et les Ombres surgissent partout. Votre épée en bois ne leur fait rien : courez jusqu'à l'îlot de Riku, assistez à la scène, et Sora reçoit la Chaîne Royale.\n\nÀ partir de là, les Ombres deviennent une bonne source d'expérience et lâchent des sphères de vie : profitez-en quelques minutes avant d'entrer dans la Grotte Secrète, par la porte apparue devant l'entrée.",
-            "The storm wakes the island and Shadows appear everywhere. Your wooden sword does nothing to them: run to Riku's islet, watch the scene, and Sora receives the Kingdom Key.\n\nFrom then on the Shadows are a decent source of experience and drop health orbs: farm them for a few minutes before entering the Secret Place, through the door that has appeared in front of the cave.",
+            "La nuit tombe, l'île se couvre d'Ombres et votre épée en bois ne leur fait rien : courez jusqu'à l'îlot de Riku. Après la scène, Sora reçoit la Chaîne Royale.\n\nÀ partir de là les Ombres deviennent une bonne source d'expérience et lâchent des sphères de vie : profitez-en quelques minutes avant d'entrer dans la Grotte Secrète, par la porte apparue devant l'entrée.",
+            "Night falls, the island fills with Shadows and your wooden sword does nothing to them: run to Riku's islet. After the scene, Sora receives the Kingdom Key.\n\nFrom then on the Shadows are a good source of experience and drop health orbs: farm them for a few minutes before entering the Secret Place, through the door that has appeared in front of the cave.",
           ),
         },
       ],
@@ -207,33 +278,15 @@ export const walkthrough: Walkthrough = {
           name: L("Darkside", "Darkside"),
           entry: "darkside",
           level: "6",
-          reward: L("Fin du monde et départ pour la Ville de Traverse.", "The end of the world and departure for Traverse Town."),
+          reward: L("Fin du monde, et départ pour la Ville de Traverse.", "The end of the world, and departure for Traverse Town."),
           tactics: L(
-            "Le même géant que dans le rêve, mais cette fois il frappe pour de bon et vous n'avez ni soin allié ni magie. Gardez des Potions et ne vous acharnez pas : le combat se gagne en frappant peu, souvent, et en restant mobile.\n\nLa tête reste la cible. Attendez qu'il s'agenouille ou qu'il enfonce un bras dans le sol : pendant ces deux moments il est immobile et sa tête est à portée. Le reste du temps, restez à distance de ses mains.",
-            "The same giant as in the dream, except this time it hits for real and you have no ally healing and no magic. Keep Potions and do not get greedy: the fight is won with short, frequent hits and constant movement.\n\nThe head stays the target. Wait for it to kneel or to drive an arm into the ground: during both it is motionless and its head is in reach. The rest of the time, stay away from its hands.",
+            "Le même géant que dans le rêve, mais cette fois il frappe pour de bon, et vous n'avez ni allié pour vous soigner ni magie. Gardez vos Potions et ne vous acharnez pas : le combat se gagne en frappant peu, souvent, et en restant mobile.\n\nLes poignets posés au sol sont la cible la plus sûre ; la tête encaisse davantage, quand il s'agenouille ou plante un bras dans le sol. Les Ombres qu'il invoque ne sont pas seulement une gêne : elles lâchent des sphères de vie, c'est votre seul soin gratuit.",
+            "The same giant as in the dream, except this time it hits for real, and you have no ally to heal you and no magic. Keep your Potions and do not get greedy: the fight is won with short, frequent hits and constant movement.\n\nThe wrists resting on the ground are the safest target; the head takes more damage, when it kneels or drives an arm into the ground. The Shadows it summons are not only a nuisance: they drop health orbs, your only free healing.",
           ),
           attacks: [
-            {
-              name: L("Flaque d'ombre", "Dark pool"),
-              note: L(
-                "Un poing dans le sol fait surgir des Ombres. Éloignez-vous du poing, tuez ce qui vient, frappez la tête.",
-                "A fist into the ground spawns Shadows. Step away from the fist, kill what comes, hit the head.",
-              ),
-            },
-            {
-              name: L("Sphères noires", "Homing orbs"),
-              note: L(
-                "À genoux, il tire des projectiles qui vous suivent. Courez en cercle : ils s'écrasent au sol.",
-                "On its knees, it fires projectiles that track you. Run in a circle: they crash into the ground.",
-              ),
-            },
-            {
-              name: L("Pluie d'énergie", "Energy rain"),
-              note: L(
-                "Il libère une grosse sphère dans le ciel et des éclats retombent sur votre position. Ne restez jamais immobile ; les éclats peuvent aussi être renvoyés au sabre.",
-                "It releases a large orb into the sky and shards rain down on your position. Never stand still; the shards can also be batted away.",
-              ),
-            },
+            { name: L("Flaque d'ombre", "Dark pool"), note: L("Un poing dans le sol fait surgir des Ombres. Éloignez-vous du poing, tuez ce qui vient, frappez la tête pendant que le bras est immobilisé.", "A fist into the ground spawns Shadows. Step away from the fist, kill what comes, hit the head while the arm is pinned.") },
+            { name: L("Sphères noires", "Homing orbs"), note: L("À genoux, il tire des projectiles qui vous suivent. Courez en cercle, ou renvoyez-les au sabre.", "On its knees, it fires tracking projectiles. Run in a circle, or bat them back.") },
+            { name: L("Pluie d'énergie", "Energy rain"), note: L("Il libère une grosse sphère dans le ciel et des éclats retombent sur votre position. Ne restez jamais immobile.", "It releases a large orb into the sky and shards rain down on your position. Never stand still.") },
           ],
         },
       ],
@@ -255,8 +308,8 @@ export const walkthrough: Walkthrough = {
           label: L("Course contre Riku", "Race against Riku"),
           where: L("Deuxième jour, sur le chemin de Kairi.", "Day two, on the way to Kairi."),
           note: L(
-            "Répétable : chaque victoire donne une Jolie Pierre à revendre. Le nom du radeau, lui, n'a aucune conséquence.",
-            "Repeatable: each win gives a Pretty Stone to sell. The raft's name has no consequence whatsoever.",
+            "Répétable : chaque victoire donne une Jolie Pierre à revendre.",
+            "Repeatable: each win gives a Pretty Stone to sell.",
           ),
         },
         {

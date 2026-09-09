@@ -76,26 +76,6 @@ export default async function WalkthroughGamePage({ params }: Props) {
         </div>
       </header>
 
-      <section aria-labelledby="avant" className="mt-14">
-        <h2 id="avant" className="text-2xl font-bold">
-          {t("before")}
-        </h2>
-        <div className="mt-4 space-y-5">
-          {w.before.map((s) => (
-            <section key={s.id} aria-labelledby={`avant-${s.id}`} className="card p-5 sm:p-6">
-              <h3 id={`avant-${s.id}`} className="text-lg font-bold">
-                {localized(s.title, locale)}
-              </h3>
-              {paragraphs(localized(s.text, locale)).map((par, i) => (
-                <p key={i} className="prose-max mt-3 leading-relaxed text-text-2">
-                  {par}
-                </p>
-              ))}
-            </section>
-          ))}
-        </div>
-      </section>
-
       <section aria-labelledby="sommaire" className="mt-14">
         <h2 id="sommaire" className="text-2xl font-bold">
           {t("contents")}

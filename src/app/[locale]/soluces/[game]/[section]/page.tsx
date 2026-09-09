@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -6,7 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getSection, getWalkthrough, neighbours, walkthroughs, writtenSections } from "@/data/walkthrough";
-import { BossCard, CollectibleList, paragraphs } from "@/components/WalkthroughBits";
+import { BossCard, CollectibleList, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string; game: string; section: string }> };
@@ -47,6 +48,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
   const { previous, next } = neighbours(w, id);
   const world = section.world ? getEntry(section.world) : undefined;
   const steps = section.steps ?? [];
+  const tableLabels = { world: t("tableWorld"), what: t("tableWhat"), where: t("tableWhere"), requires: t("requires") };
 
   return (
     <article className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
@@ -114,11 +116,39 @@ export default async function WalkthroughSectionPage({ params }: Props) {
             <span className="tabular mr-2 text-text-2">{i + 1}.</span>
             {localized(s.title, locale)}
           </h2>
-          {paragraphs(localized(s.text, locale)).map((p, j) => (
-            <p key={j} className="prose-max mt-4 leading-relaxed">
-              {p}
-            </p>
-          ))}
+          {/* Capture à droite du texte sur grand écran, au-dessus sur mobile. */}
+          <div className={s.image ? "mt-4 grid gap-5 lg:grid-cols-[1fr_340px] lg:items-start" : ""}>
+            <div>
+              {paragraphs(localized(s.text, locale)).map((par, j) => (
+                <p key={j} className="prose-max mt-4 leading-relaxed first:mt-0">
+                  {par}
+                </p>
+              ))}
+            </div>
+            {s.image && (
+              <figure className="lg:sticky lg:top-24">
+                <Image
+                  src={s.image.src}
+                  alt=""
+                  width={s.image.width}
+                  height={s.image.height}
+                  sizes="(min-width: 1024px) 340px, 100vw"
+                  className="w-full rounded-lg border border-line"
+                />
+                <figcaption className="mt-1.5 text-xs text-text-2">{s.image.credit}</figcaption>
+              </figure>
+            )}
+          </div>
+        </section>
+      ))}
+
+      {(section.tables ?? []).map((table) => (
+        <section key={table.id} aria-labelledby={`t-${table.id}`} className="mt-12">
+          <h2 id={`t-${table.id}`} className="text-2xl font-bold">
+            {localized(table.title, locale)}
+          </h2>
+          {table.intro && <p className="prose-max mt-2 text-text-2">{localized(table.intro, locale)}</p>}
+          <WalkDataTable table={table} locale={locale} labels={tableLabels} />
         </section>
       ))}
 

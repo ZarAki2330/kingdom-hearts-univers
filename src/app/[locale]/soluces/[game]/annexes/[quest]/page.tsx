@@ -7,7 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getQuest, getWalkthrough, tileImage, walkthroughs, writtenQuests } from "@/data/walkthrough";
-import { BossCard, paragraphs } from "@/components/WalkthroughBits";
+import { BossCard, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string; game: string; quest: string }> };
@@ -47,6 +47,7 @@ export default async function QuestPage({ params }: Props) {
   const t = await getTranslations("Walkthrough");
   const image = tileImage(quest);
   const entry = quest.entry ? getEntry(quest.entry) : undefined;
+  const tableLabels = { world: t("tableWorld"), what: t("tableWhat"), where: t("tableWhere"), requires: t("requires") };
 
   return (
     <article className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
@@ -99,41 +100,7 @@ export default async function QuestPage({ params }: Props) {
             {localized(table.title, locale)}
           </h2>
           {table.intro && <p className="prose-max mt-2 text-text-2">{localized(table.intro, locale)}</p>}
-          {/* Le tableau défile seul quand la fenêtre est étroite : la page, elle, ne déborde jamais. */}
-          <div role="region" aria-labelledby={`t-${table.id}`} tabIndex={0} className="mt-4 overflow-x-auto">
-            <table className="w-full min-w-[40rem] border-collapse overflow-hidden rounded-lg border border-line text-sm">
-              <thead>
-                <tr className="bg-bg-2 text-left">
-                  <th scope="col" className="w-36 border-b border-r border-line px-3 py-2 font-bold">
-                    {t("tableWorld")}
-                  </th>
-                  <th scope="col" className="w-40 border-b border-r border-line px-3 py-2 font-bold">
-                    {t("tableWhat")}
-                  </th>
-                  <th scope="col" className="border-b border-line px-3 py-2 font-bold">
-                    {t("tableWhere")}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {table.rows.map((row, i) => (
-                  <tr key={i} className={`align-top ${i % 2 === 1 ? "bg-bg-2/50" : ""}`}>
-                    <td className="border-b border-r border-line px-3 py-2 font-semibold">{localized(row.world, locale)}</td>
-                    <td className="border-b border-r border-line px-3 py-2">{localized(row.what, locale)}</td>
-                    <td className="border-b border-line px-3 py-2 text-text-2">
-                      {localized(row.where, locale)}
-                      {row.requires && (
-                        <span className="mt-1 block text-xs">
-                          <span className="font-semibold">{t("requires")} </span>
-                          {localized(row.requires, locale)}
-                        </span>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <WalkDataTable table={table} locale={locale} labels={tableLabels} />
         </section>
       ))}
 

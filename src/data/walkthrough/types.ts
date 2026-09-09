@@ -37,11 +37,17 @@ export interface WalkPlace {
   requires?: LocalizedText;
 }
 
-/** Un tableau d'emplacements, titré. */
+/**
+ * Un tableau à trois colonnes. Par défaut il sert de tableau d'emplacements (monde, ce
+ * qu'on y trouve, où) ; `columns` permet de le réutiliser pour autre chose — le choix des
+ * armes, l'effet des réponses, une liste de provisions.
+ */
 export interface WalkTable {
   id: string;
   title: LocalizedText;
   intro?: LocalizedText;
+  /** En-têtes personnalisés, à la place de Monde / Ce qu'on y trouve / Où. */
+  columns?: [LocalizedText, LocalizedText, LocalizedText];
   rows: WalkPlace[];
 }
 
@@ -104,6 +110,8 @@ export interface WalkSection {
   status: "done" | "todo";
   intro?: LocalizedText;
   steps?: WalkStep[];
+  /** Tableaux de la section : provisions, choix, emplacements. */
+  tables?: WalkTable[];
   bosses?: WalkBoss[];
   /** Tout ce que la section contient pour le 100 %. */
   collectibles?: WalkCollectible[];
@@ -160,8 +168,6 @@ export interface Walkthrough {
   version: LocalizedText;
   /** Présentation : ce que le guide couvre et comment le lire. */
   intro: LocalizedText;
-  /** Les réglages et les choix à connaître avant de lancer une partie. */
-  before: WalkStep[];
   /** Ce que réclame le 100 %, listé une fois pour toutes. */
   completion: CompletionGoal[];
   /** Le cheminement, dans l'ordre de la partie. */
