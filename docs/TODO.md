@@ -96,14 +96,13 @@ Guides et cheminement
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)
 
-## VI. Traductions — 3/5
+## VI. Traductions — 3/4
 
 Contenu multilingue
 
 - [x] Interface traduite : en, es, de, it — _Fichiers messages/*.json_
 - [x] Interface traduite : ja — _Optionnel — première version_
 - [ ] Contenu encyclopédique traduit (priorité : en)
-- [ ] Vérifier les traductions existantes — _En cours : 38 noms alignés sur le wiki FR (1re passe), puis 76 Keyblades renommées d'après le champ `nom` du wiki francophone (Monoptéryx, As de Cœur, Trésor des mers, Shérif de l'Ouest…) et 200 occurrences corrigées dans les textes ; noms composés Earthshaker/Ends of the Earth et Rainfell/Stormfall séparés. Restent les ennemis, les mondes et les concepts_
 - [x] Sélecteur de langue accessible + hreflang SEO — _Balises alternates générées par Next_
 
 ## VII. Accessibilité & qualité — 3/5

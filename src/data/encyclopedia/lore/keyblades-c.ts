@@ -200,7 +200,7 @@ export const lore: Record<string, EntryLore> = {
   },
 
   // ═══════════════════════════ 358/2 Days ═══════════════════════════
-  "master-keeper": {
+  "kingdom-key-xion": {
     sections: [
       {
         title: L("Apparence et symbolique", "Appearance and symbolism"),

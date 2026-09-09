@@ -335,6 +335,7 @@ export const keyblades: KeybladeEntry[] = [
     category: "keyblades",
     name: "Garde du Maître",
     names: { en: "Master's Defender", ja: "マスターキーパー" },
+    aliases: ["Maître Gardien", "Master Keeper", "Keyblade d'Eraqus"],
     accent: "#8a8f9e",
     tagline: L("La Keyblade d'Eraqus, transmise à Aqua.", "Eraqus's Keyblade, passed on to Aqua."),
     description: L(
@@ -559,7 +560,7 @@ export const keyblades: KeybladeEntry[] = [
     tags: ["classic kingdom", "transformation"],
   },
   {
-    slug: "master-keeper",
+    slug: "kingdom-key-xion",
     category: "keyblades",
     name: "Chaîne Royale (Xion)",
     names: { en: "Kingdom Key (Xion)", ja: "キングダムチェーン" },
