@@ -2,8 +2,8 @@ import { chromium } from 'playwright';
 import fs from 'fs';
 const src = fs.readFileSync('node_modules/axe-core/axe.min.js','utf8');
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
-const P='http://localhost:3322';
-for (const [path,file] of [['/soluces/kingdom-hearts/iles-du-destin','ch2'],['/soluces/kingdom-hearts/annexes/trophees','troph'],['/soluces/kingdom-hearts/plongee-au-coeur','ch1']]) {
+const P='http://localhost:3323';
+for (const [path,file] of [['/soluces/kingdom-hearts/annexes/trophees','troph']]) {
   for (const theme of ['day','night']) {
     const p = await b.newPage({ viewportSize:{width:1280,height:900} });
     await p.goto(P+path,{waitUntil:'networkidle'});
