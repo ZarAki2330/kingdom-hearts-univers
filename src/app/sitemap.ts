@@ -3,7 +3,7 @@ import { routing } from "@/i18n/routing";
 import { games } from "@/data/games";
 import { CATEGORIES, CATEGORY_SLUG, entries } from "@/data/encyclopedia";
 import { stories } from "@/data/story";
-import { walkthroughs, writtenSections } from "@/data/walkthrough";
+import { walkthroughs, writtenQuests, writtenSections } from "@/data/walkthrough";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
 /**
@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entries.map((e) => ({ path: `/encyclopedie/${CATEGORY_SLUG[e.category]}/${e.slug}`, priority: 0.6 })),
     ...walkthroughs.map((w) => ({ path: `/soluces/${w.game}`, priority: 0.7 })),
     ...walkthroughs.flatMap((w) => writtenSections(w).map((s) => ({ path: `/soluces/${w.game}/${s.id}`, priority: 0.6 }))),
+    ...walkthroughs.flatMap((w) => writtenQuests(w).map((q) => ({ path: `/soluces/${w.game}/annexes/${q.id}`, priority: 0.6 }))),
   ];
 
   const lastModified = new Date();

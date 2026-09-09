@@ -452,6 +452,15 @@
     "missable": "取り逃し注意",
     "sectionNav": "前後のセクション",
     "previous": "前のセクション",
-    "next": "次のセクション"
+    "next": "次のセクション",
+    "quests": "やり込み要素",
+    "questsLead": "物語の進行には関係しない要素です。収集、ミニゲーム、大会、任意のボス。",
+    "questTitle": "{quest} — {game} 攻略",
+    "relatedEntry": "事典の項目",
+    "rewards": "報酬",
+    "tableWorld": "ワールド",
+    "tableWhat": "入手できるもの",
+    "tableWhere": "場所と条件",
+    "backToGame": "{game} の攻略に戻る"
   }
 }

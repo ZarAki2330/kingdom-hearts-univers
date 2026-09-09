@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const p = await b.newPage({ viewportSize:{width:1280,height:900} });
+await p.goto('http://localhost:3315/soluces/kingdom-hearts', { waitUntil:'networkidle' });
+await p.evaluate(async () => { for (let y=0; y<document.body.scrollHeight; y+=600) { window.scrollTo(0,y); await new Promise(r=>setTimeout(r,120)); } window.scrollTo(0,0); });
+await p.waitForTimeout(3000);
+const bad = await p.evaluate(()=>[...document.querySelectorAll('img')].filter(i=>!i.complete||i.naturalWidth===0).length);
+console.log('images non chargées :', bad);
+await p.screenshot({ path:'/tmp/tiles.png', fullPage:true });
+await b.close();

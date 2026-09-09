@@ -1,0 +1,12 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const p = await b.newPage({ viewportSize:{width:1280,height:900} });
+const fails=[];
+p.on('response', r => { if (r.url().includes('/_next/image') && r.status()>=400) fails.push(r.status()+' '+decodeURIComponent(r.url()).slice(-90)); });
+await p.goto('http://localhost:3314/soluces/kingdom-hearts', { waitUntil:'networkidle' });
+await p.evaluate(async () => { for (let y=0; y<document.body.scrollHeight; y+=500) { window.scrollTo(0,y); await new Promise(r=>setTimeout(r,150)); } });
+await p.waitForTimeout(2000);
+const bad = await p.evaluate(()=>[...document.querySelectorAll('img')].filter(i=>i.naturalWidth===0).map(i=>decodeURIComponent(i.currentSrc).slice(-80)));
+console.log('KO:', bad.join('\n'));
+console.log('erreurs réseau:', fails.slice(0,5).join('\n'));
+await b.close();

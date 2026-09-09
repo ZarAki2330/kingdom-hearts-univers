@@ -6,6 +6,14 @@ import type { LocalizedText } from "@/data/games";
  * cheminement pour qu'un joueur pressé puisse ignorer le 100 % sans perdre le fil.
  */
 
+/** Visuel d'une section ou d'une quête (voir docs/IMAGES.md). */
+export interface WalkImage {
+  src: string;
+  credit: string;
+  width: number;
+  height: number;
+}
+
 /** Une étape du cheminement : un objectif, expliqué en quelques paragraphes. */
 export interface WalkStep {
   /** Identifiant stable, sert d'ancre et de sommaire (ex. « radeau »). */
@@ -13,6 +21,28 @@ export interface WalkStep {
   title: LocalizedText;
   /** Paragraphes séparés par une ligne vide (\n\n). */
   text: LocalizedText;
+  /** Illustration de l'étape, quand une capture éclaire mieux qu'un paragraphe. */
+  image?: WalkImage;
+}
+
+/** Une ligne d'un tableau d'emplacements (dalmatiens, trinités, coffres…). */
+export interface WalkPlace {
+  /** Monde ou zone, tel qu'il est nommé sur le site. */
+  world: LocalizedText;
+  /** Ce qu'on y trouve (« Dalmatiens 4, 5 et 6 »). */
+  what: LocalizedText;
+  /** Où exactement, et comment y accéder. */
+  where: LocalizedText;
+  /** Ce qu'il faut posséder pour y arriver. */
+  requires?: LocalizedText;
+}
+
+/** Un tableau d'emplacements, titré. */
+export interface WalkTable {
+  id: string;
+  title: LocalizedText;
+  intro?: LocalizedText;
+  rows: WalkPlace[];
 }
 
 /** Un affrontement : combat de boss, duel ou rencontre imposée. */
@@ -64,8 +94,12 @@ export interface WalkSection {
   subtitle?: LocalizedText;
   /** Slug du monde dans l'encyclopédie, pour le lien et l'illustration. */
   world?: string;
+  /** Slug d'une autre entrée, quand la section n'est pas rattachée à un monde. */
+  entry?: string;
   /** Niveau conseillé à l'arrivée. */
   level?: string;
+  /** Vignette de la section. À défaut, l'illustration du monde lié sert de vignette. */
+  image?: WalkImage;
   /** Section rédigée ou simplement annoncée dans le sommaire. */
   status: "done" | "todo";
   intro?: LocalizedText;
@@ -75,6 +109,30 @@ export interface WalkSection {
   collectibles?: WalkCollectible[];
   /** Ce qui devient définitivement inaccessible si on part sans l'avoir fait. */
   missable?: LocalizedText[];
+}
+
+/**
+ * Une quête annexe : tout ce qui ne fait pas avancer l'histoire mais compte pour le 100 %
+ * — collectes, mini-jeux, tournois, boss facultatifs. Elles sont présentées à part du
+ * cheminement, en grille illustrée, comme sur les sites de soluces francophones.
+ */
+export interface WalkQuest {
+  id: string;
+  title: LocalizedText;
+  /** Une ligne de résumé, affichée sous la vignette et en tête de page. */
+  tagline: LocalizedText;
+  /** Vignette ; à défaut, l'illustration de l'entrée liée. */
+  image?: WalkImage;
+  /** Slug d'une entrée de l'encyclopédie : sert de vignette et de lien. */
+  entry?: string;
+  status: "done" | "todo";
+  intro?: LocalizedText;
+  steps?: WalkStep[];
+  /** Tableaux d'emplacements : c'est le cœur des quêtes de collecte. */
+  tables?: WalkTable[];
+  /** Ce que la quête rapporte, par paliers si besoin. */
+  rewards?: { label: LocalizedText; text: LocalizedText }[];
+  bosses?: WalkBoss[];
 }
 
 /** Un point à cocher dans le bilan de complétion du jeu. */
@@ -96,5 +154,8 @@ export interface Walkthrough {
   before: WalkStep[];
   /** Ce que réclame le 100 %, listé une fois pour toutes. */
   completion: CompletionGoal[];
+  /** Le cheminement, dans l'ordre de la partie. */
   sections: WalkSection[];
+  /** Les quêtes annexes, indépendantes du cheminement. */
+  quests: WalkQuest[];
 }

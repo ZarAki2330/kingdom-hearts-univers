@@ -452,6 +452,15 @@
     "missable": "À ne pas rater",
     "sectionNav": "Section précédente et suivante",
     "previous": "Section précédente",
-    "next": "Section suivante"
+    "next": "Section suivante",
+    "quests": "Quêtes annexes",
+    "questsLead": "Tout ce qui ne fait pas avancer l'histoire : collectes, mini-jeux, tournois et boss facultatifs.",
+    "questTitle": "{quest} — soluce de {game}",
+    "relatedEntry": "La fiche de l'encyclopédie",
+    "rewards": "Les récompenses",
+    "tableWorld": "Monde",
+    "tableWhat": "Ce qu'on y trouve",
+    "tableWhere": "Où, et comment",
+    "backToGame": "Retour à la soluce de {game}"
   }
 }

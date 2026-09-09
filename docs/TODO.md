@@ -92,8 +92,8 @@ Récit de chaque jeu et chronologie de l'univers
 
 Guides et cheminement
 
-- [x] Structure des guides (par jeu, par monde) — _Section /soluces dans les 6 langues : index des guides, page par jeu (version couverte, « avant de commencer », sommaire des 18 sections, objectifs du 100 %) et page par section (étapes, combats avec attaques à connaître, liste de ramassage typée, « à ne pas rater », navigation précédent/suivant). Kingdom Hearts Final Mix ouvert avec le prologue et les Îles du Destin rédigés_
-- [ ] Soluce Kingdom Hearts (Final Mix) — _2 sections sur 18 rédigées_
+- [x] Structure des guides (par jeu, par monde) — _Section /soluces dans les 6 langues : index des guides, page par jeu (version couverte, « avant de commencer », sommaire des 18 sections, objectifs du 100 %) et page par section (étapes, combats avec attaques à connaître, liste de ramassage typée, « à ne pas rater », navigation précédent/suivant). Kingdom Hearts Final Mix ouvert avec le prologue et les Îles du Destin rédigés. Présentation reprise de khdestiny : grilles de tuiles illustrées pour le cheminement et pour les quêtes annexes_
+- [ ] Soluce Kingdom Hearts (Final Mix) — _2 sections sur 18 et 2 quêtes annexes sur 14 rédigées_
 - [ ] Soluce Kingdom Hearts II (Final Mix)
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)

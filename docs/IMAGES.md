@@ -45,6 +45,12 @@ Les jaquettes officielles ont pour texte alternatif « Jaquette de *Titre* ». L
 - Concepts : 15/16 illustrés (Pouvoir de l'éveil sans visuel).
 - Entrées sans image fiable (médaillon généré) : Joueur (Union χ), Ténèbres, Vidar, Vali, Vala, Hoder, Helgi, Heimdall, Mère de Sora, Similis et Avale-Rêves (espèces), Flutterling, Vitality Vial, Gluttonous Goo, Beat Bomber, Helmet Bomber, et quelques Keyblades de Days / KH III (Pain of Solitude, Total Eclipse, Lunar Eclipse, Twilight Blaze, Omega Weapon, Crown Unlimit, Elemental Encoder, Advent Red, Darker Than Dark, Astral Blast, Silent Dirge, Moogle O' Glory).
 
+## Visuels des soluces
+
+- Les tuiles des soluces réutilisent d'abord les illustrations déjà présentes dans l'encyclopédie : une section de monde prend l'image du monde, une quête annexe celle du personnage ou de l'ennemi lié (`tileImage`, `src/data/walkthrough/index.ts`). Le fond de la tuile est teinté par la couleur de l'entrée, comme les cartes de jeux.
+- Les visuels propres aux soluces (personnages ou lieux absents de l'encyclopédie) sont dans `public/images/walkthrough/<nom>.webp`, 400 px maximum, déclarés à la main dans les données de la soluce avec leur crédit.
+- Source et droits : identiques au reste du site (© Square Enix / Disney, via Kingdom Hearts Wiki, retrait sur demande).
+
 ## Logos des jeux
 
 - Fichiers : `public/images/logos/<slug>.webp` (800 px, fond transparent), déclarés dans `src/data/game-logos.ts` (généré) et fusionnés dans `games` (`src/data/games.ts`). Ils remplacent les jaquettes sur les cartes, la chronologie et l'en-tête des fiches, comme sur khdestiny.fr ; la jaquette reste affichée en visuel secondaire de la fiche.

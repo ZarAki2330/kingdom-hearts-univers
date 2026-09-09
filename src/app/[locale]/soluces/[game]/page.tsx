@@ -4,9 +4,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
-import { getWalkthrough, progress, walkthroughs } from "@/data/walkthrough";
+import { getWalkthrough, progress, tileAccent, tileImage, walkthroughs } from "@/data/walkthrough";
 import { GameCover } from "@/components/GameCover";
 import { paragraphs } from "@/components/WalkthroughBits";
+import { WalkTile, WalkTileGrid } from "@/components/WalkTile";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string; game: string }> };
@@ -100,35 +101,42 @@ export default async function WalkthroughGamePage({ params }: Props) {
           {t("contents")}
         </h2>
         <p className="prose-max mt-3 text-text-2">{t("contentsLead")}</p>
-        <ol className="mt-4 space-y-2">
-          {w.sections.map((s, i) => {
-            const label = (
-              <>
-                <span className="tabular w-7 shrink-0 text-sm text-text-2">{i + 1}.</span>
-                <span className="min-w-0">
-                  <span className="font-semibold">{localized(s.title, locale)}</span>
-                  {s.subtitle && <span className="text-text-2"> — {localized(s.subtitle, locale)}</span>}
-                </span>
-              </>
-            );
-            return (
-              <li key={s.id}>
-                {s.status === "done" ? (
-                  <Link href={`/soluces/${slug}/${s.id}`} className="card card-link flex items-baseline gap-2 p-3">
-                    {label}
-                  </Link>
-                ) : (
-                  <div className="card flex items-baseline gap-2 border-dashed p-3 text-text-2">
-                    {label}
-                    <span className="ml-auto shrink-0 rounded-full border border-line px-2 py-0.5 text-[11px] uppercase tracking-wider">
-                      {t("soon")}
-                    </span>
-                  </div>
-                )}
-              </li>
-            );
-          })}
-        </ol>
+        <WalkTileGrid>
+          {w.sections.map((s, i) => (
+            <WalkTile
+              key={s.id}
+              index={i + 1}
+              href={`/soluces/${slug}/${s.id}`}
+              title={localized(s.title, locale)}
+              subtitle={s.subtitle ? localized(s.subtitle, locale) : undefined}
+              image={tileImage(s)}
+              accent={tileAccent(s)}
+              soon={s.status !== "done"}
+              soonLabel={t("soon")}
+            />
+          ))}
+        </WalkTileGrid>
+      </section>
+
+      <section aria-labelledby="annexes" className="mt-14">
+        <h2 id="annexes" className="text-2xl font-bold">
+          {t("quests")}
+        </h2>
+        <p className="prose-max mt-3 text-text-2">{t("questsLead")}</p>
+        <WalkTileGrid>
+          {w.quests.map((q) => (
+            <WalkTile
+              key={q.id}
+              href={`/soluces/${slug}/annexes/${q.id}`}
+              title={localized(q.title, locale)}
+              subtitle={localized(q.tagline, locale)}
+              image={tileImage(q)}
+              accent={tileAccent(q)}
+              soon={q.status !== "done"}
+              soonLabel={t("soon")}
+            />
+          ))}
+        </WalkTileGrid>
       </section>
 
       <section aria-labelledby="completion" className="mt-14">

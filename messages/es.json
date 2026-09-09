@@ -452,6 +452,15 @@
     "missable": "No te lo pierdas",
     "sectionNav": "Sección anterior y siguiente",
     "previous": "Sección anterior",
-    "next": "Sección siguiente"
+    "next": "Sección siguiente",
+    "quests": "Misiones secundarias",
+    "questsLead": "Todo lo que no hace avanzar la historia: colecciones, minijuegos, torneos y jefes opcionales.",
+    "questTitle": "{quest} — guía de {game}",
+    "relatedEntry": "Ficha de la enciclopedia",
+    "rewards": "Recompensas",
+    "tableWorld": "Mundo",
+    "tableWhat": "Qué se obtiene",
+    "tableWhere": "Dónde y cómo",
+    "backToGame": "Volver a la guía de {game}"
   }
 }

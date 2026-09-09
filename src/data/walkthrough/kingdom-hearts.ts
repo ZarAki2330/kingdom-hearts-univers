@@ -1,4 +1,5 @@
 import type { LocalizedText } from "@/data/games";
+import { quests } from "./kingdom-hearts-quests";
 import type { Walkthrough, WalkSection } from "./types";
 
 const L = (fr: string, en: string): LocalizedText => ({ fr, en });
@@ -111,6 +112,7 @@ export const walkthrough: Walkthrough = {
       id: "plongee-au-coeur",
       title: L("Plongée au cœur", "Dive to the Heart"),
       subtitle: L("Le prologue rêvé", "The dreamed prologue"),
+      entry: "kingdom-key",
       status: "done",
       level: L("1", "1").fr,
       intro: L(
@@ -292,6 +294,7 @@ export const walkthrough: Walkthrough = {
     soon("fin-du-monde", L("Fin du Monde", "End of the World"), "end-of-the-world"),
     soon("foret-des-reves-bleus", L("Forêt des Rêves Bleus", "Hundred Acre Wood"), "hundred-acre-wood", L("Facultatif", "Optional")),
     soon("coupes-et-boss", L("Coupes du Colisée et boss optionnels", "Coliseum cups and optional bosses"), "olympus"),
-    soon("synthese-et-ultima", L("Synthèse, Orichalques et Ultima Weapon", "Synthesis, Orichalcum and the Ultima Weapon")),
+    { ...soon("synthese-et-ultima", L("Synthèse, Orichalques et Ultima Weapon", "Synthesis, Orichalcum and the Ultima Weapon")), entry: "moogles" },
   ],
+  quests,
 };

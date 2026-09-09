@@ -452,6 +452,15 @@
     "missable": "Don't miss",
     "sectionNav": "Previous and next section",
     "previous": "Previous section",
-    "next": "Next section"
+    "next": "Next section",
+    "quests": "Side quests",
+    "questsLead": "Everything that does not move the story forward: collections, mini-games, tournaments and optional bosses.",
+    "questTitle": "{quest} — {game} walkthrough",
+    "relatedEntry": "Encyclopedia entry",
+    "rewards": "Rewards",
+    "tableWorld": "World",
+    "tableWhat": "What you get",
+    "tableWhere": "Where, and how",
+    "backToGame": "Back to the {game} walkthrough"
   }
 }
