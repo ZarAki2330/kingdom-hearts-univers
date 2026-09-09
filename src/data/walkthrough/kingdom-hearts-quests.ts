@@ -133,7 +133,7 @@ export const quests: WalkQuest[] = [
       "Trente-trois coffres dispersés dans neuf mondes, et la plus longue collecte du jeu.",
       "Thirty-three chests spread across nine worlds, and the game's longest collection.",
     ),
-    image: { src: "/images/walkthrough/pongo.webp", credit: credit("Pongo_KH.png"), width: 206, height: 149 },
+    entry: "pongo-and-perdita",
     status: "done",
     intro: L(
       "Pongo et Perdita ont perdu leurs 99 chiots dans la tempête des mondes. Ils vous attendent dans leur maison, au troisième district de la Ville de Traverse, et vous les rendent par trois : chaque coffre contient trois chiots.\n\nC'est la collecte qui structure tout le 100 % : elle demande les cinq trinités, les trois capacités de déplacement (Saut Haut, Planer, Nage de sirène) et l'accès aux dernières zones du jeu. Autrement dit, on ne la termine qu'en toute fin de partie — mais ramasser au passage évite de tout refaire.\n\nLes emplacements ci-dessous sont ceux de Final Mix. Plusieurs coffres ont changé de place par rapport à la version de 2002 : si un guide plus ancien vous envoie ailleurs, c'est cette raison-là.",
@@ -150,22 +150,29 @@ export const quests: WalkQuest[] = [
         rows: puppies,
       },
     ],
-    rewards: [
-      {
-        label: L("Par paliers de dix chiots", "Every ten puppies"),
-        text: L(
-          "Pongo et Perdita ouvrent leur maison à mesure : objets de soin, matériaux de synthèse, puis les récompenses rares. Repassez les voir régulièrement plutôt qu'une seule fois à la fin.",
-          "Pongo and Perdita hand out rewards as you go: healing items, synthesis materials, then the rare rewards. Drop by regularly rather than once at the very end.",
-        ),
-      },
-      {
-        label: L("Aux 99 chiots", "At 99 puppies"),
-        text: L(
-          "La récompense finale comprend un Orichalque — matériau nécessaire à l'Ultima Weapon — et compte pour la section « 101 Dalmatiens » du Journal de Jiminy, donc pour la seconde fin secrète.",
-          "The final reward includes an Orichalcum — a material required for the Ultima Weapon — and completes the \"101 Dalmatians\" section of Jiminy's Journal, and with it the second secret ending.",
-        ),
-      },
-    ],
+    rewards: {
+      tierHeader: L("Chiots ramenés", "Puppies returned"),
+      intro: L(
+        "Pongo et Perdita récompensent le retour des chiots par paliers : repassez les voir régulièrement plutôt qu'une seule fois à la fin.",
+        "Pongo and Perdita hand out rewards in tiers: drop by regularly rather than once at the very end.",
+      ),
+      rows: [
+        { tier: L("12", "12"), reward: L("Soin+++G (bloc Gummi)", "Curaga-G (Gummi block)") },
+        { tier: L("21", "21"), reward: L("Brasier+++G", "Firaga-G") },
+        { tier: L("30", "30"), reward: L("Foudre++G", "Thundara-G") },
+        { tier: L("42", "42"), reward: L("Éclat de mithril", "Mythril Shard") },
+        { tier: L("51", "51"), reward: L("Page déchirée, mithril", "Torn Page, Mythril") },
+        { tier: L("60", "60"), reward: L("Méga-Élixir", "Megalixir") },
+        { tier: L("72", "72"), reward: L("Orichalque", "Orichalcum") },
+        { tier: L("81", "81"), reward: L("Ultima-G", "Ultima-G") },
+        { tier: L("90", "90"), reward: L("Techno-boost", "Tech Boost") },
+        { tier: L("99", "99"), reward: L("Pouvoir du vent, panoplie Gummi complète", "Power of Wind, full Gummi set") },
+      ],
+      note: L(
+        "L'Orichalque du palier 72 est l'un des rares du jeu : il entre dans la synthèse de l'Ultima Weapon. Les 99 chiots complètent la section « 101 Dalmatiens » du Journal de Jiminy, donc la seconde fin secrète.",
+        "The Orichalcum at 72 is one of the game's rare ones: it goes into the Ultima Weapon recipe. All 99 puppies complete the \"101 Dalmatians\" section of Jiminy's Journal, and with it the second secret ending.",
+      ),
+    },
   },
   {
     id: "marques-trio",
@@ -174,7 +181,7 @@ export const quests: WalkQuest[] = [
       "Cinq commandes à trois, une quarantaine de marques au sol, et beaucoup de trésors cachés.",
       "Five three-person commands, some forty marks on the ground, and a lot of hidden treasure.",
     ),
-    entry: "goofy",
+    image: { src: "/images/walkthrough/marques-trio.webp", credit: credit("MarquesTrio.png, wiki francophone"), width: 400, height: 80 },
     status: "done",
     intro: L(
       "Les marques Trio sont des symboles peints au sol : quand Sora s'y tient avec Donald et Dingo, le trio exécute une action commune. Certaines ouvrent la route, la plupart révèlent un trésor, et toutes comptent pour le Journal de Jiminy.\n\nLes cinq commandes s'apprennent au fil de l'histoire : Saut après l'Armure Gardienne à la Ville de Traverse, puis Charge, Échelle, Poussée et Détection. Presque toutes les marques restent activables jusqu'à la fin du jeu — inutile de se précipiter, sauf à la Ville d'Halloween, où la marque du manoir d'Oogie Boogie disparaît avec le manoir dans la version d'origine (Final Mix la déplace sur l'arche, où elle reste accessible).",
@@ -187,22 +194,30 @@ export const quests: WalkQuest[] = [
       { id: "poussee", title: L("Trinité Poussée (blanche)", "Trinity Push (white)"), rows: trinityPush },
       { id: "detection", title: L("Trinité Détection (rouge)", "Trinity Detect (red)"), rows: trinityDetect },
     ],
-    rewards: [
-      {
-        label: L("Ce que ça rapporte", "What it is worth"),
-        text: L(
-          "Quatre des cinq Orichalques du jeu viennent d'une marque Trio, ainsi que la Keyblade As de Cœur et plusieurs boosts permanents. Activer toutes les marques remplit la section « Marques Trio » du Journal.",
-          "Four of the game's five Orichalcum come from a Trinity Mark, along with the Lady Luck Keyblade and several permanent boosts. Activating every mark fills the Journal's \"Trinity Marks\" section.",
-        ),
-      },
-    ],
+    rewards: {
+      tierHeader: L("Commande", "Command"),
+      intro: L(
+        "Ce que les marques rapportent en tout, une fois toutes activées.",
+        "What the marks are worth in total, once every one has been activated.",
+      ),
+      rows: [
+        { tier: L("Saut (bleue)", "Jump (blue)"), reward: L("Objets de soin, munnies, deux coffres à chiots, une carte postale", "Healing items, munny, two puppy chests, a postcard") },
+        { tier: L("Charge (verte)", "Charge (green)"), reward: L("Accès à la ruelle, à l'égout secret et à la cloche du trou de serrure", "Access to the Alleyway, the Secret Waterway and the Keyhole bell") },
+        { tier: L("Échelle (jaune)", "Ladder (yellow)"), reward: L("Mithril, éclats de mithril, accès à l'atelier et à la cabine du capitaine", "Mythril, Mythril Shards, access to the Item Workshop and the Captain's Cabin") },
+        { tier: L("Poussée (blanche)", "Push (white)"), reward: L("Le trou de serrure du Colisée, la salle cachée d'Agrabah, un boost permanent", "The Coliseum Keyhole, Agrabah's Hidden Room, a permanent boost") },
+        { tier: L("Détection (rouge)", "Detect (red)"), reward: L("Quatre Orichalques, la Keyblade As de Cœur, deux coffres à chiots", "Four Orichalcum, the Lady Luck Keyblade, two puppy chests") },
+      ],
+      note: L(
+        "Activer toutes les marques remplit la section « Marques Trio » du Journal de Jiminy.",
+        "Activating every mark fills the \"Trinity Marks\" section of Jiminy's Journal.",
+      ),
+    },
   },
   soon(
     "foret-des-reves-bleus",
     L("Forêt des Rêves Bleus", "Hundred Acre Wood"),
     L("Le monde de Winnie l'ourson, ses pages arrachées et ses mini-jeux.", "Winnie the Pooh's world, its torn-out pages and its mini-games."),
-    undefined,
-    { src: "/images/walkthrough/pooh-house.webp", credit: credit("100 Acre Wood- Pooh's House (Art) KH.png"), width: 400, height: 333 },
+    "hundred-acre-wood",
   ),
   soon(
     "cartes-postales",
@@ -242,36 +257,10 @@ export const quests: WalkQuest[] = [
     "tarzan",
   ),
   soon(
+    "boss-optionnels",
+    L("Les boss optionnels", "The optional bosses"),
+    L("Kurt Zisa, le Fantôme, le Titan de glace, Séphiroth et l'Inconnu.", "Kurt Zisa, the Phantom, the Ice Titan, Sephiroth and the Unknown."),
     "kurt-zisa",
-    L("Kurt Zisa", "Kurt Zisa"),
-    L("Le boss caché d'Agrabah, et l'un des plus durs du jeu.", "Agrabah's hidden boss, and one of the hardest in the game."),
-    undefined,
-    { src: "/images/walkthrough/kurt-zisa.webp", credit: credit("Kurt_Zisa_KH.png"), width: 400, height: 335 },
-  ),
-  soon(
-    "fantome",
-    L("Le Fantôme", "The Phantom"),
-    L("L'horloge du Pays Imaginaire, et le combat contre la montre.", "Neverland's clock tower, and a fight against the clock."),
-    undefined,
-    { src: "/images/walkthrough/phantom.webp", credit: credit("Phantom_KH.png"), width: 378, height: 400 },
-  ),
-  soon(
-    "titan-de-glace",
-    L("Le Titan de glace", "The Ice Titan"),
-    L("La coupe Platine, et l'art de renvoyer les glaçons.", "The Platinum Match, and the art of batting icicles back."),
-    "ice-titan",
-  ),
-  soon(
-    "sephiroth",
-    L("Séphiroth", "Sephiroth"),
-    L("Le combat facultatif le plus exigeant de Kingdom Hearts.", "The most demanding optional fight in Kingdom Hearts."),
-    "sephiroth",
-  ),
-  soon(
-    "inconnu",
-    L("L'Inconnu", "The Unknown"),
-    L("Le boss ajouté par Final Mix, à la Forteresse Oubliée.", "The boss added by Final Mix, in Hollow Bastion."),
-    "xemnas",
   ),
   soon(
     "fin-secrete",

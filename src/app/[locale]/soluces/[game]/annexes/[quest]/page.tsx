@@ -114,26 +114,26 @@ export default async function QuestPage({ params }: Props) {
           {table.intro && <p className="prose-max mt-2 text-text-2">{localized(table.intro, locale)}</p>}
           {/* Le tableau défile seul quand la fenêtre est étroite : la page, elle, ne déborde jamais. */}
           <div role="region" aria-labelledby={`t-${table.id}`} tabIndex={0} className="mt-4 overflow-x-auto">
-            <table className="w-full min-w-[36rem] border-collapse text-sm">
+            <table className="w-full min-w-[40rem] border-collapse overflow-hidden rounded-lg border border-line text-sm">
               <thead>
-                <tr className="border-b border-line text-left">
-                  <th scope="col" className="py-2 pr-3 font-bold">
+                <tr className="bg-bg-2 text-left">
+                  <th scope="col" className="w-36 border-b border-r border-line px-3 py-2 font-bold">
                     {t("tableWorld")}
                   </th>
-                  <th scope="col" className="py-2 pr-3 font-bold">
+                  <th scope="col" className="w-40 border-b border-r border-line px-3 py-2 font-bold">
                     {t("tableWhat")}
                   </th>
-                  <th scope="col" className="py-2 font-bold">
+                  <th scope="col" className="border-b border-line px-3 py-2 font-bold">
                     {t("tableWhere")}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {table.rows.map((row, i) => (
-                  <tr key={i} className="border-b border-line/60 align-top">
-                    <td className="py-2 pr-3 font-semibold">{localized(row.world, locale)}</td>
-                    <td className="py-2 pr-3">{localized(row.what, locale)}</td>
-                    <td className="py-2 text-text-2">
+                  <tr key={i} className={`align-top ${i % 2 === 1 ? "bg-bg-2/50" : ""}`}>
+                    <td className="border-b border-r border-line px-3 py-2 font-semibold">{localized(row.world, locale)}</td>
+                    <td className="border-b border-r border-line px-3 py-2">{localized(row.what, locale)}</td>
+                    <td className="border-b border-line px-3 py-2 text-text-2">
                       {localized(row.where, locale)}
                       {row.requires && (
                         <span className="mt-1 block text-xs">
@@ -166,19 +166,37 @@ export default async function QuestPage({ params }: Props) {
         </section>
       )}
 
-      {quest.rewards && quest.rewards.length > 0 && (
+      {quest.rewards && (
         <section aria-labelledby="recompenses" className="mt-12">
           <h2 id="recompenses" className="text-2xl font-bold">
             {t("rewards")}
           </h2>
-          <dl className="mt-4 grid gap-3 sm:grid-cols-2">
-            {quest.rewards.map((r, i) => (
-              <div key={i} className="card p-5">
-                <dt className="font-bold">{localized(r.label, locale)}</dt>
-                <dd className="prose-max mt-1.5 leading-relaxed text-text-2">{localized(r.text, locale)}</dd>
-              </div>
-            ))}
-          </dl>
+          {quest.rewards.intro && <p className="prose-max mt-2 text-text-2">{localized(quest.rewards.intro, locale)}</p>}
+          <div role="region" aria-labelledby="recompenses" tabIndex={0} className="mt-4 overflow-x-auto">
+            <table className="w-full min-w-[24rem] border-collapse overflow-hidden rounded-lg border border-line text-sm">
+              <thead>
+                <tr className="bg-bg-2 text-left">
+                  <th scope="col" className="w-40 border-b border-r border-line px-3 py-2 font-bold">
+                    {localized(quest.rewards.tierHeader, locale)}
+                  </th>
+                  <th scope="col" className="border-b border-line px-3 py-2 font-bold">
+                    {t("rewards")}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {quest.rewards.rows.map((r, i) => (
+                  <tr key={i} className={`align-top ${i % 2 === 1 ? "bg-bg-2/50" : ""}`}>
+                    <th scope="row" className="border-b border-r border-line px-3 py-2 text-left font-semibold">
+                      {localized(r.tier, locale)}
+                    </th>
+                    <td className="border-b border-line px-3 py-2 text-text-2">{localized(r.reward, locale)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {quest.rewards.note && <p className="prose-max mt-3 text-sm text-text-2">{localized(quest.rewards.note, locale)}</p>}
         </section>
       )}
 

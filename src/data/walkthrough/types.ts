@@ -130,9 +130,19 @@ export interface WalkQuest {
   steps?: WalkStep[];
   /** Tableaux d'emplacements : c'est le cœur des quêtes de collecte. */
   tables?: WalkTable[];
-  /** Ce que la quête rapporte, par paliers si besoin. */
-  rewards?: { label: LocalizedText; text: LocalizedText }[];
+  /** Ce que la quête rapporte, par paliers : un tableau, plus lisible qu'une suite d'encadrés. */
+  rewards?: WalkRewardTable;
   bosses?: WalkBoss[];
+}
+
+/** Tableau des récompenses d'une quête, par paliers. */
+export interface WalkRewardTable {
+  /** En-tête de la première colonne (« Chiots ramenés », « Coupe »). */
+  tierHeader: LocalizedText;
+  intro?: LocalizedText;
+  rows: { tier: LocalizedText; reward: LocalizedText }[];
+  /** Précision finale, sous le tableau. */
+  note?: LocalizedText;
 }
 
 /** Un point à cocher dans le bilan de complétion du jeu. */

@@ -671,4 +671,8 @@ export const entryImages: Record<string, EntryImage> = {
   "zexion": { src: "/images/encyclopedia/characters/zexion.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Zexion_KHD.png)", width: 164, height: 320 },
   "zip-slasher": { src: "/images/encyclopedia/enemies/zip-slasher.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (ZipSlasher.png)", width: 320, height: 303 },
   "zolephant": { src: "/images/encyclopedia/enemies/zolephant.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Zolephant_(Spirit).png)", width: 249, height: 320 },
+  "kurt-zisa": { src: "/images/encyclopedia/enemies/kurt-zisa.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Kurt_Zisa_KH.png)", width: 320, height: 268 },
+  "phantom": { src: "/images/encyclopedia/enemies/phantom.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Phantom_KH.png)", width: 303, height: 320 },
+  "opposite-armor": { src: "/images/encyclopedia/enemies/opposite-armor.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Opposite_Armor_KH.png)", width: 320, height: 305 },
+  "pongo-and-perdita": { src: "/images/encyclopedia/characters/pongo-and-perdita.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Pongo_KH.png, Perdita_KH.png)", width: 320, height: 188 },
 };
