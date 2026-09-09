@@ -65,7 +65,7 @@ Images, navigation, profondeur des fiches
 - [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
 - [x] Afficher les statistiques des Keyblades par jeu — _Tableau « Statistiques par jeu » sur les fiches : 114 Keyblades, 171 lignes (Force, Magie, notes de Chain of Memories, portée, capacités), extraites du KH Wiki ; fourchettes du niveau 0 au niveau 10 pour KH III ; colonnes affichées seulement si renseignées_
 
-## III quater. Finitions de l'interface — 6/9
+## III quater. Finitions de l'interface — 7/9
 
 Navigation, visuels et détails de présentation
 
@@ -77,15 +77,15 @@ Navigation, visuels et détails de présentation
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
 - [x] Retirer le lien « code source sur GitHub » — _Lien et clé de traduction supprimés dans les 6 langues_
 - [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_
-- [ ] Revoir les fonds de couleur des jeux — _Dégradés des cartes et des fiches de jeu_
+- [x] Revoir les fonds de couleur des jeux — _La couleur du jeu forme un halo dans les angles, le centre reste sombre là où se pose le logo, plus une vignette sur les bords ; 17 couleurs revues pour éviter les collisions avec la teinte des logos_
 
-## IV. Histoire — 0/3
+## IV. Histoire — 3/3
 
 Récit de chaque jeu et chronologie de l'univers
 
-- [ ] Résumé détaillé de l'histoire de chaque jeu — _Avec balises spoilers_
-- [ ] Frise chronologique des événements importants — _De l'Âge des Fées à Quadratum_
-- [ ] Glossaire des termes
+- [x] Résumé détaillé de l'histoire de chaque jeu — _Section `/histoire` : les 14 jeux résumés (≈ 47 000 mots fr + en), index chronologique, sommaire ancré, avertissement spoilers, personnages et lieux clés liés à l'encyclopédie ; sous-menu Histoire dans la navbar_
+- [x] Frise chronologique des événements importants — _Onglet « Par événements » de la chronologie : 60 événements en 8 ères, de l'Âge des Fées à Quadratum, avec repère temporel, jeu où l'événement est raconté et entrées liées_
+- [x] Glossaire des termes — _Page `/glossaire` : 60 termes triés alphabétiquement, index par lettre, définition courte puis explication, renvoi vers la fiche et les termes liés_
 
 ## V. Soluces — 0/5
 
