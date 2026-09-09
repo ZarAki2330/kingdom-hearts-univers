@@ -1,10 +1,5 @@
 # Mettre le site en ligne sur Vercel
 
-> **Fait le 9 septembre 2026** : le site tourne sur
-> <https://kingdom-hearts-univers.vercel.app> (compte `zaraki-dev`, forfait Hobby).
-> Ce document reste la référence pour redéployer, brancher un nom de domaine ou
-> repartir de zéro.
-
 Le projet est prêt à être déployé : aucune configuration particulière n'est nécessaire,
 Vercel reconnaît Next.js tout seul. Il reste à créer le compte et à brancher le dépôt,
 ce qui prend une dizaine de minutes.

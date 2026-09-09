@@ -4,6 +4,8 @@ Encyclopédie de l'univers **Kingdom Hearts** : jeux, personnages, ennemis, mond
 
 Objectif : devenir *la* référence francophone sur la saga, traduite en anglais, espagnol, allemand, italien (et japonais), et accessible à tous.
 
+**En ligne : [kingdom-hearts-univers.vercel.app](https://kingdom-hearts-univers.vercel.app)**
+
 ## Stack
 
 - [Next.js 16](https://nextjs.org/) (App Router, TypeScript, Turbopack)
