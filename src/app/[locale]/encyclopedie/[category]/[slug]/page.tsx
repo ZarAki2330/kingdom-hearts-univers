@@ -8,6 +8,7 @@ import { getGame } from "@/data/games";
 import { entriesOf, kindClass } from "@/data/encyclopedia";
 import { EntryPortrait } from "@/components/EntryPortrait";
 import { ImageZoom } from "@/components/ImageZoom";
+import { languageAlternates, localeUrl } from "@/lib/site";
 import { KeybladeStats } from "@/components/KeybladeStats";
 import { GameCover } from "@/components/GameCover";
 
@@ -20,10 +21,29 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale, slug } = await params;
+  const { locale, category, slug } = await params;
   const entry = getEntry(slug);
   if (!entry) return {};
-  return { title: displayName(entry, locale as Locale), description: localized(entry.tagline, locale as Locale) };
+  const name = displayName(entry, locale as Locale);
+  const description = localized(entry.tagline, locale as Locale);
+  const path = `/encyclopedie/${category}/${slug}`;
+  return {
+    title: name,
+    description,
+    alternates: { canonical: localeUrl(locale as Locale, path), languages: languageAlternates(path) },
+    openGraph: {
+      type: "article",
+      title: name,
+      description,
+      url: localeUrl(locale as Locale, path),
+      // Les portraits font 320 px de haut : trop petits pour un aperçu de lien, qui
+      // attend au moins 600 px de large. On garde le visuel du site en dessous de ce seuil.
+      images:
+        entry.image && entry.image.width >= 600
+          ? [{ url: entry.image.src, width: entry.image.width, height: entry.image.height, alt: name }]
+          : [{ url: "/og.png", width: 1200, height: 630, alt: name }],
+    },
+  };
 }
 
 /** Fiches d'identité : couples (libellé, valeur) selon le type d'entrée. */

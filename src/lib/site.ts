@@ -1,0 +1,23 @@
+import { routing, type Locale } from "@/i18n/routing";
+
+/**
+ * Adresse publique du site, utilisée par le sitemap, robots.txt et les balises Open Graph.
+ * Elle vient de NEXT_PUBLIC_SITE_URL au déploiement ; la valeur de repli sert en local.
+ */
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+
+/** Chemin complet d'une page dans une langue : le français n'a pas de préfixe (localePrefix "as-needed"). */
+export function localePath(locale: Locale, path: string): string {
+  const clean = path === "/" ? "" : path;
+  return locale === routing.defaultLocale ? `/${clean}`.replace(/\/+/g, "/") : `/${locale}${clean}`;
+}
+
+/** URL absolue d'une page dans une langue. */
+export function localeUrl(locale: Locale, path: string): string {
+  return SITE_URL + localePath(locale, path);
+}
+
+/** Les traductions d'une page, au format attendu par `alternates.languages`. */
+export function languageAlternates(path: string): Record<string, string> {
+  return Object.fromEntries(routing.locales.map((l) => [l, localeUrl(l, path)]));
+}

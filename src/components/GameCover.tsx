@@ -41,7 +41,7 @@ export function GameCover({
       <div className={`relative overflow-hidden rounded-xl ${className}`} style={{ background: bg }}>
         <div className="stars absolute inset-0" aria-hidden="true" />
         <div className="cover-vignette absolute inset-0" aria-hidden="true" />
-        <Image
+        <Image quality={70}
           src={image.src}
           alt={variant === "box" ? `Jaquette de ${game.title}` : `Logo de ${game.title}`}
           fill

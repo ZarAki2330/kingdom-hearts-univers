@@ -2,7 +2,7 @@ import { chromium } from 'playwright-core';
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
 const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
 const problems = [];
-await p.goto('http://127.0.0.1:3025/fr/encyclopedie/personnages/sora', { waitUntil: 'networkidle' });
+await p.goto('http://127.0.0.1:3034/fr/encyclopedie/personnages/sora', { waitUntil: 'networkidle' });
 const trigger = p.locator('button[aria-label^="Agrandir"]').first();
 console.log('déclencheur :', await trigger.getAttribute('aria-label'));
 await trigger.click();
@@ -43,12 +43,12 @@ await trigger.click(); await p.waitForTimeout(200);
 await p.mouse.click(20, 20); await p.waitForTimeout(250);
 if (await p.evaluate(() => !!document.querySelector('[role="dialog"]'))) problems.push('un clic à côté ne ferme pas');
 // fiche de jeu (jaquette)
-await p.goto('http://127.0.0.1:3025/fr/jeux/kingdom-hearts', { waitUntil: 'networkidle' });
+await p.goto('http://127.0.0.1:3034/fr/jeux/kingdom-hearts', { waitUntil: 'networkidle' });
 const t2 = p.locator('button[aria-label^="Agrandir"]');
 console.log('fiche de jeu, déclencheurs :', await t2.count());
 if (await t2.count() === 0) problems.push('pas de zoom sur la fiche de jeu');
 else { await t2.first().click(); await p.waitForTimeout(300); await p.screenshot({ path: '/tmp/zoom-jeu.png' }); await p.keyboard.press('Escape'); }
-await p.goto('http://127.0.0.1:3025/fr/encyclopedie/keyblades/oblivion', { waitUntil: 'networkidle' });
+await p.goto('http://127.0.0.1:3034/fr/encyclopedie/keyblades/oblivion', { waitUntil: 'networkidle' });
 await p.locator('button[aria-label^="Agrandir"]').first().click();
 await p.waitForTimeout(300);
 await p.screenshot({ path: '/tmp/zoom-fiche.png' });

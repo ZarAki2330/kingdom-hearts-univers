@@ -9,6 +9,7 @@ import { CATEGORY_SLUG, displayName, getEntry, localized as localizedEntry } fro
 import { GameCover } from "@/components/GameCover";
 import { EntryPortrait } from "@/components/EntryPortrait";
 import { roman } from "@/lib/format";
+import { languageAlternates, localeUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -23,7 +24,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const story = getStory(slug);
   if (!game || !story) return {};
   const t = await getTranslations({ locale, namespace: "Story" });
-  return { title: t("gameTitle", { game: game.title }), description: localized(story.intro, locale).split(/\n\n+/)[0] };
+  const title = t("gameTitle", { game: game.title });
+  const description = localized(story.intro, locale).split(/\n\n+/)[0];
+  const path = `/histoire/${slug}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: localeUrl(locale, path), languages: languageAlternates(path) },
+    openGraph: {
+      type: "article",
+      title,
+      description,
+      url: localeUrl(locale, path),
+      images:
+        game.cover && game.cover.width >= 600
+          ? [{ url: game.cover.src, width: game.cover.width, height: game.cover.height, alt: game.title }]
+          : [{ url: "/og.png", width: 1200, height: 630, alt: game.title }],
+    },
+  };
 }
 
 /** Paragraphes d'un texte : séparés par une ligne vide dans les données. */

@@ -2,12 +2,18 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { A11ySettings } from "@/components/A11ySettings";
+import { languageAlternates, localeUrl } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale = rawLocale as Locale;
   const t = await getTranslations({ locale, namespace: "A11y" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    title: t("title"),
+    description: t("lead"),
+    alternates: { canonical: localeUrl(locale, "/accessibilite"), languages: languageAlternates("/accessibilite") },
+    openGraph: { title: t("title"), description: t("lead"), url: localeUrl(locale, "/accessibilite") },
+  };
 }
 
 export default async function AccessibilityPage({ params }: { params: Promise<{ locale: string }> }) {

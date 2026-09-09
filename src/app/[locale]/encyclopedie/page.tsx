@@ -3,11 +3,17 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { CATEGORIES, CATEGORY_SLUG, entriesOf } from "@/data/encyclopedia";
+import { languageAlternates, localeUrl } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "Encyclopedia" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    title: t("title"),
+    description: t("lead"),
+    alternates: { canonical: localeUrl(locale as Locale, "/encyclopedie"), languages: languageAlternates("/encyclopedie") },
+    openGraph: { title: t("title"), description: t("lead"), url: localeUrl(locale as Locale, "/encyclopedie") },
+  };
 }
 
 export default async function EncyclopediaPage({ params }: { params: Promise<{ locale: string }> }) {

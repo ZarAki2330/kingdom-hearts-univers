@@ -5,12 +5,18 @@ import type { Locale } from "@/i18n/routing";
 import { localized } from "@/data/games";
 import { GLOSSARY_CATEGORIES, getTerm, initial, terms } from "@/data/glossary";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
+import { languageAlternates, localeUrl } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale = rawLocale as Locale;
   const t = await getTranslations({ locale, namespace: "Glossary" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    title: t("title"),
+    description: t("lead"),
+    alternates: { canonical: localeUrl(locale, "/glossaire"), languages: languageAlternates("/glossaire") },
+    openGraph: { title: t("title"), description: t("lead"), url: localeUrl(locale, "/glossaire") },
+  };
 }
 
 export default async function GlossaryPage({ params }: { params: Promise<{ locale: string }> }) {

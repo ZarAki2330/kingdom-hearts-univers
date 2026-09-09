@@ -1,0 +1,11 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const p = await b.newPage({ viewport: { width: 412, height: 823 }, deviceScaleFactor: 2 });
+const got = [];
+p.on('response', (r) => { const u = r.url(); if (/_next\/image|\.(webp|png|jpg)/.test(u)) got.push({ u: u.slice(0, 110), bytes: +(r.headers()['content-length'] || 0) }); });
+await p.goto('http://127.0.0.1:3030/jeux', { waitUntil: 'networkidle' });
+const shown = await p.evaluate(() => [...document.querySelectorAll('img')].slice(0, 4).map(i => ({ src: i.currentSrc.slice(-60), css: Math.round(i.getBoundingClientRect().width), natural: i.naturalWidth })));
+console.log('affichées :', JSON.stringify(shown, null, 1));
+console.log('total images :', got.length, '·', (got.reduce((a, x) => a + x.bytes, 0) / 1024).toFixed(0), 'Kio');
+console.log(got.slice(0, 4).map(g => `${(g.bytes/1024).toFixed(0)} Kio ${g.u}`).join('\n'));
+await b.close();

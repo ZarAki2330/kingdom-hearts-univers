@@ -119,8 +119,8 @@
   --color-accent: var(--accent);
   --color-accent-2: var(--accent-2);
   --color-accent-contrast: var(--accent-contrast);
-  --font-display: "Cinzel", Georgia, "Times New Roman", serif;
-  --font-body: "Nunito Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-display-face), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-body-face), system-ui, -apple-system, "Segoe UI", sans-serif;
   --shadow-card: var(--shadow);
 }
 

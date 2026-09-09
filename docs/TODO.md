@@ -65,7 +65,7 @@ Images, navigation, profondeur des fiches
 - [x] Approfondir les fiches : histoire détaillée des personnages, mondes, Keyblades… — _486 fiches approfondies : les 231 personnages, les 50 mondes, les 120 Keyblades, les 16 concepts, les 4 espèces d'ennemis et 65 boss. Histoire par jeu (ordre chronologique interne), anecdotes et sources, section repliée (spoilers). Les 181 ennemis communs gardent leur description courte_
 - [x] Afficher les statistiques des Keyblades par jeu — _Tableau « Statistiques par jeu » sur les fiches : 114 Keyblades, 171 lignes (Force, Magie, notes de Chain of Memories, portée, capacités), extraites du KH Wiki ; fourchettes du niveau 0 au niveau 10 pour KH III ; colonnes affichées seulement si renseignées_
 
-## III quater. Finitions de l'interface — 7/9
+## III quater. Finitions de l'interface — 7/10
 
 Navigation, visuels et détails de présentation
 
@@ -74,6 +74,7 @@ Navigation, visuels et détails de présentation
 - [x] Supprimer les encadrés vides des fiches — _L'encadré des caractéristiques ne s'affiche plus quand l'entrée n'a aucune donnée à montrer (ex. Keyblades sans statistiques)_
 - [ ] Remplacer les images peu flatteuses de certaines fiches — _Captures d'écran et visuels mal cadrés à remplacer par de meilleurs rendus_
 - [x] Colorer les fiches selon la catégorie — _Chaque famille pose une variable `--kind` : Disney en bleu, Final Fantasy en argent, originaux en doré ; Sans-cœur rouge, Similis gris-bleu, Nescients violet, Avale-Rêves rose. Liseré à gauche des cartes, surtitre et survol colorés, jeu de teintes clair et sombre vérifié à 4,5:1 sur les 4 thèmes_
+- [ ] Re-télécharger les visuels en haute définition — _Les fichiers font 320 px de haut : la visionneuse plein écran est bornée au double. Reprendre les 650 images du wiki en 800-1000 px_
 - [ ] Ajouter plusieurs images par fiche (mondes, personnages) — _Galerie ou images illustrant les paragraphes de l'histoire détaillée_
 - [x] Retirer le lien « code source sur GitHub » — _Lien et clé de traduction supprimés dans les 6 langues_
 - [x] Corriger le surlignage bleu de la recherche (Ctrl+K) — _Contour de focus en or du thème au lieu du bleu, partout ; le champ de la palette n'a plus de contour (curseur + bordure d'accent suffisent)_
@@ -107,7 +108,7 @@ Contenu multilingue
 - [ ] Vérifier les traductions existantes — _En cours : 38 noms alignés sur le wiki FR (1re passe), puis 76 Keyblades renommées d'après le champ `nom` du wiki francophone (Monoptéryx, As de Cœur, Trésor des mers, Shérif de l'Ouest…) et 200 occurrences corrigées dans les textes ; noms composés Earthshaker/Ends of the Earth et Rainfell/Stormfall séparés. Restent les ennemis, les mondes et les concepts_
 - [x] Sélecteur de langue accessible + hreflang SEO — _Balises alternates générées par Next_
 
-## VII. Accessibilité & qualité — 3/5
+## VII. Accessibilité & qualité — 4/5
 
 Le site doit être utilisable par tous
 
@@ -115,7 +116,7 @@ Le site doit être utilisable par tous
 - [x] Navigation clavier complète et skip-links — _Piège de focus et retour du focus dans la palette Ctrl+K, sous-menus ouvrables à Entrée/Espace, ordre de tabulation vérifié, indicateur de focus sur tous les éléments (script `scratchpad/keyboard.mjs`)_
 - [x] Mode contraste élevé, réduction des animations, taille de texte — _Page `/accessibilite` (6 langues) : contraste élevé, animations réduites, texte 112 %/125 %, mémorisés par appareil et appliqués avant le premier rendu ; en-tête qui passe à la ligne, plus aucun débordement horizontal de 390 à 1440 px dans les trois tailles ; menu compact jusqu'à 1024 px_
 - [ ] Tests lecteur d'écran (NVDA) sur les pages clés
-- [ ] Performance Lighthouse ≥ 95, SEO, sitemap, Open Graph
+- [x] Performance Lighthouse ≥ 95, SEO, sitemap, Open Graph — _Lighthouse ordinateur : perf 95, accessibilité 100, bonnes pratiques 100, SEO 100 en moyenne sur 6 pages. Sitemap (4 296 URL avec hreflang), robots.txt, manifeste, favicon et icônes, image de partage 1200×630, canonical et Open Graph sur toutes les pages. Listes de l'encyclopédie et des jeux rendues côté serveur (cartes dans le HTML), polices via next/font (décalage de mise en page ramené de 0,32 à 0), plus de redirection selon la langue du navigateur_
 
 ## VIII. Lancement — 0/3
 
@@ -125,10 +126,10 @@ Devenir LA référence
 - [ ] Page À propos, mentions légales, crédits (Square Enix/Disney)
 - [ ] Contributions communautaires (issues, formulaire)
 
-## IX. Édition et confort de lecture — 1/3
+## IX. Édition et confort de lecture — 2/3
 
 Gérer le contenu sans passer par le code, et regarder les images de près
 
 - [ ] Mode administrateur pour modifier les fiches à la main — _Édition du contenu des fiches, envoi de photos et création de nouvelles fiches depuis le site, sans toucher au code_
 - [x] Agrandir une image au clic — _Visionneuse plein écran sur les fiches de l'encyclopédie et les jaquettes : Échap ou clic à côté pour fermer, tabulation piégée, focus rendu à la vignette, défilement de la page bloqué, crédit conservé sous l'image. Agrandissement limité au double du fichier (320 px de haut) pour rester net_
-- [ ] Masquer le menu accessibilité dans le pied de page
+- [x] Masquer le menu accessibilité dans le pied de page — _Lien retiré ; la page /accessibilite reste en ligne et référencée dans le sitemap_

@@ -6,6 +6,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { byStory, games, getGame, localized } from "@/data/games";
 import { GameCover } from "@/components/GameCover";
 import { ImageZoom } from "@/components/ImageZoom";
+import { languageAlternates, localeUrl } from "@/lib/site";
 import { formatDate } from "@/lib/format";
 import { CATEGORY_SLUG, displayName, entriesInGame, localized as localizedEntry } from "@/data/encyclopedia";
 import { EntryPortrait } from "@/components/EntryPortrait";
@@ -21,7 +22,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = rawLocale as Locale;
   const game = getGame(slug);
   if (!game) return {};
-  return { title: game.title, description: localized(game.synopsis, locale as Locale) };
+  const description = localized(game.synopsis, locale).split(/\n\n+/)[0];
+  const path = `/jeux/${slug}`;
+  const visual = game.cover ?? game.logo;
+  return {
+    title: game.title,
+    description,
+    alternates: { canonical: localeUrl(locale, path), languages: languageAlternates(path) },
+    openGraph: {
+      type: "article",
+      title: game.title,
+      description,
+      url: localeUrl(locale, path),
+      images:
+        visual && visual.width >= 600
+          ? [{ url: visual.src, width: visual.width, height: visual.height, alt: game.title }]
+          : [{ url: "/og.png", width: 1200, height: 630, alt: game.title }],
+    },
+  };
 }
 
 export default async function GamePage({ params }: Props) {

@@ -4,12 +4,18 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { byRelease, byStory } from "@/data/games";
 import { Timeline } from "@/components/Timeline";
 import { EventsTimeline } from "@/components/EventsTimeline";
+import { languageAlternates, localeUrl } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale = rawLocale as Locale;
   const t = await getTranslations({ locale, namespace: "Timeline" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    title: t("title"),
+    description: t("lead"),
+    alternates: { canonical: localeUrl(locale, "/chronologie"), languages: languageAlternates("/chronologie") },
+    openGraph: { title: t("title"), description: t("lead"), url: localeUrl(locale, "/chronologie") },
+  };
 }
 
 export default async function TimelinePage({ params }: { params: Promise<{ locale: string }> }) {

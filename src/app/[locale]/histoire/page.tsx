@@ -5,12 +5,18 @@ import type { Locale } from "@/i18n/routing";
 import { byStory, getGame, localized } from "@/data/games";
 import { getStory, stories } from "@/data/story";
 import { GameCover } from "@/components/GameCover";
+import { languageAlternates, localeUrl } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale = rawLocale as Locale;
   const t = await getTranslations({ locale, namespace: "Story" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    title: t("title"),
+    description: t("lead"),
+    alternates: { canonical: localeUrl(locale, "/histoire"), languages: languageAlternates("/histoire") },
+    openGraph: { title: t("title"), description: t("lead"), url: localeUrl(locale, "/histoire") },
+  };
 }
 
 export default async function StoryIndexPage({ params }: { params: Promise<{ locale: string }> }) {

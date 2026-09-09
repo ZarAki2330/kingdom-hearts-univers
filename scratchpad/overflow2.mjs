@@ -5,11 +5,11 @@ const pages = ['/fr', '/fr/jeux', '/fr/encyclopedie/personnages', '/fr/chronolog
 for (const m of modes) {
   for (const w of [1280, 390]) {
     const p = await b.newPage({ viewport: { width: w, height: 900 } });
-    await p.goto('http://127.0.0.1:3007/fr/accessibilite', { waitUntil: 'domcontentloaded' });
+    await p.goto('http://127.0.0.1:3034/fr/accessibilite', { waitUntil: 'domcontentloaded' });
     await p.evaluate((mm) => { mm ? localStorage.setItem('khu-text', mm) : localStorage.removeItem('khu-text'); }, m);
     const bad = [];
     for (const u of pages) {
-      await p.goto('http://127.0.0.1:3007' + u, { waitUntil: 'networkidle' });
+      await p.goto('http://127.0.0.1:3034' + u, { waitUntil: 'networkidle' });
       const r = await p.evaluate(() => {
         const over = [];
         const w = document.documentElement.clientWidth;
