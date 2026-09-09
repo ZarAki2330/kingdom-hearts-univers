@@ -207,10 +207,6 @@ export const keybladeStats: Record<string, KeybladeGameStat[]> = {
   "mark-of-a-hero": [
     { game: "birth-by-sleep", strength: "+5", magic: "+1", critRate: "50%", critBonus: "x1.5" },
   ],
-  "master-keeper": [
-    { game: "birth-by-sleep", strength: "+7", magic: "+7", reach: "long", critRate: "50%", critBonus: "x1.5" },
-    { game: "kingdom-hearts-iii", strength: "+5", magic: "+5" },
-  ],
   "masters-defender": [
     { game: "birth-by-sleep", strength: "+7", magic: "+7", reach: "long", critRate: "50%", critBonus: "x1.5" },
     { game: "kingdom-hearts-iii", strength: "+5", magic: "+5" },

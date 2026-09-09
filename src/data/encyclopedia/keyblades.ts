@@ -95,14 +95,14 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "ultima-weapon",
     category: "keyblades",
-    name: "Arme Ultime",
+    name: "Ultima",
     names: { en: "Ultima Weapon", ja: "アルテマウェポン" },
     accent: "#e8d060",
     stats: { strength: 13, magic: 13 },
     ability: L("KH III : Force 13 / Magie 13, MP de secours et Combo + ; commandement de situation Ultima.", "KH III: Strength 13 / Magic 13, MP Haste and Combo Boost; Ultimate Form."),
     tagline: L("La Keyblade la plus puissante, à synthétiser dans chaque jeu.", "The most powerful Keyblade, to be synthesized in every game."),
     description: L(
-      "Récompense ultime des Mogs, l'Arme Ultime demande dans chaque épisode de réunir des matériaux rares (Orichalque+, Mythril…). Son design change à chaque jeu mais sa place au sommet des statistiques reste constante. Dans Kingdom Hearts III, elle débloque la Forme Ultime, capable de pulvériser n'importe quel boss.",
+      "Récompense ultime des Mogs, l'Ultima demande dans chaque épisode de réunir des matériaux rares (Orichalque+, Mythril…). Son design change à chaque jeu mais sa place au sommet des statistiques reste constante. Dans Kingdom Hearts III, elle débloque la Forme Ultime, capable de pulvériser n'importe quel boss.",
       "The Moogles' ultimate reward, the Ultima Weapon requires gathering rare materials (Orichalcum+, Mythril…) in every entry. Its design changes with each game but its place at the top of the stats stays constant. In Kingdom Hearts III it unlocks Ultimate Form, able to shred any boss.",
     ),
     obtained: {
@@ -134,8 +134,8 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "braveheart",
     category: "keyblades",
-    name: "Braveheart",
-    names: { ja: "ブレイブハート" },
+    name: "Cœur brave",
+    names: { en: "Braveheart", ja: "ブレイブハート"  },
     accent: "#3a5a9a",
     tagline: L("La Keyblade de Maître offerte à Riku par Yen Sid.", "The Master's Keyblade given to Riku by Yen Sid."),
     description: L(
@@ -168,8 +168,8 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "star-seeker",
     category: "keyblades",
-    name: "Star Seeker",
-    names: { ja: "スターシーカー" },
+    name: "Stella",
+    names: { en: "Star Seeker", ja: "スターシーカー"  },
     accent: "#3a4aa8",
     stats: { strength: 3, magic: 1 },
     ability: L("KH II : Combo aérien +.", "KH II: Air Combo Plus."),
@@ -225,14 +225,14 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "sleeping-lion",
     category: "keyblades",
-    name: "Lion Endormi",
+    name: "Lion Assoupi",
     names: { en: "Sleeping Lion", ja: "スリープライオン" },
     accent: "#8a8a9a",
     stats: { strength: 5, magic: 3 },
     ability: L("KH II : Combo +.", "KH II: Combo Plus."),
     tagline: L("La Keyblade de Léon, à la gunblade et au lion griffé.", "Leon's Keyblade, with gunblade and Griever lion."),
     description: L(
-      "Obtenue dans l'ordinateur d'Ansem au Jardin Radieux, Lion Endormi reprend les motifs de Squall : le lion Griever et la Gunblade. Équilibrée entre force et magie, elle est l'une des meilleures Keyblades de milieu de jeu de Kingdom Hearts II.",
+      "Obtenue dans l'ordinateur d'Ansem au Jardin Radieux, Lion Assoupi reprend les motifs de Squall : le lion Griever et la Gunblade. Équilibrée entre force et magie, elle est l'une des meilleures Keyblades de milieu de jeu de Kingdom Hearts II.",
       "Obtained in Ansem's computer room in Radiant Garden, Sleeping Lion reprises Squall's motifs: the lion Griever and the Gunblade. Balanced between strength and magic, it is one of the best mid-game Keyblades in Kingdom Hearts II.",
     ),
     obtained: { "kingdom-hearts-ii": L("Jardin Radieux, coffre dans le bureau d'Ansem.", "Radiant Garden, chest in Ansem's study.") },
@@ -244,14 +244,14 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "bond-of-flame",
     category: "keyblades",
-    name: "Lien de Flammes",
+    name: "Ignescence",
     names: { en: "Bond of Flame", ja: "ボンド・オブ・フレイム" },
     accent: "#e8402a",
     stats: { strength: 4, magic: 4 },
     ability: L("KH II : Feu +.", "KH II: Fire Boost."),
     tagline: L("La Keyblade en forme de chakram, héritage d'Axel.", "The chakram-shaped Keyblade, Axel's legacy."),
     description: L(
-      "Formée à partir des chakrams d'Axel, Lien de Flammes est remise à Sora après le sacrifice d'Axel dans le passage entre les mondes. Elle renforce la magie de feu. Elle réapparaît dans Kingdom Hearts III Re Mind comme récompense.",
+      "Formée à partir des chakrams d'Axel, Ignescence est remise à Sora après le sacrifice d'Axel dans le passage entre les mondes. Elle renforce la magie de feu. Elle réapparaît dans Kingdom Hearts III Re Mind comme récompense.",
       "Formed from Axel's chakrams, Bond of Flame is given to Sora after Axel's sacrifice in the corridor between worlds. It strengthens fire magic. It reappears in Kingdom Hearts III Re Mind as a reward.",
     ),
     obtained: { "kingdom-hearts-ii": L("Après le sacrifice d'Axel (Entre-deux).", "After Axel's sacrifice (Betwixt and Between).") },
@@ -263,14 +263,14 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "decisive-pumpkin",
     category: "keyblades",
-    name: "Citrouille Décisive",
+    name: "Citrouille de Noël",
     names: { en: "Decisive Pumpkin", ja: "パンプキンヘッド" },
     accent: "#e07020",
     stats: { strength: 6, magic: 1 },
     ability: L("KH II : Combo +++ (dégâts croissants au fil du combo).", "KH II: Combo Boost."),
     tagline: L("La Keyblade de la Ville d'Halloween, redoutable en combos.", "The Halloween Town Keyblade, fearsome in combos."),
     description: L(
-      "Obtenue après la seconde visite de la Ville d'Halloween dans Kingdom Hearts II, Citrouille Décisive est souvent considérée comme la meilleure Keyblade physique du jeu grâce à Combo +++, qui augmente les dégâts à chaque coup enchaîné.",
+      "Obtenue après la seconde visite de la Ville d'Halloween dans Kingdom Hearts II, Citrouille de Noël est souvent considérée comme la meilleure Keyblade physique du jeu grâce à Combo +++, qui augmente les dégâts à chaque coup enchaîné.",
       "Obtained after the second visit to Halloween Town in Kingdom Hearts II, Decisive Pumpkin is often considered the game's best physical Keyblade thanks to Combo Boost, which increases damage with every chained hit.",
     ),
     obtained: { "kingdom-hearts-ii": L("Ville d'Halloween, seconde visite, après l'Expérimentateur.", "Halloween Town, second visit, after the Experiment.") },
@@ -281,12 +281,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "earthshaker",
     category: "keyblades",
-    name: "Gardien de la Terre / Confins de la Terre",
-    names: { en: "Earthshaker / Ends of the Earth", ja: "アースシェイカー / エンズ・オブ・アース" },
+    name: "Trembleterre",
+    names: { en: "Earthshaker" },
     accent: "#b8722a",
     tagline: L("Les Keyblades de Terra, massives comme lui.", "Terra's Keyblades, as massive as he is."),
     description: L(
-      "Gardien de la Terre est la Keyblade de départ de Terra ; Confins de la Terre, sa forme finale obtenue après le Nécropole des Keyblades. Toutes deux privilégient la force brute. Terra-Xehanort continue de la manier, et c'est la Keyblade que la Volonté Persistante utilise contre Sora.",
+      "Trembleterre est la Keyblade de départ de Terra ; Confins de la Terre, sa forme finale obtenue après le Nécropole des Keyblades. Toutes deux privilégient la force brute. Terra-Xehanort continue de la manier, et c'est la Keyblade que la Volonté Persistante utilise contre Sora.",
       "Earthshaker is Terra's starting Keyblade; Ends of the Earth, its final form obtained after the Keyblade Graveyard. Both favour raw strength. Terra-Xehanort keeps wielding it, and it is the Keyblade the Lingering Will uses against Sora.",
     ),
     obtained: { "birth-by-sleep": L("Keyblade de départ de Terra ; Confins de la Terre après la bataille finale.", "Terra's starting Keyblade; Ends of the Earth after the final battle.") },
@@ -316,12 +316,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "rainfell",
     category: "keyblades",
-    name: "Pluie Enchantée / Tempête",
-    names: { en: "Rainfell / Stormfall", ja: "レインフォール / ストームフォール" },
+    name: "Larme de pluie",
+    names: { en: "Rainfell" },
     accent: "#3b8fd9",
     tagline: L("Les Keyblades d'Aqua, élégantes et magiques.", "Aqua's Keyblades, elegant and magical."),
     description: L(
-      "Pluie Enchantée est la Keyblade de départ d'Aqua, Tempête sa forme finale. Fines et bleues, elles reflètent son style porté sur la magie. Aqua manie ensuite le Maître Gardien d'Eraqus dans le Domaine des Ténèbres.",
+      "Larme de pluie est la Keyblade de départ d'Aqua, Tempête sa forme finale. Fines et bleues, elles reflètent son style porté sur la magie. Aqua manie ensuite le Garde du Maître d'Eraqus dans le Domaine des Ténèbres.",
       "Rainfell is Aqua's starting Keyblade, Stormfall its final form. Slender and blue, they reflect her magic-oriented style. Aqua later wields Eraqus's Master's Defender in the Realm of Darkness.",
     ),
     obtained: { "birth-by-sleep": L("Keyblade de départ d'Aqua ; Tempête après la bataille finale.", "Aqua's starting Keyblade; Stormfall after the final battle.") },
@@ -333,12 +333,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "masters-defender",
     category: "keyblades",
-    name: "Maître Gardien",
+    name: "Garde du Maître",
     names: { en: "Master's Defender", ja: "マスターキーパー" },
     accent: "#8a8f9e",
     tagline: L("La Keyblade d'Eraqus, transmise à Aqua.", "Eraqus's Keyblade, passed on to Aqua."),
     description: L(
-      "Keyblade du Maître Eraqus, Maître Gardien est celle qui transforme la Contrée du Départ en Manoir Oblivion entre les mains d'Aqua. Aqua la conserve dans le Domaine des Ténèbres et dans 0.2 ; elle la manie encore dans Kingdom Hearts III.",
+      "Keyblade du Maître Eraqus, Garde du Maître est celle qui transforme la Contrée du Départ en Manoir Oblivion entre les mains d'Aqua. Aqua la conserve dans le Domaine des Ténèbres et dans 0.2 ; elle la manie encore dans Kingdom Hearts III.",
       "Master Eraqus's Keyblade, Master's Defender is the one that turns the Land of Departure into Castle Oblivion in Aqua's hands. Aqua keeps it in the Realm of Darkness and in 0.2; she still wields it in Kingdom Hearts III.",
     ),
     obtained: { "birth-by-sleep": L("Épisode final : héritée d'Eraqus.", "Final episode: inherited from Eraqus.") },
@@ -350,8 +350,8 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "void-gear",
     category: "keyblades",
-    name: "Void Gear",
-    names: { ja: "ヴォイドギア" },
+    name: "Clavis Vacuum",
+    names: { en: "Void Gear", ja: "ヴォイドギア"  },
     accent: "#8b1a1a",
     tagline: L("La Keyblade dentelée de Vanitas.", "Vanitas's jagged Keyblade."),
     description: L(
@@ -384,12 +384,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "divine-rose",
     category: "keyblades",
-    name: "Rose Divine",
+    name: "Rose Éternelle",
     names: { en: "Divine Rose", ja: "ディバインローズ" },
     accent: "#c03a5a",
     tagline: L("La Keyblade de la Belle et la Bête, redoutable dès Kingdom Hearts.", "The Beauty and the Beast Keyblade, fearsome as early as Kingdom Hearts."),
     description: L(
-      "Remise par Belle après avoir sauvé les Princesses de Cœur, Rose Divine est l'une des Keyblades les plus puissantes du premier jeu, au prix d'une portée courte. Sa lame en forme de rose sous cloche rappelle le château de la Bête.",
+      "Remise par Belle après avoir sauvé les Princesses de Cœur, Rose Éternelle est l'une des Keyblades les plus puissantes du premier jeu, au prix d'une portée courte. Sa lame en forme de rose sous cloche rappelle le château de la Bête.",
       "Given by Belle after saving the Princesses of Heart, Divine Rose is one of the most powerful Keyblades in the first game, at the cost of short reach. Its rose-under-glass blade recalls the Beast's castle.",
     ),
     obtained: { "kingdom-hearts": L("Forteresse Oubliée : parler à Belle dans la bibliothèque après avoir scellé le monde.", "Hollow Bastion: talk to Belle in the library after sealing the world.") },
@@ -400,12 +400,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "lionheart",
     category: "keyblades",
-    name: "Cœur de Lion",
+    name: "Lionheart",
     names: { en: "Lionheart", ja: "ライオンハート" },
     accent: "#4a5a8a",
     tagline: L("La Keyblade de Léon, récompense de la Coupe Hadès.", "Leon's Keyblade, reward of the Hades Cup."),
     description: L(
-      "Obtenue en battant Léon et Cloud en équipe lors de la Coupe Hadès, Cœur de Lion reprend la Gunblade de Squall et son porte-clés Griever. Excellente en magie, elle est l'une des meilleures Keyblades du premier Kingdom Hearts.",
+      "Obtenue en battant Léon et Cloud en équipe lors de la Coupe Hadès, Lionheart reprend la Gunblade de Squall et son porte-clés Griever. Excellente en magie, elle est l'une des meilleures Keyblades du premier Kingdom Hearts.",
       "Obtained by defeating Leon and Cloud as a team in the Hades Cup, Lionheart reprises Squall's Gunblade and his Griever keychain. Excellent in magic, it is one of the best Keyblades in the first Kingdom Hearts.",
     ),
     obtained: { "kingdom-hearts": L("Colisée de l'Olympe : vaincre Léon et Cloud dans la Coupe Hadès.", "Olympus Coliseum: defeat Leon and Cloud in the Hades Cup.") },
@@ -417,12 +417,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "one-winged-angel",
     category: "keyblades",
-    name: "Ange à une Aile",
+    name: "Monoptéryx",
     names: { en: "One-Winged Angel", ja: "片翼の天使" },
     accent: "#8a8aa0",
     tagline: L("La Keyblade de Sephiroth, récompense du combat le plus dur de Kingdom Hearts.", "Sephiroth's Keyblade, reward for the hardest fight in Kingdom Hearts."),
     description: L(
-      "Ajoutée dans Kingdom Hearts Final Mix, Ange à une Aile est obtenue en battant Sephiroth au Colisée de l'Olympe. Immense force, mais son inconvénient est une consommation de MP et une portée limitée ; elle reprend la Masamune et l'aile noire de Sephiroth.",
+      "Ajoutée dans Kingdom Hearts Final Mix, Monoptéryx est obtenue en battant Sephiroth au Colisée de l'Olympe. Immense force, mais son inconvénient est une consommation de MP et une portée limitée ; elle reprend la Masamune et l'aile noire de Sephiroth.",
       "Added in Kingdom Hearts Final Mix, One-Winged Angel is obtained by defeating Sephiroth at Olympus Coliseum. Huge strength, but with the drawback of MP cost and limited reach; it reprises Sephiroth's Masamune and black wing.",
     ),
     obtained: { "kingdom-hearts": L("Final Mix : vaincre Sephiroth dans la Coupe Platine.", "Final Mix: defeat Sephiroth in the Platinum Match.") },
@@ -434,12 +434,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "metal-chocobo",
     category: "keyblades",
-    name: "Chocobo de Métal",
+    name: "Chocobo d'Acier",
     names: { en: "Metal Chocobo", ja: "メタルチョコボ" },
     accent: "#6a6a7a",
     tagline: L("L'Épée Buster de Cloud, en version Keyblade.", "Cloud's Buster Sword, Keyblade edition."),
     description: L(
-      "Obtenue en battant Cloud à la Coupe Hercule, Chocobo de Métal reproduit l'Épée Buster de Final Fantasy VII avec un chocobo en porte-clés. Très forte mais lente et sans bonus de magie.",
+      "Obtenue en battant Cloud à la Coupe Hercule, Chocobo d'Acier reproduit l'Épée Buster de Final Fantasy VII avec un chocobo en porte-clés. Très forte mais lente et sans bonus de magie.",
       "Obtained by defeating Cloud in the Hercules Cup, Metal Chocobo reproduces the Buster Sword from Final Fantasy VII with a chocobo keychain. Very strong but slow and without magic bonus.",
     ),
     obtained: { "kingdom-hearts": L("Colisée de l'Olympe : vaincre Cloud dans la Coupe Hercule.", "Olympus Coliseum: defeat Cloud in the Hercules Cup.") },
@@ -451,12 +451,12 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "diamond-dust",
     category: "keyblades",
-    name: "Poussière de Diamant",
+    name: "Gemme de glace",
     names: { en: "Diamond Dust", ja: "ダイヤモンドダスト" },
     accent: "#a0e0f0",
     tagline: L("La Keyblade de glace, récompense contre le Titan de Glace.", "The ice Keyblade, reward for beating the Ice Titan."),
     description: L(
-      "Obtenue dans Kingdom Hearts Final Mix en battant le Titan de Glace au Colisée, Poussière de Diamant, transparente comme du cristal, privilégie la magie. Son nom est celui de l'attaque de Shiva dans Final Fantasy.",
+      "Obtenue dans Kingdom Hearts Final Mix en battant le Titan de Glace au Colisée, Gemme de glace, transparente comme du cristal, privilégie la magie. Son nom est celui de l'attaque de Shiva dans Final Fantasy.",
       "Obtained in Kingdom Hearts Final Mix by defeating the Ice Titan at the Coliseum, Diamond Dust, clear as crystal, favours magic. Its name is that of Shiva's attack in Final Fantasy.",
     ),
     obtained: { "kingdom-hearts": L("Final Mix : vaincre le Titan de Glace dans la Coupe Or.", "Final Mix: defeat the Ice Titan in the Gold Match.") },
@@ -467,14 +467,14 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "heros-origin",
     category: "keyblades",
-    name: "Origine du Héros",
+    name: "Genèse héroïque",
     names: { en: "Hero's Origin", ja: "ヒーローズオリジン" },
     accent: "#e8a23a",
     stats: { strength: 5, magic: 1 },
     ability: L("KH III : Défense +. Transformation : Bouclier de Contre.", "KH III: Defender. Formchange: Counter Shield."),
     tagline: L("La première Keyblade de Kingdom Hearts III, obtenue sur l'Olympe.", "The first Keyblade of Kingdom Hearts III, obtained in Olympus."),
     description: L(
-      "Reçue après avoir aidé Hercule contre les Titans, Origine du Héros se transforme en bouclier capable de contre-attaquer. Elle inaugure le système de transformations des Keyblades de Kingdom Hearts III.",
+      "Reçue après avoir aidé Hercule contre les Titans, Genèse héroïque se transforme en bouclier capable de contre-attaquer. Elle inaugure le système de transformations des Keyblades de Kingdom Hearts III.",
       "Received after helping Hercules against the Titans, Hero's Origin transforms into a shield able to counter-attack. It inaugurates the Keyblade formchange system of Kingdom Hearts III.",
     ),
     obtained: { "kingdom-hearts-iii": L("Olympe, après le combat contre les Titans.", "Olympus, after the fight against the Titans.") },
@@ -505,14 +505,14 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "ever-after",
     category: "keyblades",
-    name: "Conte de Fées",
+    name: "À tout jamais",
     names: { en: "Ever After", ja: "エバーアフター" },
     accent: "#d8a0e0",
     stats: { strength: 4, magic: 6 },
     ability: L("KH III : Soin +. Transformation : Baguette Miroir.", "KH III: Leaf Bracer. Formchange: Mirage Staff."),
     tagline: L("La Keyblade du Royaume de Corona, à la magie de guérison.", "The Kingdom of Corona Keyblade, with healing magic."),
     description: L(
-      "Obtenue après le monde de Raiponce, Conte de Fées se transforme en Baguette Miroir, qui crée des copies de Sora. Sa magie élevée et son Soin + en font une excellente Keyblade de soutien.",
+      "Obtenue après le monde de Raiponce, À tout jamais se transforme en Baguette Miroir, qui crée des copies de Sora. Sa magie élevée et son Soin + en font une excellente Keyblade de soutien.",
       "Obtained after Rapunzel's world, Ever After transforms into the Mirage Staff, which creates copies of Sora. Its high magic and Leaf Bracer make it an excellent support Keyblade.",
     ),
     obtained: { "kingdom-hearts-iii": L("Royaume de Corona, après avoir vaincu Mère Gothel.", "Kingdom of Corona, after defeating Mother Gothel.") },
@@ -542,14 +542,14 @@ export const keyblades: KeybladeEntry[] = [
   {
     slug: "classic-tone",
     category: "keyblades",
-    name: "Ton Classique",
+    name: "Son classique",
     names: { en: "Classic Tone", ja: "クラシックノーツ" },
     accent: "#3a3a3a",
     stats: { strength: 6, magic: 7 },
     ability: L("KH III : MP de secours. Transformation : Bazooka Boum.", "KH III: MP Haste. Formchange: Boom Hammer."),
     tagline: L("La Keyblade en noir et blanc, récompense du Classic Kingdom.", "The black-and-white Keyblade, reward of the Classic Kingdom."),
     description: L(
-      "Ton Classique célèbre les premiers dessins animés de Mickey : ses transformations en marteau et en canon reprennent leur esthétique en noir et blanc. Elle s'obtient en réalisant un score élevé dans chacun des mini-jeux Classic Kingdom de Kingdom Hearts III.",
+      "Son classique célèbre les premiers dessins animés de Mickey : ses transformations en marteau et en canon reprennent leur esthétique en noir et blanc. Elle s'obtient en réalisant un score élevé dans chacun des mini-jeux Classic Kingdom de Kingdom Hearts III.",
       "Classic Tone celebrates Mickey's earliest cartoons: its hammer and cannon transformations reprise their black-and-white aesthetic. It is obtained by reaching a high score in every Classic Kingdom mini-game in Kingdom Hearts III.",
     ),
     obtained: { "kingdom-hearts-iii": L("Obtenir un score élevé dans les 23 mini-jeux Classic Kingdom.", "Get a high score in all 23 Classic Kingdom mini-games.") },

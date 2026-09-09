@@ -4,7 +4,7 @@ const L = (fr: string, en: string): LocalizedText => ({ fr, en });
 
 /**
  * Histoire détaillée des variantes de Keyblade issues des Gears de 358/2 Days,
- * des Keyblades bonus de Kingdom Hearts III, de la Keyblade en bois et de Moogle O' Glory.
+ * des Keyblades bonus de Kingdom Hearts III, de la Keyblade de bois et de Moogle O' Glory.
  * Aucune statistique chiffrée n'est avancée : les valeurs dépendent des panneaux et des niveaux.
  */
 export const lore: Record<string, EntryLore> = {
@@ -134,7 +134,7 @@ export const lore: Record<string, EntryLore> = {
       {
         title: L("Apparence et symbolique", "Appearance and symbolism"),
         text: L(
-      "Abyssal Tide affiche des bleus profonds et des motifs de vagues qui la rapprochent des Keyblades marines de la saga, comme Pince de Crabe ou Abîme Mystérieux. Sa garde évoque l'écume et sa lame, massive, semble taillée pour frapper lourdement plutôt que vite.\n\nL'image de la marée abyssale colle au propos de 358/2 Days : la mer y est le décor du seul plaisir simple de Roxas, la glace à l'eau de mer partagée sur la tour de l'horloge, mais l'abîme rappelle aussi les ténèbres où sombrent les mondes. Le nom tient les deux à la fois.",
+      "Abyssal Tide affiche des bleus profonds et des motifs de vagues qui la rapprochent des Keyblades marines de la saga, comme Trésor des mers ou Mystérieuse Abîme. Sa garde évoque l'écume et sa lame, massive, semble taillée pour frapper lourdement plutôt que vite.\n\nL'image de la marée abyssale colle au propos de 358/2 Days : la mer y est le décor du seul plaisir simple de Roxas, la glace à l'eau de mer partagée sur la tour de l'horloge, mais l'abîme rappelle aussi les ténèbres où sombrent les mondes. Le nom tient les deux à la fois.",
           "Abyssal Tide shows deep blues and wave motifs that place it beside the series' sea-themed Keyblades, such as Crabclaw or Mysterious Abyss. Its guard evokes foam and its heavy blade looks made to strike hard rather than fast.\n\nThe image of an abyssal tide fits 358/2 Days: the sea frames Roxas's one simple pleasure, the sea-salt ice cream shared on the clock tower, while the abyss also recalls the darkness into which worlds sink. The name holds both at once.",
         ),
       },
@@ -475,7 +475,7 @@ export const lore: Record<string, EntryLore> = {
       {
         title: L("Apparence et symbolique", "Appearance and symbolism"),
         text: L(
-      "Elemental Encoder est une Keyblade bleue parcourue de motifs de circuits, très proche de l'imagerie numérique des mondes de données : blocs lumineux, lignes géométriques et couleurs froides rappellent le Journal de Jiminy piraté de Re:coded ou les décors de Space Paranoids.\n\nSon nom associe les éléments et le codage, une manière de résumer sa fonction : elle est pensée pour les joueurs qui misent sur la magie élémentaire. Elle prolonge ainsi une longue tradition de Keyblades « informatiques » dans la saga, dont Débogueur Photon est l'exemple le plus connu.",
+      "Elemental Encoder est une Keyblade bleue parcourue de motifs de circuits, très proche de l'imagerie numérique des mondes de données : blocs lumineux, lignes géométriques et couleurs froides rappellent le Journal de Jiminy piraté de Re:coded ou les décors de Space Paranoids.\n\nSon nom associe les éléments et le codage, une manière de résumer sa fonction : elle est pensée pour les joueurs qui misent sur la magie élémentaire. Elle prolonge ainsi une longue tradition de Keyblades « informatiques » dans la saga, dont Debugger Photon est l'exemple le plus connu.",
           "Elemental Encoder is a blue Keyblade covered in circuit patterns, close to the digital imagery of the data worlds: glowing blocks, geometric lines and cold colours recall the corrupted Jiminy's Journal of Re:coded or the sets of Space Paranoids.\n\nIts name pairs elements with encoding, which sums up its purpose: it is built for players who rely on elemental magic. It continues the series' long line of “computer” Keyblades, of which Photon Debugger is the best-known example.",
         ),
       },
@@ -516,14 +516,14 @@ export const lore: Record<string, EntryLore> = {
       {
         title: L("Apparence et symbolique", "Appearance and symbolism"),
         text: L(
-      "La Keyblade en bois est une réplique d'entraînement taillée dans le bois, à la forme de la Chaîne Royale : lame plate, dents grossièrement découpées, aucune garde métallique. Elle n'a aucun pouvoir et ne peut ni sceller une serrure ni libérer un cœur.\n\nSa valeur est entièrement symbolique. Elle est le jouet de ceux qui rêvent de devenir Maîtres de la Keyblade avant d'en être dignes, comme les épées de bois avec lesquelles Sora et Riku s'affrontent sur les Îles du Destin — objets sans magie que la saga charge pourtant de tout le poids de l'enfance et des promesses qu'on y fait.",
+      "La Keyblade de bois est une réplique d'entraînement taillée dans le bois, à la forme de la Chaîne Royale : lame plate, dents grossièrement découpées, aucune garde métallique. Elle n'a aucun pouvoir et ne peut ni sceller une serrure ni libérer un cœur.\n\nSa valeur est entièrement symbolique. Elle est le jouet de ceux qui rêvent de devenir Maîtres de la Keyblade avant d'en être dignes, comme les épées de bois avec lesquelles Sora et Riku s'affrontent sur les Îles du Destin — objets sans magie que la saga charge pourtant de tout le poids de l'enfance et des promesses qu'on y fait.",
           "The Wooden Keyblade is a practice replica carved from wood, shaped like the Kingdom Key: a flat blade, roughly cut teeth, no metal guard. It has no power and can neither seal a keyhole nor release a heart.\n\nIts value is entirely symbolic. It is the toy of those who dream of becoming Keyblade Masters before they are worthy of it, much like the wooden swords Sora and Riku duel with on Destiny Islands — objects without magic that the series nonetheless loads with all the weight of childhood and the promises made there.",
         ),
       },
       {
         game: "birth-by-sleep",
         text: L(
-      "Dans Birth by Sleep, la Keyblade en bois appartient à Terra, qui la donne à Ventus peu après l'arrivée de ce dernier à la Contrée du Départ, alors que le garçon amnésique ne parle presque pas encore. Le geste scelle leur amitié et fait de cet objet sans pouvoir l'un des rares souvenirs heureux du trio, avec les porte-bonheur d'Aqua.\n\nOn retrouve la même idée dans Kingdom Hearts : lorsque Riku prend la Chaîne Royale à la Forteresse Oubliée, Sora se retrouve avec une simple épée de bois — et c'est en choisissant malgré tout de protéger ses amis qu'il la voit revenir à lui.",
+      "Dans Birth by Sleep, la Keyblade de bois appartient à Terra, qui la donne à Ventus peu après l'arrivée de ce dernier à la Contrée du Départ, alors que le garçon amnésique ne parle presque pas encore. Le geste scelle leur amitié et fait de cet objet sans pouvoir l'un des rares souvenirs heureux du trio, avec les porte-bonheur d'Aqua.\n\nOn retrouve la même idée dans Kingdom Hearts : lorsque Riku prend la Chaîne Royale à la Forteresse Oubliée, Sora se retrouve avec une simple épée de bois — et c'est en choisissant malgré tout de protéger ses amis qu'il la voit revenir à lui.",
           "In Birth by Sleep the Wooden Keyblade belongs to Terra, who gives it to Ventus shortly after the boy arrives in the Land of Departure, while the amnesiac newcomer can barely speak. The gesture seals their friendship and makes this powerless object one of the trio's rare happy keepsakes, alongside Aqua's charms.\n\nThe same idea returns in Kingdom Hearts: when Riku takes the Kingdom Key at Hollow Bastion, Sora is left with a plain wooden sword — and it is by choosing to protect his friends anyway that he sees the Keyblade come back to him.",
         ),
       },

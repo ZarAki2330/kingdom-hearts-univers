@@ -1,0 +1,479 @@
+{
+ "diff": [
+  [
+   "ultima-weapon",
+   "Arme Ultime",
+   "Ultima",
+   "Ultima Weapon"
+  ],
+  [
+   "braveheart",
+   "Braveheart",
+   "Cœur brave",
+   "Braveheart"
+  ],
+  [
+   "star-seeker",
+   "Star Seeker",
+   "Stella",
+   "Star Seeker"
+  ],
+  [
+   "sleeping-lion",
+   "Lion Endormi",
+   "Lion Assoupi",
+   "Sleeping Lion"
+  ],
+  [
+   "bond-of-flame",
+   "Lien de Flammes",
+   "Ignescence",
+   "Bond of Flame"
+  ],
+  [
+   "decisive-pumpkin",
+   "Citrouille Décisive",
+   "Citrouille de Noël",
+   "Decisive Pumpkin"
+  ],
+  [
+   "masters-defender",
+   "Maître Gardien",
+   "Garde du Maître",
+   "Master's Defender"
+  ],
+  [
+   "void-gear",
+   "Void Gear",
+   "Clavis Vacuum",
+   "Void Gear"
+  ],
+  [
+   "divine-rose",
+   "Rose Divine",
+   "Rose Éternelle",
+   "Divine Rose"
+  ],
+  [
+   "lionheart",
+   "Cœur de Lion",
+   "Lionheart",
+   "Lionheart"
+  ],
+  [
+   "one-winged-angel",
+   "Ange à une Aile",
+   "Monoptéryx",
+   "One-Winged Angel"
+  ],
+  [
+   "metal-chocobo",
+   "Chocobo de Métal",
+   "Chocobo d'Acier",
+   "Metal Chocobo"
+  ],
+  [
+   "diamond-dust",
+   "Poussière de Diamant",
+   "Gemme de glace",
+   "Diamond Dust"
+  ],
+  [
+   "heros-origin",
+   "Origine du Héros",
+   "Genèse héroïque",
+   "Hero's Origin"
+  ],
+  [
+   "ever-after",
+   "Conte de Fées",
+   "À tout jamais",
+   "Ever After"
+  ],
+  [
+   "classic-tone",
+   "Ton Classique",
+   "Son classique",
+   "Classic Tone"
+  ],
+  [
+   "jungle-king",
+   "Roi de la Jungle",
+   "Primitive",
+   "Jungle King"
+  ],
+  [
+   "three-wishes",
+   "Trois Souhaits",
+   "Lampe Magique",
+   "Three Wishes"
+  ],
+  [
+   "crabclaw",
+   "Pince de Crabe",
+   "Trésor des mers",
+   "Crabclaw"
+  ],
+  [
+   "fairy-harp",
+   "Harpe des Fées",
+   "Harpe féérique",
+   "Fairy Harp"
+  ],
+  [
+   "wishing-star",
+   "Étoile du Berger",
+   "Bonne Étoile",
+   "Wishing Star"
+  ],
+  [
+   "spellbinder",
+   "Ensorceleuse",
+   "Clairvoyante",
+   "Spellbinder"
+  ],
+  [
+   "lady-luck",
+   "Bonne Fortune",
+   "As de Cœur",
+   "Lady Luck"
+  ],
+  [
+   "heros-crest",
+   "Gage du Héros",
+   "Emblème de Héros",
+   "Hero's Crest"
+  ],
+  [
+   "follow-the-wind",
+   "Follow the Wind",
+   "Gouvernail",
+   "Follow the Wind"
+  ],
+  [
+   "circle-of-life",
+   "Cercle de Vie",
+   "Cercle vital",
+   "Circle of Life"
+  ],
+  [
+   "photon-debugger",
+   "Débogueur Photon",
+   "Debugger Photon",
+   "Photon Debugger"
+  ],
+  [
+   "gull-wing",
+   "Ailes de Mouette",
+   "Albatros",
+   "Gull Wing"
+  ],
+  [
+   "rumbling-rose",
+   "Rose Grondante",
+   "Rose de Combat",
+   "Rumbling Rose"
+  ],
+  [
+   "guardian-soul",
+   "Âme Gardienne",
+   "Âme de Gardien",
+   "Guardian Soul"
+  ],
+  [
+   "hidden-dragon",
+   "Dragon Caché",
+   "Dragon Tapi",
+   "Hidden Dragon"
+  ],
+  [
+   "mysterious-abyss",
+   "Abîme Mystérieux",
+   "Mystérieuse Abîme",
+   "Mysterious Abyss"
+  ],
+  [
+   "sweet-memories",
+   "Doux Souvenirs",
+   "Doux Souvenir",
+   "Sweet Memories"
+  ],
+  [
+   "fatal-crest",
+   "Aile Fatale",
+   "Fatalis",
+   "Fatal Crest"
+  ],
+  [
+   "missing-ache",
+   "Missing Ache",
+   "Douleur absente",
+   "Missing Ache"
+  ],
+  [
+   "sign-of-innocence",
+   "Sign of Innocence",
+   "Signe d'innocence",
+   "Sign of Innocence"
+  ],
+  [
+   "true-lights-flight",
+   "True Light's Flight",
+   "Vol vraie lueur",
+   "True Light's Flight"
+  ],
+  [
+   "midnight-roar",
+   "Midnight Roar",
+   "Hurlement de minuit",
+   "Midnight Roar"
+  ],
+  [
+   "victory-line",
+   "Victory Line",
+   "Ligne d'arrivée",
+   "Victory Line"
+  ],
+  [
+   "mark-of-a-hero",
+   "Mark of a Hero",
+   "Symbole de Héros",
+   "Mark of a Hero"
+  ],
+  [
+   "hyperdrive",
+   "Hyperdrive",
+   "Vol en hyperespace",
+   "Hyperdrive"
+  ],
+  [
+   "pixie-petal",
+   "Pixie Petal",
+   "Rameau de fée",
+   "Pixie Petal"
+  ],
+  [
+   "frolic-flame",
+   "Frolic Flame",
+   "Flamme ardente",
+   "Frolic Flame"
+  ],
+  [
+   "lost-memory",
+   "Lost Memory",
+   "Souvenir perdu",
+   "Lost Memory"
+  ],
+  [
+   "chaos-ripper",
+   "Chaos Ripper",
+   "Faux du chaos",
+   "Chaos Ripper"
+  ],
+  [
+   "darkgnaw",
+   "Darkgnaw",
+   "Morsure obscure",
+   "Darkgnaw"
+  ],
+  [
+   "brightcrest",
+   "Brightcrest",
+   "Armoiries",
+   "Brightcrest"
+  ],
+  [
+   "royal-radiance",
+   "Royal Radiance",
+   "Couronne absolue",
+   "Royal Radiance"
+  ],
+  [
+   "zero-one",
+   "Zero/One",
+   "Binaire",
+   "Zero/One"
+  ],
+  [
+   "knockout-punch",
+   "Knockout Punch",
+   "Suppercut",
+   "Knockout Punch"
+  ],
+  [
+   "counterpoint",
+   "Counterpoint",
+   "Contrechant",
+   "Counterpoint"
+  ],
+  [
+   "divewing",
+   "Divewing",
+   "Aile du Piqué",
+   "Divewing"
+  ],
+  [
+   "sweet-dreams",
+   "Sweet Dreams",
+   "Doux songes",
+   "Sweet Dreams"
+  ],
+  [
+   "favorite-deputy",
+   "Favorite Deputy",
+   "Shérif de l'Ouest",
+   "Favorite Deputy"
+  ],
+  [
+   "happy-gear",
+   "Happy Gear",
+   "Zygomagique",
+   "Happy Gear"
+  ],
+  [
+   "crystal-snow",
+   "Crystal Snow",
+   "Neige cristalline",
+   "Crystal Snow"
+  ],
+  [
+   "hunny-spout",
+   "Hunny Spout",
+   "Verse-miel",
+   "Hunny Spout"
+  ],
+  [
+   "nano-gear",
+   "Nano Gear",
+   "Microcomposant",
+   "Nano Gear"
+  ],
+  [
+   "wheel-of-fate",
+   "Wheel of Fate",
+   "Gouvernail du destin",
+   "Wheel of Fate"
+  ],
+  [
+   "grand-chef",
+   "Grand Chef",
+   "Chef étoilé",
+   "Grand Chef"
+  ],
+  [
+   "midnight-blue",
+   "Midnight Blue",
+   "Bleu de minuit",
+   "Midnight Blue"
+  ],
+  [
+   "phantom-green",
+   "Phantom Green",
+   "Vert fantôme",
+   "Phantom Green"
+  ],
+  [
+   "dawn-till-dusk",
+   "Dawn Till Dusk",
+   "Aube crépusculaire",
+   "Dawn Till Dusk"
+  ],
+  [
+   "ominous-blight",
+   "Ominous Blight",
+   "Rouille d'effroi",
+   "Ominous Blight"
+  ],
+  [
+   "abaddon-plasma",
+   "Abaddon Plasma",
+   "Plasma d'Abaddon",
+   "Abaddon Plasma"
+  ],
+  [
+   "crown-of-guilt",
+   "Crown of Guilt",
+   "Couronne de faute",
+   "Crown of Guilt"
+  ],
+  [
+   "leviathan",
+   "Leviathan",
+   "Léviathan",
+   "Leviathan"
+  ],
+  [
+   "rejection-of-fate",
+   "Rejection of Fate",
+   "Rejet du sort",
+   "Rejection of Fate"
+  ],
+  [
+   "glimpse-of-darkness",
+   "Glimpse of Darkness",
+   "Aperçu ténébreux",
+   "Glimpse of Darkness"
+  ],
+  [
+   "maverick-flare",
+   "Maverick Flare",
+   "Éclat dissident",
+   "Maverick Flare"
+  ],
+  [
+   "umbrella",
+   "Umbrella",
+   "Parapluie",
+   "Umbrella"
+  ],
+  [
+   "stormfall",
+   "Stormfall",
+   "Tourmente",
+   "Stormfall"
+  ],
+  [
+   "wooden-keyblade",
+   "Keyblade en bois",
+   "Keyblade de bois",
+   "Wooden Keyblade"
+  ]
+ ],
+ "miss": [
+  [
+   "earthshaker",
+   "Gardien de la Terre / Confins de la Terre",
+   "Earthshaker / Ends of the Earth"
+  ],
+  [
+   "rainfell",
+   "Pluie Enchantée / Tempête",
+   "Rainfell / Stormfall"
+  ],
+  [
+   "master-keeper",
+   "Chaîne Royale (Xion)",
+   "Kingdom Key (Xion)"
+  ],
+  [
+   "wishing-lamp",
+   "Lampe Merveilleuse",
+   "Wishing Lamp"
+  ],
+  [
+   "unbound",
+   "Unbound",
+   "Unbound"
+  ],
+  [
+   "ends-of-the-earth",
+   "Ends of the Earth",
+   "Ends of the Earth"
+  ],
+  [
+   "keyblade-of-heart",
+   "Keyblade des Cœurs",
+   "Keyblade of People's Hearts"
+  ]
+ ]
+}

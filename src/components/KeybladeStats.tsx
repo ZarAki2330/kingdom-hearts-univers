@@ -7,7 +7,8 @@ import { GameCover } from "./GameCover";
 const REACH = new Set(["short", "medium", "long", "very-long"]);
 
 /**
- * Statistiques d'une Keyblade jeu par jeu. Chaque titre mesure ses armes à sa façon :
+ * Statistiques d'une Keyblade jeu par jeu. Une colonne vide pour cette Keyblade n'est pas
+ * affichée, et une case sans valeur reste vide plutôt que d'afficher un tiret. Chaque titre mesure ses armes à sa façon :
  * seules les colonnes réellement renseignées sont affichées, et la table défile
  * horizontalement dans son propre cadre sur petit écran.
  */
@@ -94,16 +95,16 @@ export async function KeybladeStats({ stats }: { stats: KeybladeGameStat[] }) {
                     <span>{r.gameEntry!.title}</span>
                   </Link>
                 </th>
-                {has.strength && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.strength ?? "–"}</td>}
-                {has.magic && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.magic ?? "–"}</td>}
-                {has.grades && <td className="tabular px-4 py-3 whitespace-nowrap">{r.grades ?? "–"}</td>}
-                {has.reach && <td className="px-4 py-3 whitespace-nowrap">{r.reach ? reachLabel(r.reach) : "–"}</td>}
-                {has.critRate && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.critRate ?? "–"}</td>}
-                {has.critBonus && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.critBonus ?? "–"}</td>}
-                {has.shift && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.shift ?? "–"}</td>}
+                {has.strength && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.strength}</td>}
+                {has.magic && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.magic}</td>}
+                {has.grades && <td className="tabular px-4 py-3 whitespace-nowrap">{r.grades}</td>}
+                {has.reach && <td className="px-4 py-3 whitespace-nowrap">{r.reach ? reachLabel(r.reach) : null}</td>}
+                {has.critRate && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.critRate}</td>}
+                {has.critBonus && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.critBonus}</td>}
+                {has.shift && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.shift}</td>}
                 {has.abilities && (
                   <td className="px-4 py-3" lang={r.abilities?.length ? "en" : undefined}>
-                    {r.abilities?.length ? r.abilities.join(" · ") : "–"}
+                    {r.abilities?.length ? r.abilities.join(" · ") : null}
                   </td>
                 )}
               </tr>

@@ -5,7 +5,7 @@ const L = (fr: string, en: string): LocalizedText => ({ fr, en });
 /**
  * Keyblades complémentaires (suite) : variantes de Gear restantes de 358/2 Days,
  * Keyblades personnelles de Terra et d'Aqua dans Birth by Sleep, exclusivités d'Union χ
- * et objets de légende (Keyblade des Cœurs, Keyblade en bois).
+ * et objets de légende (Keyblade des Cœurs, Keyblade de bois).
  * Aucune statistique n'est indiquée : les valeurs de Days et de Birth by Sleep dépendent du panneau ou du niveau.
  */
 export const moreKeyblades2: KeybladeEntry[] = [
@@ -13,7 +13,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "ominous-blight",
     category: "keyblades",
-    name: "Ominous Blight",
+    name: "Rouille d'effroi",
+    names: { en: "Ominous Blight" },
     accent: "#6a7a5a",
     tagline: L("La version renforcée de Missing Ache, aux teintes vert-de-gris.", "The upgraded form of Missing Ache, in verdigris tones."),
     description: L(
@@ -29,7 +30,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "abaddon-plasma",
     category: "keyblades",
-    name: "Abaddon Plasma",
+    name: "Plasma d'Abaddon",
+    names: { en: "Abaddon Plasma" },
     accent: "#8a3a9a",
     tagline: L("La Keyblade technique de Roxas, aux allures d'énergie violette.", "Roxas's technique Keyblade, with purple-energy looks."),
     description: L(
@@ -45,7 +47,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "crown-of-guilt",
     category: "keyblades",
-    name: "Crown of Guilt",
+    name: "Couronne de faute",
+    names: { en: "Crown of Guilt" },
     accent: "#c0b070",
     tagline: L("La couronne dorée qui succède à Sign of Innocence.", "The golden crown that follows Sign of Innocence."),
     description: L(
@@ -61,7 +64,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "leviathan",
     category: "keyblades",
-    name: "Leviathan",
+    name: "Léviathan",
+    names: { en: "Leviathan" },
     accent: "#1a4a8a",
     tagline: L("Le monstre marin qui succède à Abyssal Tide.", "The sea monster that follows Abyssal Tide."),
     description: L(
@@ -77,7 +81,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "rejection-of-fate",
     category: "keyblades",
-    name: "Rejection of Fate",
+    name: "Rejet du sort",
+    names: { en: "Rejection of Fate" },
     accent: "#e0c060",
     tagline: L("La Keyblade dorée qui refuse le destin, héritière de True Light's Flight.", "The golden Keyblade that refuses fate, heir to True Light's Flight."),
     description: L(
@@ -93,7 +98,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "glimpse-of-darkness",
     category: "keyblades",
-    name: "Glimpse of Darkness",
+    name: "Aperçu ténébreux",
+    names: { en: "Glimpse of Darkness" },
     accent: "#2a1a4a",
     tagline: L("La Keyblade spectrale qui prolonge Midnight Roar.", "The spectral Keyblade that extends Midnight Roar."),
     description: L(
@@ -145,7 +151,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "maverick-flare",
     category: "keyblades",
-    name: "Maverick Flare",
+    name: "Éclat dissident",
+    names: { en: "Maverick Flare" },
     accent: "#e05a20",
     tagline: L("La Keyblade flamboyante et rapide, version renforcée d'Astral Blast.", "The blazing, quick Keyblade that upgrades Astral Blast."),
     description: L(
@@ -179,7 +186,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "umbrella",
     category: "keyblades",
-    name: "Umbrella",
+    name: "Parapluie",
+    names: { en: "Umbrella" },
     accent: "#e0e0e8",
     tagline: L("Le parapluie que Roxas brandit à la place de sa Keyblade.", "The umbrella Roxas wields in place of his Keyblade."),
     description: L(
@@ -213,7 +221,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "stormfall",
     category: "keyblades",
-    name: "Stormfall",
+    name: "Tourmente",
+    names: { en: "Stormfall" },
     accent: "#6a8ad0",
     tagline: L("La Keyblade personnelle d'Aqua dans la dernière partie de son aventure.", "Aqua's personal Keyblade in the last part of her journey."),
     description: L(
@@ -229,7 +238,8 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "ends-of-the-earth",
     category: "keyblades",
-    name: "Ends of the Earth",
+    name: "Confins de la Terre",
+    names: { en: "Ends of the Earth" },
     accent: "#8a5a30",
     tagline: L("La Keyblade que Terra reçoit d'Eraqus, chargée de son héritage.", "The Keyblade Terra receives from Eraqus, heavy with his legacy."),
     description: L(
@@ -245,12 +255,12 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "wooden-keyblade",
     category: "keyblades",
-    name: "Keyblade en bois",
+    name: "Keyblade de bois",
     names: { en: "Wooden Keyblade" },
     accent: "#a07a48",
     tagline: L("Le jouet de Terra, transmis à Ventus comme un symbole d'amitié.", "Terra's toy, handed to Ventus as a token of friendship."),
     description: L(
-      "La Keyblade en bois est une réplique d'entraînement taillée dans le bois, à la forme de la Chaîne Royale. Dans Birth by Sleep, Terra la donne à Ventus peu après l'arrivée de ce dernier à la Contrée du Départ, scellant leur amitié.\n\nDépourvue de tout pouvoir, elle a néanmoins une valeur symbolique forte, rappelant les épées en bois avec lesquelles Sora et Riku s'entraînent sur les Îles du Destin.",
+      "La Keyblade de bois est une réplique d'entraînement taillée dans le bois, à la forme de la Chaîne Royale. Dans Birth by Sleep, Terra la donne à Ventus peu après l'arrivée de ce dernier à la Contrée du Départ, scellant leur amitié.\n\nDépourvue de tout pouvoir, elle a néanmoins une valeur symbolique forte, rappelant les épées en bois avec lesquelles Sora et Riku s'entraînent sur les Îles du Destin.",
       "The Wooden Keyblade is a practice replica carved from wood, shaped like the Kingdom Key. In Birth by Sleep, Terra gives it to Ventus shortly after the latter's arrival in the Land of Departure, sealing their friendship.\n\nDevoid of any power, it nonetheless carries strong symbolic value, recalling the wooden swords Sora and Riku train with on the Destiny Islands.",
     ),
     appearances: ["birth-by-sleep"],

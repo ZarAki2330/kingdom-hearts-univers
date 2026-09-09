@@ -11,12 +11,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "jungle-king",
     category: "keyblades",
-    name: "Roi de la Jungle",
+    name: "Primitive",
     names: { en: "Jungle King", ja: "ジャングルキング" },
     accent: "#7a8a3a",
-    tagline: L("La Keyblade en bois de la Jungle Profonde.", "The wooden Keyblade of Deep Jungle."),
+    tagline: L("La Keyblade de bois de la Jungle Profonde.", "The wooden Keyblade of Deep Jungle."),
     description: L(
-      "Taillée dans le bois et ornée de lianes, Roi de la Jungle reprend l'univers de Tarzan : sa lame ressemble à une branche et son porte-clés est une tête de gorille. Elle est remise à Sora une fois Clayton vaincu et la serrure de la Jungle Profonde scellée.\n\nSa longue portée compense une magie inexistante ; c'est surtout une arme de transition avant les Keyblades plus puissantes de la seconde moitié du jeu.",
+      "Taillée dans le bois et ornée de lianes, Primitive reprend l'univers de Tarzan : sa lame ressemble à une branche et son porte-clés est une tête de gorille. Elle est remise à Sora une fois Clayton vaincu et la serrure de la Jungle Profonde scellée.\n\nSa longue portée compense une magie inexistante ; c'est surtout une arme de transition avant les Keyblades plus puissantes de la seconde moitié du jeu.",
       "Carved from wood and wrapped in vines, Jungle King draws on the world of Tarzan: its blade looks like a branch and its keychain is a gorilla's head. Sora receives it after defeating Clayton and sealing Deep Jungle's keyhole.\n\nIts long reach makes up for a non-existent magic bonus; it is mostly a stopgap before the stronger Keyblades of the game's second half.",
     ),
     obtained: { "kingdom-hearts": L("Jungle Profonde, après avoir vaincu Clayton et scellé la serrure.", "Deep Jungle, after defeating Clayton and sealing the keyhole.") },
@@ -27,12 +27,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "three-wishes",
     category: "keyblades",
-    name: "Trois Souhaits",
+    name: "Lampe Magique",
     names: { en: "Three Wishes", ja: "スリーウィッシュズ" },
     accent: "#d8a030",
     tagline: L("La Keyblade dorée d'Agrabah, à la lampe du Génie.", "The golden Agrabah Keyblade, with the Genie's lamp."),
     description: L(
-      "Dorée et incurvée comme un cimeterre, Trois Souhaits porte en pommeau la lampe magique du Génie. Sora l'obtient après avoir libéré Agrabah de Jafar et scellé la serrure de la Grotte aux Merveilles.\n\nBien équilibrée, elle offre un net gain de force par rapport à la Chaîne Royale et reste utile jusqu'à Monstro.",
+      "Dorée et incurvée comme un cimeterre, Lampe Magique porte en pommeau la lampe magique du Génie. Sora l'obtient après avoir libéré Agrabah de Jafar et scellé la serrure de la Grotte aux Merveilles.\n\nBien équilibrée, elle offre un net gain de force par rapport à la Chaîne Royale et reste utile jusqu'à Monstro.",
       "Golden and curved like a scimitar, Three Wishes carries the Genie's magic lamp as its keychain. Sora gets it after freeing Agrabah from Jafar and sealing the keyhole of the Cave of Wonders.\n\nWell balanced, it brings a clear strength gain over the Kingdom Key and stays useful until Monstro.",
     ),
     obtained: { "kingdom-hearts": L("Agrabah, après avoir vaincu Jafar et scellé la serrure.", "Agrabah, after defeating Jafar and sealing the keyhole.") },
@@ -44,12 +44,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "crabclaw",
     category: "keyblades",
-    name: "Pince de Crabe",
+    name: "Trésor des mers",
     names: { en: "Crabclaw", ja: "クラブクロー" },
     accent: "#3aa0b0",
     tagline: L("La Keyblade des profondeurs d'Atlantica.", "The Keyblade from the depths of Atlantica."),
     description: L(
-      "Faite de coquillages, de corail et de nageoires, Pince de Crabe est remise à Sora par Ariel après la défaite d'Ursula. Son porte-clés est un petit crabe rappelant Sébastien.\n\nElle bonifie légèrement la magie, ce qui en fait un bon choix pour les sorts de glace et de soin à ce stade de l'aventure.",
+      "Faite de coquillages, de corail et de nageoires, Trésor des mers est remise à Sora par Ariel après la défaite d'Ursula. Son porte-clés est un petit crabe rappelant Sébastien.\n\nElle bonifie légèrement la magie, ce qui en fait un bon choix pour les sorts de glace et de soin à ce stade de l'aventure.",
       "Made of shells, coral and fins, Crabclaw is handed to Sora by Ariel after Ursula's defeat. Its keychain is a small crab reminiscent of Sebastian.\n\nIt gives a modest magic bonus, making it a good pick for Blizzard and Cure spells at that point in the adventure.",
     ),
     obtained: { "kingdom-hearts": L("Atlantica, après avoir vaincu Ursula.", "Atlantica, after defeating Ursula.") },
@@ -66,7 +66,7 @@ export const moreKeyblades: KeybladeEntry[] = [
     accent: "#d06a20",
     tagline: L("La Keyblade de la Ville d'Halloween du premier jeu.", "The Halloween Town Keyblade of the first game."),
     description: L(
-      "Noire et orange, ornée d'une citrouille grimaçante et du visage de Jack, Tête de Citrouille est le trophée de la Ville d'Halloween dans Kingdom Hearts. Elle est obtenue une fois Oogie Boogie et son manoir vaincus.\n\nSa portée exceptionnelle est son principal atout ; Citrouille Décisive, dans Kingdom Hearts II, en est l'héritière.",
+      "Noire et orange, ornée d'une citrouille grimaçante et du visage de Jack, Tête de Citrouille est le trophée de la Ville d'Halloween dans Kingdom Hearts. Elle est obtenue une fois Oogie Boogie et son manoir vaincus.\n\nSa portée exceptionnelle est son principal atout ; Citrouille de Noël, dans Kingdom Hearts II, en est l'héritière.",
       "Black and orange, adorned with a grinning pumpkin and Jack's face, Pumpkinhead is the Halloween Town trophy in Kingdom Hearts. It is obtained once Oogie Boogie and his manor are defeated.\n\nIts exceptional reach is its main asset; Decisive Pumpkin, in Kingdom Hearts II, is its successor.",
     ),
     obtained: { "kingdom-hearts": L("Ville d'Halloween, après avoir vaincu Oogie Boogie et son manoir.", "Halloween Town, after defeating Oogie Boogie and his manor.") },
@@ -78,12 +78,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "fairy-harp",
     category: "keyblades",
-    name: "Harpe des Fées",
+    name: "Harpe féérique",
     names: { en: "Fairy Harp", ja: "フェアリーハープ" },
     accent: "#8ad06a",
     tagline: L("La Keyblade du Pays Imaginaire, en forme de harpe.", "The Neverland Keyblade, shaped like a harp."),
     description: L(
-      "Verte et dorée, Harpe des Fées prend la forme d'une harpe dont le porte-clés représente la Fée Clochette. Sora la reçoit après avoir chassé le Capitaine Crochet de son navire au Pays Imaginaire.\n\nElle privilégie la magie et la portée, dans la lignée du monde du vol.",
+      "Verte et dorée, Harpe féérique prend la forme d'une harpe dont le porte-clés représente la Fée Clochette. Sora la reçoit après avoir chassé le Capitaine Crochet de son navire au Pays Imaginaire.\n\nElle privilégie la magie et la portée, dans la lignée du monde du vol.",
       "Green and gold, Fairy Harp takes the shape of a harp whose keychain represents Tinker Bell. Sora receives it after driving Captain Hook off his ship in Neverland.\n\nIt favours magic and reach, in keeping with the world of flight.",
     ),
     obtained: { "kingdom-hearts": L("Pays Imaginaire, après avoir vaincu le Capitaine Crochet.", "Neverland, after defeating Captain Hook.") },
@@ -95,12 +95,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "wishing-star",
     category: "keyblades",
-    name: "Étoile du Berger",
+    name: "Bonne Étoile",
     names: { en: "Wishing Star", ja: "ウィッシングスター" },
     accent: "#e8c860",
-    tagline: L("La Keyblade en bois de Geppetto.", "Geppetto's wooden Keyblade."),
+    tagline: L("La Keyblade de bois de Geppetto.", "Geppetto's wooden Keyblade."),
     description: L(
-      "Jouet de bois aux formes rondes, Étoile du Berger est offerte par Geppetto lorsque Sora lui rend visite dans sa nouvelle maison de la Ville de Traverse, après les événements de Monstro. Son porte-clés est une étoile bleue, en référence à la Fée Bleue de Pinocchio.\n\nSa magie est nulle mais son taux de critiques élevé en fait une bonne arme physique de milieu de partie.",
+      "Jouet de bois aux formes rondes, Bonne Étoile est offerte par Geppetto lorsque Sora lui rend visite dans sa nouvelle maison de la Ville de Traverse, après les événements de Monstro. Son porte-clés est une étoile bleue, en référence à la Fée Bleue de Pinocchio.\n\nSa magie est nulle mais son taux de critiques élevé en fait une bonne arme physique de milieu de partie.",
       "A rounded wooden toy, Wishing Star is a gift from Geppetto when Sora visits his new house in Traverse Town after the events in Monstro. Its keychain is a blue star, a nod to Pinocchio's Blue Fairy.\n\nIt has no magic bonus but its high critical rate makes it a solid mid-game physical weapon.",
     ),
     obtained: { "kingdom-hearts": L("Ville de Traverse, chez Geppetto, après avoir quitté Monstro.", "Traverse Town, at Geppetto's house, after leaving Monstro.") },
@@ -112,12 +112,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "spellbinder",
     category: "keyblades",
-    name: "Ensorceleuse",
+    name: "Clairvoyante",
     names: { en: "Spellbinder", ja: "スペルバインダー" },
     accent: "#4a6ad8",
     tagline: L("La Keyblade de magicien offerte par Merlin.", "The wizard's Keyblade given by Merlin."),
     description: L(
-      "Bleue et ornée de motifs astraux, Ensorceleuse est la Keyblade de Merlin : elle est remise à Sora dans sa maison de la Ville de Traverse, une fois les trois magies élémentaires de base apprises. Son porte-clés reproduit le chapeau étoilé de l'enchanteur.\n\nSon bonus de magie est le plus élevé disponible à ce stade, idéal pour un Sora orienté sorts.",
+      "Bleue et ornée de motifs astraux, Clairvoyante est la Keyblade de Merlin : elle est remise à Sora dans sa maison de la Ville de Traverse, une fois les trois magies élémentaires de base apprises. Son porte-clés reproduit le chapeau étoilé de l'enchanteur.\n\nSon bonus de magie est le plus élevé disponible à ce stade, idéal pour un Sora orienté sorts.",
       "Blue and covered in astral motifs, Spellbinder is Merlin's Keyblade: it is given to Sora in his house in Traverse Town once the three basic elemental spells have been learned. Its keychain reproduces the wizard's starry hat.\n\nIts magic bonus is the highest available at that stage, ideal for a spell-focused Sora.",
     ),
     obtained: { "kingdom-hearts": L("Ville de Traverse : parler à Merlin après avoir appris Feu, Glace et Foudre.", "Traverse Town: talk to Merlin after learning Fire, Blizzard and Thunder.") },
@@ -147,12 +147,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "lady-luck",
     category: "keyblades",
-    name: "Bonne Fortune",
+    name: "As de Cœur",
     names: { en: "Lady Luck", ja: "レディラック" },
     accent: "#e05070",
     tagline: L("La Keyblade cœur et cartes du Pays des Merveilles.", "The hearts-and-cards Keyblade of Wonderland."),
     description: L(
-      "Rose et noire, décorée de cœurs, de trèfles et d'un porte-clés en forme de carte à jouer, Bonne Fortune est cachée dans le Pays des Merveilles. Elle n'est accessible qu'après avoir appris la Trinité Jaune, en revenant dans la Forêt des Lotus.\n\nSa magie est bonne, sa portée aussi ; c'est l'une des meilleures Keyblades avant la Forteresse Oubliée.",
+      "Rose et noire, décorée de cœurs, de trèfles et d'un porte-clés en forme de carte à jouer, As de Cœur est cachée dans le Pays des Merveilles. Elle n'est accessible qu'après avoir appris la Trinité Jaune, en revenant dans la Forêt des Lotus.\n\nSa magie est bonne, sa portée aussi ; c'est l'une des meilleures Keyblades avant la Forteresse Oubliée.",
       "Pink and black, decorated with hearts, clubs and a playing-card keychain, Lady Luck is hidden in Wonderland. It can only be reached after learning the Yellow Trinity, by returning to the Lotus Forest.\n\nGood magic and good reach make it one of the best Keyblades before Hollow Bastion.",
     ),
     obtained: { "kingdom-hearts": L("Pays des Merveilles, Forêt des Lotus : coffre accessible grâce à la Trinité Jaune.", "Wonderland, Lotus Forest: chest reached with the Yellow Trinity.") },
@@ -166,14 +166,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "heros-crest",
     category: "keyblades",
-    name: "Gage du Héros",
+    name: "Emblème de Héros",
     names: { en: "Hero's Crest", ja: "ヒーローズクレスト" },
     accent: "#d89a30",
     stats: { strength: 4, magic: 0 },
     ability: L("KH II : Combo aérien +.", "KH II: Air Combo Boost."),
     tagline: L("La Keyblade de l'Olympe dans Kingdom Hearts II, taillée pour les airs.", "The Olympus Keyblade of Kingdom Hearts II, built for the air."),
     description: L(
-      "Rouge sang et ornée d'une plume de Pégase, Gage du Héros est remise à Sora après la victoire sur l'Hydre lors de la première visite du Colisée de l'Olympe. Son porte-clés reprend le médaillon d'Hercule.\n\nSans bonus de magie, elle renforce en revanche les combos aériens, ce qui en fait une arme de choix contre les ennemis volants.",
+      "Rouge sang et ornée d'une plume de Pégase, Emblème de Héros est remise à Sora après la victoire sur l'Hydre lors de la première visite du Colisée de l'Olympe. Son porte-clés reprend le médaillon d'Hercule.\n\nSans bonus de magie, elle renforce en revanche les combos aériens, ce qui en fait une arme de choix contre les ennemis volants.",
       "Blood red and decorated with a Pegasus feather, Hero's Crest is given to Sora after beating the Hydra on the first visit to Olympus Coliseum. Its keychain reprises Hercules's medallion.\n\nIt offers no magic bonus but strengthens aerial combos, making it a weapon of choice against airborne foes.",
     ),
     obtained: { "kingdom-hearts-ii": L("Colisée de l'Olympe, première visite, après avoir vaincu l'Hydre.", "Olympus Coliseum, first visit, after defeating the Hydra.") },
@@ -204,8 +204,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "follow-the-wind",
     category: "keyblades",
-    name: "Follow the Wind",
-    names: { ja: "フォローザウインド" },
+    name: "Gouvernail",
+    names: { en: "Follow the Wind", ja: "フォローザウインド"  },
     accent: "#3a6a9a",
     stats: { strength: 3, magic: 1 },
     ability: L("KH II : Attraction (attire les orbes vers Sora).", "KH II: Draw."),
@@ -223,14 +223,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "circle-of-life",
     category: "keyblades",
-    name: "Cercle de Vie",
+    name: "Cercle vital",
     names: { en: "Circle of Life", ja: "サークルオブライフ" },
     accent: "#c07a30",
     stats: { strength: 4, magic: 1 },
     ability: L("KH II : MP de secours (récupération de MP accélérée).", "KH II: MP Haste."),
     tagline: L("La Keyblade de la Terre des Lions, au motif du Rocher.", "The Pride Lands Keyblade, patterned after Pride Rock."),
     description: L(
-      "Brune et ocre, Cercle de Vie prend la forme d'un bâton sculpté évoquant celui de Rafiki, avec un porte-clés représentant la tête de Simba. Sora la reçoit après avoir aidé Simba à reprendre le Rocher du Lion à Scar.\n\nElle accélère la régénération des MP, ce qui en fait une arme confortable pour les combats prolongés de ce monde.",
+      "Brune et ocre, Cercle vital prend la forme d'un bâton sculpté évoquant celui de Rafiki, avec un porte-clés représentant la tête de Simba. Sora la reçoit après avoir aidé Simba à reprendre le Rocher du Lion à Scar.\n\nElle accélère la régénération des MP, ce qui en fait une arme confortable pour les combats prolongés de ce monde.",
       "Brown and ochre, Circle of Life takes the shape of a carved staff reminiscent of Rafiki's, with a keychain showing Simba's head. Sora receives it after helping Simba take Pride Rock back from Scar.\n\nIt speeds up MP recovery, which makes it a comfortable weapon for that world's drawn-out battles.",
     ),
     obtained: { "kingdom-hearts-ii": L("Terre des Lions, première visite, après avoir vaincu Scar.", "Pride Lands, first visit, after defeating Scar.") },
@@ -241,14 +241,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "photon-debugger",
     category: "keyblades",
-    name: "Débogueur Photon",
+    name: "Debugger Photon",
     names: { en: "Photon Debugger", ja: "フォトンデバッガー" },
     accent: "#30b0e0",
     stats: { strength: 3, magic: 2 },
     ability: L("KH II : Foudre + (renforce la magie Foudre).", "KH II: Thunder Boost."),
     tagline: L("La Keyblade numérique de Space Paranoids.", "The digital Keyblade of Space Paranoids."),
     description: L(
-      "Noire striée de lignes lumineuses bleues, Débogueur Photon reprend l'esthétique de Tron : son porte-clés est un disque d'identité. Elle est remise après la première visite de Space Paranoids, à la sortie du système informatique d'Ansem.\n\nSon bonus Foudre est cohérent avec l'univers électronique du monde.",
+      "Noire striée de lignes lumineuses bleues, Debugger Photon reprend l'esthétique de Tron : son porte-clés est un disque d'identité. Elle est remise après la première visite de Space Paranoids, à la sortie du système informatique d'Ansem.\n\nSon bonus Foudre est cohérent avec l'univers électronique du monde.",
       "Black with glowing blue circuit lines, Photon Debugger borrows the aesthetics of Tron: its keychain is an identity disc. It is given after the first visit to Space Paranoids, on leaving Ansem's computer system.\n\nIts Thunder bonus suits the world's electronic setting.",
     ),
     obtained: { "kingdom-hearts-ii": L("Space Paranoids, première visite, après avoir vaincu le Sans-cœur Hostile.", "Space Paranoids, first visit, after defeating the Hostile Program.") },
@@ -259,13 +259,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "gull-wing",
     category: "keyblades",
-    name: "Ailes de Mouette",
+    name: "Albatros",
     names: { en: "Gull Wing", ja: "ガルウィング" },
     accent: "#e0d070",
     ability: L("KH II : Expérience + (plus d'expérience quand les PV sont bas).", "KH II: Experience Boost."),
     tagline: L("La Keyblade des Gullwings, faite pour grimper de niveau.", "The Gullwings' Keyblade, made for levelling up."),
     description: L(
-      "Ailes de Mouette est offerte par Yuna, Rikku et Paine — les Gullwings de Final Fantasy X-2 — lorsqu'elles rejoignent le camp de Léon au Jardin Radieux. Son design reprend la mouette de leur emblème et les couleurs de l'aéronef Celsius.\n\nFaible en attaque, elle est surtout prisée pour Expérience +, qui augmente l'expérience gagnée quand les PV sont bas.",
+      "Albatros est offerte par Yuna, Rikku et Paine — les Gullwings de Final Fantasy X-2 — lorsqu'elles rejoignent le camp de Léon au Jardin Radieux. Son design reprend la mouette de leur emblème et les couleurs de l'aéronef Celsius.\n\nFaible en attaque, elle est surtout prisée pour Expérience +, qui augmente l'expérience gagnée quand les PV sont bas.",
       "Gull Wing is a gift from Yuna, Rikku and Paine — the Gullwings of Final Fantasy X-2 — once they side with Leon in Radiant Garden. Its design reprises the gull of their emblem and the colours of the airship Celsius.\n\nWeak in attack, it is mainly prized for Experience Boost, which raises experience gained when HP is low.",
     ),
     obtained: { "kingdom-hearts-ii": L("Jardin Radieux, après la bataille des Mille Sans-cœur : parler aux Gullwings.", "Radiant Garden, after the Battle of 1000 Heartless: talk to the Gullwings.") },
@@ -277,14 +277,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "rumbling-rose",
     category: "keyblades",
-    name: "Rose Grondante",
+    name: "Rose de Combat",
     names: { en: "Rumbling Rose", ja: "ランブリングローズ" },
     accent: "#a03050",
     stats: { strength: 5, magic: 0 },
     ability: L("KH II : Finition + (permet d'enchaîner un second coup final).", "KH II: Finishing Plus."),
     tagline: L("La Keyblade du Château de la Bête, taillée pour les coups finaux.", "The Beast's Castle Keyblade, built for finishing blows."),
     description: L(
-      "Rouge et bleu nuit, Rose Grondante mêle la rose enchantée, la griffe de la Bête et un porte-clés en forme de rose. Elle est offerte après la seconde visite du Château de la Bête, une fois Xaldin vaincu.\n\nSa force brute et Finition + la placent parmi les armes physiques les plus efficaces de la seconde moitié de Kingdom Hearts II.",
+      "Rouge et bleu nuit, Rose de Combat mêle la rose enchantée, la griffe de la Bête et un porte-clés en forme de rose. Elle est offerte après la seconde visite du Château de la Bête, une fois Xaldin vaincu.\n\nSa force brute et Finition + la placent parmi les armes physiques les plus efficaces de la seconde moitié de Kingdom Hearts II.",
       "Red and midnight blue, Rumbling Rose blends the enchanted rose, the Beast's claw and a rose-shaped keychain. It is given after the second visit to Beast's Castle, once Xaldin is defeated.\n\nIts raw strength and Finishing Plus put it among the most effective physical weapons of the second half of Kingdom Hearts II.",
     ),
     obtained: { "kingdom-hearts-ii": L("Château de la Bête, seconde visite, après avoir vaincu Xaldin.", "Beast's Castle, second visit, after defeating Xaldin.") },
@@ -296,14 +296,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "guardian-soul",
     category: "keyblades",
-    name: "Âme Gardienne",
+    name: "Âme de Gardien",
     names: { en: "Guardian Soul", ja: "ガーディアンソウル" },
     accent: "#7a3a2a",
     stats: { strength: 5, magic: 1 },
     ability: L("KH II : Réaction + (les commandes de réaction infligent plus de dégâts).", "KH II: Reaction Boost."),
     tagline: L("La Keyblade d'Auron, récompense de la victoire sur Hadès.", "Auron's Keyblade, reward for beating Hades."),
     description: L(
-      "Sombre et massive, Âme Gardienne est inspirée d'Auron : sa lame rappelle son sabre et son porte-clés est sa gourde. Sora la reçoit après avoir vaincu Hadès aux Enfers avec l'aide du gardien de Final Fantasy X.\n\nSon bonus aux commandes de réaction s'apprécie dans les combats contre l'Organisation, qui en font grand usage.",
+      "Sombre et massive, Âme de Gardien est inspirée d'Auron : sa lame rappelle son sabre et son porte-clés est sa gourde. Sora la reçoit après avoir vaincu Hadès aux Enfers avec l'aide du gardien de Final Fantasy X.\n\nSon bonus aux commandes de réaction s'apprécie dans les combats contre l'Organisation, qui en font grand usage.",
       "Dark and heavy, Guardian Soul is inspired by Auron: its blade recalls his sword and its keychain is his jug. Sora receives it after defeating Hades in the Underworld with the help of the guardian from Final Fantasy X.\n\nIts Reaction Command bonus shines in the Organization fights, which rely on them heavily.",
     ),
     obtained: { "kingdom-hearts-ii": L("Colisée de l'Olympe, seconde visite, après avoir vaincu Hadès.", "Olympus Coliseum, second visit, after defeating Hades.") },
@@ -322,7 +322,7 @@ export const moreKeyblades: KeybladeEntry[] = [
     ability: L("KH II : Jackpot (plus d'orbes lâchés par les ennemis).", "KH II: Jackpot."),
     tagline: L("La Keyblade d'Agrabah dans Kingdom Hearts II.", "The Agrabah Keyblade of Kingdom Hearts II."),
     description: L(
-      "Successeur de Trois Souhaits, Lampe Merveilleuse marie l'or de la lampe et le bleu du Génie ; son porte-clés est la lampe elle-même. Elle est remise après la seconde visite d'Agrabah, une fois le Génie Jafar terrassé.\n\nStatistiques solides et Jackpot en font une Keyblade polyvalente, précieuse pour farmer les munny et les orbes.",
+      "Successeur de Lampe Magique, Lampe Merveilleuse marie l'or de la lampe et le bleu du Génie ; son porte-clés est la lampe elle-même. Elle est remise après la seconde visite d'Agrabah, une fois le Génie Jafar terrassé.\n\nStatistiques solides et Jackpot en font une Keyblade polyvalente, précieuse pour farmer les munny et les orbes.",
       "Successor to Three Wishes, Wishing Lamp pairs the lamp's gold with the Genie's blue; its keychain is the lamp itself. It is given after the second visit to Agrabah, once Genie Jafar is defeated.\n\nSolid stats and Jackpot make it a versatile Keyblade, valuable for farming munny and orbs.",
     ),
     obtained: { "kingdom-hearts-ii": L("Agrabah, seconde visite, après avoir vaincu le Génie Jafar.", "Agrabah, second visit, after defeating Genie Jafar.") },
@@ -334,14 +334,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "hidden-dragon",
     category: "keyblades",
-    name: "Dragon Caché",
+    name: "Dragon Tapi",
     names: { en: "Hidden Dragon", ja: "ヒドゥンドラゴン" },
     accent: "#c03030",
     stats: { strength: 2, magic: 2 },
     ability: L("KH II : Rage de MP (regagne des MP en subissant des dégâts).", "KH II: MP Rage."),
     tagline: L("La Keyblade de la Terre des Dragons, avec Mushu en porte-clés.", "The Land of Dragons Keyblade, with Mushu as keychain."),
     description: L(
-      "Rouge et or, Dragon Caché s'enroule comme un dragon chinois et s'achève sur un porte-clés Mushu. C'est la récompense de la première visite de la Terre des Dragons, après la défaite de Shan-Yu.\n\nStatistiquement modeste, elle offre Rage de MP, utile aux joueurs qui comptent sur la magie en début de partie.",
+      "Rouge et or, Dragon Tapi s'enroule comme un dragon chinois et s'achève sur un porte-clés Mushu. C'est la récompense de la première visite de la Terre des Dragons, après la défaite de Shan-Yu.\n\nStatistiquement modeste, elle offre Rage de MP, utile aux joueurs qui comptent sur la magie en début de partie.",
       "Red and gold, Hidden Dragon coils like a Chinese dragon and ends with a Mushu keychain. It is the reward of the first visit to the Land of Dragons, after Shan-Yu's defeat.\n\nStatistically modest, it offers MP Rage, useful to players relying on magic early in the game.",
     ),
     obtained: { "kingdom-hearts-ii": L("Terre des Dragons, première visite, après avoir vaincu Shan-Yu.", "Land of Dragons, first visit, after defeating Shan-Yu.") },
@@ -352,13 +352,13 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "mysterious-abyss",
     category: "keyblades",
-    name: "Abîme Mystérieux",
+    name: "Mystérieuse Abîme",
     names: { en: "Mysterious Abyss", ja: "ミステリアスアビス" },
     accent: "#2a70b0",
     ability: L("KH II : Glace + (renforce la magie Glace).", "KH II: Blizzard Boost."),
     tagline: L("La Keyblade d'Atlantica dans Kingdom Hearts II, née d'une comédie musicale.", "The Atlantica Keyblade of Kingdom Hearts II, born from a musical."),
     description: L(
-      "Bleu profond et parsemée de bulles, Abîme Mystérieux est ornée d'un coquillage et d'une perle en porte-clés. Elle est gagnée dans Atlantica, monde entièrement rythmique dans Kingdom Hearts II, après avoir réussi le numéro musical qui met Ursula en déroute.\n\nElle renforce la magie Glace, ce qui en fait une bonne compagne de la Forme Sagesse.",
+      "Bleu profond et parsemée de bulles, Mystérieuse Abîme est ornée d'un coquillage et d'une perle en porte-clés. Elle est gagnée dans Atlantica, monde entièrement rythmique dans Kingdom Hearts II, après avoir réussi le numéro musical qui met Ursula en déroute.\n\nElle renforce la magie Glace, ce qui en fait une bonne compagne de la Forme Sagesse.",
       "Deep blue and dotted with bubbles, Mysterious Abyss is decorated with a shell and a pearl keychain. It is earned in Atlantica, an entirely rhythm-based world in Kingdom Hearts II, after clearing the musical number that routs Ursula.\n\nIt boosts Blizzard magic, making it a good partner for Wisdom Form.",
     ),
     obtained: { "kingdom-hearts-ii": L("Atlantica, après avoir réussi la chanson « La Vengeance d'Ursula ».", "Atlantica, after clearing the song “Ursula's Revenge”.") },
@@ -370,14 +370,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "sweet-memories",
     category: "keyblades",
-    name: "Doux Souvenirs",
+    name: "Doux Souvenir",
     names: { en: "Sweet Memories", ja: "スイートメモリー" },
     accent: "#e0b050",
     stats: { strength: 0, magic: 4 },
     ability: L("KH II : Chance (plus d'objets rares) ; KH II FM : Convertisseur de Forme.", "KH II: Lucky Lucky; KH II FM: Drive Converter."),
     tagline: L("La Keyblade au pot de miel de la Forêt des Rêves Bleus.", "The honey-pot Keyblade of the Hundred Acre Wood."),
     description: L(
-      "Ornée d'un pot de miel, d'abeilles et d'un porte-clés à l'effigie de Winnie, Doux Souvenirs est la récompense de la Forêt des Rêves Bleus dans Kingdom Hearts II, une fois toutes les pages du livre retrouvées et les mini-jeux terminés.\n\nSans aucune force, elle compense par sa magie et par une capacité de collecte : Chance dans la version originale, Convertisseur de Forme dans Final Mix.",
+      "Ornée d'un pot de miel, d'abeilles et d'un porte-clés à l'effigie de Winnie, Doux Souvenir est la récompense de la Forêt des Rêves Bleus dans Kingdom Hearts II, une fois toutes les pages du livre retrouvées et les mini-jeux terminés.\n\nSans aucune force, elle compense par sa magie et par une capacité de collecte : Chance dans la version originale, Convertisseur de Forme dans Final Mix.",
       "Decorated with a honey pot, bees and a Pooh keychain, Sweet Memories is the Hundred Acre Wood reward in Kingdom Hearts II, once every torn page is recovered and the mini-games completed.\n\nWith no strength at all, it makes up for it with magic and a collecting ability: Lucky Lucky in the original release, Drive Converter in Final Mix.",
     ),
     obtained: { "kingdom-hearts-ii": L("Forêt des Rêves Bleus, après avoir terminé le dernier épisode du livre.", "Hundred Acre Wood, after completing the book's final episode.") },
@@ -406,14 +406,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "fatal-crest",
     category: "keyblades",
-    name: "Aile Fatale",
+    name: "Fatalis",
     names: { en: "Fatal Crest", ja: "フェイタルクレスト" },
     accent: "#6a3a8a",
     stats: { strength: 3, magic: 5 },
     ability: L("KH II : Charge Berserk (combos illimités quand les MP sont en récupération).", "KH II: Berserk Charge."),
     tagline: L("La Keyblade des Coupes Paradoxes, aux ailes sombres.", "The dark-winged Keyblade of the Paradox Cups."),
     description: L(
-      "Violette et ailée, Aile Fatale reprend le style des aigles du Colisée et se termine par un porte-clés en forme de plume. Elle récompense la victoire dans la Coupe Déesse du Destin, le plus haut tournoi des Enfers.\n\nSa magie élevée et Charge Berserk en font une arme redoutable une fois les MP épuisés, au prix de combos sans coup final.",
+      "Violette et ailée, Fatalis reprend le style des aigles du Colisée et se termine par un porte-clés en forme de plume. Elle récompense la victoire dans la Coupe Déesse du Destin, le plus haut tournoi des Enfers.\n\nSa magie élevée et Charge Berserk en font une arme redoutable une fois les MP épuisés, au prix de combos sans coup final.",
       "Purple and winged, Fatal Crest reprises the Coliseum's eagle motifs and ends with a feather keychain. It rewards victory in the Goddess of Fate Cup, the highest tournament of the Underworld.\n\nIts high magic and Berserk Charge make it a fearsome weapon once MP is depleted, at the cost of combos without finishers.",
     ),
     obtained: { "kingdom-hearts-ii": L("Colisée de l'Olympe : remporter la Coupe Déesse du Destin.", "Olympus Coliseum: win the Goddess of Fate Cup.") },
@@ -427,7 +427,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "missing-ache",
     category: "keyblades",
-    name: "Missing Ache",
+    name: "Douleur absente",
+    names: { en: "Missing Ache" },
     accent: "#8a9ab0",
     tagline: L("La première Keyblade alternative de Roxas, née du Gear de Compétence.", "Roxas's first alternate Keyblade, born from the Skill Gear."),
     description: L(
@@ -461,7 +462,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "sign-of-innocence",
     category: "keyblades",
-    name: "Sign of Innocence",
+    name: "Signe d'innocence",
+    names: { en: "Sign of Innocence" },
     accent: "#d0d0e0",
     tagline: L("La Keyblade blanche et bleue de Roxas, liée au Gear de Duel.", "Roxas's white-and-blue Keyblade, tied to the Duel Gear."),
     description: L(
@@ -483,7 +485,7 @@ export const moreKeyblades: KeybladeEntry[] = [
     accent: "#2a5a9a",
     tagline: L("La Keyblade marine de Roxas, aux reflets d'abysses.", "Roxas's sea-toned Keyblade, with abyssal hues."),
     description: L(
-      "Abyssal Tide arbore des bleus profonds et des motifs de vagues, dans un esprit proche de Pince de Crabe ou d'Abîme Mystérieux. Elle apparaît quand Roxas équipe un Gear de type Chargé dans 358/2 Days.\n\nElle mise sur la force et la portée plutôt que sur la vitesse.",
+      "Abyssal Tide arbore des bleus profonds et des motifs de vagues, dans un esprit proche de Trésor des mers ou d'Mystérieuse Abîme. Elle apparaît quand Roxas équipe un Gear de type Chargé dans 358/2 Days.\n\nElle mise sur la force et la portée plutôt que sur la vitesse.",
       "Abyssal Tide sports deep blues and wave motifs, in a spirit close to Crabclaw or Mysterious Abyss. It appears when Roxas equips a Loaded-type Gear in 358/2 Days.\n\nIt relies on strength and reach rather than speed.",
     ),
     obtained: { "358-2-days": L("Équiper le Gear Chargé (Loaded Gear).", "Equip the Loaded Gear.") },
@@ -495,7 +497,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "true-lights-flight",
     category: "keyblades",
-    name: "True Light's Flight",
+    name: "Vol vraie lueur",
+    names: { en: "True Light's Flight" },
     accent: "#e8e0a0",
     tagline: L("La Keyblade ailée de Roxas, toute de lumière.", "Roxas's winged Keyblade, all made of light."),
     description: L(
@@ -511,7 +514,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "midnight-roar",
     category: "keyblades",
-    name: "Midnight Roar",
+    name: "Hurlement de minuit",
+    names: { en: "Midnight Roar" },
     accent: "#3a2a5a",
     tagline: L("La Keyblade fantomatique de Roxas, aux couleurs de la nuit.", "Roxas's ghostly Keyblade, in the colours of night."),
     description: L(
@@ -655,7 +659,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "victory-line",
     category: "keyblades",
-    name: "Victory Line",
+    name: "Ligne d'arrivée",
+    names: { en: "Victory Line" },
     accent: "#e03030",
     tagline: L("La Keyblade de course de la Ville de Disney.", "The racing Keyblade of Disney Town."),
     description: L(
@@ -670,7 +675,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "mark-of-a-hero",
     category: "keyblades",
-    name: "Mark of a Hero",
+    name: "Symbole de Héros",
+    names: { en: "Mark of a Hero" },
     accent: "#e0a040",
     tagline: L("La Keyblade du Colisée dans Birth by Sleep.", "The Coliseum Keyblade in Birth by Sleep."),
     description: L(
@@ -686,7 +692,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "hyperdrive",
     category: "keyblades",
-    name: "Hyperdrive",
+    name: "Vol en hyperespace",
+    names: { en: "Hyperdrive" },
     accent: "#3a60c0",
     tagline: L("La Keyblade de l'Espace Profond, façon vaisseau galactique.", "The Deep Space Keyblade, styled like a galactic ship."),
     description: L(
@@ -701,11 +708,12 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "pixie-petal",
     category: "keyblades",
-    name: "Pixie Petal",
+    name: "Rameau de fée",
+    names: { en: "Pixie Petal" },
     accent: "#a0d060",
     tagline: L("La Keyblade de la Fée Clochette dans Birth by Sleep.", "Tinker Bell's Keyblade in Birth by Sleep."),
     description: L(
-      "Verte et bordée de feuilles, Pixie Petal prolonge l'esprit de Harpe des Fées : sa lame en fleur et son porte-clés en forme de Clochette évoquent le Pays Imaginaire. Terra, Ventus et Aqua la reçoivent après leur passage sur l'île.\n\nElle possède l'un des meilleurs bonus de magie du jeu.",
+      "Verte et bordée de feuilles, Pixie Petal prolonge l'esprit de Harpe féérique : sa lame en fleur et son porte-clés en forme de Clochette évoquent le Pays Imaginaire. Terra, Ventus et Aqua la reçoivent après leur passage sur l'île.\n\nElle possède l'un des meilleurs bonus de magie du jeu.",
       "Green and edged with leaves, Pixie Petal continues the spirit of Fairy Harp: its flower blade and Tinker Bell keychain evoke Neverland. Terra, Ventus and Aqua receive it after their time on the island.\n\nIt has one of the game's best magic bonuses.",
     ),
     obtained: { "birth-by-sleep": L("Pays Imaginaire, à la fin du scénario de chaque personnage.", "Neverland, at the end of each character's episode.") },
@@ -734,7 +742,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "frolic-flame",
     category: "keyblades",
-    name: "Frolic Flame",
+    name: "Flamme ardente",
+    names: { en: "Frolic Flame" },
     accent: "#e05030",
     tagline: L("La Keyblade du Jardin Radieux, aux flammes joueuses.", "The Radiant Garden Keyblade, with playful flames."),
     description: L(
@@ -750,7 +759,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "lost-memory",
     category: "keyblades",
-    name: "Lost Memory",
+    name: "Souvenir perdu",
+    names: { en: "Lost Memory" },
     accent: "#c8d0e0",
     tagline: L("La Keyblade blanche de Ventus, écho d'un passé oublié.", "Ventus's white Keyblade, echo of a forgotten past."),
     description: L(
@@ -766,7 +776,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "chaos-ripper",
     category: "keyblades",
-    name: "Chaos Ripper",
+    name: "Faux du chaos",
+    names: { en: "Chaos Ripper" },
     accent: "#3a2a4a",
     tagline: L("La Keyblade des ténèbres de Terra, brutale et sombre.", "Terra's darkness Keyblade, brutal and dark."),
     description: L(
@@ -782,7 +793,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "darkgnaw",
     category: "keyblades",
-    name: "Darkgnaw",
+    name: "Morsure obscure",
+    names: { en: "Darkgnaw" },
     accent: "#5a3a7a",
     tagline: L("La Keyblade de Terra née de l'influence de Maléfique.", "Terra's Keyblade born from Maleficent's influence."),
     description: L(
@@ -798,7 +810,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "brightcrest",
     category: "keyblades",
-    name: "Brightcrest",
+    name: "Armoiries",
+    names: { en: "Brightcrest" },
     accent: "#60b0e0",
     tagline: L("La Keyblade bleu ciel d'Aqua, symbole de son amitié.", "Aqua's sky-blue Keyblade, symbol of her friendship."),
     description: L(
@@ -814,7 +827,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "royal-radiance",
     category: "keyblades",
-    name: "Royal Radiance",
+    name: "Couronne absolue",
+    names: { en: "Royal Radiance" },
     accent: "#e8d890",
     tagline: L("La Keyblade royale de Mickey, offerte dans l'Arène Mirage.", "Mickey's royal Keyblade, earned in the Mirage Arena."),
     description: L(
@@ -832,7 +846,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "zero-one",
     category: "keyblades",
-    name: "Zero/One",
+    name: "Binaire",
+    names: { en: "Zero/One" },
     accent: "#30c0a0",
     tagline: L("La Keyblade de données du Sora Digital.", "The data Keyblade of Data-Sora."),
     description: L(
@@ -891,7 +906,7 @@ export const moreKeyblades: KeybladeEntry[] = [
     accent: "#30a0d0",
     tagline: L("La Keyblade de la Grille, deux disques d'identité en une lame.", "The Grid Keyblade, two identity discs in one blade."),
     description: L(
-      "Noire et bleu lumineux, Double disque reprend l'esthétique de Tron : L'Héritage avec ses deux disques d'identité et son porte-clés en forme de disque. Elle succède au Débogueur Photon de Kingdom Hearts II. Sora et Riku l'obtiennent à la fin de la Grille.\n\nElle est bien équilibrée entre force et magie.",
+      "Noire et bleu lumineux, Double disque reprend l'esthétique de Tron : L'Héritage avec ses deux disques d'identité et son porte-clés en forme de disque. Elle succède au Debugger Photon de Kingdom Hearts II. Sora et Riku l'obtiennent à la fin de la Grille.\n\nElle est bien équilibrée entre force et magie.",
       "Black and glowing blue, Dual Disc borrows the look of Tron: Legacy with its two identity discs and a disc keychain. It succeeds Photon Debugger from Kingdom Hearts II. Sora and Riku obtain it at the end of The Grid.\n\nIt is well balanced between strength and magic.",
     ),
     obtained: { "dream-drop-distance": L("La Grille, à la fin du monde.", "The Grid, at the end of the world.") },
@@ -903,7 +918,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "knockout-punch",
     category: "keyblades",
-    name: "Knockout Punch",
+    name: "Suppercut",
+    names: { en: "Knockout Punch" },
     accent: "#d04040",
     tagline: L("La Keyblade en gant de boxe de Dream Drop Distance.", "The boxing-glove Keyblade of Dream Drop Distance."),
     description: L(
@@ -934,7 +950,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "counterpoint",
     category: "keyblades",
-    name: "Counterpoint",
+    name: "Contrechant",
+    names: { en: "Counterpoint" },
     accent: "#6a50b0",
     tagline: L("La Keyblade musicale de la Symphonie du Sorcier.", "The musical Keyblade of Symphony of Sorcery."),
     description: L(
@@ -950,7 +967,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "divewing",
     category: "keyblades",
-    name: "Divewing",
+    name: "Aile du Piqué",
+    names: { en: "Divewing" },
     accent: "#c04080",
     tagline: L("La Keyblade des Avale-Rêves, aux ailes de Cauchemar.", "The Dream Eater Keyblade, with Nightmare wings."),
     description: L(
@@ -965,7 +983,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "sweet-dreams",
     category: "keyblades",
-    name: "Sweet Dreams",
+    name: "Doux songes",
+    names: { en: "Sweet Dreams" },
     accent: "#f0a0c0",
     tagline: L("La Keyblade pastel des Esprits, douce comme un rêve.", "The pastel Spirit Keyblade, sweet as a dream."),
     description: L(
@@ -1018,7 +1037,7 @@ export const moreKeyblades: KeybladeEntry[] = [
     accent: "#e0d0a0",
     tagline: L("La Keyblade de la maîtrise des Esprits.", "The Keyblade of Spirit mastery."),
     description: L(
-      "Blanche et dorée, aux formes ouvertes comme un livre, Unbound est une Keyblade rare de Dream Drop Distance récompensant la collection complète des Esprits. Son nom évoque l'idée de liens défaits, en accord avec le thème du jeu : les mondes libérés de leur sommeil.\n\nSes statistiques la placent juste derrière l'Arme Ultime.",
+      "Blanche et dorée, aux formes ouvertes comme un livre, Unbound est une Keyblade rare de Dream Drop Distance récompensant la collection complète des Esprits. Son nom évoque l'idée de liens défaits, en accord avec le thème du jeu : les mondes libérés de leur sommeil.\n\nSes statistiques la placent juste derrière l'Ultima.",
       "White and gold, with open shapes like a book, Unbound is a rare Keyblade of Dream Drop Distance rewarding the complete Spirit collection. Its name evokes untied bonds, in line with the game's theme: worlds freed from their sleep.\n\nIts stats place it just behind the Ultima Weapon.",
     ),
     obtained: { "dream-drop-distance": L("Compléter la collection d'Esprits (Avale-Rêves).", "Complete the Spirit (Dream Eater) collection.") },
@@ -1032,7 +1051,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "favorite-deputy",
     category: "keyblades",
-    name: "Favorite Deputy",
+    name: "Shérif de l'Ouest",
+    names: { en: "Favorite Deputy" },
     accent: "#e0b040",
     stats: { strength: 4, magic: 3 },
     ability: L("KH III : Chance (objets rares). Transformations : Marteau Géant, Perceuse Punch.", "KH III: Lucky Strike. Formchanges: Hyper Hammer, Drill Punch."),
@@ -1050,7 +1070,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "happy-gear",
     category: "keyblades",
-    name: "Happy Gear",
+    name: "Zygomagique",
+    names: { en: "Happy Gear" },
     accent: "#3ab0a0",
     stats: { strength: 5, magic: 4 },
     ability: L("KH III : Siphon de Focus. Transformations : Griffes Agiles, Yo-yos Jumeaux.", "KH III: Focus Syphon. Formchanges: Agile Claws, Twin Yoyos."),
@@ -1068,7 +1089,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "crystal-snow",
     category: "keyblades",
-    name: "Crystal Snow",
+    name: "Neige cristalline",
+    names: { en: "Crystal Snow" },
     accent: "#80c8f0",
     stats: { strength: 3, magic: 6 },
     ability: L("KH III : Protection Glace. Transformations : Griffes de Glace, Lames de Glace.", "KH III: Freeze Protection. Formchanges: Blizzard Claws, Blizzard Blades."),
@@ -1086,13 +1108,14 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "hunny-spout",
     category: "keyblades",
-    name: "Hunny Spout",
+    name: "Verse-miel",
+    names: { en: "Hunny Spout" },
     accent: "#e8b030",
     stats: { strength: 4, magic: 5 },
     ability: L("KH III : Récolte (plus de matériaux). Transformations : Pistolets à Miel, Lance-Miel.", "KH III: Harvester. Formchanges: Hunny Blasters, Hunny Launcher."),
     tagline: L("La Keyblade au pot de miel de Winnie dans Kingdom Hearts III.", "Pooh's honey-pot Keyblade in Kingdom Hearts III."),
     description: L(
-      "Successeur de Doux Souvenirs, Hunny Spout est ornée d'abeilles, de rayons de miel et d'un porte-clés Winnie. Elle est offerte après avoir aidé Winnie et ses amis dans le livre de la Forêt des Rêves Bleus, chez Merlin.\n\nSes transformations en pistolets à miel en font une Keyblade à distance, très efficace contre les groupes.",
+      "Successeur de Doux Souvenir, Hunny Spout est ornée d'abeilles, de rayons de miel et d'un porte-clés Winnie. Elle est offerte après avoir aidé Winnie et ses amis dans le livre de la Forêt des Rêves Bleus, chez Merlin.\n\nSes transformations en pistolets à miel en font une Keyblade à distance, très efficace contre les groupes.",
       "Successor to Sweet Memories, Hunny Spout is decorated with bees, honeycombs and a Pooh keychain. It is given after helping Pooh and his friends inside the Hundred Acre Wood book at Merlin's.\n\nIts honey-gun formchanges make it a ranged Keyblade, very effective against crowds.",
     ),
     obtained: { "kingdom-hearts-iii": L("Forêt des Rêves Bleus, après les mini-jeux du livre.", "Hundred Acre Wood, after the book's mini-games.") },
@@ -1104,7 +1127,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "nano-gear",
     category: "keyblades",
-    name: "Nano Gear",
+    name: "Microcomposant",
+    names: { en: "Nano Gear" },
     accent: "#b03060",
     stats: { strength: 5, magic: 5 },
     ability: L("KH III : Protection Étourdissement. Transformation : Nano Bras.", "KH III: Stun Protection. Formchange: Nano Arms."),
@@ -1122,7 +1146,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "wheel-of-fate",
     category: "keyblades",
-    name: "Wheel of Fate",
+    name: "Gouvernail du destin",
+    names: { en: "Wheel of Fate" },
     accent: "#8a4a2a",
     ability: L("KH III : transformations Highwind et Drapeau des Tempêtes.", "KH III: formchanges Highwind and Storm Flag."),
     tagline: L("La Keyblade des Caraïbes, gouvernail et pavillon noir.", "The Caribbean Keyblade, ship's wheel and black flag."),
@@ -1139,7 +1164,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "grand-chef",
     category: "keyblades",
-    name: "Grand Chef",
+    name: "Chef étoilé",
+    names: { en: "Grand Chef" },
     accent: "#e0e0e0",
     ability: L("KH III : transformation Poêle à Frire.", "KH III: formchange Frying Pan."),
     tagline: L("La Keyblade de Rémy, récompense du Bistrot.", "Remy's Keyblade, reward from the Bistro."),
@@ -1156,7 +1182,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "midnight-blue",
     category: "keyblades",
-    name: "Midnight Blue",
+    name: "Bleu de minuit",
+    names: { en: "Midnight Blue" },
     accent: "#203070",
     tagline: L("La Keyblade bleu nuit, bonus de précommande PlayStation.", "The midnight-blue Keyblade, PlayStation pre-order bonus."),
     description: L(
@@ -1172,7 +1199,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "phantom-green",
     category: "keyblades",
-    name: "Phantom Green",
+    name: "Vert fantôme",
+    names: { en: "Phantom Green" },
     accent: "#207040",
     tagline: L("La Keyblade verte, bonus de précommande Xbox.", "The green Keyblade, Xbox pre-order bonus."),
     description: L(
@@ -1188,7 +1216,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "dawn-till-dusk",
     category: "keyblades",
-    name: "Dawn Till Dusk",
+    name: "Aube crépusculaire",
+    names: { en: "Dawn Till Dusk" },
     accent: "#d06030",
     tagline: L("La Keyblade orangée, bonus de précommande Amazon.", "The orange Keyblade, Amazon pre-order bonus."),
     description: L(
