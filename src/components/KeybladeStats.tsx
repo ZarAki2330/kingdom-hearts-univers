@@ -22,6 +22,9 @@ export async function KeybladeStats({ stats }: { stats: KeybladeGameStat[] }) {
     magic: rows.some((r) => r.magic),
     grades: rows.some((r) => r.grades),
     reach: rows.some((r) => r.reach),
+    critRate: rows.some((r) => r.critRate),
+    critBonus: rows.some((r) => r.critBonus),
+    shift: rows.some((r) => r.shift),
     abilities: rows.some((r) => r.abilities?.length),
   };
   const reachLabel = (v: string) => (REACH.has(v) ? tk(`stats.reachValues.${v}`) : v);
@@ -31,7 +34,6 @@ export async function KeybladeStats({ stats }: { stats: KeybladeGameStat[] }) {
       <h2 id="stats-by-game" className="text-2xl font-bold">
         {t("stats.title")}
       </h2>
-      <p className="prose-max mt-2 text-sm text-text-2">{t("stats.lead")}</p>
       {/* Région défilante annoncée et atteignable au clavier (WCAG 2.1 : contenu à défilement horizontal). */}
       <div className="card mt-4 overflow-x-auto" role="region" aria-labelledby="stats-by-game" tabIndex={0}>
         <table className="w-full min-w-[42rem] border-collapse text-sm">
@@ -61,6 +63,21 @@ export async function KeybladeStats({ stats }: { stats: KeybladeGameStat[] }) {
                   {t("stats.reach")}
                 </th>
               )}
+              {has.critRate && (
+                <th scope="col" className="px-4 py-3 text-right font-bold">
+                  {t("stats.critRate")}
+                </th>
+              )}
+              {has.critBonus && (
+                <th scope="col" className="px-4 py-3 text-right font-bold">
+                  {t("stats.critBonus")}
+                </th>
+              )}
+              {has.shift && (
+                <th scope="col" className="px-4 py-3 text-right font-bold">
+                  {t("stats.shift")}
+                </th>
+              )}
               {has.abilities && (
                 <th scope="col" className="px-4 py-3 font-bold">
                   {t("stats.abilities")}
@@ -81,6 +98,9 @@ export async function KeybladeStats({ stats }: { stats: KeybladeGameStat[] }) {
                 {has.magic && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.magic ?? "–"}</td>}
                 {has.grades && <td className="tabular px-4 py-3 whitespace-nowrap">{r.grades ?? "–"}</td>}
                 {has.reach && <td className="px-4 py-3 whitespace-nowrap">{r.reach ? reachLabel(r.reach) : "–"}</td>}
+                {has.critRate && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.critRate ?? "–"}</td>}
+                {has.critBonus && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.critBonus ?? "–"}</td>}
+                {has.shift && <td className="tabular px-4 py-3 text-right whitespace-nowrap">{r.shift ?? "–"}</td>}
                 {has.abilities && (
                   <td className="px-4 py-3" lang={r.abilities?.length ? "en" : undefined}>
                     {r.abilities?.length ? r.abilities.join(" · ") : "–"}

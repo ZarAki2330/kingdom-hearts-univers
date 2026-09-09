@@ -223,7 +223,6 @@
     "results": "Ergebnisse",
     "stats": {
       "title": "Werte pro Spiel",
-      "lead": "Ein Schlüsselschwert hat nicht in jedem Spiel dieselben Werte. Kingdom Hearts und Chain of Memories bewerten die Klinge auf eigene Weise; in Kingdom Hearts III wächst sie von Stufe 0 bis Stufe 10.",
       "game": "Spiel",
       "grades": "Schlag / Stoß / Finish",
       "reach": "Reichweite",
@@ -235,7 +234,10 @@
         "medium": "Mittel",
         "long": "Lang",
         "very-long": "Sehr lang"
-      }
+      },
+      "critRate": "Kritische Trefferrate",
+      "critBonus": "Kritischer Bonus",
+      "shift": "Wechselrate"
     }
   },
   "Search": {

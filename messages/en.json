@@ -223,7 +223,6 @@
     "results": "Results",
     "stats": {
       "title": "Stats by game",
-      "lead": "A Keyblade does not carry the same values from one game to the next. Kingdom Hearts and Chain of Memories rate the blade their own way; in Kingdom Hearts III it grows from level 0 to level 10.",
       "game": "Game",
       "grades": "Strike / Thrust / Finish",
       "reach": "Reach",
@@ -235,7 +234,10 @@
         "medium": "Medium",
         "long": "Long",
         "very-long": "Very long"
-      }
+      },
+      "critRate": "Critical rate",
+      "critBonus": "Critical bonus",
+      "shift": "Shift rate"
     }
   },
   "Search": {

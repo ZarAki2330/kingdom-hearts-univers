@@ -223,7 +223,6 @@
     "results": "Risultati",
     "stats": {
       "title": "Statistiche per gioco",
-      "lead": "Un Keyblade non ha gli stessi valori da un gioco all'altro. Kingdom Hearts e Chain of Memories valutano la lama a modo loro; in Kingdom Hearts III cresce dal livello 0 al livello 10.",
       "game": "Gioco",
       "grades": "Colpo / Affondo / Finale",
       "reach": "Portata",
@@ -235,7 +234,10 @@
         "medium": "Media",
         "long": "Lunga",
         "very-long": "Molto lunga"
-      }
+      },
+      "critRate": "Tasso critico",
+      "critBonus": "Bonus critico",
+      "shift": "Tasso di alterazione"
     }
   },
   "Search": {

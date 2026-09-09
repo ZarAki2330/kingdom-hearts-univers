@@ -223,7 +223,6 @@
     "results": "Resultados",
     "stats": {
       "title": "Estadísticas por juego",
-      "lead": "Una Llave espada no tiene los mismos valores de un juego a otro. Kingdom Hearts y Chain of Memories puntúan la hoja a su manera; en Kingdom Hearts III evoluciona del nivel 0 al nivel 10.",
       "game": "Juego",
       "grades": "Golpe / Estocada / Final",
       "reach": "Alcance",
@@ -235,7 +234,10 @@
         "medium": "Medio",
         "long": "Largo",
         "very-long": "Muy largo"
-      }
+      },
+      "critRate": "Tasa crítica",
+      "critBonus": "Bonus crítico",
+      "shift": "Tasa de alteración"
     }
   },
   "Search": {

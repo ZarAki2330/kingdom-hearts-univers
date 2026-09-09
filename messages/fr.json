@@ -223,7 +223,6 @@
     "results": "Résultats",
     "stats": {
       "title": "Statistiques par jeu",
-      "lead": "Une Keyblade n'a pas les mêmes valeurs d'un jeu à l'autre. Kingdom Hearts et Chain of Memories notent la lame à leur façon ; dans Kingdom Hearts III, elle progresse du niveau 0 au niveau 10.",
       "game": "Jeu",
       "grades": "Frappe / Estoc / Final",
       "reach": "Portée",
@@ -235,7 +234,10 @@
         "medium": "Moyenne",
         "long": "Longue",
         "very-long": "Très longue"
-      }
+      },
+      "critRate": "Taux critique",
+      "critBonus": "Bonus critique",
+      "shift": "Taux d'altération"
     }
   },
   "Search": {

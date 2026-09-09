@@ -123,6 +123,12 @@ export interface KeybladeGameStat {
   grades?: string;
   /** Portée : valeur du jeu (« 100 ») ou mot-clé traduit (short, medium, long, very-long). */
   reach?: string;
+  /** Taux de coup critique (Birth by Sleep, Dream Drop Distance). */
+  critRate?: string;
+  /** Multiplicateur de dégâts sur un coup critique (Birth by Sleep). */
+  critBonus?: string;
+  /** Taux d'altération (Dream Drop Distance). */
+  shift?: string;
   /** Capacités accordées par la Keyblade dans ce jeu (noms anglais). */
   abilities?: string[];
 }
