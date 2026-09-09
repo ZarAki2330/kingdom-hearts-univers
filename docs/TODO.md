@@ -88,12 +88,12 @@ Récit de chaque jeu et chronologie de l'univers
 - [x] Frise chronologique des événements importants — _Onglet « Par événements » de la chronologie : 60 événements en 8 ères, de l'Âge des Fées à Quadratum, avec repère temporel, jeu où l'événement est raconté et entrées liées_
 - [x] Glossaire des termes — _Page `/glossaire` : 60 termes triés alphabétiquement, index par lettre, définition courte puis explication, renvoi vers la fiche et les termes liés_
 
-## V. Soluces — 0/5
+## V. Soluces — 1/5
 
 Guides et cheminement
 
-- [ ] Structure des guides (par jeu, par monde)
-- [ ] Soluce Kingdom Hearts (Final Mix)
+- [x] Structure des guides (par jeu, par monde) — _Section /soluces dans les 6 langues : index des guides, page par jeu (version couverte, « avant de commencer », sommaire des 18 sections, objectifs du 100 %) et page par section (étapes, combats avec attaques à connaître, liste de ramassage typée, « à ne pas rater », navigation précédent/suivant). Kingdom Hearts Final Mix ouvert avec le prologue et les Îles du Destin rédigés_
+- [ ] Soluce Kingdom Hearts (Final Mix) — _2 sections sur 18 rédigées_
 - [ ] Soluce Kingdom Hearts II (Final Mix)
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)

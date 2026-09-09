@@ -383,7 +383,8 @@
       "lead": "Los datos (nombres, estadísticas, fechas, apariciones) se verifican en los wikis de la comunidad y se reescriben aquí con nuestras propias palabras. Los textos del sitio no son traducciones de esas fuentes. Gracias a quienes las mantienen al día.",
       "khwiki": "Referencia en inglés: estadísticas de las armas, nombres japoneses, apariciones por juego.",
       "frwiki": "Nombres franceses oficiales de las Llaves espada, los enemigos y los mundos.",
-      "khdestiny": "Sitio francófono histórico, inspiración para la presentación."
+      "khdestiny": "Sitio francófono histórico, inspiración para la presentación.",
+      "enfandom": "Guías de la comunidad: recorrido, orden de los objetivos y ubicación de los tesoros."
     },
     "legal": {
       "title": "Aviso legal",
@@ -420,5 +421,37 @@
       "contentText": "Los textos originales (fichas, resúmenes, cronologías, traducciones) pueden compartirse y adaptarse, sin uso comercial, con atribución y compartiendo igual."
     },
     "a11yLink": "Accesibilidad y ajustes de visualización"
+  },
+  "Walkthrough": {
+    "title": "Guías",
+    "lead": "Guías escritas para llegar hasta el final: el recorrido completo, la estrategia de cada jefe y todo lo que hay que recoger para completar el juego al 100 %.",
+    "guide": "Guía",
+    "available": "Guías disponibles",
+    "progress": "{done} de {total} secciones escritas",
+    "planned": "Próximamente",
+    "plannedLead": "Los demás juegos llegarán en este orden de prioridad.",
+    "gameTitle": "Guía de {game}",
+    "sectionTitle": "{section} — guía de {game}",
+    "breadcrumb": "Ruta de navegación",
+    "back": "Todas las guías",
+    "before": "Antes de empezar",
+    "contents": "Índice",
+    "contentsLead": "Las secciones siguen el orden de una partida normal. Se indican las que faltan por escribir.",
+    "soon": "Pronto",
+    "completion": "Qué exige el 100 %",
+    "completionLead": "Seis objetivos relacionados: el Diario completo incluye casi todos los demás.",
+    "level": "Nivel recomendado:",
+    "worldEntry": "Ficha del mundo",
+    "steps": "Pasos",
+    "bosses": "Combates",
+    "attacks": "Ataques que conviene conocer",
+    "reward": "Recompensa:",
+    "collectibles": "Para recoger en esta sección",
+    "collectiblesLead": "Nada de esto es necesario para avanzar: es la lista del 100 %.",
+    "requires": "Requiere:",
+    "missable": "No te lo pierdas",
+    "sectionNav": "Sección anterior y siguiente",
+    "previous": "Sección anterior",
+    "next": "Sección siguiente"
   }
 }

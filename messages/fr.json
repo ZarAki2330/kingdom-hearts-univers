@@ -383,7 +383,8 @@
       "lead": "Les faits (noms, statistiques, dates, apparitions) sont vérifiés sur les wikis de la communauté, puis réécrits ici dans nos propres mots. Les textes du site ne sont pas des traductions de ces sources. Merci aux bénévoles qui les tiennent à jour.",
       "khwiki": "Référence anglophone : statistiques des armes, noms japonais, apparitions par jeu.",
       "frwiki": "Noms français officiels des Keyblades, des ennemis et des mondes.",
-      "khdestiny": "Site francophone historique, source d'inspiration pour la présentation."
+      "khdestiny": "Site francophone historique, source d'inspiration pour la présentation.",
+      "enfandom": "Soluces communautaires : cheminement, ordre des objectifs et emplacements des trésors."
     },
     "legal": {
       "title": "Mentions légales",
@@ -420,5 +421,37 @@
       "contentText": "Les textes originaux (fiches, résumés, chronologies, traductions) sont partageables et adaptables, sans usage commercial, avec attribution et partage dans les mêmes conditions."
     },
     "a11yLink": "Accessibilité et réglages d'affichage"
+  },
+  "Walkthrough": {
+    "title": "Soluces",
+    "lead": "Des guides écrits pour aller jusqu'au bout : le cheminement complet, la stratégie de chaque boss, et tout ce qu'il faut ramasser pour terminer à 100 %.",
+    "guide": "Soluce",
+    "available": "Guides disponibles",
+    "progress": "{done} sections rédigées sur {total}",
+    "planned": "À venir",
+    "plannedLead": "Les autres jeux suivront, dans cet ordre de priorité.",
+    "gameTitle": "Soluce de {game}",
+    "sectionTitle": "{section} — soluce de {game}",
+    "breadcrumb": "Fil d'Ariane",
+    "back": "Toutes les soluces",
+    "before": "Avant de commencer",
+    "contents": "Sommaire",
+    "contentsLead": "Les sections se suivent dans l'ordre d'une partie normale. Celles qui restent à écrire sont indiquées.",
+    "soon": "Bientôt",
+    "completion": "Ce que demande le 100 %",
+    "completionLead": "Six objectifs, tous liés : le Journal complet contient presque tous les autres.",
+    "level": "Niveau conseillé :",
+    "worldEntry": "La fiche du monde",
+    "steps": "Les étapes",
+    "bosses": "Les combats",
+    "attacks": "Attaques à connaître",
+    "reward": "Récompense :",
+    "collectibles": "À ramasser dans cette section",
+    "collectiblesLead": "Rien de tout cela n'est nécessaire pour avancer : c'est la liste du 100 %.",
+    "requires": "Nécessite :",
+    "missable": "À ne pas rater",
+    "sectionNav": "Section précédente et suivante",
+    "previous": "Section précédente",
+    "next": "Section suivante"
   }
 }

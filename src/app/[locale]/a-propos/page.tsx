@@ -44,6 +44,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const sources: { name: string; url: string; note: string }[] = [
     { name: "Kingdom Hearts Wiki", url: "https://www.khwiki.com", note: t("sources.khwiki") },
     { name: "Kingdom Hearts Wiki (français)", url: "https://kingdomhearts.fandom.com/fr", note: t("sources.frwiki") },
+    { name: "Kingdom Hearts Wiki (Fandom)", url: "https://kingdomhearts.fandom.com", note: t("sources.enfandom") },
     { name: "KH Destiny", url: "https://www.khdestiny.fr", note: t("sources.khdestiny") },
   ];
 

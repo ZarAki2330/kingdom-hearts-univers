@@ -10,9 +10,11 @@ const items = [
   { href: "/chronologie", key: "timeline" },
   { href: "/encyclopedie", key: "encyclopedia", submenu: "encyclopedia" },
   { href: "/histoire", key: "story", submenu: "story" },
+  { href: "/soluces", key: "guides" },
 ] as const;
 
-const soon = ["guides"] as const;
+// Plus rien n'est « bientôt » dans la barre : les soluces ont leur section.
+const soon = [] as const;
 
 /** Entrée de sous-menu fournie par le serveur (les résumés d'histoire disponibles). */
 export type NavSubItem = { href: string; label: string };

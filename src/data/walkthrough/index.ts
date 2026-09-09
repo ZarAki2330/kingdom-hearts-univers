@@ -1,0 +1,38 @@
+import { walkthrough as kingdomHearts } from "./kingdom-hearts";
+import type { Walkthrough, WalkSection } from "./types";
+
+export * from "./types";
+
+/** Les soluces disponibles, dans l'ordre où elles sont proposées. */
+export const walkthroughs: Walkthrough[] = [kingdomHearts];
+
+const byGame = new Map(walkthroughs.map((w) => [w.game, w]));
+
+/** La soluce d'un jeu, si elle existe. */
+export function getWalkthrough(game: string): Walkthrough | undefined {
+  return byGame.get(game);
+}
+
+/** Une section d'une soluce. */
+export function getSection(game: string, id: string): WalkSection | undefined {
+  return byGame.get(game)?.sections.find((s) => s.id === id);
+}
+
+/** Les sections rédigées : celles qui ont leur propre page. */
+export function writtenSections(w: Walkthrough): WalkSection[] {
+  return w.sections.filter((s) => s.status === "done");
+}
+
+/** Avancement d'une soluce, en sections rédigées sur sections prévues. */
+export function progress(w: Walkthrough): { done: number; total: number; percent: number } {
+  const total = w.sections.length;
+  const done = writtenSections(w).length;
+  return { done, total, percent: Math.round((done / total) * 100) };
+}
+
+/** La section précédente et la suivante, pour la navigation en bas de page. */
+export function neighbours(w: Walkthrough, id: string): { previous?: WalkSection; next?: WalkSection } {
+  const i = w.sections.findIndex((s) => s.id === id);
+  if (i < 0) return {};
+  return { previous: w.sections[i - 1], next: w.sections[i + 1] };
+}

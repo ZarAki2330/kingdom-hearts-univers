@@ -9,7 +9,7 @@
     "timeline": "Cronologia",
     "encyclopedia": "Enciclopedia",
     "story": "Storia",
-    "guides": "Guide",
+    "guides": "Soluzioni",
     "skip": "Vai al contenuto principale",
     "menu": "Menu principale",
     "language": "Lingua",
@@ -383,7 +383,8 @@
       "lead": "I dati (nomi, statistiche, date, apparizioni) sono verificati sui wiki della comunità e riscritti qui con parole nostre. I testi del sito non sono traduzioni di quelle fonti. Grazie a chi le tiene aggiornate.",
       "khwiki": "Riferimento in inglese: statistiche delle armi, nomi giapponesi, apparizioni per gioco.",
       "frwiki": "Nomi francesi ufficiali di Keyblade, nemici e mondi.",
-      "khdestiny": "Storico sito francofono, fonte d'ispirazione per l'impaginazione."
+      "khdestiny": "Storico sito francofono, fonte d'ispirazione per l'impaginazione.",
+      "enfandom": "Soluzioni della community: percorso, ordine degli obiettivi e posizione dei tesori."
     },
     "legal": {
       "title": "Note legali",
@@ -420,5 +421,37 @@
       "contentText": "I testi originali (schede, riassunti, cronologie, traduzioni) possono essere condivisi e adattati, senza uso commerciale, con attribuzione e condivisione allo stesso modo."
     },
     "a11yLink": "Accessibilità e impostazioni di visualizzazione"
+  },
+  "Walkthrough": {
+    "title": "Soluzioni",
+    "lead": "Guide scritte per arrivare in fondo: il percorso completo, la strategia di ogni boss e tutto ciò che serve raccogliere per finire al 100 %.",
+    "guide": "Soluzione",
+    "available": "Guide disponibili",
+    "progress": "{done} sezioni scritte su {total}",
+    "planned": "In arrivo",
+    "plannedLead": "Gli altri giochi seguiranno, in quest'ordine di priorità.",
+    "gameTitle": "Soluzione di {game}",
+    "sectionTitle": "{section} — soluzione di {game}",
+    "breadcrumb": "Percorso di navigazione",
+    "back": "Tutte le soluzioni",
+    "before": "Prima di cominciare",
+    "contents": "Indice",
+    "contentsLead": "Le sezioni seguono l'ordine di una partita normale. Quelle ancora da scrivere sono segnalate.",
+    "soon": "Presto",
+    "completion": "Cosa richiede il 100 %",
+    "completionLead": "Sei obiettivi collegati: il Diario completo contiene quasi tutti gli altri.",
+    "level": "Livello consigliato:",
+    "worldEntry": "Scheda del mondo",
+    "steps": "Tappe",
+    "bosses": "Combattimenti",
+    "attacks": "Attacchi da conoscere",
+    "reward": "Ricompensa:",
+    "collectibles": "Da raccogliere in questa sezione",
+    "collectiblesLead": "Niente di tutto questo serve per avanzare: è l'elenco del 100 %.",
+    "requires": "Richiede:",
+    "missable": "Da non perdere",
+    "sectionNav": "Sezione precedente e successiva",
+    "previous": "Sezione precedente",
+    "next": "Sezione successiva"
   }
 }

@@ -3,6 +3,7 @@ import { routing } from "@/i18n/routing";
 import { games } from "@/data/games";
 import { CATEGORIES, CATEGORY_SLUG, entries } from "@/data/encyclopedia";
 import { stories } from "@/data/story";
+import { walkthroughs, writtenSections } from "@/data/walkthrough";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
 /**
@@ -18,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/histoire", priority: 0.9 },
     { path: "/chronologie", priority: 0.8 },
     { path: "/glossaire", priority: 0.7 },
+    { path: "/soluces", priority: 0.8 },
     { path: "/a-propos", priority: 0.4 },
     { path: "/accessibilite", priority: 0.3 },
     ...CATEGORIES.map((c) => ({ path: `/encyclopedie/${CATEGORY_SLUG[c]}`, priority: 0.8 })),
@@ -28,6 +30,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...games.map((g) => ({ path: `/jeux/${g.slug}`, priority: 0.7 })),
     ...stories.map((s) => ({ path: `/histoire/${s.game}`, priority: 0.7 })),
     ...entries.map((e) => ({ path: `/encyclopedie/${CATEGORY_SLUG[e.category]}/${e.slug}`, priority: 0.6 })),
+    ...walkthroughs.map((w) => ({ path: `/soluces/${w.game}`, priority: 0.7 })),
+    ...walkthroughs.flatMap((w) => writtenSections(w).map((s) => ({ path: `/soluces/${w.game}/${s.id}`, priority: 0.6 }))),
   ];
 
   const lastModified = new Date();

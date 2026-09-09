@@ -9,7 +9,7 @@
     "timeline": "Timeline",
     "encyclopedia": "Encyclopedia",
     "story": "Story",
-    "guides": "Guides",
+    "guides": "Walkthroughs",
     "skip": "Skip to main content",
     "menu": "Main menu",
     "language": "Language",
@@ -383,7 +383,8 @@
       "lead": "Facts (names, stats, dates, appearances) are checked against the community wikis, then rewritten here in our own words. The site's texts are not translations of those sources. Thanks to the volunteers who keep them up to date.",
       "khwiki": "English reference: weapon stats, Japanese names, appearances by game.",
       "frwiki": "Official French names of Keyblades, enemies and worlds.",
-      "khdestiny": "The long-standing French fan site, an inspiration for the layout."
+      "khdestiny": "The long-standing French fan site, an inspiration for the layout.",
+      "enfandom": "Community walkthroughs: routing, order of objectives and treasure locations."
     },
     "legal": {
       "title": "Legal notice",
@@ -420,5 +421,37 @@
       "contentText": "Original texts (entries, summaries, timelines, translations) may be shared and adapted, without commercial use, with attribution and share-alike."
     },
     "a11yLink": "Accessibility and display settings"
+  },
+  "Walkthrough": {
+    "title": "Walkthroughs",
+    "lead": "Guides written to see a game through: the full route, a strategy for every boss, and everything to pick up for 100% completion.",
+    "guide": "Walkthrough",
+    "available": "Available guides",
+    "progress": "{done} of {total} sections written",
+    "planned": "Coming next",
+    "plannedLead": "The other games will follow, in this order of priority.",
+    "gameTitle": "{game} walkthrough",
+    "sectionTitle": "{section} — {game} walkthrough",
+    "breadcrumb": "Breadcrumb",
+    "back": "All walkthroughs",
+    "before": "Before you start",
+    "contents": "Contents",
+    "contentsLead": "Sections follow the order of a normal playthrough. The ones still to be written are marked.",
+    "soon": "Soon",
+    "completion": "What 100% asks for",
+    "completionLead": "Six goals, all connected: the completed Journal contains nearly all the others.",
+    "level": "Suggested level:",
+    "worldEntry": "World entry",
+    "steps": "Steps",
+    "bosses": "Fights",
+    "attacks": "Attacks to know",
+    "reward": "Reward:",
+    "collectibles": "To collect in this section",
+    "collectiblesLead": "None of this is needed to progress: this is the 100% list.",
+    "requires": "Requires:",
+    "missable": "Don't miss",
+    "sectionNav": "Previous and next section",
+    "previous": "Previous section",
+    "next": "Next section"
   }
 }
