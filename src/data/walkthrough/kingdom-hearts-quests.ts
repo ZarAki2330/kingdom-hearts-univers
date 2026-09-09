@@ -213,12 +213,110 @@ export const quests: WalkQuest[] = [
       ),
     },
   },
-  soon(
-    "foret-des-reves-bleus",
-    L("Forêt des Rêves Bleus", "Hundred Acre Wood"),
-    L("Le monde de Winnie l'ourson, ses pages arrachées et ses mini-jeux.", "Winnie the Pooh's world, its torn-out pages and its mini-games."),
-    "hundred-acre-wood",
-  ),
+  {
+    id: "foret-des-reves-bleus",
+    title: L("Forêt des Rêves Bleus", "Hundred Acre Wood"),
+    tagline: L(
+      "Le monde caché dans un livre : cinq pages déchirées, cinq mini-jeux, et une invocation.",
+      "The world hidden inside a book: five torn pages, five mini-games, and a summon.",
+    ),
+    entry: "hundred-acre-wood",
+    status: "done",
+    intro: L(
+      "La Forêt des Rêves Bleus n'est pas un monde comme les autres : c'est un livre, confié par Cid à Merlin, et le monde qu'il contient s'ouvre au fur et à mesure qu'on lui rend ses pages. Entièrement facultatif pour l'histoire, il est en revanche indispensable au 100 % — sceller sa Serrure remplit une section du Journal de Jiminy et fait partie des conditions des fins secrètes.\n\nLe principe est simple : chaque page déchirée trouvée ailleurs dans les mondes ouvre une nouvelle zone du livre, et chaque zone contient un mini-jeu. Terminer le mini-jeu, même en le ratant, donne la récompense de la page et débloque la suivante. Les pages s'ouvrent toujours dans le même ordre, quel que soit l'ordre où on les ramasse.\n\nOn entre dans le livre chez Merlin, à la Ville de Traverse, après lui avoir rapporté le vieux livre — c'est-à-dire au retour des Keyholes du Pays des Merveilles et de la Jungle Profonde.",
+      "The Hundred Acre Wood is not a world like the others: it is a book, handed by Cid to Merlin, and the world inside opens up as you return its pages. Entirely optional for the story, it is nonetheless required for 100% — sealing its Keyhole fills a section of Jiminy's Journal and is part of the secret-ending conditions.\n\nThe principle is simple: each Torn Page found elsewhere opens a new area of the book, and each area holds a mini-game. Finishing the mini-game, even badly, gives that page's reward and unlocks the next. The pages always open in the same order, whatever order you pick them up in.\n\nYou enter the book at Merlin's house in Traverse Town, after returning the old book to him — that is, once the Wonderland and Deep Jungle Keyholes are sealed.",
+    ),
+    tables: [
+      {
+        id: "pages",
+        title: L("Les cinq pages déchirées", "The five Torn Pages"),
+        intro: L(
+          "Elles sont dispersées dans cinq mondes. Rien n'oblige à les ramasser dans cet ordre : c'est le livre qui impose l'ordre des zones.",
+          "They are scattered across five worlds. Nothing forces you to collect them in this order: the book decides the order of its areas.",
+        ),
+        rows: [
+          at("Agrabah", ["Page déchirée", "Torn Page"], ["Salle sombre, sur la plateforme du pont : remontez le courant depuis la salle des reliques.", "Dark Chamber, on the bridge platform: swim upstream from the Relic Chamber."]),
+          at("Monstro", ["Page déchirée", "Torn Page"], ["Sixième cavité, sur la plateforme la plus proche du passage vers la cinquième.", "Chamber 6, on the platform closest to the upper passage to Chamber 5."], ["Saut Haut, ou un tonneau pour prendre de la hauteur", "High Jump, or a barrel for extra height"]),
+          at("Ville de Traverse", ["Page déchirée", "Torn Page"], ["Chez Pongo et Perdita, en récompense des 51 premiers dalmatiens ramenés.", "At Pongo and Perdita's house, as the reward for the first 51 puppies returned."]),
+          at("Atlantica", ["Page déchirée", "Torn Page"], ["Dans un coffre ordinaire, en haut de la grotte d'Ariel.", "In an ordinary chest, at the top of Ariel's Grotto."]),
+          at("Ville d'Halloween", ["Page déchirée", "Torn Page"], ["Au laboratoire : examinez les livres de la bibliothèque.", "In the Research Lab: examine the books in the bookcase."]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "page-1",
+        title: L("Première page : l'Arbre à Miel", "First page: the Hunny Tree"),
+        image: { src: "/images/walkthrough/hunny-hunt.webp", credit: credit("Pooh's Hunny Hunt gameplay.png"), width: 420, height: 236 },
+        text: L(
+          "La zone s'ouvre en haut à droite du livre. Après la scène, faites le tour de l'arbre pour surprendre Porcinet par-derrière, puis parlez à Winnie pour lui proposer votre aide : le mini-jeu commence.\n\nIl s'agit de protéger le ballon de Winnie des abeilles pendant qu'il se sert dans l'arbre. Réussi ou raté, vous recevez l'Orbe de la Nature. Portez-le à la Bonne Fée, à la Ville de Traverse : il devient l'invocation Bambi.\n\nBambi n'attaque pas. Il fait tomber des sphères de magie en continu, de plus en plus vite à mesure que vous tuez des ennemis, puis des objets et des matériaux de synthèse. C'est l'invocation à sortir quand on est à court de magie au milieu d'une horde.\n\nPour l'Ovation, visez 100 léchées ou plus.",
+          "The area opens in the top-right corner of the book. After the cutscene, walk around the tree to surprise Piglet from behind, then talk to Pooh to offer your help: the mini-game starts.\n\nYou have to protect Pooh's balloon from the bees while he helps himself to the honey. Win or lose, you receive the Naturespark. Take it to the Fairy Godmother in Traverse Town: it becomes the Bambi summon.\n\nBambi does not attack. He drops MP orbs continuously, faster as you defeat enemies, then items and synthesis materials. He is the summon to bring out when you run dry in the middle of a crowd.\n\nFor Cheer, aim for 100 licks or more.",
+        ),
+      },
+      {
+        id: "page-2",
+        title: L("Deuxième page : Bloque-Tigrou", "Second page: Block Tigger"),
+        image: { src: "/images/walkthrough/block-tigger.webp", credit: credit("Block Tigger gameplay.png"), width: 420, height: 236 },
+        text: L(
+          "La maison de Coco Lapin, en haut à gauche. Passez sur le côté pour parler à Winnie et Porcinet, puis entrez pour rencontrer Coco Lapin. Aidez Winnie à trouver le miel en examinant les pots cachés sur les racines, près du plafond.\n\nEn voulant repartir, Porcinet vous retient ; parlez à Winnie, Tigrou débarque, et Coco Lapin réclame de l'aide : le mini-jeu consiste à empêcher Tigrou d'écraser les légumes pendant une minute. Ensuite, retournez dans la maison pour en pousser Winnie dehors — vous recevez un éclat de mithril.\n\nLe mini-jeu se rejoue autant qu'on veut. Pour l'Ovation, il faut 150 points ou plus.",
+          "Rabbit's house, top-left. Go around the side to talk to Pooh and Piglet, then step in to meet Rabbit. Help Pooh find the honey by examining the pots hidden on the roots near the ceiling.\n\nAs you try to leave, Piglet stops you; talk to Pooh, Tigger shows up, and Rabbit asks for help: the mini-game is about keeping Tigger off the vegetables for a minute. Then go back into the house to push Pooh out — you receive a Mythril Shard.\n\nThe mini-game can be replayed as often as you like. Cheer needs a score of 150 or more.",
+        ),
+      },
+      {
+        id: "page-3",
+        title: L("Troisième page : la balançoire", "Third page: Pooh's Swing"),
+        image: { src: "/images/walkthrough/pooh-swing.webp", credit: credit("Pooh's Swing gameplay.png"), width: 420, height: 236 },
+        text: L(
+          "L'arbre à balançoire, en bas à droite. Commencez par repêcher Bourriquet en sautant dans la rivière à côté de lui. Ensuite, verrouillez Winnie pour qu'il vous suive et menez-le en haut de la colline : le mini-jeu se lance. Évitez les pots de miel en chemin, ils le distraient.\n\nIl faut envoyer Winnie assez loin pour qu'il décroche la queue de Bourriquet. Appuyez au bon moment pour accélérer la balançoire : au moment où Maître Hibou abaisse les ailes pour la distance maximale, au moment où elles sont au plus haut pour la hauteur qui décroche la queue. Vingt à trente mètres suffisent pour avancer.\n\nRécompense : la magie Stop améliorée (Stopra), qui élargit la zone touchée sans allonger la durée du gel. Pour l'Ovation, il faut atteindre 40 mètres.",
+          "The swinging tree, bottom-right. Start by fishing Eeyore out of the river by jumping in next to him. Then lock on to Pooh so he follows you and lead him to the top of the hill: the mini-game starts. Avoid the honey pots on the way, they distract him.\n\nYou need to send Pooh far enough to knock down Eeyore's tail. Press at the right moment to speed the swing up: as Owl lowers his wings for maximum distance, as they reach their highest for the height that knocks the tail down. Twenty to thirty metres is enough to move on.\n\nReward: the upgraded Stop spell (Stopra), which widens the area without lengthening the freeze. Cheer needs 40 metres.",
+        ),
+      },
+      {
+        id: "page-4",
+        title: L("Quatrième page : le pot de Tigrou et les noix rares", "Fourth page: Tigger's Giant Pot and the Rare Nuts"),
+        image: { src: "/images/walkthrough/giant-pot.webp", credit: credit("Tigger's Giant Pot gameplay.png"), width: 420, height: 236 },
+        text: L(
+          "La zone centrale du livre. Parlez d'abord à Tigrou et Petit Gourou pour les rebonds : il suffit de les suivre de souche en souche, en trois manches de plus en plus longues. Le Saut Haut est désactivé, mais on s'en passe. À la troisième manche, servez-vous de la bascule pour atteindre la branche du haut.\n\nParlez ensuite à Petit Gourou pour le vrai mini-jeu : renvoyer les noix que Tigrou fait sortir du pot, jusqu'à le briser, sans jamais quitter la souche. Frapper une noix le plus tôt possible rapporte davantage. Tomber sans avoir touché de noix oblige à recommencer. Le pot brisé, un boost de compétence attend dans la souche ; sortir de la zone donne un mithril.\n\nC'est aussi ici que se trouvent les cinq noix rares : reparlez à Tigrou pour remettre la bascule en place, faites-vous propulser dans les arbres, et rapportez les noix une par une à Maître Hibou — on n'en porte qu'une à la fois. Elles rapportent un boost de défense, un boost de force, un second boost de compétence et un Orichalque.\n\nPour l'Ovation, il faut casser le pot en moins de trente secondes.",
+          "The central area of the book. First talk to Tigger and Roo for the bouncing: just follow them from stump to stump, in three increasingly long rounds. High Jump is disabled, but you can manage without. On the third round, use the seesaw to reach the upper branch.\n\nThen talk to Roo for the real mini-game: hit back the nuts Tigger throws out of the pot until it breaks, without ever leaving your stump. Hitting a nut as early as possible scores more. Falling off before hitting one means starting over. Once the pot is broken, an AP Up waits inside the stump; leaving the area gives a Mythril.\n\nThis is also where the five Rare Nuts are: talk to Tigger again to set the seesaw back up, get launched into the treetops, and bring the nuts to Owl one at a time — you can only carry one. They are worth a Defense Up, a Power Up, a second AP Up and an Orichalcum.\n\nFor Cheer, break the pot in under thirty seconds.",
+        ),
+      },
+      {
+        id: "page-5",
+        title: L("Cinquième page : le chemin boueux, et la Serrure", "Fifth page: the Muddy Path, and the Keyhole"),
+        image: { src: "/images/walkthrough/muddy-path.webp", credit: credit("Pooh's Muddy Path gameplay.png"), width: 420, height: 236 },
+        text: L(
+          "Dernière zone, en bas à gauche. Parlez à Winnie pour l'aider à retrouver ses amis, tous dispersés aux alentours. Verrouillez-le pour qu'il vous suive, contournez le grand buisson et examinez les petites branches : Bourriquet apparaît, et le chronomètre démarre.\n\nIl faut ramener tout le monde auprès de Bourriquet en parlant à chacun. Le seul passage délicat est Porcinet : il faut d'abord amener Winnie en haut de la colline, là où vole Maître Hibou, pour le rassurer.\n\nLa page devient un Anneau d'expérience dans Final Mix (un Orichalque dans la version d'origine), Sora quitte le livre et la Serrure se scelle. Le monde reste accessible ensuite : tous les mini-jeux se rejouent.\n\nPour l'Ovation, il faut avoir retrouvé tout le monde en moins de cinq minutes.",
+          "Last area, bottom-left. Talk to Pooh to help him find his friends, all scattered nearby. Lock on so he follows you, walk around the large bush and examine the smaller branches: Eeyore appears, and the clock starts.\n\nYou have to bring everyone back to Eeyore by talking to them. The only tricky one is Piglet: you first need to get Pooh to the top of the hill, where Owl is flying, to calm him down.\n\nThe page becomes an EXP Ring in Final Mix (an Orichalcum in the original), Sora leaves the book and the Keyhole is sealed. The world stays open afterwards: every mini-game can be replayed.\n\nFor Cheer, find everyone in under five minutes.",
+        ),
+      },
+      {
+        id: "ovation",
+        title: L("L'Ovation, la vraie récompense", "Cheer, the real reward"),
+        text: L(
+          "Une fois la Serrure scellée, retournez chez Winnie et parlez à Maître Hibou. S'il vous remercie pour les cinq mini-jeux, il donne l'Ovation : la capacité qui augmente la jauge de résistance des invocations. Sinon, il ne vous remercie que pour ceux qui sont au niveau — les autres sont à rejouer.\n\nLes scores demandés sont dans le tableau ci-dessous. Aucun n'est difficile, mais aucun ne s'obtient par hasard : il vaut mieux viser le score dès la première tentative que revenir en fin de partie.",
+          "Once the Keyhole is sealed, go back to Pooh's house and talk to Owl. If he thanks you for all five mini-games, he gives you Cheer: the ability that boosts summons' endurance gauge. Otherwise he only thanks you for the ones that met the mark — the rest have to be replayed.\n\nThe required scores are in the table below. None is hard, but none happens by accident: better to aim for the score on the first run than to come back at the end of the game.",
+        ),
+      },
+    ],
+    rewards: {
+      tierHeader: L("Mini-jeu", "Mini-game"),
+      intro: L(
+        "Ce que chaque page rapporte, et le score à atteindre pour l'Ovation.",
+        "What each page is worth, and the score needed for Cheer.",
+      ),
+      rows: [
+        { tier: L("L'Arbre à Miel", "Pooh's Hunny Hunt"), reward: L("Orbe de la Nature, à échanger contre l'invocation Bambi — Ovation : 100 léchées", "Naturespark, traded for the Bambi summon — Cheer: 100 licks") },
+        { tier: L("Bloque-Tigrou", "Block Tigger"), reward: L("Éclat de mithril — Ovation : 150 points", "Mythril Shard — Cheer: 150 points") },
+        { tier: L("La balançoire", "Pooh's Swing"), reward: L("Stop amélioré (Stopra) — Ovation : 40 mètres", "Stopra — Cheer: 40 metres") },
+        { tier: L("Le pot de Tigrou", "Tigger's Giant Pot"), reward: L("Mithril, boost de compétence, puis boost de défense, boost de force, second boost de compétence et Orichalque contre les cinq noix rares — Ovation : moins de 30 secondes", "Mythril, an AP Up, then a Defense Up, a Power Up, a second AP Up and an Orichalcum for the five Rare Nuts — Cheer: under 30 seconds") },
+        { tier: L("Le chemin boueux", "Pooh's Muddy Path"), reward: L("Anneau d'expérience (Orichalque dans la version d'origine) — Ovation : moins de 5 minutes", "EXP Ring (Orichalcum in the original) — Cheer: under 5 minutes") },
+      ],
+      note: L(
+        "Les cinq scores réunis débloquent l'Ovation auprès de Maître Hibou. Sceller la Serrure du livre remplit la section du monde dans le Journal de Jiminy et compte pour les fins secrètes.",
+        "All five scores together unlock Cheer from Owl. Sealing the book's Keyhole fills the world's section in Jiminy's Journal and counts towards the secret endings.",
+      ),
+    },
+  },
   soon(
     "cartes-postales",
     L("Les cartes postales", "The postcards"),

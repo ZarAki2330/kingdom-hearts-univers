@@ -93,19 +93,6 @@ export default async function QuestPage({ params }: Props) {
           </p>
         ))}
 
-      {(quest.steps ?? []).map((s) => (
-        <section key={s.id} id={s.id} aria-labelledby={`h-${s.id}`} className="mt-10 scroll-mt-24">
-          <h2 id={`h-${s.id}`} className="text-2xl font-bold">
-            {localized(s.title, locale)}
-          </h2>
-          {paragraphs(localized(s.text, locale)).map((p, j) => (
-            <p key={j} className="prose-max mt-4 leading-relaxed">
-              {p}
-            </p>
-          ))}
-        </section>
-      ))}
-
       {(quest.tables ?? []).map((table) => (
         <section key={table.id} aria-labelledby={`t-${table.id}`} className="mt-12">
           <h2 id={`t-${table.id}`} className="text-2xl font-bold">
@@ -146,6 +133,38 @@ export default async function QuestPage({ params }: Props) {
                 ))}
               </tbody>
             </table>
+          </div>
+        </section>
+      ))}
+
+      {(quest.steps ?? []).map((s) => (
+        <section key={s.id} id={s.id} aria-labelledby={`h-${s.id}`} className="mt-10 scroll-mt-24">
+          <h2 id={`h-${s.id}`} className="text-2xl font-bold">
+            {localized(s.title, locale)}
+          </h2>
+          {/* L'illustration est posée à droite du texte sur grand écran, au-dessus sur mobile :
+              une capture vaut mieux qu'un paragraphe pour situer un mini-jeu. */}
+          <div className={s.image ? "mt-4 grid gap-5 lg:grid-cols-[1fr_360px] lg:items-start" : ""}>
+            <div>
+              {paragraphs(localized(s.text, locale)).map((p, j) => (
+                <p key={j} className="prose-max mt-4 leading-relaxed first:mt-0">
+                  {p}
+                </p>
+              ))}
+            </div>
+            {s.image && (
+              <figure className="lg:sticky lg:top-24">
+                <Image
+                  src={s.image.src}
+                  alt=""
+                  width={s.image.width}
+                  height={s.image.height}
+                  sizes="(min-width: 1024px) 360px, 100vw"
+                  className="w-full rounded-lg border border-line"
+                />
+                <figcaption className="mt-1.5 text-xs text-text-2">{s.image.credit}</figcaption>
+              </figure>
+            )}
           </div>
         </section>
       ))}
