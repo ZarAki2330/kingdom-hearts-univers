@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/histoire", priority: 0.9 },
     { path: "/chronologie", priority: 0.8 },
     { path: "/glossaire", priority: 0.7 },
+    { path: "/a-propos", priority: 0.4 },
     { path: "/accessibilite", priority: 0.3 },
     ...CATEGORIES.map((c) => ({ path: `/encyclopedie/${CATEGORY_SLUG[c]}`, priority: 0.8 })),
   ];

@@ -115,6 +115,7 @@
   },
   "Footer": {
     "about": "Kingdom Hearts Univers è un sito di fan senza alcun legame con Square Enix o Disney. Kingdom Hearts è un marchio di Square Enix Co., Ltd. e Disney.",
+    "legal": "Informazioni e note legali",
     "sources": "Fonti e ringraziamenti",
     "accessibility": "Accessibilità",
     "images": "Copertine, loghi e illustrazioni © Square Enix / Disney, riprodotti a scopo illustrativo; rimossi su richiesta di un titolare dei diritti."
@@ -354,5 +355,70 @@
     "zoom": "Ingrandisci l'immagine",
     "zoomOf": "Ingrandisci l'immagine: {name}",
     "close": "Chiudi"
+  },
+  "About": {
+    "title": "Informazioni",
+    "lead": "Un sito di fan, scritto a mano, senza pubblicità né tracciatori, che riunisce in un solo posto ciò che la saga di Kingdom Hearts ha disperso in vent'anni e una quindicina di giochi.",
+    "project": "Il progetto",
+    "projectText": "Kingdom Hearts Univers nasce da una constatazione: gran parte della documentazione sulla saga è in inglese, e ciò che esiste in francese è spesso parziale o sparso. Questo sito riunisce i giochi, i personaggi, i mondi, i Keyblade, la storia di ogni capitolo e le cronologie, in una forma pensata per essere letta dall'inizio alla fine.\n\nTutto è scritto e verificato a mano, gioco per gioco, incrociando le fonti elencate più sotto. Il sito è un progetto personale, volontario e senza scopo di lucro: nessuna pubblicità, nessun tracciatore, niente in vendita.\n\nÈ inoltre costruito per essere utilizzabile da tutti: navigazione completa da tastiera, contrasti verificati, impostazioni di visualizzazione e contenuti che compaiono anche senza JavaScript.",
+    "figures": {
+      "title": "Cosa contiene il sito",
+      "entries": "schede enciclopediche",
+      "games": "giochi trattati",
+      "stories": "trame riassunte",
+      "events": "eventi datati",
+      "terms": "voci di glossario",
+      "locales": "lingue",
+      "detail": "Nel dettaglio: {detail}.",
+      "categories": {
+        "characters": "personaggi",
+        "enemies": "nemici",
+        "worlds": "mondi",
+        "keyblades": "Keyblade",
+        "concepts": "concetti"
+      }
+    },
+    "sources": {
+      "title": "Fonti e ringraziamenti",
+      "lead": "I dati (nomi, statistiche, date, apparizioni) sono verificati sui wiki della comunità e riscritti qui con parole nostre. I testi del sito non sono traduzioni di quelle fonti. Grazie a chi le tiene aggiornate.",
+      "khwiki": "Riferimento in inglese: statistiche delle armi, nomi giapponesi, apparizioni per gioco.",
+      "frwiki": "Nomi francesi ufficiali di Keyblade, nemici e mondi.",
+      "khdestiny": "Storico sito francofono, fonte d'ispirazione per l'impaginazione."
+    },
+    "legal": {
+      "title": "Note legali",
+      "publisher": {
+        "title": "Editore",
+        "text": "Sito personale curato da ZarAki2330, a titolo volontario e non commerciale. Contatto e avanzamento del progetto:"
+      },
+      "host": {
+        "title": "Hosting",
+        "text": "Vercel Inc. (Stati Uniti) —"
+      },
+      "contact": {
+        "title": "Contatto",
+        "text": "Osservazioni, correzioni e richieste — comprese le richieste di rimozione da parte di un titolare dei diritti — possono essere inviate tramite le issue del repository del progetto:"
+      },
+      "trademarks": {
+        "title": "Marchi",
+        "text": "Kingdom Hearts è un marchio di Square Enix Co., Ltd. e di The Walt Disney Company. Questo sito è indipendente, non ufficiale, e non è affiliato a tali società né da esse approvato o sponsorizzato."
+      },
+      "images": {
+        "title": "Immagini",
+        "text": "Copertine, loghi e illustrazioni restano di proprietà dei rispettivi titolari (Square Enix, Disney) e sono riprodotti qui a scopo illustrativo, documentario e non commerciale. Ogni immagine indica la propria fonte nella scheda in cui compare. Qualsiasi immagine viene rimossa senza discussione su richiesta di un titolare dei diritti."
+      },
+      "privacy": {
+        "title": "Dati personali",
+        "text": "Il sito non usa cookie, non impiega strumenti di analisi e non raccoglie alcun dato personale. Le uniche impostazioni conservate (tema, contrasto, animazioni, dimensione del testo) restano nel tuo browser, sul tuo dispositivo, e non vengono mai trasmesse."
+      }
+    },
+    "licences": {
+      "title": "Licenze",
+      "code": "Il codice",
+      "codeText": "Il codice sorgente del sito è aperto e riutilizzabile, anche commercialmente, con licenza MIT.",
+      "content": "I testi",
+      "contentText": "I testi originali (schede, riassunti, cronologie, traduzioni) possono essere condivisi e adattati, senza uso commerciale, con attribuzione e condivisione allo stesso modo."
+    },
+    "a11yLink": "Accessibilità e impostazioni di visualizzazione"
   }
 }

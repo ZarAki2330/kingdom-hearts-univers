@@ -118,12 +118,12 @@ Le site doit être utilisable par tous
 - [ ] Tests lecteur d'écran (NVDA) sur les pages clés
 - [x] Performance Lighthouse ≥ 95, SEO, sitemap, Open Graph — _Lighthouse ordinateur : perf 95, accessibilité 100, bonnes pratiques 100, SEO 100 en moyenne sur 6 pages. Sitemap (4 296 URL avec hreflang), robots.txt, manifeste, favicon et icônes, image de partage 1200×630, canonical et Open Graph sur toutes les pages. Listes de l'encyclopédie et des jeux rendues côté serveur (cartes dans le HTML), polices via next/font (décalage de mise en page ramené de 0,32 à 0), plus de redirection selon la langue du navigateur_
 
-## VIII. Lancement — 0/3
+## VIII. Lancement — 1/3
 
 Devenir LA référence
 
 - [ ] Nom de domaine et hébergement définitif
-- [ ] Page À propos, mentions légales, crédits (Square Enix/Disney)
+- [x] Page À propos, mentions légales, crédits (Square Enix/Disney)
 - [ ] Contributions communautaires (issues, formulaire)
 
 ## IX. Édition et confort de lecture — 2/3

@@ -115,6 +115,7 @@
   },
   "Footer": {
     "about": "Kingdom Hearts Univers is a fan site with no affiliation to Square Enix or Disney. Kingdom Hearts is a trademark of Square Enix Co., Ltd. and Disney.",
+    "legal": "About and legal notice",
     "sources": "Sources and credits",
     "accessibility": "Accessibility",
     "images": "Box art, logos and artwork © Square Enix / Disney, reproduced for illustrative purposes; removed on request of a rights holder."
@@ -354,5 +355,70 @@
     "zoom": "Enlarge the image",
     "zoomOf": "Enlarge the image: {name}",
     "close": "Close"
+  },
+  "About": {
+    "title": "About",
+    "lead": "A hand-written fan site, with no ads and no trackers, gathering in one place what the Kingdom Hearts saga has scattered over twenty years and some fifteen games.",
+    "project": "The project",
+    "projectText": "Kingdom Hearts Univers started from a simple observation: most documentation on the saga is in English, and what exists in French is often partial or scattered. This site brings together the games, characters, worlds, Keyblades, the story of each entry and the timelines, in a form meant to be read from beginning to end.\n\nEverything is written and checked by hand, game by game, cross-referencing the sources listed below. The site is a personal, volunteer, non-profit project: no advertising, no trackers, nothing for sale.\n\nIt is also built to be usable by everyone: full keyboard navigation, checked contrast, display settings, and content that shows up even without JavaScript.",
+    "figures": {
+      "title": "What the site holds",
+      "entries": "encyclopedia entries",
+      "games": "games covered",
+      "stories": "story summaries",
+      "events": "dated events",
+      "terms": "glossary terms",
+      "locales": "languages",
+      "detail": "In detail: {detail}.",
+      "categories": {
+        "characters": "characters",
+        "enemies": "enemies",
+        "worlds": "worlds",
+        "keyblades": "Keyblades",
+        "concepts": "concepts"
+      }
+    },
+    "sources": {
+      "title": "Sources and thanks",
+      "lead": "Facts (names, stats, dates, appearances) are checked against the community wikis, then rewritten here in our own words. The site's texts are not translations of those sources. Thanks to the volunteers who keep them up to date.",
+      "khwiki": "English reference: weapon stats, Japanese names, appearances by game.",
+      "frwiki": "Official French names of Keyblades, enemies and worlds.",
+      "khdestiny": "The long-standing French fan site, an inspiration for the layout."
+    },
+    "legal": {
+      "title": "Legal notice",
+      "publisher": {
+        "title": "Publisher",
+        "text": "Personal site published by ZarAki2330 on a voluntary, non-commercial basis. Contact and project tracking:"
+      },
+      "host": {
+        "title": "Host",
+        "text": "Vercel Inc. (United States) —"
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "Any remark, correction or request — including a takedown request from a rights holder — can be sent through the project repository's issues:"
+      },
+      "trademarks": {
+        "title": "Trademarks",
+        "text": "Kingdom Hearts is a trademark of Square Enix Co., Ltd. and The Walt Disney Company. This site is independent and unofficial, and is neither affiliated with, endorsed by, nor sponsored by those companies."
+      },
+      "images": {
+        "title": "Images",
+        "text": "Box art, logos and artwork remain the property of their rights holders (Square Enix, Disney) and are reproduced here for illustration, for documentary and non-commercial purposes. Every visual credits its source on the entry where it appears. Any visual is removed without discussion at a rights holder's request."
+      },
+      "privacy": {
+        "title": "Personal data",
+        "text": "The site sets no cookies, uses no analytics and collects no personal data. The only settings kept (theme, contrast, motion, text size) stay in your browser, on your device, and are never transmitted."
+      }
+    },
+    "licences": {
+      "title": "Licences",
+      "code": "The code",
+      "codeText": "The site's source code is open and reusable, including commercially, under the MIT licence.",
+      "content": "The texts",
+      "contentText": "Original texts (entries, summaries, timelines, translations) may be shared and adapted, without commercial use, with attribution and share-alike."
+    },
+    "a11yLink": "Accessibility and display settings"
   }
 }
