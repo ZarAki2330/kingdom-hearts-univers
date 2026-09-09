@@ -1033,7 +1033,8 @@ export const moreKeyblades: KeybladeEntry[] = [
   {
     slug: "unbound",
     category: "keyblades",
-    name: "Unbound",
+    name: "L'Illustre",
+    names: { en: "Unbound" },
     accent: "#e0d0a0",
     tagline: L("La Keyblade de la maîtrise des Esprits.", "The Keyblade of Spirit mastery."),
     description: L(

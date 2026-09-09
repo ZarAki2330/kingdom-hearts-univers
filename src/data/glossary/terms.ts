@@ -449,7 +449,7 @@ export const terms: GlossaryTerm[] = [
   },
   {
     id: "keyblade-des-coeurs",
-    term: L("Keyblade des Cœurs", "Keyblade of People's Hearts"),
+    term: L("Keyblade de Cœur", "Keyblade of People's Hearts"),
     en: "Keyblade of People's Hearts",
     category: "weapon",
     short: L(
@@ -721,7 +721,7 @@ export const terms: GlossaryTerm[] = [
       "Seven maidens whose hearts hold no trace of darkness and whose gathering opens a path to Kingdom Hearts.",
     ),
     text: L(
-      "Les Princesses de Cœur sont Blanche-Neige, Cendrillon, Aurore, Belle, Jasmine, Alice et Kairi. Leur particularité n’est pas d’être des princesses Disney mais de posséder un cœur de pure lumière, sans la moindre part de ténèbres — ce qui les rend à la fois précieuses et vulnérables, puisqu’elles ne peuvent pas devenir des Sans-cœur mais attirent ceux-ci en masse.\n\nDans le premier jeu, Maléfique les enlève une à une pour former la Serrure Ultime, le passage vers Kingdom Hearts, et Xehanort forge avec leurs cœurs la Keyblade des Cœurs. Elles sont ensuite écartées du conflit : Yen Sid renonce à en faire les sept gardiens de la lumière parce que leur pureté même les empêche de se battre. Kingdom Hearts III leur redonne une place discrète en révélant l’existence de nouvelles porteuses de cette lumière.",
+      "Les Princesses de Cœur sont Blanche-Neige, Cendrillon, Aurore, Belle, Jasmine, Alice et Kairi. Leur particularité n’est pas d’être des princesses Disney mais de posséder un cœur de pure lumière, sans la moindre part de ténèbres — ce qui les rend à la fois précieuses et vulnérables, puisqu’elles ne peuvent pas devenir des Sans-cœur mais attirent ceux-ci en masse.\n\nDans le premier jeu, Maléfique les enlève une à une pour former la Serrure Ultime, le passage vers Kingdom Hearts, et Xehanort forge avec leurs cœurs la Keyblade de Cœur. Elles sont ensuite écartées du conflit : Yen Sid renonce à en faire les sept gardiens de la lumière parce que leur pureté même les empêche de se battre. Kingdom Hearts III leur redonne une place discrète en révélant l’existence de nouvelles porteuses de cette lumière.",
       "The Princesses of Heart are Snow White, Cinderella, Aurora, Belle, Jasmine, Alice and Kairi. What sets them apart is not being Disney princesses but holding hearts of pure light with no trace of darkness — which makes them both precious and vulnerable, since they cannot become Heartless yet draw them in droves.\n\nIn the first game Maleficent abducts them one by one to form the Final Keyhole, the path to Kingdom Hearts, and Xehanort forges the Keyblade of People's Hearts from their hearts. They are then set aside from the conflict: Yen Sid gives up on making them the seven guardians of light because their very purity keeps them from fighting. Kingdom Hearts III gives them a quiet role again by revealing new bearers of that same light.",
     ),
     entry: "princesses-of-heart",

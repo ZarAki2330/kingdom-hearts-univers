@@ -286,10 +286,10 @@ export const keyblades: KeybladeEntry[] = [
     accent: "#b8722a",
     tagline: L("Les Keyblades de Terra, massives comme lui.", "Terra's Keyblades, as massive as he is."),
     description: L(
-      "Trembleterre est la Keyblade de départ de Terra ; Confins de la Terre, sa forme finale obtenue après le Nécropole des Keyblades. Toutes deux privilégient la force brute. Terra-Xehanort continue de la manier, et c'est la Keyblade que la Volonté Persistante utilise contre Sora.",
+      "Trembleterre est la Keyblade de départ de Terra ; Terres condamnées, sa forme finale obtenue après le Nécropole des Keyblades. Toutes deux privilégient la force brute. Terra-Xehanort continue de la manier, et c'est la Keyblade que la Volonté Persistante utilise contre Sora.",
       "Earthshaker is Terra's starting Keyblade; Ends of the Earth, its final form obtained after the Keyblade Graveyard. Both favour raw strength. Terra-Xehanort keeps wielding it, and it is the Keyblade the Lingering Will uses against Sora.",
     ),
-    obtained: { "birth-by-sleep": L("Keyblade de départ de Terra ; Confins de la Terre après la bataille finale.", "Terra's starting Keyblade; Ends of the Earth after the final battle.") },
+    obtained: { "birth-by-sleep": L("Keyblade de départ de Terra ; Terres condamnées après la bataille finale.", "Terra's starting Keyblade; Ends of the Earth after the final battle.") },
     appearances: ["birth-by-sleep", "kingdom-hearts-ii", "kingdom-hearts-iii"],
     debut: "birth-by-sleep",
     relations: [{ slug: "terra", label: L("Porteur", "Wielder") }],

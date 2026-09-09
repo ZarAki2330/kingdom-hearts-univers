@@ -5,7 +5,7 @@ const L = (fr: string, en: string): LocalizedText => ({ fr, en });
 /**
  * Keyblades complémentaires (suite) : variantes de Gear restantes de 358/2 Days,
  * Keyblades personnelles de Terra et d'Aqua dans Birth by Sleep, exclusivités d'Union χ
- * et objets de légende (Keyblade des Cœurs, Keyblade de bois).
+ * et objets de légende (Keyblade de Cœur, Keyblade de bois).
  * Aucune statistique n'est indiquée : les valeurs de Days et de Birth by Sleep dépendent du panneau ou du niveau.
  */
 export const moreKeyblades2: KeybladeEntry[] = [
@@ -238,7 +238,7 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "ends-of-the-earth",
     category: "keyblades",
-    name: "Confins de la Terre",
+    name: "Terres condamnées",
     names: { en: "Ends of the Earth" },
     accent: "#8a5a30",
     tagline: L("La Keyblade que Terra reçoit d'Eraqus, chargée de son héritage.", "The Keyblade Terra receives from Eraqus, heavy with his legacy."),
@@ -293,13 +293,13 @@ export const moreKeyblades2: KeybladeEntry[] = [
   {
     slug: "keyblade-of-heart",
     category: "keyblades",
-    name: "Keyblade des Cœurs",
+    name: "Keyblade de Cœur",
     names: { en: "Keyblade of People's Hearts" },
     aliases: ["Keyblade des cœurs des hommes", "Dark Keyblade"],
     accent: "#3a1a4a",
     tagline: L("La Keyblade forgée avec les cœurs des Princesses, capable d'ouvrir la serrure ultime.", "The Keyblade forged from the Princesses' hearts, able to open the final keyhole."),
     description: L(
-      "La Keyblade des Cœurs est une arme artificielle que Maleficent et Ansem forgent à la Forteresse Oubliée dans Kingdom Hearts en réunissant les cœurs de six Princesses de cœur. Noire et rouge, ornée d'un cœur en porte-clés, elle sert à déverrouiller les cœurs, non les serrures des mondes.\n\nRiku, possédé par Ansem, la manie contre Sora ; celui-ci s'en transperce ensuite lui-même pour libérer le cœur de Kairi, ce qui le transforme en Sans-cœur et donne naissance à Roxas et Naminé. La Keyblade se brise alors et disparaît.",
+      "La Keyblade de Cœur est une arme artificielle que Maleficent et Ansem forgent à la Forteresse Oubliée dans Kingdom Hearts en réunissant les cœurs de six Princesses de cœur. Noire et rouge, ornée d'un cœur en porte-clés, elle sert à déverrouiller les cœurs, non les serrures des mondes.\n\nRiku, possédé par Ansem, la manie contre Sora ; celui-ci s'en transperce ensuite lui-même pour libérer le cœur de Kairi, ce qui le transforme en Sans-cœur et donne naissance à Roxas et Naminé. La Keyblade se brise alors et disparaît.",
       "The Keyblade of People's Hearts is an artificial weapon Maleficent and Ansem forge in Hollow Bastion in Kingdom Hearts by gathering the hearts of six Princesses of Heart. Black and red, with a heart-shaped keychain, it unlocks hearts rather than the worlds' keyholes.\n\nRiku, possessed by Ansem, wields it against Sora; Sora then turns it on himself to free Kairi's heart, which turns him into a Heartless and gives rise to Roxas and Naminé. The Keyblade shatters and vanishes in the process.",
     ),
     appearances: ["kingdom-hearts", "chain-of-memories"],

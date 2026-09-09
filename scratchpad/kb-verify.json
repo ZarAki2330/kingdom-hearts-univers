@@ -1,0 +1,45 @@
+{
+ "bad": [
+  [
+   "unbound",
+   "Unbound",
+   "L'Illustre",
+   "Unbound",
+   "L'Illustre"
+  ],
+  [
+   "ends-of-the-earth",
+   "Confins de la Terre",
+   "Terres condamnées",
+   "Ends of the Earth",
+   "Terres condamnées"
+  ]
+ ],
+ "miss": [
+  [
+   "kingdom-key-xion",
+   "Chaîne Royale (Xion)",
+   "Kingdom Key (Xion)"
+  ],
+  [
+   "gull-wing",
+   "Albatros",
+   "Gull Wing"
+  ],
+  [
+   "wishing-lamp",
+   "Lampe Merveilleuse",
+   "Wishing Lamp"
+  ],
+  [
+   "zero-one",
+   "Binaire",
+   "Zero/One"
+  ],
+  [
+   "keyblade-of-heart",
+   "Keyblade des Cœurs",
+   "Keyblade of People's Hearts"
+  ]
+ ]
+}
