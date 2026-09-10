@@ -115,16 +115,6 @@ const trinityDetect: WalkPlace[] = [
   at("Forteresse Oubliée", ["Foudraga-G", "Thundaga-G"], ["Aux chutes ascendantes, dans le bassin peu profond où l'on retrouve Riku.", "At the Rising Falls, in the shallow pool where you meet Riku."]),
 ];
 
-/** Quête annoncée mais pas encore rédigée. */
-const soon = (id: string, title: LocalizedText, tagline: LocalizedText, entry?: string, image?: WalkQuest["image"]): WalkQuest => ({
-  id,
-  title,
-  tagline,
-  entry,
-  image,
-  status: "todo",
-});
-
 export const quests: WalkQuest[] = [
   {
     id: "99-dalmatiens",
@@ -645,6 +635,7 @@ export const quests: WalkQuest[] = [
       "Four mushrooms that do not fight like the rest, and pay very well.",
     ),
     entry: "white-mushroom",
+    image: { src: "/images/walkthrough/truffe-art.webp", credit: credit("Rare Truffle (Art) KH.png"), width: 243, height: 420 },
     status: "done",
     intro: L(
       "Quatre Sans-cœur du premier Kingdom Hearts ne s'affrontent pas : ils se **satisfont**. Chacun attend quelque chose de précis, et récompense qui le comprend par des matériaux de synthèse rares — dont trois des cinq ingrédients les plus difficiles de l'Ultima.\n\nIls apparaissent au hasard, à la place d'un groupe de Sans-cœur ordinaire, dans une poignée de zones seulement. Sortir de la zone et y revenir relance le tirage : c'est la seule façon de les faire apparaître.\n\nIls comptent tous pour le Journal de Jiminy, qui demande de rencontrer chaque espèce au moins une fois.",
@@ -653,6 +644,7 @@ export const quests: WalkQuest[] = [
     steps: [
       {
         id: "bolet-blanc",
+        image: { src: "/images/walkthrough/champignons.webp", credit: credit("White Mushroom (Art) KH.png"), width: 240, height: 420 },
         title: L("Le Bolet Blanc : sept mimes, sept sorts", "The White Mushroom: seven mimes, seven spells"),
         text: L(
           "Le Bolet Blanc ne vous attaquera **jamais**. Il prend une pose, et attend le sort correspondant. Trois bons sorts d'affilée et il saute de joie avant de disparaître, en laissant une pluie de sphères de magie et des matériaux. Un mauvais sort, un coup de Keyblade, ou trop d'hésitation, et il s'en va.\n\nLes sept poses :\n\n- Il **baisse la tête, joint les mains et tremble** → Brasier\n- Il **se cambre en arrière en agitant les bras** → Glacier\n- Une **lumière apparaît au-dessus de lui** → Foudre\n- Il **tombe en avant et reste allongé** → Soin (mettez-vous à côté et choisissez « au contact »)\n- Il **flotte dans les airs** → Gravité\n- Il **se fige en plein pas** → Stop\n- Il **tourne sur lui-même** → Rafale\n\nQuand il se déhanche, marche, ou porte la main à son menton, il ne demande rien : ne lancez rien.\n\nL'astuce qui compte : **attendez la pose qui vous intéresse** et lancez trois fois le même sort. Vous recevez alors le **Brevet** correspondant. Les sept Brevets montrés à Merlin donnent la **Targe des Rêves** à Dingo. Trois fois le même sort donne aussi 40 % de chances d'obtenir le Roc de l'élément, et 20 % une Larme de Joie.\n\nOn le trouve à la Jungle Profonde (campement et cabane), à la Ville d'Halloween (cimetière), à Atlantica (épaves et grotte), à Agrabah (salle du trésor), au Pays des Merveilles (forêt de lotus), à la Fin du Monde (croisée des mondes), et à la Ville de Traverse (chambre rouge) — mais seulement avant la première visite à la Forteresse Oubliée.",
@@ -661,6 +653,7 @@ export const quests: WalkQuest[] = [
       },
       {
         id: "truffe-bleue",
+        image: { src: "/images/encyclopedia/enemies/rare-truffle.webp", credit: credit("Rare_Truffle_KH.png"), width: 92, height: 187 },
         title: L("La Truffe Bleue : cent rebonds", "The Rare Truffle: a hundred bounces"),
         text: L(
           "Jaune et bleue, la Truffe Bleue ne demande qu'une chose : **rester en l'air**. Chaque coup la fait rebondir ; **dès qu'elle retouche le sol, elle s'en va**. Le compteur monte jusqu'à cent.\n\nLa méthode fiable ne passe pas par la Keyblade : **coincez-la dans un angle et lancez Rafale**. Le vent autour de Sora la propulse, et tant qu'elle retombe dedans elle rebondit toute seule — il suffit de rester dessous et de relancer le sort quand il s'épuise. C'est le seul moyen raisonnable d'atteindre cent.\n\nLe meilleur endroit est le **cinquième match de la coupe d'Hercule**, où elle apparaît seule dans une arène fermée, sans rien pour la déranger.\n\nAu Pays Imaginaire, une autre méthode marche : sur le pont du navire, où l'on vole, on peut la frapper à un rythme régulier sans avoir à sauter — équipez l'Aimant à trésors pour que les objets ne tombent pas à la mer, et démarrez loin des mâts.\n\nLes paliers : **10 rebonds** un Élixir ; **50** un Élixir, le Prix Shiitake et de bonnes chances de Larme de Joie ; **100** un Méga-élixir, une Larme de Joie garantie et le Prix Matsutake.\n\nOn la trouve au Colisée de l'Olympe, à Monstro (la gorge), à la Ville d'Halloween (le pont), au Pays Imaginaire (le pont du navire) et à la Fin du Monde.",
@@ -669,6 +662,7 @@ export const quests: WalkQuest[] = [
       },
       {
         id: "fungus-noir",
+        image: { src: "/images/encyclopedia/enemies/black-fungus.webp", credit: credit("Black_Fungus_KH.png"), width: 125, height: 195 },
         title: L("Le Fungus Noir : le seul qui riposte", "The Black Fungus: the only one that fights back"),
         text: L(
           "Violet et noir, le Fungus Noir est l'exception : c'est un vrai ennemi, et un ennemi coriace. Il se **ramasse sur lui-même** avant de lâcher un nuage de spores empoisonnées qui repousse et empoisonne — c'est le signal pour s'écarter le temps que ça se dissipe. Quand il **vire au blanc-gris**, il est totalement invulnérable : inutile d'insister, attendez.\n\nSa vie n'est pas énorme mais il encaisse remarquablement bien. La Gravité l'entame mieux que tout le reste, et la **Trinité Limite** en vient à bout d'un coup.\n\nCe qui compte, c'est **la manière de le finir** : achevé par un coup critique en fin de combo, il lâche une Larme de Joie à coup sûr, et une chance sur dix de laisser une **Moisissure Mystère** — un objet qui ne sert strictement à rien, sinon à se vendre 3 000 munnies et à figurer au Journal.\n\nIl apparaît notamment au quatrième match de la coupe Pégase, où l'on en affronte trois d'un coup.",
@@ -677,6 +671,7 @@ export const quests: WalkQuest[] = [
       },
       {
         id: "agaric-rose",
+        image: { src: "/images/encyclopedia/enemies/pink-agaricus.webp", credit: credit("Pink_Agaricus.png"), width: 162, height: 320 },
         title: L("L'Agaric Rose : le plus exigeant, et le plus utile", "The Pink Agaricus: the most demanding, and the most useful"),
         text: L(
           "Exclusif à Final Mix, l'Agaric Rose fait deux fois la taille de Sora et n'apparaît qu'à la **Jungle Profonde** et à **Atlantica** — et seulement une fois que les **trois Bolets Blancs** de la zone ont été renvoyés en leur lançant Stop.\n\nLe principe : le figer avec **Stop**, puis le frapper le plus possible avant la fin du sort. Or la durée de Stop dépend uniquement de vos **points de magie maximum** : c'est donc un problème d'équipement avant d'être un problème d'adresse. La meilleure combinaison est l'As de Cœur ou l'Ultima, avec la Ceinture de Shiva, le Poignet astral et l'Amulette cosmique.\n\nIl faut aussi **Rafale X** et les capacités **Ragnarok** et **Combo aérien**. Visez la tête, lancez Rafale X puis Stop, et enchaînez les Ragnarok dès qu'ils sont disponibles — attention, il faut être au sol pour les déclencher. Rafale X ajoute deux coups par seconde sans rien faire.\n\nC'est la **seule source de Cristal Serein** du jeu : trois pour l'Ultima, trois pour le Ruban, un pour l'Anneau XP. Autrement dit, pas d'Ultima sans lui.",
@@ -784,28 +779,225 @@ export const quests: WalkQuest[] = [
       ),
     },
   },
-  soon(
-    "rapports-ansem",
-    L("Les rapports d'Ansem", "Ansem's Reports"),
-    L("Treize pages qui expliquent les Sans-cœur — et toute la suite de la saga.", "Thirteen pages that explain the Heartless — and the rest of the saga."),
-    "ansem-the-wise",
-  ),
-  soon(
-    "surf-jungle",
-    L("Le surf de la jungle", "Jungle slider"),
-    L("Le mini-jeu de descente en liane et ses records.", "The vine-sliding mini-game and its records."),
-    "tarzan",
-  ),
-  soon(
-    "boss-optionnels",
-    L("Les boss optionnels", "The optional bosses"),
-    L("Kurt Zisa, le Fantôme, le Titan de glace, Séphiroth et l'Inconnu.", "Kurt Zisa, the Phantom, the Ice Titan, Sephiroth and the Unknown."),
-    "kurt-zisa",
-  ),
-  soon(
-    "fin-secrete",
-    L("Les fins secrètes", "The secret endings"),
-    L("Ce qu'il faut accomplir, difficulté par difficulté, pour les débloquer.", "What to accomplish, difficulty by difficulty, to unlock them."),
-    "ansem-seeker-of-darkness",
-  ),
+  {
+    id: "rapports-ansem",
+    title: L("Les rapports d'Ansem", "Ansem's Reports"),
+    tagline: L(
+      "Treize pages éparpillées dans les mondes, et toute la mythologie de la saga.",
+      "Thirteen pages scattered across the worlds, and the whole mythology of the saga.",
+    ),
+    entry: "ansem-the-wise",
+    status: "done",
+    intro: L(
+      "Aerith l'explique au début du jeu : les pages du rapport d'Ansem ont été dispersées entre les mondes, et le Roi est probablement parti à leur recherche. Maléfique en a récupéré une partie en s'installant à la Forteresse Oubliée, et les a distribuées à ses complices — qui les perdent en tombant.\n\nD'où la règle simple : **la plupart des rapports s'obtiennent en battant un boss**. Quatre autres sont donnés d'un coup par Aerith, à la Forteresse Oubliée, une fois Kairi sauvée.\n\nIls ne servent à rien en combat, mais ils comptent pour le Journal de Jiminy, et les avoir tous donne un trophée. Surtout, ils racontent l'histoire que le jeu ne raconte pas : les expériences d'Ansem sur les ténèbres du cœur, la naissance des Sans-cœur, les Princesses, et déjà — dans les trois derniers, exclusifs à Final Mix — les êtres « ni obscurs ni lumineux » qui deviendront les Similis de Kingdom Hearts II.\n\nUn détail qui a son importance pour l'histoire : Ansem le Sage n'a écrit que le premier. Les douze suivants sont de la main de son apprenti Xehanort, qui lui a volé son nom.",
+      "Aerith explains it at the start of the game: the pages of Ansem's Report have been scattered across the worlds, and the King has probably gone looking for them. Maleficent picked up a number of them when she settled in Hollow Bastion, and handed them to her accomplices — who lose them when they fall.\n\nHence the simple rule: **most reports come from beating a boss**. Four more are handed over at once by Aerith, in Hollow Bastion, after Kairi is saved.\n\nThey do nothing in battle, but they count towards Jiminy's Journal, and having them all is a trophy. Above all, they tell the story the game does not: Ansem's experiments on the darkness of the heart, the birth of the Heartless, the Princesses, and already — in the last three, exclusive to Final Mix — the beings \"neither dark nor light\" who will become Kingdom Hearts II's Nobodies.\n\nA detail that matters for the story: Ansem the Wise only wrote the first one. The twelve that follow are the work of his apprentice Xehanort, who stole his name.",
+    ),
+    tables: [
+      {
+        id: "rapports",
+        title: L("Où trouver les treize rapports", "Where to find the thirteen reports"),
+        intro: L(
+          "Dans l'ordre où on les rencontre normalement en jouant.",
+          "In the order you normally come across them while playing.",
+        ),
+        columns: [L("Rapport", "Report"), L("Où", "Where"), L("Comment l'obtenir", "How to get it")],
+        rows: [
+          at("N° 1", ["Agrabah", "Agrabah"], ["En battant Jafar sous sa forme de génie.", "By beating Jafar in genie form."]),
+          at("N° 3", ["Atlantica", "Atlantica"], ["En battant Ursula géante.", "By beating Giant Ursula."]),
+          at("N° 7", ["Ville d'Halloween", "Halloween Town"], ["En battant Oogie Boogie, dans sa salle de torture.", "By beating Oogie Boogie, in his torture chamber."]),
+          at("N° 9", ["Pays Imaginaire", "Neverland"], ["En battant le capitaine Crochet sur le pont du navire.", "By beating Captain Hook on the ship's deck."]),
+          at("N° 5", ["Forteresse Oubliée", "Hollow Bastion"], ["En battant Maléfique sous sa forme humaine, dans la chapelle du château.", "By beating Maleficent in human form, in the Castle Chapel."]),
+          at("N° 2, 4, 6 et 10", ["Forteresse Oubliée", "Hollow Bastion"], ["Quatre d'un coup : parlez à Aerith à la bibliothèque, après avoir sauvé Kairi. Reparlez-lui ensuite jusqu'à recevoir le sort Soin X.", "Four at once: talk to Aerith in the Library, after saving Kairi. Keep talking to her afterwards until you receive Curaga."]),
+          at("N° 8", ["Colisée de l'Olympe", "Olympus Coliseum"], ["En battant Hadès, au dixième match de sa coupe.", "By beating Hades, at the tenth seed of his cup."]),
+          at("N° 11", ["Agrabah", "Agrabah"], ["En battant Kurt Zisa, dans le désert. Exclusif à Final Mix.", "By beating Kurt Zisa, in the desert. Final Mix only."], ["Avoir scellé la Serrure finale", "Having sealed the final Keyhole"]),
+          at("N° 12", ["Colisée de l'Olympe", "Olympus Coliseum"], ["En battant Séphiroth, au match de Platine. Exclusif à Final Mix.", "By beating Sephiroth, in the Platinum Match. Final Mix only."], ["Avoir scellé la Serrure finale", "Having sealed the final Keyhole"]),
+          at("N° 13", ["Forteresse Oubliée", "Hollow Bastion"], ["En battant l'Inconnu, par le portail sombre de la chapelle. Exclusif à Final Mix.", "By beating the Unknown, through the dark portal in the Castle Chapel. Final Mix only."], ["Avoir vu la première scène de la Fin du Monde", "Having seen the first End of the World cutscene"]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "ce-qu-ils-racontent",
+        title: L("Ce qu'ils racontent, dans l'ordre", "What they say, in order"),
+        text: L(
+          "Lus à la suite, les treize rapports forment un récit continu — celui d'un savant qui perd pied.\n\n- **1 à 3** — Ansem cherche à comprendre les ténèbres du cœur. Il extrait les ténèbres de cœurs humains, en fait naître dans des cœurs purs, et brise chacun de ses sujets. Des ombres apparaissent alors dans les sous-sols du château.\n- **4 à 6** — Les Sans-cœur se multiplient. Ansem découvre qu'ils convoitent les cœurs, et qu'au-delà d'une porte se cache un immense noyau d'énergie.\n- **7 à 9** — Il étudie les fragments tombés du ciel — les blocs Gummi —, établit le lien entre les Sans-cœur et les cœurs, et reçoit la visite d'un roi venu d'un autre monde.\n- **10** — Les mondes ont un cœur, comme les gens. Ansem décide d'abandonner son corps, trop fragile pour aller le chercher.\n- **11 et 12** (Final Mix) — Ouvrir le cœur d'un monde fait tomber ses murs. Il choisit une jeune fille pour attirer le porteur de la Keyblade. Puis il observe un cas qui le trouble : un cœur qui n'est pas devenu un Sans-cœur.\n- **13** (Final Mix) — La question qui ouvre toute la suite de la saga : **où va le corps quand il est séparé du cœur ?** Ansem imagine « un être qui ne soit ni obscur ni lumineux, qui n'ait sa place nulle part ». C'est la définition d'un Simili, quatre ans avant Kingdom Hearts II.",
+          "Read one after another, the thirteen reports form a continuous story — that of a scholar losing his footing.\n\n- **1 to 3** — Ansem sets out to understand the darkness of the heart. He extracts darkness from human hearts, creates it in pure ones, and breaks every one of his subjects. Shadows then appear in the castle's basements.\n- **4 to 6** — The Heartless multiply. Ansem finds that they crave hearts, and that beyond a door lies an immense core of energy.\n- **7 to 9** — He studies the fragments that fell from the sky — the Gummi blocks —, establishes the link between Heartless and hearts, and receives a visit from a king of another world.\n- **10** — Worlds have hearts, as people do. Ansem decides to abandon his body, too fragile to go looking.\n- **11 and 12** (Final Mix) — Opening a world's heart makes its walls crumble. He picks a girl to draw out the Keyblade's wielder. Then he observes a case that troubles him: a heart that did not become a Heartless.\n- **13** (Final Mix) — The question that opens the rest of the saga: **where does the body go when it is separated from the heart?** Ansem imagines \"a being neither dark nor light, belonging nowhere\". That is the definition of a Nobody, four years before Kingdom Hearts II.",
+        ),
+      },
+    ],
+  },
+  {
+    id: "surf-jungle",
+    title: L("Le surf de la jungle", "Jungle Slider"),
+    tagline: L(
+      "Cinq descentes, des fruits à ramasser au passage, et un Orichalque à la clé.",
+      "Five runs, fruit to grab on the way, and an Orichalcum at the end.",
+    ),
+    entry: "tarzan",
+    image: { src: "/images/walkthrough/surf-jungle.webp", credit: credit("Jungle Slider gameplay.png"), width: 420, height: 236 },
+    status: "done",
+    intro: L(
+      "Le mini-jeu s'ouvre une fois la Serrure de la Jungle Profonde scellée. Il suffit ensuite de **sauter dans le tronc creux**, dans la zone de l'arbre creux, pour lancer une descente.\n\nSora glisse sur une liane et traverse la jungle à toute vitesse. Le but n'est pas d'aller vite mais de **ramasser des fruits** : chaque parcours en demande un nombre précis pour débloquer le suivant. Les fruits sont cumulés d'une descente à l'autre — sauf pour le dernier parcours, qui demande les quarante **dans la même glissade**.\n\nEntre deux courses, il faut revenir à l'arbre creux pour relancer le mini-jeu.\n\nLa raison de s'y mettre tient en un mot : le deuxième parcours donne un **Orichalque**, l'un des rares du jeu, et il entre dans la synthèse de l'Ultima.",
+      "The mini-game opens once Deep Jungle's Keyhole is sealed. From then on, **jump into the hollow trunk** in the Hollow Bastion Tree House area to start a run.\n\nSora slides down a vine and crosses the jungle at speed. The point is not to be fast but to **collect fruit**: each course needs a set number to unlock the next. Fruit carries over from run to run — except for the last course, which needs all forty **in a single slide**.\n\nBetween runs, you have to go back to the hollow trunk to start again.\n\nThe reason to bother comes down to one word: the second course gives an **Orichalcum**, one of the game's rare ones, and it goes into the Ultima recipe.",
+    ),
+    tables: [
+      {
+        id: "parcours",
+        title: L("Les cinq parcours", "The five courses"),
+        intro: L(
+          "Chaque parcours se débloque en atteignant le total de fruits indiqué.",
+          "Each course unlocks by reaching the fruit total shown.",
+        ),
+        columns: [L("Parcours", "Course"), L("Fruits", "Fruit"), L("Récompense", "Reward")],
+        rows: [
+          at("1. Route des Cimes", ["10 fruits", "10 fruit"], ["Bonus PC. Le parcours d'apprentissage : large, peu d'obstacles.", "AP Up. The learning course: wide, few obstacles."]),
+          at("2. Route de la Grotte", ["20 fruits au total", "20 fruit in total"], ["**Orichalque.** La récompense qui justifie toute la quête.", "**Orichalcum.** The reward that justifies the whole quest."]),
+          at("3. Spirale Vertigineuse", ["30 fruits au total", "30 fruit in total"], ["Mégalixir. Le tracé tourne beaucoup : anticipez plutôt que de corriger.", "Megalixir. The line twists a lot: anticipate rather than correct."]),
+          at("4. Route de la Cascade", ["40 fruits au total", "40 fruit in total"], ["Bonus Défense.", "Defense Up."]),
+          at("5. Grotte de la Cascade", ["40 fruits dans la même descente", "40 fruit in a single run"], ["Le parcours final, et le seul vrai défi : il faut tout ramasser d'un coup.", "The final course, and the only real challenge: everything has to be collected in one go."]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "conseils",
+        title: L("Trois choses qui font la différence", "Three things that make the difference"),
+        text: L(
+          "- **Ne visez pas le temps.** Le chronomètre s'affiche et un record apparaît, mais il ne débloque rien : seuls les fruits comptent. Ralentir pour attraper un fruit est toujours le bon choix.\n- **Les fruits sont placés sur les bords.** Le milieu de la liane est le chemin rapide et le plus pauvre. Les trajectoires payantes longent les côtés, quitte à frôler les obstacles.\n- **Pour le dernier parcours, apprenez le tracé.** Quarante fruits dans une seule descente ne s'improvisent pas : faites-la deux ou trois fois pour repérer les grappes, puis jouez la course en sachant où aller.",
+          "- **Do not chase the time.** A timer shows and a record appears, but it unlocks nothing: only fruit counts. Slowing down to grab one is always the right call.\n- **The fruit sits along the edges.** The middle of the vine is the fast line and the poorest one. The paying lines hug the sides, even at the cost of brushing obstacles.\n- **For the last course, learn the line.** Forty fruit in a single run cannot be improvised: do it two or three times to spot the clusters, then run it knowing where to go.",
+        ),
+      },
+    ],
+  },
+  {
+    id: "boss-optionnels",
+    title: L("Les boss optionnels", "The optional bosses"),
+    tagline: L(
+      "Cinq combats hors histoire, du plus abordable au plus dur du jeu.",
+      "Five fights outside the story, from the most approachable to the hardest in the game.",
+    ),
+    entry: "kurt-zisa",
+    image: { src: "/images/walkthrough/agrabah-6.webp", credit: credit("Agrabah from KH1 gameplay 6.png"), width: 420, height: 237 },
+    status: "done",
+    intro: L(
+      "Les cinq boss optionnels s'ouvrent tous après un même moment : **sceller la Serrure finale de la Forteresse Oubliée**. Ce sont les combats les plus durs du jeu, très au-dessus de ce que l'histoire demande, et trois d'entre eux donnent un rapport d'Ansem.\n\nUne préparation commune vaut pour les cinq. Montez d'abord : le niveau 60 est un plancher raisonnable, 70 pour l'Inconnu. Fabriquez le **Ruban** (résistance à tous les éléments) et les meilleurs accessoires disponibles, gardez des Élixirs et des Méga-élixirs en réserve, et donnez des Hyper-potions et des Éthers à Donald et Dingo pour qu'ils les utilisent sur vous.\n\nDeux capacités changent tout : **Feuille Salvatrice**, qui empêche d'être interrompu pendant un soin, et **Clochette**, qui soigne en continu et vous relève une fois. Sur les combats en solo, elle vaut une vie supplémentaire.\n\nEnfin, un ordre raisonnable : le Fantôme, puis Kurt Zisa, puis le Titan de glace, puis Séphiroth, et l'Inconnu en dernier.",
+      "All five optional bosses open at the same moment: **sealing Hollow Bastion's final Keyhole**. They are the game's hardest fights, well beyond what the story asks for, and three of them give an Ansem's Report.\n\nOne preparation covers all five. Level up first: 60 is a reasonable floor, 70 for the Unknown. Craft the **Ribbon** (resistance to every element) and the best accessories available, keep Elixirs and Megalixirs in reserve, and give Hi-Potions and Ethers to Donald and Goofy so they use them on you.\n\nTwo abilities change everything: **Leaf Bracer**, which stops you being interrupted mid-heal, and **Tinker Bell**, who heals continuously and revives you once. In the solo fights, she is worth an extra life.\n\nFinally, a sensible order: the Phantom, then Kurt Zisa, then the Ice Titan, then Sephiroth, and the Unknown last.",
+    ),
+    bosses: [
+      {
+        id: "phantom-opt",
+        name: L("Le Fantôme", "Phantom"),
+        entry: "phantom",
+        level: "50",
+        reward: L("Le sort Stop X.", "The Stopga spell."),
+        tactics: L(
+          "Au Pays Imaginaire, à la tour de l'horloge : parlez à Clochette depuis la cabine, avec **Peter Pan dans l'équipe** — sans lui, elle ne vous y emmène pas. Chargez tout le monde d'Éthers et portez le maximum d'accessoires qui augmentent la magie.\n\nLe combat est une course contre la montre. Le Fantôme lance **Condamnation** sur Peter Pan : un compte à rebours apparaît au-dessus de sa tête, et l'aiguille de l'horloge le fait descendre. À zéro, l'allié est éliminé — définitivement, on ne le ressuscite pas. Il enchaîne ensuite sur le deuxième équipier, puis sur Sora.\n\nLa parade : **lancer Stop sur l'horloge elle-même**, pas sur le Fantôme. Approchez-vous, verrouillez les aiguilles, et l'horloge se fige une minute réelle. C'est le geste à répéter tout le combat.\n\nPour le blesser, il faut attendre qu'il pivote et découvre la sphère sous son manteau : c'est son seul point vulnérable, et **sa couleur dit quoi lui envoyer** — blanc pour les coups physiques, rouge pour Brasier, bleu pour Glacier, jaune pour Foudre. Chaque coup réussi change la couleur et l'étourdit. Après trois coups il griffe : écartez-vous, ça fait très mal.\n\nSa dernière attaque est un rayon à tête chercheuse qui inflige l'équivalent de cinq coups de griffe. On peut le frapper pour l'annuler, mais le plus simple est de **passer derrière un angle de la tour** et de le laisser s'écraser sur le mur.",
+          "In Neverland, at the clock tower: talk to Tinker Bell from the Cabin, with **Peter Pan in the party** — without him she will not take you. Load everyone with Ethers and wear as many magic-boosting accessories as you can.\n\nThe fight is a race against time. The Phantom casts **Doom** on Peter Pan: a countdown appears above his head, and the clock's hand brings it down. At zero the ally is gone — for good, they cannot be revived. It then moves to the second companion, and finally to Sora.\n\nThe counter: **cast Stop on the clock itself**, not on the Phantom. Get close, lock onto the hands, and the clock freezes for a real minute. That is the move to repeat all fight.\n\nTo hurt it, wait for it to rotate and reveal the orb beneath its cloak: that is its only vulnerable point, and **its colour says what to send** — white for physical hits, red for Fire, blue for Blizzard, yellow for Thunder. Each successful hit changes the colour and staggers it. After three hits it claws: step away, it hurts badly.\n\nIts last attack is a homing bolt worth about five claw strikes. You can hit it to cancel it, but the simplest answer is to **go round a corner of the tower** and let it splash against the wall.",
+        ),
+      },
+      {
+        id: "kurt-zisa-opt",
+        name: L("Kurt Zisa", "Kurt Zisa"),
+        entry: "kurt-zisa",
+        level: "60",
+        reward: L("La capacité Zantetsuken pour Sora, et le rapport d'Ansem n° 11.", "The Zantetsuken ability for Sora, and Ansem's Report 11."),
+        tactics: L(
+          "À Agrabah : retournez chez Aladdin et laissez le Tapis vous emmener au désert. Prévoyez des Hyper-potions et des Méga-potions en quantité — **il commence par lancer Silence sur toute l'équipe**, ce qui coupe la magie et les invocations. Vous avez juste le temps de vous mettre Aéro++ avant.\n\nLe combat a trois phases qui tournent en boucle.\n\n**Les orbes.** Silence ne se lève qu'en détruisant les deux sphères qu'il tient dans ses mains. Il s'en défend de deux façons : une double rotation de lames autour de lui, et une ruée qui balaie devant puis derrière. Aéro++ absorbe les deux, mais s'écarter reste plus efficace. Chaque orbe détruit lâche des sphères de vie.\n\n**À terre.** Les deux orbes détruits, il s'effondre et s'ouvre enfin. Relevez immédiatement vos équipiers et frappez la tête. Le serpent mord, ça se pare sans difficulté.\n\n**Le bouclier.** Il se relève et s'entoure d'une protection que **seule la magie entame**. Vos équipiers ne servent à rien ici : invoquez **Bambi**, qui fait pleuvoir les sphères de magie, et lancez sort sur sort. Mushu marche aussi. Pendant ce temps il vous sature l'arène de mines de feu — renvoyez-les sur le bouclier — et fait converger des tornades de sable.\n\nAvant qu'il ne se relève de la deuxième phase à terre, **mettez-vous Aéro++ et invoquez Clochette**. Il enchaîne alors sa pire attaque : Silence à nouveau, puis il se change en lame volante et traverse l'arène, à l'horizontale puis à la verticale. Restez au centre et roulez juste avant l'impact ; le Saut Haut passe parfois par-dessus les passages horizontaux. Sans possibilité de se soigner, Clochette est votre seul filet.",
+          "In Agrabah: go back to Aladdin's and let Carpet take you into the desert. Bring plenty of Hi-Potions and Mega-Potions — **it opens by casting Silence on the whole party**, cutting off magic and summons. You have just enough time to put Aeroga up beforehand.\n\nThe fight has three phases that loop.\n\n**The orbs.** Silence only lifts when the two glowing orbs in its hands are destroyed. It defends them two ways: spinning both blades around itself, and a dash that sweeps in front then behind. Aeroga absorbs both, but moving out of the way is more efficient. Each destroyed orb drops HP orbs.\n\n**On the ground.** With both orbs gone it collapses and finally opens up. Revive your party at once and hit the head. The snake bites, which blocks easily.\n\n**The shield.** It gets back up and wraps itself in a barrier **only magic can damage**. Your allies are useless here: summon **Bambi**, who showers you with MP orbs, and cast spell after spell. Mushu works too. Meanwhile it saturates the arena with floating fire mines — knock them back into the shield — and converges sand tornadoes on you.\n\nBefore it rises from the second grounded phase, **put Aeroga up and summon Tinker Bell**. It then unleashes its worst attack: Silence again, then it becomes a flying blade and passes through the arena, horizontally then vertically. Stay in the centre and roll just before impact; High Jump sometimes clears the horizontal passes. With no way to heal, Tinker Bell is your only safety net.",
+        ),
+      },
+      {
+        id: "titan-glace",
+        name: L("Le Titan de glace", "Ice Titan"),
+        entry: "ice-titan",
+        image: { src: "/images/walkthrough/ice-titan-kh1.webp", credit: credit("Ice_Titan_KH.png"), width: 320, height: 308 },
+        level: "60",
+        reward: L("La Keyblade Poussière de Diamant, exclusive à Final Mix.", "The Diamond Dust Keyblade, exclusive to Final Mix."),
+        tactics: L(
+          "Au Colisée, une fois la coupe de l'Hadès remportée : parlez à Philoctète pour ouvrir le **match d'Or**, affiché sous la forme de « ??? ». Sora s'y bat **seul**.\n\nLa préparation est spécifique : la **Ceinture de Shiva** réduit de 40 % les dégâts de glace, et c'est le seul élément qu'il utilise. Côté magie, seuls **Soin X** et **Brasier X** servent — tout le reste est inefficace. Et surtout : **n'utilisez pas Rafale**, qui grossit les stalactites et les rend impossibles à renvoyer.\n\nLe principe du combat tient en une phrase : **il attaque à distance, et c'est en lui renvoyant ses propres glaçons qu'on lui fait mal**. Tout se joue sur le timing de la parade. Si les glaçons arrivent en ligne verticale, parer trop tôt laisse passer les derniers ; trop tard et le premier vous touche. S'ils s'ouvrent en éventail, on peut les renvoyer un par un — mais rester immobile expose aux pointes qui sortent du sol.\n\nSe placer **sur les gradins** aide beaucoup : les ondes de choc de ses déplacements ne portent pas jusque-là.\n\nAprès assez de dégâts renvoyés, il s'étourdit et baisse la tête : c'est la fenêtre pour des combos aériens. En se relevant il riposte par une nuée de pointes difficile à bloquer entièrement.\n\nEn seconde phase il souffle sur toute l'arène, gèle Sora et rend le sol glissant : sautez et planez pour l'éviter. En troisième phase arrive son pire coup, un gel complet de tout ce qui est devant lui — s'il vous prend, vous restez gelé en boucle. La seule réponse est de **planer sur les côtés**.",
+          "At the Coliseum, once the Hades Cup is won: talk to Phil to open the **Gold Match**, shown as \"???\". Sora fights it **alone**.\n\nPreparation is specific: the **Ifrit Belt** cuts ice damage by 40%, and ice is the only element it uses. For magic, only **Curaga** and **Firaga** are useful — everything else is ineffective. And above all: **do not use Aeroga**, which enlarges the icicles and makes them impossible to deflect.\n\nThe fight comes down to one sentence: **it attacks from range, and you hurt it by sending its own icicles back**. Everything rides on Guard timing. If the icicles come in a vertical line, guarding too early lets the last ones through; too late and the first one hits you. If they fan out, you can deflect them one by one — but standing still exposes you to the spikes coming out of the ground.\n\nStanding **on the bleachers** helps a lot: the shockwaves from its movement do not reach there.\n\nAfter enough damage is returned it staggers and lowers its head: that is the window for aerial combos. As it recovers it answers with a flurry of spikes that is hard to block completely.\n\nIn the second phase it breathes across the whole arena, freezing Sora and icing the ground: jump and glide to avoid it. The third phase brings its worst move, a full freeze of everything in front of it — caught in it, you stay frozen on repeat. The only answer is to **glide out to the sides**.",
+        ),
+      },
+      {
+        id: "sephiroth",
+        name: L("Séphiroth", "Sephiroth"),
+        entry: "sephiroth",
+        image: { src: "/images/walkthrough/sephiroth-kh1.webp", credit: credit("Sephiroth (Art) KHFM.png"), width: 320, height: 222 },
+        level: "65",
+        reward: L("La Keyblade Ange à Une Aile, et le rapport d'Ansem n° 12.", "The One-Winged Angel Keyblade, and Ansem's Report 12."),
+        tactics: L(
+          "Au Colisée, au **match de Platine**, en solo. C'est le combat le plus réputé du jeu et il ne pardonne rien : visez le niveau 65 au minimum, l'Ultima si vous l'avez, et plusieurs Élixirs.\n\nSeuls **Soin X** et **Aéro++** servent. À défaut des meilleurs accessoires, ceux qui réduisent les dégâts de feu et de ténèbres aident. Côté capacités, **Feuille Salvatrice** est ce qui fait la différence : sans elle, il vous coupe en plein soin.\n\n**Première phase.** Il marche, puis fonce d'un coup, frappe et recule. Il ne fait pas énormément de dégâts, mais son épée a une allonge démesurée et il est difficile à toucher. Il invoque régulièrement trois colonnes de feu autour de lui.\n\n**Deuxième phase**, une fois sa barre violette vidée, il ajoute **Ange Sans-cœur** : il se prépare un instant, puis vous met à **1 point de vie et 0 de magie**, avant de se ruer sur vous pour finir le travail. Deux réponses, et une seule marche à chaque fois : soit vous l'interrompez en le rejoignant immédiatement (Super Plané, ou mieux, Charge Glissée), soit vous partez le plus loin possible et buvez un Élixir. Attention, l'interrompre déclenche sa riposte de feu.\n\nIl se téléporte aussi dans votre dos pour frapper, et court au lieu de marcher. Sa dernière attaque notable assombrit l'arène avant une série de frappes très rapides sur votre position, finies par un coup au sol qui crée une onde de choc.",
+          "At the Coliseum, in the **Platinum Match**, solo. This is the game's most famous fight and it forgives nothing: aim for level 65 minimum, the Ultima if you have it, and several Elixirs.\n\nOnly **Curaga** and **Aeroga** are useful. Short of the best accessories, those reducing fire and darkness damage help. For abilities, **Leaf Bracer** is what makes the difference: without it he cuts you off mid-heal.\n\n**First phase.** He walks, then dashes in, strikes and backs off. He does not deal enormous damage, but his blade has outrageous reach and he is hard to hit. He regularly summons three pillars of fire around himself.\n\n**Second phase**, once his purple bar is emptied, he adds **Heartless Angel**: he winds up for a moment, then drops you to **1 HP and 0 MP**, before rushing in to finish the job. Two answers, and only one works each time: either interrupt him by closing immediately (Superglide, or better, Sliding Dash), or get as far away as possible and drink an Elixir. Careful — interrupting him triggers his fire counter.\n\nHe also teleports behind you to strike, and runs instead of walking. His last notable attack darkens the arena before a series of very fast strikes on your position, finished by a ground blow that creates a shockwave.",
+        ),
+      },
+      {
+        id: "inconnu",
+        name: L("Le Sans-cœur Inconnu", "The Unknown"),
+        entry: "xemnas",
+        image: { src: "/images/walkthrough/inconnu-kh1.webp", credit: credit("Cloak.png"), width: 160, height: 320 },
+        level: "70",
+        reward: L("Le Collier XP, et le rapport d'Ansem n° 13.", "The EXP Necklace, and Ansem's Report 13."),
+        tactics: L(
+          "Exclusif à Final Mix, et **le combat le plus dur du jeu**. Il se trouve à la Forteresse Oubliée, par le portail sombre de la chapelle du château, une fois vue la première scène de la Fin du Monde. Il est disponible tôt — n'y allez pas avant le niveau 70.\n\nDonnez des Hyper-potions et des Éthers à Donald et Dingo, gardez des Méga-élixirs pour vous, et **invoquez Clochette dès le début**.\n\nÀ part Soin X et Aéro++, la seule magie utile est **Gravité X** : elle ne fait presque pas de dégâts, mais elle l'**étourdit**, ce qui ouvre une fenêtre pour frapper sans risque. Zantetsuken a le même effet.\n\nIl ouvre en lançant des orbes qui explosent en grandes sphères d'électricité, persistantes, et qu'il peut poser à bout portant. Il enchaîne des combos très rapides, et dresse un grand panneau de lumière qui bloque vos coups : contournez-le, car il le traverse d'un bond pour frapper. Il se change aussi en nuée pour vous suivre, invulnérable.\n\nÀ mi-barre, il devient plus rapide et se déplace davantage, en laissant derrière lui des lumières flottantes qui se changent en lasers à tête chercheuse — une roulade bien placée les évite.\n\nSurtout, il commence sa **malédiction**, quasiment inévitable : toutes vos commandes deviennent « Choc », sauf une, qui passe brièvement et au hasard à « Libérer ». Choisir « Libérer » annule l'effet ; choisir « Choc » vous blesse. L'immunité brève de Feuille Salvatrice permet parfois de passer à travers.",
+          "Exclusive to Final Mix, and **the hardest fight in the game**. It is in Hollow Bastion, through the dark portal in the Castle Chapel, once you have seen the first End of the World cutscene. It is available early — do not go before level 70.\n\nGive Hi-Potions and Ethers to Donald and Goofy, keep Megalixirs for yourself, and **summon Tinker Bell from the start**.\n\nBesides Curaga and Aeroga, the only useful magic is **Graviga**: it deals almost no damage, but it **staggers** him, opening a window to hit safely. Zantetsuken does the same.\n\nHe opens by throwing orbs that burst into large, lingering spheres of electricity, which he can place at point-blank range. He chains very fast combos, and raises a large pane of light that blocks your attacks: go around it, because he lunges through it to strike. He also shifts into a cloud to follow you, invulnerable.\n\nAt half his bar he gets faster and moves more, leaving floating lights behind that turn into homing lasers — a well-timed Dodge Roll avoids them.\n\nAbove all, he starts his **curse**, which is near-impossible to avoid: every command becomes 'Shock', except one, which briefly and randomly turns into 'Release'. Choosing 'Release' cancels the effect; choosing 'Shock' hurts you. Leaf Bracer's brief immunity sometimes gets you through it.",
+        ),
+      },
+    ],
+  },
+  {
+    id: "fin-secrete",
+    title: L("Les fins secrètes", "The secret endings"),
+    tagline: L(
+      "Deux vidéos, des conditions qui changent avec la difficulté, et le choix à faire avant de commencer.",
+      "Two videos, conditions that change with difficulty, and the choice to make before starting.",
+    ),
+    entry: "ansem-seeker-of-darkness",
+    image: { src: "/images/walkthrough/end-of-the-world-1.webp", credit: credit("End of the World gameplay 1.png"), width: 420, height: 237 },
+    status: "done",
+    intro: L(
+      "Kingdom Hearts cache deux vidéos qui se déclenchent après le générique. **Another side, Another story…** est la fin secrète d'origine ; **Another Side, Another Story [deep dive]** en est la version longue, ajoutée par Final Mix. Toutes deux montrent Roxas et Riku avant l'heure, et posent tout Kingdom Hearts II.\n\nLe point à connaître **avant de lancer une partie** : les conditions dépendent de la difficulté choisie, et elles ne peuvent plus changer ensuite.\n\n- En **Débutant**, aucune des deux n'est accessible. C'est le piège de cette difficulté.\n- En **Normal**, il faut travailler : les 99 dalmatiens et toutes les Serrures pour la première, et en plus la coupe de l'Hadès et le Journal de Jiminy complet pour la seconde.\n- En **Expert**, terminer le jeu suffit pour la première, et la coupe de l'Hadès plus toutes les Serrures pour la seconde.\n\nAutrement dit, **Expert est de loin le chemin le plus court**, et Normal le bon compromis pour une partie visant le 100 % — ce qui revient de toute façon à remplir les conditions.\n\nDans Kingdom Hearts HD 1.5 + 2.5 ReMIX, les deux vidéos sont également accessibles depuis le mode Théâtre, quel que soit l'avancement.",
+      "Kingdom Hearts hides two videos that play after the credits. **Another side, Another story…** is the original secret ending; **Another Side, Another Story [deep dive]** is its extended version, added by Final Mix. Both show Roxas and Riku ahead of time, and set up the whole of Kingdom Hearts II.\n\nThe thing to know **before starting a playthrough**: the conditions depend on the difficulty you choose, and they cannot be changed afterwards.\n\n- On **Beginner**, neither is available. That is this difficulty's trap.\n- On **Normal**, there is work to do: all 99 puppies and every Keyhole for the first, plus the Hades Cup and a complete Jiminy's Journal for the second.\n- On **Proud**, finishing the game is enough for the first, and the Hades Cup plus every Keyhole for the second.\n\nIn other words, **Proud is by far the shortest path**, and Normal the right compromise for a 100% run — which means meeting the conditions anyway.\n\nIn Kingdom Hearts HD 1.5 + 2.5 ReMIX, both videos are also available from Theatre Mode, whatever your progress.",
+    ),
+    tables: [
+      {
+        id: "conditions",
+        title: L("Les conditions, difficulté par difficulté", "The conditions, difficulty by difficulty"),
+        intro: L(
+          "Terminer le jeu est toujours requis, en plus de ce qui est indiqué.",
+          "Finishing the game is always required, on top of what is listed.",
+        ),
+        columns: [L("Difficulté", "Difficulty"), L("Another side, Another story…", "Another side, Another story…"), L("Another Side, Another Story [deep dive]", "Another Side, Another Story [deep dive]")],
+        rows: [
+          at("Débutant", ["Impossible", "Unavailable"], ["Impossible. Aucune des deux vidéos ne se débloque à cette difficulté.", "Unavailable. Neither video unlocks at this difficulty."]),
+          at("Normal", ["Les 99 dalmatiens et toutes les Serrures scellées", "All 99 puppies and every Keyhole sealed"], ["La coupe de l'Hadès remportée, les 99 dalmatiens, toutes les Serrures scellées, et le Journal de Jiminy complet.", "The Hades Cup won, all 99 puppies, every Keyhole sealed, and Jiminy's Journal completed."]),
+          at("Expert", ["Rien de plus : terminer le jeu suffit", "Nothing more: finishing the game is enough"], ["La coupe de l'Hadès remportée et toutes les Serrures scellées.", "The Hades Cup won and every Keyhole sealed."]),
+        ],
+      },
+      {
+        id: "checklist",
+        title: L("Ce que « toutes les Serrures » veut dire", "What \"every Keyhole\" means"),
+        intro: L(
+          "L'erreur classique est d'oublier les deux dernières.",
+          "The classic mistake is forgetting the last two.",
+        ),
+        columns: [L("Serrure", "Keyhole"), L("Où", "Where"), L("Attention", "Watch out")],
+        rows: [
+          at("Les mondes de l'histoire", ["Ville de Traverse, Pays des Merveilles, Jungle Profonde, Agrabah, Ville d'Halloween, Pays Imaginaire, Forteresse Oubliée", "Traverse Town, Wonderland, Deep Jungle, Agrabah, Halloween Town, Neverland, Hollow Bastion"], ["Elles se scellent automatiquement en suivant l'histoire.", "They seal automatically as you follow the story."]),
+          at("Atlantica", ["Atlantica", "Atlantica"], ["**Facultatif dans l'histoire, obligatoire ici.** On peut terminer le jeu sans y aller.", "**Optional in the story, mandatory here.** The game can be finished without going."]),
+          at("Monstro", ["Monstro", "Monstro"], ["Même remarque : facultatif pour l'histoire, indispensable pour la fin secrète.", "Same remark: optional for the story, essential for the secret ending."]),
+          at("La Forêt des Rêves Bleus", ["Ville de Traverse, chez Merlin", "Traverse Town, at Merlin's"], ["Elle a sa propre Serrure, et elle demande **les cinq pages déchirées**. C'est celle qu'on oublie.", "It has its own Keyhole, and needs **all five Torn Pages**. This is the one people forget."]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "journal",
+        title: L("Le Journal de Jiminy, la condition la plus longue", "Jiminy's Journal, the longest condition"),
+        text: L(
+          "En Normal, la seconde vidéo demande un **Journal de Jiminy complet**, et c'est de loin la partie la plus longue. Le Journal recense tout, et il faut donc tout faire :\n\n- **Rencontrer chaque espèce d'ennemi au moins une fois**, y compris les quatre champignons et les ennemis rares de Final Mix. C'est la case qui manque le plus souvent.\n- **Ouvrir tous les coffres** de tous les mondes, ce qui suppose le Saut Haut, Plané, les cinq trinités et la Nage de sirène.\n- **Réunir les 99 dalmatiens** et récupérer toutes les récompenses de Pongo et Perdita.\n- **Terminer les quatre coupes** du Colisée, dans les trois épreuves.\n- **Synthétiser les 33 objets** de l'atelier des Mogs, Ultima comprise.\n- **Poster les dix cartes postales** et finir les cinq parcours du surf de la jungle.\n- **Battre les cinq boss optionnels** et réunir les treize rapports d'Ansem.\n\nLe plus simple est de considérer la fin secrète comme la récompense du 100 %, et non comme un objectif à part : en faisant tout le reste du guide, elle tombe d'elle-même.",
+          "On Normal, the second video requires a **complete Jiminy's Journal**, and that is by far the longest part. The Journal records everything, so everything has to be done:\n\n- **Meet every enemy species at least once**, including the four mushrooms and Final Mix's rare enemies. This is the box most often left unticked.\n- **Open every chest** in every world, which means High Jump, Glide, the five Trinities and Mermaid Kick.\n- **Gather all 99 puppies** and collect every reward from Pongo and Perdita.\n- **Clear the four cups** at the Coliseum, in all three challenges.\n- **Synthesise all 33 items** at the moogle workshop, Ultima included.\n- **Post the ten postcards** and finish the five Jungle Slider courses.\n- **Beat the five optional bosses** and gather the thirteen Ansem's Reports.\n\nThe simplest approach is to treat the secret ending as the 100% reward rather than a goal of its own: do everything else in this guide and it falls into place.",
+        ),
+      },
+    ],
+  },
 ];

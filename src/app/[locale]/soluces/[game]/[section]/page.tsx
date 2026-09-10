@@ -8,7 +8,7 @@ import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getSection, getWalkthrough, neighbours, tileAccent, tileImage, walkthroughs, writtenSections } from "@/data/walkthrough";
 import type { WalkSection } from "@/data/walkthrough";
-import { BossCard, CollectibleList, RichText, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
+import { BossCard, CollectibleList, TextBlock, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
 import { createLinker } from "@/lib/autolink";
 import { ImageZoom } from "@/components/ImageZoom";
@@ -118,9 +118,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
         </ul>
         {section.intro &&
           paragraphs(localized(section.intro, locale)).map((p, i) => (
-            <p key={i} className="mt-4 leading-relaxed">
-              <RichText text={p} link={link} />
-            </p>
+            <TextBlock key={i} text={p} link={link} className="mt-4" />
           ))}
       </header>
 
@@ -150,7 +148,13 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           {/* La capture est en habillage : le texte l'entoure au lieu de laisser un blanc. */}
           <div className="after:clear-both after:block after:content-['']">
             {s.image && (
-              <figure className="mb-3 lg:float-right lg:ml-6 lg:w-[340px]">
+              // Un rendu en hauteur (un personnage) tient dans une colonne plus étroite :
+              // à pleine largeur il occuperait tout l'écran.
+              <figure
+                className={`mb-3 lg:float-right lg:ml-6 ${
+                  s.image.height > s.image.width ? "lg:w-[200px]" : "lg:w-[340px]"
+                }`}
+              >
                 <ImageZoom
                   src={s.image.src}
                   alt={localized(s.title, locale)}
@@ -172,9 +176,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
               </figure>
             )}
             {paragraphs(localized(s.text, locale)).map((par, j) => (
-              <p key={j} className="mt-4 leading-relaxed first:mt-0">
-                <RichText text={par} link={link} />
-              </p>
+              <TextBlock key={j} text={par} link={link} className="mt-4 first:mt-0" />
             ))}
           </div>
         </section>

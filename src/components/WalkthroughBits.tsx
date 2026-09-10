@@ -12,6 +12,32 @@ export function paragraphs(text: string) {
 }
 
 /**
+ * Un bloc de texte de soluce : soit une liste, soit un paragraphe. Un bloc dont toutes les
+ * lignes commencent par un tiret devient une liste à puces — c'est plus lisible qu'une
+ * énumération noyée dans une phrase, et c'est le seul cas où les données passent à la ligne.
+ */
+export function TextBlock({ text, link, className = "" }: { text: string; link?: Linker; className?: string }) {
+  const lines = text.split("\n");
+  const isList = lines.length > 1 && lines.every((l) => l.trim().startsWith("- "));
+  if (isList) {
+    return (
+      <ul className={`ml-5 list-disc space-y-1.5 ${className}`}>
+        {lines.map((l, i) => (
+          <li key={i} className="leading-relaxed">
+            <RichText text={l.trim().slice(2)} link={link} />
+          </li>
+        ))}
+      </ul>
+    );
+  }
+  return (
+    <p className={`leading-relaxed ${className}`}>
+      <RichText text={text} link={link} />
+    </p>
+  );
+}
+
+/**
  * Un paragraphe de soluce. Le seul enrichissement admis dans les données est le gras,
  * écrit **comme ceci** : il sert à faire ressortir ce qu'il ne faut pas rater dans un
  * pas-à-pas (un objet, une capacité, un geste obligatoire). Tout le reste est du texte.
@@ -102,9 +128,7 @@ export function BossCard({
         )}
 
         {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
-          <p key={i} className="mt-3 leading-relaxed first:mt-0">
-            <RichText text={p} link={link} />
-          </p>
+          <TextBlock key={i} text={p} link={link} className="mt-3 first:mt-0" />
         ))}
 
         {boss.attacks && boss.attacks.length > 0 && (

@@ -685,7 +685,7 @@ export const entryImages: Record<string, EntryImage> = {
   "oogies-manor": { src: "/images/encyclopedia/enemies/oogies-manor.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Oogie%27s_Manor_KH.png)", width: 320, height: 210 },
   "dragon-maleficent": { src: "/images/encyclopedia/enemies/dragon-maleficent.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Dragon_Maleficent_KH.png)", width: 320, height: 183 },
   "riku-ansem": { src: "/images/encyclopedia/enemies/riku-ansem.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Riku-_Dark_Mode_KH.png)", width: 184, height: 320 },
-  "white-mushroom": { src: "/images/encyclopedia/enemies/white-mushroom.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (White_Mushroom_KH.png)", width: 180, height: 320 },
+  "white-mushroom": { src: "/images/encyclopedia/enemies/white-mushroom.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (White_Mushroom_(Art)_KH.png)", width: 183, height: 320 },
   "rare-truffle": { src: "/images/encyclopedia/enemies/rare-truffle.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Rare_Truffle_KH.png)", width: 92, height: 187 },
   "pink-agaricus": { src: "/images/encyclopedia/enemies/pink-agaricus.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Pink_Agaricus.png)", width: 162, height: 320 },
 };

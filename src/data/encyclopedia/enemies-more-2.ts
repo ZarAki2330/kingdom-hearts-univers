@@ -2094,8 +2094,8 @@ export const moreEnemies2: EnemyEntry[] = [
     accent: "#6a7fa8",
     tagline: L("Le Sans-cœur spectral de l'horloge, et un compte à rebours.", "The ghostly Heartless of the clock tower, and a countdown."),
     description: L(
-      "Le Fantôme est un Sans-cœur emblème qui hante la tour de l'horloge du Pays Imaginaire. Le combat est une course contre la montre : il jette un sort de compte à rebours sur un équipier, qui meurt à zéro si l'on ne dissipe pas la malédiction avec Stop. Le Fantôme change de couleur en permanence et n'encaisse que la magie de la couleur correspondante ; son cœur, seule partie vulnérable, doit être visé pendant que Peter Pan aide à voler. Il rapporte le rapport d'Ansem n° 12 et l'Anneau de l'Ange.",
-      "The Phantom is an Emblem Heartless that haunts Neverland's clock tower. The fight is a race against time: it casts a countdown on a party member, who dies at zero unless the curse is lifted with Stop. The Phantom constantly changes colour and only takes damage from the matching magic; its heart, the only vulnerable part, must be hit while Peter Pan keeps you flying. It grants Ansem's Report 12 and the Ansem's Ring.",
+      "Le Fantôme est un Sans-cœur emblème qui hante la tour de l'horloge du Pays Imaginaire. Le combat est une course contre la montre : il jette un sort de compte à rebours sur un équipier, qui meurt à zéro si l'on ne dissipe pas la malédiction avec Stop. Le Fantôme change de couleur en permanence et n'encaisse que la magie de la couleur correspondante ; son cœur, seule partie vulnérable, doit être visé pendant que Peter Pan aide à voler. Sa défaite donne le sort Stop X.",
+      "The Phantom is an Emblem Heartless that haunts Neverland's clock tower. The fight is a race against time: it casts a countdown on a party member, who dies at zero unless the curse is lifted with Stop. The Phantom constantly changes colour and only takes damage from the matching magic; its heart, the only vulnerable part, must be hit while Peter Pan keeps you flying. Beating it grants the Stopga spell.",
     ),
     appearances: ["kingdom-hearts"],
     debut: "kingdom-hearts",
