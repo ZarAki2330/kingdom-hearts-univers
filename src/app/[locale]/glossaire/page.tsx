@@ -6,6 +6,7 @@ import { localized } from "@/data/games";
 import { GLOSSARY_CATEGORIES, getTerm, initial, terms } from "@/data/glossary";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { languageAlternates, localeUrl } from "@/lib/site";
+import { createLinker } from "@/lib/autolink";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
@@ -24,6 +25,7 @@ export default async function GlossaryPage({ params }: { params: Promise<{ local
   const locale = rawLocale as Locale;
   setRequestLocale(locale);
   const t = await getTranslations("Glossary");
+  const link = createLinker(locale);
 
   const sorted = [...terms].sort((a, b) =>
     localized(a.term, locale).localeCompare(localized(b.term, locale), locale, { sensitivity: "base" }),
@@ -96,7 +98,7 @@ export default async function GlossaryPage({ params }: { params: Promise<{ local
                         .split(/\n\n+/)
                         .map((p, i) => (
                           <p key={i} className="mt-2 leading-relaxed text-text-2">
-                            {p}
+                            {link(p, `g-${i}`)}
                           </p>
                         ))}
                       {(entry || related.length > 0) && (

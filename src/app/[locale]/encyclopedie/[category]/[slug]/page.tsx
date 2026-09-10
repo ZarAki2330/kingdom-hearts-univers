@@ -9,6 +9,7 @@ import { entriesOf, kindClass } from "@/data/encyclopedia";
 import { EntryPortrait } from "@/components/EntryPortrait";
 import { ImageZoom } from "@/components/ImageZoom";
 import { languageAlternates, localeUrl } from "@/lib/site";
+import { createLinker } from "@/lib/autolink";
 import { KeybladeStats } from "@/components/KeybladeStats";
 import { GameCover } from "@/components/GameCover";
 
@@ -87,6 +88,8 @@ export default async function EntryPage({ params }: Props) {
   const entry = getEntry(slug);
   if (!c || !entry || entry.category !== c) notFound();
   const t = await getTranslations("Encyclopedia");
+  // L'entrée ne se lie pas elle-même, et les fiches déjà citées en relation non plus.
+  const link = createLinker(locale, { exclude: [entry.slug, ...(entry.relations ?? []).map((r) => r.slug)] });
   const tk = (k: string) => t(k as Parameters<typeof t>[0]);
 
   const games = entry.appearances.map(getGame).filter((g) => g !== undefined);
@@ -141,7 +144,7 @@ export default async function EntryPage({ params }: Props) {
       <div className="mt-10 grid gap-10 md:grid-cols-[1fr_320px]">
         <section aria-label={t("title")}>
           {paragraphs.map((p, i) => (
-            <p key={i} className="prose-max mt-4 text-lg leading-relaxed first:mt-0">{p}</p>
+            <p key={i} className="prose-max mt-4 text-lg leading-relaxed first:mt-0">{link(p, `d-${i}`)}</p>
           ))}
 
           {entry.lore && (
@@ -164,7 +167,7 @@ export default async function EntryPage({ params }: Props) {
                           {game ? <Link href={`/jeux/${game.slug}`} className="hover:text-accent">{heading}</Link> : heading}
                         </h3>
                         {localized(sec.text, locale).split(/\n\n+/).map((p, j) => (
-                          <p key={j} className="prose-max mt-3 leading-relaxed">{p}</p>
+                          <p key={j} className="prose-max mt-3 leading-relaxed">{link(p, `l-${j}`)}</p>
                         ))}
                       </section>
                     );

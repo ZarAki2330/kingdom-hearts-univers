@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/i18n/routing";
 import { localized } from "@/data/games";
 import { tileImage } from "@/data/walkthrough";
+import type { Linker } from "@/lib/autolink";
 import type { CollectibleKind, WalkBoss, WalkCollectible, WalkTable } from "@/data/walkthrough";
 
 /** Paragraphes d'un texte de données : séparés par une ligne vide. */
@@ -14,11 +15,15 @@ export function paragraphs(text: string) {
  * écrit **comme ceci** : il sert à faire ressortir ce qu'il ne faut pas rater dans un
  * pas-à-pas (un objet, une capacité, un geste obligatoire). Tout le reste est du texte.
  */
-export function RichText({ text }: { text: string }) {
+export function RichText({ text, link }: { text: string; link?: Linker }) {
   return (
     <>
       {text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
-        i % 2 === 1 ? <strong key={i}>{part}</strong> : <span key={i}>{part}</span>,
+        i % 2 === 1 ? (
+          <strong key={i}>{link ? link(part, `b-${i}`) : part}</strong>
+        ) : (
+          <span key={i}>{link ? link(part, `t-${i}`) : part}</span>
+        ),
       )}
     </>
   );
@@ -53,10 +58,12 @@ export function BossCard({
   boss,
   locale,
   labels,
+  link,
 }: {
   boss: WalkBoss;
   locale: Locale;
   labels: { level: string; reward: string; attacks: string };
+  link?: Linker;
 }) {
   // Le visuel du combat, ou à défaut l'illustration de la fiche de l'ennemi.
   const visual = tileImage(boss);
@@ -86,7 +93,7 @@ export function BossCard({
 
         {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
           <p key={i} className="mt-3 leading-relaxed first:mt-0">
-            <RichText text={p} />
+            <RichText text={p} link={link} />
           </p>
         ))}
 

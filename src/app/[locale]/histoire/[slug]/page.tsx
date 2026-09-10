@@ -10,6 +10,7 @@ import { GameCover } from "@/components/GameCover";
 import { EntryPortrait } from "@/components/EntryPortrait";
 import { roman } from "@/lib/format";
 import { languageAlternates, localeUrl } from "@/lib/site";
+import { createLinker } from "@/lib/autolink";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -59,6 +60,8 @@ export default async function GameStoryPage({ params }: Props) {
   const t = await getTranslations("Story");
   const te = await getTranslations("Encyclopedia");
 
+  // Les noms de l'encyclopédie cités dans le résumé deviennent des liens vers leur fiche.
+  const link = createLinker(locale);
   const keyEntries = (story.keyEntries ?? []).map(getEntry).filter((e) => e !== undefined);
   const nextGames = (story.next ?? []).map(getGame).filter((g) => g !== undefined);
 
@@ -77,7 +80,7 @@ export default async function GameStoryPage({ params }: Props) {
           <h1 className="mt-2 text-3xl font-bold sm:text-4xl lg:text-5xl">{game.title}</h1>
           {paragraphs(localized(story.intro, locale)).map((p, i) => (
             <p key={i} className="prose-max mt-4 text-lg leading-relaxed">
-              {p}
+              {link(p, `intro-${i}`)}
             </p>
           ))}
           <p className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm">
@@ -118,7 +121,7 @@ export default async function GameStoryPage({ params }: Props) {
             </h2>
             {paragraphs(localized(c.text, locale)).map((p, j) => (
               <p key={j} className="prose-max mt-4 leading-relaxed">
-                {p}
+                {link(p, `c-${j}`)}
               </p>
             ))}
           </section>
@@ -131,7 +134,7 @@ export default async function GameStoryPage({ params }: Props) {
         </h2>
         {paragraphs(localized(story.outcome, locale)).map((p, i) => (
           <p key={i} className="prose-max mt-4 leading-relaxed">
-            {p}
+            {link(p, `out-${i}`)}
           </p>
         ))}
         {nextGames.length > 0 && (

@@ -9,6 +9,7 @@ import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getQuest, getWalkthrough, tileImage, walkthroughs, writtenQuests } from "@/data/walkthrough";
 import { BossCard, RichText, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
+import { createLinker } from "@/lib/autolink";
 
 type Props = { params: Promise<{ locale: string; game: string; quest: string }> };
 
@@ -45,6 +46,7 @@ export default async function QuestPage({ params }: Props) {
   const quest = w ? getQuest(slug, id) : undefined;
   if (!game || !w || !quest || quest.status !== "done") notFound();
   const t = await getTranslations("Walkthrough");
+  const link = createLinker(locale);
   const image = tileImage(quest);
   const entry = quest.entry ? getEntry(quest.entry) : undefined;
   const tableLabels = { world: t("tableWorld"), what: t("tableWhat"), where: t("tableWhere"), requires: t("requires") };
@@ -90,7 +92,7 @@ export default async function QuestPage({ params }: Props) {
         {quest.intro &&
           paragraphs(localized(quest.intro, locale)).map((p, i) => (
             <p key={i} className="mt-4 leading-relaxed">
-              <RichText text={p} />
+              <RichText text={p} link={link} />
             </p>
           ))}
       </header>
@@ -127,7 +129,7 @@ export default async function QuestPage({ params }: Props) {
             )}
             {paragraphs(localized(s.text, locale)).map((par, j) => (
               <p key={j} className="mt-4 leading-relaxed first:mt-0">
-                <RichText text={par} />
+                <RichText text={par} link={link} />
               </p>
             ))}
           </div>
@@ -145,6 +147,7 @@ export default async function QuestPage({ params }: Props) {
               boss={b}
               locale={locale}
               labels={{ level: t("level"), reward: t("reward"), attacks: t("attacks") }}
+              link={link}
             />
           ))}
         </section>

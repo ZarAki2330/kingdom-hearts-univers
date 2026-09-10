@@ -9,6 +9,7 @@ import { GameCover } from "@/components/GameCover";
 import { RichText, paragraphs } from "@/components/WalkthroughBits";
 import { WalkTile, WalkTileGrid } from "@/components/WalkTile";
 import { languageAlternates, localeUrl } from "@/lib/site";
+import { createLinker } from "@/lib/autolink";
 
 type Props = { params: Promise<{ locale: string; game: string }> };
 
@@ -51,6 +52,7 @@ export default async function WalkthroughGamePage({ params }: Props) {
   const w = getWalkthrough(slug);
   if (!game || !w) notFound();
   const t = await getTranslations("Walkthrough");
+  const link = createLinker(locale);
   const p = progress(w);
 
   return (
@@ -74,7 +76,7 @@ export default async function WalkthroughGamePage({ params }: Props) {
         <p className="mt-2 text-sm text-text-2">{localized(w.version, locale)}</p>
         {paragraphs(localized(w.intro, locale)).map((par, i) => (
           <p key={i} className="mt-4 leading-relaxed">
-            <RichText text={par} />
+            <RichText text={par} link={link} />
           </p>
         ))}
         <p className="mt-4 text-sm text-text-2">{t("progress", { done: p.done, total: p.total })}</p>

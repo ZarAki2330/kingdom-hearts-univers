@@ -10,6 +10,7 @@ import { getSection, getWalkthrough, neighbours, tileAccent, tileImage, walkthro
 import type { WalkSection } from "@/data/walkthrough";
 import { BossCard, CollectibleList, RichText, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
+import { createLinker } from "@/lib/autolink";
 
 type Props = { params: Promise<{ locale: string; game: string; section: string }> };
 
@@ -46,6 +47,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
   const section = w ? getSection(slug, id) : undefined;
   if (!game || !w || !section || section.status !== "done") notFound();
   const t = await getTranslations("Walkthrough");
+  const link = createLinker(locale);
   const { previous, next } = neighbours(w, id);
   const world = section.world ? getEntry(section.world) : undefined;
   const steps = section.steps ?? [];
@@ -107,7 +109,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
         {section.intro &&
           paragraphs(localized(section.intro, locale)).map((p, i) => (
             <p key={i} className="mt-4 leading-relaxed">
-              <RichText text={p} />
+              <RichText text={p} link={link} />
             </p>
           ))}
       </header>
@@ -152,7 +154,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
             )}
             {paragraphs(localized(s.text, locale)).map((par, j) => (
               <p key={j} className="mt-4 leading-relaxed first:mt-0">
-                <RichText text={par} />
+                <RichText text={par} link={link} />
               </p>
             ))}
           </div>
@@ -180,6 +182,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
               boss={b}
               locale={locale}
               labels={{ level: t("level"), reward: t("reward"), attacks: t("attacks") }}
+              link={link}
             />
           ))}
         </section>

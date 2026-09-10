@@ -168,6 +168,24 @@ h1, h2, h3, h4 {
 }
 
 
+/*
+ * Lien automatique vers une fiche de l'encyclopédie, posé dans le fil du texte. Il reste
+ * discret — un simple soulignement pointillé — pour ne pas transformer un paragraphe en
+ * sapin de Noël ; la couleur d'accent n'apparaît qu'au survol et au focus.
+ */
+.entry-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--accent-text);
+  text-underline-offset: 3px;
+}
+.entry-link:hover,
+.entry-link:focus-visible {
+  color: var(--accent-text);
+  text-decoration-style: solid;
+}
+
 .tabular {
   font-variant-numeric: tabular-nums;
 }
