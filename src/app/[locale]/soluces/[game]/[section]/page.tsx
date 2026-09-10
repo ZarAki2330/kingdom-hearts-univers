@@ -135,17 +135,10 @@ export default async function WalkthroughSectionPage({ params }: Props) {
             <span className="tabular mr-2 text-text-2">{i + 1}.</span>
             {localized(s.title, locale)}
           </h2>
-          {/* Capture à droite du texte sur grand écran, au-dessus sur mobile. */}
-          <div className={s.image ? "mt-4 grid gap-5 lg:grid-cols-[1fr_340px] lg:items-start" : ""}>
-            <div>
-              {paragraphs(localized(s.text, locale)).map((par, j) => (
-                <p key={j} className="mt-4 leading-relaxed first:mt-0">
-                  {par}
-                </p>
-              ))}
-            </div>
+          {/* La capture est en habillage : le texte l'entoure au lieu de laisser un blanc. */}
+          <div className="after:clear-both after:block after:content-['']">
             {s.image && (
-              <figure className="lg:sticky lg:top-24">
+              <figure className="mb-3 lg:float-right lg:ml-6 lg:w-[340px]">
                 <Image
                   src={s.image.src}
                   alt=""
@@ -157,6 +150,11 @@ export default async function WalkthroughSectionPage({ params }: Props) {
                 <figcaption className="mt-1.5 text-xs text-text-2">{s.image.credit}</figcaption>
               </figure>
             )}
+            {paragraphs(localized(s.text, locale)).map((par, j) => (
+              <p key={j} className="mt-4 leading-relaxed first:mt-0">
+                {par}
+              </p>
+            ))}
           </div>
         </section>
       ))}

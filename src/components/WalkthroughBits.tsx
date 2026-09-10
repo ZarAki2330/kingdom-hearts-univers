@@ -59,36 +59,34 @@ export function BossCard({
         )}
       </div>
 
-      <div className={visual ? "mt-3 grid gap-5 sm:grid-cols-[1fr_220px] sm:items-start" : ""}>
-        <div>
-          {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
-            <p key={i} className="mt-3 leading-relaxed first:mt-0">
-              {p}
-            </p>
-          ))}
-
-          {boss.attacks && boss.attacks.length > 0 && (
-            <>
-              <h4 className="mt-5 text-sm font-bold uppercase tracking-wider text-text-2">{labels.attacks}</h4>
-              <dl className="mt-2 space-y-2">
-                {boss.attacks.map((a, i) => (
-                  <div key={i}>
-                    <dt className="inline font-semibold">{localized(a.name, locale)} — </dt>
-                    <dd className="inline text-text-2">{localized(a.note, locale)}</dd>
-                  </div>
-                ))}
-              </dl>
-            </>
-          )}
-        </div>
-
+      <div className="mt-3 after:clear-both after:block after:content-['']">
         {visual && (
-          <figure className="order-first sm:order-none">
+          <figure className="mb-3 sm:float-right sm:ml-6 sm:w-[200px]">
             <span className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line bg-[#0b1020]">
-              <Image src={visual.src} alt="" fill sizes="220px" className="object-contain p-2" />
+              <Image src={visual.src} alt="" fill sizes="200px" className="object-contain p-2" />
             </span>
             <figcaption className="mt-1.5 text-xs text-text-2">{visual.credit}</figcaption>
           </figure>
+        )}
+
+        {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
+          <p key={i} className="mt-3 leading-relaxed first:mt-0">
+            {p}
+          </p>
+        ))}
+
+        {boss.attacks && boss.attacks.length > 0 && (
+          <>
+            <h4 className="mt-5 text-sm font-bold uppercase tracking-wider text-text-2">{labels.attacks}</h4>
+            <dl className="mt-2 space-y-2">
+              {boss.attacks.map((a, i) => (
+                <div key={i}>
+                  <dt className="inline font-semibold">{localized(a.name, locale)} — </dt>
+                  <dd className="inline text-text-2">{localized(a.note, locale)}</dd>
+                </div>
+              ))}
+            </dl>
+          </>
         )}
       </div>
 

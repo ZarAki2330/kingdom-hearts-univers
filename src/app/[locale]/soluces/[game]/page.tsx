@@ -61,26 +61,30 @@ export default async function WalkthroughGamePage({ params }: Props) {
         </Link>
       </nav>
 
-      <header className="mt-6 grid gap-8 md:grid-cols-[280px_1fr] md:items-start">
-        <GameCover game={game} className="aspect-[16/10] w-full max-w-[280px]" sizes="280px" priority />
-        <div>
-          <p className="eyebrow">{t("guide")}</p>
-          <h1 className="mt-2 text-3xl font-bold sm:text-4xl lg:text-5xl">{game.title}</h1>
-          <p className="mt-2 text-sm text-text-2">{localized(w.version, locale)}</p>
-          {paragraphs(localized(w.intro, locale)).map((par, i) => (
-            <p key={i} className="prose-max mt-4 leading-relaxed">
-              {par}
-            </p>
-          ))}
-          <p className="mt-4 text-sm text-text-2">{t("progress", { done: p.done, total: p.total })}</p>
-        </div>
+      {/* Le logo est en habillage : le texte l'entoure puis reprend pleine largeur dessous. */}
+      <header className="mt-6 after:clear-both after:block after:content-['']">
+        <GameCover
+          game={game}
+          className="mb-4 aspect-[16/10] w-full max-w-[280px] sm:float-left sm:mb-3 sm:mr-6"
+          sizes="280px"
+          priority
+        />
+        <p className="eyebrow">{t("guide")}</p>
+        <h1 className="mt-2 text-3xl font-bold sm:text-4xl lg:text-5xl">{game.title}</h1>
+        <p className="mt-2 text-sm text-text-2">{localized(w.version, locale)}</p>
+        {paragraphs(localized(w.intro, locale)).map((par, i) => (
+          <p key={i} className="mt-4 leading-relaxed">
+            {par}
+          </p>
+        ))}
+        <p className="mt-4 text-sm text-text-2">{t("progress", { done: p.done, total: p.total })}</p>
       </header>
 
       <section aria-labelledby="sommaire" className="mt-14">
         <h2 id="sommaire" className="text-2xl font-bold">
           {t("contents")}
         </h2>
-        <p className="prose-max mt-3 text-text-2">{t("contentsLead")}</p>
+        <p className="mt-3 text-text-2">{t("contentsLead")}</p>
         <WalkTileGrid>
           {w.sections.map((s, i) => (
             <WalkTile
@@ -102,7 +106,7 @@ export default async function WalkthroughGamePage({ params }: Props) {
         <h2 id="annexes" className="text-2xl font-bold">
           {t("quests")}
         </h2>
-        <p className="prose-max mt-3 text-text-2">{t("questsLead")}</p>
+        <p className="mt-3 text-text-2">{t("questsLead")}</p>
         <WalkTileGrid>
           {w.quests.map((q) => (
             <WalkTile
@@ -123,12 +127,12 @@ export default async function WalkthroughGamePage({ params }: Props) {
         <h2 id="completion" className="text-2xl font-bold">
           {t("completion")}
         </h2>
-        <p className="prose-max mt-3 text-text-2">{t("completionLead")}</p>
+        <p className="mt-3 text-text-2">{t("completionLead")}</p>
         <dl className="mt-4 grid gap-3 sm:grid-cols-2">
           {w.completion.map((g) => (
             <div key={g.id} className="card p-5">
               <dt className="font-bold">{localized(g.title, locale)}</dt>
-              <dd className="prose-max mt-1.5 leading-relaxed text-text-2">{localized(g.text, locale)}</dd>
+              <dd className="mt-1.5 leading-relaxed text-text-2">{localized(g.text, locale)}</dd>
             </div>
           ))}
         </dl>
