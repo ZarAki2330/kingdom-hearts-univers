@@ -2580,7 +2580,7 @@ export const moreCharacters2: CharacterEntry[] = [
     accent: "#c9c4bb",
     tagline: L("Les dalmatiens de la Ville de Traverse, et leurs 99 chiots perdus.", "The dalmatians of Traverse Town, and their 99 lost puppies."),
     description: L(
-      "Pongo et Perdita ont fui leur monde quand les Sans-cœur l'ont englouti, et se sont réfugiés dans une maison du troisième district de la Ville de Traverse. Leurs 99 chiots ont été dispersés entre les mondes, enfermés par trois dans des coffres : les ramener est la plus longue collecte du premier Kingdom Hearts, récompensée par paliers, jusqu'à un Orichalque nécessaire à l'Ultima Weapon. Ils viennent des 101 Dalmatiens et ne sont jamais revenus dans la saga après Kingdom Hearts.",
+      "Pongo et Perdita ont fui leur monde quand les Sans-cœur l'ont englouti, et se sont réfugiés dans une maison du troisième district de la Ville de Traverse. Leurs 99 chiots ont été dispersés entre les mondes, enfermés par trois dans des coffres : les ramener est la plus longue collecte du premier Kingdom Hearts, récompensée par paliers, jusqu'à un Orichalque nécessaire à l'Ultima. Ils viennent des 101 Dalmatiens et ne sont jamais revenus dans la saga après Kingdom Hearts.",
       "Pongo and Perdita fled their world when the Heartless swallowed it, and took shelter in a house in Traverse Town's Third District. Their 99 puppies were scattered across the worlds, locked three to a chest: bringing them back is the longest collection in the first Kingdom Hearts, rewarded in tiers up to an Orichalcum needed for the Ultima Weapon. They come from One Hundred and One Dalmatians and never returned to the saga after Kingdom Hearts.",
     ),
     appearances: ["kingdom-hearts"],

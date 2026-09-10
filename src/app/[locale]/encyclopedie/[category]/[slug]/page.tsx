@@ -142,7 +142,8 @@ export default async function EntryPage({ params }: Props) {
       </header>
 
       <div className="mt-10 grid gap-10 md:grid-cols-[1fr_320px]">
-        <section aria-label={t("title")}>
+        {/* min-w-0 : sans lui, un tableau large force la colonne à s'élargir et la page déborde. */}
+        <section aria-label={t("title")} className="min-w-0">
           {paragraphs.map((p, i) => (
             <p key={i} className="prose-max mt-4 text-lg leading-relaxed first:mt-0">{link(p, `d-${i}`)}</p>
           ))}

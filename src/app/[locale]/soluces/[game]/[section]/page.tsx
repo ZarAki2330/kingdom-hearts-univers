@@ -162,13 +162,15 @@ export default async function WalkthroughSectionPage({ params }: Props) {
       ))}
 
       {(section.tables ?? []).map((table) => (
-        <section key={table.id} aria-labelledby={`t-${table.id}`} className="mt-12">
+        // Pas de <section> ici : le tableau défilant porte déjà un repère nommé par ce
+        // titre, et deux repères de même nom se gênent au lecteur d'écran.
+        <div key={table.id} className="mt-12">
           <h2 id={`t-${table.id}`} className="text-2xl font-bold">
             {localized(table.title, locale)}
           </h2>
           {table.intro && <p className="mt-2 text-text-2">{localized(table.intro, locale)}</p>}
           <WalkDataTable table={table} locale={locale} labels={tableLabels} />
-        </section>
+        </div>
       ))}
 
       {section.bosses && section.bosses.length > 0 && (

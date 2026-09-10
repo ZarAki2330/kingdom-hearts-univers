@@ -31,7 +31,8 @@ export async function KeybladeStats({ stats }: { stats: KeybladeGameStat[] }) {
   const reachLabel = (v: string) => (REACH.has(v) ? tk(`stats.reachValues.${v}`) : v);
 
   return (
-    <section aria-labelledby="stats-by-game" className="mt-10">
+    // Un <div> : le tableau défilant porte déjà le repère nommé par ce titre.
+    <div className="mt-10">
       <h2 id="stats-by-game" className="text-2xl font-bold">
         {t("stats.title")}
       </h2>
@@ -114,6 +115,6 @@ export async function KeybladeStats({ stats }: { stats: KeybladeGameStat[] }) {
       </div>
       {has.abilities && <p className="mt-2 text-xs text-text-2">{t("stats.abilitiesNote")}</p>}
       <p className="mt-1 text-xs text-text-2">{t("stats.source")}</p>
-    </section>
+    </div>
   );
 }

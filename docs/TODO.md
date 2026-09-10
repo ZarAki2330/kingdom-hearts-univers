@@ -93,7 +93,7 @@ Récit de chaque jeu et chronologie de l'univers
 Guides et cheminement
 
 - [x] Structure des guides (par jeu, par monde) — _Section /soluces dans les 6 langues : index des guides, page par jeu (version couverte, sommaire des 15 sections, objectifs du 100 %) et page par section (étapes, combats avec attaques à connaître, liste de ramassage typée, « à ne pas rater », navigation précédent/suivant). Kingdom Hearts Final Mix ouvert avec le prologue et les Îles du Destin rédigés. Présentation reprise de khdestiny : grilles de tuiles illustrées pour le cheminement et pour les quêtes annexes_
-- [x] Soluce Kingdom Hearts (Final Mix) — _les 15 sections du cheminement rédigées, du plongeon au cœur au Monde du Chaos, et 4 quêtes annexes sur 12 (99 dalmatiens, marques Trio, Forêt des Rêves Bleus, trophées). Chaque combat illustré, chaque monde imagé_
+- [x] Soluce Kingdom Hearts (Final Mix) — _les 15 sections du cheminement rédigées, du plongeon au cœur au Monde du Chaos, et 5 quêtes annexes sur 12 (99 dalmatiens, marques Trio, Forêt des Rêves Bleus, trophées, cartes postales). 49 visuels : une capture du combat dans chacun des 30 encadrés, plusieurs captures par chapitre, toutes prises dans Kingdom Hearts et non dans les épisodes suivants_
 - [ ] Soluce Kingdom Hearts II (Final Mix)
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)

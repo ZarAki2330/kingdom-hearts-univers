@@ -98,13 +98,15 @@ export default async function QuestPage({ params }: Props) {
       </header>
 
       {(quest.tables ?? []).map((table) => (
-        <section key={table.id} aria-labelledby={`t-${table.id}`} className="mt-12">
+        // Pas de <section> ici : le tableau défilant porte déjà un repère nommé par ce
+        // titre, et deux repères de même nom se gênent au lecteur d'écran.
+        <div key={table.id} className="mt-12">
           <h2 id={`t-${table.id}`} className="text-2xl font-bold">
             {localized(table.title, locale)}
           </h2>
           {table.intro && <p className="mt-2 text-text-2">{localized(table.intro, locale)}</p>}
           <WalkDataTable table={table} locale={locale} labels={tableLabels} />
-        </section>
+        </div>
       ))}
 
       {(quest.steps ?? []).map((s) => (
@@ -154,7 +156,8 @@ export default async function QuestPage({ params }: Props) {
       )}
 
       {quest.rewards && (
-        <section aria-labelledby="recompenses" className="mt-12">
+        // Un <div> : le tableau défilant porte déjà le repère nommé par ce titre.
+        <div className="mt-12">
           <h2 id="recompenses" className="text-2xl font-bold">
             {t("rewards")}
           </h2>
@@ -184,7 +187,7 @@ export default async function QuestPage({ params }: Props) {
             </table>
           </div>
           {quest.rewards.note && <p className="mt-3 text-sm text-text-2">{localized(quest.rewards.note, locale)}</p>}
-        </section>
+        </div>
       )}
 
       <p className="mt-12 text-sm">
