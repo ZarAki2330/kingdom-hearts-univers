@@ -292,6 +292,7 @@ export const originalCharacters: CharacterEntry[] = [
     kind: "original",
     name: "Maître Xehanort",
     names: { en: "Master Xehanort", ja: "マスター・ゼアノート" },
+    aliases: ["Xehanort"],
     alignment: "darkness",
     homeworld: "Îles du Destin / Scala ad Caelum",
     group: "Organisation XIII véritable (chef)",

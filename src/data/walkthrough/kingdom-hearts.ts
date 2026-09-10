@@ -813,10 +813,302 @@ export const walkthrough: Walkthrough = {
         ),
       ],
     },
-    soon("ville-de-traverse-2", L("Ville de Traverse", "Traverse Town"), "traverse-town", L("Deuxième visite", "Second visit")),
-    soon("agrabah", L("Agrabah", "Agrabah"), "agrabah"),
-    soon("monstro", L("Monstro", "Monstro"), "monstro"),
-    soon("atlantica", L("Atlantica", "Atlantica"), "atlantica"),
+    {
+      id: "ville-de-traverse-2",
+      title: L("Ville de Traverse", "Traverse Town"),
+      subtitle: L("Deuxième visite", "Second visit"),
+      world: "traverse-town",
+      status: "done",
+      level: "18 → 20",
+      image: { src: "/images/walkthrough/traverse-2.webp", credit: credit("Traverse Town from KH1 gameplay 3.png"), width: 420, height: 236 },
+      intro: L(
+        "Les fragments Navi-G rapportés du Pays des Merveilles et de la Jungle Profonde intriguent Dingo : Léon saura peut-être ce que c'est. Le retour est obligatoire une fois ces deux mondes scellés.\n\nCette visite est courte mais dense : le trou de serrure de la ville, une invocation, un sort de défense, l'accès à la Forêt des Rêves Bleus et le raccourci Warp-G qui évite de refaire le trajet en vaisseau à chaque monde.",
+        "The Navi-G Pieces brought back from Wonderland and Deep Jungle intrigue Goofy: Leon might know what they are. The return is mandatory once both worlds are sealed.\n\nThe visit is short but dense: the town's Keyhole, a summon, a defensive spell, access to the Hundred Acre Wood, and the Warp-G shortcut that saves flying to every world again.",
+      ),
+      steps: [
+        {
+          id: "leon-cid",
+          title: L("Léon dans l'égout, Cid et le vieux livre", "Leon in the waterway, Cid and the old book"),
+          text: L(
+            "La ville a de nouveaux Sans-cœur : les Opéras Jaunes, version foudre des Nocturnes et des Rhapsodies, et les Requiems Verts, inoffensifs seuls mais qui **soignent les autres Sans-cœur** et absorbent tous les éléments sauf la Gravité. Tuez-les en premier.\n\nUn coffre du café donne un Boost de défense : lancez Glacier pour éteindre toutes les bougies.\n\nDirection la ruelle : la **Trinité Charge** ouvre la grille de l'égout secret, où Léon attend. Parlez-lui deux fois, il donne l'Éclat de Terre et vous envoie chez Cid, qui remet le vieux livre. L'Éclat de Terre s'échange chez la Bonne Fée contre l'invocation **Simba**, et le vieux livre ouvre la Forêt des Rêves Bleus, chez Merlin.\n\nAllumez la grande porte marquée du signe du feu avec Brasier, puis entrez dans la maison de l'îlot pour rencontrer Merlin et la Bonne Fée.",
+            "The town has new Heartless: Yellow Operas, the thunder version of the Nocturnes and Rhapsodies, and Green Requiems, harmless alone but which **heal other Heartless** and absorb every element except Gravity. Kill those first.\n\nA chest in the café holds a Defense Up: cast Blizzard to douse every candle.\n\nHead for the Alleyway: **Trinity Charge** opens the grate to the Secret Waterway, where Leon waits. Talk to him twice, he hands over the Earthshine and sends you to Cid, who gives you the old book. The Earthshine is traded at the Fairy Godmother's for the **Simba** summon, and the old book opens the Hundred Acre Wood, at Merlin's.\n\nLight the large door marked with the fire sign using Fire, then enter the house on the island to meet Merlin and the Fairy Godmother.",
+          ),
+        },
+        {
+          id: "cloche",
+          title: L("La cloche, trois fois", "The bell, three times"),
+          text: L(
+            "Repassez par le troisième quartier pour une scène — Riku apparaît —, puis entrez dans la petite maison près de la porte du deuxième quartier pour reparler à Cid : il a installé les fragments Navi-G et donne un **Warp-G**, qui permet de sauter le trajet vers les mondes déjà visités.\n\nReste à faire sonner la cloche trois fois : montez sur le toit du magasin Gizmo et utilisez la **Trinité Charge** sur les planches. Trois coups de cloche révèlent le trou de serrure, et l'approcher déclenche le combat.\n\nL'Armure Gardienne revient d'abord, aussi forte qu'à la première visite — donc facile désormais. Puis elle se reforme en Armure Opposée.",
+            "Pass through the Third District for a scene — Riku appears —, then enter the small house near the Second District door to talk to Cid again: he has fitted the Navi-G Pieces and hands over a **Warp-G**, which skips the flight to worlds you have already visited.\n\nThat leaves the bell, three times: climb onto the Gizmo Shop roof and use **Trinity Charge** on the boards. Three rings reveal the Keyhole, and approaching it starts the fight.\n\nThe Guard Armor comes back first, as strong as on the first visit — so easy by now. Then it reforms into the Opposite Armor.",
+          ),
+        },
+        {
+          id: "apres",
+          title: L("Après : Aéro, la synthèse, et le vaisseau", "Afterwards: Aero, synthesis, and the ship"),
+          text: L(
+            "L'Armure Opposée donne **Aéro**, un sort défensif qui divise par deux les dégâts subis pour deux points de magie — l'un des meilleurs du jeu —, et un nouveau fragment Navi-G. Donnez-le à Cid, qui rend un Comet-G et commence à vendre des blocs et améliorations Gummi ; la seule qui vaut vraiment l'achat est le COM LVL2.\n\nPassez chez Pongo et Perdita si vous avez assez de chiots : les récompenses comprennent des blocs Gummi utiles. Faites un tour à la boutique d'accessoires pour une scène avec Pinocchio, et chez Merlin pour découvrir la Forêt des Rêves Bleus.\n\nDe retour au vaisseau, la coupe de Phil s'ouvre au Colisée : c'est le bon moment pour la faire, avant Agrabah.",
+            "The Opposite Armor gives **Aero**, a defensive spell that halves the damage you take for two MP — one of the best in the game — and another Navi-G Piece. Give it to Cid, who returns a Comet-G and starts selling Gummi blocks and upgrades; the only one really worth buying is COM LVL2.\n\nDrop by Pongo and Perdita if you have enough puppies: the rewards include useful Gummi blocks. Visit the Accessory Shop for a scene with Pinocchio, and Merlin's house to discover the Hundred Acre Wood.\n\nBack at the ship, the Phil Cup opens at the Coliseum: a good moment to run it, before Agrabah.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "opposite-armor",
+          name: L("Armure Opposée", "Opposite Armor"),
+          entry: "opposite-armor",
+          level: "20",
+          reward: L("Le sort Aéro.", "The Aero spell."),
+          tactics: L(
+            "Beaucoup plus mobile que l'Armure Gardienne : elle lévite en permanence, charge en courtes ruées et jette ses membres sur vous. Elle se sépare ensuite en deux ensembles — les pieds avec la tête, qui roulent sur vous comme une roue, et les gantelets avec le torse, qui tournoient en vous poursuivant.\n\nSa plus dangereuse attaque est le tir : le torse se met à l'horizontale et charge de gros projectiles d'énergie qu'il envoie comme un canon. Gardez vos distances, roulez, ou servez-vous du décor pour bloquer.\n\nLe reste se pare, s'esquive ou se renvoie. Aéro et Soin font une grosse différence si vous vous acharnez sur l'attaque. Chaque morceau détruit lâche beaucoup de sphères de vie : de quoi se remettre à flot au milieu du combat.",
+            "Far more mobile than the Guard Armor: it levitates constantly, dashes in short bursts and throws its limbs at you. It then splits into two sets — the legs with the head, rolling at you like a wheel, and the gauntlets with the torso, spinning as they home in.\n\nIts most dangerous attack is the shot: the torso turns horizontal and charges large energy blasts it fires like a cannon. Keep your distance, roll, or use the terrain to block.\n\nEverything else can be blocked, dodged or knocked back. Aero and Cure make a real difference if you get greedy on offence. Each destroyed part drops plenty of health orbs: enough to get back on your feet mid-fight.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Aéro", "Aero"), where: L("Récompense de l'Armure Opposée.", "The Opposite Armor's reward."), note: L("Divise par deux les dégâts subis. À garder actif sur les boss.", "Halves the damage you take. Keep it up on bosses.") },
+        { kind: "ability", label: L("Invocation Simba", "Simba summon"), where: L("L'Éclat de Terre, donné par Léon, échangé chez la Bonne Fée.", "The Earthshine, given by Leon, traded at the Fairy Godmother's."), },
+        { kind: "chest", label: L("Boost de défense", "Defense Up"), where: L("Dans le coffre du café : éteignez toutes les bougies avec Glacier.", "In the café chest: douse every candle with Blizzard.") },
+        { kind: "report", label: L("Warp-G", "Warp-G"), where: L("De Cid, dans la petite maison du troisième quartier.", "From Cid, in the small house in the Third District."), note: L("Évite de refaire le trajet en vaisseau vers les mondes déjà visités.", "Skips the flight to worlds you have already visited.") },
+      ],
+      missable: [
+        L("Rien ne se perd : la ville se revisite une troisième fois.", "Nothing is lost: the town is visited a third time."),
+      ],
+    },
+    {
+      id: "agrabah",
+      title: L("Agrabah", "Agrabah"),
+      world: "agrabah",
+      status: "done",
+      level: "20 → 24",
+      intro: L(
+        "Le monde d'Aladdin, et le plus long de cette partie du jeu : une ville en trois zones à parcourir en hauteur, une caverne aux merveilles labyrinthique, et quatre combats.\n\nIl donne beaucoup : Brasier+ et Glacier+, l'invocation Génie, la Keyblade Trois Vœux, la Trinité Échelle — qui ouvre enfin l'atelier de synthèse à la Ville de Traverse — et le premier rapport d'Ansem.",
+        "Aladdin's world, and the longest of this stretch of the game: a town in three areas to be crossed from above, a maze-like Cave of Wonders, and four fights.\n\nIt gives a lot: Fira and Blizzara, the Genie summon, the Three Wishes Keyblade, Trinity Ladder — which finally opens the synthesis workshop in Traverse Town — and the first Ansem's Report.",
+      ),
+      steps: [
+        {
+          id: "ville",
+          title: L("La ville : Jasmine, Jafar, et les toits", "The town: Jasmine, Jafar, and the rooftops"),
+          image: { src: "/images/walkthrough/agrabah-1.webp", credit: credit("Agrabah from KH1 gameplay 1.png"), width: 420, height: 236 },
+          text: L(
+            "Vous arrivez au milieu des Bandits, les Sans-cœur ordinaires du monde — sans surprise, sauf leur charge à distance. Méfiez-vous aussi des Araignées-Pots, déguisées en jarres rouges : elles sautent sur vous et, plus rarement, explosent.\n\nPrenez la ruelle à gauche pour trouver Jasmine, et vous faire surprendre par Jafar. Battez les Bandits, montez là où il se tenait et utilisez la commande **Libérer** sur la serrure du mur : une porte s'ouvre en face. Passez par les volets, grimpez le bâtiment, revenez à la rue principale.\n\nLa progression se fait en hauteur : sautez d'auvent en auvent pour franchir le vide et entrer dans la maison d'Aladdin en grimpant au poteau du cul-de-sac. Déplacez les deux meubles pour libérer le Tapis et ouvrir une autre serrure, puis partez au désert : le Tapis vous mène à Aladdin.\n\nAladdin peut rejoindre l'équipe : proche de Dingo, offensif, il est pour l'instant plus fort que Donald comme que Dingo. De retour sur la place, les Gros Bandits apparaissent — comme les Costauds, mais avec du feu ; la Gravité marche bien mieux que Glacier sur eux.",
+            "You land among Bandits, the world's standard Heartless — unremarkable except for their ranged lunge. Watch out too for Pot Spiders, disguised as the red jars: they leap onto you and, more rarely, blow themselves up.\n\nTake the alley on the left to find Jasmine, and be caught by Jafar. Beat the Bandits, climb to where he stood and use the **Release** command on the keyhole in the wall: a door opens across the way. Cross via the shutters, climb the building, come back to Main Street.\n\nProgress happens above ground: jump from awning to awning to cross the gap and enter Aladdin's House by climbing the pole in the dead end. Move the two cabinets to free Carpet and release another lock, then head into the desert: Carpet takes you to Aladdin.\n\nAladdin can join the party: close to Goofy, offensive, he is for now stronger than either Donald or Goofy. Back at the Plaza, Fat Bandits appear — like Large Bodies, but with fire; Gravity works far better on them than Blizzard.",
+          ),
+        },
+        {
+          id: "caverne",
+          title: L("La caverne aux merveilles", "The Cave of Wonders"),
+          text: L(
+            "L'entrée de la rue principale est condamnée : passez par les auvents et la ruelle pour rejoindre la partie haute, contournez la maison d'Aladdin et sautez de l'auvent rouge vers la porte ouverte du bazar. Une marque Trio bleue s'y trouve ; en hauteur, une serrure à libérer et un Anneau de Feu dans un coffre. Sauvegardez chez Aladdin avant le combat contre le Mille-Pattes.\n\nAprès lui, équipez le Rayon de Lumière et finissez d'explorer la ville. Aux portes du palais, laissez les rangées de jarres tranquilles pour l'instant : l'une d'elles cache le Scorpion-Pot, un ennemi coriace propre à Final Mix.\n\nAu désert, le Tapis conduit à la caverne, gardée par un colosse de sable. À l'intérieur, deux niveaux : l'étage supérieur est simple, le niveau inférieur est un labyrinthe — et on y tombe facilement. Abu, avec Aladdin dans l'équipe, active des gemmes qui ouvrent des passages vers des coffres supplémentaires.\n\nAllez d'abord à la salle du trésor (un Boost de défense), revenez à l'entrée, descendez vers la salle des reliques, puis nagez jusqu'à la salle sombre : la **première page déchirée** y attend. Passez le point de sauvegarde, remontez la cascade jusqu'à la chambre silencieuse, gagnez la plateforme à la marque Trio bleue, puis la salle cachée, où un pilier fissuré ouvre la voie vers la salle de la lampe.",
+            "The Main Street entrance is boarded up: use the awnings and the alley to reach the upper area, go around Aladdin's House and jump from the red awning to the open doorway of the Bazaar. A blue Trinity Mark sits there; up on the ledge, another lock to release and a Fire Ring in a chest. Save at Aladdin's before the Pot Centipede fight.\n\nAfter it, equip the Ray of Light and finish exploring the town. At the Palace Gates, leave the rows of jars alone for now: one of them hides the Pot Scorpion, a tough enemy unique to Final Mix.\n\nIn the desert, Carpet leads to the cave, guarded by a colossus of sand. Inside, two levels: the upper one is straightforward, the lower one is a maze — and easy to fall into. Abu, with Aladdin in the party, activates gems that open passages to extra chests.\n\nGo to the Treasure Room first (a Defense Up), return to the Entrance, go down to the Relic Chamber, then swim through to the Dark Chamber: the **first Torn Page** waits there. Past the save point, swim up the waterfall to the Silent Chamber, reach the platform with the blue Trinity Mark, then the Hidden Room, where a cracked pillar opens the way to the Lamp Chamber.",
+          ),
+        },
+        {
+          id: "apres-jafar",
+          title: L("Après Jafar : la synthèse s'ouvre enfin", "After Jafar: synthesis finally opens"),
+          text: L(
+            "Jafar vaincu sous sa forme de génie, Brasier passe à **Brasier+**, et vous recevez le **rapport d'Ansem n° 1**. La Serrure scellée, il faut fuir sur le Tapis en évitant les colonnes de feu — un passage sur rails, sans piège.\n\nChez Aladdin : l'invocation **Génie**, la Keyblade **Trois Vœux** (un peu plus forte que le Roi de la jungle, mais moins longue) et la **Trinité Échelle**, à utiliser sur les marques vertes. La première sert tout de suite, dans la réserve d'Agrabah, pour un Boost de compétence.\n\nSurtout : avec une page déchirée et la Trinité Échelle en poche, **retournez à la Ville de Traverse**. L'échelle ouvre l'atelier au-dessus de la boutique d'accessoires — c'est là que se fait toute la synthèse du jeu. Fabriquez tout ce qui est disponible pour débloquer la série suivante, et achetez de nouvelles armes pour Donald et Dingo. Passez aussi chez Merlin pour la Forêt des Rêves Bleus.\n\nLa coupe de Phil se termine très facilement en contre-la-montre avec Glacier+.",
+            "With Jafar beaten in genie form, Fire becomes **Fira**, and you receive **Ansem's Report 1**. Once the Keyhole is sealed you flee on Carpet, dodging pillars of fire — an on-rails stretch with no trap.\n\nAt Aladdin's: the **Genie** summon, the **Three Wishes** Keyblade (slightly stronger than the Jungle King, but shorter) and **Trinity Ladder**, for the green marks. The first use comes immediately, in Agrabah's Storage room, for an AP Up.\n\nAbove all: with a Torn Page and Trinity Ladder in hand, **go back to Traverse Town**. The ladder opens the workshop above the Accessory Shop — where all the game's synthesis happens. Craft everything available to unlock the next set, and buy new weapons for Donald and Goofy. Drop by Merlin's for the Hundred Acre Wood too.\n\nThe Phil Cup's time trial becomes very easy with Blizzara.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "pot-centipede",
+          name: L("Le Mille-Pattes", "Pot Centipede"),
+          level: "21",
+          tactics: L(
+            "Toutes les rues de la ville servent d'arène. La bête est faite d'une tête, d'une queue et d'un corps composé d'Araignées-Pots, invulnérables tant qu'elles font partie du corps.\n\nFrapper la tête ou la queue l'étourdit un instant et libère les araignées, qui redeviennent des ennemis ordinaires. Elle fuit ensuite vers la rue principale, puis la ruelle, puis la place, en appelant des renforts à chaque fois.\n\nTout le danger est là : laissez les araignées s'accumuler et vous ne gérez plus rien. Nettoyez-les systématiquement dès qu'elles se détachent, et finissez le mille-pattes une fois le terrain dégagé. Glacier et la Foudre sont parfaits contre les grappes ; Aéro amortit le reste.",
+            "Every street in town serves as the arena. The creature is made of a head, a tail and a body of Pot Spiders, invulnerable while attached.\n\nHitting the head or tail stuns it briefly and frees the spiders, which become ordinary enemies. It then flees to Main Street, then the Alley, then the Plaza, calling reinforcements each time.\n\nThat is the whole danger: let the spiders pile up and you lose control. Clear them systematically as they detach, and finish the centipede once the ground is clear. Blizzard and Thunder are perfect against clusters; Aero softens the rest.",
+          ),
+        },
+        {
+          id: "gardien-caverne",
+          name: L("Le Gardien de la caverne", "The Cave of Wonders' Guardian"),
+          level: "22",
+          tactics: L(
+            "Ses points faibles sont ses yeux, d'où il tire aussi des éclairs à tête chercheuse pendant tout le combat. Il crache du feu et fait apparaître sans arrêt des Bandits, des Gros Bandits et des Soldats Volants.\n\nLa méthode : grimper la tête par l'arrière — ou attendre qu'il plonge dans le sable, ce qui la met à portée —, se tenir sur le museau et frapper les yeux en laissant les équipiers s'occuper des Sans-cœur. Depuis le museau, ni les Bandits ni les éclairs ne représentent une vraie menace.\n\nSi vous êtes projeté au sol, la Foudre atteint les yeux à distance ; sinon, tapez quelques Sans-cœur pour récupérer vie et magie avant de remonter.",
+            "Its weak points are its eyes, from which it also fires homing bolts throughout the fight. It breathes fire and endlessly spawns Bandits, Fat Bandits and Air Soldiers.\n\nThe method: climb the head from behind — or wait for it to dive into the sand, which brings it within reach —, stand on the nose and hit the eyes while your companions handle the Heartless. From the nose, neither the Bandits nor the bolts are a real threat.\n\nIf you are knocked down, Thunder reaches the eyes from range; otherwise hit a few Heartless to recover HP and MP before climbing back.",
+          ),
+        },
+        {
+          id: "jafar",
+          name: L("Jafar", "Jafar"),
+          entry: "jafar",
+          level: "23",
+          reward: L("Glacier devient Glacier+.", "Blizzard becomes Blizzara."),
+          tactics: L(
+            "Toutes ses attaques sont annoncées par une incantation : écoutez-le et vous les verrez venir. Le rayon de feu s'esquive d'une roulade. Le blizzard qu'il fait tourner au centre de la salle inflige des dégâts continus à tout ce qui s'y trouve — sortez-en. La troisième, réservée à ceux qui le collent, envoie une coulée de ténèbres dans le sol avant d'exploser : il faut fuir dès qu'il la lance.\n\nIl vole d'une plateforme à l'autre et passe à volonté dans un état de spectre invulnérable. Il s'entoure parfois d'une sphère qui annule la magie, mais elle ne dure pas.\n\nLe Génie, asservi, tourne au centre : il ne peut pas être blessé, mais il s'excuse bruyamment avant de frapper — c'est votre signal pour vous écarter. Frapper Jafar près de lui fait souvent tomber des sphères en quantité.",
+            "Every attack is announced by a chant: listen and you will see them coming. The fire ray is dodged with a roll. The blizzard he spins at the centre of the room deals continuous damage to anything inside — get out. The third, reserved for anyone hugging him, sends dark energy into the floor before exploding: flee the moment he starts it.\n\nHe flies from platform to platform and slips into an invulnerable wisp state at will. He sometimes wraps himself in a sphere that blocks magic, but it does not last.\n\nGenie, enslaved, circles the centre: he cannot be hurt, but he apologises loudly before striking — that is your cue to step away. Hitting Jafar near him often showers you with orbs.",
+          ),
+        },
+        {
+          id: "jafar-genie",
+          name: L("Jafar en génie", "Genie Jafar"),
+          entry: "jafar",
+          level: "24",
+          reward: L("Brasier devient Brasier+, et le rapport d'Ansem n° 1.", "Fire becomes Fira, and Ansem's Report 1."),
+          tactics: L(
+            "Ne visez pas Jafar : **la cible est la lampe**, tenue par Iago. Frapper le géant ne rapporte presque rien, et l'attaquer au bras le fait riposter deux fois de son rayon.\n\nIago fuit en volant, hors de portée, et les blocs mobiles compliquent les déplacements. Mais il s'épuise en arrivant au bout des blocs, côté mur : c'est là qu'on le frappe librement. Jafar lui lance un sort de soin, sans aucun effet réel.\n\nLes rochers qu'il jette s'esquivent, se parent ou se renvoient. Seuls Aéro et Soin servent ici, les autres sorts ne font rien.",
+            "Do not aim at Jafar: **the target is the lamp**, held by Iago. Hitting the giant achieves almost nothing, and striking his arm makes him answer with two ray attacks.\n\nIago flees by flying out of reach, and the moving blocks make manoeuvring awkward. But he tires out at the far end of the blocks, near the wall: that is where you hit him freely. Jafar casts a cure on him, with no real effect.\n\nThe rocks he throws can be dodged, blocked or knocked back. Only Aero and Cure help here, other spells do nothing.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "trinity", label: L("Trinité Échelle", "Trinity Ladder"), where: L("Récompense de fin de monde, chez Aladdin.", "End-of-world reward, at Aladdin's."), note: L("Elle ouvre l'atelier de synthèse de la Ville de Traverse : c'est la vraie récompense du monde.", "It opens the synthesis workshop in Traverse Town: the world's real reward.") },
+        { kind: "keyblade", label: L("Trois Vœux", "Three Wishes"), where: L("De la part d'Aladdin, après la Serrure.", "From Aladdin, after the Keyhole.") },
+        { kind: "ability", label: L("Invocation Génie", "Genie summon"), where: L("Après la fuite sur le Tapis.", "After the escape on Carpet.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 1", "Ansem's Report 1"), where: L("En battant Jafar sous sa forme de génie.", "By beating Jafar in genie form.") },
+        { kind: "chest", label: L("Première page déchirée", "First Torn Page"), where: L("Salle sombre de la caverne : remontez le courant depuis la salle des reliques.", "Dark Chamber in the cave: swim upstream from the Relic Chamber.") },
+        { kind: "chest", label: L("Anneau de Feu et Boost de défense", "Fire Ring and Defense Up"), where: L("Le premier en hauteur au bazar, le second dans la salle du trésor.", "The first on the Bazaar ledge, the second in the Treasure Room.") },
+      ],
+      missable: [
+        L("Rien ne se perd, mais le Scorpion-Pot caché dans les jarres des portes du palais est coriace : ne le réveillez pas trop tôt.", "Nothing is lost, but the Pot Scorpion hidden in the jars at the Palace Gates is tough: do not wake it too early."),
+      ],
+    },
+    {
+      id: "monstro",
+      title: L("Monstro", "Monstro"),
+      world: "monstro",
+      status: "done",
+      level: "24 → 27",
+      intro: L(
+        "Pas un monde mais une baleine, qui avale le vaisseau en plein vol. L'intérieur est un labyrinthe de cavités numérotées, toutes identiques, reliées par des passages qui font souvent tomber d'une hauteur — impossible de revenir sur ses pas.\n\nUne seule règle sauve : **les bons passages brillent en vert**, et un Requiem Vert flotte au-dessus pour les signaler. On en repart avec le Saut Haut, qui rouvre la moitié des mondes déjà visités.",
+        "Not a world but a whale, which swallows the ship in mid-flight. The inside is a maze of numbered chambers, all identical, linked by passages that often drop you from a height — no going back.\n\nOne rule saves you: **the right passages glow green**, with a Green Requiem floating above to point them out. You leave with High Jump, which reopens half the worlds you have already visited.",
+      ),
+      steps: [
+        {
+          id: "labyrinthe",
+          title: L("Le labyrinthe des cavités", "The maze of chambers"),
+          image: { src: "/images/walkthrough/monstro-1.webp", credit: credit("Monstro from KH1 gameplay 1.png"), width: 420, height: 236 },
+          text: L(
+            "Rejoignez le fond de la bouche, puis la première cavité après la scène. Nouveaux venus : les Fantômes Chercheurs, qui n'attaquent que si l'on entre dans leur faisceau, absorbent la vie et disparaissent pour ressurgir ailleurs. Ils lâchent de grosses sphères de vie et de magie : ils valent la peine d'être combattus.\n\nL'itinéraire, pour éviter d'y passer une heure : la cavité 3 est un cul-de-sac (un Méga-Éther), puis la cavité 2, dont la sortie vous fait tomber sans retour possible vers la partie haute de la cavité 3, puis la partie haute de la cavité 2. On y croise les Araignées-Tonneaux, version tonneau des Araignées-Pots — **elles explosent si on leur lance Brasier**.\n\nDe là, cavité 5, puis 6 : son passage le plus bas est un cul-de-sac avec deux objets et une marque Trio bleue. Revenez en 6 et prenez l'autre passage vers la partie haute de la cavité 5, puis la cavité 4, où l'on sauvegarde avant les entrailles.",
+            "Head to the back of the Mouth, then into Chamber 1 after the cutscene. New arrivals: Search Ghosts, which only attack if you enter their searchlight, drain HP and vanish to reappear elsewhere. They drop large health and magic orbs: worth fighting.\n\nThe route, to avoid spending an hour here: Chamber 3 is a dead end (a Mega-Ether), then Chamber 2, whose exit drops you with no way back into the upper part of Chamber 3, then the upper part of Chamber 2. You meet Barrel Spiders there, the barrel version of the Pot Spiders — **they explode if hit with Fire**.\n\nFrom there, Chamber 5, then 6: its lowest passage is a dead end with two items and a blue Trinity Mark. Back to 6 and take the other passage to the upper part of Chamber 5, then Chamber 4, where you save before the Bowels.",
+          ),
+        },
+        {
+          id: "saut-haut",
+          title: L("Le Saut Haut change tout", "High Jump changes everything"),
+          text: L(
+            "Riku se bat à vos côtés contre le premier Parasite — sans grande utilité. Dingo apprend Ovation ensuite.\n\nDans la bouche, l'eau a baissé : **prenez immédiatement le Saut Haut** dans le coffre à côté de Geppetto. C'est une capacité partagée, qui ne coûte aucun point de compétence et profite à toute l'équipe.\n\nAvec elle, refaites le tour de la bouche et des cavités : beaucoup d'objets étaient hors de portée, dont la **page déchirée** sur une plateforme de la cavité 6, et l'Éclat d'Eau dans le coffre que fouillait Pinocchio — il donne l'invocation Dumbo.\n\nRemontez ensuite par le passage au-dessus de l'entrée de la cavité 1 pour rejoindre la gorge. On peut y croiser la Truffe Rare, un Sans-cœur pacifique qui récompense selon le nombre de jongles enchaînées. En haut, l'estomac vous aspire.",
+            "Riku fights alongside you against the first Parasite Cage — of little real use. Goofy learns Cheer afterwards.\n\nIn the Mouth, the water has drained: **grab High Jump immediately** from the chest next to Geppetto. It is a shared ability, costs no AP and benefits the whole party.\n\nWith it, sweep the Mouth and the chambers again: many items were out of reach, including the **Torn Page** on a platform in Chamber 6, and the Watergleam in the chest Pinocchio was rummaging through — it gives the Dumbo summon.\n\nThen climb through the passage above the Chamber 1 entrance to reach the Throat. You may meet the Rare Truffle there, a peaceful Heartless that rewards you for how long you keep it in the air. At the top, the Stomach sucks you in.",
+          ),
+        },
+        {
+          id: "apres-monstro",
+          title: L("Après Monstro : trois Keyblades à récupérer", "After Monstro: three Keyblades to collect"),
+          text: L(
+            "Le second Parasite donne **Stop**, qui fige une cible et ses voisins ; les dégâts encaissés pendant le gel s'appliquent d'un coup à la fin. Peu utile sur les boss, précieux contre les ennemis vifs.\n\nAvant de repartir, un détour par la Ville de Traverse vaut largement le voyage : chez Geppetto, la Keyblade **Étoile Filante**, plus forte que Trois Vœux tant qu'on finit ses enchaînements (les coups de fin ont un bonus critique garanti) ; il donne aussi des plans de vaisseau Gummi selon le nombre de Sans-cœur vaincus, et **la dernière carte postale** est chez lui.\n\nChez Merlin, la Keyblade **Charme-Sort** : moins de dégâts, mais plus de magie. Et avec 51 dalmatiens, Pongo et Perdita donnent une nouvelle page déchirée.\n\nAvec tous les sorts en main, on peut aussi récupérer tous les Arts de sort auprès des Champignons Blancs : montrés à Merlin, ils valent le Bouclier des Rêves pour Dingo. Enfin, la coupe de Pégase s'ouvre au Colisée.",
+            "The second Parasite Cage gives **Stop**, which freezes a target and those near it; damage dealt during the freeze lands all at once when it ends. Of little use on bosses, precious against quick enemies.\n\nBefore leaving, a detour to Traverse Town is well worth the trip: at Geppetto's, the **Wishing Star** Keyblade, stronger than Three Wishes as long as you finish your combos (finishers get a guaranteed critical bonus); he also hands out Gummi blueprints based on how many Heartless you have defeated, and **the last postcard** is in his house.\n\nAt Merlin's, the **Spellbinder** Keyblade: less damage, more magic. And with 51 puppies, Pongo and Perdita hand over another Torn Page.\n\nWith every spell in hand you can also collect all the spell Arts from the White Mushrooms: shown to Merlin, they are worth the Dream Shield for Goofy. Finally, the Pegasus Cup opens at the Coliseum.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "parasite-cage-1",
+          name: L("Parasite, première rencontre", "Parasite Cage, first encounter"),
+          entry: "parasite-cage",
+          level: "25",
+          tactics: L(
+            "Court et sans piège. Il n'a que deux attaques, deux grands balayages de ses bras-tentacules. Reculez, ou laissez Aéro et Soin absorber les coups, et frappez entre deux passages.",
+            "Short and trap-free. It has only two attacks, both wide sweeps with its tentacle arms. Step back, or let Aero and Cure soak the hits, and strike between sweeps.",
+          ),
+        },
+        {
+          id: "parasite-cage-2",
+          name: L("Parasite, dans l'estomac", "Parasite Cage, in the Stomach"),
+          entry: "parasite-cage",
+          level: "27",
+          reward: L("Le sort Stop.", "The Stop spell."),
+          tactics: L(
+            "Riku s'en va tout de suite, et le monstre a bien plus de vie. Le sol est acide : il faut se déplacer sur des plateformes irrégulièrement espacées, ce qui complique l'esquive.\n\nDeux nouveautés : un crachat empoisonné, lancé après qu'il a aspiré l'acide de la salle, difficile à éviter de près ; et un coup de charge qui projette en arrière.\n\nQuand il encaisse assez, il s'étourdit : la sphère sombre dans sa cage stomacale devient alors librement frappable. Gardez Aéro actif pour diviser les dégâts, et Soin pour le reste. Dingo tiendra ; Donald tombera vite.",
+            "Riku leaves at once, and the creature has far more HP. The floor is acidic: you have to move across unevenly spaced platforms, which makes dodging harder.\n\nTwo new moves: a poison spit, used after it sucks up the acid in the room, hard to avoid up close; and a charging swing that knocks you back.\n\nWhen it takes enough damage it stuns itself: the dark sphere inside its stomach cage is then free to hit. Keep Aero up to halve the damage, and Cure for the rest. Goofy will hold; Donald will fall fast.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Saut Haut", "High Jump"), where: L("Dans un coffre de la bouche, à côté de Geppetto, après le premier Parasite.", "In a chest in the Mouth, next to Geppetto, after the first Parasite Cage."), note: L("Capacité partagée, gratuite en points de compétence. Elle rouvre des dizaines de coffres dans les mondes précédents.", "Shared ability, free in AP. It reopens dozens of chests in earlier worlds.") },
+        { kind: "chest", label: L("Page déchirée", "Torn Page"), where: L("Sur une plateforme de la cavité 6, une fois le Saut Haut obtenu.", "On a platform in Chamber 6, once High Jump is obtained.") },
+        { kind: "chest", label: L("Éclat d'Eau", "Watergleam"), where: L("Dans le coffre que fouillait Pinocchio, dans la bouche.", "In the chest Pinocchio was rummaging through, in the Mouth."), note: L("Donne l'invocation Dumbo, qui rend invulnérable le temps de l'invocation.", "Gives the Dumbo summon, which makes you invulnerable for its duration.") },
+        { kind: "ability", label: L("Stop", "Stop"), where: L("Récompense du second Parasite.", "The second Parasite Cage's reward.") },
+        { kind: "trinity", label: L("Marque Trio bleue", "Blue Trinity Mark"), where: L("Dans le cul-de-sac bas de la cavité 6.", "In the low dead end of Chamber 6.") },
+      ],
+      missable: [
+        L("Rien ne se perd, mais les passages à sens unique obligent parfois à refaire un tour complet : suivez les passages verts.", "Nothing is lost, but the one-way drops sometimes mean a full lap again: follow the green passages."),
+      ],
+    },
+    {
+      id: "atlantica",
+      title: L("Atlantica", "Atlantica"),
+      world: "atlantica",
+      status: "done",
+      level: "27 → 30",
+      intro: L(
+        "Entièrement sous l'eau, et c'est tout le sujet : on nage en trois dimensions, et l'essentiel de la panoplie habituelle — enchaînements, coups de fin, Roulade, Parade — ne fonctionne plus. La magie prend le relais, Glacier+ en tête.\n\nLe monde donne la Nage de sirène, qui permet de remonter les courants et de filer sous l'eau, la Foudre+, le rapport d'Ansem n° 3 et la Keyblade Trésor des mers.",
+        "Entirely underwater, and that is the whole point: you swim in three dimensions, and most of your usual toolkit — combos, finishers, Dodge Roll, Guard — no longer works. Magic takes over, Blizzara first.\n\nThe world gives Mermaid Kick, which lets you swim against currents and dart around, plus Thundara, Ansem's Report 3 and the Crabclaw Keyblade.",
+      ),
+      steps: [
+        {
+          id: "nager",
+          title: L("Apprendre à nager, et les coquillages colorés", "Learning to swim, and the coloured clams"),
+          image: { src: "/images/walkthrough/atlantica-1.webp", credit: credit("Atlantica from KH1 gameplay 1.png"), width: 420, height: 236 },
+          text: L(
+            "Un court tutoriel avec Polochon, quelques Néons des mers — faibles, mais rapides — puis un coquillage blanc à frapper : ici, **les coquillages blancs remplacent les coffres**.\n\nAriel peut rejoindre l'équipe. Ses attaques sont moyennes, mais ses capacités sont tournées vers la magie : elle lance Potion d'Aéro, Potion de Soin et Potion de Foudre.\n\nL'orientation se fait aux **marqueurs en forme de trident**. Les coquillages colorés s'ouvrent avec la magie de la couleur correspondante. Suivez les tridents jusqu'aux profondeurs calmes, entrez dans le courant et ressortez aussitôt ; plus loin, Brasier sur un oursin ouvre un raccourci vers la vallée sous-marine.\n\nDans la caverne sous-marine, on croise des Champignons Blancs gelés : les libérer avec Stop fait apparaître un Agaric Rose, qui récompense selon le nombre de coups portés pendant le gel.",
+            "A short tutorial with Flounder, a few Sea Neons — weak but quick — then a white clam to hit: here, **white clams replace chests**.\n\nAriel can join the party. Her attacks are average, but her abilities lean on magic: she casts Aero Potion, Cure Potion and Thunder Potion.\n\nYou navigate by the **trident markers**. Coloured clams open with the matching colour of magic. Follow the tridents to the Calm Depths, enter the current and leave it at once; further on, Fire on a sea urchin opens a shortcut back to the Undersea Valley.\n\nIn the Undersea Cave you meet frozen White Mushrooms: freeing them with Stop spawns a Pink Agaricus, which rewards you for how many hits you land during the freeze.",
+          ),
+        },
+        {
+          id: "trident",
+          title: L("Le palais, le navire coulé, et le requin", "The palace, the sunken ship, and the shark"),
+          text: L(
+            "Remontez vers la gorge sous-marine puis le palais de Triton. À l'entrée, les Plongeurs, soignés par la Foudre — ne leur en lancez pas. Après la scène du trône, la gorge voit apparaître les Zones Protectrices, grosses versions des Néons qui **se scindent en petits si on les tue au corps à corps**, mais pas à la magie ni sur un coup critique.\n\nDans la grotte d'Ariel, ouvrez les trois coffres cachés parmi ses trésors : l'un contient une **page déchirée**. Prenez ensuite le dauphin qui tourne dans la gorge, puis remontez à la vallée pour le reprendre : il mène au navire coulé.\n\nÀ l'intérieur, le Requin surgit. Prenez le Trident de cristal dans le coffre proche, puis sortez l'affronter : il n'a aucune attaque notable et réapparaît au hasard dans plusieurs zones, comme Sabor. Il lâche souvent des objets de soin.\n\nLe passage vers la gorge cache un évent à frapper — un raccourci — et un gros coffre contenant un **Orichalque**.",
+            "Swim up to the Undersea Gorge then Triton's Palace. At the entrance, Screwdivers, healed by Thunder — do not cast it at them. After the throne scene, the Gorge starts spawning Sheltering Zones, large versions of the Sea Neons that **split into small ones if killed in melee**, but not with magic or a critical hit.\n\nIn Ariel's Grotto, open the three chests hidden among her treasures: one holds a **Torn Page**. Then ride the dolphin circling the Gorge, and go back to the Valley to ride it again: it leads to the Sunken Ship.\n\nInside, the Shark shows up. Take the Crystal Trident from the nearby chest, then go out and fight him: he has no notable attacks and reappears at random in several areas, like Sabor. He often drops healing items.\n\nThe passage back to the Gorge hides a vent to hit — a shortcut — and a large chest holding an **Orichalcum**.",
+          ),
+        },
+        {
+          id: "ursula",
+          title: L("Ursula, et la Nage de sirène", "Ursula, and Mermaid Kick"),
+          text: L(
+            "De retour à la grotte, approchez du renfoncement au trident pour la scène. En route vers le trône, un Aquatank attaque : porté par trois Plongeurs qu'il peut vous tirer dessus, il absorbe la Foudre et s'en sert pour soigner ses porteurs quand son antenne brille.\n\nAriel revient dans l'équipe après Triton. Direction le navire coulé : Sébastien appuie sur un bouton caché derrière une épave, le rocher se déplace, et l'antre des marées s'ouvre. Sauvegardez dans le recoin, glissez quelques Éthers dans l'inventaire, puis avancez jusqu'à l'antre d'Ursula.\n\nAprès le premier combat, vous obtenez la **Nage de sirène** : déplacement rapide, et surtout la possibilité de **remonter les courants**. Un nouvel oursin permet d'ouvrir le coquillage voisin.\n\nRepassez sauvegarder, puis retournez au navire coulé et aux profondeurs calmes : la Nage de sirène permet d'y remonter le courant et de sortir par le dernier passage, en face de celui du navire.",
+            "Back at the Grotto, approach the trident indent for the scene. On the way to the throne, an Aquatank attacks: carried by three Screwdivers it can shoot at you, it absorbs Thunder and uses it to heal its carriers when its antenna glows.\n\nAriel rejoins the party after Triton. Head to the Sunken Ship: Sebastian presses a button hidden behind a wreck, the rock moves, and the Den of Tides opens. Save in the Cavern Nook, slip a few Ethers into your inventory, then push on to Ursula's Lair.\n\nAfter the first fight you get **Mermaid Kick**: fast movement, and above all the ability to **swim against currents**. Another sea urchin lets you open the clam next to it.\n\nGo back to save, then return to the Sunken Ship and the Calm Depths: Mermaid Kick lets you swim up the current and leave by the last passage, opposite the ship's.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "ursula",
+          name: L("Ursula", "Ursula"),
+          entry: "ursula",
+          level: "28",
+          reward: L("La Nage de sirène.", "Mermaid Kick."),
+          tactics: L(
+            "Suivez le conseil de Triton : **la cible est le chaudron, pas Ursula**, et c'est la magie qui l'atteint — Brasier est le plus rapide et le moins cher. Le chaudron devient vert quand ça marche ; insistez et Ursula s'étourdit. Le reste du temps elle encaisse très mal les coups mais reste totalement exposée pendant l'étourdissement.\n\nLaissée tranquille, elle jette des potions dans le chaudron : cela crée des courants qui balaient la zone, ou une pluie de boules de feu autour de lui.\n\nQuand elle reprend ses esprits — ou si vous l'attaquez sans l'avoir étourdie — elle lance une toupie très dangereuse : éloignez-vous, tout simplement.\n\nÀ court de magie, buvez un Éther ou frappez ses deux murènes, Flotsam et Jetsam : elles rendent bien plus de magie que les autres ennemis. Deux ou trois séquences d'étourdissement suffisent à la faire fuir.",
+            "Follow Triton's advice: **the target is the cauldron, not Ursula**, and magic is what reaches it — Fire is the fastest and cheapest. The cauldron glows green when it works; keep at it and Ursula is stunned. The rest of the time she shrugs off hits, but she is completely exposed while stunned.\n\nLeft alone, she throws potions into the cauldron: this creates currents that sweep the area, or a barrage of fireballs around it.\n\nWhen she comes to — or if you attack her without stunning her — she uses a very dangerous spinning attack: simply keep away.\n\nOut of MP, drink an Ether or hit her two morays, Flotsam and Jetsam: they restore far more magic than other enemies. Two or three stun cycles are enough to drive her off.",
+          ),
+        },
+        {
+          id: "ursula-geante",
+          name: L("Ursula géante", "Giant Ursula"),
+          entry: "ursula",
+          level: "30",
+          reward: L("La Foudre devient Foudre+, et le rapport d'Ansem n° 3.", "Thunder becomes Thundara, and Ansem's Report 3."),
+          tactics: L(
+            "Le boss le plus résistant du jeu jusqu'ici. Sa tête est son seul point faible, ce qui est cruel : la plupart de ses attaques passent par sa bouche.\n\nElle souffle pour vous éloigner, puis envoie des bulles à tête chercheuse — esquivez sur le côté. Elle inspire pour vous aspirer et vous mordre : il faut fuir à la Nage de sirène, et souvent on est trop près pour y arriver. Elle inspire aussi, marque un temps, puis crache un rayon de foudre : là, il faut passer **au-dessus d'elle**, s'éloigner ne suffit pas.\n\nEn permanence, des éclairs tombent autour d'elle ; une lueur au sol annonce chaque impact une seconde à l'avance.\n\nÀ cause des deux attaques buccales, frappez de dos ou de côté — même si elle pivote souvent avec vous. À 50 % de vie, elle lève le trident en annonçant que ça va faire mal : c'est une décharge massive tout autour d'elle, il faut partir immédiatement.",
+            "The toughest boss so far. Her head is her only weak point, which is cruel: most of her attacks come out of her mouth.\n\nShe blows you away, then sends homing bubbles — dodge sideways. She inhales to suck you in and bite: you have to flee with Mermaid Kick, and you are often too close to make it. She also inhales, pauses, then breathes a beam of lightning: there you have to go **above her**, moving away is not enough.\n\nThroughout, lightning strikes rain around her; a glow on the ground announces each impact a second ahead.\n\nBecause of the two mouth attacks, strike from behind or the sides — though she often turns with you. At 50% HP she raises the trident and announces it will not be pretty: that is a massive burst all around her, leave at once.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Nage de sirène", "Mermaid Kick"), where: L("Après le premier combat contre Ursula.", "After the first Ursula fight."), note: L("Capacité partagée : elle permet de remonter les courants, ici et ailleurs.", "Shared ability: it lets you swim against currents, here and elsewhere.") },
+        { kind: "keyblade", label: L("Trésor des mers", "Crabclaw"), where: L("En scellant la Serrure, dans la grotte d'Ariel.", "By sealing the Keyhole, in Ariel's Grotto."), note: L("Beaucoup de dégâts et un point de magie en plus, au prix de la portée.", "High damage and one extra MP, at the cost of reach.") },
+        { kind: "chest", label: L("Orichalque", "Orichalcum"), where: L("Dans un gros coffre décroché près de l'évent, entre le navire coulé et la gorge.", "In a large chest knocked loose near the vent, between the Sunken Ship and the Gorge.") },
+        { kind: "chest", label: L("Page déchirée", "Torn Page"), where: L("Dans l'un des trois coffres cachés parmi les trésors d'Ariel.", "In one of the three chests hidden among Ariel's treasures.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 3", "Ansem's Report 3"), where: L("En battant Ursula géante.", "By beating Giant Ursula.") },
+        { kind: "trinity", label: L("Marque Trio rouge", "Red Trinity Mark"), where: L("Au palais de Triton, au centre de la structure en spirale : un Orichalque.", "In Triton's Palace, at the centre of the spiral structure: an Orichalcum."), requires: L("Trinité Détection, obtenue plus tard.", "Trinity Detect, obtained later.") },
+      ],
+      missable: [
+        L("Rien ne se perd, mais sans la Nage de sirène la moitié du monde reste fermée : elle ne s'obtient qu'après le premier combat contre Ursula.", "Nothing is lost, but without Mermaid Kick half the world stays closed: it only comes after the first Ursula fight."),
+      ],
+    },
     soon("ville-d-halloween", L("Ville d'Halloween", "Halloween Town"), "halloween-town"),
     soon("pays-imaginaire", L("Pays Imaginaire", "Neverland"), "neverland"),
     soon("ville-de-traverse-3", L("Ville de Traverse", "Traverse Town"), "traverse-town", L("Troisième visite", "Third visit")),
