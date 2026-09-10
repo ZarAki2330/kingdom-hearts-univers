@@ -675,4 +675,6 @@ export const entryImages: Record<string, EntryImage> = {
   "phantom": { src: "/images/encyclopedia/enemies/phantom.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Phantom_KH.png)", width: 303, height: 320 },
   "opposite-armor": { src: "/images/encyclopedia/enemies/opposite-armor.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Opposite_Armor_KH.png)", width: 320, height: 305 },
   "pongo-and-perdita": { src: "/images/encyclopedia/characters/pongo-and-perdita.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Pongo_KH.png, Perdita_KH.png)", width: 320, height: 188 },
+  "cerberus": { src: "/images/encyclopedia/enemies/cerberus.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Cerberus_KHII.png)", width: 320, height: 227 },
+  "sabor": { src: "/images/encyclopedia/enemies/sabor.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Sabor_KH.png)", width: 320, height: 169 },
 };

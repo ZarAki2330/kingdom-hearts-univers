@@ -8,7 +8,7 @@ import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getSection, getWalkthrough, neighbours, tileAccent, tileImage, walkthroughs, writtenSections } from "@/data/walkthrough";
 import type { WalkSection } from "@/data/walkthrough";
-import { BossCard, CollectibleList, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
+import { BossCard, CollectibleList, RichText, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string; game: string; section: string }> };
@@ -107,7 +107,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
         {section.intro &&
           paragraphs(localized(section.intro, locale)).map((p, i) => (
             <p key={i} className="mt-4 leading-relaxed">
-              {p}
+              <RichText text={p} />
             </p>
           ))}
       </header>
@@ -152,7 +152,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
             )}
             {paragraphs(localized(s.text, locale)).map((par, j) => (
               <p key={j} className="mt-4 leading-relaxed first:mt-0">
-                {par}
+                <RichText text={par} />
               </p>
             ))}
           </div>

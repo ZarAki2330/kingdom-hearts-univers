@@ -7,7 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getQuest, getWalkthrough, tileImage, walkthroughs, writtenQuests } from "@/data/walkthrough";
-import { BossCard, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
+import { BossCard, RichText, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string; game: string; quest: string }> };
@@ -90,7 +90,7 @@ export default async function QuestPage({ params }: Props) {
         {quest.intro &&
           paragraphs(localized(quest.intro, locale)).map((p, i) => (
             <p key={i} className="mt-4 leading-relaxed">
-              {p}
+              <RichText text={p} />
             </p>
           ))}
       </header>
@@ -127,7 +127,7 @@ export default async function QuestPage({ params }: Props) {
             )}
             {paragraphs(localized(s.text, locale)).map((par, j) => (
               <p key={j} className="mt-4 leading-relaxed first:mt-0">
-                {par}
+                <RichText text={par} />
               </p>
             ))}
           </div>

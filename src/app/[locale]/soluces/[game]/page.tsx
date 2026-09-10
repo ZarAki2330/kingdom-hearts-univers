@@ -6,7 +6,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { getWalkthrough, progress, tileAccent, tileImage, walkthroughs } from "@/data/walkthrough";
 import { GameCover } from "@/components/GameCover";
-import { paragraphs } from "@/components/WalkthroughBits";
+import { RichText, paragraphs } from "@/components/WalkthroughBits";
 import { WalkTile, WalkTileGrid } from "@/components/WalkTile";
 import { languageAlternates, localeUrl } from "@/lib/site";
 
@@ -74,7 +74,7 @@ export default async function WalkthroughGamePage({ params }: Props) {
         <p className="mt-2 text-sm text-text-2">{localized(w.version, locale)}</p>
         {paragraphs(localized(w.intro, locale)).map((par, i) => (
           <p key={i} className="mt-4 leading-relaxed">
-            {par}
+            <RichText text={par} />
           </p>
         ))}
         <p className="mt-4 text-sm text-text-2">{t("progress", { done: p.done, total: p.total })}</p>

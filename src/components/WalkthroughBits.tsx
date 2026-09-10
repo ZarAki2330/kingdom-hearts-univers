@@ -10,6 +10,21 @@ export function paragraphs(text: string) {
 }
 
 /**
+ * Un paragraphe de soluce. Le seul enrichissement admis dans les données est le gras,
+ * écrit **comme ceci** : il sert à faire ressortir ce qu'il ne faut pas rater dans un
+ * pas-à-pas (un objet, une capacité, un geste obligatoire). Tout le reste est du texte.
+ */
+export function RichText({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+        i % 2 === 1 ? <strong key={i}>{part}</strong> : <span key={i}>{part}</span>,
+      )}
+    </>
+  );
+}
+
+/**
  * Pictogrammes des éléments à ramasser. Ils doublent une étiquette écrite : ils ne portent
  * jamais l'information seuls, et restent donc décoratifs pour un lecteur d'écran.
  */
@@ -71,7 +86,7 @@ export function BossCard({
 
         {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
           <p key={i} className="mt-3 leading-relaxed first:mt-0">
-            {p}
+            <RichText text={p} />
           </p>
         ))}
 
