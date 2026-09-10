@@ -677,4 +677,12 @@ export const entryImages: Record<string, EntryImage> = {
   "pongo-and-perdita": { src: "/images/encyclopedia/characters/pongo-and-perdita.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Pongo_KH.png, Perdita_KH.png)", width: 320, height: 188 },
   "cerberus": { src: "/images/encyclopedia/enemies/cerberus.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Cerberus_KHII.png)", width: 320, height: 227 },
   "sabor": { src: "/images/encyclopedia/enemies/sabor.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Sabor_KH.png)", width: 320, height: 169 },
+  "pot-centipede": { src: "/images/encyclopedia/enemies/pot-centipede.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Pot_Centipede_KH.png)", width: 196, height: 209 },
+  "cave-of-wonders-guardian": { src: "/images/encyclopedia/enemies/cave-of-wonders-guardian.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Cave_of_Wonders_Guardian_KH.png)", width: 148, height: 158 },
+  "genie-jafar": { src: "/images/encyclopedia/enemies/genie-jafar.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Genie_Jafar_KH.png)", width: 167, height: 320 },
+  "crank-tower": { src: "/images/encyclopedia/enemies/crank-tower.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Crank_Tower_KH.png)", width: 150, height: 320 },
+  "lock-shock-and-barrel": { src: "/images/encyclopedia/enemies/lock-shock-and-barrel.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Lock,_Shock,_and_Barrel_KHII.png)", width: 280, height: 320 },
+  "oogies-manor": { src: "/images/encyclopedia/enemies/oogies-manor.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Oogie%27s_Manor_KH.png)", width: 320, height: 210 },
+  "dragon-maleficent": { src: "/images/encyclopedia/enemies/dragon-maleficent.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Dragon_Maleficent_KH.png)", width: 320, height: 183 },
+  "riku-ansem": { src: "/images/encyclopedia/enemies/riku-ansem.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Riku-_Dark_Mode_KH.png)", width: 184, height: 320 },
 };

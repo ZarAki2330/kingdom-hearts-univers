@@ -1,20 +1,11 @@
 import type { LocalizedText } from "@/data/games";
 import { quests } from "./kingdom-hearts-quests";
-import type { Walkthrough, WalkSection } from "./types";
+import type { Walkthrough } from "./types";
 
 const L = (fr: string, en: string): LocalizedText => ({ fr, en });
 
 /** Crédit commun des visuels repris du Kingdom Hearts Wiki (voir docs/IMAGES.md). */
 const credit = (file: string) => `© Square Enix / Disney — via Kingdom Hearts Wiki (${file})`;
-
-/** Section annoncée au sommaire mais pas encore rédigée. */
-const soon = (id: string, title: LocalizedText, world?: string, subtitle?: LocalizedText): WalkSection => ({
-  id,
-  title,
-  subtitle,
-  world,
-  status: "todo",
-});
 
 export const walkthrough: Walkthrough = {
   game: "kingdom-hearts",
@@ -537,6 +528,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "crank-tower",
+          entry: "crank-tower",
           name: L("La tour à manivelles", "The Crank Tower"),
           level: "10",
           tactics: L(
@@ -820,7 +812,6 @@ export const walkthrough: Walkthrough = {
       world: "traverse-town",
       status: "done",
       level: "18 → 20",
-      image: { src: "/images/walkthrough/traverse-2.webp", credit: credit("Traverse Town from KH1 gameplay 3.png"), width: 420, height: 236 },
       intro: L(
         "Les fragments Navi-G rapportés du Pays des Merveilles et de la Jungle Profonde intriguent Dingo : Léon saura peut-être ce que c'est. Le retour est obligatoire une fois ces deux mondes scellés.\n\nCette visite est courte mais dense : le trou de serrure de la ville, une invocation, un sort de défense, l'accès à la Forêt des Rêves Bleus et le raccourci Warp-G qui évite de refaire le trajet en vaisseau à chaque monde.",
         "The Navi-G Pieces brought back from Wonderland and Deep Jungle intrigue Goofy: Leon might know what they are. The return is mandatory once both worlds are sealed.\n\nThe visit is short but dense: the town's Keyhole, a summon, a defensive spell, access to the Hundred Acre Wood, and the Warp-G shortcut that saves flying to every world again.",
@@ -915,6 +906,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "pot-centipede",
           name: L("Le Mille-Pattes", "Pot Centipede"),
+          entry: "pot-centipede",
           level: "21",
           tactics: L(
             "Toutes les rues de la ville servent d'arène. La bête est faite d'une tête, d'une queue et d'un corps composé d'Araignées-Pots, invulnérables tant qu'elles font partie du corps.\n\nFrapper la tête ou la queue l'étourdit un instant et libère les araignées, qui redeviennent des ennemis ordinaires. Elle fuit ensuite vers la rue principale, puis la ruelle, puis la place, en appelant des renforts à chaque fois.\n\nTout le danger est là : laissez les araignées s'accumuler et vous ne gérez plus rien. Nettoyez-les systématiquement dès qu'elles se détachent, et finissez le mille-pattes une fois le terrain dégagé. Glacier et la Foudre sont parfaits contre les grappes ; Aéro amortit le reste.",
@@ -924,6 +916,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "gardien-caverne",
           name: L("Le Gardien de la caverne", "The Cave of Wonders' Guardian"),
+          entry: "cave-of-wonders-guardian",
           level: "22",
           tactics: L(
             "Ses points faibles sont ses yeux, d'où il tire aussi des éclairs à tête chercheuse pendant tout le combat. Il crache du feu et fait apparaître sans arrêt des Bandits, des Gros Bandits et des Soldats Volants.\n\nLa méthode : grimper la tête par l'arrière — ou attendre qu'il plonge dans le sable, ce qui la met à portée —, se tenir sur le museau et frapper les yeux en laissant les équipiers s'occuper des Sans-cœur. Depuis le museau, ni les Bandits ni les éclairs ne représentent une vraie menace.\n\nSi vous êtes projeté au sol, la Foudre atteint les yeux à distance ; sinon, tapez quelques Sans-cœur pour récupérer vie et magie avant de remonter.",
@@ -944,7 +937,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "jafar-genie",
           name: L("Jafar en génie", "Genie Jafar"),
-          entry: "jafar",
+          entry: "genie-jafar",
           level: "24",
           reward: L("Brasier devient Brasier+, et le rapport d'Ansem n° 1.", "Fire becomes Fira, and Ansem's Report 1."),
           tactics: L(
@@ -1109,14 +1102,417 @@ export const walkthrough: Walkthrough = {
         L("Rien ne se perd, mais sans la Nage de sirène la moitié du monde reste fermée : elle ne s'obtient qu'après le premier combat contre Ursula.", "Nothing is lost, but without Mermaid Kick half the world stays closed: it only comes after the first Ursula fight."),
       ],
     },
-    soon("ville-d-halloween", L("Ville d'Halloween", "Halloween Town"), "halloween-town"),
-    soon("pays-imaginaire", L("Pays Imaginaire", "Neverland"), "neverland"),
-    soon("ville-de-traverse-3", L("Ville de Traverse", "Traverse Town"), "traverse-town", L("Troisième visite", "Third visit")),
-    soon("forteresse-oubliee", L("Forteresse Oubliée", "Hollow Bastion"), "radiant-garden"),
-    soon("fin-du-monde", L("Fin du Monde", "End of the World"), "end-of-the-world"),
-    soon("foret-des-reves-bleus", L("Forêt des Rêves Bleus", "Hundred Acre Wood"), "hundred-acre-wood", L("Facultatif", "Optional")),
-    soon("coupes-et-boss", L("Coupes du Colisée et boss optionnels", "Coliseum cups and optional bosses"), "olympus"),
-    { ...soon("synthese-et-ultima", L("Synthèse, Orichalques et Ultima Weapon", "Synthesis, Orichalcum and the Ultima Weapon")), entry: "moogles" },
+    {
+      id: "ville-d-halloween",
+      title: L("Ville d'Halloween", "Halloween Town"),
+      world: "halloween-town",
+      status: "done",
+      level: "27 → 30",
+      intro: L(
+        "Le monde de Jack Skellington, et l'un des plus verticaux du jeu : tout se joue entre la place de la guillotine, le cimetière et le manoir d'Oogie Boogie, qu'il faut escalader de fond en comble.\n\nOn en repart avec Gravité+, la Keyblade Citrouille — la plus puissante à ce stade — et le rapport d'Ansem n° 7. Jack peut rejoindre l'équipe : lanceur de sorts offensif, avec ses propres versions de Brasier, Glacier, Foudre et Gravité, et de meilleures statistiques que Donald comme que Dingo.",
+        "Jack Skellington's world, and one of the most vertical in the game: everything happens between Guillotine Square, the Graveyard and Oogie Boogie's Manor, which has to be climbed from bottom to top.\n\nYou leave with Gravira, the Pumpkinhead Keyblade — the strongest at this point — and Ansem's Report 7. Jack can join the party: an offensive spellcaster with his own versions of Fire, Blizzard, Thunder and Gravity, and better stats than either Donald or Goofy.",
+      ),
+      steps: [
+        {
+          id: "jack-et-le-docteur",
+          title: L("Jack, le docteur, et le cœur artificiel", "Jack, the doctor, and the artificial heart"),
+          image: { src: "/images/walkthrough/halloween-1.webp", credit: credit("Halloween Town from KH1 gameplay 2.png"), width: 420, height: 236 },
+          text: L(
+            "À l'arrivée, la place de la guillotine est occupée par des Chasseurs de Fantômes **inoffensifs** : ils ne vous attaqueront pas tant que la scène de Jack n'a pas eu lieu. Ignorez-les et partez à droite.\n\nEntrez ensuite dans le vestibule derrière la guillotine, puis dans le laboratoire, pour rencontrer le docteur Finkelstein. Jack devient recrutable à ce moment. **Fouillez la bibliothèque du laboratoire** : elle contient une page déchirée.\n\nDe retour sur la place, les Sans-cœur deviennent hostiles. Les Chevaliers Blancs apparaissent au cimetière : ils sautent pour vous frapper par-dessus ou dans le dos, et balaient une large zone de leurs longs bras — difficiles à esquiver, faciles à parer.\n\nParlez à Sally, revenez au laboratoire pour les scènes, puis retournez au cimetière. Entrez dans le cercueil pour atteindre l'ossuaire, parlez au maire, et examinez les tombes **dans l'ordre qu'il indique** : un coffre apparaît avec la Boîte à Malices.",
+            "On arrival, Guillotine Square is occupied by **harmless** Search Ghosts: they will not attack until Jack's scene has played. Ignore them and head right.\n\nThen enter the Lab Entryway behind the guillotine and the Research Lab, to meet Dr. Finkelstein. Jack becomes recruitable at this point. **Examine the bookcase in the lab**: it holds a Torn Page.\n\nBack on the square, the Heartless turn hostile. Wight Knights appear in the Graveyard: they jump to hit you from above or behind, and sweep wide with their long arms — hard to dodge, easy to block.\n\nTalk to Sally, return to the lab for the cutscenes, then head back to the Graveyard. Enter the coffin to reach the Boneyard, talk to the Mayor, and examine the tombstones **in the order he gives**: a chest appears with the Jack-in-the-Box.",
+          ),
+        },
+        {
+          id: "vers-le-manoir",
+          title: L("La colline du clair de lune et le manoir", "Moonlight Hill and the manor"),
+          text: L(
+            "Rapportez la Boîte à Malices au docteur, puis revenez sur la place : les Gargouilles apparaissent. Ces Sans-cœur volants frappent fort au corps à corps, crachent des orbes à tête chercheuse et se transforment en volute d'énergie **invulnérable** qui vous suit jusqu'à ce qu'elles se reforment. Attendez la reformation plutôt que de perdre des coups.\n\nRetournez au cimetière, puis à l'ossuaire, et prenez la porte de la crypte derrière la citrouille brisée pour rejoindre la colline du clair de lune. **Allumez la plateforme-lanterne** : elle ouvre un raccourci permanent entre la colline et le cimetière.\n\nNettoyez la zone, puis examinez les petites pierres tombales au centre : le sommet de la colline s'étire et donne accès au pont, puis au manoir d'Oogie.\n\nSi vous tombez du manoir, la baignoire sur pattes vous remonte — à condition d'avoir battu les Sans-cœur qui l'entourent. Une **marque Trio rouge** se trouve ici : elle a été déplacée dans Final Mix, précisément parce qu'elle était ratable dans la version d'origine.\n\nPassez la porte au bout du pont de corde, lancez Brasier sur la plateforme pour la mettre en mouvement, puis escaladez tout le manoir. La porte tout en haut déclenche le combat.",
+            "Take the Jack-in-the-Box back to the doctor, then return to the square: Gargoyles appear. These flying Heartless hit hard in melee, spit homing orbs and turn into an **invulnerable** wisp of energy that trails you until they reform. Wait for them to reform rather than waste swings.\n\nGo back to the Graveyard, then the Boneyard, and take the crypt door behind the smashed pumpkin to reach Moonlight Hill. **Light the lantern platform**: it opens a permanent shortcut between the hill and the Graveyard.\n\nClear the area, then examine the tiny gravestones in the centre: the hilltop extends and gives access to the Bridge, then to Oogie's Manor.\n\nIf you fall from the manor, the walking bathtub takes you back up — provided you have beaten the Heartless around it. A **red Trinity Mark** sits here: it was moved in Final Mix precisely because it was missable in the original.\n\nGo through the door at the end of the rope bridge, cast Fire on the platform to set it moving, then climb the entire manor. The door at the very top starts the fight.",
+          ),
+        },
+        {
+          id: "oogie-et-apres",
+          title: L("Oogie Boogie, puis le manoir lui-même", "Oogie Boogie, then the manor itself"),
+          text: L(
+            "Am, Stram et Gram battus, **actionnez le levier de la salle** : il ouvre la porte de la salle de torture d'Oogie Boogie. Elle est facile à repérer — d'un vert criard — mais mal placée : elle se trouve dans la partie basse du manoir, près du bout du pont de corde. Sauvegardez avant d'entrer.\n\nOogie vaincu vous donne le Diadème Sacré et le **rapport d'Ansem n° 7**. En repartant, vous le trouvez fusionné avec son propre manoir : le troisième combat s'enchaîne, mais vous pouvez encore ressortir pour sauvegarder.\n\nUne fois le manoir détruit, la Serrure se scelle automatiquement. Vous recevez **Gravité+** et, de la part de Jack, la Keyblade **Citrouille** : longue portée et la plus forte du jeu à ce stade, au prix du point de magie du Trésor des mers.\n\nDeux objets restent à ramasser : un Boost de force dans une structure de la place, et un Boost de défense dans la zone du pont. Les coffres oubliés dans le manoir se retrouvent dans un petit sous-sol caché au centre de l'espace vide.\n\nLa suite : le Pays Imaginaire, ou Atlantica si vous ne l'avez pas encore fait. Avant de partir, un détour par la Forêt des Rêves Bleus s'impose — c'est probablement votre dernière page déchirée.",
+            "With Lock, Shock and Barrel beaten, **pull the lever in the room**: it opens the door to Oogie Boogie's Torture Chamber. It is easy to spot — a garish green — but awkwardly placed: it sits low in the manor, near the end of the rope bridge. Save before going in.\n\nBeating Oogie gives you the Holy Circlet and **Ansem's Report 7**. On your way out you find him merged with his own manor: the third fight follows on, though you can still step out to save.\n\nOnce the manor is destroyed, the Keyhole seals itself. You receive **Gravira** and, from Jack, the **Pumpkinhead** Keyblade: long reach and the strongest in the game at this point, at the cost of the Crabclaw's extra MP.\n\nTwo items remain: a Power Up in a structure in the Square, and a Defense Up in the Bridge area. Chests missed inside the manor turn up in a small hidden basement at the centre of the remaining space.\n\nNext: Neverland, or Atlantica if you have not done it. Before you leave, a detour to the Hundred Acre Wood is in order — this is likely your last Torn Page.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "am-stram-gram",
+          name: L("Am, Stram et Gram", "Lock, Shock, and Barrel"),
+          entry: "lock-shock-and-barrel",
+          level: "28",
+          tactics: L(
+            "Les trois sont individuellement très faibles : toute la difficulté vient de leur taille et de leur vitesse. Am (le diable) saute partout, Stram (la sorcière) tourne au centre de la salle, Gram (le squelette) fonce en ligne droite.\n\n**L'ordre compte.** Seul le dernier abattu rapporte la totalité de son expérience ; les autres n'en donnent qu'un dixième. Battez-les donc dans l'ordre Am, Stram, **puis Gram**, qui en rapporte le plus. Am lâche des sphères de vie, Stram des sphères de magie.\n\nLe verrouillage et la magie de zone valent mieux que les combos ici : ils bougent trop pour qu'on les enchaîne proprement.",
+            "The three are individually very weak: the whole difficulty comes from their size and speed. Lock (the devil) jumps everywhere, Shock (the witch) spins in the middle of the room, Barrel (the skeleton) dashes in straight lines.\n\n**Order matters.** Only the last one felled grants full experience; the others give a tenth. So beat them in the order Lock, Shock, **then Barrel**, who is worth the most. Lock drops HP orbs, Shock drops MP orbs.\n\nLock-on and area magic beat combos here: they move too much to be chained cleanly.",
+          ),
+        },
+        {
+          id: "oogie-boogie",
+          name: L("Oogie Boogie", "Oogie Boogie"),
+          entry: "oogie-boogie",
+          level: "29",
+          reward: L("Le Diadème Sacré et le rapport d'Ansem n° 7.", "The Holy Circlet and Ansem's Report 7."),
+          tactics: L(
+            "Oogie encaisse mal les coups physiques et bien la magie, mais l'arène le tient hors de portée la plupart du temps : il court sur la passerelle du haut pendant que vous êtes en bas.\n\nIl lance deux sortes de dés. Les dés **brillants** explosent ; les trois autres tombent tous sur le même chiffre et déclenchent un effet. **Renvoyez-les** : c'est des points Tech, et si vous les touchez tous, l'effet est purement et simplement annulé.\n\nLes effets : un « 1 » lance une scie circulaire autour de la roulette, un « 4 » fait tourner des faux ; « 2 », « 3 » et « 5 » invoquent respectivement deux Gargouilles, deux Chevaliers Blancs et deux Chasseurs de Fantômes. À faible vie, les faux montent et descendent en tournant, et il peut **forcer un triple six** pour se soigner à la machine : à ce stade, ne le laissez pas respirer.\n\nAprès chaque lancer, les boutons près du pilier central s'allument. Appuyer sur un bouton enferme tout ce qui se trouve dans la section correspondante. Le but est donc de vous enfermer **avec lui** : la partie basse remonte, et il n'a plus qu'une gifle molle à opposer. Frappez jusqu'à ce qu'il vous rejette en bas, puis recommencez. Si vous le manquez, les soldats du bas vous coûteront quelques points de vie.",
+            "Oogie takes physical damage badly and magic well, but the arena keeps him out of reach most of the time: he runs along the upper walkway while you are below.\n\nHe throws two kinds of dice. The **glowing** ones explode; the other three all land on the same number and trigger an effect. **Deflect them**: that is Tech Points, and if you hit them all, the effect is cancelled outright.\n\nThe effects: a \"1\" sends a circular saw around the roulette, a \"4\" starts scythes spinning; \"2\", \"3\" and \"5\" summon two Gargoyles, two Wight Knights and two Search Ghosts respectively. At low health the scythes also move up and down while rotating, and he can **force a triple six** to heal himself at the machine: by then, do not let him breathe.\n\nAfter each throw, the buttons near the central pillar light up. Pressing one seals everything inside that section. The goal is to shut yourself in **with him**: the lower area rises, and all he has left is a feeble slap. Hit him until he knocks you back down, then start again. If you miss him, the toy soldiers below will cost you some health.",
+          ),
+        },
+        {
+          id: "manoir-oogie",
+          name: L("Le Manoir d'Oogie", "Oogie's Manor"),
+          entry: "oogies-manor",
+          level: "30",
+          reward: L("Gravité+, la Keyblade Citrouille, et le trou de serrure scellé.", "Gravira, the Pumpkinhead Keyblade, and the Keyhole sealed."),
+          tactics: L(
+            "Le manoir est trop grand pour être attaqué : les cibles sont les **sept Amas d'Ombre** accrochés à la structure. Ils sont presque inoffensifs — une petite boule de feu de temps en temps —, mais **en détruire trois déclenche l'apparition sans fin de Gargouilles** près de vous. Prévoyez-le.\n\nLa grande lanterne tire des salves de feu sur la partie basse et médiane de la façade. Si vous la détruisez, la seconde lanterne, tout en haut, prend le relais, et le bras qui tenait la première se libère pour balayer ce qui passe dessous. En haut, le visage d'Oogie crache régulièrement des spores empoisonnées.\n\nLe vrai adversaire, en réalité, c'est l'escalade : le combat se gagne en montant proprement jusqu'au sommet sans tomber. Aéro et un peu de patience suffisent.",
+            "The manor is too big to attack: the targets are the **seven Shadow Globs** clinging to the structure. They are nearly harmless — the odd small fireball — but **destroying three triggers an endless spawn of Gargoyles** near you. Plan for it.\n\nThe large lantern fires volleys at the lower and middle front of the façade. Destroy it and the second lantern at the top takes over, while the arm that held the first is freed to swipe at anything below. Up top, Oogie's face regularly spreads poisonous spores.\n\nThe real opponent is the climb: the fight is won by making it cleanly to the top without falling. Aero and a little patience are enough.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Citrouille", "Pumpkinhead"), where: L("De la part de Jack, après le manoir.", "From Jack, after the manor."), note: L("Longue portée, la plus forte du jeu à ce stade.", "Long reach, the strongest in the game at this point.") },
+        { kind: "ability", label: L("Gravité+", "Gravira"), where: L("En scellant la Serrure.", "By sealing the Keyhole.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 7", "Ansem's Report 7"), where: L("En battant Oogie Boogie.", "By beating Oogie Boogie.") },
+        { kind: "chest", label: L("Page déchirée", "Torn Page"), where: L("Dans la bibliothèque du laboratoire du docteur Finkelstein.", "In the bookcase of Dr. Finkelstein's lab.") },
+        { kind: "chest", label: L("Boîte à Malices", "Jack-in-the-Box"), where: L("À l'ossuaire : examinez les tombes dans l'ordre indiqué par le maire.", "In the Boneyard: examine the tombstones in the order the Mayor gives.") },
+        { kind: "chest", label: L("Boost de force et Boost de défense", "Power Up and Defense Up"), where: L("Le premier dans une structure de la place, le second dans la zone du pont.", "The first in a structure in the Square, the second in the Bridge area.") },
+        { kind: "trinity", label: L("Marque Trio rouge", "Red Trinity Mark"), where: L("Au manoir d'Oogie, sur le chemin après le pont de corde.", "In Oogie's Manor, on the path after the rope bridge."), note: L("Déplacée dans Final Mix : elle était ratable dans la version d'origine.", "Moved in Final Mix: it was missable in the original.") },
+      ],
+      missable: [
+        L("Les coffres oubliés dans le manoir ne sont pas perdus : ils réapparaissent dans un sous-sol caché au centre de l'espace vide, une fois le manoir détruit.", "Chests missed inside the manor are not lost: they reappear in a hidden basement at the centre of the remaining space, once the manor is destroyed."),
+      ],
+    },
+    {
+      id: "pays-imaginaire",
+      title: L("Pays Imaginaire", "Neverland"),
+      world: "neverland",
+      status: "done",
+      level: "30 → 33",
+      intro: L(
+        "Le monde de Peter Pan commence par une capture : le vaisseau est éperonné, et Sora se réveille prisonnier dans les cales du navire du capitaine Crochet. Il faut au moins deux mondes facultatifs terminés — Monstro plus la Ville d'Halloween ou Atlantica — pour y accéder.\n\nC'est le monde du **vol** : à partir de la moitié, tout le groupe vole, et l'on en repart avec Plané, qui rouvre des coffres dans presque tous les mondes déjà visités. Il donne aussi Soin+, la Keyblade Harpe Féerique, l'invocation Clochette et le rapport d'Ansem n° 9.",
+        "Peter Pan's world begins with a capture: the ship is rammed, and Sora wakes up a prisoner in the hold of Captain Hook's vessel. You need at least two optional worlds finished — Monstro plus Halloween Town or Atlantica — to reach it.\n\nThis is the world of **flight**: from halfway on, the whole party flies, and you leave with Glide, which reopens chests in nearly every world you have visited. It also gives Cura, the Fairy Harp Keyblade, the Tinker Bell summon and Ansem's Report 9.",
+      ),
+      steps: [
+        {
+          id: "les-cales",
+          title: L("Les cales du navire", "The ship's hold"),
+          image: { src: "/images/walkthrough/neverland-1.webp", credit: credit("Neverland from KH1 gameplay 2.png"), width: 420, height: 236 },
+          text: L(
+            "Peter Pan rejoint l'équipe dès la première scène. Il n'est pas plus fort que Donald ni que Dingo, mais il vole et lance ses propres versions de Stop et d'Aéro.\n\nLes Pirates sont les Sans-cœur ordinaires du monde : rien d'exceptionnel, sauf que **esquiver leur grand sabre les laisse déséquilibrés** un instant — c'est là qu'on frappe. Les Ombres de Sora traînent aussi ici : inoffensives, elles fuient souvent avant qu'on ait pu les tuer.\n\nLa plupart des portes sont verrouillées et les couloirs sont étroits. Montez à l'échelle, prenez la porte de droite : des Araignées-Tonneaux vous attendent, ainsi qu'un trou dans le plancher menant à la chambre froide.\n\nEn bas, nettoyez, puis prenez la seconde échelle vers la coquerie. Servez-vous de l'étagère pour sauter par **le trou le plus à droite** de la grille du plafond : vous arrivez dans une cabine avec un point de sauvegarde. C'est le moment de sortir Peter Pan de l'équipe si vous l'aviez pris. Une **marque Trio verte** révèle une échelle vers la cabine du capitaine, et le premier combat.",
+            "Peter Pan joins the party in the first scene. He is no stronger than Donald or Goofy, but he flies and casts his own versions of Stop and Aero.\n\nPirates are the world's standard Heartless: nothing remarkable, except that **dodging their big cutlass leaves them stumbling** for a moment — that is when you strike. Shadow Soras also hang around: harmless, they often flee before you can kill them.\n\nMost doors are locked and the quarters are cramped. Climb the ladder, take the door on the right: Barrel Spiders await, along with a hole in the floor leading to the Freezer.\n\nDown there, clear the room, then take the second ladder to the Galley. Use the shelf to jump through **the rightmost hole** in the ceiling grating: you land in a Cabin with a save point. Now is the time to swap Peter Pan out if you had him. A **green Trinity Mark** reveals a ladder to the Captain's Cabin, and the first fight.",
+          ),
+        },
+        {
+          id: "le-pont",
+          title: L("Le pont, et le vol", "The deck, and flight"),
+          text: L(
+            "L'Anti-Sora battu donne la Serre du Corbeau, et ouvre l'autre trappe : Wendy s'y trouve, après quoi Peter s'en va. Sauvegardez, prenez le couloir, l'autre cabine, revenez par la cabine du capitaine, et sortez enfin sur le pont.\n\nAprès la scène, Peter revient, vous apprenez **Soin+** et recevez la capacité partagée **Plané** — inutilisable ici pour l'instant, puisque tout le monde vole déjà. Vous pouvez désormais voler comme Peter, ce qui règle le combat contre les Pirates de l'Air : leur avantage aérien disparaît.\n\nUn Cuirassé apparaît aussi : ce gros Sans-cœur a des pièces destructibles individuellement, et lui retirer ses canons ou ses ailerons réduit très vite sa dangerosité. Le capitaine Crochet enchaîne immédiatement après.",
+            "Beating AntiSora gives the Raven's Claw and opens the other trapdoor: Wendy is there, after which Peter leaves. Save, take the Corridor, the other Cabin, come back via the Captain's Cabin, and finally step out onto the Deck.\n\nAfter the scene, Peter rejoins, you learn **Cura** and receive the shared ability **Glide** — unusable here for now, since everyone already flies. You can now fly like Peter, which settles the Air Pirates fight: their aerial advantage vanishes.\n\nA Battleship also shows up: this large Heartless has individually destructible parts, and stripping its guns or fins cuts its threat sharply. Captain Hook follows immediately after.",
+          ),
+        },
+        {
+          id: "horloge",
+          title: L("La tour de l'horloge, et les douze portes", "The clock tower, and the twelve doors"),
+          text: L(
+            "Crochet battu, vous volez automatiquement jusqu'à la tour de l'horloge. **Frappez la grande aiguille** de l'un des cadrans pour l'aligner sur les autres : le trou de serrure apparaît.\n\nLa récompense est copieuse : un fragment Navi-G, l'invocation **Clochette**, la Keyblade **Harpe Féerique** et la capacité partagée **Plané**.\n\nLa Harpe Féerique est votre Keyblade la plus puissante à ce stade, mais courte. Clochette est une invocation à part : elle **ne remplace pas Donald et Dingo**, soigne passivement pendant le combat, et vous ressuscite une fois si vous tombez. Plané permet de se déplacer lentement en vol dans tous les autres mondes : plusieurs coffres jusqu'ici inaccessibles s'ouvrent enfin.\n\nUn détail à ne pas manquer : si vous quittez le monde et y revenez, **une porte différente de la tour s'ouvre à chaque heure de l'horloge du jeu** — douze objets en tout, un par heure, signalés par une lumière blanche. Ce sont de bons objets, dont plusieurs Boosts.\n\nDirection la Ville de Traverse. La coupe d'Hercule est ouverte au Colisée si vous voulez la faire d'abord.",
+            "With Hook beaten, you fly automatically to the Clock Tower. **Hit the large hand** on one of the clock faces to line it up with the others: the Keyhole appears.\n\nThe reward is generous: a Navi-G Piece, the **Tinker Bell** summon, the **Fairy Harp** Keyblade and the shared ability **Glide**.\n\nThe Fairy Harp is your strongest Keyblade so far, but short. Tinker Bell is a summon apart: she **does not replace Donald and Goofy**, heals passively during the fight, and revives you once if you fall. Glide lets you move slowly through the air in every other world: several previously unreachable chests finally open.\n\nOne detail not to miss: leave and come back and **a different tower door opens on each hour of the game clock** — twelve items in all, one per hour, marked by a white light. They are good items, several of them stat Ups.\n\nNext stop, Traverse Town. The Hercules Cup is open at the Coliseum if you want to run it first.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "anti-sora",
+          name: L("Anti-Sora", "AntiSora"),
+          entry: "anti-sora",
+          level: "31",
+          reward: L("L'accessoire Serre du Corbeau.", "The Raven's Claw accessory."),
+          tactics: L(
+            "Il reprend une bonne partie des capacités de Sora, mais **sans magie**, et peut se fondre dans le sol comme une Ombre. Sa manœuvre la plus dangereuse est la disparition : il plonge dans le plancher, devient invisible, et ressort **derrière vous** pour frapper aussitôt.\n\nÀ mi-vie, il crée deux copies. Elles font autant de dégâts que l'original, mais **ne partagent pas sa barre de vie** : verrouillez et utilisez Analyse pour trouver le vrai, sinon vous frappez dans le vide.\n\nL'arène est petite : Roulade et Aéro font tout le travail défensif. Stop+ est très utile pour l'immobiliser, car il est difficile à enchaîner.",
+            "He borrows a good part of Sora's moveset, but **no magic**, and can sink into the floor like a Shadow. His most dangerous move is the vanish: he dives into the floor, turns invisible, and comes out **behind you** to strike at once.\n\nAt half health he creates two copies. They deal as much damage as the original but **do not share its HP bar**: lock on and use Scan to find the real one, or you are swinging at nothing.\n\nThe arena is small: Dodge Roll and Aero do all the defensive work. Stopra is very useful to pin him down, as he is hard to chain.",
+          ),
+        },
+        {
+          id: "capitaine-crochet",
+          name: L("Capitaine Crochet", "Captain Hook"),
+          entry: "captain-hook",
+          level: "32",
+          reward: L("La capacité Ars Arcanum, et le rapport d'Ansem n° 9.", "The Ars Arcanum ability, and Ansem's Report 9."),
+          tactics: L(
+            "Crochet est **immunisé à la Foudre**, et résiste à la magie comme tous les boss — sauf à Brasier, qui le fait paniquer un instant. Attention : paniqué, il court en l'air à toute vitesse et blesse tout ce qu'il percute.\n\nLe vol est tentant, mais **on ne peut pas faire de Roulade en volant**. Servez-vous-en pour vous éloigner et récupérer, pas pour combattre. Ignorez le Cuirassé qui le soutient : il est immédiatement remplacé.\n\nAu corps à corps il est dangereux : après une provocation, son crochet **pare votre coup et contre aussitôt**. Le reste du temps, il enchaîne estocades rapides et jette des explosifs. Aéro amortit beaucoup.\n\nQuand il devient rouge de colère, il vous poursuit en déchaînant une rafale qui couvre une petite zone autour de lui : n'essayez pas de l'échanger, éloignez-vous.\n\nL'astuce du monde : **poussez-le à l'eau**. Il ressort en sautant, et vous avez le temps d'un combo aérien complet.",
+            "Hook is **immune to Thunder**, and resists magic like every boss — except Fire, which panics him for a moment. Careful: panicked, he runs through the air at speed and hurts anything he hits.\n\nFlight is tempting, but **you cannot Dodge Roll while flying**. Use it to get away and recover, not to fight. Ignore the Battleship supporting him: it is instantly replaced.\n\nIn melee he is dangerous: after a taunt, his hook **blocks your swing and counters at once**. The rest of the time he chains quick thrusts and throws explosives. Aero softens a lot.\n\nWhen he turns red with anger he chases you, unleashing a flurry covering a small area around him: do not trade, get away.\n\nThe world's trick: **knock him into the water**. He leaps back out, and you have time for a full aerial combo.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Harpe Féerique", "Fairy Harp"), where: L("En scellant la Serrure de la tour de l'horloge.", "By sealing the Clock Tower's Keyhole.") },
+        { kind: "ability", label: L("Plané", "Glide"), where: L("En scellant la Serrure.", "By sealing the Keyhole."), note: L("Capacité partagée : elle rouvre des coffres dans presque tous les mondes déjà visités.", "Shared ability: it reopens chests in nearly every world you have visited.") },
+        { kind: "ability", label: L("Invocation Clochette", "Tinker Bell summon"), where: L("En scellant la Serrure.", "By sealing the Keyhole."), note: L("Ne remplace pas les équipiers, soigne en continu et ressuscite une fois.", "Does not replace your party, heals continuously and revives you once.") },
+        { kind: "ability", label: L("Soin+ et Ars Arcanum", "Cura and Ars Arcanum"), where: L("Le premier sur le pont, le second en battant Crochet.", "The first on the Deck, the second by beating Hook.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 9", "Ansem's Report 9"), where: L("En battant le capitaine Crochet.", "By beating Captain Hook.") },
+        { kind: "chest", label: L("Les douze portes de l'horloge", "The clock tower's twelve doors"), where: L("Revenez au monde une fois par heure de l'horloge du jeu : la porte éclairée en blanc change à chaque fois.", "Come back once per hour of the game clock: the door lit in white changes each time."), note: L("Douze objets au total, dont plusieurs Boosts.", "Twelve items in all, several of them stat Ups.") },
+        { kind: "trinity", label: L("Marque Trio verte", "Green Trinity Mark"), where: L("Dans la cabine avec le point de sauvegarde : elle révèle l'échelle vers la cabine du capitaine.", "In the Cabin with the save point: it reveals the ladder to the Captain's Cabin.") },
+      ],
+      missable: [
+        L("Les douze objets de la tour de l'horloge demandent douze passages, un par heure de l'horloge du jeu : rien n'est perdu, mais rien ne s'obtient d'un coup.", "The clock tower's twelve items need twelve visits, one per hour of the game clock: nothing is lost, but nothing is obtained in one go."),
+      ],
+    },
+    {
+      id: "ville-de-traverse-3",
+      title: L("Ville de Traverse", "Traverse Town"),
+      subtitle: L("Troisième visite", "Third visit"),
+      world: "traverse-town",
+      status: "done",
+      level: "33 → 35",
+      intro: L(
+        "Une visite très courte — une conversation avec Cid suffit à ouvrir la Forteresse Oubliée — mais c'est **le dernier moment tranquille du jeu**. Ce qui suit change tout.\n\nAprès les événements de la Forteresse Oubliée, les Sans-cœur de **tous les mondes** montent brutalement de niveau, jusqu'à l'équivalent du niveau 50 en moyenne. Tout ce qui se fait facilement maintenant — récolter des matériaux de synthèse, finir des coupes, ramasser les coffres oubliés — devient nettement plus pénible ensuite.",
+        "A very short visit — one conversation with Cid opens Hollow Bastion — but it is **the last quiet moment of the game**. What follows changes everything.\n\nAfter the events of Hollow Bastion, the Heartless of **every world** jump sharply in level, to around level 50 on average. Everything that is easy right now — gathering synthesis materials, clearing cups, picking up missed chests — becomes markedly more painful afterwards.",
+      ),
+      steps: [
+        {
+          id: "cid",
+          title: L("Parler à Cid", "Talk to Cid"),
+          text: L(
+            "Une seule chose est obligatoire : parler à Cid. La Forteresse Oubliée devient alors accessible depuis le vaisseau.\n\nAvant de partir, passez par l'atelier de synthèse : les objets fabricables ont changé, et c'est le bon moment. Fabriquez tout ce qui est disponible, chaque série débloquant la suivante.\n\nSi ce n'est pas déjà fait, récupérez aussi le **Sceptre Magique** chez Merlin et l'**Étoile Filante** chez Geppetto.",
+            "Only one thing is mandatory: talk to Cid. Hollow Bastion then becomes reachable from the ship.\n\nBefore you go, drop by the Item Workshop: what you can synthesise has changed, and now is the moment. Craft everything available, each set unlocking the next.\n\nIf you have not yet, also collect the **Spellbinder** from Merlin and the **Wishing Star** from Geppetto.",
+          ),
+        },
+        {
+          id: "avant-de-partir",
+          title: L("Ce qu'il vaut mieux faire maintenant", "What is better done now"),
+          text: L(
+            "Dingo le dit lui-même en quittant la ville : c'est le moment de repasser partout. Concrètement, avant de mettre le cap sur la Forteresse Oubliée :\n\n**Terminez la coupe d'Hercule** au Colisée. Elle est encore raisonnable ; après, elle reste faisable mais l'entraînement autour est bien plus lent.\n\n**Repassez dans tous les mondes** avec le Saut Haut, Plané et les trinités désormais disponibles : beaucoup de coffres n'étaient pas atteignables au premier passage.\n\n**Récoltez vos matériaux de synthèse maintenant.** C'est le point le plus important : les ennemis faibles d'aujourd'hui sont ceux qu'on farme confortablement. Ils ne le resteront pas.\n\n**Finissez la Forêt des Rêves Bleus** si vous avez toutes les pages déchirées.",
+            "Goofy says it himself as you leave town: this is the moment to go back everywhere. Concretely, before setting course for Hollow Bastion:\n\n**Clear the Hercules Cup** at the Coliseum. It is still reasonable now; afterwards it stays doable, but the training around it is far slower.\n\n**Revisit every world** with High Jump, Glide and the Trinities you now have: many chests were out of reach on the first pass.\n\n**Gather your synthesis materials now.** This is the key point: today's weak enemies are the ones you farm comfortably. They will not stay that way.\n\n**Finish the Hundred Acre Wood** if you have all the Torn Pages.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Sceptre Magique", "Spellbinder"), where: L("Chez Merlin, si ce n'est pas déjà pris.", "At Merlin's, if not already taken.") },
+        { kind: "keyblade", label: L("Étoile Filante", "Wishing Star"), where: L("Chez Geppetto, si ce n'est pas déjà pris.", "At Geppetto's, if not already taken.") },
+      ],
+      missable: [
+        L("Rien ne se perd définitivement, mais après la Forteresse Oubliée les Sans-cœur de tous les mondes passent aux alentours du niveau 50 : tout ce qui se récolte facilement doit se récolter maintenant.", "Nothing is lost for good, but after Hollow Bastion the Heartless of every world jump to around level 50: everything that is easy to gather should be gathered now."),
+      ],
+    },
+    {
+      id: "forteresse-oubliee",
+      title: L("Forteresse Oubliée", "Hollow Bastion"),
+      world: "radiant-garden",
+      status: "done",
+      level: "35 → 45",
+      intro: L(
+        "Le point de bascule du jeu. Sora y perd sa Keyblade, ses deux équipiers, et repart avec une épée en bois — la Bête, seule, tient l'équipe debout le temps de tout reconquérir.\n\nC'est aussi le monde le plus long et le plus labyrinthique : ascenseurs, plateformes à cristaux, une énigme de bibliothèque et une chasse aux quatre morceaux d'emblème. Quatre boss s'y enchaînent, dont le plus dur du jeu à ce stade.\n\nOn en repart avec la Trinité Détection — qui ouvre enfin les marques blanches de tous les mondes —, Gravité+, Ragnarok et deux rapports d'Ansem.",
+        "The game's turning point. Sora loses his Keyblade, both companions, and leaves with a wooden sword — Beast alone keeps the party standing while everything is won back.\n\nIt is also the longest, most maze-like world: lifts, crystal platforms, a library puzzle and a hunt for four Emblem Pieces. Four bosses follow one another, including the hardest in the game at this point.\n\nYou leave with Trinity Detect — which finally opens the white marks in every world —, Gravira, Ragnarok and two Ansem's Reports.",
+      ),
+      steps: [
+        {
+          id: "sans-keyblade",
+          title: L("Sans Keyblade, avec la Bête", "No Keyblade, with Beast"),
+          image: { src: "/images/walkthrough/hollow-bastion-1.webp", credit: credit("Hollow Bastion from KH1 gameplay 2.png"), width: 420, height: 236 },
+          text: L(
+            "À l'arrivée, montez de plateforme en plateforme jusqu'au sommet. **Glacier gèle les bulles d'eau** et les transforme en plateformes ; y entrer sans les geler vous transporte sous la surface. Les deux servent.\n\nEn haut, Riku prend la Keyblade, et Donald et Dingo suivent Riku. Il vous reste **l'épée en bois**, inutile contre les Sans-cœur, mais vous gardez la magie. La **Bête** rejoint l'équipe et se charge à peu près de tout : équipez-la d'accessoires corrects, elle en a besoin.\n\nPrenez la plateforme du sommet vers les portes du château. À droite, les curieux objets en cristal activent des plateformes : examinez le rouge après les portes, puis celui d'après pour descendre au niveau de base. Les **Sphères Sombres** apparaissent ici — plus agaçantes que dangereuses, la Bête les gère seule.\n\nLa bulle de gauche active deux commutateurs et donne des objets ; celle de droite mène au canal, avec un point de sauvegarde. Utilisez **Appeler** sur la grille : la Bête l'enfonce. La bulle suivante, gelée, cache une Matière Sombre bien planquée.",
+            "On arrival, climb platform by platform to the top. **Blizzard freezes the water bubbles** and turns them into platforms; entering one without freezing it carries you below the surface. Both are useful.\n\nAt the top, Riku takes the Keyblade, and Donald and Goofy follow Riku. You are left with the **Wooden Sword**, useless against Heartless, but you keep your magic. **Beast** joins the party and handles just about everything: equip him with decent accessories, he needs them.\n\nTake the platform at the top to the Castle Gates. On the right, the strange crystal objects activate platforms: examine the red one past the gates, then the next to descend to the Base Level. **Darkballs** appear here — more nuisance than danger, Beast handles them alone.\n\nThe left bubble activates two crystal switches and yields items; the right one leads to the Waterway, with a save point. Use **Call** on the gate: Beast smashes it open. The next bubble, frozen, hides a well-hidden Dark Matter.",
+          ),
+        },
+        {
+          id: "murs-et-defenseur",
+          title: L("Les murs mobiles et le Défenseur", "The moving walls and the Defender"),
+          text: L(
+            "La zone suivante fonctionne par commutateurs qui déplacent des murs. L'énigme est simple : **activez chaque nouveau commutateur dès qu'il devient accessible**, jusqu'à atteindre une bulle. Prenez-la, puis **Libérez** le commutateur suivant : une plateforme mène à un couloir gardé par un Défenseur.\n\nLes Défenseurs bloquent tous les dégâts avec leur bouclier, lancent de la magie à distance et frappent au corps à corps. Ils ont une chance infime de lâcher le bouclier Défenseur pour Dingo.\n\nActivez le commutateur qu'il gardait, puis refaites les commutateurs **en sens inverse** pour revenir aux portes du château : la grande porte est désormais ouverte. Entrez dans le hall, et après la scène, le combat contre Riku commence.",
+            "The next area works by switches that move walls. The puzzle is simple: **activate each new switch as it becomes reachable**, until you get to a bubble. Take it, then **Release** the next switch: a platform leads to a corridor guarded by a Defender.\n\nDefenders block all damage with their shield, cast ranged magic and strike in melee. They have a minuscule chance to drop the Defender shield for Goofy.\n\nActivate the switch it was guarding, then work the switches **in reverse** to return to the Castle Gates: the front door is now unlocked. Enter the Entrance Hall, and after the cutscene, the Riku fight begins.",
+          ),
+        },
+        {
+          id: "bibliotheque",
+          title: L("L'énigme de la bibliothèque", "The library puzzle"),
+          text: L(
+            "Riku battu, laissez la Bête de côté et montez l'escalier : un **Boost de compétence** (un Boost de force dans la version d'origine) attend en haut du pilier de gauche, devant la porte fermée. Tournez à gauche pour entrer dans la bibliothèque.\n\nLe principe : chaque volume coloré se range dans la série correspondante d'une étagère, ce qui **déplace toute l'étagère** et ouvre de l'espace.\n\nL'ordre qui fonctionne : prenez le **Khama vol. 8** rouge et rangez-le dans l'étagère K. Montez, prenez le **Theon vol. 6** brun sur le bureau et l'**Azal vol. 3** jaune de l'étagère voisine avec la Trinité Échelle. Prenez le **Mava vol. 6** vert clair sur l'étagère T la plus proche des portes, puis rangez le Theon vol. 6 : un commutateur apparaît et ouvre les portes du premier étage du hall.\n\nFinissez l'énigme avant de sortir : sautez dans l'espace fermé derrière le bureau, prenez le **Salegg vol. 6** bleu entre les volumes verts de l'étagère M et rangez-le dans l'étagère S en face. Rangez ensuite l'Azal vol. 3 dans l'étagère A du début, faites le tour pour prendre le **Nahara vol. 5** jaune à l'arrière et rangez-le dans l'étagère N devant le bureau, puis prenez le **Mava vol. 3** derrière. Rangez les deux Mava dans l'étagère M du rez-de-chaussée. Le **Hafet vol. 4** violet se libère : rangez-le dans l'étagère H du premier étage.\n\nUn passage caché s'ouvre alors vers la zone des ascenseurs, où **la Gravité fait descendre les plateformes flottantes** et leurs coffres.",
+            "With Riku beaten, leave Beast aside and go up the stairs: an **AP Up** (a Power Up in the original) sits on top of the left pillar, in front of the locked door. Turn left into the Library.\n\nThe principle: each coloured volume slots into the matching series on a shelf, which **moves the whole shelf** and opens up space.\n\nThe order that works: take the red **Khama vol. 8** and slot it into the K shelf. Go up, take the brown **Theon vol. 6** on the desk and the yellow **Azal vol. 3** from the neighbouring shelf using Trinity Ladder. Take the bright green **Mava vol. 6** from the T shelf nearest the doors, then insert Theon vol. 6: a switch appears and unlocks the doors to the Entrance Hall's second floor.\n\nFinish the puzzle before leaving: jump into the closed-off area behind the desk, take the blue **Salegg vol. 6** from between the M shelf's green volumes and slot it into the S shelf opposite. Then insert Azal vol. 3 into the A shelf at the start, go all the way round for the yellow **Nahara vol. 5** at the rear and put it in the N shelf in front of the desk, then take the **Mava vol. 3** behind it. Slot both Mava volumes into the ground-floor M shelf. The purple **Hafet vol. 4** comes free: put it in the H shelf on the second floor.\n\nA hidden passage then opens to the Lift Stop, where **Gravity brings the floating platforms down** along with their chests.",
+          ),
+        },
+        {
+          id: "emblemes",
+          title: L("Les quatre morceaux d'emblème", "The four Emblem Pieces"),
+          text: L(
+            "Sur la passerelle haute du hall, quatre morceaux sont à trouver :\n\n**Un** — brisez le vase à côté de la statue de droite : le morceau apparaît dans la fontaine du rez-de-chaussée.\n\n**Deux** — allumez les **huit bougies** réparties dans la zone avec Brasier : le morceau est caché dans le brasero central. Lancez la Foudre sur la petite pierre marquée pour abaisser les plateformes qui y mènent.\n\n**Trois et quatre** — poussez deux statues supplémentaires : l'une avec la **Trinité Charge**, l'autre à la main ; un coffre se révèle en face des portes de la bibliothèque.\n\nApportez les quatre morceaux à la porte verrouillée en haut de l'escalier. Après la scène, retournez-vous : le hall se remplit de Sans-cœur, **Défenseurs**, **Sorciers** — qui absorbent tous les sorts sauf Gravité et Stop, se téléportent, et peuvent lâcher le Bâton du Sorcier pour Donald — et, dans la grande salle, des **Wyvernes**, rapides et agressives en piqué.\n\nDans Final Mix, méfiez-vous aussi des **Soldats Furtifs**, invisibles : on ne les trouve qu'au verrouillage, Stop les gère bien, et ils lâchent des Pierres d'Énergie.",
+            "On the Entrance Hall's upper walkway, four pieces are to be found:\n\n**One** — smash the vase next to the statue on the right: the piece appears in the ground-floor fountain.\n\n**Two** — light the **eight candles** around the area with Fire: the piece is hidden in the central brazier. Cast Thunder on the small marked stone to lower the platforms leading to it.\n\n**Three and four** — push two more statues: one with **Trinity Charge**, the other by hand; a chest reveals itself opposite the Library doors.\n\nTake all four pieces to the locked door at the top of the staircase. After the cutscene, turn around: the hall fills with Heartless — **Defenders**, **Wizards** (which absorb every spell but Gravity and Stop, teleport away, and can drop the Wizard's Relic for Donald) — and, in the main hall, **Wyverns**, fast and aggressive in their dives.\n\nIn Final Mix, watch out too for **Stealth Soldiers**, invisible: only lock-on finds them, Stop handles them well, and they drop Energy Stones.",
+          ),
+        },
+        {
+          id: "ascenseurs",
+          title: L("Ascenseurs, grande crête et haute tour", "Lift Stop, Great Crest and High Tower"),
+          text: L(
+            "La dernière partie du monde est une longue succession de commutateurs et de plateformes. Dans la zone des ascenseurs, le second ascenseur et le commutateur voisin mènent à des matériaux de synthèse et à un passage vers le cachot (avec une **Trinité Saut**). La porte voisine donne sur l'autre passerelle des portes du château.\n\nAttention aux Wyvernes ici : **tomber vous renvoie au niveau de base**. Le commutateur rouge met une plateforme en mouvement (l'autre a déjà été activée) et donne trois objets ; le bleu appelle un ascenseur vers la grande crête.\n\nÀ la grande crête, un commutateur donne accès à la grande plateforme ; activez le commutateur rouge du centre après le combat de mi-parcours pour arriver de l'autre côté du château. Revenez aux ascenseurs, montez, et repassez par la grande crête : un **Orichalque** attend sur la gauche.\n\nAvant de repartir vers les ascenseurs, **sautez dans le vide et Planez sous le gros bloc que vous venez de déplacer** : une Couronne Royale s'y cache (un Flotte-G dans la version d'origine). Vous retombez, mais la remontée est rapide.\n\nEnfin, par l'entrée normale des ascenseurs, allez à la haute tour : les commutateurs et les gros blocs vous mènent au dernier, qui règle la destination de l'ascenseur accessible depuis la bibliothèque.\n\nRepassez une dernière fois par les ascenseurs pour entrer dans la chapelle du château : Maléfique vous y attend.",
+            "The last part of the world is a long chain of switches and platforms. In the Lift Stop, the second lift and the nearby switch lead to synthesis materials and a passage back to the Dungeon (with a **Trinity Jump**). The nearby door opens onto the other Castle Gates walkway.\n\nWatch out for Wyverns here: **falling sends you back to the Base Level**. The red switch sets a platform moving (the other was activated earlier) and yields three items; the blue one calls a lift to the Great Crest.\n\nAt the Great Crest, a switch gives access to the massive platform; hit the red switch in the centre after the mid-way fight to arrive on the other side of the castle. Return to the Lift Stop, go up, and pass through the Great Crest again: an **Orichalcum** waits on your left.\n\nBefore heading back to the Lift Stop, **jump off the edge and Glide underneath the large block you just moved**: a Royal Crown hides there (a Float-G in the original). You fall, but the climb back is quick.\n\nFinally, through the normal Lift Stop entrance, reach the High Tower: the switches and the big blocks take you to the last one, which sets the destination of the lift reached from the Library.\n\nOne last pass through the Lift Stop brings you to the Castle Chapel: Maleficent is waiting.",
+          ),
+        },
+        {
+          id: "apres-riku-ansem",
+          title: L("Après Riku-Ansem : la Serrure finale", "After Riku-Ansem: the final Keyhole"),
+          text: L(
+            "Riku-Ansem battu, vous recevez **Ragnarok**, une capacité active qui déclenche un combo aérien avec un coup final chargeable projetant une nuée de rayons.\n\nLes scènes vous font ensuite **jouer une Ombre**. Il n'y a rien à faire : plus d'ennemis, plus d'attaque, seulement des sauts. Sautez de tous les rebords possibles jusqu'à revenir aux portes du château, puis entrez dans le hall pour retrouver Kairi, Donald et Dingo, et repartir automatiquement à la Ville de Traverse.\n\nDe retour, la Forteresse Oubliée se termine : le **Béhémoth** garde la grande salle — le plus gros Sans-cœur du jeu, dont la corne est le seul point faible — et la Serrure finale se scelle ensuite. Le rapport d'Ansem n° 10 et la Keyblade **Chaîne Ultime** (une fois tous les Orichalques réunis) sont les dernières récompenses du monde.\n\nÀ partir d'ici, les boss facultatifs deviennent accessibles : **Kurt Zisa** à Agrabah, le **Fantôme** au Pays Imaginaire, et le **Sans-cœur Inconnu** dans la Forteresse Oubliée elle-même en Final Mix.",
+            "With Riku-Ansem beaten, you receive **Ragnarok**, an active ability that triggers an aerial combo with a chargeable finisher releasing a swarm of homing beams.\n\nThe cutscenes then have you **play as a Shadow**. There is nothing to do: no enemies, no attack, only jumps. Jump off every ledge you can until you reach the Castle Gates, then enter the Entrance Hall to be reunited with Kairi, Donald and Goofy, and return automatically to Traverse Town.\n\nOn your return, Hollow Bastion finishes: the **Behemoth** guards the Grand Hall — the game's largest Heartless, whose horn is the only weak point — and the final Keyhole is sealed afterwards. Ansem's Report 10 and the **Ultima Weapon** Keyblade (once every Orichalcum is gathered) are the world's last rewards.\n\nFrom here, the optional bosses open up: **Kurt Zisa** in Agrabah, the **Phantom** in Neverland, and the **Unknown** in Hollow Bastion itself in Final Mix.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "riku",
+          name: L("Riku", "Riku"),
+          entry: "riku",
+          level: "36",
+          reward: L("La Trinité Détection.", "Trinity Detect."),
+          tactics: L(
+            "Vous récupérez la Keyblade, Donald et Dingo pour ce combat. Riku n'est pas très dangereux, mais **la magie ne lui fait rien** — et il ne se bat lui-même qu'au corps à corps.\n\nSes coups reprennent ceux des Îles du Destin, **sans les contres dangereux**. Aéro+ si vous en avez besoin, mais à trois, il tombe vite.\n\nSa défaite donne la **Trinité Détection**, qui active enfin les marques blanches de tous les mondes : le Pays des Merveilles, entre autres, y cache la Keyblade Chance.",
+            "You get the Keyblade, Donald and Goofy back for this fight. Riku is not very dangerous, but **magic does nothing to him** — and he himself fights only in melee.\n\nHis moves are those of Destiny Islands, **without the dangerous counters**. Aerora if you need it, but three against one, he goes down fast.\n\nBeating him grants **Trinity Detect**, which finally activates the white marks in every world: Wonderland, among others, hides the Lady Luck Keyblade behind one.",
+          ),
+        },
+        {
+          id: "maleficent",
+          name: L("Maléfique", "Maleficent"),
+          entry: "maleficent",
+          level: "40",
+          reward: L("Le rapport d'Ansem n° 5, et la capacité Encouragement pour Donald.", "Ansem's Report 5, and the Cheer ability for Donald."),
+          tactics: L(
+            "Elle reste sur sa plateforme flottante, hors de portée. **Attaquez la plateforme** — les coups normaux comme la Gravité fonctionnent — pour la faire descendre.\n\nDe là-haut, elle invoque des Défenseurs ou des Sphères Sombres et vous frappe de son bâton : rien de grave. Le danger est ailleurs, dans **son sort de météores**, annoncé par « Météores célestes, déchaînez votre fureur ! ». Un portail s'ouvre à l'une des extrémités de la chapelle et remplit toute la zone : courez vers les bords, contre les murs, et rappelez vos équipiers pour ne pas les perdre bêtement.\n\nLaissée trop longtemps en l'air, elle déclenche aussi un orage et fait pleuvoir la foudre. Faire redescendre la plateforme y met fin — mais les éclairs qui touchent son rebord courent sur la moitié de son pourtour. Le seul endroit vraiment sûr est **dessous**.\n\nElle peut enfin se changer en boule de flammes pour se reformer à l'autre bout de la salle : c'est sa fuite si vous êtes resté sur la plateforme.",
+            "She stays on her floating platform, out of reach. **Attack the platform** — normal hits and Gravity both work — to bring her down.\n\nFrom up there she summons Defenders or Darkballs and swats at you with her staff: nothing serious. The danger is elsewhere, in **her meteor spell**, announced by \"Meteors of heaven, unleash thy fury!\". A portal opens at one end of the chapel and fills the entire area: run for the edges, against the walls, and recall your party so as not to lose them pointlessly.\n\nLeft in the air too long, she also summons a lightning storm and rains bolts on you. Bringing the platform down stops it — but bolts that land on its rim travel halfway around it. The only genuinely safe spot is **underneath**.\n\nFinally she can turn into a ball of flame to reform at the other end of the room: that is her escape if you managed to stay aboard.",
+          ),
+        },
+        {
+          id: "dragon-maleficent",
+          name: L("Maléfique en dragon", "Dragon Maleficent"),
+          entry: "dragon-maleficent",
+          level: "42",
+          reward: L("L'objet Lueur de Feu, qui débloque l'invocation Mushu.", "The Fireglow item, which unlocks the Mushu summon."),
+          tactics: L(
+            "Bien plus dur que la forme humaine. **Invoquez Clochette** : elle soigne en continu et vous relève une fois, ce qui change tout ici.\n\nElle griffe, saute et pivote pour un coup de queue. Presque tous ses mouvements de pattes créent des **ondes de choc au sol** : sauter régulièrement suffit à les éviter.\n\nSes deux attaques dangereuses sont le souffle — des flammes vertes qui recouvrent l'essentiel du sol — et un grand cercle de boules de feu qui vous poursuivent une à une.\n\nIl existe des positions où l'on est presque intouchable, sur son dos ou au-dessus des racines de la zone, en lançant du Jet de Lame à distance. Sinon, restez collé **sous son cou**, avec Aéro+ et l'Olympia pour les dégâts : bien équipé grâce à la synthèse, le combat passe.",
+            "Far harder than the human form. **Summon Tinker Bell**: she heals continuously and picks you up once, which changes everything here.\n\nShe claws, jumps and spins for a tail swipe. Almost all her leg movements create **shockwaves along the ground**: jumping regularly is enough to avoid them.\n\nHer two dangerous attacks are the breath — green flames covering most of the floor — and a great ring of fireballs that home in on you one after another.\n\nThere are spots where you are nearly untouchable, on her back or above the roots in the area, casting Strike Raid from range. Otherwise stay tucked **under her neck**, with Aerora and Olympia for damage: well equipped thanks to synthesis, the fight goes through.",
+          ),
+        },
+        {
+          id: "riku-ansem",
+          name: L("Riku-Ansem", "Riku-Ansem"),
+          entry: "riku-ansem",
+          level: "45",
+          reward: L("La capacité Ragnarok.", "The Ragnarok ability."),
+          tactics: L(
+            "**Seul**, et sans magie utile : Riku reste insensible aux sorts. Tout se joue sur la force — porte-clés et accessoires qui l'augmentent sont la vraie préparation de ce combat.\n\nTant que sa barre reste orange, il enchaîne des combos rapides. Il **contre la magie par un Brasier des Ténèbres**, ce qui se retourne contre lui : gardez la garde et renvoyez-lui ses propres projectiles. Réservez donc votre magie à Aéro+ et Soin+. Il peut aussi sauter et retomber en semant des pointes d'énergie autour de lui.\n\nAu tiers de vie en moins, il utilise son équivalent du Jet de Lame — parable et renvoyable — et certains de ses coups propagent des ondes.\n\nSur sa dernière barre arrive l'**Aura Sombre** : il se met à briller, lévite, puis se téléporte et fonce sans arrêt dans toute l'arène. Au sol, c'est presque impossible à éviter. La réponse est en l'air : **sautez et restez en Plané** aussi longtemps que possible, jusqu'à son coup final qui couvre la majeure partie du terrain de pointes.\n\nEntre deux Auras Sombres, frappez tout ce que vous pouvez : il la relancera, et encore, jusqu'à tomber.",
+            "**Alone**, and with no useful magic: Riku stays immune to spells. Everything rides on strength — keychains and accessories that raise it are the real preparation for this fight.\n\nWhile his bar stays orange he chains quick combos. He **answers magic with Dark Firaga**, which turns against him: keep your guard up and send his own projectiles back. So save your magic for Aerora and Cura. He can also leap and land trailing energy spikes around him.\n\nA third of his HP down, he uses his version of Strike Raid — blockable and returnable — and some of his blows spread waves.\n\nOn his last bar comes **Dark Aura**: he starts glowing, floats, then teleports and dashes endlessly around the arena. On the ground it is nearly impossible to avoid. The answer is in the air: **jump and stay on Glide** as long as you can, until his finisher covers most of the field with spikes.\n\nBetween two Dark Auras, hit him with everything: he will start it again, and again, until he falls.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "trinity", label: L("Trinité Détection", "Trinity Detect"), where: L("Récompense du combat contre Riku.", "Reward for the Riku fight."), note: L("Elle active les marques Trio blanches de tous les mondes.", "It activates the white Trinity Marks in every world.") },
+        { kind: "ability", label: L("Ragnarok", "Ragnarok"), where: L("En battant Riku-Ansem.", "By beating Riku-Ansem.") },
+        { kind: "ability", label: L("Lueur de Feu", "Fireglow"), where: L("En battant Maléfique en dragon.", "By beating Dragon Maleficent."), note: L("Débloque l'invocation Mushu.", "Unlocks the Mushu summon.") },
+        { kind: "report", label: L("Rapports d'Ansem n° 5 et n° 10", "Ansem's Reports 5 and 10"), where: L("Le premier en battant Maléfique, le second à la fin du monde.", "The first by beating Maleficent, the second at the end of the world.") },
+        { kind: "chest", label: L("Orichalque", "Orichalcum"), where: L("À la grande crête, sur la gauche, après le second passage.", "At the Great Crest, on the left, after the second pass.") },
+        { kind: "chest", label: L("Couronne Royale", "Royal Crown"), where: L("Sautez dans le vide depuis la grande crête et Planez sous le gros bloc déplacé.", "Jump off the edge at the Great Crest and Glide underneath the large block you moved."), requires: L("Plané, obtenu au Pays Imaginaire.", "Glide, obtained in Neverland.") },
+        { kind: "chest", label: L("Matière Sombre", "Dark Matter"), where: L("Dans une bulle du canal : gelez-la avec Glacier.", "In a bubble in the Waterway: freeze it with Blizzard.") },
+        { kind: "chest", label: L("Boost de compétence", "AP Up"), where: L("En haut du pilier de gauche, devant la porte fermée du hall.", "On top of the left pillar, in front of the locked door in the Entrance Hall."), note: L("Un Boost de force dans la version d'origine.", "A Power Up in the original version.") },
+        { kind: "trinity", label: L("Trinité Saut", "Trinity Jump"), where: L("Dans le cachot, via le second ascenseur de la zone des ascenseurs.", "In the Dungeon, via the second lift in the Lift Stop.") },
+      ],
+      missable: [
+        L("Rien ne se perd, mais l'énigme de la bibliothèque doit être terminée entièrement pour ouvrir le passage caché vers la zone des ascenseurs — et les coffres qui vont avec.", "Nothing is lost, but the library puzzle has to be completed in full to open the hidden passage to the Lift Stop — and the chests that come with it."),
+        L("Après ce monde, les Sans-cœur de tous les mondes passent aux alentours du niveau 50 : les matériaux de synthèse deviennent nettement plus longs à récolter.", "After this world, the Heartless of every world jump to around level 50: synthesis materials become markedly slower to gather."),
+      ],
+    },
+    {
+      id: "fin-du-monde",
+      title: L("Fin du Monde", "End of the World"),
+      world: "end-of-the-world",
+      status: "done",
+      level: "50 → 60",
+      intro: L(
+        "Le dernier monde : ce qu'il reste des mondes dévorés par les ténèbres, agglomérés en un seul lieu. On y traverse une dimension vide semée de coffres, un gouffre, un terminus qui rejoue un morceau de chaque monde visité, puis trois combats finaux enchaînés.\n\nUn point important : la dernière porte est un **point de non-retour**, mais rien n'est perdu — après la fin, on peut recharger sa sauvegarde et revenir finir le contenu facultatif. C'est même ce qu'il faut faire pour le 100 %.",
+        "The last world: what remains of the worlds devoured by darkness, gathered into one place. You cross an empty dimension strewn with chests, a crevasse, a terminus that replays a piece of every world visited, then three final fights in a row.\n\nOne important point: the last door is a **point of no return**, but nothing is lost — after the ending you can reload your save and come back to finish the optional content. That is exactly what the 100 % requires.",
+      ),
+      steps: [
+        {
+          id: "dimension-finale",
+          title: L("La dimension finale et les dix coffres", "The Final Dimension and the ten chests"),
+          image: { src: "/images/walkthrough/end-of-the-world-1.webp", credit: credit("End of the World gameplay 1.png"), width: 420, height: 237 },
+          text: L(
+            "Passez le point de sauvegarde de la Porte des Ténèbres pour entrer dans la dimension finale, un espace pratiquement vide. **Dix coffres** y sont posés sur de minuscules îlots, reliés par des chemins invisibles : la petite plateforme sur laquelle vous êtes **pointe dans la bonne direction**. C'est le seul repère.\n\nApprocher ou ouvrir un coffre déclenche souvent un combat. Le premier introduit les **Invisibles** : parmi les Sans-cœur non-boss les plus redoutables du jeu, ils arrivent en groupe, encaissent énormément et frappent très fort. En plus du corps à corps, ils se changent en flamme et forment un anneau autour de vous — **il faut sauter au moment où l'anneau se resserre**.\n\nDes Sphères Sombres apparaissent aussi, et un **Arche-Béhémoth** au quatrième coffre : une variante recolorée, un peu plus faible que celui de la Forteresse Oubliée.\n\nLe cinquième coffre déclenche les **Étoiles Angéliques**, des Sans-cœur volants qui bloquent les attaques de face avec leurs ailes, résistent à la magie, **absorbent la Foudre** et tirent à distance. Quand l'une se met à briller, elle prépare l'une de trois attaques spéciales selon sa couleur : la frapper interrompt tout.\n\nUn second Arche-Béhémoth garde la sortie. Ensuite vient la grande crevasse : descendez jusqu'en bas. En chemin, **le Choc du Météore pour Donald** se trouve dans une zone accessible uniquement par le haut, au bout du canyon, puis par la faille du sol que révèle la mort des ennemis. Le tourbillon bleu du fond mène au terminus.",
+            "Go past the Gate to the Dark's save point to enter the Final Dimension, a virtually empty space. **Ten chests** sit there on tiny islands, linked by invisible paths: the small platform you stand on **points the right way**. That is the only cue.\n\nApproaching or opening a chest often starts a fight. The first introduces the **Invisibles**: among the game's most formidable non-boss Heartless, they come in groups, absorb a huge amount and hit very hard. Besides melee, they turn into flame and form a ring around you — **you have to jump as the ring contracts**.\n\nDarkballs also appear, and an **Arch Behemoth** at the fourth chest: a recoloured variant, slightly weaker than the one in Hollow Bastion.\n\nThe fifth chest triggers the **Angel Stars**, flying Heartless that block frontal attacks with their wings, resist magic, **absorb Thunder** and shoot at range. When one starts glowing it is preparing one of three special moves depending on its colour: hitting it interrupts everything.\n\nA second Arch Behemoth guards the exit. Then comes the Giant Crevasse: make your way to the bottom. On the way, **Meteor Strike for Donald** sits in an area only reachable from above, at the end of the canyon, then through the gap in the floor revealed by killing the enemies. The blue whirlpool at the bottom leads to the World Terminus.",
+          ),
+        },
+        {
+          id: "terminus",
+          title: L("Le terminus des mondes", "The World Terminus"),
+          text: L(
+            "Le terminus est une suite de zones séparées, chacune avec un téléporteur vers la suivante et la précédente. Au centre de chacune, un grand pilier sombre — **à condition d'avoir scellé le trou de serrure du monde correspondant**. Le pilier mène à un fragment fermé de ce monde : on y affronte ses ennemis, on ramasse un coffre, et on ressort par l'unique sortie.\n\nDans la version d'origine, ces coffres contenaient des copies des accessoires lâchés par les boss ; **en Final Mix, ce sont surtout des matériaux de synthèse**.\n\nDeux arrêts valent le détour. Le **Grand Bouclier** de Dingo se trouve dans la zone du Pays Imaginaire, dans la coquerie — accessible une fois nettoyée la salle normalement fermée par une marque Trio jaune. L'avant-dernier portail mène à la **Forêt des Rêves Bleus**, qui contient aussi un point de sauvegarde.\n\nLa dernière zone est le laboratoire : lisez le terminal, réglez son compte à ce qui apparaît, puis prenez un portail pour sortir. Le puits voisin déclenche le combat contre Chernabog.",
+            "The Terminus is a chain of separate areas, each with a teleporter to the next and the previous one. At the centre of each, a tall dark pillar — **provided you sealed that world's Keyhole**. The pillar leads to a closed-off fragment of that world: you fight its enemies, pick up a chest, and leave through the only exit.\n\nIn the original version these chests held copies of the accessories dropped by bosses; **in Final Mix they are mostly synthesis materials**.\n\nTwo stops are worth the detour. Goofy's **Mighty Shield** is in the Neverland area, in the Galley — reachable once you clear the room normally locked by a yellow Trinity Mark. The second-to-last portal leads to the **Hundred Acre Wood**, which also has a save point.\n\nThe last area is the Laboratory: read the terminal, deal with what appears, then take a portal out. The pit nearby starts the Chernabog fight.",
+          ),
+        },
+        {
+          id: "avant-la-fin",
+          title: L("Avant de passer la dernière porte", "Before going through the last door"),
+          text: L(
+            "Chernabog battu, vous recevez **Super Plané**, la dernière capacité partagée : une version bien plus rapide du Plané, qui rend tous les déplacements du jeu plus supportables.\n\nEntrez dans le cratère — le volcan désormais éteint —, traversez la suite de salles reliées par des portails, puis les **Mondes Liés** : un Arche-Béhémoth, puis des vagues de Sphères Sombres, d'Invisibles et d'Étoiles Angéliques. Battez-les jusqu'à ce que l'emblème des Sans-cœur ait complètement disparu ; l'accès au dernier repos s'ouvre alors.\n\nIl y a un point de sauvegarde, et une porte : **c'est le point de non-retour**. La franchir mène au boss final. Vous pourrez toujours recharger votre sauvegarde après la fin pour reprendre le contenu facultatif.\n\nCe qu'il reste à faire, justement : la **coupe de l'Hadès** et les deux boss facultatifs des matchs qui suivent, plus **Kurt Zisa** à Agrabah, le **Fantôme** au Pays Imaginaire et le **Sans-cœur Inconnu** dans la Forteresse Oubliée en Final Mix. Et le farm des matériaux pour les armes ultimes, l'**Ultima Weapon** en tête.\n\nJustement, la zone des Mondes Liés fait réapparaître les Sans-cœur en boucle, **Néo-Ombres compris** — exclusives à Final Mix, et dont le comportement change selon le nombre de survivantes. C'est l'un des meilleurs endroits du jeu pour récolter. Final Mix ajoute aussi deux armes puissantes à synthétiser pour Donald et Dingo.",
+            "With Chernabog beaten, you receive **Superglide**, the last shared ability: a much faster version of Glide that makes every trip in the game more bearable.\n\nEnter the Crater — the now-extinct volcano —, cross the series of rooms linked by portals, then the **Linked Worlds**: an Arch Behemoth, then waves of Darkballs, Invisibles and Angel Stars. Beat them until the Heartless emblem has disappeared entirely; access to the Final Rest then opens.\n\nThere is a save point, and a door: **that is the point of no return**. Going through it leads to the final boss. You will still be able to reload your save after the ending to pick the optional content back up.\n\nWhat is left, precisely: the **Hades Cup** and the two optional bosses in the matches that follow, plus **Kurt Zisa** in Agrabah, the **Phantom** in Neverland and the **Unknown** in Hollow Bastion in Final Mix. And the grind for the materials behind the ultimate weapons, the **Ultima Weapon** first among them.\n\nOn that note, the Linked Worlds area respawns Heartless endlessly, **Neoshadows included** — exclusive to Final Mix, and whose behaviour changes with how many are left. It is one of the best farming spots in the game. Final Mix also adds two powerful weapons to synthesise for Donald and Goofy.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "chernabog",
+          name: L("Chernabog", "Chernabog"),
+          entry: "chernabog",
+          level: "50",
+          reward: L("La capacité partagée Super Plané.", "The shared ability Superglide."),
+          tactics: L(
+            "Le combat a lieu au-dessus du volcan, dans une zone où **toute l'équipe vole**, comme au Pays Imaginaire. Son point faible est **la tête**, comme pour Ursula géante.\n\nIl attaque peu, mais très fort : **Aéro++ est la vraie préparation** de ce combat. Il souffle pour projeter tout le monde au loin, et enchaîne souvent avec des boules de lumière à tête chercheuse. Ses deux autres attaques courantes sont un souffle de feu balayé de gauche à droite, et un bras levé qui fait jaillir une colonne de flammes.\n\nVers la fin, il enflamme ses mains et déchaîne un combo puissant devant lui. Sa pire attaque arrive quand il se courbe puis se cambre en arrière : **le volcan entre en éruption** et embrase toute la zone plusieurs secondes. Fuyez dès le premier signe, il n'y a rien d'autre à faire.\n\nDeux détails utiles : on **ne peut pas invoquer en volant**, mais se poser une seconde sur le sommet du volcan ou sur son épaule suffit pour appeler Clochette. Et les accessoires de résistance au feu changent complètement le combat.",
+            "The fight takes place above the volcano, in an area where **the whole party flies**, as in Neverland. His weak point is **the head**, like Giant Ursula's.\n\nHe attacks rarely, but very hard: **Aeroga is the real preparation** for this fight. He blows everyone away, and often follows with homing balls of light. His two other common attacks are fire breathed from side to side, and a raised arm summoning a pillar of flame.\n\nNear the end he wreathes his hands in flames and unleashes a powerful combo in front of him. His worst attack comes when he hunches then rears backwards: **the volcano erupts** and engulfs the whole area for several seconds. Flee at the first sign, there is nothing else to do.\n\nTwo useful details: you **cannot summon while flying**, but landing for a second on the volcano's summit or on his shoulder is enough to call Tinker Bell. And fire-resistance accessories change the fight completely.",
+          ),
+        },
+        {
+          id: "ansem-1",
+          name: L("Ansem, premier combat", "Ansem, first fight"),
+          entry: "ansem-seeker-of-darkness",
+          level: "55",
+          tactics: L(
+            "Ansem laisse presque tout le travail à son gardien, la **Silhouette Sombre**. Elle lance des salves de lames d'énergie — **automatiquement déviées par Aéro++** —, se déploie devant Ansem pour bloquer les attaques de face, ce qui oblige à le contourner, et frappe aussi au corps à corps.\n\nSa manœuvre dangereuse est annoncée par un « Soumets-toi ! » : la Silhouette s'élance et **s'accroche à qui elle touche**. Si c'est vous, votre commande « Attaquer » se change périodiquement en « Gel » et vous cloue sur place, pendant qu'Ansem se couvre d'un bouclier d'énergie qui blesse au contact et tente de vous rentrer dedans.\n\nDeux options : **ne rien faire**, elle inflige alors quelques dégâts au hasard — c'est le plus sûr ; ou **frapper Ansem**, ce qui raccourcit le temps d'accrochage. Lui-même est lent : c'est la Silhouette qui fait le combat.\n\nAprès sa première défaite, vous avez un moment pour souffler, puis vous le suivez dans la section suivante, **coupé de Donald et Dingo**, où un Ténébreux vous attend seul. À ce stade il ne tient pas trois secondes.",
+            "Ansem leaves almost all the work to his guardian, the **Dark Figure**. It throws volleys of energy blades — **automatically deflected by Aeroga** —, splays out in front of Ansem to block frontal attacks, forcing you to go around, and also lashes out in melee.\n\nIts dangerous move is announced by \"Submit!\": the Figure lunges and **latches onto whoever it hits**. If that is you, your 'Attack' command periodically turns into 'Freeze' and pins you in place, while Ansem raises an energy shield that hurts on contact and tries to ram you.\n\nTwo options: **do nothing**, and it deals minor random damage — the safest; or **hit Ansem**, which shortens the time it stays attached. He himself is slow: the Figure is the fight.\n\nAfter his first defeat you have a moment to regroup, then follow him into the next section, **cut off from Donald and Goofy**, where a Darkside waits alone. By now it does not last three seconds.",
+          ),
+        },
+        {
+          id: "ansem-2",
+          name: L("Ansem, second combat", "Ansem, second fight"),
+          entry: "ansem-seeker-of-darkness",
+          level: "56",
+          tactics: L(
+            "Moins de points de vie, mais **vous êtes seul**. La Silhouette Sombre perd son disque d'énergie ; en échange, Ansem s'en sert pour **charger à travers l'arène**. Aéro++ bloque encore la charge, et devrait rester actif en permanence tout le combat.\n\nLe « Soumets-toi ! » est toujours là, et bien plus pénible sans équipiers pour encaisser à votre place.\n\nSa nouveauté est aussi sa meilleure attaque : **l'arène s'assombrit**, la Silhouette plonge dans le sol et ressort à toute vitesse **sous vos pieds**, en créant une onde de choc. Sa vitesse et sa trajectoire verticale ne laissent qu'une réponse : **des Roulades enchaînées**.\n\nSans Donald ni Dingo, les Élixirs sont votre seul filet — prévoyez-en.",
+            "Less HP, but **you are alone**. The Dark Figure loses its energy disc; in exchange, Ansem uses it to **charge across the arena**. Aeroga still blocks the charge, and should stay up permanently for the whole fight.\n\n\"Submit!\" is still there, and far more annoying with no allies to take the hit for you.\n\nHis new move is also his best: **the arena darkens**, the Figure sinks into the ground and shoots out at high speed **beneath you**, creating a small shockwave. Its speed and upward path leave only one answer: **consecutive Dodge Rolls**.\n\nWith no Donald or Goofy, Elixirs are your only safety net — bring some.",
+          ),
+        },
+        {
+          id: "world-of-chaos",
+          name: L("Le Monde du Chaos", "World of Chaos"),
+          entry: "world-of-chaos",
+          level: "60",
+          reward: L("La fin du jeu, et la vidéo bonus selon la difficulté et l'avancement.", "The ending, and the bonus video depending on difficulty and completion."),
+          tactics: L(
+            "Ansem a fusionné avec le vaisseau. Il reste à peu près immobile, mais **sa taille et son arme à deux lames lui donnent une allonge énorme**. Des rayons laser le soutiennent en continu : ils s'évitent en bougeant, mais comme il faut aussi frapper, il est souvent plus simple de **les encaisser sous Aéro++**. Éloignez-vous en revanche dès qu'il prépare un de ses combos, qui font très mal.\n\nLe vaisseau vous souffle au loin et **draine votre magie** : détruisez la lueur dans sa gueule pour arrêter le drain. Il invoque parfois des Bit Snipers, sans conséquence. À mi-vie, le nombre de lasers augmente ; il n'apprend rien de nouveau.\n\nUne fois vaincu, il se réfugie dans la Silhouette Sombre et Sora entre dans un **Portail des Ténèbres** : détruisez les Ombres puis l'objet en forme de piège, le « cœur de la salle », pour être éjecté.\n\nLa suite est un cycle : détruisez les tourelles sur le dessus du vaisseau, un deuxième portail s'ouvre — Sphères Sombres puis cœur de la salle — et **Dingo est libéré**. Avec lui, abattez le Visage à la proue, qui lance des attaques de foudre sans grand danger. Le troisième portail est dans sa bouche : des Invisibles, un troisième cœur, et **Donald est libre**. Reste le cœur principal, au centre : sa destruction ramène Ansem.\n\nIl reprend ses attaques précédentes, avec une seule nouveauté : **une sphère de lumière** projetée devant lui, qui s'étend, vous aspire tous les trois et inflige de gros dégâts continus avant d'exploser. La seule parade est de **fuir très vite en volant** — la zone reste saturée de petits rayons ensuite.\n\nAprès quoi, c'est fini : les scènes finales et le générique s'enchaînent.",
+            "Ansem has bonded with the ship. He is largely stuck in place, but **his size and double-bladed weapon give him enormous reach**. Laser beams support him continuously: they are avoided by moving, but since you also need to attack, it is often simpler to **tank them under Aeroga**. Do move away whenever he winds up one of his combos, which hurt badly.\n\nThe ship blows you away and **drains your MP**: destroy the glowing light in its jaws to stop the drain. It sometimes summons Bit Snipers, of no consequence. Halfway through, the number of lasers increases; he learns nothing new.\n\nOnce beaten he takes shelter inside the Dark Figure and Sora enters a **Portal to Darkness**: destroy the Shadows then the snare-like object, the 'room core', to be ejected.\n\nWhat follows is a cycle: destroy the artillery on top of the ship, a second portal opens — Darkballs then a room core — and **Goofy is freed**. With him, take down the Face at the bow, which throws thunder attacks of little danger. The third portal is in its mouth: Invisibles, a third core, and **Donald is free**. That leaves the main core, at the centre: destroying it brings Ansem back.\n\nHe reuses his previous attacks, with one addition: **a sphere of light** cast out in front of him, which expands, sucks all three of you in and deals heavy continuous damage before exploding. The only counter is to **fly away fast** — the area stays saturated with tiny beams afterwards.\n\nAnd then it is over: the final cutscenes and credits follow.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Super Plané", "Superglide"), where: L("En battant Chernabog.", "By beating Chernabog."), note: L("Dernière capacité partagée du jeu : une version bien plus rapide du Plané.", "The game's last shared ability: a much faster version of Glide.") },
+        { kind: "ability", label: L("Choc du Météore", "Meteor Strike"), where: L("Pour Donald, dans la grande crevasse : la zone n'est accessible que par le haut, au bout du canyon.", "For Donald, in the Giant Crevasse: the area is only reachable from above, at the end of the canyon.") },
+        { kind: "ability", label: L("Grand Bouclier", "Mighty Shield"), where: L("Pour Dingo, dans la zone du Pays Imaginaire du terminus, à la coquerie.", "For Goofy, in the Terminus' Neverland area, in the Galley."), requires: L("Trinité Limite, pour la salle fermée par une marque jaune.", "Trinity Limit, for the room locked by a yellow mark.") },
+        { kind: "chest", label: L("Les dix coffres de la dimension finale", "The Final Dimension's ten chests"), where: L("Sur les îlots reliés par des chemins invisibles : la petite plateforme pointe la bonne direction.", "On the islets linked by invisible paths: the small platform points the right way.") },
+        { kind: "chest", label: L("Les coffres du terminus", "The Terminus chests"), where: L("Un par monde dont vous avez scellé le trou de serrure, au bout du pilier sombre.", "One per world whose Keyhole you sealed, at the end of the dark pillar."), note: L("Des matériaux de synthèse en Final Mix, des accessoires dans la version d'origine.", "Synthesis materials in Final Mix, accessories in the original.") },
+      ],
+      missable: [
+        L("Un monde dont le trou de serrure n'a pas été scellé n'a pas de pilier au terminus : son coffre est alors inaccessible pour cette partie.", "A world whose Keyhole was not sealed has no pillar at the Terminus: its chest is then out of reach for that playthrough."),
+        L("La dernière porte du dernier repos est un point de non-retour, mais la sauvegarde reste rechargeable après la fin : c'est ainsi qu'on termine le contenu facultatif.", "The last door at the Final Rest is a point of no return, but the save can be reloaded after the ending: that is how the optional content gets finished."),
+      ],
+    },
   ],
   quests,
 };
