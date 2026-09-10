@@ -107,7 +107,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           </ul>
           {section.intro &&
             paragraphs(localized(section.intro, locale)).map((p, i) => (
-              <p key={i} className="prose-max mt-4 leading-relaxed">
+              <p key={i} className="prose-wide mt-4 leading-relaxed">
                 {p}
               </p>
             ))}
@@ -141,7 +141,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           <div className={s.image ? "mt-4 grid gap-5 lg:grid-cols-[1fr_340px] lg:items-start" : ""}>
             <div>
               {paragraphs(localized(s.text, locale)).map((par, j) => (
-                <p key={j} className="prose-max mt-4 leading-relaxed first:mt-0">
+                <p key={j} className="prose-wide mt-4 leading-relaxed first:mt-0">
                   {par}
                 </p>
               ))}
@@ -168,7 +168,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           <h2 id={`t-${table.id}`} className="text-2xl font-bold">
             {localized(table.title, locale)}
           </h2>
-          {table.intro && <p className="prose-max mt-2 text-text-2">{localized(table.intro, locale)}</p>}
+          {table.intro && <p className="prose-wide mt-2 text-text-2">{localized(table.intro, locale)}</p>}
           <WalkDataTable table={table} locale={locale} labels={tableLabels} />
         </section>
       ))}
@@ -194,7 +194,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           <h2 id="ramassage" className="text-2xl font-bold">
             {t("collectibles")}
           </h2>
-          <p className="prose-max mt-3 text-text-2">{t("collectiblesLead")}</p>
+          <p className="prose-wide mt-3 text-text-2">{t("collectiblesLead")}</p>
           <CollectibleList items={section.collectibles} locale={locale} requiresLabel={t("requires")} />
         </section>
       )}
@@ -206,7 +206,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           </h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-text-2">
             {section.missable.map((m, i) => (
-              <li key={i} className="prose-max">
+              <li key={i} className="prose-wide">
                 {localized(m, locale)}
               </li>
             ))}
