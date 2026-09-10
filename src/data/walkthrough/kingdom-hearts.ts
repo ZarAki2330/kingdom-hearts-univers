@@ -332,7 +332,154 @@ export const walkthrough: Walkthrough = {
         ),
       ],
     },
-    soon("ville-de-traverse-1", L("Ville de Traverse", "Traverse Town"), "traverse-town", L("Première visite", "First visit")),
+    {
+      id: "ville-de-traverse-1",
+      title: L("Ville de Traverse", "Traverse Town"),
+      subtitle: L("Première visite", "First visit"),
+      world: "traverse-town",
+      status: "done",
+      level: "6 → 9",
+      intro: L(
+        "Sora se réveille dans une ruelle d'une ville qu'il ne connaît pas, où échouent les habitants des mondes engloutis. C'est ici que le jeu commence vraiment : on y trouve les boutiques, la synthèse, la première magie, le premier vrai boss, et surtout Donald et Dingo, qui ne quitteront plus l'équipe.\n\nLa ville compte quatre zones — premier, deuxième et troisième quartier, plus la ruelle — et on y revient trois fois dans la partie. Beaucoup de ce qu'elle contient demande des capacités obtenues plus tard : inutile de s'acharner maintenant, rien ne se perd.",
+        "Sora wakes up in an alley of a town he does not know, where the people of swallowed worlds wash up. This is where the game really starts: the shops, synthesis, the first magic, the first real boss, and above all Donald and Goofy, who never leave the party again.\n\nThe town has four areas — First, Second and Third District, plus the Alleyway — and you come back three times over the course of the game. Much of what it holds needs abilities obtained later: no need to force it now, nothing is lost.",
+      ),
+      steps: [
+        {
+          id: "premier-quartier",
+          title: L("Le premier quartier : boutiques et point de sauvegarde", "First District: shops and save point"),
+          image: { src: "/images/walkthrough/traverse-1.webp", credit: credit("Traverse Town from KH1 gameplay 2.png"), width: 420, height: 236 },
+          text: L(
+            "Sortez de la ruelle pour arriver sur la place. Deux boutiques : celle des objets, tenue par Riri, Fifi et Loulou, et la boutique d'accessoires de Cid, qui abrite un point de sauvegarde — c'est votre base pour toute la visite.\n\nLes accessoires de Cid ne valent pas encore leur prix ; en revanche, ramassez l'éclat de mithril dans sa boutique, il servira à la synthèse bien plus tard. Une boîte aux lettres attend sur la place : les cartes postales trouvées un peu partout s'y déposent contre des objets gratuits.\n\nParlez aux habitants avant de partir. La ville est calme tant qu'on n'entre pas dans le deuxième quartier.",
+            "Leave the alley for the main plaza. Two shops: the Item Shop run by Huey, Dewey and Louie, and Cid's Accessory Shop, which holds a save point — your base for the whole visit.\n\nCid's accessories are not worth their price yet; do pick up the Mythril Shard in his shop, it feeds synthesis much later. A mailbox stands on the plaza: postcards found around town are posted there for free items.\n\nTalk to the townsfolk before moving on. The town stays quiet until you enter the Second District.",
+          ),
+        },
+        {
+          id: "deuxieme-quartier",
+          title: L("Deuxième quartier : les Sans-cœur, et quatre scènes à déclencher", "Second District: the Heartless, and four scenes to trigger"),
+          image: { src: "/images/walkthrough/traverse-2.webp", credit: credit("Traverse Town from KH1 gameplay 3.png"), width: 420, height: 236 },
+          text: L(
+            "L'entrée du deuxième quartier déclenche une scène : un homme s'effondre, son cœur lui échappe, et un Soldat apparaît avant de filer. Une embuscade d'Ombres suit — sans danger, et elles lâchent désormais des munnies.\n\nRien n'oblige à explorer, mais quatre scènes facultatives montrent Donald et Dingo à la recherche de Léon, et chacune amène des Sans-cœur supplémentaires, donc de l'expérience et de l'argent. Dans l'ordre : entrez par la première porte de l'hôtel, puis rendez-vous au magasin Gizmo — les Ombres y arrivent par vagues de plus en plus fournies —, puis approchez de l'entrée de la ruelle près de la fontaine, et enfin, après avoir ramassé ce que contient la ruelle, entrez dans la maison des dalmatiens en passant par le deuxième quartier.\n\nRevenez ensuite au premier quartier : d'autres Sans-cœur y attendent. Sauvegardez chez Cid, mettez des Potions dans l'inventaire, et ressortez.",
+            "Entering the Second District triggers a scene: a man collapses, his heart escapes, and a Soldier appears before slipping away. A Shadow ambush follows — harmless, and they now drop munny.\n\nNothing forces you to explore, but four optional scenes show Donald and Goofy searching for Leon, and each brings extra Heartless, so experience and money. In order: go in through the hotel's first door, then head to the Gizmo Shop — Shadows arrive there in ever larger waves —, then approach the Alleyway entrance near the fountain, and finally, after collecting what the Alleyway holds, enter the Dalmatians' house through the Second District.\n\nThen return to the First District: more Heartless are waiting. Save at Cid's, put Potions in your inventory, and step back out.",
+          ),
+        },
+        {
+          id: "hotel",
+          title: L("L'hôtel : la Keyblade expliquée, et le premier sort", "The hotel: the Keyblade explained, and the first spell"),
+          text: L(
+            "Après le duel contre Léon, quel qu'en soit le vainqueur, Sora se réveille dans une chambre d'hôtel avec Youfie. Parlez-lui pour comprendre le principe des serrures, puis ouvrez le coffre bleu de la table avec la Keyblade : un Élixir. Un point de sauvegarde temporaire est disponible dans la chambre.\n\nDites à Léon que vous êtes prêt. Il conseille d'ignorer les Soldats qui vous tombent dessus dans le couloir — les battre reste plus rentable, sauf peut-être le premier groupe de quatre, un peu costaud à ce niveau. Les Soldats tournoient sur eux-mêmes et frappent en vrille ; à peine plus dangereux que les Ombres.\n\nRepassez par le premier quartier : Aerith y donne une Méga-Potion. Sauvegardez, puis entrez dans le troisième quartier.",
+            "After the duel with Leon, whoever wins, Sora wakes in a hotel room with Yuffie. Talk to her to learn how locks work, then open the blue chest on the table with the Keyblade: an Elixir. A temporary save point sits in the room.\n\nTell Leon you are ready. He advises ignoring the Soldiers that jump you in the corridor — beating them is still worth it, except perhaps the first group of four, a bit much at this level. Soldiers spin and drill into you; barely more dangerous than Shadows.\n\nPass back through the First District: Aerith gives you a Hi-Potion there. Save, then enter the Third District.",
+          ),
+        },
+        {
+          id: "apres-le-boss",
+          title: L("Après l'Armure Gardienne : l'équipe, la magie, la trinité", "After the Guard Armor: the party, the magic, the Trinity"),
+          text: L(
+            "Youfie, Aerith et Léon donnent 500 munnies chacun, et Léon rend l'Élixir si vous l'avez battu. Donald enseigne Brasier, Dingo la Roulade — l'esquive la plus utilisée du jeu. Équipez-les immédiatement : une capacité apprise ne sert à rien tant qu'elle n'est pas équipée. Pensez aussi au Brave Guerrier reçu en récompense, et à Rocket pour Dingo.\n\nEn repartant par les grandes portes, le jeu vous explique les marques Trio et vous donne la Trinité Saut. Ramassez les munnies qu'elle fait apparaître.\n\nAvant de quitter la ville : postez vos cartes postales, parlez à Youfie, Aerith et Léon — c'est ainsi qu'on apprend l'existence des 99 dalmatiens —, puis dépensez chez Cid, surtout pour les armes de Donald et de Dingo. La ville n'a plus de Sans-cœur : c'est le moment tranquille pour activer les trinités accessibles et ouvrir les coffres restants.\n\nAu vaisseau Gummi, deux destinations s'ouvrent : le Colisée de l'Olympe et le Pays des Merveilles. Le Pays des Merveilles est le bon choix pour l'histoire ; un détour par le Colisée donne un sort et quelques combats, ses boss les plus durs pouvant attendre.",
+            "Yuffie, Aerith and Leon each give 500 munny, and Leon hands over the Elixir if you beat him. Donald teaches Fire, Goofy teaches Dodge Roll — the most used evasion in the game. Equip them at once: a learned ability does nothing until it is equipped. Remember the Brave Warrior you also receive, and Rocket for Goofy.\n\nOn the way out through the large doors, the game explains Trinity Marks and grants Trinity Jump. Pick up the munny it reveals.\n\nBefore leaving town: post your postcards, talk to Yuffie, Aerith and Leon — that is how you learn about the 99 puppies —, then spend at Cid's, above all on Donald's and Goofy's weapons. The town is free of Heartless now: this is the quiet moment to use the reachable Trinity Marks and open the remaining chests.\n\nAt the Gummi ship, two destinations open: Olympus Coliseum and Wonderland. Wonderland is the right call for the story; a detour to the Coliseum gives a spell and a few fights, its harder bosses can wait.",
+          ),
+        },
+      ],
+      tables: [
+        {
+          id: "a-faire",
+          title: L("Ce qui se débloque ici", "What opens up here"),
+          intro: L(
+            "La première visite est celle qui donne les outils du reste de la partie.",
+            "The first visit is the one that hands you the tools for the rest of the game.",
+          ),
+          columns: [L("Ce qu'on obtient", "What you get"), L("Quand", "When"), L("À quoi ça sert", "What it is for")],
+          rows: [
+            { world: L("Donald et Dingo", "Donald and Goofy"), what: L("Après l'Armure Gardienne", "After the Guard Armor"), where: L("Équipiers permanents : on peut régler leurs capacités, leur équipement, leurs objets et leur comportement au combat.", "Permanent party members: you can set their abilities, equipment, items and battle behaviour.") },
+            { world: L("Brasier", "Fire"), what: L("Donald, après le boss", "Donald, after the boss"), where: L("La première magie offensive, et la seule attaque à distance pendant plusieurs mondes.", "The first offensive magic, and the only ranged attack for several worlds.") },
+            { world: L("Roulade", "Dodge Roll"), what: L("Dingo, après le boss", "Goofy, after the boss"), where: L("L'esquive de base. À équiper tout de suite, elle change tous les combats.", "The basic evasion. Equip it right away, it changes every fight.") },
+            { world: L("Trinité Saut", "Trinity Jump"), what: L("En quittant la ville", "As you leave town"), where: L("La première des cinq marques Trio ; elle ouvre des trésors dans tous les mondes.", "The first of the five Trinity commands; it opens treasures in every world.") },
+            { world: L("Brave Guerrier", "Brave Warrior"), what: L("Récompense du boss", "Boss reward"), where: L("Accessoire : de la force en plus, à équiper immédiatement.", "Accessory: extra strength, equip it immediately.") },
+            { world: L("1 500 munnies", "1,500 munny"), what: L("Youfie, Aerith et Léon", "Yuffie, Aerith and Leon"), where: L("De quoi renouveler les armes de Donald et de Dingo à la boutique de Cid.", "Enough to renew Donald's and Goofy's weapons at Cid's shop.") },
+          ],
+        },
+        {
+          id: "plus-tard",
+          title: L("Ce qu'il faudra revenir chercher", "What you will have to come back for"),
+          intro: L(
+            "Rien de tout cela n'est accessible à la première visite. C'est normal : la ville se rouvre deux fois.",
+            "None of this is reachable on the first visit. That is normal: the town opens up twice more.",
+          ),
+          columns: [L("Ce qu'on y trouve", "What is there"), L("Où", "Where"), L("Ce qu'il faut avoir", "What you need")],
+          rows: [
+            { world: L("Chiots 1 à 3", "Puppies 1 to 3"), what: L("Maison mystique, sur le rocher", "Mystical House, on the rock"), where: L("Planer, ou la Nage de sirène d'Atlantica.", "Glide, or Mermaid Kick from Atlantica.") },
+            { world: L("Chiots 4 à 6", "Puppies 4 to 6"), what: L("Ruelle, derrière les caisses", "Alleyway, behind the crates"), where: L("Trinité Charge.", "Trinity Charge.") },
+            { world: L("Chiots 7 à 9", "Puppies 7 to 9"), what: L("Atelier, au-dessus de la boutique d'accessoires", "Item Workshop, above the Accessory Shop"), where: L("Trinité Échelle.", "Trinity Ladder.") },
+            { world: L("Chiots 10 à 12 et un Orichalque", "Puppies 10 to 12 and an Orichalcum"), what: L("Égout secret", "Secret Waterway"), where: L("Trinité Charge pour entrer, Trinité Détection pour l'Orichalque.", "Trinity Charge to get in, Trinity Detect for the Orichalcum.") },
+            { world: L("L'atelier du mog", "The moogle workshop"), what: L("Au-dessus de la boutique d'accessoires", "Above the Accessory Shop"), where: L("Trinité Échelle. C'est là que se fait toute la synthèse du jeu.", "Trinity Ladder. All the game's synthesis happens there.") },
+          ],
+        },
+      ],
+      bosses: [
+        {
+          id: "leon",
+          name: L("Léon", "Leon"),
+          entry: "leon",
+          level: "7",
+          tactics: L(
+            "Ce duel est facultatif et se perdre n'a rien de grave : on y laisse seulement un Élixir et une trentaine de points d'expérience. Il reste rude à ce stade de la partie.\n\nLéon avance lentement et frappe de taille ou d'estoc dès qu'on approche, avec une allonge très supérieure à la vôtre. Au corps à corps, il encaisse sans broncher et riposte aussitôt : ne restez pas collé à lui.\n\nSa boule de feu, en revanche, se renvoie d'un coup d'épée exactement comme le ballon de Wakka — elle l'étourdit et ouvre un enchaînement complet. C'est là que se gagne le combat. Son autre ouverture est son saut : en l'air, il est entièrement vulnérable, et un enchaînement aérien le cueille à l'atterrissage.\n\nToute la place du premier quartier sert d'arène : n'hésitez pas à prendre du champ pour boire une Potion.",
+            "This duel is optional and losing costs little: only an Elixir and about thirty experience points. It is still rough at this stage.\n\nLeon advances slowly and swings or thrusts as soon as you get close, with far more reach than you have. Up close he shrugs off hits and counters immediately: do not stay glued to him.\n\nHis fireball, though, can be knocked back with a swing exactly like Wakka's ball — it stuns him and opens a full combo. That is where the fight is won. His other opening is his jump: in the air he is completely vulnerable, and an aerial combo catches him on the way down.\n\nThe whole First District plaza is the arena: do not hesitate to back off for a Potion.",
+          ),
+          attacks: [
+            { name: L("Boule de feu", "Fireball"), note: L("Renvoyez-la au sabre : elle l'étourdit. Rapide, mais elle perd en précision à longue portée.", "Knock it back with a swing: it stuns him. Fast, but less accurate at long range.") },
+            { name: L("Saut d'approche", "Closing jump"), note: L("Le seul moment où il est vulnérable. Enchaînement aérien.", "The one moment he is vulnerable. Aerial combo.") },
+          ],
+        },
+        {
+          id: "guard-armor",
+          name: L("Armure Gardienne", "Guard Armor"),
+          entry: "guard-armor",
+          level: "9",
+          tactics: L(
+            "Cinq morceaux : deux gantelets, deux pieds-marteaux et un torse. Les gantelets tournent autour du corps, les pieds martèlent le sol, et le torse, une fois seul, se met à tourbillonner.\n\nFrappez les gantelets en premier, ils ont le moins de vie, puis les pieds, et le torse en dernier. Chaque morceau détruit fait tomber une pluie de sphères de vie et prive l'armure d'une attaque : le combat devient plus facile à mesure qu'il avance, et quand il ne reste que le torse, il tombe généralement avant d'avoir eu le temps de tourbillonner.\n\nC'est aussi votre premier combat à trois. Donald et Dingo ne sont encore que des leurres utiles : on peut leur donner des Potions, mais ne comptez pas sur eux pour les dégâts.",
+            "Five parts: two gauntlets, two hammer legs and a torso. The gauntlets orbit the body, the legs stomp around, and the torso, once alone, starts spinning.\n\nHit the gauntlets first, they have the least HP, then the legs, and the torso last. Each destroyed part drops a shower of health orbs and takes an attack away from the armour: the fight gets easier as it goes, and when only the torso is left it usually falls before it can spin at all.\n\nThis is also your first three-person fight. Donald and Goofy are still little more than useful decoys: you can hand them Potions, but do not count on them for damage.",
+          ),
+          attacks: [
+            { name: L("Écrasement", "Body slam"), note: L("L'armure entière saute et retombe sur vous. Sa plus dangereuse attaque, mais elle se voit venir : sautez de côté.", "The whole armour leaps and lands on you. Its most dangerous attack, but well telegraphed: jump aside.") },
+            { name: L("Tourbillon", "Spin"), note: L("Le torse seul se met à tourner et vous poursuit. Il s'amorce d'abord : un coup au bon moment l'étourdit.", "The lone torso spins and homes in. It winds up first: a well-timed hit stuns it.") },
+          ],
+        },
+      ],
+      collectibles: [
+        {
+          kind: "chest",
+          label: L("Éclat de mithril", "Mythril Shard"),
+          where: L("Dans la boutique d'accessoires de Cid, premier quartier.", "In Cid's Accessory Shop, First District."),
+          note: L("Sans usage immédiat : c'est un matériau de synthèse.", "No immediate use: it is a synthesis material."),
+        },
+        {
+          kind: "chest",
+          label: L("Élixir", "Elixir"),
+          where: L("Coffre bleu de la chambre d'hôtel, à ouvrir avec la Keyblade.", "Blue chest in the hotel room, opened with the Keyblade."),
+        },
+        {
+          kind: "report",
+          label: L("Cartes postales", "Postcards"),
+          where: L("Dans des coffres et en examinant certains objets de la ville ; à poster dans la boîte aux lettres du premier quartier.", "In chests and by examining certain objects around town; posted in the First District mailbox."),
+          note: L("Chaque carte rapporte un objet gratuit. Il y en a dix en tout dans le jeu.", "Each postcard is worth a free item. There are ten in the game."),
+        },
+        {
+          kind: "trinity",
+          label: L("Trinité Saut", "Trinity Jump"),
+          where: L("Apprise en quittant la ville, après l'Armure Gardienne.", "Learned as you leave town, after the Guard Armor."),
+          note: L("Quatre marques bleues attendent déjà dans la ville : deux au premier quartier, une au troisième, une au bureau du magicien.", "Four blue marks already wait in town: two in the First District, one in the Third, one in the Magician's Study."),
+        },
+      ],
+      missable: [
+        L(
+          "Rien ne se perd ici : la ville se revisite deux fois, et tous ses coffres restent accessibles jusqu'à la fin du jeu.",
+          "Nothing is lost here: the town is revisited twice, and all its chests stay reachable until the end of the game.",
+        ),
+        L(
+          "Léon n'apparaît qu'après avoir vaincu au moins cinq Sans-cœur : si la scène ne se déclenche pas, allez vous battre dans le deuxième quartier.",
+          "Leon only appears once you have defeated at least five Heartless: if the scene does not trigger, go and fight in the Second District.",
+        ),
+      ],
+    },
     soon("pays-des-merveilles", L("Pays des Merveilles", "Wonderland"), "wonderland"),
     soon("colisee-de-l-olympe", L("Colisée de l'Olympe", "Olympus Coliseum"), "olympus"),
     soon("jungle-profonde", L("Jungle Profonde", "Deep Jungle"), "deep-jungle"),
