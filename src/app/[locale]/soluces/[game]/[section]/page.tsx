@@ -11,6 +11,7 @@ import type { WalkSection } from "@/data/walkthrough";
 import { BossCard, CollectibleList, RichText, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
 import { languageAlternates, localeUrl } from "@/lib/site";
 import { createLinker } from "@/lib/autolink";
+import { ImageZoom } from "@/components/ImageZoom";
 
 type Props = { params: Promise<{ locale: string; game: string; section: string }> };
 
@@ -73,16 +74,25 @@ export default async function WalkthroughSectionPage({ params }: Props) {
       <header className="mt-6 after:clear-both after:block after:content-['']">
         {visual && (
           <figure className="mb-4 sm:float-left sm:mb-3 sm:mr-6 sm:w-[220px]">
-            <span
-              className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line"
-              style={{
-                background: accent
-                  ? `radial-gradient(120% 100% at 50% 120%, color-mix(in oklab, ${accent} 55%, #070b16) 0%, #070b16 70%)`
-                  : "linear-gradient(160deg, #131a2c 0%, #070b16 70%)",
-              }}
+            <ImageZoom
+              src={visual.src}
+              alt={localized(section.title, locale)}
+              width={visual.width}
+              height={visual.height}
+              credit={visual.credit}
+              className="w-full"
             >
-              <Image src={visual.src} alt="" fill sizes="220px" className="object-contain p-2" priority />
-            </span>
+              <span
+                className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line"
+                style={{
+                  background: accent
+                    ? `radial-gradient(120% 100% at 50% 120%, color-mix(in oklab, ${accent} 55%, #070b16) 0%, #070b16 70%)`
+                    : "linear-gradient(160deg, #131a2c 0%, #070b16 70%)",
+                }}
+              >
+                <Image src={visual.src} alt="" fill sizes="220px" className="object-contain p-2" priority />
+              </span>
+            </ImageZoom>
             <figcaption className="mt-1.5 text-xs text-text-2">{visual.credit}</figcaption>
           </figure>
         )}
@@ -141,14 +151,23 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           <div className="after:clear-both after:block after:content-['']">
             {s.image && (
               <figure className="mb-3 lg:float-right lg:ml-6 lg:w-[340px]">
-                <Image
+                <ImageZoom
                   src={s.image.src}
-                  alt=""
+                  alt={localized(s.title, locale)}
                   width={s.image.width}
                   height={s.image.height}
-                  sizes="(min-width: 1024px) 340px, 100vw"
-                  className="w-full rounded-lg border border-line"
-                />
+                  credit={s.image.credit}
+                  className="w-full"
+                >
+                  <Image
+                    src={s.image.src}
+                    alt=""
+                    width={s.image.width}
+                    height={s.image.height}
+                    sizes="(min-width: 1024px) 340px, 100vw"
+                    className="w-full rounded-lg border border-line"
+                  />
+                </ImageZoom>
                 <figcaption className="mt-1.5 text-xs text-text-2">{s.image.credit}</figcaption>
               </figure>
             )}

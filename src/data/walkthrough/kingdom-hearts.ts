@@ -338,7 +338,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "premier-quartier",
           title: L("Le premier quartier : boutiques et point de sauvegarde", "First District: shops and save point"),
-          image: { src: "/images/walkthrough/traverse-1.webp", credit: credit("Traverse Town from KH1 gameplay 1.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/traverse-g1.webp", credit: credit("Traverse Town from KH1 gameplay 1.png"), width: 420, height: 237 },
           text: L(
             "Sortez de la ruelle pour arriver sur la place. Deux boutiques : celle des objets, tenue par Riri, Fifi et Loulou, et la boutique d'accessoires de Cid, qui abrite un point de sauvegarde — c'est votre base pour toute la visite.\n\nLes accessoires de Cid ne valent pas encore leur prix ; en revanche, ramassez l'éclat de mithril dans sa boutique, il servira à la synthèse bien plus tard. Une boîte aux lettres attend sur la place : les cartes postales trouvées un peu partout s'y déposent contre des objets gratuits.\n\nParlez aux habitants avant de partir. La ville est calme tant qu'on n'entre pas dans le deuxième quartier.",
             "Leave the alley for the main plaza. Two shops: the Item Shop run by Huey, Dewey and Louie, and Cid's Accessory Shop, which holds a save point — your base for the whole visit.\n\nCid's accessories are not worth their price yet; do pick up the Mythril Shard in his shop, it feeds synthesis much later. A mailbox stands on the plaza: postcards found around town are posted there for free items.\n\nTalk to the townsfolk before moving on. The town stays quiet until you enter the Second District.",
@@ -346,7 +346,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "deuxieme-quartier",
-          image: { src: "/images/walkthrough/traverse-2.webp", credit: credit("Traverse Town from KH1 gameplay 2.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/traverse-g2.webp", credit: credit("Traverse Town from KH1 gameplay 2.png"), width: 420, height: 237 },
           title: L("Deuxième quartier : les Sans-cœur, et quatre scènes à déclencher", "Second District: the Heartless, and four scenes to trigger"),
           text: L(
             "L'entrée du deuxième quartier déclenche une scène : un homme s'effondre, son cœur lui échappe, et un Soldat apparaît avant de filer. Une embuscade d'Ombres suit — sans danger, et elles lâchent désormais des munnies.\n\nRien n'oblige à explorer, mais quatre scènes facultatives montrent Donald et Dingo à la recherche de Léon, et chacune amène des Sans-cœur supplémentaires, donc de l'expérience et de l'argent. Dans l'ordre : entrez par la première porte de l'hôtel, puis rendez-vous au magasin Gizmo — les Ombres y arrivent par vagues de plus en plus fournies —, puis approchez de l'entrée de la ruelle près de la fontaine, et enfin, après avoir ramassé ce que contient la ruelle, entrez dans la maison des dalmatiens en passant par le deuxième quartier.\n\nRevenez ensuite au premier quartier : d'autres Sans-cœur y attendent. Sauvegardez chez Cid, mettez des Potions dans l'inventaire, et ressortez.",
@@ -408,6 +408,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "leon",
+          image: { src: "/images/walkthrough/leon-kh1.webp", credit: credit("Leon_KH.png"), width: 320, height: 309 },
           name: L("Léon", "Leon"),
           entry: "leon",
           level: "7",
@@ -713,7 +714,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "arrivee",
           title: L("Seul face à Sabor, puis la descente en liane", "Alone against Sabor, then the vine slide"),
-          image: { src: "/images/walkthrough/jungle-1.webp", credit: credit("Deep Jungle gameplay 1.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/jungle-g1.webp", credit: credit("Deep Jungle gameplay 1.png"), width: 420, height: 237 },
           text: L(
             "Le vaisseau s'écrase, Sora est séparé de Donald et Dingo, et Sabor attaque immédiatement. On a le droit de perdre — la gagner rapporte un peu d'expérience. Elle griffe et bondit, et les coups ordinaires ne la déstabilisent pas : seuls les coups de fin d'enchaînement y parviennent. Avec 90 points de vie seulement, elle ne tient pas la distance.\n\nTarzan rejoint l'équipe. C'est un excellent équipier : rapide, et surtout capable de lancer Herbe Curative et Armure de Vent, ses équivalents de Soin et d'Aéro.\n\nAvant de le suivre, montez sur le toit de la cabane : une seconde Chaîne Protectrice y attend. Puis sautez dans le tronc creux : c'est le mini-jeu de la descente en liane, où il faut éviter ou frapper les branches jusqu'au campement.",
             "The ship crashes, Sora is separated from Donald and Goofy, and Sabor attacks at once. You are allowed to lose — winning gives a little experience. She claws and pounces, and ordinary hits do not stagger her: only combo finishers do. With only 90 HP, she cannot last.\n\nTarzan joins the party. He is an excellent companion: fast, and above all able to cast Healing Herb and Wind Armor, his versions of Cure and Aero.\n\nBefore following him, climb onto the tree house roof: a second Protect Chain waits there. Then jump down the hollow trunk: this is the Jungle Slider mini-game, where you dodge or hit branches all the way down to the Camp.",
@@ -747,7 +748,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "sabor",
-          image: { src: "/images/walkthrough/jungle-1.webp", credit: credit("Deep Jungle gameplay 1.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/jungle-g1.webp", credit: credit("Deep Jungle gameplay 1.png"), width: 420, height: 237 },
           name: L("Sabor", "Sabor"),
           entry: "sabor",
           level: "15 → 18",
@@ -895,7 +896,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "caverne",
-          image: { src: "/images/walkthrough/agrabah-6.webp", credit: credit("Agrabah from KH1 gameplay 6.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/agrabah-caverne.webp", credit: credit("Agrabah- Cave Hall (Art) KH.png"), width: 420, height: 285 },
           title: L("La caverne aux merveilles", "The Cave of Wonders"),
           text: L(
             "L'entrée de la rue principale est condamnée : passez par les auvents et la ruelle pour rejoindre la partie haute, contournez la maison d'Aladdin et sautez de l'auvent rouge vers la porte ouverte du bazar. Une marque Trio bleue s'y trouve ; en hauteur, une serrure à libérer et un Anneau de Feu dans un coffre. Sauvegardez chez Aladdin avant le combat contre le Mille-Pattes.\n\nAprès lui, équipez le Rayon de Lumière et finissez d'explorer la ville. Aux portes du palais, laissez les rangées de jarres tranquilles pour l'instant : l'une d'elles cache le Scorpion-Pot, un ennemi coriace propre à Final Mix.\n\nAu désert, le Tapis conduit à la caverne, gardée par un colosse de sable. À l'intérieur, deux niveaux : l'étage supérieur est simple, le niveau inférieur est un labyrinthe — et on y tombe facilement. Abu, avec Aladdin dans l'équipe, active des gemmes qui ouvrent des passages vers des coffres supplémentaires.\n\nAllez d'abord à la salle du trésor (un Boost de défense), revenez à l'entrée, descendez vers la salle des reliques, puis nagez jusqu'à la salle sombre : la **première page déchirée** y attend. Passez le point de sauvegarde, remontez la cascade jusqu'à la chambre silencieuse, gagnez la plateforme à la marque Trio bleue, puis la salle cachée, où un pilier fissuré ouvre la voie vers la salle de la lampe.",
@@ -1133,7 +1134,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "jack-et-le-docteur",
           title: L("Jack, le docteur, et le cœur artificiel", "Jack, the doctor, and the artificial heart"),
-          image: { src: "/images/walkthrough/halloween-1.webp", credit: credit("Halloween Town from KH1 gameplay 1.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/halloween-g1.webp", credit: credit("Halloween Town from KH1 gameplay 1.png"), width: 420, height: 237 },
           text: L(
             "À l'arrivée, la place de la guillotine est occupée par des Chasseurs de Fantômes **inoffensifs** : ils ne vous attaqueront pas tant que la scène de Jack n'a pas eu lieu. Ignorez-les et partez à droite.\n\nEntrez ensuite dans le vestibule derrière la guillotine, puis dans le laboratoire, pour rencontrer le docteur Finkelstein. Jack devient recrutable à ce moment. **Fouillez la bibliothèque du laboratoire** : elle contient une page déchirée.\n\nDe retour sur la place, les Sans-cœur deviennent hostiles. Les Chevaliers Blancs apparaissent au cimetière : ils sautent pour vous frapper par-dessus ou dans le dos, et balaient une large zone de leurs longs bras — difficiles à esquiver, faciles à parer.\n\nParlez à Sally, revenez au laboratoire pour les scènes, puis retournez au cimetière. Entrez dans le cercueil pour atteindre l'ossuaire, parlez au maire, et examinez les tombes **dans l'ordre qu'il indique** : un coffre apparaît avec la Boîte à Malices.",
             "On arrival, Guillotine Square is occupied by **harmless** Search Ghosts: they will not attack until Jack's scene has played. Ignore them and head right.\n\nThen enter the Lab Entryway behind the guillotine and the Research Lab, to meet Dr. Finkelstein. Jack becomes recruitable at this point. **Examine the bookcase in the lab**: it holds a Torn Page.\n\nBack on the square, the Heartless turn hostile. Wight Knights appear in the Graveyard: they jump to hit you from above or behind, and sweep wide with their long arms — hard to dodge, easy to block.\n\nTalk to Sally, return to the lab for the cutscenes, then head back to the Graveyard. Enter the coffin to reach the Boneyard, talk to the Mayor, and examine the tombstones **in the order he gives**: a chest appears with the Jack-in-the-Box.",
@@ -1219,7 +1220,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "les-cales",
           title: L("Les cales du navire", "The ship's hold"),
-          image: { src: "/images/walkthrough/neverland-1.webp", credit: credit("Neverland from KH1 gameplay 1.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/neverland-g1.webp", credit: credit("Neverland from KH1 gameplay 1.png"), width: 420, height: 237 },
           text: L(
             "Peter Pan rejoint l'équipe dès la première scène. Il n'est pas plus fort que Donald ni que Dingo, mais il vole et lance ses propres versions de Stop et d'Aéro.\n\nLes Pirates sont les Sans-cœur ordinaires du monde : rien d'exceptionnel, sauf que **esquiver leur grand sabre les laisse déséquilibrés** un instant — c'est là qu'on frappe. Les Ombres de Sora traînent aussi ici : inoffensives, elles fuient souvent avant qu'on ait pu les tuer.\n\nLa plupart des portes sont verrouillées et les couloirs sont étroits. Montez à l'échelle, prenez la porte de droite : des Araignées-Tonneaux vous attendent, ainsi qu'un trou dans le plancher menant à la chambre froide.\n\nEn bas, nettoyez, puis prenez la seconde échelle vers la coquerie. Servez-vous de l'étagère pour sauter par **le trou le plus à droite** de la grille du plafond : vous arrivez dans une cabine avec un point de sauvegarde. C'est le moment de sortir Peter Pan de l'équipe si vous l'aviez pris. Une **marque Trio verte** révèle une échelle vers la cabine du capitaine, et le premier combat.",
             "Peter Pan joins the party in the first scene. He is no stronger than Donald or Goofy, but he flies and casts his own versions of Stop and Aero.\n\nPirates are the world's standard Heartless: nothing remarkable, except that **dodging their big cutlass leaves them stumbling** for a moment — that is when you strike. Shadow Soras also hang around: harmless, they often flee before you can kill them.\n\nMost doors are locked and the quarters are cramped. Climb the ladder, take the door on the right: Barrel Spiders await, along with a hole in the floor leading to the Freezer.\n\nDown there, clear the room, then take the second ladder to the Galley. Use the shelf to jump through **the rightmost hole** in the ceiling grating: you land in a Cabin with a save point. Now is the time to swap Peter Pan out if you had him. A **green Trinity Mark** reveals a ladder to the Captain's Cabin, and the first fight.",
@@ -1227,6 +1228,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "le-pont",
+          image: { src: "/images/walkthrough/neverland-navire.webp", credit: credit("Neverland- Hook's Ship (Art) KH.png"), width: 376, height: 420 },
           title: L("Le pont, et le vol", "The deck, and flight"),
           text: L(
             "L'Anti-Sora battu donne la Serre du Corbeau, et ouvre l'autre trappe : Wendy s'y trouve, après quoi Peter s'en va. Sauvegardez, prenez le couloir, l'autre cabine, revenez par la cabine du capitaine, et sortez enfin sur le pont.\n\nAprès la scène, Peter revient, vous apprenez **Soin+** et recevez la capacité partagée **Plané** — inutilisable ici pour l'instant, puisque tout le monde vole déjà. Vous pouvez désormais voler comme Peter, ce qui règle le combat contre les Pirates de l'Air : leur avantage aérien disparaît.\n\nUn Cuirassé apparaît aussi : ce gros Sans-cœur a des pièces destructibles individuellement, et lui retirer ses canons ou ses ailerons réduit très vite sa dangerosité. Le capitaine Crochet enchaîne immédiatement après.",
@@ -1235,7 +1237,6 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "horloge",
-          image: { src: "/images/walkthrough/neverland-4.webp", credit: credit("Neverland from KH1 gameplay 4.png"), width: 420, height: 237 },
           title: L("La tour de l'horloge, et les douze portes", "The clock tower, and the twelve doors"),
           text: L(
             "Crochet battu, vous volez automatiquement jusqu'à la tour de l'horloge. **Frappez la grande aiguille** de l'un des cadrans pour l'aligner sur les autres : le trou de serrure apparaît.\n\nLa récompense est copieuse : un fragment Navi-G, l'invocation **Clochette**, la Keyblade **Harpe Féerique** et la capacité partagée **Plané**.\n\nLa Harpe Féerique est votre Keyblade la plus puissante à ce stade, mais courte. Clochette est une invocation à part : elle **ne remplace pas Donald et Dingo**, soigne passivement pendant le combat, et vous ressuscite une fois si vous tombez. Plané permet de se déplacer lentement en vol dans tous les autres mondes : plusieurs coffres jusqu'ici inaccessibles s'ouvrent enfin.\n\nUn détail à ne pas manquer : si vous quittez le monde et y revenez, **une porte différente de la tour s'ouvre à chaque heure de l'horloge du jeu** — douze objets en tout, un par heure, signalés par une lumière blanche. Ce sont de bons objets, dont plusieurs Boosts.\n\nDirection la Ville de Traverse. La coupe d'Hercule est ouverte au Colisée si vous voulez la faire d'abord.",
@@ -1333,7 +1334,7 @@ export const walkthrough: Walkthrough = {
         {
           id: "sans-keyblade",
           title: L("Sans Keyblade, avec la Bête", "No Keyblade, with Beast"),
-          image: { src: "/images/walkthrough/hollow-bastion-1.webp", credit: credit("Hollow Bastion from KH1 gameplay 1.png"), width: 420, height: 237 },
+          image: { src: "/images/walkthrough/hollow-bastion-g1.webp", credit: credit("Hollow Bastion from KH1 gameplay 1.png"), width: 420, height: 237 },
           text: L(
             "À l'arrivée, montez de plateforme en plateforme jusqu'au sommet. **Glacier gèle les bulles d'eau** et les transforme en plateformes ; y entrer sans les geler vous transporte sous la surface. Les deux servent.\n\nEn haut, Riku prend la Keyblade, et Donald et Dingo suivent Riku. Il vous reste **l'épée en bois**, inutile contre les Sans-cœur, mais vous gardez la magie. La **Bête** rejoint l'équipe et se charge à peu près de tout : équipez-la d'accessoires corrects, elle en a besoin.\n\nPrenez la plateforme du sommet vers les portes du château. À droite, les curieux objets en cristal activent des plateformes : examinez le rouge après les portes, puis celui d'après pour descendre au niveau de base. Les **Sphères Sombres** apparaissent ici — plus agaçantes que dangereuses, la Bête les gère seule.\n\nLa bulle de gauche active deux commutateurs et donne des objets ; celle de droite mène au canal, avec un point de sauvegarde. Utilisez **Appeler** sur la grille : la Bête l'enfonce. La bulle suivante, gelée, cache une Matière Sombre bien planquée.",
             "On arrival, climb platform by platform to the top. **Blizzard freezes the water bubbles** and turns them into platforms; entering one without freezing it carries you below the surface. Both are useful.\n\nAt the top, Riku takes the Keyblade, and Donald and Goofy follow Riku. You are left with the **Wooden Sword**, useless against Heartless, but you keep your magic. **Beast** joins the party and handles just about everything: equip him with decent accessories, he needs them.\n\nTake the platform at the top to the Castle Gates. On the right, the strange crystal objects activate platforms: examine the red one past the gates, then the next to descend to the Base Level. **Darkballs** appear here — more nuisance than danger, Beast handles them alone.\n\nThe left bubble activates two crystal switches and yields items; the right one leads to the Waterway, with a save point. Use **Call** on the gate: Beast smashes it open. The next bubble, frozen, hides a well-hidden Dark Matter.",

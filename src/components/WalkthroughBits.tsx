@@ -4,6 +4,7 @@ import { localized } from "@/data/games";
 import { tileImage } from "@/data/walkthrough";
 import type { Linker } from "@/lib/autolink";
 import type { CollectibleKind, WalkBoss, WalkCollectible, WalkTable } from "@/data/walkthrough";
+import { ImageZoom } from "@/components/ImageZoom";
 
 /** Paragraphes d'un texte de données : séparés par une ligne vide. */
 export function paragraphs(text: string) {
@@ -84,9 +85,18 @@ export function BossCard({
       <div className="mt-3 after:clear-both after:block after:content-['']">
         {visual && (
           <figure className="mb-3 sm:float-right sm:ml-6 sm:w-[200px]">
-            <span className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line bg-[#0b1020]">
-              <Image src={visual.src} alt="" fill sizes="200px" className="object-contain p-2" />
-            </span>
+            <ImageZoom
+              src={visual.src}
+              alt={localized(boss.name, locale)}
+              width={visual.width}
+              height={visual.height}
+              credit={visual.credit}
+              className="w-full"
+            >
+              <span className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line bg-[#0b1020]">
+                <Image src={visual.src} alt="" fill sizes="200px" className="object-contain p-2" />
+              </span>
+            </ImageZoom>
             <figcaption className="mt-1.5 text-xs text-text-2">{visual.credit}</figcaption>
           </figure>
         )}

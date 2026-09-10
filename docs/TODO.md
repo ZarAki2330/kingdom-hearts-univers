@@ -56,7 +56,7 @@ Couverture exhaustive de l'univers
 
 Images, navigation, profondeur des fiches
 
-- [x] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _655 entrées sur 683 illustrées (rendus officiels KH Wiki, webp 320 px, crédit sur chaque fiche) ; 28 sans image fiable, voir docs/IMAGES.md_
+- [x] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _658 entrées sur 686 illustrées (rendus officiels KH Wiki, webp 320 px, crédit sur chaque fiche) ; 28 sans image fiable, voir docs/IMAGES.md_
 - [x] Pagination des listes de l'encyclopédie — _48 entrées par page, liens réels ?page=, aria-current, précédent/suivant, 6 langues_
 - [x] Filtres des listes (par jeu, type, camp…) — _Jeu (liste réelle des apparitions), type, camp (alignement / rôle) + recherche accentuée ; état dans l'URL, combinable avec la pagination_
 - [x] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _19 logos officiels (KH Wiki, webp 800 px, fond transparent ; 0.2 et 2.8 détourés) sur cartes, chronologie et fiches ; jaquette conservée en visuel secondaire ; All-in-One et Integrum en visuel généré_
@@ -93,7 +93,7 @@ Récit de chaque jeu et chronologie de l'univers
 Guides et cheminement
 
 - [x] Structure des guides (par jeu, par monde) — _Section /soluces dans les 6 langues : index des guides, page par jeu (version couverte, sommaire des 15 sections, objectifs du 100 %) et page par section (étapes, combats avec attaques à connaître, liste de ramassage typée, « à ne pas rater », navigation précédent/suivant). Kingdom Hearts Final Mix ouvert avec le prologue et les Îles du Destin rédigés. Présentation reprise de khdestiny : grilles de tuiles illustrées pour le cheminement et pour les quêtes annexes_
-- [x] Soluce Kingdom Hearts (Final Mix) — _les 15 sections du cheminement rédigées, du plongeon au cœur au Monde du Chaos, et 5 quêtes annexes sur 12 (99 dalmatiens, marques Trio, Forêt des Rêves Bleus, trophées, cartes postales). 49 visuels : une capture du combat dans chacun des 30 encadrés, plusieurs captures par chapitre, toutes prises dans Kingdom Hearts et non dans les épisodes suivants_
+- [x] Soluce Kingdom Hearts (Final Mix) — _les 15 sections du cheminement rédigées, du plongeon au cœur au Monde du Chaos, et 8 quêtes annexes sur 11 (99 dalmatiens, marques Trio, Forêt des Rêves Bleus, trophées, cartes postales, atelier des Mogs, ennemis spéciaux, tournois du Colisée). 60 visuels cliquables (visionneuse plein écran) : une capture du combat dans chacun des 30 encadrés, plusieurs par chapitre, toutes prises dans Kingdom Hearts et non dans les épisodes suivants_
 - [ ] Soluce Kingdom Hearts II (Final Mix)
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)
