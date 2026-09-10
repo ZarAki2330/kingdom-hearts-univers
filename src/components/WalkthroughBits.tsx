@@ -62,7 +62,7 @@ export function BossCard({
       <div className={visual ? "mt-3 grid gap-5 sm:grid-cols-[1fr_220px] sm:items-start" : ""}>
         <div>
           {paragraphs(localized(boss.tactics, locale)).map((p, i) => (
-            <p key={i} className="prose-wide mt-3 leading-relaxed first:mt-0">
+            <p key={i} className="mt-3 leading-relaxed first:mt-0">
               {p}
             </p>
           ))}
@@ -72,7 +72,7 @@ export function BossCard({
               <h4 className="mt-5 text-sm font-bold uppercase tracking-wider text-text-2">{labels.attacks}</h4>
               <dl className="mt-2 space-y-2">
                 {boss.attacks.map((a, i) => (
-                  <div key={i} className="prose-wide">
+                  <div key={i}>
                     <dt className="inline font-semibold">{localized(a.name, locale)} — </dt>
                     <dd className="inline text-text-2">{localized(a.note, locale)}</dd>
                   </div>

@@ -63,37 +63,36 @@ export default async function QuestPage({ params }: Props) {
         </Link>
       </nav>
 
-      <header className="mt-6 grid gap-6 sm:grid-cols-[200px_1fr] sm:items-start">
+      {/* La vignette est en habillage : le texte commence à sa droite puis reprend dessous,
+          au lieu de laisser une colonne vide sous l'image. */}
+      <header className="mt-6 after:clear-both after:block after:content-['']">
         {image && (
-          <figure className="order-first">
+          <figure className="mb-4 sm:float-left sm:mb-3 sm:mr-6 sm:w-[200px]">
             <span className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line bg-[#0b1020]">
               <Image src={image.src} alt="" fill sizes="200px" className="object-contain p-2" priority />
             </span>
             <figcaption className="mt-1.5 text-xs text-text-2">{image.credit}</figcaption>
           </figure>
         )}
-        <div className={image ? "" : "sm:col-span-2"}>
-          <p className="eyebrow">{t("quests")}</p>
-          <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{localized(quest.title, locale)}</h1>
-          <p className="prose-wide mt-2 text-lg text-text-2">{localized(quest.tagline, locale)}</p>
-          {entry && (
-            <p className="mt-3 text-sm">
-              <Link
-                href={`/encyclopedie/${CATEGORY_SLUG[entry.category]}/${entry.slug}`}
-                className="font-semibold text-accent hover:underline"
-              >
-                {t("relatedEntry")}
-              </Link>
+        <p className="eyebrow">{t("quests")}</p>
+        <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{localized(quest.title, locale)}</h1>
+        <p className="mt-2 text-lg text-text-2">{localized(quest.tagline, locale)}</p>
+        {entry && (
+          <p className="mt-3 text-sm">
+            <Link
+              href={`/encyclopedie/${CATEGORY_SLUG[entry.category]}/${entry.slug}`}
+              className="font-semibold text-accent hover:underline"
+            >
+              {t("relatedEntry")}
+            </Link>
+          </p>
+        )}
+        {quest.intro &&
+          paragraphs(localized(quest.intro, locale)).map((p, i) => (
+            <p key={i} className="mt-4 leading-relaxed">
+              {p}
             </p>
-          )}
-          {/* L'introduction se lit à droite de la vignette : sinon la colonne reste vide. */}
-          {quest.intro &&
-            paragraphs(localized(quest.intro, locale)).map((p, i) => (
-              <p key={i} className="prose-wide mt-4 leading-relaxed">
-                {p}
-              </p>
-            ))}
-        </div>
+          ))}
       </header>
 
       {(quest.tables ?? []).map((table) => (
@@ -101,7 +100,7 @@ export default async function QuestPage({ params }: Props) {
           <h2 id={`t-${table.id}`} className="text-2xl font-bold">
             {localized(table.title, locale)}
           </h2>
-          {table.intro && <p className="prose-wide mt-2 text-text-2">{localized(table.intro, locale)}</p>}
+          {table.intro && <p className="mt-2 text-text-2">{localized(table.intro, locale)}</p>}
           <WalkDataTable table={table} locale={locale} labels={tableLabels} />
         </section>
       ))}
@@ -116,7 +115,7 @@ export default async function QuestPage({ params }: Props) {
           <div className={s.image ? "mt-4 grid gap-5 lg:grid-cols-[1fr_360px] lg:items-start" : ""}>
             <div>
               {paragraphs(localized(s.text, locale)).map((p, j) => (
-                <p key={j} className="prose-wide mt-4 leading-relaxed first:mt-0">
+                <p key={j} className="mt-4 leading-relaxed first:mt-0">
                   {p}
                 </p>
               ))}
@@ -159,7 +158,7 @@ export default async function QuestPage({ params }: Props) {
           <h2 id="recompenses" className="text-2xl font-bold">
             {t("rewards")}
           </h2>
-          {quest.rewards.intro && <p className="prose-wide mt-2 text-text-2">{localized(quest.rewards.intro, locale)}</p>}
+          {quest.rewards.intro && <p className="mt-2 text-text-2">{localized(quest.rewards.intro, locale)}</p>}
           <div role="region" aria-labelledby="recompenses" tabIndex={0} className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[24rem] border-collapse overflow-hidden rounded-lg border border-line text-sm">
               <thead>
@@ -184,7 +183,7 @@ export default async function QuestPage({ params }: Props) {
               </tbody>
             </table>
           </div>
-          {quest.rewards.note && <p className="prose-wide mt-3 text-sm text-text-2">{localized(quest.rewards.note, locale)}</p>}
+          {quest.rewards.note && <p className="mt-3 text-sm text-text-2">{localized(quest.rewards.note, locale)}</p>}
         </section>
       )}
 

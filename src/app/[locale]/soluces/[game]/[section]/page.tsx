@@ -67,10 +67,10 @@ export default async function WalkthroughSectionPage({ params }: Props) {
         </Link>
       </nav>
 
-      <header className="mt-6 grid gap-6 sm:grid-cols-[220px_1fr] sm:items-start">
+      {/* Même principe que les quêtes : le visuel du monde est en habillage. */}
+      <header className="mt-6 after:clear-both after:block after:content-['']">
         {visual && (
-          <figure className="order-first">
-            {/* Le visuel du monde, sur un fond teinté de sa couleur, comme les tuiles du sommaire. */}
+          <figure className="mb-4 sm:float-left sm:mb-3 sm:mr-6 sm:w-[220px]">
             <span
               className="relative block aspect-[4/3] overflow-hidden rounded-lg border border-line"
               style={{
@@ -84,34 +84,32 @@ export default async function WalkthroughSectionPage({ params }: Props) {
             <figcaption className="mt-1.5 text-xs text-text-2">{visual.credit}</figcaption>
           </figure>
         )}
-        <div className={visual ? "" : "sm:col-span-2"}>
-          <p className="eyebrow">{game.title}</p>
-          <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{localized(section.title, locale)}</h1>
-          {section.subtitle && <p className="mt-1 text-lg text-text-2">{localized(section.subtitle, locale)}</p>}
-          <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-text-2">
-            {section.level && (
-              <li>
-                {t("level")} <span className="tabular font-semibold text-text">{section.level}</span>
-              </li>
-            )}
-            {world && (
-              <li>
-                <Link
-                  href={`/encyclopedie/${CATEGORY_SLUG[world.category]}/${world.slug}`}
-                  className="font-semibold text-accent hover:underline"
-                >
-                  {t("worldEntry")}
-                </Link>
-              </li>
-            )}
-          </ul>
-          {section.intro &&
-            paragraphs(localized(section.intro, locale)).map((p, i) => (
-              <p key={i} className="prose-wide mt-4 leading-relaxed">
-                {p}
-              </p>
-            ))}
-        </div>
+        <p className="eyebrow">{game.title}</p>
+        <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{localized(section.title, locale)}</h1>
+        {section.subtitle && <p className="mt-1 text-lg text-text-2">{localized(section.subtitle, locale)}</p>}
+        <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-text-2">
+          {section.level && (
+            <li>
+              {t("level")} <span className="tabular font-semibold text-text">{section.level}</span>
+            </li>
+          )}
+          {world && (
+            <li>
+              <Link
+                href={`/encyclopedie/${CATEGORY_SLUG[world.category]}/${world.slug}`}
+                className="font-semibold text-accent hover:underline"
+              >
+                {t("worldEntry")}
+              </Link>
+            </li>
+          )}
+        </ul>
+        {section.intro &&
+          paragraphs(localized(section.intro, locale)).map((p, i) => (
+            <p key={i} className="mt-4 leading-relaxed">
+              {p}
+            </p>
+          ))}
       </header>
 
       {steps.length > 1 && (
@@ -141,7 +139,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           <div className={s.image ? "mt-4 grid gap-5 lg:grid-cols-[1fr_340px] lg:items-start" : ""}>
             <div>
               {paragraphs(localized(s.text, locale)).map((par, j) => (
-                <p key={j} className="prose-wide mt-4 leading-relaxed first:mt-0">
+                <p key={j} className="mt-4 leading-relaxed first:mt-0">
                   {par}
                 </p>
               ))}
@@ -168,7 +166,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           <h2 id={`t-${table.id}`} className="text-2xl font-bold">
             {localized(table.title, locale)}
           </h2>
-          {table.intro && <p className="prose-wide mt-2 text-text-2">{localized(table.intro, locale)}</p>}
+          {table.intro && <p className="mt-2 text-text-2">{localized(table.intro, locale)}</p>}
           <WalkDataTable table={table} locale={locale} labels={tableLabels} />
         </section>
       ))}
@@ -194,7 +192,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           <h2 id="ramassage" className="text-2xl font-bold">
             {t("collectibles")}
           </h2>
-          <p className="prose-wide mt-3 text-text-2">{t("collectiblesLead")}</p>
+          <p className="mt-3 text-text-2">{t("collectiblesLead")}</p>
           <CollectibleList items={section.collectibles} locale={locale} requiresLabel={t("requires")} />
         </section>
       )}
@@ -206,7 +204,7 @@ export default async function WalkthroughSectionPage({ params }: Props) {
           </h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-text-2">
             {section.missable.map((m, i) => (
-              <li key={i} className="prose-wide">
+              <li key={i}>
                 {localized(m, locale)}
               </li>
             ))}

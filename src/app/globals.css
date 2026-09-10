@@ -167,14 +167,6 @@ h1, h2, h3, h4 {
   max-width: 68ch;
 }
 
-/*
- * Mesure large, réservée aux pages de soluce : elles sont bâties autour de tableaux
- * pleine largeur, et un texte à 68 caractères y laissait une colonne vide à droite.
- * 88 caractères restent confortables à lire sur un écran d'ordinateur.
- */
-.prose-wide {
-  max-width: 88ch;
-}
 
 .tabular {
   font-variant-numeric: tabular-nums;
