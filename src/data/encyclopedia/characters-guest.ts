@@ -414,4 +414,23 @@ export const guestCharacters: CharacterEntry[] = [
     debut: "kingdom-hearts",
     tags: ["final fantasy", "boutique"],
   },
+  {
+    slug: "chicken-little",
+    category: "characters",
+    kind: "disney",
+    name: "Chicken Little",
+    names: { en: "Chicken Little", ja: "チキン・リトル" },
+    alignment: "light",
+    homeworld: "Oakey Oaks",
+    accent: "#d8b23a",
+    tagline: L("La première invocation de Kingdom Hearts II.", "Kingdom Hearts II's first summon."),
+    description: L(
+      "Le petit poulet du film du même nom est la première invocation que Sora obtient dans Kingdom Hearts II, en recevant le Pendentif batte de Merlin après l'épisode du livre de Winnie. Il n'a rien d'un combattant : il rassemble les ennemis, les étourdit et lance des balles de baseball, ce qui en fait surtout un outil de contrôle de groupe.",
+      "The little chicken from the film of the same name is the first summon Sora obtains in Kingdom Hearts II, receiving the Baseball Charm from Merlin after the Pooh book episode. He is no fighter: he gathers enemies, stuns them and throws baseballs, which makes him above all a crowd-control tool.",
+    ),
+    appearances: ["kingdom-hearts-ii"],
+    debut: "kingdom-hearts-ii",
+    relations: [{ slug: "sora", label: L("invoqué par", "summoned by") }, { slug: "merlin", label: L("remis par", "given by") }],
+    tags: ["disney", "invocation", "kingdom hearts ii"],
+  },
 ];

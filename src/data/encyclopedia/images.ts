@@ -696,4 +696,7 @@ export const entryImages: Record<string, EntryImage> = {
   "stealth-soldier": { src: "/images/encyclopedia/enemies/stealth-soldier-g2.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Stealth_Soldier_render.png)", width: 169, height: 204 },
   "pot-scorpion": { src: "/images/encyclopedia/enemies/pot-scorpion-g2.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Pot_Scorpion.png)", width: 301, height: 320 },
   "shadow-sora": { src: "/images/encyclopedia/enemies/shadow-sora-g2.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (ShadowSora.png)", width: 81, height: 196 },
+  "thresholder": { src: "/images/encyclopedia/enemies/thresholder.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Thresholder_(FM).png)", width: 320, height: 312 },
+  "hydra": { src: "/images/encyclopedia/enemies/hydra.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Hydra.png)", width: 320, height: 245 },
+  "chicken-little": { src: "/images/encyclopedia/characters/chicken-little.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Chicken_Little_KHII.png)", width: 160, height: 320 },
 };

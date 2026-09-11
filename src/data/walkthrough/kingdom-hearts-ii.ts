@@ -410,15 +410,126 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "beasts-castle",
       level: "13",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Trois boss en une visite, et la magie la plus importante du jeu à la clé : c'est ici qu'on obtient l'**élément de Soin**.\n\nLe château est un monde fermé et labyrinthique, où presque tout se passe entre deux ailes et un sous-sol. La Bête ne reconnaît plus personne, et la raison de son humeur porte un manteau noir.\n\nUn mot sur la **Vaillance**, obtenue chez Yen Sid : elle sert énormément ici, à la fois pour les trois boss et pour son **Double saut**, qui met à portée une pièce de puzzle des souterrains. Pensez à la monter.",
+        "Three bosses in one visit, and the game's most important magic at the end of it: this is where you get the **Cure element**.\n\nThe castle is a closed, maze-like world where almost everything happens between two wings and a basement. The Beast no longer recognises anyone, and the reason for his mood wears a black coat.\n\nA word on **Valor Form**, gained at Yen Sid's: it is very useful here, both for the three bosses and for its **High Jump**, which brings one of the basement's puzzle pieces into reach. Remember to level it.",
+      ),
+      steps: [
+        {
+          id: "grand-hall",
+          title: L("Le grand hall et la cour", "The Entrance Hall and the courtyard"),
+          text: L(
+            "L'arrivée est accueillie par une nuée d'**Ombres**, puis par la Bête elle-même, qui s'empare de la rose sans un mot.\n\nDonald aperçoit une femme en haut de l'escalier de l'aile est. Avant d'y aller, **sortez du château** par la grande porte : la cour contient des Sans-cœur et trois coffres — un **Bonus PC**, une **Potion+** et un **Éclat de mithril**.\n\nRevenez ensuite et montez le grand escalier vers l'est. Au bout de l'allée, vous entrez chez **Belle**, qui vous confie la **carte du château** et une **Formule de soin**, et vous charge de libérer les domestiques enfermés au cachot. L'aile est contient encore une **Tente** et un **Éclat de mithril**.",
+            "You arrive to a swarm of **Shadows**, then to the Beast himself, who takes the rose without a word.\n\nDonald spots a woman at the top of the east wing's staircase. Before going there, **leave the castle** by the main door: the courtyard holds Heartless and three chests — an **AP Boost**, a **Hi-Potion** and a **Mythril Shard**.\n\nCome back and climb the main staircase towards the east. At the end of the corridor you walk in on **Belle**, who hands you the **castle map** and a **Mega-Potion**, and asks you to free the servants locked in the dungeon. The east wing also holds a **Tent** and a **Mythril Shard**.",
+          ),
+        },
+        {
+          id: "aile-ouest",
+          title: L("L'aile ouest et la garde-robe", "The west wing and the wardrobe"),
+          text: L(
+            "Dans l'aile ouest, revenez sur vos pas après la scène : deux coffres attendent entre les armures — un **Éclat de mithril** et une **Potion+**. Les armures elles-mêmes se détruisent, et lâchent des **orbes de flux** : c'est de la magie gratuite, ne les ignorez pas.\n\nPlus loin, l'escalier est gardé par deux armures. À sa droite, un **Éclat de force** ; à sa gauche, un **Éclat de mithril** et une **Pierre de vitalité**.\n\nLa **garde-robe** postée devant une porte cache l'entrée du cachot. Poussez-la avec **Triangle**, et **lâchez dès qu'elle se réveille** — sinon elle se rendort de travers. Répétez jusqu'à dégager complètement le passage.",
+            "In the west wing, backtrack after the scene: two chests sit between the suits of armour — a **Mythril Shard** and a **Hi-Potion**. The armour itself can be destroyed, and drops **MP orbs**: that is free magic, do not ignore it.\n\nFurther on, the staircase is guarded by two suits of armour. To its right, a **Power Shard**; to its left, a **Mythril Shard** and a **Serenity Stone**.\n\nThe **wardrobe** standing in front of a door hides the dungeon entrance. Push it with **Triangle**, and **let go the moment she wakes** — otherwise she settles back crooked. Repeat until the way is completely clear.",
+          ),
+        },
+        {
+          id: "souterrains",
+          title: L("Les souterrains et les lanternes", "The basement and the lanterns"),
+          text: L(
+            "Duetto vaincu, entrez libérer les domestiques. Le gros coffre contient la **carte du sous-sol**, le petit un **Bonus PC**. Revenez sur vos pas et grimpez sur les reliefs pour attraper **deux pièces de puzzle**.\n\nÀ l'étage, Big Ben ordonne aux armures de s'écarter — elles obtempèrent aussitôt.\n\nSuit un mini-jeu : traverser les souterrains en allumant **trois lanternes** dans le temps imparti. La commande ne s'active que lorsque **Lumière et Miss Samovar sont à vos côtés**, et il faut parfois leur ouvrir la voie en cassant des caisses. Si la jauge verte se vide, Big Ben s'évanouit à l'entrée de la zone : il faut revenir le ranimer avec les deux autres.\n\nUne fois la mission remplie, fouillez : une **Potion+**, un **Éclat de mithril** et un **Éclat hyalin** près de la sortie, plus **deux pièces de puzzle** — dont une accessible seulement au **Double saut de la Vaillance**.\n\nLe passage secret débouche dans le hall ouest, derrière les armures. Un coffre (**Bonus PC**), puis l'aile ouest : une **Tente** en face, un **Éclat de mithril** et une **pièce de puzzle** plus haut.",
+            "With the Thresholder beaten, go in and free the servants. The large chest holds the **basement map**, the small one an **AP Boost**. Backtrack and climb the scenery to grab **two puzzle pieces**.\n\nUpstairs, Cogsworth orders the armour aside — and it obeys at once.\n\nA mini-game follows: cross the basement lighting **three lanterns** within the time limit. The command only activates when **Lumiere and Mrs Potts are beside you**, and you sometimes have to clear their path by smashing crates. If the green gauge empties, Cogsworth faints at the area's entrance: you must come back and revive him with the other two.\n\nOnce the task is done, search around: a **Hi-Potion**, a **Mythril Shard** and a **Lucid Shard** near the exit, plus **two puzzle pieces** — one reachable only with **Valor Form's High Jump**.\n\nThe secret passage comes out in the west hall, behind the armour. A chest (**AP Boost**), then the west wing: a **Tent** facing you, a **Mythril Shard** and a **puzzle piece** higher up.",
+          ),
+        },
+        {
+          id: "salle-de-bal",
+          title: L("La chambre, puis la salle de bal", "The bedroom, then the ballroom"),
+          text: L(
+            "Entrez dans la chambre de la Bête : un membre de l'Organisation s'y trouve, et le trouble de votre ami vient de lui. Il faudra le ramener à la raison — au sens propre.\n\nLe combat gagné, la Bête rejoint l'équipe. Prenez la **pièce de puzzle** et l'**Éclat ardent**, puis retournez chez Belle dans l'aile est : la garde-robe vous apprend qu'elle a suivi l'homme en noir.\n\nElle est en fait dans la **salle de bal**, par la porte entre les deux escaliers du grand hall. Un Sans-cœur y a pris possession des lieux, et le combat qui suit se déroule en deux temps.\n\nLa victoire donne l'**élément de Soin** — la magie curative, celle qui change tout pour la suite du jeu. L'équipe est ensuite transportée automatiquement à la Forteresse Oubliée, si la Terre des Dragons est déjà faite.",
+            "Go into the Beast's bedroom: a member of the Organisation is there, and your friend's state comes from him. He will have to be brought back to his senses — literally.\n\nWith that fight won, the Beast joins the party. Take the **puzzle piece** and the **Blazing Shard**, then head back to Belle in the east wing: the wardrobe tells you she followed the man in black.\n\nShe is in fact in the **ballroom**, through the door between the two staircases of the Entrance Hall. A Heartless has taken the room over, and the fight that follows comes in two stages.\n\nWinning gives the **Cure element** — the healing magic, the one that changes everything for the rest of the game. The party is then carried automatically to Hollow Bastion, if The Land of Dragons is already done.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "duetto",
+          name: L("Duetto", "Thresholder"),
+          entry: "thresholder",
+          level: "14",
+          reward: L("Sora : Frappe ascendante. Donald : Donald-brasier. Dingo : +4 points de vie.", "Sora: Upper Slash. Donald: Fire Boost. Goofy: +4 HP."),
+          tactics: L(
+            "Une porte possédée, et un combat en boucle plutôt qu'un combat de force.\n\nÀ votre approche, des Sans-cœur apparaissent. **Éloignez-vous de la porte pour les attirer** et réglez-leur leur compte d'abord : les affronter collé à Duetto, c'est prendre les coups de poing en prime.\n\nDuetto se contente de marteler le sol. Videz sa vie, puis déclenchez la commande réaction **Expulser** : le véritable adversaire sort de la porte, et c'est lui qu'il faut frapper.\n\nLe cycle attaquer la porte / expulser / frapper le Possesseur se répète jusqu'au bout. Pour aller vite : verrouillez le Possesseur dès sa sortie, activez la **Vaillance** et ne le lâchez plus.",
+            "A possessed door, and a loop rather than a slugging match.\n\nAs you approach, Heartless appear. **Move away from the door to draw them off** and deal with them first: fighting them pressed against the Thresholder means taking its fists as a bonus.\n\nThe Thresholder simply hammers the ground. Drain its HP, then trigger the **Release** Reaction Command: the real enemy comes out of the door, and that is what you hit.\n\nThe attack the door / release / hit the Possessor loop repeats to the end. To go fast: lock onto the Possessor the moment it emerges, switch to **Valor Form** and do not let go.",
+          ),
+        },
+        {
+          id: "la-bete",
+          name: L("La Bête", "The Beast"),
+          entry: "beast",
+          level: "15",
+          reward: L("Sora : un emplacement d'armure supplémentaire. Donald : +3 points de vie. Dingo : Défenseur.", "Sora: an extra armour slot. Donald: +3 HP. Goofy: Defender."),
+          tactics: L(
+            "Le combat le plus court de la visite, et il ne demande qu'une chose : jouer les commandes réaction.\n\n**Réveille-toi**, déclenchée avec l'aide de Big Ben, l'immobilise quelques instants. Frappez pendant ce temps, puis recommencez.\n\nAu bout de quelques cycles, la commande **Charger** apparaît : martelez Triangle, et c'est fini. Il n'y a pas de piège, et se battre « normalement » ne ferait que rallonger inutilement.",
+            "The visit's shortest fight, and it asks only one thing: play the Reaction Commands.\n\n**Wake Up**, triggered with Cogsworth's help, pins him for a few moments. Hit him during that, then start again.\n\nAfter a few cycles the **Release** command appears: mash Triangle, and it is over. There is no catch, and fighting him 'normally' would only drag it out.",
+          ),
+        },
+        {
+          id: "maillon-tenebreux",
+          name: L("Maillon Ténébreux, puis Nervure", "Shadow Stalker, then Dark Thorn"),
+          entry: "dark-thorn",
+          level: "16",
+          reward: L("Sora : +5 points de vie, Riposte, et l'élément de Soin. Donald : +3 points de vie. Dingo : un emplacement d'objet supplémentaire. La Bête : +35 points de vie.", "Sora: +5 HP, Counterguard, and the Cure element. Donald: +3 HP. Goofy: an extra item slot. The Beast: +35 HP."),
+          tactics: L(
+            "Un combat en deux formes, et la récompense est la magie de soin : il vaut la peine d'y arriver préparé.\n\n**Maillon Ténébreux** n'est pas costaud mais insaisissable : il traverse la salle en une seconde et se fond dans le décor. Chaque possession a sa parade — les fenêtres du fond tirent des lasers droit devant, un pilier fait bouger et frapper tous les piliers, le sol s'annonce par une lueur sous vos pieds (**sautez**), et le lustre descend tournoyer en projetant des lasers.\n\nUne fois possédé, l'élément possédé a peu de vie : videz-la, puis **Expulser** pour l'en extraire et le frapper. Répétez jusqu'à ce qu'il change de forme.\n\n**Nervure** est autrement sérieux. **Verrouillez immédiatement avec R1** : son invisibilité le rend très difficile à suivre autrement.\n\nAprès quelques coups, la chaîne **Bondir → Saisir → Centrifugeuse** devient disponible : c'est votre meilleure source de dégâts. Et quand il attrape Sora pour le faire tournoyer, tenez-vous prêt à déclencher **Lance-pierre** — la contre-attaque fait très mal.\n\nLa coopération avec la Bête est dévastatrice ici. Écartez-vous en revanche quand il s'accroche au chandelier et l'écrase au sol : l'onde de choc porte loin.",
+            "One fight in two forms, and the reward is healing magic: it is worth arriving prepared.\n\n**Shadow Stalker** is not tough but it is elusive: it crosses the room in a second and melts into the scenery. Each possession has its answer — the far windows fire lasers straight ahead, a pillar sets every pillar moving and slamming, the floor announces itself with a glow under your feet (**jump**), and the chandelier comes down to spin and fire lasers.\n\nOnce possessed, the object has little HP: drain it, then **Release** to pull the Heartless out and strike. Repeat until it changes form.\n\n**Dark Thorn** is a different matter. **Lock on with R1 at once**: its invisibility makes it very hard to track otherwise.\n\nAfter a few hits, the **Bound → Grab → Cyclone** chain becomes available: that is your best source of damage. And when it grabs Sora and spins him, be ready to trigger **Slingshot** — the counter hurts badly.\n\nThe Beast's limit is devastating here. Do move away when it hangs from the chandelier and smashes it into the floor: the shockwave carries far.",
+          ),
+          attacks: [
+            { name: L("Possession du sol", "Floor possession"), note: L("Une lueur apparaît sous Sora : sautez, sans attendre.", "A glow appears under Sora: jump, immediately.") },
+            { name: L("Possession du lustre", "Chandelier possession"), note: L("Il descend et tournoie en projetant des lasers. Restez à distance.", "It comes down and spins, firing lasers. Keep your distance.") },
+            { name: L("Saisie et tournoiement", "Grab and spin"), note: L("Lance-pierre : la contre-attaque la plus rentable du combat.", "Slingshot: the fight's most profitable counter.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×3", "AP Boost ×3"), where: L("Un dans la cour, un dans le petit coffre du cachot, un dans le hall ouest derrière les armures.", "One in the courtyard, one in the dungeon's small chest, one in the west hall behind the armour.") },
+        { kind: "ability", label: L("Élément de Soin", "Cure element"), where: L("La victoire sur Nervure, dans la salle de bal.", "Beating Dark Thorn, in the ballroom."), note: L("La magie la plus importante du jeu : placez-la en raccourci tout de suite.", "The game's most important magic: put it on a shortcut right away.") },
+        { kind: "minigame", label: L("Six pièces de puzzle", "Six puzzle pieces"), where: L("Deux au cachot, deux dans les souterrains, une dans l'aile ouest, une dans la chambre de la Bête.", "Two in the dungeon, two in the basement, one in the west wing, one in the Beast's bedroom."), requires: L("Une des deux pièces des souterrains demande le Double saut de la Vaillance.", "One of the two basement pieces needs Valor Form's High Jump.") },
+        { kind: "synthesis", label: L("Éclats de mithril, de force, ardent et hyalin, Pierre de vitalité", "Mythril, Power, Blazing and Lucid Shards, Serenity Stone"), where: L("Répartis dans la cour, les deux ailes et les souterrains.", "Spread across the courtyard, both wings and the basement.") },
+      ],
     },
     {
       id: "forteresse-oubliee-2",
       title: L("Forteresse Oubliée", "Hollow Bastion"),
-      subtitle: L("Deuxième visite — le comité de restauration", "Second visit — the Restoration Committee"),
+      subtitle: L("Deuxième visite — le livre de Winnie", "Second visit — Pooh's book"),
       world: "radiant-garden",
       level: "15",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Un passage très court — dix minutes — mais qui ouvre deux choses durables : la **Forêt des Rêves Bleus** et la **première invocation** du jeu.\n\nDes Sans-cœur se sont introduits chez Merlin, qui venait justement de retrouver le livre de Winnie en rangeant. La section se joue en aller-retour entre la maison et le livre, et se termine sur un livre déchiré et un Winnie qui ne reconnaît plus personne.\n\nAvant de commencer, faites une chose : **placez le sort Soin en raccourci**. Vous venez de l'obtenir au château de la Bête, et il ne sert à rien enfoui dans un menu.",
+        "A very short stretch — ten minutes — but it opens two lasting things: the **Hundred Acre Wood** and the game's **first summon**.\n\nHeartless have got into Merlin's house, and he had just found Pooh's book again while tidying. The section plays out as a round trip between the house and the book, and ends on a torn book and a Pooh who no longer recognises anyone.\n\nBefore you start, do one thing: **put the Cure spell on a shortcut**. You have just earned it at Beast's Castle, and it is no use buried in a menu.",
+      ),
+      steps: [
+        {
+          id: "le-livre",
+          title: L("La Forêt des Rêves Bleus", "The Hundred Acre Wood"),
+          text: L(
+            "Une fois la scène passée, examinez le livre que tient Donald pour entrer dans la **Forêt des Rêves Bleus**.\n\nPrenez l'arbre de papier à gauche pour rejoindre la maison de Winnie, et videz la zone de ses trois trésors : la **carte**, une **Pierre de mithril** et un **Bonus PC**. Parlez ensuite à l'ourson — vous êtes expulsé du livre peu après.",
+            "Once the scene is over, examine the book Donald is holding to enter the **Hundred Acre Wood**.\n\nTake the paper tree on the left to reach Pooh's house, and strip the area of its three treasures: the **map**, a **Mythril Stone** and an **AP Boost**. Then talk to the bear — you are thrown out of the book shortly after.",
+          ),
+        },
+        {
+          id: "livre-dechire",
+          title: L("Le livre déchiré, et Chicken Little", "The torn book, and Chicken Little"),
+          text: L(
+            "Les Sans-cœur sont revenus et se sont emparés du livre : éliminez-les pour le récupérer. Le combat n'est pas difficile, mais il a une conséquence — **le livre est déchiré**.\n\nRetournez-y aussitôt pour vérifier que Winnie va bien. Il va bien, mais il ne vous connaît plus : « le garçon que je ne connais pas ».\n\nDe retour chez Merlin, le magicien vous offre le **Pendentif batte** : c'est **Chicken Little**, votre première invocation. Il ne fait pas de gros dégâts mais rassemble et étourdit les groupes, ce qui vaut mieux qu'il n'y paraît.\n\nPour reprendre la Forêt des Rêves Bleus, il faudra désormais retrouver les **pages déchirées** dispersées dans les autres mondes — c'est une quête de fond, traitée à part dans les annexes.\n\nDirection le **Colisée de l'Olympe**.",
+            "The Heartless are back and have taken the book: kill them to get it back. The fight is not hard, but it has a consequence — **the book is torn**.\n\nGo straight back in to check on Pooh. He is fine, but he does not know you any more: 'the boy I don't know'.\n\nBack at Merlin's, the wizard gives you the **Baseball Charm**: that is **Chicken Little**, your first summon. He does little damage but gathers and stuns groups, which is worth more than it looks.\n\nTo continue the Hundred Acre Wood, you will now have to find the **torn pages** scattered across the other worlds — a long-running hunt, covered separately in the reference pages.\n\nNext stop: **Olympus Coliseum**.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("Dans la Forêt des Rêves Bleus, à la maison de Winnie.", "In the Hundred Acre Wood, at Pooh's house.") },
+        { kind: "ability", label: L("Pendentif batte — Chicken Little", "Baseball Charm — Chicken Little"), where: L("De Merlin, après l'épisode du livre déchiré.", "From Merlin, after the torn-book episode."), note: L("La première invocation du jeu.", "The game's first summon.") },
+        { kind: "synthesis", label: L("Pierre de mithril", "Mythril Stone"), where: L("À la maison de Winnie.", "At Pooh's house.") },
+      ],
     },
     {
       id: "colisee",
@@ -426,7 +537,127 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "olympus",
       level: "16",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "La plus longue visite du premier tour, et la plus riche : quatre boss, deux zones entières à fouiller, et la magie **Foudre** en récompense finale.\n\nUne règle domine tout le passage : **aux Enfers, les Fusions et les invocations ne fonctionnent pas**. C'est la malédiction du lieu, et elle ne se lève qu'après Demyx, en récupérant la pierre de l'Olympe. Tout ce qui précède se joue donc à la Keyblade, à la magie et aux commandes réaction — pensez-y en équipant vos capacités.\n\nQuelques repères utiles dans les Enfers : les petites boules lumineuses sont inoffensives et lâchent des **orbes de magie** en éclatant, les torches donnent des **orbes de vie**, et les chutes de pierres font mal.\n\nUne sphère de ténèbres marquée d'un livre apparaît en chemin : c'est la **réplique de Zexion**, un défi de Final Mix. Il est bien trop tôt — notez-la et passez.",
+        "The longest visit of the first round, and the richest: four bosses, two whole areas to comb, and the **Thunder** magic as the final reward.\n\nOne rule governs the whole stretch: **in the Underworld, Drive Forms and summons do not work**. That is the place's curse, and it only lifts after Demyx, once the Olympus Stone is recovered. Everything before that is played with the Keyblade, magic and Reaction Commands — bear it in mind when equipping abilities.\n\nA few useful landmarks in the Underworld: the small glowing balls are harmless and drop **MP orbs** when burst, the torches give **HP orbs**, and the falling rocks hurt.\n\nA dark sphere marked with a book appears along the way: that is the **Zexion replica**, a Final Mix challenge. It is far too early — note it and move on.",
+      ),
+      steps: [
+        {
+          id: "enfers",
+          title: L("Les Enfers, et la fuite devant Hadès", "The Underworld, and the escape from Hades"),
+          text: L(
+            "Mégara vous demande de convaincre Hadès de laisser souffler Hercule. Passez la grande porte bleue.\n\nDans la grande zone circulaire, **suivez le mur de gauche** pour attraper une **pièce de puzzle** en l'air. Plus loin, un membre de l'Organisation s'enfuit dans la galerie.\n\nAu croisement : le passage droit devant donne une **Potion+** ; l'autre chemin, un **Éclat de mithril**, un **Éther** et un **Bonus PC**. Devant la sortie, une **Pierre de mithril**. La zone suivante a un point de sauvegarde, un Mog et deux coffres (**carte de la Caverne du Trépas**, **Éclat de mithril**).\n\nDans l'antre d'Hadès, le dieu et Pat préparent la transformation d'Hercule en Sans-cœur, et ressuscitent **Auron** pour cela. Auron se rebelle, Hadès attaque — et le combat révèle vite qu'**il est invincible chez lui**.\n\nLa fuite qui suit n'est pas un combat contre Hadès : le but est d'**éliminer les Sans-cœur pour faire tomber les trois barrières**. Hadès vous ralentit en lançant une boule de feu, **qui se pare**. Prenez Donald pour ses soins, et servez-vous de la coopération d'Auron. La dernière plate-forme est la plus dure : arrivez-y en forme.",
+            "Megara asks you to talk Hades into giving Hercules a break. Go through the big blue door.\n\nIn the large circular area, **follow the left-hand wall** to grab a **puzzle piece** floating in the air. Further on, a member of the Organisation flees down the gallery.\n\nAt the junction: the passage straight ahead gives a **Hi-Potion**; the other path, a **Mythril Shard**, an **Ether** and an **AP Boost**. In front of the exit, a **Mythril Stone**. The next area has a save point, a moogle and two chests (**Cave of the Dead map**, **Mythril Shard**).\n\nIn Hades's chamber, the god and Pete are planning to turn Hercules into a Heartless, and revive **Auron** for the job. Auron rebels, Hades attacks — and the fight quickly shows that **he is invincible on his own ground**.\n\nThe escape that follows is not a fight against Hades: the point is to **kill the Heartless to bring down the three barriers**. Hades slows you with a fireball, **which can be guarded**. Take Donald for his healing, and use Auron's limit. The last platform is the hardest: arrive there in shape.",
+          ),
+        },
+        {
+          id: "colisee-phil",
+          title: L("Le Colisée, et l'entraînement de Phil", "The Coliseum, and Phil's training"),
+          text: L(
+            "Cerbère battu, Auron quitte le groupe. Remontez vers le point de lumière : Hercule est épuisé, et la malédiction des Enfers est la cause. Le seul remède serait la **pierre de l'Olympe**. Vous recevez la **carte du Colisée**.\n\nPendant qu'Hercule part la chercher, Phil vous propose son entraînement. Le **mode maniaque** donne la capacité **Plongeon aérien** : c'est lui qu'il faut réussir.\n\nHercule revient avec une mauvaise nouvelle — la pierre a été volée par un homme en capuche noire — et une pire : **Mégara a été enlevée**. Hercule part affronter l'Hydre, vous redescendez aux Enfers.",
+            "With Cerberus beaten, Auron leaves the party. Climb back to the point of light: Hercules is exhausted, and the Underworld's curse is why. The only cure would be the **Olympus Stone**. You receive the **Coliseum map**.\n\nWhile Hercules goes to fetch it, Phil offers his training. The **maniac mode** gives the **Aerial Dive** ability: that is the one to clear.\n\nHercules comes back with bad news — the stone has been stolen by a man in a black hood — and worse: **Megara has been taken**. Hercules leaves to face the Hydra, and you head back down.",
+          ),
+        },
+        {
+          id: "abimes",
+          title: L("Les Abîmes infernaux", "The Underworld Caverns"),
+          text: L(
+            "Après une discussion avec Phil, un nouvel accès s'ouvre. Prenez le **Bonus Attaque** dans le gros coffre avant d'y aller.\n\nLa zone est noyée de brume et cache un gouffre : **sautez dans le vide et donnez un coup de Keyblade** pour attraper la pièce de puzzle. Un **Éclat de mithril** dans le coffre avant de passer.\n\nLongez le mur de droite jusqu'à un **Éther**. Retournez-vous : sur les deux voies, prenez **celle de droite** — la gauche est votre point d'arrivée — pour un **Éclat de vitalité**. La sortie à droite du coffre ramène à l'entrée des Abîmes, où attendent un **Bonus PC** et un **Éclat hyalin**.\n\nRetour dans le dédale : une **Pierre de mithril** à gauche, puis longez le mur gauche **en ignorant d'abord la sortie** pour atteindre un coffre (**Éclat de mithril**) et une **pièce de puzzle**. Vous pouvez ensuite prendre la sortie laissée de côté.\n\nDans l'atrium : une **Pierre hyaline**, une **pièce de puzzle**, et un **Bonus PC** en grimpant la pente et en sautant sur la petite plate-forme. De l'autre côté vous attend Demyx.",
+            "After a word with Phil, a new way opens. Take the **Power Boost** from the large chest before going in.\n\nThe area is drowned in mist and hides a chasm: **jump into the void and swing the Keyblade** to catch the puzzle piece. A **Mythril Shard** in the chest before moving on.\n\nFollow the right-hand wall to an **Ether**. Turn around: of the two ways, take **the right one** — the left is where you came in — for a **Serenity Shard**. The exit right of the chest leads back to the Caverns' entrance, where an **AP Boost** and a **Lucid Shard** wait.\n\nBack in the maze: a **Mythril Stone** on the left, then follow the left wall **ignoring the exit at first** to reach a chest (**Mythril Shard**) and a **puzzle piece**. You can then take the exit you skipped.\n\nIn the atrium: a **Lucid Stone**, a **puzzle piece**, and an **AP Boost** by climbing the slope and jumping to the small platform. On the other side, Demyx is waiting.",
+          ),
+        },
+        {
+          id: "sceau",
+          title: L("La Salle du sceau, et le Colisée dévasté", "The Chamber of Repose, and the ruined Coliseum"),
+          text: L(
+            "Demyx battu, la **pierre de l'Olympe** lève la malédiction : Fusions et invocations refonctionnent. Le **rapport d'Ansem n° 5** rejoint le carnet.\n\nDans la Salle du sceau : une **pièce de puzzle**, un **Éclat de mithril**, la **carte de la caverne** et un **Bonus PC**. **Sauvegardez**, puis examinez la pierre pour ouvrir un nouveau passage — Mégara y est, aux mains de Pat.\n\nAprès Pat, il n'y a pas de répit : l'Hydre a refait la décoration du Colisée, et c'est le vrai morceau final de la visite.\n\nLa récompense est l'**élément de Foudre** et la Keyblade **Emblème de Héros**. Le Château Disney est en danger : n'attendez pas.\n\nÀ noter : le **Bolet n° 6** est apparu au Colisée, pour qui suit la quête des Mushroom XIII.",
+            "With Demyx beaten, the **Olympus Stone** lifts the curse: Drive Forms and summons work again. **Ansem's Report 5** joins the journal.\n\nIn the Chamber of Repose: a **puzzle piece**, a **Mythril Shard**, the **cave map** and an **AP Boost**. **Save**, then examine the stone to open a new passage — Megara is there, in Pete's hands.\n\nAfter Pete there is no rest: the Hydra has redecorated the Coliseum, and it is the visit's real finale.\n\nThe reward is the **Thunder element** and the **Hero's Crest** Keyblade. Disney Castle is in danger: do not linger.\n\nWorth noting: **Mushroom No. 6** has appeared at the Coliseum, for anyone following the Mushroom XIII hunt.",
+          ),
+        },
+      ],
+      tables: [
+        {
+          id: "entrainement",
+          title: L("L'entraînement de Phil", "Phil's training"),
+          intro: L(
+            "Deux modes, et un seul compte vraiment : c'est le mode maniaque qui donne la capacité.",
+            "Two modes, and only one really counts: the maniac mode is the one that gives the ability.",
+          ),
+          columns: [L("Mode", "Mode"), L("L'objectif", "The goal"), L("Ce qu'il faut savoir", "What to know")],
+          rows: [
+            at("Entraînement", ["20 orbes en 90 secondes, en détruisant les pots qui lévitent.", "20 orbs in 90 seconds, by smashing the floating pots."], ["Une formalité, et un échauffement.", "A formality, and a warm-up."]),
+            at("Maniaque", ["100 orbes en 90 secondes.", "100 orbs in 90 seconds."], ["Au bout d'un moment, un **gros pot** apparaît : projetez-le dans un groupe de petits pour faire tomber une pluie d'orbes. C'est la seule façon d'atteindre 100. Récompense : **Plongeon aérien**.", "After a while a **large pot** appears: throw it into a group of small ones to bring down a shower of orbs. That is the only way to reach 100. Reward: **Aerial Dive**."]),
+          ],
+        },
+      ],
+      bosses: [
+        {
+          id: "cerbere",
+          name: L("Cerbère", "Cerberus"),
+          entry: "cerberus",
+          level: "17",
+          reward: L("Sora : Contre-garde. Auron : +40 points de vie.", "Sora: Counterguard. Auron: +40 HP."),
+          tactics: L(
+            "Donald et Dingo sont absents : vous n'avez qu'**Auron**, et donc pas de soin automatique. Sauvegardez et emportez des potions avant d'entrer.\n\nFrappez les **têtes** à la Keyblade. La magie est peu efficace ici, ce n'est pas la peine d'y dépenser ses points.\n\nQuand il bondit, écartez-vous : l'atterrissage provoque une **onde de choc de longue portée**. Quand il crache des boules d'énergie, la **Parade** les bloque proprement.\n\nTrois commandes réaction ponctuent le combat — **Esquiver**, **Sauter**, et **À la niche** quand le molosse tente d'enserrer Sora entre deux têtes. Cette dernière fait de gros dégâts **et** le paralyse : enchaînez immédiatement derrière.\n\nEt n'oubliez pas la coopération avec Auron : c'est votre plus grosse source de dégâts sur ce combat.",
+            "Donald and Goofy are absent: you have only **Auron**, and therefore no automatic healing. Save and bring potions before going in.\n\nHit the **heads** with the Keyblade. Magic is ineffective here, there is no point spending MP on it.\n\nWhen he leaps, move: the landing causes a **long-range shockwave**. When he spits energy balls, **Guard** blocks them cleanly.\n\nThree Reaction Commands punctuate the fight — **Evade**, **Jump**, and **Bark** when the hound tries to pin Sora between two heads. That last one does heavy damage **and** stuns him: follow up immediately.\n\nAnd do not forget Auron's limit: it is your biggest source of damage in this fight.",
+          ),
+          attacks: [
+            { name: L("Bond", "Leap"), note: L("L'atterrissage envoie une onde de choc qui porte loin. S'écarter.", "The landing sends out a shockwave that carries far. Move away.") },
+            { name: L("Boules d'énergie", "Energy balls"), note: L("La Parade les bloque, au bon moment.", "Guard blocks them, on the right timing.") },
+            { name: L("Saisie entre deux têtes", "Pinned between two heads"), note: L("À la niche : gros dégâts et paralysie. Le meilleur moment du combat.", "Bark: heavy damage and a stun. The fight's best moment.") },
+          ],
+        },
+        {
+          id: "demyx",
+          name: L("Demyx", "Demyx"),
+          entry: "demyx",
+          level: "19",
+          reward: L("Sora : +5 points de vie. Donald : Vaillance. Dingo : +4 points de vie. Et la pierre de l'Olympe.", "Sora: +5 HP. Donald: Valor Boost. Goofy: +4 HP. Plus the Olympus Stone."),
+          tactics: L(
+            "Ce n'est pas un combat, c'est un **compte à rebours** : Demyx ne vous affronte pas lui-même, il invoque des avatars d'eau à la sitar et vous regarde faire.\n\nL'objectif est net : **détruire 100 avatars en 80 secondes**. Au corps à corps, c'est impossible.\n\nLa réponse tient en une commande : **Contre-danse**. Déclenchez-la sans arrêt, elle balaie les avatars par paquets et c'est le seul rythme qui tient dans le temps imparti. Ne poursuivez jamais un avatar isolé — laissez-les venir et fauchez le groupe.",
+            "This is not a fight, it is a **countdown**: Demyx does not face you himself, he summons water clones with his sitar and watches.\n\nThe objective is plain: **destroy 100 clones in 80 seconds**. In melee, that is impossible.\n\nThe answer is one command: **Wild Dance**. Trigger it constantly, it sweeps clones away in batches and it is the only pace that fits the time limit. Never chase a lone clone — let them come and mow down the group.",
+          ),
+        },
+        {
+          id: "pat-colisee",
+          name: L("Pat Hibulaire", "Pete"),
+          entry: "pete",
+          level: "20",
+          reward: L("Sora : Trinité. Donald : +3 points de vie. Dingo : Soin amical.", "Sora: Trinity Limit. Donald: +3 HP. Goofy: MP Gift."),
+          tactics: L(
+            "Deux phases, et la première n'est pas un combat mais une **escorte**.\n\nAu début, votre seul travail est de **tenir les Sans-cœur éloignés de Mégara** : la jauge de dégâts en haut à gauche est la sienne, et si elle se remplit c'est perdu. Pat, pendant ce temps, fait rouler une bombe au sol — **parez-la pour la lui renvoyer** —, frappe le sol pour une onde de choc, et lance des feux d'artifice. S'il s'entoure d'une sphère transparente, il se soigne.\n\nHercule finit par arriver : vous avez alors **deux minutes** pour en finir.\n\nQuand Pat se met sous bouclier, **Flipper** le désarçonne : les secondes qui suivent sont votre fenêtre à combos. Et la commande **Écran**, avec Hercule, vous protège de ses assauts.",
+            "Two phases, and the first is not a fight but an **escort**.\n\nAt the start, your only job is to **keep the Heartless away from Megara**: the damage gauge at the top left is hers, and if it fills you lose. Pete meanwhile rolls a bomb along the ground — **guard it to send it back** —, slams the ground for a shockwave, and throws explosive fireworks. If he wraps himself in a transparent sphere, he is healing.\n\nHercules eventually arrives: you then have **two minutes** to finish it.\n\nWhen Pete raises his shield, **Pinball** knocks him off balance: the seconds that follow are your combo window. And the **Barrier** command, with Hercules, shields you from his attacks.",
+          ),
+        },
+        {
+          id: "hydre",
+          name: L("L'Hydre", "The Hydra"),
+          entry: "hydra",
+          level: "21",
+          reward: L("Sora : +5 points de vie et l'élément de Foudre. Donald : un emplacement d'armure supplémentaire. Dingo : +4 points de vie. Et la Keyblade Emblème de Héros.", "Sora: +5 HP and the Thunder element. Donald: an extra armour slot. Goofy: +4 HP. Plus the Hero's Crest Keyblade."),
+          tactics: L(
+            "Le combat le plus spectaculaire du premier tour, et il se lit en **trois phases**, une par nombre de têtes.\n\n**Une tête.** Frappez-la simplement. Sautez quand elle balance sa queue au ras du sol — elle le fait deux fois de suite. Elle invoque ensuite des éclairs et des orbes d'énergie, puis la commande **Vaincre** apparaît : elle tranche la tête. Trois repoussent.\n\n**Trois têtes.** Coupez-en une comme avant, puis **montez sur son dos** et déclenchez **Philaction** : Phil lance une jarre que Sora projette sur la créature, et **toutes les têtes se retrouvent à découvert et paralysées**. Déchaînez-vous, puis **Vaincre** à nouveau.\n\n**Sept têtes.** Elles partagent **une seule jauge de vie**, ce qui est une bonne nouvelle. Frappez normalement, mais écartez-vous quand elle fracasse ses sept têtes au sol : préparez-vous à **Vol de Pégase**, qui fait très mal. De retour au sol, continuez jusqu'à ce que **Vaincre** revienne pour le coup de grâce.\n\nMégara, à droite de l'arène, envoie des orbes de vie, de magie et de fusion : allez la voir quand ça devient serré.",
+            "The most spectacular fight of the first round, and it reads in **three phases**, one per head count.\n\n**One head.** Just hit it. Jump when it sweeps its tail along the ground — it does so twice in a row. It then calls down lightning and throws energy orbs, and the **Vanquish** command appears: it cuts the head off. Three grow back.\n\n**Three heads.** Cut one off as before, then **climb onto its back** and trigger **Urninator**: Phil throws an urn that Sora slams into the creature, and **every head is exposed and stunned**. Let loose, then **Vanquish** again.\n\n**Seven heads.** They share **a single HP bar**, which is good news. Hit normally, but move away when it smashes all seven heads into the ground: be ready for **Pegasus Run**, which hurts badly. Back on the ground, keep going until **Vanquish** returns for the finishing blow.\n\nMegara, on the right of the arena, sends HP, MP and Drive orbs: go to her when things get tight.",
+          ),
+          attacks: [
+            { name: L("Balayage de queue", "Tail sweep"), note: L("Deux fois de suite, au ras du sol. Sautez les deux.", "Twice in a row, at ground level. Jump both.") },
+            { name: L("Philaction", "Urninator"), note: L("Depuis son dos : découvre et paralyse toutes les têtes d'un coup.", "From its back: exposes and stuns every head at once.") },
+            { name: L("Sept têtes au sol", "Seven heads slammed down"), note: L("S'écarter, puis Vol de Pégase. La plus grosse fenêtre de dégâts du combat.", "Move away, then Pegasus Run. The fight's biggest damage window.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×4 et Bonus Attaque", "AP Boost ×4 and Power Boost"), where: L("Galerie des Enfers, entrée des Abîmes, atrium, Salle du sceau ; le Bonus Attaque dans le gros coffre avant les Abîmes.", "The Underworld gallery, the Caverns' entrance, the atrium, the Chamber of Repose; the Power Boost in the large chest before the Caverns.") },
+        { kind: "ability", label: L("Plongeon aérien", "Aerial Dive"), where: L("Réussir le mode maniaque de l'entraînement de Phil.", "Clear the maniac mode of Phil's training.") },
+        { kind: "ability", label: L("Élément de Foudre", "Thunder element"), where: L("La victoire sur l'Hydre.", "Beating the Hydra.") },
+        { kind: "keyblade", label: L("Emblème de Héros", "Hero's Crest"), where: L("La victoire sur l'Hydre.", "Beating the Hydra.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 5", "Ansem's Report 5"), where: L("Avec la pierre de l'Olympe, après Demyx.", "With the Olympus Stone, after Demyx.") },
+        { kind: "minigame", label: L("Cinq pièces de puzzle", "Five puzzle pieces"), where: L("Le long du mur des Enfers, dans le gouffre embrumé, au fond du dédale, dans l'atrium et dans la Salle du sceau.", "Along the Underworld wall, in the misty chasm, at the back of the maze, in the atrium and in the Chamber of Repose.") },
+      ],
+      missable: [
+        L("Rien n'est perdu ici — le Colisée se revisite —, mais la **réplique de Zexion** croisée en chemin est un défi de Final Mix bien trop dur à ce stade : revenez-y beaucoup plus tard.", "Nothing is lost here — the Coliseum can be revisited — but the **Zexion replica** met along the way is a Final Mix challenge far too hard at this point: come back to it much later."),
+      ],
     },
     {
       id: "chateau-disney",
