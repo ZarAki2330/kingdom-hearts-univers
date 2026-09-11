@@ -665,7 +665,48 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "disney-castle",
       level: "18",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "La maison de Donald et Dingo, envahie — et le seul monde du jeu où les deux compagnons sont chez eux.\n\nLa visite est courte et se joue surtout dans le **jardin**, qui concentre sept coffres et trois pièces de puzzle. Les **Colonnades**, juste après, débordent de Sans-cœur : c'est l'un des meilleurs endroits du premier tour pour **monter la Vaillance**, et il serait dommage de les traverser en courant.\n\nElle se termine sur une découverte : la **Pierre angulaire de Lumière**, qui protège le château, est étouffée sous les ronces de Maléfique.",
+        "Donald and Goofy's home, overrun — and the only world in the game where the two companions are on their own ground.\n\nThe visit is short and plays out mostly in the **courtyard**, which holds seven chests and three puzzle pieces. The **Colonnade** just after is crawling with Heartless: it is one of the first round's best spots to **level Valor Form**, and it would be a shame to run through it.\n\nIt ends on a discovery: the **Cornerstone of Light** that protects the castle is smothered under Maleficent's thorns.",
+      ),
+      steps: [
+        {
+          id: "jardin",
+          title: L("Le jardin, et ses sept coffres", "The courtyard, and its seven chests"),
+          text: L(
+            "Sept coffres, et plus de Sans-cœur encore. Au pied du **château végétal central**, un **Éclat ardent** ; en grimpant dessus, une **pièce de puzzle** et une **Formule d'élixir**.\n\nLe reste est réparti sur les plates-formes du **pourtour de la carte** : une **Pierre ardente**, un **Bonus PC**, un **Éclat de mithril**, une **Pierre de mithril** et un second **Éclat de mithril**, plus **deux pièces de puzzle**.\n\nTraversez ensuite les Colonnades — sans vous presser, c'est du niveau facile — jusqu'à la bibliothèque, au fond. Un coffre y contient une **Page déchirée** : prenez-la **avant** de parler à la reine Minnie, qui vous remet la **carte**.",
+            "Seven chests, and even more Heartless. At the foot of the **central topiary castle**, a **Blazing Shard**; climbing on it, a **puzzle piece** and a **Mega-Ether**.\n\nThe rest is spread across the platforms around the **edge of the map**: a **Blazing Stone**, an **AP Boost**, a **Mythril Shard**, a **Mythril Stone** and a second **Mythril Shard**, plus **two puzzle pieces**.\n\nThen cross the Colonnade — take your time, it is easy levelling — to the library at the far end. A chest there holds a **Torn Page**: take it **before** talking to Queen Minnie, who hands over the **map**.",
+          ),
+        },
+        {
+          id: "escorte",
+          title: L("L'escorte de la reine", "Escorting the queen"),
+          text: L(
+            "Donald et Dingo partent prévenir les habitants : vous restez seul avec **Minnie**, qu'il faut mener jusqu'à la salle d'audience.\n\nC'est plus simple qu'il n'y paraît : **enchaînez la commande réaction Sidéral** sans interruption et rien ne vous atteint. Les portes s'ouvrent ensuite avec **Et voilà**.\n\nLa seconde zone grouille d'**Électro-tours**, et leurs ondes de choc deviennent franchement dangereuses quand plusieurs partent en même temps. Deux options : foncer au trône sous Sidéral, ou nettoyer méthodiquement pour l'expérience. La seconde vaut le détour à ce stade du jeu.\n\nDevant le trône, **Et voilà** à nouveau : la reine déclenche un mécanisme, une source de lumière balaie tous les Sans-cœur de la salle, et vous accédez à la **Pierre angulaire de Lumière** — entièrement prise dans les ronces.\n\nDirection la maison de Merlin, par le point de sauvegarde. Merlin vous ramène au château et ouvre un passage vers un monde à part, celui-là même qui a servi de porte d'entrée aux Sans-cœur.",
+            "Donald and Goofy go to warn the residents: you stay alone with **Minnie**, who has to be escorted to the Audience Chamber.\n\nIt is simpler than it looks: **chain the Faith Reaction Command** without a break and nothing touches you. The doors then open with **Unlock**.\n\nThe second area is swarming with **Bolt Towers**, and their shockwaves become genuinely dangerous when several go off at once. Two options: dash to the throne under Faith, or clear it methodically for the experience. The second is worth it at this point in the game.\n\nIn front of the throne, **Unlock** again: the queen triggers a mechanism, a source of light sweeps every Heartless from the room, and you reach the **Cornerstone of Light** — completely swallowed by thorns.\n\nOff to Merlin's house, via the save point. Merlin brings you back to the castle and opens a way into a world of its own — the very one the Heartless used as their door.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "escorte-minnie",
+          name: L("Escorter la reine Minnie", "Escorting Queen Minnie"),
+          entry: "minnie",
+          level: "18",
+          reward: L("Un emplacement d'accessoire supplémentaire, et la compétence Invocation auto.", "An extra accessory slot, and the Auto Summon ability."),
+          tactics: L(
+            "Ce n'est pas un combat mais une escorte, et elle a une solution unique : **Sidéral**.\n\nLa commande réaction protège Minnie et balaie ce qui approche. Tant que vous l'enchaînez, il ne se passe rien de fâcheux. Le seul moyen de rater cette épreuve est de vouloir se battre normalement.\n\nDans la salle d'audience, les **Électro-tours** changent la donne : leurs ondes de choc se cumulent. Si vous choisissez de nettoyer la zone pour l'expérience — et c'est un bon choix ici —, traitez-les une par une plutôt que de vous laisser encercler.",
+            "This is not a fight but an escort, and it has one solution: **Faith**.\n\nThe Reaction Command shields Minnie and sweeps away whatever comes close. As long as you keep chaining it, nothing goes wrong. The only way to fail this trial is to try to fight normally.\n\nIn the Audience Chamber, the **Bolt Towers** change things: their shockwaves stack. If you choose to clear the area for the experience — and that is a good choice here — take them one at a time rather than letting yourself get surrounded.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("Sur l'une des plates-formes du pourtour du jardin.", "On one of the platforms around the edge of the courtyard.") },
+        { kind: "journal", label: L("Page déchirée", "Torn Page"), where: L("Dans le coffre de la bibliothèque, avant de parler à Minnie.", "In the library chest, before talking to Minnie.") },
+        { kind: "minigame", label: L("Trois pièces de puzzle", "Three puzzle pieces"), where: L("Une sur le château végétal central, deux sur les plates-formes du pourtour.", "One on the central topiary castle, two on the platforms around the edge.") },
+        { kind: "ability", label: L("Invocation auto, et un emplacement d'accessoire", "Auto Summon, and an accessory slot"), where: L("L'escorte de la reine Minnie.", "Escorting Queen Minnie.") },
+      ],
     },
     {
       id: "riviere-intemporelle",
@@ -673,7 +714,76 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Le passé du château", "The castle's past"),
       world: "timeless-river",
       level: "19",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le monde le plus singulier du jeu : une version du Château Disney d'avant sa construction, entièrement **en noir et blanc**, à laquelle on accède par la porte que Merlin a ouverte.\n\nLa structure est simple et agréable : quatre **fenêtres temporelles** sur la colline, chacune menant à une scène à nettoyer, et une jauge **Désastre** qui remplace la barre de vie comme condition d'échec.\n\nÀ la sortie vous attendent la Fusion **Sagesse**, la Keyblade **Monochrome** et deux nouvelles routes — Atlantica et Port Royal.\n\nUne précision utile : la pièce de puzzle au sommet de l'arbre de l'embarcadère est **hors de portée pour l'instant**. Notez-la.",
+        "The game's most singular world: a version of Disney Castle from before it was built, entirely **in black and white**, reached through the door Merlin opened.\n\nThe structure is simple and enjoyable: four **time windows** on the hill, each leading to a scene to clear, and a **Disaster** gauge that replaces the HP bar as the failure condition.\n\nWaiting at the exit are the **Wisdom** Drive Form, the **Monochrome** Keyblade and two new routes — Atlantica and Port Royal.\n\nOne useful note: the puzzle piece at the top of the tree by the pier is **out of reach for now**. Make a note of it.",
+      ),
+      steps: [
+        {
+          id: "colline",
+          title: L("La colline et l'embarcadère", "The hill and the pier"),
+          text: L(
+            "Le gros coffre donne la **carte de la colline de la Pierre angulaire**, le petit un **Éclat glacial**. Un Mog et un point de sauvegarde sont sur place.\n\nSur l'embarcadère : une **Potion+**, un **Éclat de mithril** et une **pièce de puzzle**.\n\nLe combat contre Pat qui suit n'a rien d'inquiétant — sautez pour esquiver l'onde de choc de sa retombée, et déclenchez **Volte-face** quand il se met à courir. Vous découvrez ensuite qu'il y a méprise : ce Pat-là n'est pas le vôtre.\n\nAvant de vous occuper des fenêtres, prenez le passage derrière elles — la pancarte **Waterway**. Sur la Rive : trois coffres (**Pierre glaciale**, **Pierre de mithril**, **Bonus PC**) et une **pièce de puzzle**.",
+            "The large chest gives the **Cornerstone Hill map**, the small one a **Frost Shard**. A moogle and a save point are on site.\n\nOn the pier: a **Hi-Potion**, a **Mythril Shard** and a **puzzle piece**.\n\nThe fight against Pete that follows is nothing to worry about — jump to dodge the shockwave when he lands, and trigger **Reversal** when he starts running. You then find out there has been a mix-up: this Pete is not yours.\n\nBefore dealing with the windows, take the passage behind them — the **Waterway** sign. On the Waterway: three chests (**Frost Stone**, **Mythril Stone**, **AP Boost**) and a **puzzle piece**.",
+          ),
+        },
+        {
+          id: "fenetres",
+          title: L("Les quatre fenêtres", "The four windows"),
+          text: L(
+            "Chaque fenêtre examinée envoie dans une scène du passé à débarrasser de ses Sans-cœur, avant que la jauge **Désastre** ne se remplisse.\n\nChaque zone nettoyée vous vaut les félicitations du « Roi Mickey » et ouvre une fenêtre révélant les coupables : Pat — celui du présent — et Maléfique.\n\nUne fois la **carte de la fenêtre temporelle** obtenue, rendez-vous à la rive : l'ex-capitaine du bateau à vapeur s'apprête à filer avec la Pierre angulaire.",
+            "Each window examined sends you into a scene from the past to clear of Heartless, before the **Disaster** gauge fills.\n\nEach area cleared earns you 'King Mickey's' congratulations and opens a window revealing the culprits: Pete — the present-day one — and Maleficent.\n\nOnce you have the **time window map**, head to the Waterway: the former steamboat captain is about to make off with the Cornerstone.",
+          ),
+        },
+      ],
+      tables: [
+        {
+          id: "scenes",
+          title: L("Les quatre scènes du passé", "The four scenes from the past"),
+          intro: L(
+            "Même principe partout — nettoyer avant que la jauge Désastre ne se remplisse — mais chacune a son mécanisme propre, et c'est lui qui décide de la méthode.",
+            "The same principle throughout — clear before the Disaster gauge fills — but each has its own mechanism, and that is what decides the method.",
+          ),
+          columns: [L("Scène", "Scene"), L("Ce qu'il s'y passe", "What happens there"), L("Comment s'y prendre", "How to handle it")],
+          rows: [
+            at("Le chantier", ["Des Marteau-pilons et des Minute bombes, sur un échafaudage qui bouge.", "Hammer Frames and Minute Bombs, on a moving scaffold."], ["La jauge décompte le temps. Quand l'échafaudage vous projette en l'air, la commande **Vrille** devient disponible : c'est votre meilleur nettoyage.", "The gauge counts down time. When the scaffold launches you into the air, the **Twister** command becomes available: that is your best sweep."]),
+            at("Lilliput", ["Des Barons-bleus et des Marteau-pilons démolissent une ville miniature.", "Luna Bandits and Hammer Frames are wrecking a miniature town."], ["Approchez-vous de la tour pour activer **Mini canon**, qui éloigne les ennemis des bâtiments.", "Get close to the tower to trigger **Mini Cannon**, which drives enemies away from the buildings."]),
+            at("L'immeuble en feu", ["La jauge monte à chaque coup porté au bâtiment.", "The gauge rises with every hit the building takes."], ["Aller vite, et se méfier des assauts combinés des deux **Chauffards** et des flammes qui se déplacent dans la zone.", "Move fast, and watch for the two **Hot Rods** attacking together and the flames wandering the area."]),
+            at("La maison de Mickey", ["Les Sans-cœur démolissent la maison, et un vortex aspire les meubles.", "The Heartless are wrecking the house, and a vortex sucks in the furniture."], ["**Frapper le vortex** calme la tempête quelques instants : c'est le seul répit du lot.", "**Hitting the vortex** calms the storm for a few moments: it is the only respite of the four."]),
+          ],
+        },
+      ],
+      bosses: [
+        {
+          id: "pat-bateau",
+          name: L("Pat Hibulaire — le bateau à vapeur", "Pete — the steamboat"),
+          entry: "pete",
+          level: "20",
+          reward: L("Sora : Moulinets. Donald : Fantasia et Auto-coopération. Dingo : +4 points de vie.", "Sora: Slapshot. Donald: Fantasia and Auto Limit. Goofy: +4 HP."),
+          tactics: L(
+            "Un combat scénarisé plutôt qu'un affrontement, et il se joue entièrement aux commandes réaction.\n\nPat fuit avec le bateau en vous lançant des objets : **renvoyez-les avec Triangle**. Il perd le contrôle, le navire percute la rive et s'y immobilise un moment.\n\nDéclenchez alors **Attraper** pour que Sora se suspende à la corde de la grue, et frappez la **cage** qui contient la Pierre angulaire. Quand la grue s'apprête à bouger, **Cramponner** évite la chute.\n\nSi vous lâchez prise, il faut battre des Sans-cœur avant de pouvoir remonter : ça ne coûte que du temps, mais autant ne pas lâcher.",
+            "A scripted fight rather than a real one, and it plays out entirely on Reaction Commands.\n\nPete flees with the boat, throwing objects at you: **send them back with Triangle**. He loses control, the ship hits the bank and sits there for a while.\n\nThen trigger **Grab** so Sora hangs from the crane's rope, and hit the **cage** holding the Cornerstone. When the crane is about to move, **Hang On** stops you falling.\n\nIf you let go, you have to beat Heartless before climbing back: it only costs time, but there is no reason to let go.",
+          ),
+        },
+        {
+          id: "pat-quai",
+          name: L("Pat Hibulaire — le quai", "Pete — the wharf"),
+          entry: "pete",
+          level: "21",
+          reward: L("Sora : +5 points de vie et l'élément de Miroir. Donald : +3 points de vie. Dingo : Dingo-tornade. Et la Keyblade Monochrome.", "Sora: +5 HP and the Reflect element. Donald: +3 HP. Goofy: Tornado Fusion. Plus the Monochrome Keyblade."),
+          tactics: L(
+            "Cette fois c'est un vrai combat, avec le Pat du passé pour allié — un allié encombrant, dont **les charges vous blessent aussi**. Déclenchez **Volte-face** quand il arrive sur vous.\n\nLes attaques de Pat sont celles du Colisée : vous les connaissez déjà.\n\nCe qui change, c'est le décor : il se transforme à mesure que sa vie baisse, et chaque décor ajoute une contrainte. **L'immeuble en feu** — il projette des flammes **qui ne se parent pas**. **La maison de Mickey** — ne vous faites pas aspirer par le vortex. **Lilliput** — attention aux tirs de canon. **Le chantier** — et là, c'est vous qui reprenez l'avantage, avec la commande **Vrille**.\n\nLa victoire donne **Monochrome**, l'élément de **Miroir**, et surtout la seconde Fusion : **Sagesse**.",
+            "This time it is a real fight, with the past Pete as an ally — an awkward one, whose **charges hurt you too**. Trigger **Reversal** when he comes at you.\n\nPete's attacks are the ones from the Coliseum: you already know them.\n\nWhat changes is the setting: it shifts as his HP drops, and each one adds a constraint. **The burning building** — he throws flames that **cannot be guarded**. **Mickey's house** — do not get sucked into the vortex. **Lilliput** — watch the cannon fire. **The construction site** — and there, the advantage swings back to you, with the **Twister** command.\n\nWinning gives **Monochrome**, the **Reflect** element, and above all the second Drive Form: **Wisdom**.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("Sur la Rive, par le passage derrière les fenêtres (pancarte Waterway).", "On the Waterway, through the passage behind the windows (Waterway sign).") },
+        { kind: "keyblade", label: L("Monochrome", "Monochrome"), where: L("La victoire sur Pat, au quai.", "Beating Pete at the wharf.") },
+        { kind: "ability", label: L("Élément de Miroir, et la Fusion Sagesse", "Reflect element, and the Wisdom Form"), where: L("La fin de la visite.", "The end of the visit.") },
+        { kind: "minigame", label: L("Deux pièces de puzzle", "Two puzzle pieces"), where: L("Sur l'embarcadère et sur la Rive.", "On the pier and on the Waterway."), note: L("Celle au sommet de l'arbre de l'embarcadère reste hors de portée pour l'instant.", "The one at the top of the tree by the pier stays out of reach for now.") },
+      ],
     },
     {
       id: "port-royal",
@@ -681,7 +791,85 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "port-royal",
       level: "20",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le monde des Pirates des Caraïbes, et une règle qui gouverne tout le passage : **les pirates fantômes ne sont vulnérables que dans le clair de lune**. Frappés dans l'ombre, ils encaissent sans rien sentir.\n\nDeux conséquences pratiques. D'abord, cherchez toujours **où tombe la lumière** avant d'engager. Ensuite, la magie garde ses effets même dans l'ombre : **Glacier et Foudre les paralysent**, ce qui vous laisse le temps de les amener au bon endroit.\n\nLa visite alterne exploration à terre et scènes à bord, avec deux épreuves de protection — garder la pièce, empêcher le navire d'exploser — avant Barbossa.\n\nÀ noter : la **réplique de Larxene** apparaît sur l'île de la Muerta. Comme Zexion au Colisée, c'est un défi de Final Mix : bien trop tôt.",
+        "The Pirates of the Caribbean world, and one rule governs the whole visit: **the undead pirates are only vulnerable in moonlight**. Struck in shadow, they take the hit and feel nothing.\n\nTwo practical consequences. First, always look for **where the light falls** before engaging. Second, magic keeps working in the dark: **Blizzard and Thunder stun them**, which buys you time to move them into the right place.\n\nThe visit alternates exploration ashore with scenes aboard ship, with two protection trials — keep the medallion, stop the ship exploding — before Barbossa.\n\nWorth noting: the **Larxene replica** appears on the Isla de Muerta. Like Zexion at the Coliseum, it is a Final Mix challenge: far too early.",
+      ),
+      steps: [
+        {
+          id: "remparts",
+          title: L("Les remparts et la ville", "The ramparts and the town"),
+          text: L(
+            "Des cris montent d'en bas. Résistez à l'envie de descendre : prenez d'abord la **carte maritime** dans le coffre posé sur les remparts, puis explorez l'autre versant pour un **Éclat noir**, une **Pierre de mithril** et une **pièce de puzzle**.\n\nDescendez l'escalier près du point de sauvegarde : Pat vous attend, accompagné de **pirates fantômes**. C'est votre première rencontre avec eux, et vous découvrez vite l'essentiel — la Keyblade ne leur fait rien. Utilisez **Pare-balles** contre leurs tirs, esquivez les bombes, et attendez la seconde phase, où le clair de lune les rend enfin vulnérables.\n\nPrenez le pont de pierre vers la ville. Un groupe de Sans-cœur vous y attend, dont des **Bombardes** et leur viseur lumineux. Vous rencontrez **Will Turner**, et assistez à l'enlèvement d'**Elizabeth**.\n\nÀ gauche, une **pièce de puzzle**. Frappez les caisses d'explosifs pour dégager le passage, puis la ruelle de droite : une **Pierre noire** au bout, et d'autres caisses qui révèlent une **Gemme de mithril** au nord et un passage au sud. Un **Bonus PC** se cache derrière d'autres caisses en face, et un **Éclat de mithril** traîne dans la même ruelle.\n\nAu port, **Jack Sparrow** rejoint l'équipe. Parlez à Will pour embarquer sur l'Intercepteur — la cale contient une boutique et un point de sauvegarde, ça vaut le détour — puis parlez à Jack et choisissez le Black Pearl.",
+            "Cries rise from below. Resist the urge to run down: first take the **harbour map** from the chest on the ramparts, then explore the other side for a **Dark Shard**, a **Mythril Stone** and a **puzzle piece**.\n\nGo down the stairs near the save point: Pete is waiting, with **undead pirates**. It is your first meeting with them, and you quickly learn the essential — the Keyblade does nothing to them. Use **Bulletproof** against their shots, dodge the bombs, and wait for the second phase, where moonlight finally makes them vulnerable.\n\nTake the stone bridge into town. A group of Heartless waits there, including **Cannon Guns** and their glowing sights. You meet **Will Turner**, and watch **Elizabeth** being taken.\n\nOn the left, a **puzzle piece**. Hit the explosive crates to clear the way, then the alley on the right: a **Dark Stone** at the end, and more crates revealing a **Mythril Gem** to the north and a passage to the south. An **AP Boost** hides behind more crates opposite, and a **Mythril Shard** lies in the same alley.\n\nAt the harbour, **Jack Sparrow** joins the party. Talk to Will to board the Interceptor — the hold has a shop and a save point, worth the detour — then talk to Jack and choose the Black Pearl.",
+          ),
+        },
+        {
+          id: "muerta",
+          title: L("L'île de la Muerta", "The Isla de Muerta"),
+          text: L(
+            "La poursuite mène à l'île. Jack et Will filent au secours d'Elizabeth en vous laissant sur place — Sora ne l'entend pas ainsi.\n\nL'entrée de la caverne donne un **Éclat de vitalité** et un **Éclat de mithril**. Quelques pas plus loin, Will et Elizabeth reviennent en courant, poursuivis : **tenez les pirates une minute**, le temps que l'Intercepteur appareille. Même règle que toujours — attendez le clair de lune.\n\nVous obtenez la **carte de l'île de la Muerta** et repartez automatiquement. Demandez à Will de voguer vers Port Royal : le Black Pearl vous rattrape, et les pirates veulent la pièce.",
+            "The chase leads to the island. Jack and Will rush off to rescue Elizabeth, leaving you behind — Sora will have none of it.\n\nThe cave entrance gives a **Serenity Shard** and a **Mythril Shard**. A few steps further, Will and Elizabeth come running back with pursuers: **hold the pirates off for one minute** while the Interceptor gets under way. Same rule as always — wait for the moonlight.\n\nYou receive the **Isla de Muerta map** and return automatically. Ask Will to sail for Port Royal: the Black Pearl catches you, and the pirates want the medallion.",
+          ),
+        },
+        {
+          id: "tresor",
+          title: L("La poudrière et la salle du trésor", "The powder store and the treasure room"),
+          text: L(
+            "De retour sur l'île, le symbole de la **réplique de Larxene** vous fait face : notez-le et passez.\n\nLa **poudrière** porte bien son nom. Le premier baril à gauche cache un pirate **et** un **Bonus PC**. Ceux d'après révèlent deux ennemis, un second **Bonus PC** et **deux pièces de puzzle**.\n\nLa salle du clair de lune contient un **Éclat de mithril**, une **Gemme de sérénité** et une **Pierre de force**.\n\nDirection la salle du trésor, où Barbossa vous attend.\n\nUne fois le monde terminé, la boussole de Jack ouvre deux routes — Agrabah et la Ville d'Halloween. Prenez **Agrabah** d'abord.\n\nEt revenez à Port Royal quand vous pourrez atterrir sur le **Black Pearl** : une **pièce de puzzle** sur la table près du point de sauvegarde, une autre sur la plate-forme du gouvernail. Will propose aussi un mini-jeu sur les remparts.",
+            "Back on the island, the **Larxene replica**'s sigil faces you: note it and move on.\n\nThe **powder store** lives up to its name. The first barrel on the left hides a pirate **and** an **AP Boost**. The ones after reveal two enemies, a second **AP Boost** and **two puzzle pieces**.\n\nThe moonlight room holds a **Mythril Shard**, a **Serenity Gem** and a **Power Stone**.\n\nOn to the treasure room, where Barbossa is waiting.\n\nOnce the world is done, Jack's compass opens two routes — Agrabah and Halloween Town. Take **Agrabah** first.\n\nAnd come back to Port Royal when you can land on the **Black Pearl**: a **puzzle piece** on the table near the save point, another on the helm platform. Will also offers a mini-game on the ramparts.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "garder-piece",
+          name: L("Garder la pièce", "Keeping the medallion"),
+          entry: "pirate",
+          level: "21",
+          reward: L("Sora : Vrille aérienne. Donald : Attraction. Dingo : +4 points de vie.", "Sora: Aerial Spiral. Donald: Draw. Goofy: +4 HP."),
+          tactics: L(
+            "Une épreuve de position plus qu'un combat.\n\nLes pirates ne sont vulnérables qu'au clair de lune, et **la poupe du navire est l'endroit le mieux éclairé** : c'est là qu'il faut les amener, pas ailleurs.\n\nLa vraie contrainte est autre : **chaque explosion qui touche Sora lui fait lâcher la pièce**. Évitez les boulets de canon à tout prix. Vous pouvez répliquer avec vos propres canons, mais vous êtes vulnérable pendant la manœuvre — à ne faire qu'avec une fenêtre nette.\n\nSi un pirate s'empare de la pièce, vous avez **60 secondes**. Pour trouver le voleur, **ciblez les pirates un par un** : une icône apparaît au-dessus de celui qui la détient. Battez-le, puis passez sur la pièce pour la reprendre.",
+            "A positioning trial more than a fight.\n\nThe pirates are only vulnerable in moonlight, and **the stern of the ship is the best-lit spot**: that is where you want them, nowhere else.\n\nThe real constraint is elsewhere: **every explosion that hits Sora makes him drop the medallion**. Avoid the cannonballs at all costs. You can fire back with your own cannons, but you are vulnerable during the command — only do it on a clear window.\n\nIf a pirate takes the medallion, you have **60 seconds**. To find the thief, **lock onto the pirates one by one**: an icon appears above whoever holds it. Beat him, then walk over the medallion to take it back.",
+          ),
+        },
+        {
+          id: "barils",
+          name: L("Empêcher le navire d'exploser", "Stopping the ship exploding"),
+          entry: "jack-sparrow",
+          level: "22",
+          reward: L("Sora : un emplacement d'objet supplémentaire. Donald : +3 points de vie. Dingo : Dernières forces. Jack : +10 points de vie.", "Sora: an extra item slot. Donald: +3 HP. Goofy: Last Stand. Jack: +10 HP."),
+          tactics: L(
+            "Avant de commencer, deux réglages : **réactivez les compétences de Jack**, et **désactivez l'auto-coopération de Donald et Dingo** — elle se déclenche au mauvais moment et vous coûte des secondes.\n\nL'épreuve elle-même est simple si on comprend ce qu'elle demande : **éjecter les cinq barils de poudre** à la commande réaction. Les Sans-cœur essaient de les allumer, et le réflexe est de vouloir les tuer d'abord.\n\nC'est l'erreur. **Concentrez-vous sur les barils, pas sur les Sans-cœur** : à ce rythme, l'épreuve est une formalité. Ne vous occupez d'un ennemi que s'il est sur le point de faire sauter un baril que vous n'avez pas encore éjecté.",
+            "Before you start, two settings: **re-enable Jack's abilities**, and **turn off Donald and Goofy's auto-limit** — it fires at the wrong moment and costs you seconds.\n\nThe trial itself is simple once you see what it asks: **eject the five powder barrels** with the Reaction Command. The Heartless try to light them, and the instinct is to kill them first.\n\nThat is the mistake. **Focus on the barrels, not the Heartless**: at that pace the trial is a formality. Only deal with an enemy if it is about to set off a barrel you have not ejected yet.",
+          ),
+        },
+        {
+          id: "barbossa",
+          name: L("Barbossa", "Barbossa"),
+          entry: "barbossa",
+          level: "23",
+          reward: L("Sora : une jauge de flux supplémentaire et Spirale ascensionnelle. Donald : +3 points de vie. Dingo : Partenariat et Auto-coopération. Jack : +15 points de vie. Et la Keyblade Gouvernail.", "Sora: an extra Drive bar and Aerial Finish. Donald: +3 HP. Goofy: Teamwork and Auto Limit. Jack: +15 HP. Plus the Rumbling Rose Keyblade."),
+          tactics: L(
+            "Une règle avant tout le reste : **si Jack tombe, le combat est perdu**. Surveillez-le autant que vous.\n\nBarbossa n'est pas seul. Un Sans-cœur, l'**Iguane d'ombre**, plonge toute l'arène dans le noir — et comme les pirates ne sont vulnérables qu'au clair de lune, c'est lui le vrai problème, pas Barbossa.\n\n**C'est donc lui qu'on attaque en premier.** Quelques coups suffisent, mais il revient régulièrement : **tournez la caméra autour de vous et cherchez ses yeux jaunes** dans l'obscurité. Le combat entier est fait de ces allers-retours.\n\nBarbossa, lui, lance des bombes, tire au pistolet et charge. Ses attaques au corps à corps sont redoutables : **frappez-le au Glacier à distance** d'abord, puis à la Keyblade quand il est entamé.\n\nQuand les points de magie tombent à zéro, passez en **Sagesse** : elle les régénère, et vous repartez pour un cycle.",
+            "One rule above all: **if Jack goes down, the fight is lost**. Watch him as closely as yourself.\n\nBarbossa is not alone. A Heartless, the **Illuminator**, plunges the whole arena into darkness — and since pirates are only vulnerable in moonlight, that is the real problem, not Barbossa.\n\n**So it is the Heartless you attack first.** A few hits are enough, but it comes back regularly: **swing the camera around you and look for its yellow eyes** in the dark. The entire fight is made of these round trips.\n\nBarbossa himself throws bombs, fires his pistol and charges. His melee is fearsome: **hit him with Blizzard from range** first, then with the Keyblade once he is worn down.\n\nWhen your MP hits zero, switch to **Wisdom Form**: it regenerates MP, and you go round again.",
+          ),
+          attacks: [
+            { name: L("L'obscurité", "The darkness"), note: L("Elle vient de l'Iguane d'ombre. Tant qu'il est là, Barbossa est intouchable.", "It comes from the Illuminator. While it is there, Barbossa cannot be touched.") },
+            { name: L("Corps à corps", "Melee"), note: L("À éviter : préférez le Glacier à distance.", "To be avoided: use Blizzard from range instead.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×3", "AP Boost ×3"), where: L("Derrière les caisses explosives d'une ruelle de la ville, et deux dans la poudrière de l'île.", "Behind the explosive crates in a town alley, and two in the island's powder store.") },
+        { kind: "keyblade", label: L("Gouvernail", "Rumbling Rose"), where: L("La victoire sur Barbossa.", "Beating Barbossa.") },
+        { kind: "minigame", label: L("Sept pièces de puzzle", "Seven puzzle pieces"), where: L("Remparts, ville, poudrière (deux), et deux sur le Black Pearl une fois qu'on peut y atterrir.", "The ramparts, the town, the powder store (two), and two on the Black Pearl once you can land there.") },
+        { kind: "synthesis", label: L("Éclats et pierres noirs, de mithril, de force et de vitalité", "Dark, Mythril, Power and Serenity shards and stones"), where: L("Répartis entre les remparts, les ruelles de la ville, la caverne et la salle du clair de lune.", "Spread across the ramparts, the town alleys, the cave and the moonlight room.") },
+      ],
+      missable: [
+        L("La **réplique de Larxene**, sur l'île de la Muerta, est un défi de Final Mix hors de portée à ce stade. Elle ne disparaît pas : revenez-y en fin de partie.", "The **Larxene replica**, on the Isla de Muerta, is a Final Mix challenge out of reach at this point. It does not disappear: come back to it late in the game."),
+      ],
     },
     {
       id: "agrabah",
@@ -689,7 +877,63 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "agrabah",
       level: "22",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Agrabah et la Ville d'Halloween partagent une particularité : **leur niveau de combat dépend du moment où on les visite**. Faits maintenant, ils sont au niveau 22 et 24. Repoussés après la Forteresse Oubliée niveau 28, ils passent à 38 et 39 — avec l'expérience et le butin qui vont avec, mais un premier tour amputé de deux mondes.\n\nLa visite est longue et très riche en coffres, dont une bonne partie est **cachée dans les stands du marché** : le sort **Brasier** les détruit, et sans lui vous passerez à côté de la moitié du monde.\n\nElle se termine sur le **Pendentif Lampe**, c'est-à-dire l'invocation du **Génie**.",
+        "Agrabah and Halloween Town share a quirk: **their battle level depends on when you visit**. Done now, they sit at level 22 and 24. Put off until after Hollow Bastion level 28, they rise to 38 and 39 — with the experience and loot that follows, but a first round two worlds shorter.\n\nThe visit is long and very rich in chests, a good many of them **hidden inside the market stalls**: the **Fire** spell destroys them, and without it you will miss half the world.\n\nIt ends on the **Lamp Charm**, which is to say the **Genie** summon.",
+      ),
+      steps: [
+        {
+          id: "ville",
+          title: L("La ville, et les toits", "The town, and the rooftops"),
+          text: L(
+            "**Iago** s'est échappé de la lampe et veut se racheter. Après la horde de Sans-cœur, la **carte d'Agrabah** en poche, ne filez pas au palais : la zone est pleine de coffres.\n\nMontez l'escalier de gauche pour une **Potion+** et un **Éclat de mithril** au même niveau. Face à ce dernier coffre, faites demi-tour et avancez **en restant sur les toits** jusqu'à un **Éclat noir**. Prenez à gauche, sautez sur le toit suivant : une **Pierre de mithril**, puis un **Éclat de mithril** plus loin. Quelques pas encore et **tournez la caméra** pour repérer un coffre dans un coin, à l'ouest : un **Bonus PC**.\n\nLa zone nord, sur le toit, donne un **Éclat de sérénité**. Sur la place principale, sautez sur un stand pour une **pièce de puzzle**. Et au sud, un petit marché cache une **pièce de puzzle** dans un stand : **Brasier** pour l'ouvrir.\n\nDevant le palais, Jasmine s'inquiète pour Aladdin, Iago se fait repérer, et **Aladdin** rejoint l'équipe en poursuivant Abu, qui a volé une lampe. Le marchand veut un trésor en échange : direction la **Caverne aux Merveilles**.",
+            "**Iago** has escaped the lamp and wants to make amends. Once the Heartless horde is dealt with and the **Agrabah map** is yours, do not run to the palace: the area is full of chests.\n\nClimb the left-hand stairs for a **Hi-Potion** and a **Mythril Shard** on the same level. Facing that last chest, turn around and go forward **staying on the roofs** to a **Dark Shard**. Go left, jump to the next roof: a **Mythril Stone**, then a **Mythril Shard** further along. A few steps more and **swing the camera** to spot a chest in a corner, to the west: an **AP Boost**.\n\nThe northern area, up on the roof, gives a **Serenity Shard**. On the main square, jump onto a stall for a **puzzle piece**. And to the south, a small market hides a **puzzle piece** inside a stall: **Fire** to open it.\n\nOutside the palace, Jasmine is worried about Aladdin, Iago gets himself noticed, and **Aladdin** joins the party chasing Abu, who has stolen a lamp. The merchant wants a treasure in exchange: off to the **Cave of Wonders**.",
+          ),
+        },
+        {
+          id: "marche",
+          title: L("Le marché, et la route de la caverne", "The market, and the road to the cave"),
+          text: L(
+            "Dans la zone du **Marché**, **détruisez tous les stands au Brasier** : quatre coffres apparaissent — un **Éclat de force**, un **Bonus PC**, une **Potion+** et un **Éclat de mithril**.\n\nMontez la longue série d'escaliers : une **pièce de puzzle** dans un stand à droite, et une **Gemme de mithril** plus loin en longeant le mur de droite.\n\nQuittez la ville par la double porte en bois. Devant le **Mur d'enceinte** : un **Anneau strié** et une **Pierre de mithril**.\n\nSur la route de la caverne, avant de suivre Pat, **faites le tour de la Tête de Tigre** : une **Pierre de force**, une **pièce de puzzle** et un **Éclat de mithril**.\n\nÀ l'intérieur, la vallée des géants se traverse de plate-forme en plate-forme : une **Potion+**, un **Éclat de mithril**, un **Bonus PC** et une **Pierre de mithril**. La plate-forme violette près de la sortie mène à une **pièce de puzzle**.",
+            "In the **Bazaar**, **destroy every stall with Fire**: four chests appear — a **Power Shard**, an **AP Boost**, a **Hi-Potion** and a **Mythril Shard**.\n\nClimb the long flight of stairs: a **puzzle piece** in a stall on the right, and a **Mythril Gem** further along the right-hand wall.\n\nLeave town by the wooden double doors. At the **Palace Walls**: a **Ripple Drop** and a **Mythril Stone**.\n\nOn the road to the cave, before following Pete, **circle the Tiger Head**: a **Power Stone**, a **puzzle piece** and a **Mythril Shard**.\n\nInside, the Valley of Stone is crossed platform by platform: a **Hi-Potion**, a **Mythril Shard**, an **AP Boost** and a **Mythril Stone**. The purple platform near the exit leads to a **puzzle piece**.",
+          ),
+        },
+        {
+          id: "epreuve",
+          title: L("L'épreuve de la caverne", "The cave's trial"),
+          text: L(
+            "Dans la deuxième salle, examinez le **cristal flottant** puis le socle au fond. Abu s'empare du cristal, et il faut l'aider à le poser : **Triangle** pour qu'il esquive les vagues, et **sautez en même temps que lui** pour les esquiver vous aussi. Arrivé au bout, **Triangle** une dernière fois.\n\nLa salle suivante est la **salle de l'épreuve**. Examinez la pierre : il faut éliminer tous les Sans-cœur en moins de deux minutes, sur des plates-formes qui **disparaissent une à une**. Allez vite : traîner, c'est se retrouver sur une plate-forme de moins avec autant d'ennemis.\n\nPensez surtout à une chose : **trois pièces de puzzle se ramassent pendant les chutes**. Inclinez la caméra vers le bas entre deux plates-formes pour les repérer.\n\nL'épreuve finie, la pierre près du point de sauvegarde ouvre la porte. Les coffres donnent la **carte de la Caverne aux Merveilles** et un **Bonus PC** — et le cercle lumineux au sol renvoie au début de l'épreuve, si vous voulez la refaire.\n\nDans la salle du trésor, Pat lâche une cinquantaine de Sans-cœur. Rien de difficile, sauf les **trois gros bandits** de la fin : une coopération en vient à bout d'un coup.",
+            "In the second room, examine the **floating crystal** then the pedestal at the back. Abu grabs the crystal, and you have to help him set it down: **Triangle** so the monkey dodges the waves, and **jump at the same time as him** to dodge them yourself. At the end, **Triangle** one last time.\n\nThe next room is the **Hall of the Trial**. Examine the stone: you must clear every Heartless in under two minutes, on platforms that **vanish one by one**. Be quick: dawdling means one platform fewer and just as many enemies.\n\nAbove all, remember one thing: **three puzzle pieces are collected during the falls**. Tilt the camera down between platforms to spot them.\n\nWith the trial done, the stone near the save point opens the door. The chests give the **Cave of Wonders map** and an **AP Boost** — and the circle of light on the floor sends you back to the start of the trial, if you want another go.\n\nIn the treasure room, Pete unleashes some fifty Heartless. Nothing hard, except the **three Fat Bandits** at the end: one limit finishes them.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "poussahs",
+          name: L("Poussah Volcano et Poussah Blizzaro", "Volcano Lord and Blizzard Lord"),
+          entry: "volcano-lord",
+          level: "24",
+          reward: L("Sora : Frappe verticale. Donald : +3 points de vie. Dingo : un emplacement d'armure supplémentaire. Et le Pendentif Lampe — l'invocation du Génie.", "Sora: Vertical Slash. Donald: +3 HP. Goofy: an extra armour slot. Plus the Lamp Charm — the Genie summon."),
+          tactics: L(
+            "Deux géants élémentaires, et le piège est de croire qu'il faut jouer la magie.\n\nC'est vrai sur le papier — **Volcano craint le Glacier, Blizzaro craint le Brasier** — mais leur **défense est si basse** que les combos à la Keyblade font davantage, et ne coûtent rien.\n\nDeux commandes réaction rythment le combat : **Pyro-tir** quand Volcano bondit vers vous — attention aux flaques enflammées qu'il laisse à chaque bond —, et **Givro-tir** quand Blizzaro inspire pour souffler.\n\nAchevés d'un combo, ils se dispersent en petits Sans-cœur — des **Globes caniculaires** et des **Billes réfrigérantes** — qui lâchent des sphères de vie : c'est votre réserve de soin.\n\nUne chose à retenir : Blizzaro **emprisonne vos alliés dans des blocs de glace**. Un **Brasier** les libère, et un allié gelé qui reste gelé, c'est un soigneur en moins.",
+            "Two elemental giants, and the trap is to think magic is the answer.\n\nIt is true on paper — **Volcano fears Blizzard, Blizzard Lord fears Fire** — but their **defence is so low** that Keyblade combos do more, and cost nothing.\n\nTwo Reaction Commands punctuate the fight: **Fire Shot** when the Volcano Lord leaps at you — watch the burning pools it leaves with each leap — and **Blizzard Shot** when the Blizzard Lord inhales to breathe.\n\nFinished off with a combo, they scatter into small Heartless — **Fiery Globes** and **Icy Cubes** — that drop HP spheres: that is your healing reserve.\n\nOne thing to remember: the Blizzard Lord **traps your allies in blocks of ice**. A **Fire** spell frees them, and a frozen ally who stays frozen is one healer down.",
+          ),
+          attacks: [
+            { name: L("Bonds de Volcano", "Volcano Lord's leaps"), note: L("Pyro-tir, et évitez les flaques de feu laissées au sol.", "Fire Shot, and avoid the pools of fire left behind.") },
+            { name: L("Souffle de Blizzaro", "Blizzard Lord's breath"), note: L("Givro-tir dès qu'il inspire.", "Blizzard Shot the moment it inhales.") },
+            { name: L("Blocs de glace", "Ice blocks"), note: L("Vos alliés y sont pris. Brasier pour les libérer, sans attendre.", "Your allies get caught in them. Fire to free them, without delay.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×5", "AP Boost ×5"), where: L("Un coin de la ville, le marché, la vallée des géants, la sortie de l'épreuve, et la salle du trésor au second passage.", "A corner of the town, the bazaar, the Valley of Stone, the trial's exit, and the treasure room on the return visit.") },
+        { kind: "ability", label: L("Pendentif Lampe — le Génie", "Lamp Charm — the Genie"), where: L("La victoire sur les deux Poussahs.", "Beating the two Lords.") },
+        { kind: "minigame", label: L("Huit pièces de puzzle", "Eight puzzle pieces"), where: L("Place principale, marché sud (Brasier), escaliers, Tête de Tigre, vallée des géants, et trois pendant les chutes de l'épreuve.", "The main square, the southern market (Fire), the stairs, the Tiger Head, the Valley of Stone, and three during the trial's falls.") },
+      ],
+      missable: [
+        L("Rien n'est perdu — le monde se revisite —, mais la moitié des coffres est **cachée dans les stands** : sans Brasier, on passe à côté sans les voir.", "Nothing is lost — the world can be revisited — but half the chests are **hidden inside the stalls**: without Fire, you walk right past them."),
+      ],
     },
     {
       id: "ville-halloween",
@@ -697,7 +941,66 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "halloween-town",
       level: "24",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Comme Agrabah, la Ville d'Halloween **change de niveau de combat selon le moment de la visite** : 24 maintenant, 39 si vous la repoussez après la Forteresse Oubliée.\n\nLa particularité du monde est qu'il en contient deux : la Ville d'Halloween et la **Ville de Noël**, reliées par un arbre du cimetière. Jack a décidé d'organiser Noël, ce qui se passe à peu près comme on l'imagine.\n\nLa visite donne l'**élément d'Attraction** — la magie Aimant — qui ouvre au passage un nouveau chapitre d'Atlantica.",
+        "Like Agrabah, Halloween Town **changes battle level depending on when you visit**: 24 now, 39 if you leave it until after Hollow Bastion.\n\nThe world's quirk is that it contains two: Halloween Town and **Christmas Town**, joined by a tree in the graveyard. Jack has decided to organise Christmas, which goes about as well as you would expect.\n\nThe visit gives the **Magnet element** — the Magnet spell — which also opens a new Atlantica chapter along the way.",
+      ),
+      steps: [
+        {
+          id: "halloween",
+          title: L("La Ville d'Halloween", "Halloween Town"),
+          text: L(
+            "Deux coffres à l'arrivée — une **Gemme de sérénité** et une **Potion+** — avant de rejoindre la place de la Guillotine, où Jack expose son projet. Le laboratoire du docteur Finkelstein donne la **carte** dans son gros coffre.\n\nÀ la sortie, une horde de Sans-cœur envahit la place : **méfiez-vous des éléments du décor**, tous ne sont pas décoratifs. La zone nettoyée, prenez un **Éclat de fougue** au pied de la guillotine et une **Pierre de mithril** près des grilles.\n\nLes **bouches d'égout** vous projettent violemment en l'air — c'est désagréable, mais c'est aussi le seul moyen d'atteindre la **pièce de puzzle** de la place.\n\nTraversez le cimetière jusqu'à la forêt : une **Pierre de mithril**, un **Éclat grondant**, un **Bonus PC**, et une **pièce de puzzle** derrière l'arbre marqué d'un sapin de Noël. Examinez cet arbre pour être aspiré de l'autre côté.",
+            "Two chests on arrival — a **Serenity Gem** and a **Hi-Potion** — before reaching Guillotine Square, where Jack lays out his plan. Dr Finkelstein's laboratory gives the **map** in its large chest.\n\nOn the way out, a horde of Heartless floods the square: **be wary of the scenery**, not all of it is decorative. Once cleared, take a **Frost Shard** at the foot of the guillotine and a **Mythril Stone** by the railings.\n\nThe **manholes** fling you violently into the air — unpleasant, but also the only way to reach the square's **puzzle piece**.\n\nCross the graveyard to the woods: a **Mythril Stone**, a **Thunder Shard**, an **AP Boost**, and a **puzzle piece** behind the tree marked with a Christmas fir. Examine that tree to be pulled through.",
+          ),
+        },
+        {
+          id: "noel",
+          title: L("La Ville de Noël", "Christmas Town"),
+          text: L(
+            "Nouvelle apparence, nouveau monde. Prenez la **pièce de puzzle** derrière l'arbre, puis direction la maison du Perce-Oreille.\n\nDe nouveaux Sans-cœur apparaissent ; une fois réglés, quatre coffres : une **Pierre de mithril**, une **Pierre grondante**, une **Mégapotion** et une **Gemme de mithril**.\n\nÀ l'intérieur, la rencontre avec le Perce-Oreille tourne court — du bruit vient de la pièce voisine. **Avant d'y aller**, dépouillez les lieux : **deux pièces de puzzle**, la **carte de la ville** et un **Bonus PC**.\n\nCe sont Am, Stram et Gram, qui s'échappent par la fenêtre. Leurs traces mènent à une entrée jusque-là fermée, près du cimetière.",
+            "New look, new world. Take the **puzzle piece** behind the tree, then head for Santa's house.\n\nMore Heartless appear; once dealt with, four chests: a **Mythril Stone**, a **Thunder Stone**, a **Mega-Potion** and a **Mythril Gem**.\n\nInside, the meeting with Santa is cut short — there is a noise in the next room. **Before going in**, strip the place: **two puzzle pieces**, the **town map** and an **AP Boost**.\n\nIt is Lock, Shock and Barrel, escaping through the window. Their tracks lead to an entrance that was closed until now, near the graveyard.",
+          ),
+        },
+        {
+          id: "usine",
+          title: L("L'usine d'Oogie Boogie", "Oogie Boogie's factory"),
+          text: L(
+            "Après l'Automato-cage, direction la Ville de Noël : le Perce-Oreille a été enlevé par **Oogie Boogie**, que Maléfique a ramené à la vie.\n\nIl a transformé l'usine en arène de combat, et il compte bien l'essayer sur vous.\n\nLa victoire donne l'**élément d'Attraction**, c'est-à-dire la magie **Aimant** — et Jack peut enfin fêter Noël dans le costume cousu par Sally.",
+            "After the Prison Keeper, head for Christmas Town: Santa has been taken by **Oogie Boogie**, whom Maleficent has brought back.\n\nHe has turned the factory into a battle arena, and he fully intends to test it on you.\n\nWinning gives the **Magnet element**, meaning the **Magnet** spell — and Jack can finally celebrate Christmas in the costume Sally sewed.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "automato-cage",
+          name: L("Automato-cage", "The Prison Keeper"),
+          entry: "prison-keeper",
+          level: "25",
+          reward: L("Sora : Assaut. Donald : Soin amical. Dingo : +4 points de vie. Jack : +15 points de vie.", "Sora: Slapshot. Donald: MP Gift. Goofy: +4 HP. Jack: +15 HP."),
+          tactics: L(
+            "Un boss à trois visages, littéralement : il **avale tour à tour Am, Stram et Gram**, et chaque avalement lui donne des capacités différentes.\n\nLa première chose à savoir vaut tout le reste : **si vous êtes à côté de lui quand il tente d'en avaler un, vous pouvez l'en empêcher** — et mieux, l'attaquer de l'intérieur avec la commande **Ingestion**. Rester collé à lui est donc la bonne position par défaut.\n\nSinon, à chaque forme sa réponse :\n\n- **Avec Am**, il envoie des boules de feu plus ou moins rapides. Renvoyez-les en attaquant, ou bloquez à la **Parade** ou au **Miroir**.\n- **Avec Stram**, il s'élève et mitraille. **Restez sous lui** pour éviter les tirs, puis montez sur la colline pour l'atteindre — ou passez en **Vaillance** et servez-vous du super saut.\n- **Avec Gram**, il mord et frappe de la cage. Ce sont des attaques de contact, et la **Parade** les gère toutes.\n\nÀ la fin, il les avale **tous les trois** et cumule les trois panoplies : il n'y a rien de nouveau, il faut juste alterner les réponses.",
+            "A boss with three faces, literally: it **swallows Lock, Shock and Barrel in turn**, and each one gives it different abilities.\n\nThe first thing to know is worth all the rest: **if you are beside it when it tries to swallow one, you can stop it** — and better, attack it from the inside with the **Ingest** command. Staying glued to it is therefore the right default position.\n\nOtherwise, each form has its answer:\n\n- **With Lock**, it throws fireballs at varying speeds. Send them back by attacking, or block with **Guard** or **Reflect**.\n- **With Shock**, it rises and strafes. **Stay underneath it** to avoid the shots, then climb the hill to reach it — or switch to **Valor Form** and use the high jump.\n- **With Barrel**, it bites and swings the cage. These are contact attacks, and **Guard** handles all of them.\n\nAt the end it swallows **all three** and stacks the three sets: there is nothing new, you just have to alternate the answers.",
+          ),
+        },
+        {
+          id: "oogie",
+          name: L("Oogie Boogie", "Oogie Boogie"),
+          entry: "oogie-boogie",
+          level: "26",
+          reward: L("Sora : un emplacement d'objet supplémentaire. Donald : +3 points de vie. Dingo : Dernière chance. Jack : +15 points de vie. Et l'élément d'Attraction.", "Sora: an extra item slot. Donald: +3 HP. Goofy: Second Chance. Jack: +15 HP. Plus the Magnet element."),
+          tactics: L(
+            "Tout le combat se déroule sur un **tapis roulant**, avec des pics derrière vous : **avancer n'est pas optionnel**.\n\nOogie est sur une plate-forme hors d'atteinte. Pour le faire descendre, il faut **la remplir de paquets cadeau** avec la commande **Catapulter**. Au bout d'un certain nombre, le monte-charge cède et vous avez enfin votre fenêtre.\n\nIl remonte assez vite — la plate-forme se reconstitue on ne sait comment — et **le tapis accélère brièvement** à ce moment-là. Courez, sous peine de finir dans les pics.\n\nSon arsenal pour vous gêner : un **gant de boxe géant** qui s'écrase sur le tapis, des **sacs violets** qui libèrent des Sans-cœur — à éliminer vite, ils gênent plus qu'ils ne blessent —, cinq **décharges électriques** faciles à esquiver, et le déplacement de la plate-forme, qui vous oblige à changer de tapis par les trous carrés d'en face.",
+            "The whole fight takes place on a **conveyor belt**, with spikes behind you: **moving forward is not optional**.\n\nOogie is on a platform out of reach. To bring him down, you have to **fill it with presents** using the **Catapult** command. After enough of them, the lift gives way and you finally get your window.\n\nHe climbs back fairly quickly — the platform reassembles somehow — and **the belt briefly speeds up** at that moment. Run, or you end up in the spikes.\n\nHis arsenal for getting in your way: a **giant boxing glove** slamming into the belt, **purple sacks** releasing Heartless — kill them quickly, they hinder more than they hurt — five **electric discharges** that are easy to dodge, and moving the platform, which forces you onto another belt through the square holes opposite.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×2", "AP Boost ×2"), where: L("Dans la forêt entre le cimetière et l'arbre de Noël, et chez le Perce-Oreille.", "In the woods between the graveyard and the Christmas tree, and at Santa's house.") },
+        { kind: "ability", label: L("Élément d'Attraction", "Magnet element"), where: L("La victoire sur Oogie Boogie.", "Beating Oogie Boogie."), note: L("Le sort Aimant ouvre aussi un nouveau chapitre d'Atlantica.", "The Magnet spell also opens a new Atlantica chapter.") },
+        { kind: "minigame", label: L("Quatre pièces de puzzle", "Four puzzle pieces"), where: L("Place de la Guillotine (par les bouches d'égout), derrière l'arbre de Noël des deux côtés, et deux chez le Perce-Oreille.", "Guillotine Square (via the manholes), behind the Christmas tree on both sides, and two at Santa's house.") },
+      ],
     },
     {
       id: "terre-des-lions",
@@ -705,23 +1008,149 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "pride-lands",
       level: "26",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le monde est **facultatif** — on peut terminer le jeu sans y mettre les pieds — mais le sauter a un coût précis : **la fin de Space Paranoids est inaccessible tant que les deux épisodes de la Terre des Lions ne sont pas faits**. Ce n'est donc facultatif que sur le papier.\n\nSora y devient lionceau, et cette transformation a des conséquences immédiates : **ni Fusion, ni invocation, ni coopération** — cette dernière revenant seulement quand Simba rejoint l'équipe.\n\nPassez un moment dans le menu des compétences en arrivant : le lionceau en a de nouvelles, actives en permanence. Donald et Dingo, eux, sont transformés mais n'en gagnent aucune.\n\nDétail qui compte pour la fouille : ici, **les coffres ont la forme de poires**.",
+        "The world is **optional** — the game can be finished without setting foot in it — but skipping it has a precise cost: **the end of Space Paranoids is unreachable until both Pride Lands episodes are done**. So it is optional on paper only.\n\nSora becomes a lion cub here, and the transformation has immediate consequences: **no Drive Forms, no summons, no limits** — the last coming back only when Simba joins the party.\n\nSpend a moment in the abilities menu on arrival: the cub has new ones, permanently active. Donald and Goofy are transformed but gain none.\n\nA detail that matters when searching: here, **the chests are shaped like pears**.",
+      ),
+      steps: [
+        {
+          id: "cimetiere",
+          title: L("Le cimetière des éléphants", "The elephant graveyard"),
+          text: L(
+            "Trois coffres d'entrée : la **carte de la savane**, une **Pierre de mithril** et une **Gemme noire**.\n\nDans la zone suivante, il faut protéger **Nala** poursuivie par deux énormes **Carcasses**. Approchez-vous de l'une d'elles, déclenchez **Rodéo** pour monter sur son dos, puis **Démantibuler** pour l'achever.\n\nAvant de rejoindre le Rocher du Lion, fouillez le cimetière. Le coffre droit devant contient une **Gemme glaciale**. Grimpez la pente de droite, bordée de vertèbres, et **sautez en frappant de la Keyblade** pour attraper la **pièce de puzzle**. Continuez à droite jusqu'au **Bonus PC**.\n\nRevenez et allez tout droit : une **Pierre de mithril**, une **Pierre de vitalité** près de la sortie. **Ne sortez pas encore** — retournez-vous face au crâne d'éléphant pour repérer un coffre (**Éclat de mithril**). Le nord de la carte cache une seconde **pièce de puzzle**.",
+            "Three chests to start: the **savannah map**, a **Mythril Stone** and a **Dark Gem**.\n\nIn the next area you must protect **Nala**, chased by two huge **Living Bones**. Get close to one, trigger **Rodeo** to ride it, then **Dismantle** to finish it.\n\nBefore heading to Pride Rock, comb the graveyard. The chest straight ahead holds a **Frost Gem**. Climb the right-hand slope lined with vertebrae, and **jump while swinging the Keyblade** to catch the **puzzle piece**. Carry on right to the **AP Boost**.\n\nCome back and go straight on: a **Mythril Stone**, a **Serenity Stone** near the exit. **Do not leave yet** — turn to face the elephant skull to spot a chest (**Mythril Shard**). The north of the map hides a second **puzzle piece**.",
+          ),
+        },
+        {
+          id: "rocher",
+          title: L("Le Rocher du Lion et la Vallée des gnous", "Pride Rock and the Wildebeest Valley"),
+          text: L(
+            "**Rafiki** annonce à Sora qu'il n'est pas le sauveur attendu. Le temps d'encaisser, ramassez la **carte de la zone**, un **Cristal de sérénité** et une **Pierre de mithril**. La **pièce de puzzle** au nord s'attrape en sautant depuis la falaise ; la grotte de Rafiki a un point de sauvegarde.\n\nAu moment de partir, Scar se présente — accompagné d'un lion qui n'est autre que Pat. Fuyez vers la **Vallée des gnous**.\n\nNala y enseigne **Aiguillon** : sous cette apparence, **Carré fait courir plus vite**. C'est autant un outil de déplacement qu'une esquive, et le combat contre Scar en dépendra.\n\nRamassez la **Pierre de fougue** en face, une **Pierre de mithril** à droite de la formation rocheuse, puis un **Bonus PC** et une **pièce de puzzle** près d'un autre pic. Le grand espace suivant donne une **Gemme de mithril**, une **pièce de puzzle** et une **Gemme hyaline** près de la sortie.",
+            "**Rafiki** tells Sora he is not the awaited saviour. While that sinks in, pick up the **area map**, a **Serenity Crystal** and a **Mythril Stone**. The **puzzle piece** to the north is caught by jumping from the cliff; Rafiki's cave has a save point.\n\nAs you leave, Scar appears — with a lion who turns out to be Pete. Flee to the **Wildebeest Valley**.\n\nNala teaches **Dash** there: in this form, **Square makes you run faster**. It is as much a movement tool as a dodge, and the fight against Scar will depend on it.\n\nPick up the **Frost Stone** in front of you, a **Mythril Stone** right of the rock formation, then an **AP Boost** and a **puzzle piece** by another outcrop. The large open area after gives a **Mythril Gem**, a **puzzle piece** and a **Lucid Gem** near the exit.",
+          ),
+        },
+        {
+          id: "oasis",
+          title: L("Les Terres arides, la Jungle et l'oasis", "The Wastelands, the Jungle and the oasis"),
+          text: L(
+            "Sur la route : un **Éclat de mithril**, une **Gemme de sérénité**, une **Pierre de mithril** et **deux pièces de puzzle**.\n\nDans la **Jungle** : un **Cristal de sérénité** dans le premier coffre, une **Gemme de sérénité** sur la plate-forme en face. Avant l'oasis, une **Pierre de mithril** et une **pièce de puzzle**, à attraper de la même façon qu'au cimetière.\n\n**Simba** est là, et vous reconnaît malgré votre apparence. Les retrouvailles sont brèves : Timon et Pumbaa ont besoin d'aide dans la jungle. Fouillez d'abord l'oasis — la **carte**, un **Bonus PC** et une **Page déchirée**.\n\nAu retour, la conversation entre Nala et Simba tourne mal. « Réconforter » Simba à l'oasis donne la Keyblade **Cercle Vital**, et Simba rejoint l'équipe — ce qui rend la coopération de nouveau disponible.\n\nIl vous quitte dans la savane pour reprendre sa place. Allez au Rocher du Lion assister à la chute de Scar, puis entrez dans la tanière du roi.",
+            "Along the way: a **Mythril Shard**, a **Serenity Gem**, a **Mythril Stone** and **two puzzle pieces**.\n\nIn the **Jungle**: a **Serenity Crystal** in the first chest, a **Serenity Gem** on the platform ahead. Before the oasis, a **Mythril Stone** and a **puzzle piece**, caught the same way as in the graveyard.\n\n**Simba** is there, and recognises you despite your form. The reunion is brief: Timon and Pumbaa need help in the jungle. Search the oasis first — the **map**, an **AP Boost** and a **Torn Page**.\n\nOn your return, the conversation between Nala and Simba goes badly. 'Comforting' Simba at the oasis gives the **Circle of Life** Keyblade, and Simba joins the party — which brings limits back.\n\nHe leaves you in the savannah to take his place. Go to Pride Rock to watch Scar's fall, then enter the king's den.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "hyenes",
+          name: L("Shenzi, Banzaï et Ed", "Shenzi, Banzai and Ed"),
+          entry: "shenzi-banzai-and-ed",
+          level: "27",
+          reward: L("Sora : +5 points de vie. Donald : +3 points de vie. Dingo : Chance.", "Sora: +5 HP. Donald: +3 HP. Goofy: Lucky Lucky."),
+          tactics: L(
+            "Ce combat ne se gagne pas sur votre barre de vie mais sur celle de **Timon et Pumbaa** : c'est eux que les hyènes visent, et c'est leur jauge qu'il faut surveiller.\n\nD'où la première règle, contre-intuitive : **ne concentrez pas vos coups sur une seule hyène**. Pendant que vous en achevez une, les deux autres travaillent tranquillement sur vos amis. Restez **près de Timon et Pumbaa** et frappez ce qui approche, sans chercher à finir quoi que ce soit.\n\nSi les trois vous assaillent en même temps, un **Brasier** les écarte.\n\nEt quand vous vous retrouvez trop loin — ça arrive —, la commande **Héler** les fait venir à vous. Double avantage : vous pouvez de nouveau les protéger, et les hyènes se mettent parfois à se battre entre elles dans la foulée.",
+            "This fight is not won on your HP bar but on **Timon and Pumbaa's**: they are what the hyenas go for, and their gauge is what you watch.\n\nHence the first rule, counter-intuitive as it is: **do not focus your hits on a single hyena**. While you finish one off, the other two work away on your friends. Stay **near Timon and Pumbaa** and hit whatever comes close, without trying to finish anything.\n\nIf all three come at you at once, a **Fire** spell pushes them back.\n\nAnd when you end up too far away — it happens — the **Call Over** command brings them to you. Two benefits: you can protect them again, and the hyenas sometimes start fighting each other afterwards.",
+          ),
+        },
+        {
+          id: "scar",
+          name: L("Scar", "Scar"),
+          entry: "scar",
+          level: "28",
+          reward: L("Sora : +10 points de magie. Donald : Booster Feu. Dingo : +4 points de vie. Simba : +30 points de vie. Et l'élément de Feu — le sort Brasier +.", "Sora: +10 MP. Donald: Fire Boost. Goofy: +4 HP. Simba: +30 HP. Plus the Fire element — the Fira spell."),
+          tactics: L(
+            "Scar est rapide et varié : la prudence rapporte plus que l'agressivité.\n\nIl passe son temps à **se ruer sur vous ou à bondir d'un point à l'autre**, entouré de flammes — le **Glacier** l'arrête — ou d'éclairs. **Aiguillon** est votre outil : esquivez, tenez-vous à l'écart, et **attendez qu'il s'occupe de Simba pour le frapper**. C'est là que sont vos fenêtres.\n\nS'il vous plaque au sol, la commande **Parade** le repousse.\n\nSon attaque la plus dangereuse s'annonce nettement : **des orbes d'énergie noire apparaissent autour de lui**, puis il court au loin avant de foncer. La seule réponse est **Aiguillon**, tout de suite.\n\nEt n'économisez pas la coopération avec Simba : elle est très efficace sur lui.",
+            "Scar is fast and varied: caution pays better than aggression here.\n\nHe spends his time **charging you or leaping from point to point**, wreathed in flames — **Blizzard** stops him — or in lightning. **Dash** is your tool: dodge, keep your distance, and **wait until his attention is on Simba to hit him**. That is where your windows are.\n\nIf he pins you to the ground, the **Guard** command pushes him off.\n\nHis most dangerous attack announces itself clearly: **orbs of dark energy appear around him**, then he runs off before charging. The only answer is **Dash**, immediately.\n\nAnd do not save the limit with Simba: it is very effective on him.",
+          ),
+          attacks: [
+            { name: L("Bonds enflammés", "Flaming leaps"), note: L("Glacier les interrompt.", "Blizzard interrupts them.") },
+            { name: L("Orbes d'énergie noire", "Orbs of dark energy"), note: L("L'annonce de sa charge. Aiguillon, sans réfléchir.", "The tell for his charge. Dash, without thinking.") },
+            { name: L("Plaquage au sol", "Pin down"), note: L("La commande Parade le repousse.", "The Guard command shoves him off.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×3", "AP Boost ×3"), where: L("Cimetière des éléphants, Vallée des gnous, et l'oasis.", "The elephant graveyard, the Wildebeest Valley, and the oasis.") },
+        { kind: "keyblade", label: L("Cercle Vital", "Circle of Life"), where: L("En réconfortant Simba à l'oasis.", "By comforting Simba at the oasis.") },
+        { kind: "journal", label: L("Page déchirée", "Torn Page"), where: L("À l'oasis, avec la carte et le Bonus PC.", "At the oasis, with the map and the AP Boost.") },
+        { kind: "ability", label: L("Aiguillon, puis l'élément de Feu", "Dash, then the Fire element"), where: L("Nala dans la Vallée des gnous, puis la victoire sur Scar.", "Nala in the Wildebeest Valley, then beating Scar.") },
+        { kind: "minigame", label: L("Neuf pièces de puzzle", "Nine puzzle pieces"), where: L("Deux au cimetière, une au Rocher du Lion, deux dans la Vallée des gnous, deux aux Terres arides, une dans la Jungle, une au Rocher avant Scar.", "Two in the graveyard, one at Pride Rock, two in the Wildebeest Valley, two in the Wastelands, one in the Jungle, one at Pride Rock before Scar.") },
+      ],
+      missable: [
+        L("Le monde est présenté comme facultatif, mais **la fin de Space Paranoids exige ses deux épisodes**. Le sauter, c'est bloquer une partie du cheminement principal.", "The world is presented as optional, but **the end of Space Paranoids requires both its episodes**. Skipping it blocks part of the main path."),
+      ],
     },
     {
       id: "cite-du-crepuscule-2",
       title: L("Cité du Crépuscule", "Twilight Town"),
-      subtitle: L("Deuxième visite — le manoir", "Second visit — the mansion"),
+      subtitle: L("Deuxième visite — Kairi", "Second visit — Kairi"),
       world: "twilight-town",
       level: "28",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Un passage de dix minutes, et pourtant une charnière : **c'est ici que commence la seconde partie de l'aventure**.\n\nAvant d'y aller, faites le tour de ce que vous avez laissé ailleurs. Une fois cette section passée, la Forteresse Oubliée enchaîne, et le rythme ne redescend plus.\n\nLa visite introduit les **Berserkers**, les Similis les plus dangereux rencontrés jusqu'ici, et donne la Keyblade **Tendre Promesse** avec la Fusion **Souvenance**.",
+        "A ten-minute stretch, and yet a hinge: **this is where the second half of the adventure begins**.\n\nBefore going in, go and finish what you left elsewhere. Once this section is over, Hollow Bastion follows on, and the pace never really drops again.\n\nThe visit introduces the **Berserkers**, the most dangerous Nobodies met so far, and gives the **Oathkeeper** Keyblade with the **Limit** Drive Form.",
+      ),
+      steps: [
+        {
+          id: "place-des-fetes",
+          title: L("La place des Fêtes", "The Sandlot"),
+          text: L(
+            "Seifer et sa bande sont attaqués par des Similis. Trois vagues de **Reflets** et d'une espèce nouvelle : les **Berserkers**.\n\nCeux-là demandent une méthode. Frappez-les jusqu'à ce qu'ils **lâchent leur arme**, puis **ramassez-la** : la commande **Furie** devient disponible, et c'est de très loin votre meilleure source de dégâts. Le sort **Miroir** protège et blesse en même temps, ce qui en fait l'autre bonne réponse.\n\nAprès la victoire, **Saïx** se présente. Seifer vous offre son **Trophée de Struggle**, et vous apprenez que Kairi est passée par là.\n\nSur la place, vous apercevez la **Silhouette Spectrale de Lexaeus** — un défi de Final Mix très au-dessus de votre niveau. Notez-la, et courez vers la gare.",
+            "Seifer and his gang are under attack by Nobodies. Three waves of **Dusks** and of a new species: the **Berserkers**.\n\nThose need a method. Hit them until they **drop their weapon**, then **pick it up**: the **Berserk** command becomes available, and it is by far your best source of damage. The **Reflect** spell protects and hurts at the same time, which makes it the other good answer.\n\nAfter the fight, **Saïx** introduces himself. Seifer gives you his **Struggle Trophy**, and you learn Kairi has been through here.\n\nOn the square you spot **Lexaeus's Absent Silhouette** — a Final Mix challenge well above your level. Note it, and run to the station.",
+          ),
+        },
+        {
+          id: "gare",
+          title: L("La place de la gare", "Station Plaza"),
+          text: L(
+            "Trop tard : Kairi a été enlevée par **Axel**.\n\nLe Trophée de Struggle révèle un **Verrou céleste**. Vous obtenez la Keyblade **Tendre Promesse** — la plus chargée symboliquement du jeu — et la Fusion **Souvenance**.\n\nAvant de partir pour la Forteresse Oubliée, **vérifiez que vous avez fait tous les autres mondes** : la seconde partie de l'aventure commence maintenant.\n\nTrois nouvelles **pièces de puzzle** sont d'ailleurs disponibles ici : une sur la place de la gare, deux sur le circuit du tram — la première sur un bâtiment après l'entrée de la forêt, la seconde sur le bâtiment central, celui de l'atelier des Mogs — toutes deux en grimpant sur le tramway. Le **Bolet n° 12** est aussi apparu, et les mini-jeux du monde sont ouverts.",
+            "Too late: Kairi has been taken by **Axel**.\n\nThe Struggle Trophy reveals a **Keyhole**. You receive the **Oathkeeper** Keyblade — the most symbolically loaded in the game — and the **Limit** Drive Form.\n\nBefore leaving for Hollow Bastion, **make sure you have done every other world**: the second half of the adventure starts now.\n\nThree new **puzzle pieces** are available here, as it happens: one on Station Plaza, two on the Tram Common — the first on a building past the entrance to the woods, the second on the central building, the one with the moogle workshop — both reached by climbing on the tram. **Mushroom No. 12** has also appeared, and the world's mini-games are open.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Tendre Promesse", "Oathkeeper"), where: L("Le Verrou céleste révélé par le Trophée de Struggle.", "The Keyhole revealed by the Struggle Trophy.") },
+        { kind: "ability", label: L("Fusion Souvenance", "Limit Form"), where: L("Avec Tendre Promesse, à la place de la gare.", "With Oathkeeper, at Station Plaza.") },
+        { kind: "minigame", label: L("Trois pièces de puzzle", "Three puzzle pieces"), where: L("Place de la gare, et deux sur le circuit du tram en grimpant sur le tramway.", "Station Plaza, and two on the Tram Common by climbing on the tram.") },
+      ],
+      missable: [
+        L("**C'est le point de bascule de la partie.** Tout ce qui n'a pas été fait dans les mondes du premier tour devient plus long ensuite : les niveaux de combat montent, et Agrabah comme la Ville d'Halloween passent de 22 et 24 à 38 et 39.", "**This is the game's turning point.** Anything left undone in the first round's worlds gets longer afterwards: battle levels rise, and Agrabah and Halloween Town go from 22 and 24 to 38 and 39."),
+      ],
     },
     {
       id: "forteresse-oubliee-3",
       title: L("Forteresse Oubliée", "Hollow Bastion"),
-      subtitle: L("Troisième visite — la bataille", "Third visit — the battle"),
+      subtitle: L("Troisième visite — l'ordinateur d'Ansem", "Third visit — Ansem's computer"),
       world: "radiant-garden",
       level: "28",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "La ville est de nouveau menacée, et cette visite sert surtout à ouvrir une porte : celle de l'**ordinateur d'Ansem le Sage**, que le comité de restauration vient de découvrir.\n\nC'est aussi la visite des retrouvailles — **Cloud**, **Aerith**, **Tifa**, **Léon**, **Cid** — et de la présentation de **Yuna, Rikku et Paine**, le trio de Final Fantasy X-2, ici espionnes au service de Maléfique.\n\nLe château est un **dédale de couloirs** où il est facile de tourner en rond. Le cheminement ci-dessous le traverse en ramassant tout.",
+        "The town is under threat again, and this visit mainly serves to open a door: the one to **Ansem the Wise's computer**, which the Restoration Committee has just found.\n\nIt is also the reunion visit — **Cloud**, **Aerith**, **Tifa**, **Leon**, **Cid** — and the introduction of **Yuna, Rikku and Paine**, the Final Fantasy X-2 trio, here working as spies for Maleficent.\n\nThe castle is a **maze of corridors** where it is easy to go round in circles. The route below crosses it picking everything up.",
+      ),
+      steps: [
+        {
+          id: "ville-et-poterne",
+          title: L("De la ville à la Poterne", "From the town to the Postern"),
+          text: L(
+            "Passez chez Merlin en parlant à Picsou avant de sortir. Vous croisez **Cloud**, toujours à la recherche de Séphiroth, et **Aerith**. Chez Merlin, **Cid** vous envoie au bureau d'Ansem.\n\nAux Fortifications, trois jeunes filles vous interpellent : **Yuna, Rikku et Paine**. Continuez le chemin en prenant une **pièce de puzzle** dans les escaliers.\n\nTraversez le **Chantier** jusqu'à la **Poterne**, où Aerith vous indique l'entrée du château. Deux coffres : la **carte des alentours du château** et une **Gemme de mithril**. Descendez l'escalier en prenant une **pièce de puzzle** et un **Bonus PC** en bas.",
+            "Stop at Merlin's, talking to Scrooge before you leave. You run into **Cloud**, still looking for Sephiroth, and **Aerith**. At Merlin's, **Cid** sends you to Ansem's study.\n\nAt the Bailey, three young women hail you: **Yuna, Rikku and Paine**. Carry on, taking a **puzzle piece** on the stairs.\n\nCross the **Restoration Site** to the **Postern**, where Aerith points out the castle entrance. Two chests: the **castle grounds map** and a **Mythril Gem**. Go down the stairs, taking a **puzzle piece** and an **AP Boost** at the bottom.",
+          ),
+        },
+        {
+          id: "dedale",
+          title: L("Le dédale du château", "The castle maze"),
+          text: L(
+            "À l'intérieur, suivez ce chemin pour tout ramasser sans tourner en rond :\n\n- Au **premier embranchement**, à gauche : un **Cristal noir**.\n- Au **carrefour suivant**, à gauche encore : une **Pierre de mithril** près d'un mur écroulé.\n- Suivez ce couloir jusqu'au coffre suivant : un **Cristal de mithril**.\n- Revenez de quelques pas et prenez le **passage sud** vers une grande salle.\n- Tout droit à l'**ouest** : un couloir avec un **Bonus PC**.\n- Revenez à la grande salle et prenez le **couloir sud** jusqu'au bureau d'Ansem.\n\nVous y rencontrez **Tifa**, à la recherche d'un garçon « aux cheveux en pétard ». Léon arrive et vous mène à l'ordinateur. **Avant de lui parler**, ouvrez le coffre à ses côtés : une **Formule de compétences**.\n\nStitch s'en mêle, Donald fait une fausse manœuvre, et vous êtes aspirés dans le système.",
+            "Inside, follow this route to pick everything up without going in circles:\n\n- At the **first fork**, go left: a **Dark Crystal**.\n- At the **next junction**, left again: a **Mythril Stone** by a collapsed wall.\n- Follow that corridor to the next chest: a **Mythril Crystal**.\n- Come back a few steps and take the **southern passage** into a large room.\n- Straight ahead to the **west**: a corridor with an **AP Boost**.\n- Back to the large room and take the **southern corridor** to Ansem's study.\n\nThere you meet **Tifa**, looking for a boy with 'spiky hair'. Leon arrives and takes you to the computer. **Before talking to him**, open the chest beside him: an **AP Boost formula**.\n\nStitch gets involved, Donald fumbles a control, and you are pulled into the system.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×2", "AP Boost ×2"), where: L("Au bas de l'escalier de la Poterne, et dans le couloir ouest du dédale.", "At the bottom of the Postern stairs, and in the maze's western corridor.") },
+        { kind: "minigame", label: L("Deux pièces de puzzle", "Two puzzle pieces"), where: L("Dans les escaliers après les Fortifications, et au bas de l'escalier de la Poterne.", "On the stairs past the Bailey, and at the bottom of the Postern stairs.") },
+        { kind: "synthesis", label: L("Cristal noir, Cristal de mithril, Gemme de mithril, Pierre de mithril", "Dark Crystal, Mythril Crystal, Mythril Gem, Mythril Stone"), where: L("Répartis dans le dédale du château et à la Poterne.", "Spread through the castle maze and the Postern.") },
+      ],
     },
     {
       id: "space-paranoids",
@@ -729,7 +1158,72 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "the-grid",
       level: "28",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Un monde entièrement virtuel, à l'intérieur de l'ordinateur d'Ansem — et le seul du jeu dont on ne peut **pas sortir par les points de sauvegarde**. Il faut passer par les **terminaux**, et ils sont hors service à votre arrivée.\n\nLa mécanique propre au monde est la jauge de **Granules** : les Sans-cœur frappés lâchent des orbes qui la remplissent, et une jauge pleine ouvre la commande **Geler**. Elle sert à tout ici — ouvrir votre cellule, désactiver les moniteurs, immobiliser le boss.\n\n**Tron** rejoint l'équipe, et la visite se termine sur la Keyblade **Debugger photon**. Entre les deux, il y a une course de Light Cycle qu'il faudra sans doute recommencer.",
+        "A fully virtual world, inside Ansem's computer — and the only one in the game you **cannot leave by save point**. You have to use the **terminals**, and they are out of order when you arrive.\n\nThe world's own mechanic is the **Data** gauge: Heartless you hit drop orbs that fill it, and a full gauge opens the **Freeze** command. It is used for everything here — opening your cell, disabling the monitors, pinning the boss.\n\n**Tron** joins the party, and the visit ends on the **Photon Debugger** Keyblade. In between there is a Light Cycle race you will probably have to retry.",
+      ),
+      steps: [
+        {
+          id: "cellule",
+          title: L("La cellule, et le canyon", "The cell, and the canyon"),
+          text: L(
+            "Vous êtes arrêté dès l'arrivée. En cellule, vous rencontrez **Tron**.\n\nPour sortir : **frappez la porte à la Keyblade** et **ramassez les orbes noirs** à chaque coup — ils remplissent la jauge d'énergie en haut à gauche. Une fois pleine, **Geler** ouvre définitivement la porte. Tron se joint alors à vous.\n\nRamassez la **carte de la cyber cellule** et le **Cristal de mithril** dans les coffres des environs, puis placez-vous sur le disque lumineux pour rejoindre le **canyon**.\n\nIl faut réparer l'appareil de la salle de gauche. Avant : un **Cristal glacial** devant cette salle, une **Pierre de mithril** en montant les marches, puis un **Cristal noir** et une **Gemme de mithril** au sommet. De là, on atteint la salle du cœur énergétique — et une **pièce de puzzle** au passage.",
+            "You are arrested on arrival. In the cell you meet **Tron**.\n\nTo get out: **hit the door with the Keyblade** and **collect the dark orbs** with each strike — they fill the energy gauge at the top left. Once full, **Freeze** opens the door for good. Tron then joins you.\n\nPick up the **Cyber Cell map** and the **Mythril Crystal** from the chests nearby, then step onto the light disc to reach the **canyon**.\n\nThe device in the left-hand room needs repairing. First: a **Frost Crystal** in front of that room, a **Mythril Stone** up the steps, then a **Dark Crystal** and a **Mythril Gem** at the top. From there you reach the Power Core room — and a **puzzle piece** on the way.",
+          ),
+        },
+        {
+          id: "bloc-rouge",
+          title: L("Le bloc rouge", "The red block"),
+          text: L(
+            "Approchez-vous de la machine au centre et examinez le panneau de contrôle. Il faut retrouver la pièce manquante dans un temps limité.\n\nC'est un jeu d'attention : le **bloc rouge** repose au milieu d'un anneau de cubes qui descend du plafond, puis se met à tourner — **et le bloc rouge prend la couleur des autres**.\n\nIl n'y a pas d'astuce : **ne le quittez pas des yeux** jusqu'à l'arrêt de la rotation, puis frappez-le à la Keyblade.\n\nRetournez ensuite à la cyber cellule et sélectionnez le **laboratoire** au terminal.",
+            "Step up to the machine in the centre and examine the control panel. You have to find the missing part within a time limit.\n\nIt is a game of attention: the **red block** sits in the middle of a ring of cubes that descends from the ceiling, then starts spinning — **and the red block takes on the same colour as the others**.\n\nThere is no trick: **do not take your eyes off it** until the ring stops, then hit it with the Keyblade.\n\nThen go back to the Cyber Cell and select the **laboratory** at the terminal.",
+          ),
+        },
+        {
+          id: "maitrise",
+          title: L("Retour au château — la Fusion Maîtrise", "Back at the castle — Master Form"),
+          text: L(
+            "De retour à la Forteresse Oubliée, Tifa décroche le tableau d'Ansem et révèle des inscriptions. Observez-les : le **roi Mickey** arrive, et vous offre la Fusion **Maîtrise**.\n\nNe manquez pas le **Pendentif ukulélé** dans le coffre du couloir qui sépare le bureau d'Ansem de son ordinateur : c'est l'invocation de **Stitch**.\n\nExaminez de nouveau l'ordinateur pour repartir.",
+            "Back at Hollow Bastion, Tifa takes Ansem's portrait off the wall and reveals an inscription. Look at it: **King Mickey** arrives, and gives you **Master Form**.\n\nDo not miss the **Ukulele Charm** in the chest in the corridor between Ansem's study and his computer: that is the **Stitch** summon.\n\nExamine the computer again to go back in.",
+          ),
+        },
+        {
+          id: "light-cycle",
+          title: L("La course de Light Cycle, et la tour E/S", "The Light Cycle race, and the I/O Tower"),
+          text: L(
+            "Vous arrivez sur la grille de jeu pour une **course de Light Cycle**. Les commandes : **stick gauche** pour se décaler latéralement, **L1 et R1** pour tourner à gauche et à droite.\n\nPremière partie : mettre hors d'état de nuire **cinq adversaires**. **Carré** détruit la protection de la cible, **Rond** pare ses attaques, **Croix** frappe. Ensuite, il faut atteindre la sortie — et malgré les apparences, cette seconde partie est coriace. Il n'est pas rare de la recommencer plusieurs fois.\n\nTron revient dans l'équipe. Direction l'**espace de données** : examinez l'ordinateur, laissez Tron entrer le mot de passe, puis **désactivez les moniteurs en moins de deux minutes** sous les assauts continus. Le principe est toujours le même : tuez pour remplir la jauge **Granules**, puis **Geler** sur chaque moniteur.\n\nTron récupère ses pouvoirs — **pensez à dépenser ses PC** pour activer ses nouvelles compétences.\n\nSortez vers le **hall de la tour E/S** : un **Bonus PC** et un **Cristal de force**. La salle de transmission, à l'est, donne la **carte de la tour E/S** et la **Ceinture Gaia**. En ressortant dans le hall, un programme vous attend.",
+            "You arrive on the game grid for a **Light Cycle race**. The controls: **left stick** to move sideways, **L1 and R1** to turn left and right.\n\nFirst part: take out **five opponents**. **Square** destroys the target's shield, **Circle** parries its attacks, **Cross** hits. Then you have to reach the exit — and despite appearances, that second part is tough. Retrying it several times is not unusual.\n\nTron rejoins the party. Head for the **Data Space**: examine the computer, let Tron enter the password, then **disable the monitors in under two minutes** under constant attack. The principle is the same as always: kill to fill the **Data** gauge, then **Freeze** each monitor.\n\nTron gets his powers back — **remember to spend his AP** to switch on his new abilities.\n\nGo out to the **I/O Tower lobby**: an **AP Boost** and a **Power Crystal**. The communications room to the east gives the **I/O Tower map** and the **Gaia Belt**. On the way back into the lobby, a program is waiting.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "programme-belliqueux",
+          name: L("Programme Belliqueux", "Hostile Program"),
+          entry: "hostile-program",
+          level: "30",
+          reward: L("Sora : une jauge de flux supplémentaire et Onde circulaire. Donald : +3 points de vie. Dingo : Profusion. Tron : +15 points de vie. Et la Keyblade Debugger photon.", "Sora: an extra Drive bar and Round Break. Donald: +3 HP. Goofy: MP Haste. Tron: +15 HP. Plus the Photon Debugger Keyblade."),
+          tactics: L(
+            "Un boss agaçant plutôt que dangereux : il **se maintient systématiquement hors de portée de la Keyblade** pendant que ses attaques, elles, vous atteignent sans peine.\n\nLa mécanique est la même que partout dans ce monde : **chaque coup qu'il encaisse libère des orbes** qui remplissent la jauge Granules. Jauge pleine, la commande **Geler** l'immobilise — et c'est là, et seulement là, qu'il faut sortir l'artillerie : la coopération avec Tron, ou la Fusion **Maîtrise** toute neuve.\n\nMéfiez-vous de la **contre-attaque à son réveil** : elle vous projette loin de lui.\n\nQuand sa vie baisse, il **tournoie dans l'arène à grande vitesse** et ne s'arrête que pour tirer des rayons. L'ordre est toujours le même : de gauche à droite, puis de bas en haut, puis dans toutes les directions. **Glissez-vous sous lui** pour vous abriter et le frapper.\n\nUne seule exception : quand il se place **au centre de la zone** et arrose toute la pièce, il n'y a pas d'abri. Encaissez, amassez ce que vous pouvez, et gelez-le dès que la jauge le permet.",
+            "An irritating boss rather than a dangerous one: it **systematically keeps out of Keyblade range** while its own attacks reach you without trouble.\n\nThe mechanic is the same as everywhere in this world: **every hit it takes releases orbs** that fill the Data gauge. Gauge full, the **Freeze** command pins it — and that, and only that, is when you bring out the heavy weapons: the limit with Tron, or the brand-new **Master Form**.\n\nWatch for the **counter-attack as it wakes**: it throws you well clear.\n\nWhen its HP drops, it **spins around the arena at high speed** and only stops to fire beams. The order is always the same: left to right, then bottom to top, then every direction. **Slip underneath it** to shelter and strike.\n\nOne exception: when it settles **in the centre of the area** and sprays the whole room, there is no shelter. Take it, gather what you can, and freeze it the moment the gauge allows.",
+          ),
+          attacks: [
+            { name: L("Rayons balayants", "Sweeping beams"), note: L("Gauche-droite, puis bas-haut, puis partout. Se glisser sous lui.", "Left-right, then bottom-top, then everywhere. Slip underneath it.") },
+            { name: L("Réveil après Geler", "Waking from Freeze"), note: L("Il contre-attaque et vous projette. Ne restez pas collé à la fin du gel.", "It counters and throws you clear. Do not stay glued when the freeze ends.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("Dans le hall de la tour E/S.", "In the I/O Tower lobby.") },
+        { kind: "ability", label: L("Fusion Maîtrise", "Master Form"), where: L("Du roi Mickey, au bureau d'Ansem, entre les deux passages dans l'ordinateur.", "From King Mickey, in Ansem's study, between the two trips into the computer.") },
+        { kind: "ability", label: L("Pendentif ukulélé — Stitch", "Ukulele Charm — Stitch"), where: L("Dans le coffre du couloir entre le bureau d'Ansem et son ordinateur.", "In the chest in the corridor between Ansem's study and his computer."), note: L("Facile à manquer : on traverse ce couloir sans y penser.", "Easy to miss: you cross that corridor without thinking about it.") },
+        { kind: "keyblade", label: L("Debugger photon", "Photon Debugger"), where: L("La victoire sur le Programme Belliqueux.", "Beating the Hostile Program.") },
+        { kind: "ability", label: L("Ceinture Gaia", "Gaia Belt"), where: L("Dans la salle de transmission de la tour E/S, à l'est du hall.", "In the I/O Tower's communications room, east of the lobby.") },
+      ],
+      missable: [
+        L("Le **Pendentif ukulélé** est dans un couloir de la Forteresse Oubliée qu'on traverse deux fois sans s'arrêter. Ce n'est pas une invocation qu'on récupère plus tard sans y penser : allez la chercher.", "The **Ukulele Charm** sits in a Hollow Bastion corridor you cross twice without stopping. It is not a summon you pick up later by accident: go and get it."),
+      ],
     },
     {
       id: "forteresse-oubliee-4",

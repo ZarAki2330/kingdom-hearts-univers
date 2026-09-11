@@ -699,4 +699,7 @@ export const entryImages: Record<string, EntryImage> = {
   "thresholder": { src: "/images/encyclopedia/enemies/thresholder.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Thresholder_(FM).png)", width: 320, height: 312 },
   "hydra": { src: "/images/encyclopedia/enemies/hydra.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Hydra.png)", width: 320, height: 245 },
   "chicken-little": { src: "/images/encyclopedia/characters/chicken-little.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Chicken_Little_KHII.png)", width: 160, height: 320 },
+  "volcano-lord": { src: "/images/encyclopedia/enemies/volcano-lord.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Volcanic_Lord_KHUX.png)", width: 320, height: 224 },
+  "blizzard-lord": { src: "/images/encyclopedia/enemies/blizzard-lord.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Blizzard_Lord_KHUX.png)", width: 320, height: 223 },
+  "shenzi-banzai-and-ed": { src: "/images/encyclopedia/characters/shenzi-banzai-and-ed.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Shenzi.png)", width: 260, height: 320 },
 };

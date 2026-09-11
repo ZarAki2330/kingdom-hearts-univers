@@ -433,4 +433,23 @@ export const guestCharacters: CharacterEntry[] = [
     relations: [{ slug: "sora", label: L("invoqué par", "summoned by") }, { slug: "merlin", label: L("remis par", "given by") }],
     tags: ["disney", "invocation", "kingdom hearts ii"],
   },
+  {
+    slug: "shenzi-banzai-and-ed",
+    category: "characters",
+    kind: "disney",
+    name: "Shenzi, Banzaï et Ed",
+    names: { en: "Shenzi, Banzai and Ed", ja: "シェンジ、バンザイ、エド" },
+    alignment: "darkness",
+    homeworld: "Terre des Lions",
+    accent: "#7a6a4a",
+    tagline: L("Le trio de hyènes au service de Scar.", "Scar's trio of hyenas."),
+    description: L(
+      "Les trois hyènes du Roi Lion servent Scar et gardent le cimetière des éléphants. Dans Kingdom Hearts II, elles sont affrontées dans la tanière du roi, et la difficulté du combat ne vient pas d'elles mais de Timon et Pumbaa, qu'elles visent en priorité et qu'il faut protéger.",
+      "The Lion King's three hyenas serve Scar and guard the elephant graveyard. In Kingdom Hearts II they are fought in the king's den, and the difficulty of that fight comes not from them but from Timon and Pumbaa, whom they target first and whom you have to protect.",
+    ),
+    appearances: ["kingdom-hearts-ii"],
+    debut: "kingdom-hearts-ii",
+    relations: [{ slug: "scar", label: L("au service de", "in the service of") }, { slug: "pride-lands", label: L("monde", "world") }],
+    tags: ["disney", "terre des lions", "kingdom hearts ii"],
+  },
 ];
