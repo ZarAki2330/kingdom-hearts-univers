@@ -189,6 +189,65 @@ export function CollectibleList({
 }
 
 /**
+ * Un tableau de soluce avec son titre et son chapeau. Les longues listes de référence
+ * (l'inventaire, le bestiaire) sont marquées `collapsed` et arrivent repliées : une page
+ * qui aligne cinq tableaux de trente lignes devient autrement impraticable, il faut faire
+ * défiler des centaines de lignes pour atteindre le tableau suivant. Le volet est un
+ * `<details>` natif : il s'ouvre sans JavaScript, et la recherche du navigateur le déplie.
+ */
+export function WalkTableBlock({
+  table,
+  locale,
+  labels,
+}: {
+  table: WalkTable;
+  locale: Locale;
+  labels: { world: string; what: string; where: string; requires: string };
+}) {
+  const title = localized(table.title, locale);
+  const intro = table.intro ? <p className="mt-2 text-text-2">{localized(table.intro, locale)}</p> : null;
+
+  if (table.collapsed) {
+    return (
+      <details className="group mt-6 rounded-xl border border-line bg-bg-2/40 px-4 py-3 sm:px-5">
+        <summary className="-mx-1 cursor-pointer list-none px-1 py-1 marker:content-none [&::-webkit-details-marker]:hidden">
+          <span className="flex items-center gap-3">
+            <span
+              aria-hidden="true"
+              className="grid h-6 w-6 shrink-0 place-items-center rounded-md border border-line text-accent transition-transform"
+            >
+              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 5v14M5 12h14" className="group-open:hidden" />
+                <path d="M5 12h14" className="hidden group-open:block" />
+              </svg>
+            </span>
+            <h2 id={`t-${table.id}`} className="text-2xl font-bold">
+              {title}
+            </h2>
+          </span>
+        </summary>
+        <div className="pb-2">
+          {intro}
+          <WalkDataTable table={table} locale={locale} labels={labels} />
+        </div>
+      </details>
+    );
+  }
+
+  // Pas de <section> ici : le tableau défilant porte déjà un repère nommé par ce titre,
+  // et deux repères de même nom se gênent au lecteur d'écran.
+  return (
+    <div className="mt-12">
+      <h2 id={`t-${table.id}`} className="text-2xl font-bold">
+        {title}
+      </h2>
+      {intro}
+      <WalkDataTable table={table} locale={locale} labels={labels} />
+    </div>
+  );
+}
+
+/**
  * Tableau à trois colonnes des soluces. Les filets verticaux et les lignes alternées
  * viennent d'un constat : ces tableaux comptent parfois trente lignes, et sans repères
  * l'œil saute d'une ligne à l'autre. Le tableau défile seul quand la fenêtre est étroite.

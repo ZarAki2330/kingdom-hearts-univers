@@ -454,14 +454,22 @@
     "sectionNav": "前後のセクション",
     "previous": "前のセクション",
     "next": "次のセクション",
-    "quests": "やり込み要素",
-    "questsLead": "物語の進行には関係しない要素です。収集、ミニゲーム、大会、任意のボス。",
+    "quests": "ガイドと資料",
+    "questsLead": "物語を進めない要素のすべて — 収集、ミニゲーム、大会、任意ボス、そしてゲームの資料ページ。",
     "questTitle": "{quest} — {game} 攻略",
     "relatedEntry": "事典の項目",
     "rewards": "報酬",
     "tableWorld": "ワールド",
     "tableWhat": "入手できるもの",
     "tableWhere": "場所と条件",
-    "backToGame": "{game} の攻略に戻る"
+    "backToGame": "{game} の攻略に戻る",
+    "bestiary": "敵図鑑",
+    "statHp": "HP",
+    "statAtk": "攻撃",
+    "statDef": "防御",
+    "statExp": "経験値",
+    "statLead": "序盤／ホロウバスティオン以降。",
+    "showMore": "表を開く",
+    "beastWorlds": "出現する世界："
   }
 }

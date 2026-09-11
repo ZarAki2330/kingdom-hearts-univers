@@ -48,6 +48,12 @@ export interface WalkTable {
   intro?: LocalizedText;
   /** En-têtes personnalisés, à la place de Monde / Ce qu'on y trouve / Où. */
   columns?: [LocalizedText, LocalizedText, LocalizedText];
+  /**
+   * Tableau replié au chargement, dans un volet dépliant. À réserver aux longues listes
+   * de référence (l'inventaire, le bestiaire) : sur une page qui en aligne cinq, tout
+   * déplier oblige à faire défiler des centaines de lignes pour atteindre la suivante.
+   */
+  collapsed?: boolean;
   rows: WalkPlace[];
 }
 
@@ -143,6 +149,36 @@ export interface WalkQuest {
   /** Ce que la quête rapporte, par paliers : un tableau, plus lisible qu'une suite d'encadrés. */
   rewards?: WalkRewardTable;
   bosses?: WalkBoss[];
+  /** Bestiaire : des fiches cliquables avec les caractéristiques, en grille illustrée. */
+  bestiary?: WalkBeastGroup[];
+}
+
+/**
+ * Une fiche d'ennemi du bestiaire : les caractéristiques relevées en jeu, et le lien vers
+ * la fiche encyclopédique. Les valeurs sont notées « début / fin » — la seconde est celle
+ * que l'ennemi atteint une fois les mondes montés en niveau, après la Forteresse Oubliée.
+ * Une valeur unique signifie que l'ennemi ne monte pas.
+ */
+export interface WalkBeast {
+  /** Slug de la fiche encyclopédique : c'est elle que la carte ouvre. */
+  entry: string;
+  hp: string;
+  atk: string;
+  def: string;
+  /** Expérience gagnée. */
+  exp: string;
+  /** Les mondes où on le croise, séparés par des virgules. */
+  worlds: LocalizedText;
+  /** Ce qu'il faut savoir pour l'affronter, en une phrase. */
+  note?: LocalizedText;
+}
+
+/** Un groupe du bestiaire : une famille, un milieu, une exclusivité Final Mix. */
+export interface WalkBeastGroup {
+  id: string;
+  title: LocalizedText;
+  intro?: LocalizedText;
+  beasts: WalkBeast[];
 }
 
 /** Tableau des récompenses d'une quête, par paliers. */

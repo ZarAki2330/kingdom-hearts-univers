@@ -454,14 +454,22 @@
     "sectionNav": "Sección anterior y siguiente",
     "previous": "Sección anterior",
     "next": "Sección siguiente",
-    "quests": "Misiones secundarias",
-    "questsLead": "Todo lo que no hace avanzar la historia: colecciones, minijuegos, torneos y jefes opcionales.",
+    "quests": "Guías y anexos",
+    "questsLead": "Todo lo que no hace avanzar la historia: colecciones, minijuegos, torneos, jefes opcionales y las páginas de referencia del juego.",
     "questTitle": "{quest} — guía de {game}",
     "relatedEntry": "Ficha de la enciclopedia",
     "rewards": "Recompensas",
     "tableWorld": "Mundo",
     "tableWhat": "Qué se obtiene",
     "tableWhere": "Dónde y cómo",
-    "backToGame": "Volver a la guía de {game}"
+    "backToGame": "Volver a la guía de {game}",
+    "bestiary": "El bestiario",
+    "statHp": "PV",
+    "statAtk": "ATQ",
+    "statDef": "DEF",
+    "statExp": "EXP",
+    "statLead": "Inicio de la partida / tras el Bastión Hueco.",
+    "showMore": "Mostrar la tabla",
+    "beastWorlds": "Mundos:"
   }
 }

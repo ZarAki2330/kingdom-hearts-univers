@@ -454,14 +454,22 @@
     "sectionNav": "Section précédente et suivante",
     "previous": "Section précédente",
     "next": "Section suivante",
-    "quests": "Quêtes annexes",
-    "questsLead": "Tout ce qui ne fait pas avancer l'histoire : collectes, mini-jeux, tournois et boss facultatifs.",
+    "quests": "Guides et annexes",
+    "questsLead": "Tout ce qui ne fait pas avancer l'histoire : collectes, mini-jeux, tournois, boss facultatifs, et les pages de référence du jeu.",
     "questTitle": "{quest} — soluce de {game}",
     "relatedEntry": "La fiche de l'encyclopédie",
     "rewards": "Les récompenses",
     "tableWorld": "Monde",
     "tableWhat": "Ce qu'on y trouve",
     "tableWhere": "Où, et comment",
-    "backToGame": "Retour à la soluce de {game}"
+    "backToGame": "Retour à la soluce de {game}",
+    "bestiary": "Le bestiaire",
+    "statHp": "PV",
+    "statAtk": "ATQ",
+    "statDef": "DÉF",
+    "statExp": "EXP",
+    "statLead": "Début de partie / après la Forteresse Oubliée.",
+    "showMore": "Afficher le tableau",
+    "beastWorlds": "Mondes :"
   }
 }

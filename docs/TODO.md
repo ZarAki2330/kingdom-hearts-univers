@@ -1,6 +1,6 @@
 # Feuille de route — Kingdom Hearts Univers
 
-**Avancement global : 66 % (41/62 tâches)**
+**Avancement global : 81 % (57/70 tâches)**
 
 Légende : `[x]` terminée · `[~]` en cours · `[>]` demandée · `[ ]` à faire
 
@@ -56,7 +56,7 @@ Couverture exhaustive de l'univers
 
 Images, navigation, profondeur des fiches
 
-- [x] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _661 entrées sur 689 illustrées (rendus officiels KH Wiki, webp 320 px, crédit sur chaque fiche) ; 28 sans image fiable, voir docs/IMAGES.md_
+- [x] Ajouter une image à chaque entrée (personnages, ennemis, mondes, Keyblades) — _663 entrées sur 688 illustrées (rendus officiels KH Wiki, webp 320 px, crédit sur chaque fiche) ; 28 sans image fiable, voir docs/IMAGES.md_
 - [x] Pagination des listes de l'encyclopédie — _48 entrées par page, liens réels ?page=, aria-current, précédent/suivant, 6 langues_
 - [x] Filtres des listes (par jeu, type, camp…) — _Jeu (liste réelle des apparitions), type, camp (alignement / rôle) + recherche accentuée ; état dans l'URL, combinable avec la pagination_
 - [x] Remplacer les jaquettes des jeux par les logos officiels (comme khdestiny.fr) — _19 logos officiels (KH Wiki, webp 800 px, fond transparent ; 0.2 et 2.8 détourés) sur cartes, chronologie et fiches ; jaquette conservée en visuel secondaire ; All-in-One et Integrum en visuel généré_
@@ -93,7 +93,7 @@ Récit de chaque jeu et chronologie de l'univers
 Guides et cheminement
 
 - [x] Structure des guides (par jeu, par monde) — _Section /soluces dans les 6 langues : index des guides, page par jeu (version couverte, sommaire des 15 sections, objectifs du 100 %) et page par section (étapes, combats avec attaques à connaître, liste de ramassage typée, « à ne pas rater », navigation précédent/suivant). Kingdom Hearts Final Mix ouvert avec le prologue et les Îles du Destin rédigés. Présentation reprise de khdestiny : grilles de tuiles illustrées pour le cheminement et pour les quêtes annexes_
-- [x] Soluce Kingdom Hearts (Final Mix) — _les 15 sections du cheminement et les 12 quêtes annexes rédigées : 99 dalmatiens, marques Trio, Forêt des Rêves Bleus, trophées, cartes postales, atelier des Mogs, ennemis spéciaux, tournois du Colisée, rapports d'Ansem, surf de la jungle, boss optionnels et fins secrètes. 71 visuels cliquables (visionneuse plein écran) : une capture du combat dans chacun des 37 encadrés, plusieurs par chapitre, toutes prises dans Kingdom Hearts et non dans les épisodes suivants_
+- [x] Soluce Kingdom Hearts (Final Mix) — _les 15 sections du cheminement et 15 pages annexes : 99 dalmatiens, marques Trio, Forêt des Rêves Bleus, trophées, cartes postales, atelier des Mogs, ennemis spéciaux, tournois du Colisée, rapports d'Ansem, surf de la jungle, boss optionnels, fins secrètes, et trois pages de référence (invocations, inventaire, bestiaire). 78 visuels cliquables (visionneuse plein écran), tous détourés sur leur canal alpha, pris dans Kingdom Hearts et non dans les épisodes suivants. L'inventaire couvre les cinq catégories — 42 armes des trois personnages, 13 objets, les objets clés, 39 accessoires et les familles de blocs Gummi — en volets dépliants, pour qu'une page de référence reste parcourable. Le bestiaire présente 39 espèces en fiches cliquables avec leurs caractéristiques (vie, attaque, défense, expérience, début de partie et après la Forteresse Oubliée), relevées sur KHDestiny et complétées au Kingdom Hearts Wiki ; six fiches d'ennemis ont été créées et les noms français officiels rétablis sur quinze autres_
 - [ ] Soluce Kingdom Hearts II (Final Mix)
 - [ ] Soluce Kingdom Hearts III + Re Mind
 - [ ] Autres jeux (BbS, DDD, CoM, Days, coded, 0.2, MoM)
@@ -118,10 +118,11 @@ Le site doit être utilisable par tous
 - [ ] Tests lecteur d'écran (NVDA) sur les pages clés
 - [x] Performance Lighthouse ≥ 95, SEO, sitemap, Open Graph — _Lighthouse ordinateur : perf 95, accessibilité 100, bonnes pratiques 100, SEO 100 en moyenne sur 6 pages. Sitemap (4 296 URL avec hreflang), robots.txt, manifeste, favicon et icônes, image de partage 1200×630, canonical et Open Graph sur toutes les pages. Listes de l'encyclopédie et des jeux rendues côté serveur (cartes dans le HTML), polices via next/font (décalage de mise en page ramené de 0,32 à 0), plus de redirection selon la langue du navigateur_
 
-## VIII. Lancement — 1/3
+## VIII. Lancement — 1/4
 
 Devenir LA référence
 
+- [ ] Relecture générale de fin de projet — _repasser sur tous les textes : traductions, formulations, véracité des informations, pertinence des images_
 - [ ] Nom de domaine et hébergement définitif
 - [x] Page À propos, mentions légales, crédits (Square Enix/Disney)
 - [ ] Contributions communautaires (issues, formulaire)

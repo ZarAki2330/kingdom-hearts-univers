@@ -454,14 +454,22 @@
     "sectionNav": "Previous and next section",
     "previous": "Previous section",
     "next": "Next section",
-    "quests": "Side quests",
-    "questsLead": "Everything that does not move the story forward: collections, mini-games, tournaments and optional bosses.",
+    "quests": "Guides and reference",
+    "questsLead": "Everything that does not move the story along: collections, mini-games, tournaments, optional bosses, and the game's reference pages.",
     "questTitle": "{quest} — {game} walkthrough",
     "relatedEntry": "Encyclopedia entry",
     "rewards": "Rewards",
     "tableWorld": "World",
     "tableWhat": "What you get",
     "tableWhere": "Where, and how",
-    "backToGame": "Back to the {game} walkthrough"
+    "backToGame": "Back to the {game} walkthrough",
+    "bestiary": "Bestiary",
+    "statHp": "HP",
+    "statAtk": "ATK",
+    "statDef": "DEF",
+    "statExp": "EXP",
+    "statLead": "Early game / after Hollow Bastion.",
+    "showMore": "Show the table",
+    "beastWorlds": "Worlds:"
   }
 }

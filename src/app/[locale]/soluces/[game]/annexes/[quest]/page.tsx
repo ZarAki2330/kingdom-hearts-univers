@@ -7,7 +7,8 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getQuest, getWalkthrough, tileImage, walkthroughs, writtenQuests } from "@/data/walkthrough";
-import { BossCard, TextBlock, WalkDataTable, paragraphs } from "@/components/WalkthroughBits";
+import { BossCard, TextBlock, WalkTableBlock, paragraphs } from "@/components/WalkthroughBits";
+import { BestiaryGrid } from "@/components/BestiaryGrid";
 import { languageAlternates, localeUrl } from "@/lib/site";
 import { createLinker } from "@/lib/autolink";
 import { ImageZoom } from "@/components/ImageZoom";
@@ -105,16 +106,22 @@ export default async function QuestPage({ params }: Props) {
           ))}
       </header>
 
+      {quest.bestiary && (
+        <BestiaryGrid
+          groups={quest.bestiary}
+          locale={locale}
+          labels={{
+            hp: t("statHp"),
+            atk: t("statAtk"),
+            def: t("statDef"),
+            exp: t("statExp"),
+            worlds: t("beastWorlds"),
+          }}
+        />
+      )}
+
       {(quest.tables ?? []).map((table) => (
-        // Pas de <section> ici : le tableau défilant porte déjà un repère nommé par ce
-        // titre, et deux repères de même nom se gênent au lecteur d'écran.
-        <div key={table.id} className="mt-12">
-          <h2 id={`t-${table.id}`} className="text-2xl font-bold">
-            {localized(table.title, locale)}
-          </h2>
-          {table.intro && <p className="mt-2 text-text-2">{localized(table.intro, locale)}</p>}
-          <WalkDataTable table={table} locale={locale} labels={tableLabels} />
-        </div>
+        <WalkTableBlock key={table.id} table={table} locale={locale} labels={tableLabels} />
       ))}
 
       {(quest.steps ?? []).map((s) => (

@@ -454,14 +454,22 @@
     "sectionNav": "Voriger und nächster Abschnitt",
     "previous": "Voriger Abschnitt",
     "next": "Nächster Abschnitt",
-    "quests": "Nebenaufgaben",
-    "questsLead": "Alles, was die Geschichte nicht voranbringt: Sammlungen, Minispiele, Turniere und optionale Bosse.",
+    "quests": "Anleitungen und Referenz",
+    "questsLead": "Alles, was die Geschichte nicht voranbringt: Sammlungen, Minispiele, Turniere, optionale Bosse und die Nachschlageseiten des Spiels.",
     "questTitle": "{quest} — Lösungsweg zu {game}",
     "relatedEntry": "Eintrag im Lexikon",
     "rewards": "Belohnungen",
     "tableWorld": "Welt",
     "tableWhat": "Was es gibt",
     "tableWhere": "Wo und wie",
-    "backToGame": "Zurück zum Lösungsweg zu {game}"
+    "backToGame": "Zurück zum Lösungsweg zu {game}",
+    "bestiary": "Das Bestiarium",
+    "statHp": "KP",
+    "statAtk": "ANG",
+    "statDef": "VER",
+    "statExp": "EP",
+    "statLead": "Spielbeginn / nach Hohle Bastion.",
+    "showMore": "Tabelle anzeigen",
+    "beastWorlds": "Welten:"
   }
 }

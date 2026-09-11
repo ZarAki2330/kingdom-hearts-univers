@@ -454,14 +454,22 @@
     "sectionNav": "Sezione precedente e successiva",
     "previous": "Sezione precedente",
     "next": "Sezione successiva",
-    "quests": "Missioni secondarie",
-    "questsLead": "Tutto ciò che non fa avanzare la storia: raccolte, minigiochi, tornei e boss facoltativi.",
+    "quests": "Guide e schede",
+    "questsLead": "Tutto ciò che non fa avanzare la storia: collezioni, minigiochi, tornei, boss facoltativi e le pagine di riferimento del gioco.",
     "questTitle": "{quest} — soluzione di {game}",
     "relatedEntry": "Scheda dell'enciclopedia",
     "rewards": "Ricompense",
     "tableWorld": "Mondo",
     "tableWhat": "Cosa si ottiene",
     "tableWhere": "Dove e come",
-    "backToGame": "Torna alla soluzione di {game}"
+    "backToGame": "Torna alla soluzione di {game}",
+    "bestiary": "Il bestiario",
+    "statHp": "PV",
+    "statAtk": "ATT",
+    "statDef": "DIF",
+    "statExp": "EXP",
+    "statLead": "Inizio partita / dopo il Bastione Cavo.",
+    "showMore": "Mostra la tabella",
+    "beastWorlds": "Mondi:"
   }
 }
