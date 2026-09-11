@@ -57,7 +57,9 @@ function BeastCard({
           {stats.map(([label, value]) => (
             <div key={label} className="bg-bg-2 px-1 py-1.5">
               <dt className="text-[0.65rem] font-bold uppercase tracking-wider text-text-2">{label}</dt>
-              <dd className="tabular whitespace-nowrap text-[0.8125rem] font-semibold">{value}</dd>
+              {/* Les fourchettes des boss (« 240-300 / 900 ») sont bien plus longues qu'un
+                  chiffre seul : la valeur passe à la ligne au lieu de déborder de sa case. */}
+              <dd className="tabular text-[0.8125rem] font-semibold leading-snug [overflow-wrap:anywhere]">{value}</dd>
             </div>
           ))}
         </dl>
@@ -94,7 +96,11 @@ export function BestiaryGrid({
           <h2 id={`b-${g.id}`} className="text-2xl font-bold">
             {localized(g.title, locale)}
           </h2>
-          {g.intro && <p className="mt-2 text-text-2">{localized(g.intro, locale)}</p>}
+          {g.intro && (
+            <p className="mt-2 text-text-2">
+              <RichText text={localized(g.intro, locale)} />
+            </p>
+          )}
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {g.beasts.map((b) => (
               <BeastCard key={b.entry} beast={b} locale={locale} labels={labels} />

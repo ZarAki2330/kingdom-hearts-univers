@@ -191,13 +191,6 @@ export interface WalkRewardTable {
   note?: LocalizedText;
 }
 
-/** Un point à cocher dans le bilan de complétion du jeu. */
-export interface CompletionGoal {
-  id: string;
-  title: LocalizedText;
-  text: LocalizedText;
-}
-
 /** La soluce complète d'un jeu. */
 export interface Walkthrough {
   /** Slug du jeu (src/data/games.ts). */
@@ -206,8 +199,6 @@ export interface Walkthrough {
   version: LocalizedText;
   /** Présentation : ce que le guide couvre et comment le lire. */
   intro: LocalizedText;
-  /** Ce que réclame le 100 %, listé une fois pour toutes. */
-  completion: CompletionGoal[];
   /** Le cheminement, dans l'ordre de la partie. */
   sections: WalkSection[];
   /** Les quêtes annexes, indépendantes du cheminement. */

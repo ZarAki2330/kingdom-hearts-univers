@@ -6,7 +6,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { getWalkthrough, progress, tileAccent, tileImage, walkthroughs } from "@/data/walkthrough";
 import { GameCover } from "@/components/GameCover";
-import { RichText, paragraphs } from "@/components/WalkthroughBits";
+import { Disclosure, RichText, paragraphs } from "@/components/WalkthroughBits";
 import { WalkTile, WalkTileGrid } from "@/components/WalkTile";
 import { languageAlternates, localeUrl } from "@/lib/site";
 import { createLinker } from "@/lib/autolink";
@@ -82,11 +82,10 @@ export default async function WalkthroughGamePage({ params }: Props) {
         <p className="mt-4 text-sm text-text-2">{t("progress", { done: p.done, total: p.total })}</p>
       </header>
 
-      <section aria-labelledby="sommaire" className="mt-14">
-        <h2 id="sommaire" className="text-2xl font-bold">
-          {t("contents")}
-        </h2>
-        <p className="mt-3 text-text-2">{t("contentsLead")}</p>
+      {/* Les deux sommaires sont dépliables et ouverts au chargement : la page aligne
+          quinze sections puis quinze annexes, et replier le premier bloc est le seul
+          moyen d'atteindre le second sans faire défiler deux écrans de vignettes. */}
+      <Disclosure id="sommaire" title={t("contents")} lead={t("contentsLead")} open className="mt-14">
         <WalkTileGrid>
           {w.sections.map((s, i) => (
             <WalkTile
@@ -102,13 +101,9 @@ export default async function WalkthroughGamePage({ params }: Props) {
             />
           ))}
         </WalkTileGrid>
-      </section>
+      </Disclosure>
 
-      <section aria-labelledby="annexes" className="mt-14">
-        <h2 id="annexes" className="text-2xl font-bold">
-          {t("quests")}
-        </h2>
-        <p className="mt-3 text-text-2">{t("questsLead")}</p>
+      <Disclosure id="annexes" title={t("quests")} lead={t("questsLead")} open className="mt-14">
         <WalkTileGrid>
           {w.quests.map((q) => (
             <WalkTile
@@ -123,22 +118,7 @@ export default async function WalkthroughGamePage({ params }: Props) {
             />
           ))}
         </WalkTileGrid>
-      </section>
-
-      <section aria-labelledby="completion" className="mt-14">
-        <h2 id="completion" className="text-2xl font-bold">
-          {t("completion")}
-        </h2>
-        <p className="mt-3 text-text-2">{t("completionLead")}</p>
-        <dl className="mt-4 grid gap-3 sm:grid-cols-2">
-          {w.completion.map((g) => (
-            <div key={g.id} className="card p-5">
-              <dt className="font-bold">{localized(g.title, locale)}</dt>
-              <dd className="mt-1.5 leading-relaxed text-text-2">{localized(g.text, locale)}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
+      </Disclosure>
     </article>
   );
 }

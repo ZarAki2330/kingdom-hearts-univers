@@ -189,6 +189,58 @@ export function CollectibleList({
 }
 
 /**
+ * Une section dépliable : un `<details>` natif, donc qui s'ouvre sans JavaScript et que la
+ * recherche du navigateur déplie toute seule. Le chevron pivote à l'ouverture ; il est
+ * décoratif, l'état réel étant porté par `<summary>` et annoncé par le lecteur d'écran.
+ */
+export function Disclosure({
+  id,
+  title,
+  lead,
+  open = false,
+  className = "",
+  panelClassName = "",
+  children,
+}: {
+  id: string;
+  title: string;
+  lead?: string;
+  /** Ouverte au chargement. Les sommaires le sont ; les longues listes de référence, non. */
+  open?: boolean;
+  className?: string;
+  panelClassName?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <details open={open} className={`group/volet ${className}`}>
+      <summary className="-mx-1 cursor-pointer list-none px-1 py-1 marker:content-none [&::-webkit-details-marker]:hidden">
+        <span className="flex items-center gap-3">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            className="h-5 w-5 shrink-0 text-accent transition-transform group-open/volet:rotate-90 motion-reduce:transition-none"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m9 5 7 7-7 7" />
+          </svg>
+          <h2 id={id} className="text-2xl font-bold">
+            {title}
+          </h2>
+        </span>
+      </summary>
+      <div className={panelClassName}>
+        {lead && <p className="mt-3 text-text-2">{lead}</p>}
+        {children}
+      </div>
+    </details>
+  );
+}
+
+/**
  * Un tableau de soluce avec son titre et son chapeau. Les longues listes de référence
  * (l'inventaire, le bestiaire) sont marquées `collapsed` et arrivent repliées : une page
  * qui aligne cinq tableaux de trente lignes devient autrement impraticable, il faut faire
@@ -205,32 +257,25 @@ export function WalkTableBlock({
   labels: { world: string; what: string; where: string; requires: string };
 }) {
   const title = localized(table.title, locale);
-  const intro = table.intro ? <p className="mt-2 text-text-2">{localized(table.intro, locale)}</p> : null;
+  // Le chapeau passe par RichText : les données y écrivent du **gras**, qui s'affichait
+  // tel quel tant que le texte partait directement dans un <p>.
+  const intro = table.intro ? (
+    <p className="mt-2 text-text-2">
+      <RichText text={localized(table.intro, locale)} />
+    </p>
+  ) : null;
 
   if (table.collapsed) {
     return (
-      <details className="group mt-6 rounded-xl border border-line bg-bg-2/40 px-4 py-3 sm:px-5">
-        <summary className="-mx-1 cursor-pointer list-none px-1 py-1 marker:content-none [&::-webkit-details-marker]:hidden">
-          <span className="flex items-center gap-3">
-            <span
-              aria-hidden="true"
-              className="grid h-6 w-6 shrink-0 place-items-center rounded-md border border-line text-accent transition-transform"
-            >
-              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 5v14M5 12h14" className="group-open:hidden" />
-                <path d="M5 12h14" className="hidden group-open:block" />
-              </svg>
-            </span>
-            <h2 id={`t-${table.id}`} className="text-2xl font-bold">
-              {title}
-            </h2>
-          </span>
-        </summary>
-        <div className="pb-2">
-          {intro}
-          <WalkDataTable table={table} locale={locale} labels={labels} />
-        </div>
-      </details>
+      <Disclosure
+        id={`t-${table.id}`}
+        title={title}
+        className="mt-6 rounded-xl border border-line bg-bg-2/40 px-4 py-3 sm:px-5"
+        panelClassName="pb-2"
+      >
+        {intro}
+        <WalkDataTable table={table} locale={locale} labels={labels} />
+      </Disclosure>
     );
   }
 

@@ -7,7 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getGame, localized } from "@/data/games";
 import { CATEGORY_SLUG, getEntry } from "@/data/encyclopedia";
 import { getQuest, getWalkthrough, tileImage, walkthroughs, writtenQuests } from "@/data/walkthrough";
-import { BossCard, TextBlock, WalkTableBlock, paragraphs } from "@/components/WalkthroughBits";
+import { BossCard, RichText, TextBlock, WalkTableBlock, paragraphs } from "@/components/WalkthroughBits";
 import { BestiaryGrid } from "@/components/BestiaryGrid";
 import { languageAlternates, localeUrl } from "@/lib/site";
 import { createLinker } from "@/lib/autolink";
@@ -189,7 +189,11 @@ export default async function QuestPage({ params }: Props) {
           <h2 id="recompenses" className="text-2xl font-bold">
             {t("rewards")}
           </h2>
-          {quest.rewards.intro && <p className="mt-2 text-text-2">{localized(quest.rewards.intro, locale)}</p>}
+          {quest.rewards.intro && (
+            <p className="mt-2 text-text-2">
+              <RichText text={localized(quest.rewards.intro, locale)} />
+            </p>
+          )}
           <div role="region" aria-labelledby="recompenses" tabIndex={0} className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[24rem] border-collapse overflow-hidden rounded-lg border border-line text-sm">
               <thead>

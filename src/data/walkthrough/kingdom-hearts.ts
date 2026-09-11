@@ -17,56 +17,6 @@ export const walkthrough: Walkthrough = {
     "Cette soluce couvre le premier Kingdom Hearts du début à la fin, et pas seulement le fil de l'histoire : chaque section indique aussi les coffres, les trinités, les dalmatiens et les mini-jeux qu'on y trouve, pour terminer le jeu à 100 %.\n\nElle est écrite pour la version Final Mix, la seule disponible aujourd'hui. Quand une chose diffère de la version d'origine sortie en 2002, c'est signalé.\n\nLes sections se lisent dans l'ordre de la partie. Si vous jouez sans chercher le 100 %, suivez les étapes et ignorez les listes de ramassage : elles sont toujours à part.\n\nUn mot sur la difficulté avant de lancer une partie : Débutant offre d'emblée des objets de renfort, Expert double les dégâts encaissés. Le choix change aussi les conditions des fins secrètes — en Expert, terminer le jeu suffit pour la première ; en Normal, il faut sceller tous les trous de serrure, réunir les 99 dalmatiens et gagner la coupe de l'Hadès. Pour une partie visant le 100 %, Normal est le bon compromis.",
     "This guide covers the first Kingdom Hearts from beginning to end, and not only the main story: each section also lists the chests, Trinity Marks, puppies and mini-games found there, so the game can be finished at 100%.\n\nIt is written for the Final Mix version, the only one available today. Whenever something differs from the original 2002 release, it is pointed out.\n\nSections follow the order of a normal playthrough. If you are not chasing 100%, follow the steps and ignore the collection lists: they are always kept separate.\n\nA word on difficulty before you start: Beginner hands you stat-boosting items straight away, Proud doubles the damage you take. The choice also changes the secret-ending conditions — on Proud, finishing the game is enough for the first; on Normal you must seal every keyhole, gather all 99 puppies and win the Hades Cup. For a 100% run, Normal is the right compromise.",
   ),
-  completion: [
-    {
-      id: "journal",
-      title: L("Le Journal de Jiminy complet", "Jiminy's Journal completed"),
-      text: L(
-        "C'est l'objectif qui contient presque tous les autres. Il demande d'avoir vaincu au moins une fois chaque Sans-cœur du jeu, rencontré chaque personnage, rempli les fiches des mondes, activé toutes les trinités, joué à tous les mini-jeux et réuni les 99 dalmatiens. Final Mix ajoute une tête de Mickey jaune à côté de chaque section terminée : c'est votre indicateur de progression.",
-        "This is the goal that contains nearly all the others. It requires defeating every Heartless in the game at least once, meeting every character, filling in the world entries, activating every Trinity Mark, playing every mini-game and gathering all 99 puppies. Final Mix puts a yellow Mickey head next to each completed section: that is your progress indicator.",
-      ),
-    },
-    {
-      id: "dalmatiens",
-      title: L("Les 99 dalmatiens", "All 99 puppies"),
-      text: L(
-        "Les chiots sont cachés par trois dans des coffres répartis dans tous les mondes, souvent derrière une trinité ou une capacité de déplacement obtenue tard. Les ramener chez Pongo et Perdita, à la Ville de Traverse, débloque des récompenses par paliers — dont l'Orichalque nécessaire à l'Ultima.",
-        "The puppies are hidden three to a chest across every world, often behind a Trinity Mark or a movement ability obtained late. Returning them to Pongo and Perdita in Traverse Town unlocks rewards in tiers — including the Orichalcum needed for the Ultima Weapon.",
-      ),
-    },
-    {
-      id: "trinites",
-      title: L("Toutes les trinités", "Every Trinity Mark"),
-      text: L(
-        "Cinq trinités s'apprennent au fil de l'aventure (Saut, Charge, Échelle, Poussée, Détection). Certaines ouvrent la route, la plupart cachent un trésor. Presque toutes restent activables à tout moment : les manquer ne coûte que du temps, sauf une, dans le manoir d'Oogie Boogie, qui disparaît avec le manoir dans la version d'origine.",
-        "Five Trinity commands are learned along the way (Jump, Charge, Ladder, Push, Detect). Some open the way forward, most hide treasure. Nearly all stay available at any time: missing one only costs time — except one in Oogie's Manor, which disappears with the manor in the original release.",
-      ),
-    },
-    {
-      id: "rapports",
-      title: L("Les treize rapports d'Ansem", "All thirteen Ansem's Reports"),
-      text: L(
-        "Onze rapports se ramassent au fil de l'histoire ; les trois derniers, ajoutés par Final Mix, se gagnent dans les coupes du Colisée et sur les boss optionnels. Le Journal les archive et leur lecture éclaire toute la suite de la saga.",
-        "Eleven reports are found along the story; the last three, added by Final Mix, come from the Coliseum cups and the optional bosses. The Journal archives them, and reading them lights up the rest of the saga.",
-      ),
-    },
-    {
-      id: "synthese",
-      title: L("La synthèse et l'Ultima", "Synthesis and the Ultima Weapon"),
-      text: L(
-        "Le moogle de la Ville de Traverse fabrique les objets rares à partir de matériaux lâchés par les Sans-cœur. Compléter la liste mène à l'Ultima, la meilleure Keyblade du jeu, qui réclame notamment des Orichalques trouvés en très petit nombre.",
-        "The moogle in Traverse Town crafts rare items from materials dropped by Heartless. Completing the list leads to the Ultima Weapon, the game's best Keyblade, which notably requires Orichalcum found only in very small numbers.",
-      ),
-    },
-    {
-      id: "boss-optionnels",
-      title: L("Les boss optionnels", "The optional bosses"),
-      text: L(
-        "Le Fantôme à Pays Imaginaire, Kurt Zisa à Agrabah, Sephiroth au Colisée et, ajouté par Final Mix, l'Inconnu à la Forteresse Oubliée. Ce sont les combats les plus durs du jeu, tous facultatifs, tous récompensés par un objet rare ou un rapport d'Ansem.",
-        "The Phantom in Neverland, Kurt Zisa in Agrabah, Sephiroth at the Coliseum and, added by Final Mix, the Unknown in Hollow Bastion. These are the hardest fights in the game, all optional, each rewarded with a rare item or an Ansem's Report.",
-      ),
-    },
-  ],
   sections: [
     {
       id: "plongee-au-coeur",
