@@ -702,4 +702,5 @@ export const entryImages: Record<string, EntryImage> = {
   "volcano-lord": { src: "/images/encyclopedia/enemies/volcano-lord.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Volcanic_Lord_KHUX.png)", width: 320, height: 224 },
   "blizzard-lord": { src: "/images/encyclopedia/enemies/blizzard-lord.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Blizzard_Lord_KHUX.png)", width: 320, height: 223 },
   "shenzi-banzai-and-ed": { src: "/images/encyclopedia/characters/shenzi-banzai-and-ed.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Shenzi.png)", width: 260, height: 320 },
+  "the-experiment": { src: "/images/encyclopedia/enemies/the-experiment.webp", credit: "© Square Enix / Disney — via Kingdom Hearts Wiki (Experiment.png)", width: 246, height: 320 },
 };

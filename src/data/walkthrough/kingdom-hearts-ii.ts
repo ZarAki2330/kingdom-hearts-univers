@@ -1228,10 +1228,70 @@ export const walkthrough: Walkthrough = {
     {
       id: "forteresse-oubliee-4",
       title: L("Forteresse Oubliée", "Hollow Bastion"),
-      subtitle: L("Quatrième visite", "Fourth visit"),
+      subtitle: L("Quatrième visite — la bataille des mille", "Fourth visit — the battle of a thousand"),
       world: "radiant-garden",
       level: "30",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "La grande bataille du jeu, et l'une de ses séquences les plus mémorables : la ville est assiégée, et Sora la traverse en combattant aux côtés de tous les alliés qu'il s'est faits depuis le premier épisode.\n\nPoint d'orgue : **mille Sans-cœur à abattre seul**, sans limite de temps. C'est moins une épreuve de difficulté qu'une occasion unique — c'est l'endroit idéal pour monter la Fusion **Souvenance** d'un coup.\n\nDeux choses à savoir avant d'entrer. Le trou dans le mur de briques de la Poterne mène à la **Caverne du Souvenir** : une quête annexe qu'il vaut mieux garder pour la fin, quand les Fusions sont au maximum. Et **Séphiroth** apparaît ici, toujours à la recherche de Cloud — ce n'est pas encore le moment.\n\nAprès cette visite, l'atlas se referme en grande partie : seuls la **Terre des Dragons**, le **Château de la Bête** et **Port Royal** restent accessibles. Et tous les points de sauvegarde doivent être **repassés une fois** pour redevenir des destinations.",
+        "The game's great battle, and one of its most memorable sequences: the town is under siege, and Sora crosses it fighting alongside every ally he has made since the first game.\n\nThe centrepiece: **a thousand Heartless to cut down alone**, with no time limit. It is less a test of difficulty than a unique opportunity — this is the ideal place to level **Limit Form** in one go.\n\nTwo things to know before going in. The hole in the Postern's brick wall leads to the **Cavern of Remembrance**: a side quest better kept for the end, when your Drive Forms are maxed. And **Sephiroth** appears here, still looking for Cloud — it is not time yet.\n\nAfter this visit the world map largely closes: only **The Land of Dragons**, **Beast's Castle** and **Port Royal** stay open. And every save point has to be **walked over once more** to become a destination again.",
+      ),
+      steps: [
+        {
+          id: "traversee",
+          title: L("La traversée de la ville", "Crossing the town"),
+          text: L(
+            "Examinez l'ordinateur : Mickey arrive et livre de sérieuses révélations sur Ansem et sur votre véritable ennemi. Les secousses annoncent l'assaut — sortez affronter un groupe mêlant Sans-cœur et Similis. Les **Albatros** finissent par vous soutenir.\n\nÀ la **Poterne**, **Séphiroth** cherche Cloud. La bataille a ouvert un trou dans un mur de briques : c'est l'entrée de la **Caverne du Souvenir**. Notez-la et passez.\n\nPrenez le chantier en combattant, puis les Fortifications, d'où l'on mesure l'ampleur du combat. Après la scène, **faites demi-tour vers le chantier** : une nouvelle portion de la zone s'est ouverte, avec un **Bonus PC** et une **Formule lunaire**.\n\nRevenez aux Fortifications et continuez tout droit. Mickey essaie de vous faire partir ; deux scènes propres à Final Mix s'enchaînent, et Demyx vous attend aux portes du château.",
+            "Examine the computer: Mickey arrives and makes some serious revelations about Ansem and about your real enemy. The tremors announce the assault — go out and face a mix of Heartless and Nobodies. The **Gullwings** eventually back you up.\n\nAt the **Postern**, **Sephiroth** is looking for Cloud. The battle has torn a hole in a brick wall: that is the entrance to the **Cavern of Remembrance**. Note it and move on.\n\nCross the Restoration Site fighting, then the Bailey, from which you can see the scale of the battle. After the scene, **double back to the Restoration Site**: a new part of the area has opened, with an **AP Boost** and a **Moon Recipe**.\n\nReturn to the Bailey and carry straight on. Mickey tries to send you away; two Final Mix scenes follow, and Demyx is waiting at the castle gates.",
+          ),
+        },
+        {
+          id: "quatre-allies",
+          title: L("Les quatre combats, et le couloir de cristal", "The four fights, and the Crystal Fissure"),
+          text: L(
+            "Séparé de Donald et Dingo, vous continuez seul — mais jamais vraiment seul. Quatre zones, quatre alliés qui viennent prêter main-forte : **Youffie**, puis **Léon**, puis **Tifa**, et enfin **Cloud**.\n\nLa route se termine au **couloir de cristal**, où vous retrouvez vos compagnons. Vous y obtenez l'**élément de Soin** — qui renforce la magie curative — et de nombreux coffres : la **carte du grand vallon**, des **Pages déchirées**, un **Bonus PC** et un **Cristal de fougue**.\n\n**Pensez à rééquiper Dingo** : ses objets et compétences ont été remis à zéro par la séparation.",
+            "Cut off from Donald and Goofy, you carry on alone — but never really alone. Four areas, four allies who step in: **Yuffie**, then **Leon**, then **Tifa**, and finally **Cloud**.\n\nThe road ends at the **Crystal Fissure**, where you find your companions again. There you receive the **Cure element** — which strengthens your healing magic — and a run of chests: the **Great Maw map**, **Torn Pages**, an **AP Boost** and a **Frost Crystal**.\n\n**Remember to re-equip Goofy**: his items and abilities were reset by the separation.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "demyx-2",
+          name: L("Demyx", "Demyx"),
+          entry: "demyx",
+          level: "31",
+          reward: L("Sora : un emplacement d'armure supplémentaire et l'élément de Glace. Donald : Booster Glace. Dingo : +4 points de vie.", "Sora: an extra armour slot and the Blizzard element. Donald: Blizzard Boost. Goofy: +4 HP."),
+          tactics: L(
+            "Rien à voir avec le Colisée : **Demyx se bat pour de bon cette fois**, et c'est un adversaire sérieux. Vérifiez que vos coéquipiers ont des Potions+ avant d'entrer.\n\nIl est de type Glace, donc **le Glacier ne lui fait rien**. Le **Brasier** est bien plus efficace, mais il faut être près de lui pour le placer — ce qui n'est pas confortable.\n\nLe combat s'ouvre sur ce que vous connaissez : **50 clones en 40 secondes**. **Contre-danse** et la magie en viennent à bout. Une fois réussi, Demyx est sonné : c'est votre plus grosse fenêtre de dégâts du combat, ne la gâchez pas.\n\nEnsuite, ses attaques : des **boules d'eau à distance** — esquivez latéralement ; des **gouttes géantes tombant du ciel** — courez ; et une **charge suivie de colonnes d'eau** — esquivez sur le côté, puis éloignez-vous. Après chacune, il y a un court temps mort : c'est là qu'on frappe. Essayez de **l'envoyer en l'air**, il devient une cible très facile.\n\nQuand il approche pour frapper de son instrument, **Vedettournement** contre-attaque. Ratez-la, et Sora part en l'air.\n\nEt le vrai piège, en fin de combat : **dix clones à détruire en dix secondes**. Échouez, et vous perdez, quelle que soit votre vie. Tenez-vous prêt.\n\nPassé ce cap, il devient franchement dangereux — notamment ses **quatre barrières aquatiques** successives, qu'il pousse devant lui. Traversez-les pour l'interrompre, ou passez la **Foudre** dedans.",
+            "Nothing like the Coliseum: **Demyx actually fights this time**, and he is a serious opponent. Check your party has Hi-Potions before going in.\n\nHe is ice-typed, so **Blizzard does nothing to him**. **Fire** is far more effective, but you have to be close to land it — which is not comfortable.\n\nThe fight opens with what you know: **50 clones in 40 seconds**. **Wild Dance** and magic clear them. Once done, Demyx is stunned: that is your biggest damage window of the fight, do not waste it.\n\nThen his attacks: **water balls at range** — dodge sideways; **giant drops falling from the sky** — run; and a **charge followed by columns of water** — sidestep, then get clear. After each there is a short lull: that is when you hit. Try to **knock him into the air**, he becomes a very easy target.\n\nWhen he closes in to strike with his sitar, **Show Stealer** counters. Miss it, and Sora is thrown into the air.\n\nAnd the real trap, late in the fight: **ten clones to destroy in ten seconds**. Fail, and you lose, whatever your HP. Be ready.\n\nPast that point he gets genuinely dangerous — notably his **four successive water barriers**, which he pushes ahead of him. Break through them to interrupt him, or put **Thunder** through them.",
+          ),
+          attacks: [
+            { name: L("50 clones en 40 secondes", "50 clones in 40 seconds"), note: L("L'ouverture. Contre-danse, et il reste sonné après.", "The opener. Wild Dance, and he stays stunned afterwards.") },
+            { name: L("10 clones en 10 secondes", "10 clones in 10 seconds"), note: L("En fin de combat. Échouer, c'est perdre — quelle que soit votre vie.", "Late in the fight. Failing means losing — whatever your HP.") },
+            { name: L("Quatre barrières aquatiques", "Four water barriers"), note: L("Les traverser pour l'interrompre, ou la Foudre dedans.", "Break through to interrupt him, or Thunder through them.") },
+          ],
+        },
+        {
+          id: "mille",
+          name: L("Les mille Sans-cœur", "The thousand Heartless"),
+          entry: "armored-knight",
+          level: "32",
+          reward: L("Estocade.", "Magic Lock-On."),
+          tactics: L(
+            "**Mille**, seul, dans le Grand Vallon, **sans limite de temps**. C'est une séquence de spectacle plus qu'une difficulté, et elle est faite pour être savourée.\n\nDeux espèces seulement, chacune avec sa commande réaction :\n\n- **Carapaçons** : la commande **Soleil Levant** propulse Sora en l'air puis le lance Keyblade en avant à travers le tas.\n- **Androïdes** : **Saisir** s'empare de l'un d'eux, puis **Balayage laser** retourne son propre rayon contre les autres. On peut enchaîner plusieurs fois avec le même.\n\nEt une recommandation qui vaut plus que la victoire elle-même : **c'est l'occasion rêvée de monter la Fusion Souvenance**. Mille ennemis à faire tomber sans chronomètre ne se représentera pas.",
+            "**A thousand**, alone, in the Great Maw, with **no time limit**. It is a set piece more than a challenge, and it is meant to be enjoyed.\n\nOnly two species, each with its Reaction Command:\n\n- **Armored Knights**: the **Rising Sun** command launches Sora into the air then sends him Keyblade-first through the pile.\n- **Surveillance Robots**: **Grab** takes hold of one, then **Laser Sweep** turns its own beam on the others. You can chain it several times with the same one.\n\nAnd one recommendation worth more than the victory itself: **this is the perfect chance to level Limit Form**. A thousand enemies to cut down with no clock will not come round again.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×2", "AP Boost ×2"), where: L("Dans la portion du chantier qui s'ouvre après la scène des Fortifications, et au couloir de cristal.", "In the part of the Restoration Site that opens after the Bailey scene, and at the Crystal Fissure.") },
+        { kind: "ability", label: L("Élément de Soin, puis Estocade", "Cure element, then Magic Lock-On"), where: L("Le couloir de cristal, puis les mille Sans-cœur.", "The Crystal Fissure, then the thousand Heartless.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 1", "Ansem's Report 1"), where: L("Après la confrontation avec Xemnas, en fin de section.", "After the confrontation with Xemnas, at the end of the section.") },
+        { kind: "keyblade", label: L("Albatros", "Gull Wing"), where: L("En parlant à Yuna sur la Poterne, en revenant après la section.", "By talking to Yuna at the Postern, coming back after the section.") },
+      ],
+      missable: [
+        L("Après cette visite, **l'atlas se referme** sur trois mondes seulement — Terre des Dragons, Château de la Bête, Port Royal —, et **tous les points de sauvegarde doivent être repassés** une fois pour redevenir des destinations.", "After this visit the **world map closes down** to three worlds only — The Land of Dragons, Beast's Castle, Port Royal — and **every save point has to be walked over** once more to become a destination again."),
+      ],
     },
     {
       id: "terre-des-dragons-2",
@@ -1239,79 +1299,542 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Deuxième visite", "Second visit"),
       world: "land-of-dragons",
       level: "35",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Une visite courte, mais deux combats mémorables : le **mystérieux inconnu** en manteau noir, et le **Membranator**, l'un des plus gros Sans-cœur du jeu.\n\nElle donne aussi l'un des meilleurs lots de coffres de la partie : la salle du trône du Palais impérial en aligne **huit**, dont un **Orichalque** et deux **Bonus PC**.",
+        "A short visit, but two memorable fights: the **mysterious stranger** in the black coat, and the **Storm Rider**, one of the biggest Heartless in the game.\n\nIt also gives one of the best chest hauls of the run: the Imperial Palace's throne room lines up **eight**, including an **Orichalcum** and two **AP Boosts**.",
+      ),
+      steps: [
+        {
+          id: "sommet",
+          title: L("Le sommet, et l'inconnu", "The summit, and the stranger"),
+          text: L(
+            "Un individu en manteau de l'Organisation s'enfuit dans les montagnes ; Mulan propose son aide pour le suivre jusqu'au **Sommet**.\n\nVous y êtes attaqué une seconde fois par une nuée d'**Hélicopiafs**. Pendant que vos équipiers s'en chargent, vous affrontez l'inconnu **seul à seul**.\n\nIl finit par fuir — et Sora est convaincu que c'est Riku.\n\nEn redescendant, un gigantesque Sans-cœur file vers le Palais impérial. Poursuivez-le jusqu'à la cour, où des Sans-cœur vous attendent : la **Maîtrise** y fait merveille, et récolte les orbes de flux dont elle a besoin pour monter.",
+            "A figure in an Organisation coat flees into the mountains; Mulan offers to help you follow him to the **Summit**.\n\nYou are attacked there a second time by a swarm of **Rapid Thrusters**. While your party deals with them, you face the stranger **one on one**.\n\nHe eventually flees — and Sora is convinced it is Riku.\n\nOn the way back down, a huge Heartless heads for the Imperial Palace. Chase it to the courtyard, where Heartless are waiting: **Master Form** works wonders there, and gathers the Drive orbs it needs to level.",
+          ),
+        },
+        {
+          id: "palais",
+          title: L("Le Palais impérial", "The Imperial Palace"),
+          text: L(
+            "Les portes sont verrouillées ; Mulan trouve le moyen d'entrer. À l'intérieur, un autre membre de l'Organisation : **Xigbar**, qui s'échappe en vous laissant des **Snipers** et des Reflets.\n\nLa salle du trône est le gros lot de la visite — **huit coffres** : la **carte du Palais**, un **Orichalque**, un **Cristal de mithril**, des **Pages déchirées**, un **Bonus PC**, une **Formule souveraine**, un **Bouclier d'Ogre** et un second **Bonus PC**.\n\nRessortez pour affronter le Membranator.",
+            "The gates are locked; Mulan finds a way in. Inside, another Organisation member: **Xigbar**, who slips away leaving you **Snipers** and Dusks.\n\nThe throne room is the visit's jackpot — **eight chests**: the **Palace map**, an **Orichalcum**, a **Mythril Crystal**, **Torn Pages**, an **AP Boost**, a **Queen Recipe**, an **Ogre Shield** and a second **AP Boost**.\n\nGo back out to face the Storm Rider.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "inconnu",
+          name: L("Le mystérieux inconnu", "The mysterious stranger"),
+          entry: "riku",
+          level: "35",
+          tactics: L(
+            "Un duel, et un adversaire étonnamment **passif** : il marque une pause entre chaque attaque, ce qui laisse largement le temps de lire son jeu.\n\nSes coups sont faciles à esquiver mais **font très mal** : ne vous laissez pas endormir par son rythme.\n\nSon schéma est régulier. Il enchaîne un **combo de trois coups**, puis l'une de trois techniques : une **charge** arme en avant, un **saut** qui crée une onde de choc au sol, ou une **rotation sur lui-même** qui projette des sphères d'énergie.\n\nLa méthode tient en deux phrases : **restez en mouvement**, et **ruez-vous sur lui à la fin de chaque attaque**. Les Sans-cœur des alentours vous gêneront un peu — ignorez-les, ils ne sont pas le sujet.",
+            "A duel, and a surprisingly **passive** opponent: he pauses between attacks, which leaves plenty of time to read him.\n\nHis blows are easy to dodge but **hurt badly**: do not let his rhythm lull you.\n\nHis pattern is regular. He chains a **three-hit combo**, then one of three techniques: a **charge** with his weapon out, a **jump** that sends a shockwave along the ground, or a **spin** that throws energy spheres.\n\nThe method is two sentences: **keep moving**, and **rush him at the end of each attack**. The Heartless around will get in your way a little — ignore them, they are not the point.",
+          ),
+        },
+        {
+          id: "membranator",
+          name: L("Membranator", "Storm Rider"),
+          entry: "storm-rider",
+          level: "36",
+          reward: L("Sora : l'élément de Foudre. Donald : +3 points de vie. Dingo : Dingo-tornade. Mulan : +25 points de vie.", "Sora: the Thunder element. Donald: +3 HP. Goofy: Tornado Fusion. Mulan: +25 HP."),
+          tactics: L(
+            "Long, impressionnant — et en réalité très lisible une fois qu'on a compris où frapper.\n\nLe combat démarre **sur son dos**. Attaquez les **deux cornes de sa tête** en vous agrippant avec la commande réaction pour ne pas tomber. Si vous tombez quand même, les **tornades au sol** vous remontent.\n\nQuand il tournoie puis plane bas, **placez-vous sur sa trajectoire** et enchaînez **Glissade** puis **Projection** : il s'assomme, et vous avez quelques secondes de dégâts libres. Détruire les **deux cornes de ses épaules** produit le même effet.\n\nAu sol, des éclairs tombent : de **petites lumières apparaissent au-dessus de vous** juste avant. Bougez, c'est tout.\n\nQuand il se place dans un coin et **frappe les cymbales** sous son corps, il fonce ensuite en lâchant des bombes : une tornade ou le sort **Miroir**. Et quand il s'arrête en **déployant ses ailes**, il envoie deux séries de rayons à tête chercheuse — parez, ou renvoyez-les au Miroir.\n\nÀ mi-combat, sa technique ultime : **deux murailles électriques** vous enferment et il tire un rayon d'énergie. Le rayon s'esquive facilement ; le danger, c'est de reculer dans une muraille en l'évitant.",
+            "Long, impressive — and in truth very readable once you know where to hit.\n\nThe fight starts **on its back**. Attack the **two horns on its head**, holding on with the Reaction Command so you do not fall. If you fall anyway, the **tornadoes on the ground** carry you back up.\n\nWhen it spins then glides low, **put yourself in its path** and chain **Slide** into **Bash**: it is stunned, and you get a few seconds of free damage. Destroying the **two horns on its shoulders** does the same.\n\nOn the ground, lightning falls: **small lights appear above you** just before. Move, that is all.\n\nWhen it settles in a corner and **strikes the cymbals** under its body, it then charges dropping bombs: use a tornado or the **Reflect** spell. And when it stops and **spreads its wings**, it fires two volleys of homing beams — guard, or send them back with Reflect.\n\nHalfway through, its ultimate move: **two electric walls** close you in and it fires an energy beam. The beam is easy to dodge; the danger is backing into a wall while avoiding it.",
+          ),
+          attacks: [
+            { name: L("Petites lumières au sol", "Small lights on the ground"), note: L("L'annonce des éclairs. Bouger suffit.", "The tell for the lightning. Moving is enough.") },
+            { name: L("Vol plané bas", "Low glide"), note: L("Se placer sur sa route : Glissade puis Projection l'assomment.", "Get in its path: Slide then Bash stun it.") },
+            { name: L("Rayons à tête chercheuse", "Homing beams"), note: L("Miroir les lui renvoie.", "Reflect sends them back.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×2", "AP Boost ×2"), where: L("Dans la salle du trône du Palais impérial.", "In the Imperial Palace throne room.") },
+        { kind: "synthesis", label: L("Orichalque", "Orichalcum"), where: L("Salle du trône. C'est un des matériaux rares de l'Ultima.", "The throne room. It is one of the Ultima Weapon's rare materials.") },
+        { kind: "journal", label: L("Pages déchirées", "Torn Pages"), where: L("Salle du trône, avec le reste.", "The throne room, with the rest.") },
+        { kind: "ability", label: L("Élément de Foudre", "Thunder element"), where: L("La victoire sur le Membranator.", "Beating the Storm Rider.") },
+      ],
     },
     {
       id: "chateau-de-la-bete-2",
       title: L("Château de la Bête", "Beast's Castle"),
-      subtitle: L("Deuxième visite", "Second visit"),
+      subtitle: L("Deuxième visite — Xaldin", "Second visit — Xaldin"),
       world: "beasts-castle",
       level: "36",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Une visite courte qui mène à **l'un des combats les plus difficiles du jeu** : **Xaldin**.\n\nIl mérite qu'on s'y prépare vraiment. Le combat repose sur une mécanique unique — la commande **Sauter**, qui remplace l'option Attaquer — et la jouer correctement est la différence entre une victoire et une dizaine de tentatives.\n\nUne recommandation que je ne fais nulle part ailleurs : **n'utilisez pas les Fusions ici**. Le risque de déclencher la Non-forme est trop élevé, et se retrouver en Anti-forme face à Xaldin, c'est perdu. Soignez-vous à la magie et aux potions.\n\nÀ noter au passage : la **Silhouette Spectrale de Marluxia** apparaît dans le château. Encore un défi de Final Mix à garder pour plus tard.",
+        "A short visit leading to **one of the hardest fights in the game**: **Xaldin**.\n\nHe genuinely deserves preparation. The fight rests on a unique mechanic — the **Jump** command, which replaces the Attack option — and playing it properly is the difference between one victory and a dozen attempts.\n\nOne recommendation I make nowhere else: **do not use Drive Forms here**. The risk of triggering Anti Form is too high, and being stuck in Anti Form against Xaldin means losing. Heal with magic and potions.\n\nWorth noting along the way: **Marluxia's Absent Silhouette** appears in the castle. Another Final Mix challenge to keep for later.",
+      ),
+      steps: [
+        {
+          id: "soiree",
+          title: L("La soirée gâchée", "The ruined evening"),
+          text: L(
+            "Une soirée se prépare au château, et la Bête fait les cent pas en attendant Belle. Parlez-lui pour lancer la suite.\n\n**Xaldin** débarque avec des Similis et gâche tout. Combattez-les, avec la Bête ou sans.\n\nLe calme revenu, la Bête s'enferme dans sa chambre et quitte le groupe ; Belle la suit. Allez dans l'aile ouest — vous croiserez peut-être **Tirette** à l'entrée du hall.\n\nDans la chambre, la **rose enchantée a disparu**. Reparlez à la Bête pour qu'elle rejoigne le groupe. Vous recevez la Keyblade **Rose de combat** et la **carte de la cour du château**.\n\nXaldin vous attend dans le grand hall, la rose à la main. Battez les Similis qu'il invoque, puis rejoignez la cour.",
+            "An evening is being prepared at the castle, and the Beast is pacing while he waits for Belle. Talk to him to set things going.\n\n**Xaldin** turns up with Nobodies and ruins it. Fight them, with the Beast or without.\n\nWhen it settles, the Beast shuts himself in his room and leaves the party; Belle follows. Go to the west wing — you may run into **Flan** at the hall entrance.\n\nIn the bedroom, the **enchanted rose has gone**. Talk to the Beast again so he rejoins the party. You receive the **Rumbling Rose** Keyblade and the **castle courtyard map**.\n\nXaldin is waiting in the Entrance Hall, rose in hand. Beat the Nobodies he summons, then head to the courtyard.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "xaldin",
+          name: L("Xaldin", "Xaldin"),
+          entry: "xaldin",
+          level: "38",
+          reward: L("Sora : +5 points de vie et l'élément de Miroir. Donald : Auto-soin. Dingo : +4 points de vie. La Bête : +25 points de vie. Et le rapport d'Ansem n° 4.", "Sora: +5 HP and the Reflect element. Donald: Auto Healing. Goofy: +4 HP. The Beast: +25 HP. Plus Ansem's Report 4."),
+          tactics: L(
+            "Le mur du jeu, et il ne se franchit pas en tapant plus fort.\n\nXaldin enchaîne des attaques puissantes à une vitesse folle, et il est **régulièrement entouré d'un bouclier** qui blesse à la moindre approche et rend la Keyblade inutile.\n\n**Toute la stratégie tient dans la commande Sauter**, qui remplace l'option Attaquer du menu. Pour accumuler des sauts, il faut **esquiver une de ses techniques au tout dernier moment en appuyant sur Triangle**. C'est délicat vu sa vitesse — et si vous n'y arrivez pas, **appuyez sur Triangle en encaissant ses coups** : ça marche aussi, il suffit de se soigner derrière.\n\nOn en cumule **neuf au maximum**. En plus d'infliger de très lourds dégâts — **pensez à le cibler** —, ils vous rendent **totalement invulnérable** pendant leur durée. Une fois Xaldin sonné, la Keyblade reprend du service.\n\n**Première phase** : il projette ses lances devant lui — **Parade** — ou les dispose en éventail au sol — **sautez au bon moment**.\n\n**Seconde phase**, après plusieurs barres perdues, quatre techniques s'ajoutent :\n\n- **Cinq éclairs au sol** : sautez juste avant chaque impact en appuyant sur Triangle — vous les esquivez **et** vous accumulez des sauts. C'est la meilleure occasion du combat. Sautez une sixième fois pour éviter sa retombée.\n- **Sphères à tête chercheuse** : se bloquent sans difficulté.\n- **Jusqu'à sept coups de lance** : si vous partez en l'air, **Pirouette immédiatement** pour éviter le suivant.\n- **État de furie** : il devient invincible et dévastateur. Ne cherchez pas à jouer — fuyez, ou passez en coopération pour être intouchable.\n\n**Dernière phase** : sous la moitié de sa vie, il chevauche un dragon de lances et balaie le pont d'un rayon de gauche à droite. On n'en sort indemne qu'avec **Sauter**, une coopération, ou **Miroir**.\n\nUne bonne gestion des sauts, des soins réguliers, et l'aide de Mickey si elle se présente : c'est tout ce qu'il faut.",
+            "The game's wall, and you do not get past it by hitting harder.\n\nXaldin chains powerful attacks at a blistering pace, and he is **regularly wrapped in a shield** that hurts on contact and makes the Keyblade useless.\n\n**The whole strategy is the Jump command**, which replaces Attack in the menu. To bank jumps you must **dodge one of his techniques at the very last moment while pressing Triangle**. That is delicate given his speed — and if you cannot manage it, **press Triangle while taking his hits**: that works too, you just heal afterwards.\n\nYou can bank **nine at most**. On top of doing very heavy damage — **remember to lock on** — they make you **completely invulnerable** while they last. Once Xaldin is stunned, the Keyblade comes back into play.\n\n**First phase**: he throws his lances forward — **Guard** — or fans them out along the ground — **jump on the right timing**.\n\n**Second phase**, after several bars are gone, four techniques are added:\n\n- **Five lightning strikes on the ground**: jump just before each impact while pressing Triangle — you dodge them **and** bank jumps. It is the fight's best opportunity. Jump a sixth time to avoid his landing.\n- **Homing spheres**: blocked without difficulty.\n- **Up to seven lance strikes**: if you are thrown into the air, **Dodge Roll immediately** to avoid the next one.\n- **Berserk state**: he becomes invincible and devastating. Do not try to play — run, or go into a limit to be untouchable.\n\n**Final phase**: below half HP he rides a dragon of lances and sweeps the bridge with a beam from left to right. You only come through it with **Jump**, a limit, or **Reflect**.\n\nGood jump management, regular healing, and Mickey's help if it comes: that is all it takes.",
+          ),
+          attacks: [
+            { name: L("Le bouclier", "The shield"), note: L("Il blesse au contact et rend la Keyblade inutile. Ne l'approchez pas ainsi.", "It hurts on contact and makes the Keyblade useless. Do not approach him like that.") },
+            { name: L("Cinq éclairs au sol", "Five ground strikes"), note: L("La meilleure source de sauts du combat : Triangle avant chaque impact.", "The fight's best source of jumps: Triangle before each impact.") },
+            { name: L("État de furie", "Berserk"), note: L("Invincible et dévastateur. Fuir, ou se rendre intouchable en coopération.", "Invincible and devastating. Run, or make yourself untouchable with a limit.") },
+            { name: L("Dragon de lances", "Lance dragon"), note: L("Le rayon balaie tout le pont. Sauter, coopération ou Miroir.", "The beam sweeps the whole bridge. Jump, a limit or Reflect.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Rose de combat", "Rumbling Rose"), where: L("Quand la Bête rejoint le groupe, après la chambre.", "When the Beast rejoins the party, after the bedroom.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 4", "Ansem's Report 4"), where: L("La victoire sur Xaldin.", "Beating Xaldin.") },
+        { kind: "ability", label: L("Élément de Miroir", "Reflect element"), where: L("La victoire sur Xaldin.", "Beating Xaldin.") },
+      ],
     },
     {
       id: "port-royal-2",
       title: L("Port Royal", "Port Royal"),
-      subtitle: L("Deuxième visite", "Second visit"),
+      subtitle: L("Deuxième visite — les pièces maudites", "Second visit — the cursed medallions"),
       world: "port-royal",
       level: "37",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "La malédiction est revenue, et cette visite est bâtie autour d'une **chasse au trésor chronométrée** : Luxord a confié **quatre pièces maudites** à ses Similis, et chaque Joueur doit être battu dans le temps imparti sous peine de disparaître.\n\nLes temps varient énormément d'un endroit à l'autre — de **10 secondes** à **3 minutes**. Le tableau ci-dessous les donne, et l'ordre dans lequel les faire découle directement de là : **gardez les plus courts pour la fin**, quand vous saurez exactement où aller.\n\nLa visite donne aussi le **Pendentif plume** — l'invocation de **Peter Pan** — et se termine sur un combat inhabituel, où il faut remettre **882 pièces** dans un coffre.",
+        "The curse is back, and this visit is built around a **timed treasure hunt**: Luxord has handed **four cursed medallions** to his Nobodies, and each Gambler must be beaten within a time limit or it vanishes.\n\nThe limits vary hugely from place to place — from **10 seconds** to **3 minutes**. The table below gives them, and the order to do them in follows directly: **keep the shortest for last**, when you know exactly where to go.\n\nThe visit also gives the **Feather Charm** — the **Peter Pan** summon — and ends on an unusual fight, where you have to put **882 medallions** back in a chest.",
+      ),
+      steps: [
+        {
+          id: "luxord",
+          title: L("Le Black Pearl et Luxord", "The Black Pearl and Luxord"),
+          text: L(
+            "Jack Sparrow est en mauvaise posture au port, attaqué par des pirates **toujours maudits**. Sauvez-le, puis embarquez sur le Black Pearl vers l'île de la Muerta à la recherche de Will.\n\nVous le retrouvez inconscient à bord de l'Intercepteur. En sortant de la cabine, **Luxord** vous attend sur le pont : il a dérobé le coffre maudit, et il est accompagné du **Fossoyeur**.\n\nAprès le combat, Luxord feint les pourparlers, confie **quatre pièces** à ses Similis, et coule l'Intercepteur. Vous échouez au **cimetière d'épaves**.",
+            "Jack Sparrow is in trouble at the harbour, attacked by pirates who are **cursed again**. Save him, then board the Black Pearl for the Isla de Muerta to look for Will.\n\nYou find him unconscious aboard the Interceptor. Coming out of the cabin, **Luxord** is waiting on deck: he has stolen the cursed chest, and he has the **Grim Reaper** with him.\n\nAfter the fight, Luxord feigns negotiation, hands **four medallions** to his Nobodies, and sinks the Interceptor. You wash up in the **Ship Graveyard**.",
+          ),
+        },
+        {
+          id: "epaves",
+          title: L("Le cimetière d'épaves", "The Ship Graveyard"),
+          text: L(
+            "Sur place : le **Pendentif plume** — l'invocation de **Peter Pan** — et une **pièce de puzzle**.\n\nL'allée de débris donne une **Gemme de sérénité**, une **pièce de puzzle**, la **Formule royale** et un **Cristal de mithril**. Attention : les zones éclairées par la lune sont rares ici, et les combats contre les pirates en deviennent nettement plus tendus.\n\nDans la **forteresse de débris**, vous tombez sur le premier **Joueur** de Luxord : battez-le pour la première pièce. Vous récupérez le Black Pearl et la **carte de la zone**.\n\nLes derniers coffres du monde sont ici : l'**Astéroïde**, un **Bonus PC**, un **Orichalque** et **deux pièces de puzzle** — dont une qui demande de **frapper l'ancre** pour l'atteindre. Mais avant de les ouvrir, profitez des **30 secondes** pour attraper le Joueur du niveau inférieur.",
+            "On site: the **Feather Charm** — the **Peter Pan** summon — and a **puzzle piece**.\n\nThe debris path gives a **Serenity Gem**, a **puzzle piece**, the **King Recipe** and a **Mythril Crystal**. Careful: moonlit patches are rare here, and fights against the pirates get noticeably tenser as a result.\n\nIn the **Seadrift Keep** you run into Luxord's first **Gambler**: beat it for the first medallion. You recover the Black Pearl and the **area map**.\n\nThe world's last chests are here: the **Asteroid**, an **AP Boost**, an **Orichalcum** and **two puzzle pieces** — one of which requires **hitting the anchor** to reach. But before opening them, use the **30 seconds** to catch the Gambler on the level below.",
+          ),
+        },
+      ],
+      tables: [
+        {
+          id: "joueurs",
+          title: L("Les quatre Joueurs, et leurs délais", "The four Gamblers, and their time limits"),
+          intro: L(
+            "Chaque Joueur disparaît si le délai s'écoule. Ce sont les délais qui doivent décider de votre ordre : commencez par les longs, gardez les dix secondes de l'entrée de la caverne pour quand vous connaîtrez le chemin par cœur.",
+            "Each Gambler vanishes when its timer runs out. Those timers should decide your order: start with the long ones, and keep the ten seconds at the cave entrance for when you know the route by heart.",
+          ),
+          columns: [L("Où", "Where"), L("Temps imparti", "Time limit"), L("À savoir", "Worth knowing")],
+          rows: [
+            at("Cimetière d'épaves — allée de débris", ["2 minutes", "2 minutes"], ["Occupez-vous du Joueur **avant** les pirates : eux ne partiront pas.", "Deal with the Gambler **before** the pirates: they are not going anywhere."]),
+            at("Île de la Muerta — salle du clair de lune", ["3 minutes", "3 minutes"], ["Le plus confortable, mais il n'apparaît **qu'après** avoir battu les pirates de la salle.", "The most comfortable, but it only appears **after** the room's pirates are beaten."]),
+            at("Île de la Muerta — poudrière", ["2 minutes", "2 minutes"], ["Sans piège particulier.", "No particular catch."]),
+            at("Île de la Muerta — salle du trésor", ["90 secondes", "90 seconds"], ["Serré, mais faisable en connaissant le chemin.", "Tight, but doable if you know the way."]),
+            at("Île de la Muerta — entrée de la caverne", ["10 secondes", "10 seconds"], ["**Le seul vraiment difficile.** Gardez-le pour la fin, quand vous n'aurez plus à chercher votre route.", "**The only genuinely hard one.** Keep it for last, when you no longer have to find your way."]),
+          ],
+        },
+      ],
+      bosses: [
+        {
+          id: "fossoyeur-1",
+          name: L("Le Fossoyeur — premier combat", "The Grim Reaper — first fight"),
+          entry: "grim-reaper",
+          level: "37",
+          reward: L("Sora : Frappe horizontale. Donald : +3 points de vie. Dingo : Attraction. Jack : +10 points de vie.", "Sora: Horizontal Slash. Donald: +3 HP. Goofy: Draw. Jack: +10 HP."),
+          tactics: L(
+            "Une mise en bouche, et elle est vite expédiée : **il est ridiculement faible**, très sensible au **Glacier**, et ses barres de vie ne tiennent pas longtemps face à la Keyblade.\n\nSa seule attaque consiste à **tournoyer sur lui-même** pour traverser le navire d'un bout à l'autre en fauchant. Écartez-vous et reprenez.",
+            "A warm-up, and it goes quickly: **he is laughably weak**, very vulnerable to **Blizzard**, and his HP bars do not last long against the Keyblade.\n\nHis only attack is to **spin** his way from one end of the ship to the other, scything as he goes. Step aside and carry on.",
+          ),
+        },
+        {
+          id: "fossoyeur-2",
+          name: L("Le Fossoyeur — les 882 pièces", "The Grim Reaper — the 882 medallions"),
+          entry: "grim-reaper",
+          level: "39",
+          reward: L("Sora : l'élément d'Attraction. Donald : Fusées Atomnium. Dingo : +4 points de vie. Jack : +15 points de vie. Et le rapport d'Ansem n° 6.", "Sora: the Magnet element. Donald: Comet Rain. Goofy: +4 HP. Jack: +15 HP. Plus Ansem's Report 6."),
+          tactics: L(
+            "Un combat qui ne se gagne pas aux dégâts mais **à la comptabilité**.\n\nEn haut de l'écran, trois compteurs : les pièces que possède Sora, celles du Fossoyeur, et celles du coffre. **Il faut que les 882 soient dans le coffre** pour que votre adversaire devienne touchable. Tant qu'il en détient, il est invulnérable.\n\nPour lui en prendre : **enchaînez Glacier et Foudre**. Quand vous n'avez plus de points de magie, **frappez-le à la Keyblade** — il lâche des orbes de magie, ce qui vous remet en selle.\n\nEt quand il **aspire les pièces du coffre** pour les reprendre, la commande **Antivol** l'en empêche : c'est la seule chose à ne jamais rater.\n\nUne fois le compte bon, il reprend son aspect frêle et sa résistance dérisoire : frappez sans retenue. Il s'enfuira pour voler de nouvelles pièces, et le cycle recommence.\n\nAvant d'entrer, **activez toutes vos compétences Attraction** : elles font une vraie différence sur le ramassage.",
+            "A fight won not on damage but on **bookkeeping**.\n\nAt the top of the screen, three counters: the medallions Sora holds, the ones the Reaper holds, and the ones in the chest. **All 882 must be in the chest** for your opponent to become hittable. While he holds any, he is invulnerable.\n\nTo take them off him: **chain Blizzard and Thunder**. When you run out of MP, **hit him with the Keyblade** — he drops MP orbs, which puts you back in business.\n\nAnd when he **sucks the medallions back out of the chest**, the **Anti-theft** command stops him: that is the one thing never to miss.\n\nOnce the count is right, he returns to his frail form with pitiful defence: hit him with everything. He will flee to steal more, and the cycle starts again.\n\nBefore going in, **switch on every Draw ability you have**: they make a real difference to collection.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Pendentif plume — Peter Pan", "Feather Charm — Peter Pan"), where: L("Au cimetière d'épaves, dès l'arrivée.", "In the Ship Graveyard, as soon as you arrive.") },
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("Dans la forteresse de débris.", "In the Seadrift Keep.") },
+        { kind: "synthesis", label: L("Orichalque et Astéroïde", "Orichalcum and Asteroid"), where: L("Forteresse de débris, avec les derniers coffres du monde.", "The Seadrift Keep, with the world's last chests.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 6", "Ansem's Report 6"), where: L("La levée de la malédiction, après le Fossoyeur.", "Lifting the curse, after the Grim Reaper.") },
+      ],
     },
     {
       id: "colisee-2",
       title: L("Colisée de l'Olympe", "Olympus Coliseum"),
-      subtitle: L("Deuxième visite", "Second visit"),
+      subtitle: L("Deuxième visite — le tournoi d'Hadès", "Second visit — the Hades Cup"),
       world: "olympus",
       level: "39",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "La visite la plus courte de la seconde partie, et une des plus utiles : elle débloque la **coupe Titan** et donne la Keyblade **Âme de gardien**.\n\nHadès organise un tournoi, Hercule y participe, et Sora décide de faire équipe avec lui. Le vrai sujet, en fait, est **Auron** — qu'Hadès manipule au moyen d'une statuette.\n\nÀ noter : les tournois ordinaires se lancent en parlant à **Panique**, le grand tournoi d'Hadès en parlant à **Peine**.",
+        "The shortest visit of the second half, and one of the most useful: it unlocks the **Titan Cup** and gives the **Guardian Soul** Keyblade.\n\nHades is running a tournament, Hercules is entering, and Sora decides to team up with him. The real subject, in fact, is **Auron** — whom Hades is controlling by means of a statuette.\n\nWorth noting: the ordinary cups are started by talking to **Panic**, the great Hades Cup by talking to **Pain**.",
+      ),
+      steps: [
+        {
+          id: "tournoi",
+          title: L("Le tournoi, et la statuette", "The tournament, and the statuette"),
+          text: L(
+            "Deux combats aux côtés d'un Hercule diminué, et ni l'un ni l'autre ne pose de problème : d'abord un **Roto-tank**, trois **Terrassiers** et deux **Rotors Mous** ; ensuite un **Crescendo**, six **Minute bombes** et un **Jazz Pourpre**.\n\nSuivez ensuite Auron dans la caverne : vous le surprenez en conversation avec Hadès, qui le manipule à l'aide d'une **statuette**. Lui parler ne sert à rien — il faut la détruire.\n\nHercule prend le relais dans l'arène pendant que vous allez chercher la **Statuette d'Auron** dans l'antre d'Hadès, gardée par un groupe de Similis.\n\nRevenez à la barque, parlez à Peine pour être conduit à l'arène, et libérez Auron. Hadès, lui, le prend très mal.",
+            "Two fights alongside a weakened Hercules, and neither is a problem: first a **Rock Troll**, three **Bulky Vendors** and two **Aerial Knockers**; then a **Crescendo**, six **Minute Bombs** and a **Crimson Jazz**.\n\nThen follow Auron into the cave: you catch him talking to Hades, who is controlling him with a **statuette**. Talking to him achieves nothing — the statuette has to be destroyed.\n\nHercules takes over in the arena while you fetch **Auron's Statue** from Hades's chamber, guarded by a group of Nobodies.\n\nGo back to the boat, talk to Pain to be taken to the arena, and free Auron. Hades takes it very badly.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "hades",
+          name: L("Hadès", "Hades"),
+          entry: "hades",
+          level: "40",
+          reward: L("Sora : +5 points de vie et Magnétisme. Donald : un emplacement d'accessoire supplémentaire. Dingo : +4 points de vie. Auron : +15 points de vie. Et la Keyblade Âme de gardien.", "Sora: +5 HP and Magnet Burst. Donald: an extra accessory slot. Goofy: +4 HP. Auron: +15 HP. Plus the Guardian Soul Keyblade."),
+          tactics: L(
+            "Chez lui, Hadès est **invincible** — c'était vrai à la première visite, ça l'est encore. Frappez-le quelques fois sans résultat : **Hercule entre alors en scène**, et c'est lui qui change tout.\n\nLe héros génère des **sphères d'énergie** qui brisent la défense d'Hadès. Quand le dieu **passe du rouge au bleu**, il devient vulnérable — c'est votre seule fenêtre, et elle se rouvre avec la commande **Mânes**, alimentée par les sphères d'Hercule.\n\nAprès quelques coups, il se **téléporte derrière vous** : anticipez plutôt que de le chercher.\n\nSes attaques : des **boules de feu** qui se parent ou s'esquivent, des **poings enflammés**, et une **boule de feu géante** qui projette des gerbes au sol — **Miroir** protège de celle-là.\n\nLe seul vrai danger arrive quand il **embrase toute l'arène** : c'est le signe qu'il retrouve son invincibilité. Réactivez **Mânes** sans attendre. Hercule peut aussi créer une sphère de protection si vous êtes en difficulté.",
+            "On his own ground, Hades is **invincible** — that was true on the first visit, and it still is. Hit him a few times to no effect: **Hercules then steps in**, and he changes everything.\n\nThe hero generates **energy spheres** that break Hades's defence. When the god **turns from red to blue**, he becomes vulnerable — that is your only window, and it reopens with the **Ascension** command, fed by Hercules's spheres.\n\nAfter a few hits he **teleports behind you**: anticipate rather than hunt for him.\n\nHis attacks: **fireballs** that can be guarded or dodged, **flaming fists**, and a **giant fireball** that throws jets along the ground — **Reflect** protects against that one.\n\nThe only real danger comes when he **sets the whole arena alight**: that is the sign he is regaining his invincibility. Re-trigger **Ascension** at once. Hercules can also raise a protective sphere if you are in trouble.",
+          ),
+          attacks: [
+            { name: L("Rouge ou bleu", "Red or blue"), note: L("Rouge, il est intouchable. Bleu, la fenêtre est ouverte.", "Red, he is untouchable. Blue, the window is open.") },
+            { name: L("Arène embrasée", "Arena ablaze"), note: L("Il récupère son invincibilité. Mânes, tout de suite.", "He is regaining invincibility. Ascension, immediately.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Âme de gardien", "Guardian Soul"), where: L("La victoire sur Hadès.", "Beating Hades.") },
+        { kind: "minigame", label: L("La coupe Titan", "The Titan Cup"), where: L("Débloquée en battant Hadès.", "Unlocked by beating Hades."), note: L("Les coupes sont traitées dans leur page dédiée, avec la coupe Paradoxe d'Hadès.", "The cups are covered on their own page, along with the Hades Paradox Cup.") },
+      ],
     },
     {
       id: "agrabah-2",
       title: L("Agrabah", "Agrabah"),
-      subtitle: L("Deuxième visite", "Second visit"),
+      subtitle: L("Deuxième visite — les ruines ensevelies", "Second visit — the Ruined Chamber"),
       world: "agrabah",
       level: "40",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Jafar s'est libéré de sa lampe, et la visite se joue en grande partie **sur le tapis volant**, avec deux séquences de vol et un boss affronté **seul**.\n\nLe cœur du passage est une énigme à trois interrupteurs, chacun activé par un sort différent. Elle est simple une fois comprise, mais elle a un piège de temps à la fin — détaillé dans le tableau.\n\nÀ noter : la **Silhouette Spectrale de Vexen** apparaît dans la boutique. Un défi de Final Mix de plus à garder pour la fin.",
+        "Jafar has freed himself from the lamp, and much of this visit plays out **on the magic carpet**, with two flying sequences and a boss fought **alone**.\n\nThe heart of the section is a three-switch puzzle, each switch triggered by a different spell. It is simple once understood, but it has a timing trap at the end — detailed in the table.\n\nWorth noting: **Vexen's Absent Silhouette** appears in the shop. One more Final Mix challenge to keep for the end.",
+      ),
+      steps: [
+        {
+          id: "poursuite",
+          title: L("La poursuite de l'ombre", "Chasing the shadow"),
+          text: L(
+            "Le Génie vous ouvre un passage vers les **ruines ensevelies**. Sur place, l'ombre de Jafar s'éloigne à chacune de vos approches.\n\nLa première fois, il disparaît en vous laissant des Sans-cœur. Une fois réglés, reprenez la traque : une **pièce de puzzle** sous la grande arche, une autre sous une seconde arche.\n\nQuand l'ombre **prépare une attaque**, foncez droit sur elle en la verrouillant et frappez : ça l'interrompt. Après quelques passes, elle se réfugie au sommet de la **tour rouge**.\n\nPrenez la dernière **pièce de puzzle** dans le passage étroit face à la tour, puis montez.",
+            "The Genie opens a way to the **Ruined Chamber**. There, Jafar's shadow pulls away every time you get close.\n\nThe first time, he vanishes leaving Heartless behind. Once they are dealt with, resume the chase: a **puzzle piece** under the large arch, another under a second arch.\n\nWhen the shadow **winds up an attack**, charge straight at it with lock-on and strike: that interrupts it. After a few passes, it takes refuge atop the **red tower**.\n\nTake the last **puzzle piece** in the narrow passage facing the tower, then climb.",
+          ),
+        },
+        {
+          id: "interrupteurs",
+          title: L("Les trois interrupteurs", "The three switches"),
+          text: L(
+            "Un piédestal apparaît au sommet de la tour. En l'examinant, vous voyez les trois interrupteurs à activer, cachés dans les ruines.\n\nChacun demande **un sort précis, au bon moment** — le détail est dans le tableau ci-dessous.\n\n**Le point à retenir : activez en dernier celui qui est près de la tour.** Une fois les trois faits, vous n'avez que **30 secondes** pour regagner la tour et passer la porte. Des ennemis apparaissent près de la porte : **ignorez-les**, ils ne sont là que pour vous faire perdre du temps.\n\nÀ l'intérieur, deux coffres : des **Pages déchirées** et la **carte des ruines ensevelies**. Le couloir vous apprend qu'Iago vous a trahi et que Jafar est en fait **à Agrabah** — et le perroquet déclenche par erreur un interrupteur de trop.\n\nLe tapis file à pleine vitesse : concentrez-vous sur les Sans-cœur qui barrent la route. Cette séquence se rejoue en mini-jeu par la suite.",
+            "A pedestal appears at the top of the tower. Examining it shows the three switches to activate, hidden in the ruins.\n\nEach needs **a specific spell, at the right moment** — the detail is in the table below.\n\n**The thing to remember: do the one near the tower last.** Once all three are done you have only **30 seconds** to get back to the tower and through the door. Enemies appear near the door: **ignore them**, they are only there to cost you time.\n\nInside, two chests: **Torn Pages** and the **Ruined Chamber map**. The corridor reveals that Iago has betrayed you and that Jafar is in fact **in Agrabah** — and the parrot accidentally triggers one switch too many.\n\nThe carpet takes off at full speed: focus on the Heartless blocking the way. That sequence can be replayed later as a mini-game.",
+          ),
+        },
+      ],
+      tables: [
+        {
+          id: "trois-interrupteurs",
+          title: L("Les trois interrupteurs", "The three switches"),
+          intro: L(
+            "Chacun se déclenche avec un sort différent, et à un moment précis du mouvement des orbes. Faites **en dernier** celui qui est près de la tour : les 30 secondes du retour partent une fois le troisième activé.",
+            "Each is triggered by a different spell, at a specific point in the orbs' movement. Do the one near the tower **last**: the 30-second return window starts once the third is activated.",
+          ),
+          columns: [L("Où", "Where"), L("Le sort", "The spell"), L("Le moment", "The timing")],
+          rows: [
+            at("Sous le pont, à proximité", ["Brasier", "Fire"], ["Au centre des orbes rouges.", "Into the centre of the red orbs."]),
+            at("À droite de la zone, sous une petite arche en ruine", ["Glacier", "Blizzard"], ["Quand les orbes forment une **ligne** face à vous.", "When the orbs form a **line** in front of you."]),
+            at("En haut à gauche, au sommet d'une tour", ["Foudre", "Thunder"], ["Quand les orbes forment une **colonne**.", "When the orbs form a **column**."]),
+          ],
+        },
+      ],
+      bosses: [
+        {
+          id: "jafar",
+          name: L("Jafar", "Jafar"),
+          entry: "jafar",
+          level: "42",
+          reward: L("L'élément de Feu, et la Keyblade Lampe Magique.", "The Fire element, and the Wishing Lamp Keyblade."),
+          tactics: L(
+            "Vous l'affrontez **seul, sur le tapis** : pas de soins d'appoint, pas de coopération. Soignez-vous régulièrement plutôt qu'en urgence.\n\nTrois zones sont attaquables — la tête, le ventre et les mains — mais **c'est le ventre qui compte**. Videz sa vie, et les commandes **Ficeler** puis **Toupie** deviennent disponibles : elles étourdissent Jafar quelques secondes, et c'est le moment de frapper **la tête** à volonté. Éloignez-vous dès qu'il se réveille.\n\nSes attaques :\n\n- **Il tourne sur lui-même**, puis envoie **deux tours brisées** : sautez, ou renvoyez-les au **Miroir**.\n- **Des boules de feu à tête chercheuse** : il n'y a pas de parade, seulement le mouvement. **Ne restez jamais immobile.**\n- En fin de combat, la même attaque s'accompagne d'**éclairs** et de **séries de débris** à esquiver.\n\nAux trois quarts de sa vie, le ciel s'assombrit et la zone change : esquivez les décombres, retournez vers le palais, et **reprenez le cycle depuis le début**.",
+            "You fight him **alone, on the carpet**: no backup healing, no limits. Heal regularly rather than in emergencies.\n\nThree areas can be hit — the head, the belly and the hands — but **the belly is what counts**. Drain its HP, and the **Bind** then **Spin** commands become available: they stun Jafar for a few seconds, and that is when you hit **the head** freely. Get clear the moment he comes round.\n\nHis attacks:\n\n- **He spins**, then throws **two broken towers**: jump, or send them back with **Reflect**.\n- **Homing fireballs**: there is no guard for these, only movement. **Never stand still.**\n- Late in the fight, the same attack comes with **lightning** and **volleys of debris** to dodge.\n\nAt three-quarters of his HP the sky darkens and the area changes: dodge the rubble, head back to the palace, and **start the cycle again**.",
+          ),
+          attacks: [
+            { name: L("Le ventre", "The belly"), note: L("La seule zone qui ouvre Ficeler et Toupie. Tout passe par là.", "The only area that opens Bind and Spin. Everything goes through it.") },
+            { name: L("Boules de feu à tête chercheuse", "Homing fireballs"), note: L("Aucune parade. Mouvement perpétuel, sans exception.", "No guard. Perpetual movement, no exceptions.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Lampe Magique", "Wishing Lamp"), where: L("La victoire sur Jafar.", "Beating Jafar.") },
+        { kind: "journal", label: L("Pages déchirées", "Torn Pages"), where: L("Dans les ruines ensevelies, une fois la porte ouverte.", "In the Ruined Chamber, once the door is open.") },
+        { kind: "minigame", label: L("Trois pièces de puzzle", "Three puzzle pieces"), where: L("Sous les deux grandes arches, et dans le passage étroit face à la tour rouge.", "Under the two large arches, and in the narrow passage facing the red tower.") },
+      ],
     },
     {
       id: "ville-halloween-2",
       title: L("Ville d'Halloween", "Halloween Town"),
-      subtitle: L("Deuxième visite", "Second visit"),
+      subtitle: L("Deuxième visite — le voleur de cadeaux", "Second visit — the present thief"),
       world: "halloween-town",
       level: "41",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Une enquête policière à la sauce Halloween : des cadeaux disparaissent, Jack est soupçonné, et il faut trouver le vrai coupable — en éliminant les suspects un par un.\n\nLa visite enchaîne trois épreuves très différentes : un combat où il faut **enfermer** ses adversaires plutôt que les tuer, une **récupération de paquets** sur la place, et un **stand de tir** pour préparer un piège.\n\nElle donne la Keyblade **Citrouille de Noël** — l'une des meilleures du jeu pour qui aime les combos au sol.",
+        "A police investigation, Halloween-style: presents are going missing, Jack is under suspicion, and the real culprit has to be found — by eliminating suspects one by one.\n\nThe visit strings together three very different trials: a fight where you have to **box up** your opponents rather than kill them, a **present recovery** on the square, and a **shooting gallery** to set a trap.\n\nIt gives the **Decisive Pumpkin** Keyblade — one of the best in the game for anyone who likes ground combos.",
+      ),
+      steps: [
+        {
+          id: "usine",
+          title: L("L'usine à jouets", "The toy factory"),
+          text: L(
+            "Le docteur Finkelstein a été agressé. Vous croisez Jack dans la forêt, ramassant des cadeaux qui semblent venir de chez le Père Noël — ce qui lui vaut d'être soupçonné.\n\nUn bruit vient de l'usine. Prenez les **deux pièces de puzzle** du Centre de tri avant de monter à la Salle d'emballage.",
+            "Dr Finkelstein has been attacked. You run into Jack in the woods, picking up presents that seem to come from Santa's — which is what gets him suspected.\n\nA noise comes from the factory. Take the **two puzzle pieces** in the Sorting Room before going up to the Wrapping Room.",
+          ),
+        },
+        {
+          id: "enquete",
+          title: L("Les cadeaux, et le piège", "The presents, and the trap"),
+          text: L(
+            "Les trois garnements n'étaient pas les voleurs. Sally prévient que des Sans-cœur attaquent la place de la Guillotine, **cadeaux en main**.\n\nSur place, éliminez-les et récupérez les **quatre paquets**. Une bulle au-dessus de certains Sans-cœur indique ceux qui en portent un : visez-les en priorité, les autres ne servent à rien.\n\nCe n'étaient pas non plus les Sans-cœur. Jack propose alors d'**appâter le voleur** avec une montagne de cadeaux : direction la salle d'emballage.\n\nL'elfe explique le principe : **orientez l'engin vers les boîtes** pour les remplir. Les petits paquets contiennent un jouet, les gros en abritent plusieurs — visez donc les gros. **Triangle** recharge. Et si Am, Stram et Gram vous gênent, **tirez-leur dessus** : ils restent étourdis quelques instants.\n\nL'objectif atteint, parlez au Père Noël pour voir enfin le vrai coupable.",
+            "The three brats were not the thieves. Sally warns that Heartless are attacking Guillotine Square, **presents in hand**.\n\nThere, kill them and recover the **four parcels**. A bubble above certain Heartless marks the ones carrying a present: target those first, the others are no use.\n\nIt was not the Heartless either. Jack then proposes to **lure the thief** with a mountain of presents: off to the Wrapping Room.\n\nThe elf explains the principle: **aim the machine at the boxes** to fill them. Small parcels hold one toy, large ones hold several — so aim for the large ones. **Triangle** reloads. And if Lock, Shock and Barrel get in the way, **shoot them**: they stay stunned for a moment.\n\nOnce the target is met, talk to Santa to finally meet the real culprit.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "trio",
+          name: L("Am, Stram et Gram", "Lock, Shock and Barrel"),
+          entry: "lock-shock-and-barrel",
+          level: "41",
+          reward: L("Sora : un emplacement d'objet supplémentaire. Donald : +3 points de vie. Dingo : Auto-relais. Jack : +5 points de vie.", "Sora: an extra item slot. Donald: +3 HP. Goofy: Auto Change. Jack: +5 HP."),
+          tactics: L(
+            "Un combat qui ne se gagne pas en tuant mais en **enfermant** : il faut mettre les trois dans les boîtes prévues, en **frappant le paquet avec Triangle dans la bonne direction**.\n\nDeux règles, et tout le combat tient dedans.\n\nD'abord, **videz la jauge de vie de chacun avant de l'enfermer** : expédié avec de la vie, il ressort aussitôt.\n\nEnsuite — et c'est le vrai piège —, **même vidé, il réapparaît au bout d'un moment avec la moitié de ses points de vie**. La seule solution est donc de les enfermer **tous les trois sans trop d'écart** : prenez-les en charge à peu près en même temps plutôt que méthodiquement l'un après l'autre.",
+            "A fight won not by killing but by **boxing up**: the three have to go into the boxes provided, by **hitting the parcel with Triangle in the right direction**.\n\nTwo rules, and the whole fight is in them.\n\nFirst, **empty each one's HP bar before boxing them**: sent in with HP left, they come straight back out.\n\nSecond — and this is the real trap — **even emptied, they reappear after a while with half their HP**. The only solution is to box **all three without too much of a gap**: work them down together rather than methodically one after the other.",
+          ),
+        },
+        {
+          id: "experience",
+          name: L("L'Expérience", "The Experiment"),
+          entry: "the-experiment",
+          level: "43",
+          reward: L("Sora : +5 points de vie. Donald : Profusion. Dingo : +4 points de vie. Jack : +10 points de vie. Et la Keyblade Citrouille de Noël.", "Sora: +5 HP. Donald: MP Haste. Goofy: +4 HP. Jack: +10 HP. Plus the Decisive Pumpkin Keyblade."),
+          tactics: L(
+            "Un adversaire qui récompense l'agressivité, ce qui est assez rare pour être signalé.\n\nSa distance décide de ses attaques : **de près**, il martèle du poing en créant des ondes de choc ; **de loin**, il tire au laser avant de se rapprocher dangereusement. Il peut aussi créer une **tornade** qui bloque vos mouvements avant de tirer trois lasers.\n\nAprès quelques coups, il **se décompose** : bras gauche, bras droit et tête attaquent chacun de leur côté. **Concentrez tout sur le torse** malgré le désordre.\n\nUne fois entièrement décomposé, le torse **tournoie et devient invulnérable**. La commande **Projeter** le lance contre l'un de ses propres membres, ce qui fait tomber sa défense.\n\nPour le reste : **Maîtrise**, et martelez. C'est un bourrin, et la meilleure réponse est d'en être un aussi.",
+            "An opponent that rewards aggression, which is rare enough to mention.\n\nYour distance decides his attacks: **up close**, he hammers with his fists creating shockwaves; **at range**, he fires a laser before closing in dangerously. He can also create a **tornado** that pins your movement before firing three lasers.\n\nAfter a few hits he **comes apart**: left arm, right arm and head each attack on their own. **Focus everything on the torso** despite the chaos.\n\nOnce fully separated, the torso **spins and becomes invulnerable**. The **Flip** command throws it against one of its own limbs, which drops its defence.\n\nFor the rest: **Master Form**, and mash. He is a brawler, and the best answer is to be one too.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Citrouille de Noël", "Decisive Pumpkin"), where: L("La victoire sur l'Expérience.", "Beating the Experiment.") },
+        { kind: "minigame", label: L("Deux pièces de puzzle", "Two puzzle pieces"), where: L("Dans le Centre de tri de l'usine à jouets.", "In the toy factory's Sorting Room.") },
+      ],
     },
     {
       id: "terre-des-lions-2",
       title: L("Terre des Lions", "Pride Lands"),
-      subtitle: L("Deuxième visite", "Second visit"),
+      subtitle: L("Deuxième visite — le fantôme de Scar", "Second visit — Scar's ghost"),
       world: "pride-lands",
       level: "43",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Une visite courte, entièrement consacrée à un doute : Simba a perdu confiance en lui, et un **fantôme de Scar** sème le chaos sur la Terre des Lions.\n\nElle est **indispensable** malgré son apparence de bonus — sans elle, la seconde partie de Space Paranoids reste fermée, et l'un des boss secrets avec.\n\nElle donne la capacité **Assaut taclé** et l'**élément de Foudre**, dont la version améliorée ouvre au passage un nouveau chapitre d'Atlantica.",
+        "A short visit, entirely built around a doubt: Simba has lost confidence in himself, and a **ghost of Scar** is spreading chaos across the Pride Lands.\n\nIt is **essential** despite looking like a bonus — without it, the second half of Space Paranoids stays closed, and one of the secret bosses with it.\n\nIt gives the **Sliding Dash** ability and the **Thunder element**, whose upgraded version also opens a new Atlantica chapter.",
+      ),
+      steps: [
+        {
+          id: "enquete-hyenes",
+          title: L("Simba, Rafiki, et les hyènes", "Simba, Rafiki, and the hyenas"),
+          text: L(
+            "Entrez dans la tanière de Simba, au Rocher du Lion : il doute de ses aptitudes à régner. Après une bonne leçon de morale, il rejoint le groupe et Sora apprend **Assaut taclé**.\n\nAllez voir **Rafiki** pour comprendre la nature du fantôme ; il conseille d'interroger les anciens subordonnés de Scar. Direction le **cimetière des éléphants** — où les hyènes ne sont pas d'humeur bavarde.",
+            "Go into Simba's den inside Pride Rock: he doubts his fitness to rule. After a firm talking-to he rejoins the party and Sora learns **Sliding Dash**.\n\nGo and see **Rafiki** to understand the ghost's nature; he suggests questioning Scar's former underlings. Off to the **elephant graveyard** — where the hyenas are not in a talking mood.",
+          ),
+        },
+        {
+          id: "duo",
+          title: L("L'oasis, puis la savane", "The oasis, then the savannah"),
+          text: L(
+            "Le combat gagné, Simba fuit devant un fantôme de Scar. Retrouvez-le à l'**oasis** : Sora, sous son aspect de lionceau, lui rend confiance.\n\nVous revenez automatiquement au Rocher du Lion. Le combat qui suit se livre **avec Simba et personne d'autre** : **sauvegardez dans la grotte de Rafiki** avant de partir vers la savane.",
+            "With the fight won, Simba flees from a ghost of Scar. Find him at the **oasis**: Sora, in his lion cub form, restores his confidence.\n\nYou return automatically to Pride Rock. The fight that follows is fought **with Simba and no one else**: **save in Rafiki's cave** before heading out to the savannah.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "hyenes-2",
+          name: L("Shenzi, Banzaï et Ed", "Shenzi, Banzai and Ed"),
+          entry: "shenzi-banzai-and-ed",
+          level: "43",
+          reward: L("Sora : un emplacement d'objet supplémentaire. Donald : +3 points de vie. Dingo : Vaillance. Simba : +5 points de vie.", "Sora: an extra item slot. Donald: +3 HP. Goofy: Valor Boost. Simba: +5 HP."),
+          tactics: L(
+            "Rien à voir avec le premier affrontement : cette fois il n'y a personne à protéger, et **le combat s'étend sur tout le cimetière des éléphants**. Il s'agit de les **rattraper**.\n\nElles sont rapides, mais la zone joue pour vous : **coincez-les dans les virages** plutôt que de courir derrière en ligne droite.\n\nL'autre méthode, plus élégante : **ciblez une hyène et lancez Aimant +**. Elle vient à vous, et la course s'arrête là.",
+            "Nothing like the first fight: this time there is no one to protect, and **the battle spans the whole elephant graveyard**. The point is to **catch them**.\n\nThey are fast, but the terrain works for you: **corner them at the bends** rather than chasing in a straight line.\n\nThe other method, more elegant: **lock onto a hyena and cast Magnera**. It comes to you, and the chase ends there.",
+          ),
+        },
+        {
+          id: "duo-sismique",
+          name: L("Duo sismique", "Groundshaker"),
+          entry: "groundshaker",
+          level: "45",
+          reward: L("Sora : +5 points de vie et l'élément de Foudre. Simba : +5 points de vie.", "Sora: +5 HP and the Thunder element. Simba: +5 HP."),
+          tactics: L(
+            "Un colosse, et un combat qui alterne entre **le sol et son dos**.\n\nAu tout début, **martelez Triangle** pour ne pas vous faire piétiner. Il en reste temporairement inconscient : **déchaînez-vous sur sa gueule**.\n\nQuand il reprend, il s'éloigne puis revient en courant **en lançant des éclairs**. Ne fuyez pas — **courez vers lui** et déclenchez **Bondir** pour grimper sur son dos.\n\nEn haut vous attend un second adversaire. **Coopération avec Simba** s'il est près, sinon Croix en rafale, **en verrouillant**. Attention aux éclairs et aux coups de poing qui vous font chuter.\n\nIl finit par vous faire retomber, et des **flammes traversent la plaine**. Reprenez les coups sur la gueule jusqu'à pouvoir **Bondir** de nouveau et en finir avec celui du haut — qui devient **invisible quelques instants** pour frapper. Restez en place, esquivez, et frappez dès qu'il réapparaît.",
+            "A colossus, and a fight that alternates between **the ground and its back**.\n\nRight at the start, **mash Triangle** so you are not trampled. It is temporarily knocked out by that: **let loose on its face**.\n\nWhen it comes round, it backs off then charges **throwing lightning**. Do not run — **run towards it** and trigger **Leap** to climb onto its back.\n\nUp there a second opponent waits. **Limit with Simba** if he is close, otherwise hammer Cross, **with lock-on**. Watch for the lightning and the punches that knock you off.\n\nIt eventually throws you back down, and **flames sweep the plain**. Go back to hitting its face until you can **Leap** again and finish the one on top — which **turns invisible for a moment** to strike. Stay put, dodge, and hit the moment it reappears.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Assaut taclé, puis l'élément de Foudre", "Sliding Dash, then the Thunder element"), where: L("Simba dans sa tanière, puis la victoire sur le Duo sismique.", "Simba in his den, then beating the Groundshaker.") },
+      ],
+      missable: [
+        L("Cette visite **débloque la seconde partie de Space Paranoids** et l'un des boss secrets. La sauter, c'est fermer les deux.", "This visit **unlocks the second half of Space Paranoids** and one of the secret bosses. Skipping it closes both."),
+      ],
     },
     {
       id: "forteresse-oubliee-5",
       title: L("Forteresse Oubliée", "Hollow Bastion"),
-      subtitle: L("Cinquième visite", "Fifth visit"),
+      subtitle: L("Cinquième visite — l'usine de Sans-cœur", "Fifth visit — the Heartless Manufactory"),
       world: "radiant-garden",
       level: "45",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le passage le plus court de tout le jeu — cinq minutes — mais il donne la Keyblade **Lion assoupi**, l'une des meilleures de la partie, et il ouvre une zone restée fermée jusqu'ici.\n\nLe système de défense de la ville faiblit, et des Sans-cœur venus de **Space Paranoids** se sont installés à la Forteresse : le monde virtuel déborde sur le monde réel.",
+        "The shortest stretch in the whole game — five minutes — but it gives the **Sleeping Lion** Keyblade, one of the best of the run, and it opens an area that has stayed shut until now.\n\nThe town's defence system is failing, and Heartless from **Space Paranoids** have moved into Hollow Bastion: the virtual world is spilling into the real one.",
+      ),
+      steps: [
+        {
+          id: "usine",
+          title: L("De chez Merlin à l'usine", "From Merlin's to the Manufactory"),
+          text: L(
+            "Prenez quelques minutes pour parler à **Picsou** : il a une bonne nouvelle.\n\nDevant chez Merlin, plusieurs Sans-cœur de Space Paranoids ont élu domicile : éliminez-les. Merlin, Cid et Youffie expliquent la situation, et vous envoient au bureau d'Ansem, où Aerith et Léon vous offrent la Keyblade **Lion assoupi**.\n\nLa porte restée fermée jusqu'ici s'ouvre enfin : une **pièce de puzzle**, puis une seconde et un coffre contenant une **Chaîne cosmique** dans l'**usine de Sans-cœur**.\n\nExaminez l'ordinateur pour repartir dans Space Paranoids.",
+            "Take a few minutes to talk to **Scrooge**: he has good news.\n\nOutside Merlin's, several Space Paranoids Heartless have taken up residence: kill them. Merlin, Cid and Yuffie explain the situation and send you to Ansem's study, where Aerith and Leon give you the **Sleeping Lion** Keyblade.\n\nThe door that has stayed shut until now finally opens: a **puzzle piece**, then a second and a chest holding a **Cosmic Chain** in the **Heartless Manufactory**.\n\nExamine the computer to go back into Space Paranoids.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Lion assoupi", "Sleeping Lion"), where: L("D'Aerith et Léon, au bureau d'Ansem.", "From Aerith and Leon, in Ansem's study.") },
+        { kind: "ability", label: L("Chaîne cosmique", "Cosmic Chain"), where: L("Dans l'usine de Sans-cœur, derrière la porte nouvellement ouverte.", "In the Heartless Manufactory, behind the newly opened door.") },
+        { kind: "minigame", label: L("Deux pièces de puzzle", "Two puzzle pieces"), where: L("Dans l'usine de Sans-cœur.", "In the Heartless Manufactory.") },
+      ],
     },
     {
       id: "space-paranoids-2",
       title: L("Space Paranoids", "Space Paranoids"),
-      subtitle: L("Deuxième visite", "Second visit"),
+      subtitle: L("Deuxième visite — le MCP", "Second visit — the MCP"),
       world: "the-grid",
       level: "45",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le retour dans l'ordinateur, et la fin de l'histoire de Tron. Cette visite **exige d'avoir fait les deux épisodes de la Terre des Lions** : sans eux, elle reste fermée.\n\nElle a une bonne nouvelle en ouverture : **plus de course de Light Cycle**. À la place, des combats — ce qui, après la première visite, soulagera beaucoup de joueurs.\n\nElle se termine sur le **MCP** et sur une révélation : les habitants retrouvent le véritable nom de leur monde, le **Jardin Radieux**.",
+        "The return into the computer, and the end of Tron's story. This visit **requires both Pride Lands episodes**: without them it stays closed.\n\nIt opens with good news: **no more Light Cycle race**. Fights instead — which, after the first visit, will come as a relief to many players.\n\nIt ends on the **MCP** and on a revelation: the residents recover their world's true name, **Radiant Garden**.",
+      ),
+      steps: [
+        {
+          id: "voilier",
+          title: L("Le voilier solaire", "The Solar Sailer"),
+          text: L(
+            "De retour en cellule, Tron rejoint l'équipe. Direction la **tour E/S** pour de nouveaux combats.\n\nDans la salle de transmission, Tron reçoit enfin le programme écrit par Cid et Merlin, et gagne deux compétences : **Concentration** et **Booster Foudre**.\n\nActivez le **voilier solaire** depuis cette même salle ; il vous attend dans la salle rouge, à l'opposé. Une fois sur place, marchez sur le **losange jaune** pour monter à bord. Prenez la **pièce de puzzle**, puis lancez le voilier.\n\nLes Sans-cœur tendent une embuscade, et le voilier **cède si vous traînez** : il faut les supprimer vite. **Abusez des coopérations** avec Donald et Tron, c'est le rythme le plus rapide.\n\nÀ destination, quatre coffres : un **Bonus PC**, un **Orichalque +**, la **carte du cœur de l'unité centrale** et une **Amulette cosmique**. Sauvegardez avant d'avancer.",
+            "Back in the cell, Tron rejoins the party. Head for the **I/O Tower** for more fighting.\n\nIn the communications room, Tron finally receives the program written by Cid and Merlin, and gains two abilities: **Combo Boost** and **Thunder Boost**.\n\nActivate the **Solar Sailer** from that same room; it waits for you in the red room opposite. Once there, step on the **yellow diamond** to board. Take the **puzzle piece**, then launch the sailer.\n\nThe Heartless ambush you, and the sailer **gives way if you dawdle**: they have to go down fast. **Lean on the limits** with Donald and Tron, it is the quickest pace.\n\nAt your destination, four chests: an **AP Boost**, an **Orichalcum+**, the **Central Computer Mesa map** and a **Cosmic Arts**. Save before moving on.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "sark-mcp",
+          name: L("Sark et le MCP", "Sark and the MCP"),
+          entry: "mcp",
+          level: "46",
+          reward: L("Sora : +5 points de vie et l'élément de Miroir. Donald : +3 points de vie. Dingo : un emplacement d'accessoire supplémentaire. Tron : +5 points de vie.", "Sora: +5 HP and the Reflect element. Donald: +3 HP. Goofy: an extra accessory slot. Tron: +5 HP."),
+          tactics: L(
+            "Long, mais sans piège : c'est un cycle à répéter, et il n'y a rien à découvrir en route.\n\n**Sark** ouvre le bal et ne tient pas longtemps. Une commande réaction renvoie même le disque qu'il vous lance, ce qui l'étourdit. Le MCP le ressuscite ensuite, et le vrai combat commence.\n\n**Le cycle, en deux temps :**\n\n1. **Battre Sark** : attaquez d'abord **ses jambes**, puis **sa tête**. Méfiez-vous des éclairs et du disque géant qu'il projette.\n2. **Attaquer le MCP** : détruisez **l'un des anneaux** de sa barrière **pendant qu'elle est immobile**, puis déclenchez **Effacer** dès que Tron est à vos côtés. **Martelez Triangle** — mais **arrêtez quand la barrière se met à vibrer dangereusement**, sinon vous encaissez. En retombant, chaque anneau tire un laser.\n\nSark se relève, et on recommence. **Trois ou quatre Effacer** suffisent à en finir.\n\nEn fin de combat, Sark tente un dernier piège : il **crée un mur**. Grimpez-le avec **Escalade**, puis **Piqué** le met hors d'état de nuire d'un seul coup.",
+            "Long, but without a catch: it is a cycle to repeat, and there is nothing to discover along the way.\n\n**Sark** opens proceedings and does not last long. A Reaction Command even sends back the disc he throws, stunning him. The MCP then revives him, and the real fight starts.\n\n**The cycle, in two steps:**\n\n1. **Beat Sark**: attack **his legs** first, then **his head**. Watch for the lightning and the giant disc he throws.\n2. **Attack the MCP**: destroy **one of the rings** of its barrier **while it is still**, then trigger **Delete** as soon as Tron is beside you. **Mash Triangle** — but **stop when the barrier starts vibrating dangerously**, or you take the hit. As they fall, each ring fires a laser.\n\nSark gets back up, and you start again. **Three or four Deletes** are enough to finish it.\n\nLate in the fight, Sark tries one last trap: he **raises a wall**. Climb it with **Scale**, then **Dive** takes him out in a single blow.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("À l'arrivée du voilier solaire, au cœur de l'unité centrale.", "At the Solar Sailer's destination, at the Central Computer Mesa.") },
+        { kind: "synthesis", label: L("Orichalque +", "Orichalcum+"), where: L("Avec les coffres du cœur de l'unité centrale.", "With the Central Computer Mesa chests."), note: L("L'un des sept du jeu : il entre dans l'Ultima.", "One of the game's seven: it goes into the Ultima Weapon.") },
+        { kind: "ability", label: L("Élément de Miroir, et Explosion", "Reflect element, and Explosion"), where: L("L'embuscade du voilier, puis la victoire sur le MCP.", "The sailer ambush, then beating the MCP.") },
+      ],
+      missable: [
+        L("Cette visite est **fermée tant que les deux épisodes de la Terre des Lions ne sont pas faits**.", "This visit is **closed until both Pride Lands episodes are done**."),
+      ],
     },
     {
       id: "cite-du-crepuscule-3",
       title: L("Cité du Crépuscule", "Twilight Town"),
-      subtitle: L("Troisième visite — le train", "Third visit — the train"),
+      subtitle: L("Troisième visite — l'autre Cité", "Third visit — the other Twilight Town"),
       world: "twilight-town",
       level: "47",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le dernier retour à la Cité, et de loin le plus riche en coffres : le **passage souterrain** ouvre enfin des zones restées inaccessibles depuis le prologue, et on y ramasse **trois Orichalques** et un **Orichalque +**.\n\nC'est aussi ici qu'on récupère la **Formule Ultime**, celle qui permet de fabriquer l'**Ultima** à l'atelier des Mogs. Elle est cachée derrière deux portes qu'on peut très bien ne jamais ouvrir : le cheminement ci-dessous y passe.\n\nLa visite se termine sur le sacrifice d'**Axel**, la Keyblade **Ignescence**, et l'ouverture d'**Illusiopolis**.",
+        "The last return to Twilight Town, and by far the richest in chests: the **Underground Concourse** finally opens areas that have stayed shut since the prologue, and you pick up **three Orichalcums** and an **Orichalcum+** there.\n\nIt is also where you get the **Ultimate Recipe**, the one that lets you build the **Ultima Weapon** at the moogle workshop. It is hidden behind two doors you could easily never open: the route below goes through them.\n\nThe visit ends on **Axel's** sacrifice, the **Bond of Flame** Keyblade, and the opening of **The World That Never Was**.",
+      ),
+      steps: [
+        {
+          id: "souterrain",
+          title: L("Le passage souterrain", "The Underground Concourse"),
+          text: L(
+            "Dingo propose d'aller où la photo a été prise : le **manoir**. Mais la ville grouille de Similis, et surtout elle a des coffres à rendre.\n\nPrenez le **passage souterrain** par la **porte n° 5**.\n\n- Avancez droit devant jusqu'à une **pièce de puzzle**.\n- Sautez en contrebas derrière le muret vers le coffre que vous aperceviez : un **Cristal de mithril**.\n- Remontez le muret, un **Bonus PC** en face. À gauche du coffre, sautez pour une **pièce de puzzle**.\n- La petite zone fermée contient un **Orichalque**.\n- Grimpez les deux plates-formes en face : le couloir ouest et un coffre (**Gemme de mithril**).\n- Descendez au sud, **porte n° 2** : le **Tunnel**, avec un **Orichalque** et une **pièce de puzzle**.\n- Suivez le tunnel vers la **sortie n° 1** — un **Cristal de mithril** au passage — qui donne sur la **Terrasse du Couchant**.",
+            "Goofy suggests going where the photo was taken: the **mansion**. But the town is crawling with Nobodies, and above all it has chests to give back.\n\nTake the **Underground Concourse** through **door 5**.\n\n- Go straight ahead to a **puzzle piece**.\n- Drop down behind the low wall to the chest you could see: a **Mythril Crystal**.\n- Climb back over the wall, an **AP Boost** opposite. Left of the chest, jump for a **puzzle piece**.\n- The small closed area holds an **Orichalcum**.\n- Climb the two platforms opposite: the western corridor and a chest (**Mythril Gem**).\n- Go down to the south, **door 2**: the **Tunnelway**, with an **Orichalcum** and a **puzzle piece**.\n- Follow the tunnel to **exit 1** — a **Mythril Crystal** on the way — which opens onto **Sunset Terrace**.",
+          ),
+        },
+        {
+          id: "terrasse",
+          title: L("La Terrasse du Couchant", "Sunset Terrace"),
+          text: L(
+            "Prenez **deux fois à gauche** pour un **Bonus PC** dans une impasse que vous devriez reconnaître — c'est celle du prologue.\n\nSuivez le circuit du tram : un **Cristal de mithril** près d'un sapin, un **Éclat de mithril** près de la fontaine.\n\nSautez ensuite **sur le tram et les toits** : un **Orichalque +** et **deux pièces de puzzle** — celle au-dessus de la fontaine demande le **Double saut**.\n\nProfitez-en pour monter au sommet de la **Colline du Couchant**, par la sortie ouest : **deux pièces de puzzle** de plus.",
+            "Take **two lefts** for an **AP Boost** in a dead end you should recognise — it is the one from the prologue.\n\nFollow the tram route: a **Mythril Crystal** by a fir tree, a **Mythril Shard** near the fountain.\n\nThen jump **onto the tram and the roofs**: an **Orichalcum+** and **two puzzle pieces** — the one above the fountain needs **High Jump**.\n\nTake the chance to go up to the top of **Sunset Hill**, through the western exit: **two more puzzle pieces**.",
+          ),
+        },
+        {
+          id: "manoir",
+          title: L("Le manoir, et la Formule Ultime", "The mansion, and the Ultimate Recipe"),
+          text: L(
+            "Retournez au passage souterrain et prenez la **sortie n° 4**. Dans la cour, Hayner, Pence et Olette sont au sol : ils ont une théorie sur l'existence d'une **autre Cité du Crépuscule**. Une horde de Similis attaque — **avec Mickey** à vos côtés, et ça vaut le coup d'œil.\n\nDans le manoir : le hall donne une **pièce de puzzle**, un **Cristal de mithril**, une **Pierre de mithril** et un **Cristal de sérénité**. La salle à manger, par la porte ouest, une **Pierre de mithril** et un **Cristal de mithril**. Le salon blanc, en haut à l'ouest, une **pièce de puzzle** sur la table et un point de sauvegarde.\n\nRejoignez la salle de contrôle par le chemin de Roxas, en prenant l'**Orichalque** du coffre de la bibliothèque.\n\nDevant l'ordinateur, parlez à Pence et donnez le mot de passe : **« Glace à l'eau de mer »**.\n\n**Avant de toucher le faisceau**, prenez la porte derrière vous, puis la suivante : au bout du couloir vous attend la **Formule Ultime**, celle de l'arme la plus puissante du jeu. La pièce de la capsule, juste après, cache encore une **pièce de puzzle**.\n\nRevenez, repassez par le point de sauvegarde pour l'ajouter à vos destinations, et touchez le faisceau.",
+            "Go back to the Underground Concourse and take **exit 4**. In the courtyard, Hayner, Pence and Olette are on the ground: they have a theory about the existence of **another Twilight Town**. A horde of Nobodies attacks — **with Mickey** at your side, and it is worth watching.\n\nIn the mansion: the hall gives a **puzzle piece**, a **Mythril Crystal**, a **Mythril Stone** and a **Serenity Crystal**. The dining room, through the western door, a **Mythril Stone** and a **Mythril Crystal**. The white room, upstairs to the west, a **puzzle piece** on the table and a save point.\n\nReach the computer room by Roxas's route, taking the **Orichalcum** from the library chest.\n\nIn front of the computer, talk to Pence and give the password: **'Sea-salt ice cream'**.\n\n**Before touching the beam**, take the door behind you, then the next one: at the end of the corridor waits the **Ultimate Recipe**, the one for the most powerful weapon in the game. The pod room just after hides another **puzzle piece**.\n\nCome back, walk over the save point to add it to your destinations, and touch the beam.",
+          ),
+        },
+        {
+          id: "entremonde",
+          title: L("L'autre Cité, et l'Entremonde", "The other Twilight Town, and Betwixt and Between"),
+          text: L(
+            "Vous obtenez le **rapport d'Ansem n° 10**. Vos déplacements sont limités au manoir : prenez la **pièce de puzzle** puis la porte au sud-ouest.\n\nTouchez la sphère pour être transporté dans l'**Entremonde**. Après un premier combat contre des Reflets, les vagues s'enchaînent — et **Axel** vient prêter main-forte.\n\nAu terme du combat, vous recevez **Frappe éclair**. Axel se sacrifie pour vous ouvrir la voie vers **Illusiopolis**, et vous laisse la Keyblade **Ignescence**.",
+            "You receive **Ansem's Report 10**. Your movement is limited to the mansion: take the **puzzle piece** then the door to the south-west.\n\nTouch the sphere to be carried to **Betwixt and Between**. After a first fight against Dusks, the waves keep coming — and **Axel** steps in to help.\n\nAt the end of the fight you receive **Flash Step**. Axel sacrifices himself to open the way to **The World That Never Was**, and leaves you the **Bond of Flame** Keyblade.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "synthesis", label: L("Formule Ultime", "Ultimate Recipe"), where: L("Au bout du couloir derrière la salle de contrôle du manoir, en prenant la porte derrière vous puis la suivante — avant de toucher le faisceau.", "At the end of the corridor behind the mansion's computer room, through the door behind you then the next — before touching the beam."), note: L("C'est la recette de l'**Ultima**. Elle se rate très facilement.", "It is the **Ultima Weapon** recipe. It is very easy to miss.") },
+        { kind: "synthesis", label: L("Trois Orichalques et un Orichalque +", "Three Orichalcums and an Orichalcum+"), where: L("Passage souterrain, Tunnel, bibliothèque du manoir, et les toits de la Terrasse du Couchant.", "The Underground Concourse, the Tunnelway, the mansion library, and the Sunset Terrace roofs.") },
+        { kind: "ability", label: L("Bonus PC ×2", "AP Boost ×2"), where: L("Dans le passage souterrain, et dans l'impasse de la Terrasse du Couchant.", "In the Underground Concourse, and in the Sunset Terrace dead end.") },
+        { kind: "keyblade", label: L("Ignescence", "Bond of Flame"), where: L("D'Axel, à l'Entremonde.", "From Axel, in Betwixt and Between.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 10", "Ansem's Report 10"), where: L("En passant dans l'autre Cité du Crépuscule.", "On crossing into the other Twilight Town.") },
+      ],
+      missable: [
+        L("La **Formule Ultime** se trouve derrière deux portes qu'on peut traverser la ville sans jamais ouvrir. Sans elle, pas d'**Ultima** — l'arme la plus puissante du jeu.", "The **Ultimate Recipe** sits behind two doors you can cross the whole town without ever opening. Without it, there is no **Ultima Weapon** — the most powerful weapon in the game."),
+      ],
     },
     {
       id: "illusiopolis",
@@ -1319,7 +1842,140 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Le Monde qui n'existe pas", "The World That Never Was"),
       world: "world-that-never-was",
       level: "50",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le monde de l'Organisation XIII, et la plus longue section du jeu : **six membres à affronter**, puis un final en quatre combats.\n\nElle commence par le duel le plus marquant de la série — **Roxas** — et se termine par une suite d'affrontements contre **Xemnas** sous quatre formes différentes.\n\nQuelques points pratiques avant d'entrer. Un **point de sauvegarde permet de revenir à l'atlas**, et vous pourrez revenir directement ici ensuite : rien ne vous enferme. Le **Mog** de Dark City vend de bonnes armes pour vos compagnons, et c'est le dernier avant la fin. Et une fois le jeu terminé, la sauvegarde marquée d'une **couronne** vous ramène à l'Autel du Néant en gardant tout : c'est de là que se font les quêtes annexes.",
+        "The Organisation XIII's world, and the longest section in the game: **six members to face**, then a finale in four fights.\n\nIt opens on the series' most memorable duel — **Roxas** — and ends on a run of battles against **Xemnas** in four different forms.\n\nA few practical points before going in. A **save point lets you return to the world map**, and you can come straight back here afterwards: nothing locks you in. The **moogle** in Dark City sells good weapons for your companions, and it is the last one before the end. And once the game is finished, the save marked with a **crown** brings you back to the Altar of Naught keeping everything: that is where the side content is done from.",
+      ),
+      steps: [
+        {
+          id: "tour",
+          title: L("La Tour du Souvenir et Dark City", "Memory's Skyscraper and Dark City"),
+          text: L(
+            "Le décor ne devrait pas vous être inconnu : c'est celui de la **fin secrète du premier Kingdom Hearts**.\n\nAvancez en éliminant les Ombres — c'est une bonne occasion de monter la **Vaillance** et la **Sagesse** si ce n'est pas fait. Quatre coffres : une **Pierre de mithril**, un **Cristal de mithril**, un **Bonus PC** et un **Orichalque**.\n\nDans la zone suivante, Sora est attaqué par un jeune homme qu'il est **le seul à voir**.\n\nAprès le combat, ouvrez les coffres au pied de la Tour du Souvenir : un **Bonus PC** près du camion accidenté, un **Cristal de mithril** et une **Pierre de mithril** près de la sortie, plus une **pièce de puzzle**.\n\nLa ruelle de gauche débouche devant la forteresse. Avant de vous engager sur le passage créé par Sora, prenez la **carte de Dark City** et un **Orichalque +** au bord du précipice.",
+            "The setting should not be unfamiliar: it is the one from the **first Kingdom Hearts' secret ending**.\n\nPush on clearing Shadows — a good chance to level **Valor** and **Wisdom** if you have not. Four chests: a **Mythril Stone**, a **Mythril Crystal**, an **AP Boost** and an **Orichalcum**.\n\nIn the next area, Sora is attacked by a young man he is **the only one who can see**.\n\nAfter the fight, open the chests at the foot of Memory's Skyscraper: an **AP Boost** near the crashed truck, a **Mythril Crystal** and a **Mythril Stone** near the exit, plus a **puzzle piece**.\n\nThe alley on the left comes out in front of the fortress. Before stepping onto the path Sora creates, take the **Dark City map** and an **Orichalcum+** at the edge of the drop.",
+          ),
+        },
+        {
+          id: "citadelle",
+          title: L("L'Illusiocitadelle", "The Castle That Never Was"),
+          text: L(
+            "L'intérieur est gardé par des Similis tous plus puissants les uns que les autres, dont une espèce nouvelle : les **Incantateurs**.\n\nDans **L'appel de la Vacuité**, deux coffres près de la sortie — un **Orichalque** et une **Gemme de mithril** — et une **pièce de puzzle**. Une horde tente de bloquer la plate-forme ascensionnelle.\n\nLe **Hall des mélodies creuses** donne une **Ceinture cosmique**, un point de sauvegarde et le dernier Mog. Xigbar vous attend en haut des escaliers.\n\nAprès lui, la **Passerelle du Néant** : une **Gemme de mithril**, un **Orichalque** et un **Cristal de mithril**. La zone suivante réserve des retrouvailles, la Keyblade **Souvenir perdu** et la **carte de l'Illusiocitadelle**.\n\nPuis vient la salle de la **Preuve d'existence** : un cimetière où treize stèles honorent les membres de l'Organisation. **Deux fonctionnent encore** — celle du numéro sept, Saïx, et celle du numéro dix, Luxord. Prenez la **pièce de puzzle** avant d'aller les saluer.",
+            "Inside, the guards are Nobodies each stronger than the last, including a new species: the **Sorcerers**.\n\nIn **Naught's Approach**, two chests near the exit — an **Orichalcum** and a **Mythril Gem** — and a **puzzle piece**. A horde tries to block the rising platform.\n\nThe **Hall of Empty Melodies** gives a **Cosmic Belt**, a save point and the last moogle. Xigbar waits at the top of the stairs.\n\nAfter him, the **Ruin and Creation's Passage**: a **Mythril Gem**, an **Orichalcum** and a **Mythril Crystal**. The next area holds a reunion, the **Oblivion** Keyblade and the **castle map**.\n\nThen comes the **Proof of Existence**: a graveyard where thirteen headstones honour the Organisation's members. **Two are still working** — number seven, Saïx, and number ten, Luxord. Take the **puzzle piece** before going to pay your respects.",
+          ),
+        },
+        {
+          id: "sommet",
+          title: L("Le sommet, et le point de non-retour", "The summit, and the point of no return"),
+          text: L(
+            "Saïx battu, le passage du fond de la Preuve d'existence s'ouvre. Vous rejoignez Mickey, et à la suite d'un événement tragique **Riku intègre l'équipe**.\n\nLa zone suivante est faite de plates-formes reliées par des **voies invisibles** — elles apparaissent sur la carte, et sous vos pas. Chaque plate-forme a son coffre : une **Pierre de mithril**, un **Bonus PC**, un **Cristal de mithril** et un **Orichalque**.\n\nAu sommet vous attend **Xemnas**, qui emmène Sora dans une dimension parallèle pour un duel.\n\nAprès ce combat, vous recevez le **rapport d'Ansem n° 13**. La porte face au Kingdom Hearts est **le vrai point de non-retour** — mais le point de sauvegarde permet de repartir sur l'atlas pour les quêtes annexes. C'est le moment d'y penser, pas après.",
+            "With Saïx beaten, the passage at the back of the Proof of Existence opens. You join Mickey, and after a tragic turn **Riku joins the party**.\n\nThe next area is made of platforms joined by **invisible paths** — they show on the map, and under your feet. Each platform has its chest: a **Mythril Stone**, an **AP Boost**, a **Mythril Crystal** and an **Orichalcum**.\n\nAt the summit waits **Xemnas**, who takes Sora into a parallel dimension for a duel.\n\nAfter that fight you receive **Ansem's Report 13**. The door facing Kingdom Hearts is **the real point of no return** — but the save point lets you go back to the world map for the side content. Now is the moment to think about that, not after.",
+          ),
+        },
+        {
+          id: "final",
+          title: L("L'affrontement final", "The final confrontation"),
+          text: L(
+            "Xemnas vous barre la route avec les immeubles d'Illusiopolis : **enchaînez les commandes réaction** pour échapper aux bâtiments qui tombent.\n\nDeux **réacteurs** ensuite : en éliminant les ennemis qui apparaissent, vous les projetez dedans jusqu'à destruction. Quand le message vous dit de **changer de côté**, appuyez sur Triangle — sinon vous prenez la décharge.\n\nPuis le **cœur énergétique**, une paroi géante marquée du symbole des Similis. Après quelques coups, un bouclier apparaît : **éliminez les ennemis alentour** pour le désactiver. Des **griffes géantes** frappent le sol — placez-vous aux extrémités de la zone.\n\nS'enchaînent alors les quatre dernières formes de Xemnas.",
+            "Xemnas blocks your way with the buildings of the city: **chain the Reaction Commands** to escape the falling towers.\n\nTwo **reactors** next: by killing the enemies that appear, you throw them into one until it is destroyed. When the message tells you to **switch sides**, press Triangle — otherwise you take the discharge.\n\nThen the **energy core**, a giant wall marked with the Nobody symbol. After a few hits a shield appears: **kill the enemies around** to bring it down. **Giant claws** slam into the ground — stand at the edges of the area.\n\nThen come Xemnas's four final forms.",
+          ),
+        },
+      ],
+      bosses: [
+        {
+          id: "roxas",
+          name: L("Roxas", "Roxas"),
+          entry: "roxas",
+          level: "50",
+          reward: L("+5 points de vie et Combo Master. Plus le rapport d'Ansem n° 8 et la Keyblade Deux pour un.", "+5 HP and Combo Master. Plus Ansem's Report 8 and the Two Become One Keyblade."),
+          tactics: L(
+            "Le plus beau combat de la série, et l'un des plus rapides à lire — à condition de ne pas essayer de le suivre à la vitesse.\n\nDès le début, il recule puis **fond sur vous** : **Parade**, puis un premier combo. Écartez-vous aussitôt, il enchaîne une contre-attaque circulaire.\n\nSa vivacité ne laisse pas le temps de réfléchir, alors **ne réfléchissez pas, réagissez** : il glisse, feint de s'éloigner, revient. **Parez ou lancez Miroir** à répétition pour le déséquilibrer, et frappez à ce moment-là.\n\nQuand il **s'élève, s'entoure de rayons et lance des dizaines d'orbes** : soit vous enchaînez les roulades au bord de l'arène, soit vous martelez **Miroir** — efficace, mais cher en magie.\n\nLe grand moment : quand il **fond sur vous au ralenti**, les options du menu disparaissent et une commande réaction unique s'affiche. **Sélectionnez-la** — les Keyblades apparaissent autour de vous et font un carnage. La rater, c'est prendre sa contre-attaque de plein fouet.\n\nEn fin de combat, il **combine ses coups à des rayons de lumière** et ne laisse plus une seconde. La **Souvenance** est la meilleure réponse : ses techniques font très mal, et sa mobilité suit le rythme.",
+            "The finest fight in the series, and one of the easiest to read — provided you do not try to match its speed.\n\nRight away he steps back then **dives at you**: **Guard**, then a first combo. Move clear immediately, he follows with a spinning counter.\n\nHis speed leaves no time to think, so **do not think, react**: he slides, feints away, comes back. **Guard or cast Reflect** repeatedly to unbalance him, and hit then.\n\nWhen he **rises, wraps himself in beams and throws dozens of orbs**: either chain dodge rolls at the edge of the arena, or mash **Reflect** — effective, but expensive in MP.\n\nThe great moment: when he **dives at you in slow motion**, the menu options vanish and a single Reaction Command appears. **Select it** — the Keyblades appear around you and do carnage. Missing it means taking his counter full on.\n\nLate in the fight he **combines his strikes with beams of light** and never lets up. **Limit Form** is the best answer: its techniques hurt badly, and its mobility keeps pace.",
+          ),
+          attacks: [
+            { name: L("Chute au ralenti", "The slow-motion dive"), note: L("La commande réaction unique. La saisir écourte le combat ; la rater coûte cher.", "The unique Reaction Command. Taking it shortens the fight; missing it is costly.") },
+            { name: L("Pluie d'orbes", "Orb storm"), note: L("Roulades au bord de l'arène, ou Miroir en boucle.", "Dodge rolls at the arena's edge, or Reflect on repeat.") },
+          ],
+        },
+        {
+          id: "xigbar",
+          name: L("Xigbar", "Xigbar"),
+          entry: "xigbar",
+          level: "51",
+          reward: L("Sora : +10 points de magie. Donald : un emplacement d'objet supplémentaire. Dingo : +4 points de vie. Et le rapport d'Ansem n° 3.", "Sora: +10 MP. Donald: an extra item slot. Goofy: +4 HP. Plus Ansem's Report 3."),
+          tactics: L(
+            "Le combat s'ouvre comme un **jeu de tir à la première personne** — sauf que la cible, c'est vous. Bougez pour esquiver les projectiles violets, et **quand le viseur devient jaune**, préparez Triangle : **Riposte** puis **Ricochet** lui renvoient son propre tir et le font descendre.\n\nEnsuite : il est **suspendu en l'air en permanence** et se téléporte après quelques salves. **Verrouillez-le avec R1**, sinon vous passerez le combat à le chercher.\n\nSes deux pistolets tirent vite, mais la **Parade les renvoie**. **Quatre de ses propres lasers** le font s'évanouir quelques secondes : c'est votre fenêtre. Ses **pauses de rechargement**, après trois salves, en sont une autre.\n\nAttention au projectile **de forme et de couleur différentes** : il rebondit partout et fait mal. Une commande réaction le repousse.\n\nIl **modifie l'arène** selon son humeur — plate-forme étroite, sol troué. Parez, approchez, et **un simple combo remet tout en place**.\n\nSous deux barres de vie, sa technique suprême : il réduit l'arène au minimum et devient insensible. Trois temps, trois réponses : **il tournoie au centre en tirant** — placez-vous dans un coin et sautez juste avant d'être touché ; **il se téléporte sur les bords et tire dans le sens des aiguilles d'une montre** — tournez dans le même sens ; **il revient au centre et fait pleuvoir** — courez en cercle sans trop approcher du bord.\n\nVous n'en sortirez probablement pas indemne. **Dernière chance** montre ici toute son utilité.",
+            "The fight opens like a **first-person shooter** — except you are the target. Move to dodge the purple shots, and **when the reticle turns yellow**, ready Triangle: **Counter** then **Ricochet** send his own shot back and bring him down.\n\nThen: he is **permanently suspended in mid-air** and teleports after a few volleys. **Lock on with R1**, or you will spend the fight looking for him.\n\nHis two guns fire fast, but **Guard sends them back**. **Four of his own lasers** make him black out for a few seconds: that is your window. His **reload pauses**, after three volleys, are another.\n\nWatch for the shot of **different shape and colour**: it ricochets everywhere and hurts. A Reaction Command pushes it away.\n\nHe **reshapes the arena** as the mood takes him — a narrow platform, a floor full of holes. Guard, close in, and **a single combo puts everything back**.\n\nBelow two HP bars, his ultimate: he shrinks the arena to a minimum and becomes untouchable. Three stages, three answers: **he spins at the centre firing continuously** — stand in a corner and jump just before being hit; **he teleports around the edges firing clockwise** — circle the same way; **he returns to the centre and rains shots** — run in a circle without going too near the edge.\n\nYou will probably not come through unscathed. **Second Chance** proves its worth here.",
+          ),
+        },
+        {
+          id: "luxord",
+          name: L("Luxord", "Luxord"),
+          entry: "luxord",
+          level: "52",
+          reward: L("+5 points de vie et l'élément d'Attraction. Plus le rapport d'Ansem n° 9.", "+5 HP and the Magnet element. Plus Ansem's Report 9."),
+          tactics: L(
+            "Sora se bat **seul**, et le combat ne se joue pas sur la vie mais sur **le temps**.\n\nUne jauge en haut de l'écran est à la fois votre compte à rebours **et** la vie de Luxord : elle descend avec le temps, et plus ou moins vite selon les coups portés de part et d'autre. Le but est de **la vider avant lui**.\n\nD'entrée, il vous change en **dé**. Sous cette forme, ne faites rien d'autre que **fuir** jusqu'à épuisement de votre jauge de Flux.\n\nIl se bat avec des **cartes à taille humaine** qui bougent seules. Les frapper donne des orbes de magie ; la commande **Retourner** les détruit. Luxord s'y cache très souvent : **trouvez la sienne et retournez-la**, vous aurez quelques secondes pour frapper. Mais attention — une carte **« temps »** vous coûte de la jauge, et une carte **au symbole rouge** vous blesse **et** vous coûte du temps.\n\nSes deux jeux :\n\n- La commande **Jouer** apparaît : **saisissez-la vite**, sinon une tornade de cartes imparable vous frappe. Le menu se remplit alors de trois **X** et d'un **O** en mouvement : **appuyez sur le O**. Raté, vous perdez du temps et redevenez une carte.\n- Plus tard, les **X** et **O** apparaissent successivement : il faut **n'activer que des O** pour lui infliger une grosse perte.\n\nC'est le combat le plus dépendant de l'attention du jeu — pas des réflexes.",
+            "Sora fights **alone**, and the fight turns not on HP but on **time**.\n\nA gauge at the top of the screen is both your countdown **and** Luxord's health: it falls with time, faster or slower depending on the hits landed either way. The point is to **empty it before he empties yours**.\n\nStraight away he turns you into a **die**. In that form, do nothing but **run** until your Drive gauge empties.\n\nHe fights with **human-sized cards** that move on their own. Hitting them gives MP orbs; the **Flip** command destroys them. Luxord very often hides among them: **find his card and flip it**, and you get a few seconds to strike. But beware — a **'time' card** costs you gauge, and a card with a **red symbol** hurts you **and** costs time.\n\nHis two games:\n\n- The **Play** command appears: **take it fast**, or an unguardable tornado of cards hits you. The menu then fills with three moving **X**s and one **O**: **press the O**. Miss, and you lose time and become a card again.\n- Later, the **X**s and **O**s appear one after another: you must **only pick the O**s to inflict a heavy loss on him.\n\nIt is the game's most attention-dependent fight — not reflex-dependent.",
+          ),
+        },
+        {
+          id: "saix",
+          name: L("Saïx", "Saïx"),
+          entry: "saix",
+          level: "53",
+          reward: L("Sora : +5 points de vie. Donald : +3 points de vie. Dingo : un emplacement d'objet supplémentaire. Plus le rapport d'Ansem n° 12.", "Sora: +5 HP. Donald: +3 HP. Goofy: an extra item slot. Plus Ansem's Report 12."),
+          tactics: L(
+            "Une jauge **Furie** en haut de l'écran décide de tout. Pleine, le Divin Lunaire entre en folie destructrice, enchaîne des attaques puissantes et devient **pratiquement invulnérable**. Et il **commence le combat dans cet état**.\n\nEn furie, il frappe le sol trois fois et projette des flammes bleutées dans plusieurs directions. Deux options :\n\n- **Fuir** en attendant qu'il se calme, avec le Vol plané, le Double saut ou une coopération.\n- **Ramasser l'une des armes** qu'il jette violemment au sol, et le toucher avec **Éclipse** puis **Tempête Magna** : en plus de très lourds dégâts, ça le **ramène à la raison**.\n\nLa seconde option est nettement meilleure, et elle mène à la méthode la plus efficace du combat :\n\n**Lancez Miroir quand il attaque dans son état normal** — son arme lui tombe des mains. Ramassez-la, gardez-la, et **déclenchez Tempête Magna au moment où il repasse en furie**.\n\nSinon, sa furie calmée, **parez sa charge** pour lui faire lâcher son arme à nouveau.\n\nÀ mesure qu'il perd de la vie, sa furie empire : ses charges s'accompagnent de **cercles de flammes**, et il retombe de ses sauts avec une **onde de choc** — sautez pour la passer, et profitez-en pour attraper une Claymore.",
+            "A **Berserk** gauge at the top of the screen decides everything. Full, the Luna Diviner goes into a destructive frenzy, chains powerful attacks and becomes **practically invulnerable**. And he **starts the fight in that state**.\n\nBerserk, he slams the ground three times and throws blue flames in several directions. Two options:\n\n- **Run** until he calms down, using Glide, High Jump or a limit.\n- **Pick up one of the weapons** he hurls violently into the ground, and hit him with **Eclipse** then **Magna Storm**: on top of very heavy damage, that **brings him back to his senses**.\n\nThe second option is clearly better, and it leads to the fight's most effective method:\n\n**Cast Reflect when he attacks in his normal state** — his weapon falls from his hands. Pick it up, hold onto it, and **trigger Magna Storm the moment he goes berserk again**.\n\nOtherwise, once his frenzy has passed, **guard his charge** to make him drop his weapon again.\n\nAs his HP falls, his frenzy gets worse: his charges come with **rings of flame**, and he lands from his jumps with a **shockwave** — jump to clear it, and use the moment to grab a Claymore.",
+          ),
+          attacks: [
+            { name: L("La jauge Furie", "The Berserk gauge"), note: L("Pleine, il est presque invulnérable. C'est elle qu'on gère, pas sa vie.", "Full, he is nearly invulnerable. That is what you manage, not his HP.") },
+            { name: L("Les armes plantées au sol", "The weapons in the ground"), note: L("Éclipse puis Tempête Magna : gros dégâts, et ça le calme.", "Eclipse then Magna Storm: heavy damage, and it calms him.") },
+          ],
+        },
+        {
+          id: "xemnas-1",
+          name: L("Xemnas — le duel", "Xemnas — the duel"),
+          entry: "xemnas",
+          level: "55",
+          reward: L("+5 points de vie et +5 points de magie. Plus le rapport d'Ansem n° 13.", "+5 HP and +5 MP. Plus Ansem's Report 13."),
+          tactics: L(
+            "Xemnas ouvre en créant **trois cristaux** autour de vous qui grignotent votre vie. Ne restez pas dedans : **filez au pied de la tour** et déclenchez **Affronter**.\n\nSora escalade alors l'immeuble, et une **suite de commandes réaction** s'enchaîne : **Repousser**, **Riposte**, puis **Assommer**. Vous en choisissez une pour conclure — **Assommer fait le plus de dégâts**. N'en prendre aucune, c'est encaisser son attaque.\n\nAu sol, le combat est étonnamment calme : Xemnas reste **relativement passif**. Il enchaîne de longues séries de sabres laser — **parez, puis contre-attaquez** —, dresse un mur d'énergie pour vous gêner, et se téléporte de temps à autre.\n\nLa seule règle : **attendez que sa barrière d'énergie tombe** avant d'attaquer. Le reste vient tout seul.",
+            "Xemnas opens by creating **three crystals** around you that chip away at your HP. Do not stay in them: **head to the foot of the tower** and trigger **Duel**.\n\nSora then scales the building, and a **run of Reaction Commands** follows: **Repel**, **Counter**, then **Stun**. You pick one to finish — **Stun does the most damage**. Taking none means eating his attack.\n\nOn the ground, the fight is surprisingly calm: Xemnas stays **relatively passive**. He chains long series of laser-sword strikes — **guard, then counter** — raises a wall of energy to hamper you, and teleports now and then.\n\nThe only rule: **wait for his energy barrier to drop** before attacking. The rest takes care of itself.",
+          ),
+        },
+        {
+          id: "xemnas-armure",
+          name: L("Xemnas en armure, et le dragon", "Armored Xemnas, and the dragon"),
+          entry: "xemnas",
+          level: "58",
+          tactics: L(
+            "Trois combats d'affilée, chacun avec sa logique.\n\n**Xemnas en armure (première fois).** Il ne bouge pas de son trône. Deux défenses : un **coup de lame** après vos combos, qui vous envoie au fond de l'arène — **sautez quand il prépare son épée** — et une **barrière d'énergie** qu'il ne faut pas toucher. Il est soutenu par les armes des autres membres : les projectiles de Xigbar, les lances de Xaldin, les Claymores de Saïx, les Chakrams d'Axel, les cartes de Luxord, les clones de Demyx. Impressionnant, mais rien de dangereux.\n\n**Le dragon.** Vous êtes à bord d'un vaisseau piloté par Riku. Les Similis qui se présentent se frappent à la **Croix**, ce qui les projette sur le dragon. Mais l'essentiel est ailleurs : **appuyez sur Carré et Rond en même temps** pour tirer **et** créer une protection — celle-ci absorbe les lasers ennemis et **remplit votre jauge d'énergie**. Jauge pleine, **Triangle en visant le dragon** fait des dégâts énormes. La vraie difficulté est qu'**on ne peut pas se soigner**. En seconde phase, quand le vaisseau passe devant lui, il lance des lasers **inabsorbables** : faites le tour de l'écran au fur et à mesure des tirs.\n\n**Xemnas en armure (seconde fois).** Mêmes attaques, mais cette fois il vous **propulse hors de l'arène** quand il perd assez de vie. Vous disposez alors d'un **double saut** et d'un **vol plané** exceptionnels : évitez les lasers, trouvez un **bâtiment immobile** parmi ceux qu'il vous jette, puis **Propulsion** et **Météorites** brisent la barrière du dragon qui bloque le retour. Esquivez encore, et foncez sur lui.",
+            "Three fights in a row, each with its own logic.\n\n**Armored Xemnas (first time).** He does not move from his throne. Two defences: a **blade strike** after your combos, which sends you to the back of the arena — **jump when he readies his sword** — and an **energy barrier** not to be touched. He is supported by the other members' weapons: Xigbar's shots, Xaldin's lances, Saïx's Claymores, Axel's chakrams, Luxord's cards, Demyx's clones. Impressive, but nothing dangerous.\n\n**The dragon.** You are aboard a ship piloted by Riku. The Nobodies that appear are hit with **Cross**, which throws them into the dragon. But the essential is elsewhere: **press Square and Circle together** to fire **and** raise a shield — it absorbs enemy lasers and **fills your energy gauge**. Gauge full, **Triangle aimed at the dragon** does enormous damage. The real difficulty is that **you cannot heal**. In the second phase, when the ship moves in front of it, it fires lasers that **cannot be absorbed**: circle the screen as the shots come.\n\n**Armored Xemnas (second time).** The same attacks, but this time he **throws you out of the arena** once he loses enough HP. You then have an exceptional **double jump** and **glide**: avoid the lasers, find a **stationary building** among those he hurls at you, then **Boost** and **Meteor** break the dragon's barrier blocking your way back. Dodge again, and charge him.",
+          ),
+        },
+        {
+          id: "xemnas-final",
+          name: L("Xemnas — le dernier combat", "Xemnas — the last fight"),
+          entry: "xemnas",
+          level: "60",
+          reward: L("Sora : une jauge de flux supplémentaire. Riku : +25 points de vie.", "Sora: an extra Drive bar. Riku: +25 HP."),
+          tactics: L(
+            "Le dernier, avec ses Aérolames retrouvées.\n\nIl ouvre en vous **propulsant en l'air** : déclenchez **Glissade** pour esquiver ses éclairs et ses assauts.\n\nEnsuite, une règle simple et impitoyable : **ses attaques ne se dévient qu'au Miroir**. Sa vitesse rend toute approche difficile, et il génère de temps en temps un **double** qu'on ne distingue de l'original **qu'au verrouillage**.\n\nQuand il vous **mitraille de petits lasers rouges**, la Parade les contre si le timing est bon. Quand il vous en **encercle**, sautez immédiatement pour tout esquiver — ou parez au carré, avec le même besoin de précision.\n\nPuis il **emprisonne Sora et aspire sa vie** : vous prenez alors **Riku**. Approchez-vous du vrai Xemnas en tenant le double à distance à l'**Aura noire**, et déclenchez **Délivrer** : il est assommé quelques secondes, frappez.\n\nSur ses dernières barres, sa technique ultime : il entoure Sora et Riku de **milliers de petits lasers**. **Appuyez alternativement sur Croix et Triangle** pour les parer avec les deux personnages.\n\nEt c'est fini.",
+            "The last one, with his Ethereal Blades back.\n\nHe opens by **launching you into the air**: trigger **Slide** to dodge his lightning and his charges.\n\nThen, a simple and merciless rule: **his attacks can only be deflected with Reflect**. His speed makes any approach difficult, and he occasionally generates a **double** you can only tell from the original **by locking on**.\n\nWhen he **strafes you with small red lasers**, Guard counters them on the right timing. When he **surrounds you** with them, jump immediately to dodge them all — or guard, with the same need for precision.\n\nThen he **traps Sora and drains his HP**: you take over **Riku**. Close in on the real Xemnas while keeping the double at bay with **Dark Aura**, and trigger **Release**: he is stunned for a few seconds, so strike.\n\nOn his last bars, his ultimate: he surrounds Sora and Riku with **thousands of small lasers**. **Press Cross and Triangle alternately** to guard them with both characters.\n\nAnd that is the end.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "keyblade", label: L("Deux pour un, Souvenir perdu", "Two Become One, Oblivion"), where: L("La victoire sur Roxas, puis la scène de la Passerelle du Néant.", "Beating Roxas, then the scene past Ruin and Creation's Passage."), note: L("Deux pour un déclenche systématiquement la Non-forme ou la Forme Suprême : c'est le moyen le plus simple d'obtenir cette dernière.", "Two Become One always triggers Anti Form or Final Form: it is the easiest way to get the latter.") },
+        { kind: "ability", label: L("Bonus PC ×3", "AP Boost ×3"), where: L("Zone d'arrivée, pied de la Tour du Souvenir, et l'une des plates-formes aux voies invisibles.", "The arrival area, the foot of Memory's Skyscraper, and one of the invisible-path platforms.") },
+        { kind: "synthesis", label: L("Quatre Orichalques et un Orichalque +", "Four Orichalcums and an Orichalcum+"), where: L("Zone d'arrivée, L'appel de la Vacuité, Passerelle du Néant, plates-formes finales ; l'Orichalque + au bord du précipice de Dark City.", "The arrival area, Naught's Approach, Ruin and Creation's Passage, the final platforms; the Orichalcum+ at the edge of the Dark City drop.") },
+        { kind: "report", label: L("Rapports d'Ansem n° 3, 8, 9, 11, 12 et 13", "Ansem's Reports 3, 8, 9, 11, 12 and 13"), where: L("Un par membre de l'Organisation vaincu, plus celui de Riku.", "One per Organisation member beaten, plus Riku's.") },
+      ],
+      missable: [
+        L("La porte face au Kingdom Hearts, au sommet de la citadelle, est **le point de non-retour**. Tout ce qui relève du 100 % se fait avant — ou après la fin, en rechargeant la sauvegarde marquée d'une **couronne**, qui ramène à l'Autel du Néant en gardant l'expérience et les bonus.", "The door facing Kingdom Hearts at the top of the castle is **the point of no return**. Everything that counts towards 100% is done before — or after the ending, by loading the save marked with a **crown**, which returns you to the Altar of Naught keeping your experience and bonuses."),
+      ],
     },
   ],
   quests,

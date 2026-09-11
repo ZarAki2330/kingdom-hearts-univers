@@ -2571,4 +2571,23 @@ export const moreEnemies2: EnemyEntry[] = [
     relations: [relHeartless, { slug: "tron", label: L("affronté avec", "fought alongside") }, { slug: "the-grid", label: L("monde", "world") }],
     tags: ["sans-cœur", "emblème", "boss", "kingdom hearts ii", "space paranoids"],
   },
+  {
+    slug: "the-experiment",
+    category: "enemies",
+    kind: "heartless",
+    variant: EMBLEM,
+    role: "boss",
+    name: "l'Expérience",
+    names: { en: "The Experiment", ja: "ジ・エクスペリメント" },
+    accent: "#6fae46",
+    tagline: L("La création du docteur Finkelstein, qui lui a échappé.", "Dr Finkelstein's creation, which got away from him."),
+    description: L(
+      "L'Expérience est le Sans-cœur né de la machine du docteur Finkelstein, à la Ville d'Halloween, et le voleur des cadeaux de Noël. Le combat se joue sur une mécanique de décomposition : la créature sépare ses bras et sa tête du torse, chaque morceau attaquant de son côté, et le torse devient invulnérable en tournant sur lui-même — la commande réaction Projeter le renvoie contre l'un de ses membres pour rouvrir la garde.",
+      "The Experiment is the Heartless born from Dr Finkelstein's machine in Halloween Town, and the thief of the Christmas presents. The fight turns on a mechanic of dismemberment: the creature detaches its arms and head from its torso, each part attacking on its own, and the torso becomes invulnerable while spinning — the Flip Reaction Command throws it against one of its limbs to reopen its guard.",
+    ),
+    appearances: ["kingdom-hearts-ii"],
+    debut: "kingdom-hearts-ii",
+    relations: [relHeartless, { slug: "halloween-town", label: L("monde", "world") }, { slug: "jack-skellington", label: L("affronté avec", "fought alongside") }],
+    tags: ["sans-cœur", "emblème", "boss", "kingdom hearts ii", "ville d'halloween"],
+  },
 ];
