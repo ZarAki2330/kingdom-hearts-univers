@@ -210,15 +210,21 @@ export default async function QuestPage({ params }: Props) {
                 {quest.rewards.rows.map((r, i) => (
                   <tr key={i} className={`align-top ${i % 2 === 1 ? "bg-bg-2/50" : ""}`}>
                     <th scope="row" className="border-b border-r border-line px-3 py-2 text-left font-semibold">
-                      {localized(r.tier, locale)}
+                      <RichText text={localized(r.tier, locale)} />
                     </th>
-                    <td className="border-b border-line px-3 py-2 text-text-2">{localized(r.reward, locale)}</td>
+                    <td className="border-b border-line px-3 py-2 text-text-2">
+                      <RichText text={localized(r.reward, locale)} />
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          {quest.rewards.note && <p className="mt-3 text-sm text-text-2">{localized(quest.rewards.note, locale)}</p>}
+          {quest.rewards.note && (
+            <p className="mt-3 text-sm text-text-2">
+              <RichText text={localized(quest.rewards.note, locale)} />
+            </p>
+          )}
         </div>
       )}
 

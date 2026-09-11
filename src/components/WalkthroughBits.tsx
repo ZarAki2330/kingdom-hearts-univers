@@ -137,8 +137,12 @@ export function BossCard({
             <dl className="mt-2 space-y-2">
               {boss.attacks.map((a, i) => (
                 <div key={i}>
-                  <dt className="inline font-semibold">{localized(a.name, locale)} — </dt>
-                  <dd className="inline text-text-2">{localized(a.note, locale)}</dd>
+                  <dt className="inline font-semibold">
+                    <RichText text={localized(a.name, locale)} /> —{" "}
+                  </dt>
+                  <dd className="inline text-text-2">
+                    <RichText text={localized(a.note, locale)} />
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -149,7 +153,7 @@ export function BossCard({
       {boss.reward && (
         <p className="mt-4 text-sm text-text-2">
           <span className="font-semibold text-text">{labels.reward} </span>
-          {localized(boss.reward, locale)}
+          <RichText text={localized(boss.reward, locale)} />
         </p>
       )}
     </section>
@@ -172,8 +176,12 @@ export function CollectibleList({
         <li key={i} className="card flex gap-3 p-4">
           <Icon kind={c.kind} />
           <div className="min-w-0">
-            <p className="font-semibold">{localized(c.label, locale)}</p>
-            <p className="mt-1 text-sm text-text-2">{localized(c.where, locale)}</p>
+            <p className="font-semibold">
+              <RichText text={localized(c.label, locale)} />
+            </p>
+            <p className="mt-1 text-sm text-text-2">
+              <RichText text={localized(c.where, locale)} />
+            </p>
             {c.requires && (
               <p className="mt-1 text-sm text-text-2">
                 <span className="font-semibold">{requiresLabel} </span>
@@ -333,14 +341,21 @@ export function WalkDataTable({
         <tbody>
           {table.rows.map((row, i) => (
             <tr key={i} className={`align-top ${i % 2 === 1 ? "bg-bg-2/50" : ""}`}>
-              <td className="border-b border-r border-line px-3 py-2 font-semibold">{localized(row.world, locale)}</td>
-              <td className="border-b border-r border-line px-3 py-2">{localized(row.what, locale)}</td>
+              {/* Les cellules passent par RichText comme le reste de la soluce : sans quoi
+                  un **nom d'objet** mis en gras dans les données ressortirait tel quel,
+                  étoiles comprises, et les entrées de l'encyclopédie ne seraient pas liées. */}
+              <td className="border-b border-r border-line px-3 py-2 font-semibold">
+                <RichText text={localized(row.world, locale)} />
+              </td>
+              <td className="border-b border-r border-line px-3 py-2">
+                <RichText text={localized(row.what, locale)} />
+              </td>
               <td className="border-b border-line px-3 py-2 text-text-2">
-                {localized(row.where, locale)}
+                <RichText text={localized(row.where, locale)} />
                 {row.requires && (
                   <span className="mt-1 block text-xs">
                     <span className="font-semibold">{labels.requires} </span>
-                    {localized(row.requires, locale)}
+                    <RichText text={localized(row.requires, locale)} />
                   </span>
                 )}
               </td>
