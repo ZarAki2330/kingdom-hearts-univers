@@ -186,7 +186,55 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite — Sora se réveille", "First visit — Sora wakes up"),
       world: "twilight-town",
       level: "3",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Sora, Donald et Dingo se réveillent après un an de sommeil, exactement là où Roxas a disparu. La section est courte et ne comporte aucun vrai combat de boss — c'est une mise en route, et une leçon de ramassage.\n\nUn point mérite qu'on s'y arrête avant de commencer : **on ne revient pas à la Cité du Crépuscule avant très longtemps**. Tous les coffres de la ville et de la gare doivent être ouverts maintenant, sous peine d'attendre une bonne dizaine d'heures de jeu.\n\nLa visite se termine à la **Tour Mystérieuse**, chez Yen Sid, qui donne la tenue de voyage, les **Fusions** et la première Keyblade nouvelle. C'est aussi là que le jeu ouvre la quête des puzzles.",
+        "Sora, Donald and Goofy wake after a year asleep, in the exact spot where Roxas vanished. The section is short and has no real boss fight — it is a warm-up, and a lesson in collecting.\n\nOne point is worth pausing on before you start: **you do not come back to Twilight Town for a very long time**. Every chest in the town and the station must be opened now, or you will be waiting a good ten hours of play.\n\nThe visit ends at the **Mysterious Tower**, at Yen Sid's, who hands over the travel clothes, the **Drive Forms** and the first new Keyblade. It is also where the game opens the puzzle hunt.",
+      ),
+      steps: [
+        {
+          id: "manoir-et-ville",
+          title: L("Du manoir au circuit du tram", "From the mansion to the Tram Common"),
+          text: L(
+            "Une fois le contrôle rendu, retournez-vous et passez le portail du manoir : une **Potion** à gauche, un **Éclat de mithril** à droite de la porte. Traversez la forêt pour rejoindre le repaire de Hayner — un inconnu à grandes oreilles vous cherche, et il n'est pas difficile de deviner qui.\n\nAvant d'aller à la gare, faites le tour des quartiers. En sortant du repaire, prenez à gauche vers la rue de la gare, descendez l'escalier de droite devant la boutique d'objets et l'armurerie, et passez l'arche entre les deux.\n\nLe **circuit du tram** concentre l'essentiel : un coffre à droite en arrivant, un deuxième en suivant les rails, un troisième en vous retournant et en vous laissant tomber. L'ouverture dans le mur mène aux **bois**, où trois coffres attendent sur les bords de la zone.",
+            "Once you have control again, turn around and go through the mansion gate: a **Potion** on the left, a **Mythril Shard** to the right of the door. Cross the woods to the Usual Spot — a stranger with big ears is looking for you, and it is not hard to guess who.\n\nBefore heading to the station, tour the districts. Leaving the Usual Spot, go left towards Station Heights, down the right-hand stairs past the item shop and the armour shop, and through the arch between them.\n\nThe **Tram Common** holds most of it: a chest on the right as you arrive, a second by following the tram rails, a third by turning around and dropping down. The gap in the wall leads to the **woods**, where three chests sit around the edges of the area.",
+          ),
+        },
+        {
+          id: "toits",
+          title: L("Les toits, et le Bonus PC", "The rooftops, and the AP Boost"),
+          text: L(
+            "De retour sur le circuit du tram, continuez à droite et empruntez le passage où se promène une dame. Grimpez à gauche jusqu'au coffre contenant une **Tente**.\n\nDe là, sautez sur le **toit vert** puis sur les suivants pour atteindre un **Bonus PC** posé au loin. Donnez-le à Sora : c'est lui qui porte les capacités les plus chères.\n\nRevenez au coffre précédent, traversez le pont de briques pour un **Éclat de mithril**, et restez sur les toits : un petit pont de pierre entre deux bâtiments mène à un dernier **Éclat de mithril**.",
+            "Back on the Tram Common, carry on right and take the passage where a woman is walking. Climb up on the left to the chest holding a **Tent**.\n\nFrom there, jump onto the **green roof** and the ones after it to reach an **AP Boost** sitting further along. Give it to Sora: he is the one carrying the expensive abilities.\n\nGo back to the previous chest, cross the brick bridge for a **Mythril Shard**, and stay on the roofs: a small stone bridge between two buildings leads to one last **Mythril Shard**.",
+          ),
+        },
+        {
+          id: "gare",
+          title: L("La gare, et le départ", "The station, and the departure"),
+          text: L(
+            "À la gare, les créatures blanches croisées depuis le début du jeu passent à l'attaque. Tenez bon : au bout d'un moment, **le roi Mickey en personne** vient prêter main-forte. Vous repartez avec une **Bourse**, une **Boule de cristal** et le **rapport d'Ansem n° 2**.\n\nAvant de parler à Donald pour monter dans le train, **vérifiez deux fois vos coffres**. Ceux de la gare centrale — une **Tente**, une **Potion+** et un **Éclat de mithril** — comme ceux de la ville. C'est le point de non-retour de la section.",
+            "At the station, the white creatures you have been meeting since the start attack in force. Hold out: after a while, **King Mickey himself** steps in. You leave with a **Munny Pouch**, a **Crystal Orb** and **Ansem's Report 2**.\n\nBefore talking to Donald to board the train, **check your chests twice**. Those at Central Station — a **Tent**, a **Hi-Potion** and a **Mythril Shard** — and those in the town. This is the section's point of no return.",
+          ),
+        },
+        {
+          id: "tour-mysterieuse",
+          title: L("La Tour Mystérieuse", "The Mysterious Tower"),
+          text: L(
+            "Après une scène propre à Final Mix, le train dépose l'équipe devant une tour. Trois coffres attendent à proximité : une **Potion**, une **Potion+** et un **Éther**.\n\nÀ l'entrée, **Pat Hibulaire** se présente, expose maladroitement ses plans et lâche quelques Sans-cœur. Réglez-leur leur compte et entrez. Près du point de sauvegarde, un **Éclat de mithril** et un **Éther** ; montez ensuite en nettoyant chaque palier.\n\nEn haut vous attend **Yen Sid**, le maître du roi. Prenez la **carte des lieux** dans le coffre avant de lire le livre : il vous expliquera ce que sont les **Similis** et qui est l'**Organisation XIII**.\n\nLa pièce voisine contient une **Pierre de mithril** et les trois Bonnes Fées. Parlez à la rouge : vous héritez de la tenue de voyage et surtout des **Fusions** — la **Vaillance** est disponible tout de suite — ainsi que de la Keyblade **Stella**. Le jeu introduit enfin la quête des **puzzles** : des pièces en forme de couronne, disséminées dans tous les mondes.\n\nDehors, le vaisseau Gummi attend. Sur l'atlas, **Start sauvegarde à tout moment**.",
+            "After a scene exclusive to Final Mix, the train drops the party in front of a tower. Three chests wait nearby: a **Potion**, a **Hi-Potion** and an **Ether**.\n\nAt the entrance, **Pete** introduces himself, clumsily lays out his plans and throws a few Heartless at you. Deal with them and go in. Near the save point, a **Mythril Shard** and an **Ether**; then climb, clearing each landing.\n\nAt the top waits **Yen Sid**, the king's master. Take the **area map** from the chest before reading the book: he will explain what **Nobodies** are and who **Organisation XIII** is.\n\nThe next room holds a **Mythril Stone** and the three Good Fairies. Talk to the red one: you receive the travel clothes and, above all, the **Drive Forms** — **Valor** is available straight away — plus the Keyblade **Star Seeker**. The game finally introduces the **puzzle** hunt: crown-shaped pieces scattered across every world.\n\nOutside, the Gummi ship is waiting. On the world map, **Start saves at any time**.",
+          ),
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("Circuit du tram : monter au coffre de la Tente, puis sauter de toit en toit jusqu'au bonus posé au loin.", "Tram Common: climb to the Tent chest, then roof-hop to the boost sitting further along."), note: L("À donner à Sora.", "Give it to Sora.") },
+        { kind: "chest", label: L("Six coffres du circuit du tram et des bois", "Six chests in the Tram Common and the woods"), where: L("Trois le long des rails du tram, trois sur les bords de la zone boisée, par l'ouverture dans le mur.", "Three along the tram rails, three around the edges of the woods, through the gap in the wall.") },
+        { kind: "chest", label: L("Quatre Éclats de mithril et une Pierre de mithril", "Four Mythril Shards and one Mythril Stone"), where: L("Manoir, bois, pont de briques, toits, gare centrale ; la pierre chez Yen Sid.", "The mansion, the woods, the brick bridge, the roofs, Central Station; the stone at Yen Sid's.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 2", "Ansem's Report 2"), where: L("Après le combat de la gare, avec la Bourse et la Boule de cristal.", "After the station fight, along with the Munny Pouch and the Crystal Orb.") },
+        { kind: "keyblade", label: L("Stella", "Star Seeker"), where: L("Des Bonnes Fées, chez Yen Sid, avec la tenue de voyage et la Fusion Vaillance.", "From the Good Fairies at Yen Sid's, with the travel clothes and the Valor Form.") },
+      ],
+      missable: [
+        L("**Tous les coffres de la Cité du Crépuscule et de la gare.** Monter dans le train ferme le monde pour une dizaine d'heures de jeu : ce qui n'a pas été ouvert attendra.", "**Every chest in Twilight Town and the station.** Boarding the train closes the world for a good ten hours of play: whatever you left unopened will wait."),
+      ],
     },
     {
       id: "forteresse-oubliee",
@@ -194,7 +242,77 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite — retrouvailles", "First visit — reunions"),
       world: "radiant-garden",
       level: "8",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le monde de Léon, Youffie, Aerith et Cid, revu un an plus tard : la ville se reconstruit, les boutiques ont rouvert, et l'**atelier des Mogs** est en service. C'est le point d'ancrage de toute la partie — on y reviendra cinq fois.\n\nLa section est brève et donne deux choses essentielles : les **éléments de Glace et de Feu**, c'est-à-dire les sorts Glacier et Brasier, et l'ouverture des routes stellaires vers les premiers vrais mondes.\n\nUne note sur les puzzles : plusieurs pièces sont ici hors de portée tant qu'on n'a pas le **Double saut**, qui arrive bien plus tard. Prenez celles que vous pouvez et revenez pour le reste.",
+        "Leon, Yuffie, Aerith and Cid's world, seen a year on: the town is being rebuilt, the shops have reopened, and the **moogle workshop** is running. It is the anchor point of the whole game — you will come back five times.\n\nThe section is brief and gives two essential things: the **Blizzard and Fire elements**, meaning the Blizzard and Fire spells, and the opening of the star routes to the first real worlds.\n\nA note on puzzles: several pieces here are out of reach until you have **High Jump**, which comes much later. Take the ones you can and come back for the rest.",
+      ),
+      steps: [
+        {
+          id: "centre-ville",
+          title: L("Le centre-ville et les Faubourgs", "The Marketplace and the Borough"),
+          text: L(
+            "Une **pièce de puzzle** attend sur votre gauche avant même de descendre au centre-ville. Celle posée au-dessus de la boutique, en revanche, demande le **Double saut** : notez-la et passez votre chemin.\n\nEn bas, les échoppes et l'**atelier des Mogs** sont ouverts. Parlez à **Picsou** au passage, puis continuez vers les **Faubourgs** : vous y retrouvez Youffie, et des Similis interrompent les retrouvailles. La victoire donne la **carte du centre-ville**.\n\nAvancez en nettoyant quelques Sans-cœur, ouvrez le coffre à la **Potion+**, et entrez chez **Merlin** par la porte de gauche.",
+            "A **puzzle piece** waits on your left before you even go down to the Marketplace. The one above the shop, though, needs **High Jump**: note it and move on.\n\nDown below, the stalls and the **moogle workshop** are open. Talk to **Scrooge** on the way, then carry on to the **Borough**: you find Yuffie there, and Nobodies interrupt the reunion. Winning gives the **town map**.\n\nPush on, clearing a few Heartless, open the chest with the **Hi-Potion**, and go into **Merlin's house** through the door on the left.",
+          ),
+        },
+        {
+          id: "merlin",
+          title: L("Chez Merlin", "At Merlin's"),
+          text: L(
+            "La discussion réserve une surprise de taille : **tout le monde vous avait oublié** jusqu'à récemment. Vous en repartez avec une **carte de membre** du comité de restauration et l'**élément de Glace**, donc le sort **Glacier**.\n\nAvant de sortir, servez-vous du lit pour attraper la **pièce de puzzle** au plafond.\n\nDehors, partez à droite : un **Éclat noir** dans un coffre, puis l'escalier. Une fois en haut, allez tout droit jusqu'au coffre contenant un **Bonus PC**, caché derrière une grue rouge. Retournez-vous et marchez sur le long mur de pierre pour une nouvelle **pièce de puzzle**. Sur le chemin des Fortifications, un **Reflux** et un **Éclat de mithril**.",
+            "The conversation holds a considerable surprise: **everyone had forgotten you** until recently. You leave with a **membership card** for the Restoration Committee and the **Blizzard element**, meaning the **Blizzard** spell.\n\nBefore going out, use the bed to reach the **puzzle piece** on the ceiling.\n\nOutside, head right: a **Dark Shard** in a chest, then the stairs. At the top, go straight on to the chest holding an **AP Boost**, hidden behind a red crane. Turn around and walk along the long stone wall for another **puzzle piece**. On the way to the Bailey, an **Ether** and a **Mythril Shard**.",
+          ),
+        },
+        {
+          id: "fortifications",
+          title: L("Les Fortifications", "The Bailey"),
+          text: L(
+            "Léon vous attend pour faire le point sur l'état de la Forteresse — et une horde de Similis coupe court à l'explication.\n\nC'est une **défense de porte** : la jauge verte en haut de l'écran est la résistance de la porte derrière vous, et elle tombe à chaque fois qu'un ennemi la frappe. Ne la laissez pas se vider.\n\nLes vagues s'enchaînent dans cet ordre : des **Reflets**, des **Sombreurs**, des **Samouraïs**, puis de nouveaux Reflets. Le Glacier tout juste obtenu fait des merveilles ici — il fige les Reflets, qui sont autrement pénibles à toucher. Restez entre la porte et les ennemis plutôt que de les poursuivre.\n\nLa récompense est l'**élément de Feu**, donc le sort **Brasier**.\n\nL'Organisation XIII se présente officiellement à Sora. La carte de membre se met alors à briller et révèle un **Verrou céleste** : la Keyblade ouvre **deux routes stellaires**, et le **rapport d'Ansem n° 7** rejoint le carnet.\n\nSur l'atlas, la Cité du Crépuscule est devenue inaccessible et les nouvelles voies sont bloquées : il faut d'abord franchir un parcours en vaisseau Gummi. Direction la **Terre des Dragons**, par le Champ d'astéroïdes.",
+            "Leon is waiting to bring you up to date on Hollow Bastion's situation — and a horde of Nobodies cuts the explanation short.\n\nThis is a **gate defence**: the green gauge at the top of the screen is the durability of the gate behind you, and it drops every time an enemy strikes it. Do not let it empty.\n\nThe waves come in this order: **Dusks**, **Creepers**, **Samurai**, then more Dusks. The Blizzard you just earned works wonders here — it freezes Dusks, which are otherwise a pain to hit. Stay between the gate and the enemies rather than chasing them.\n\nThe reward is the **Fire element**, meaning the **Fire** spell.\n\nOrganisation XIII formally introduces itself to Sora. The membership card then starts to glow and reveals a **Keyhole**: the Keyblade opens **two star routes**, and **Ansem's Report 7** joins the journal.\n\nOn the world map, Twilight Town has become unreachable and the new routes are blocked: you must first fly a Gummi course. Head for **The Land of Dragons**, through the Asteroid Sweep.",
+          ),
+        },
+      ],
+      tables: [
+        {
+          id: "puzzles-hb",
+          title: L("Les pièces de puzzle de cette visite", "This visit's puzzle pieces"),
+          intro: L(
+            "Trois pièces sont accessibles maintenant. La quatrième attend le **Double saut**, qui n'arrive pas avant plusieurs mondes : elle n'est pas perdue, notez-la simplement.",
+            "Three pieces are reachable now. The fourth waits for **High Jump**, which does not arrive for several worlds yet: it is not lost, just note it.",
+          ),
+          columns: [L("Où", "Where"), L("Comment l'atteindre", "How to reach it"), L("Ce qu'il faut", "What you need")],
+          rows: [
+            at("Avant le centre-ville", ["Sur la gauche, en descendant. Elle est à portée de main.", "On the left, on the way down. Within easy reach."], ["Rien.", "Nothing."]),
+            at("Chez Merlin", ["Au plafond : monter sur le lit pour l'attraper.", "On the ceiling: climb on the bed to grab it."], ["Rien.", "Nothing."]),
+            at("Le long mur de pierre", ["Après le Bonus PC derrière la grue rouge, se retourner et marcher sur le mur.", "Past the AP Boost behind the red crane, turn around and walk along the wall."], ["Rien.", "Nothing."]),
+            at("Au-dessus de la boutique", ["Hors de portée pour l'instant.", "Out of reach for now."], ["Double saut — plusieurs mondes plus tard.", "High Jump — several worlds later."]),
+          ],
+        },
+      ],
+      bosses: [
+        {
+          id: "defense-porte",
+          name: L("La défense de la porte", "The gate defence"),
+          entry: "dusk",
+          level: "8",
+          reward: L("L'élément de Feu, donc le sort Brasier.", "The Fire element, meaning the Fire spell."),
+          tactics: L(
+            "Ce n'est pas un boss mais une épreuve de tenue, et c'est le premier vrai test du jeu. La **jauge verte** en haut de l'écran est la porte : si elle se vide, c'est terminé.\n\nLe réflexe naturel — poursuivre les Similis — est exactement le mauvais. Restez **entre la porte et eux**, et laissez-les venir : ils vont à la porte, pas à vous.\n\nLe **Glacier** tout juste appris est la clé. Les Reflets se tordent et esquivent en permanence ; gelés, ils deviennent des cibles fixes. Léon se charge d'une partie du travail, mais c'est vous qui tenez la ligne.\n\nQuatre vagues, dans l'ordre : Reflets, Sombreurs, Samouraïs, Reflets. Les **Samouraïs** sont les seuls vraiment dangereux pour la porte — ils frappent fort et vite. Concentrez-vous sur eux dès qu'ils arrivent, quitte à laisser Léon gérer le reste.",
+            "This is not a boss but a holding test, and it is the game's first real one. The **green gauge** at the top is the gate: if it empties, it is over.\n\nThe natural instinct — chasing the Nobodies — is exactly the wrong one. Stay **between the gate and them**, and let them come: they are going for the gate, not for you.\n\nThe **Blizzard** you just learned is the key. Dusks writhe and dodge constantly; frozen, they become stationary targets. Leon handles part of the work, but you are the one holding the line.\n\nFour waves, in order: Dusks, Creepers, Samurai, Dusks. The **Samurai** are the only ones genuinely dangerous to the gate — they hit hard and fast. Focus on them the moment they arrive, and let Leon handle the rest.",
+          ),
+          attacks: [
+            { name: L("Reflets", "Dusks"), note: L("Ils esquivent sans arrêt. Glacier les fige, et c'est là qu'on les frappe.", "They dodge constantly. Blizzard freezes them, and that is when you hit.") },
+            { name: L("Samouraïs", "Samurai"), note: L("Les plus dangereux pour la porte. À traiter en priorité absolue.", "The most dangerous to the gate. Absolute priority.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC", "AP Boost"), where: L("En haut de l'escalier après chez Merlin, tout droit, derrière une grue rouge.", "At the top of the stairs past Merlin's, straight ahead, behind a red crane.") },
+        { kind: "ability", label: L("Élément de Glace, puis élément de Feu", "Blizzard element, then Fire element"), where: L("Le premier de Merlin, le second en récompense de la défense de la porte.", "The first from Merlin, the second as the gate defence's reward.") },
+        { kind: "report", label: L("Rapport d'Ansem n° 7", "Ansem's Report 7"), where: L("Après l'ouverture du Verrou céleste aux Fortifications.", "After the Keyhole opens at the Bailey.") },
+        { kind: "synthesis", label: L("Éclat noir, Reflux, Éclat de mithril", "Dark Shard, Ether, Mythril Shard"), where: L("Dans les coffres du chemin entre chez Merlin et les Fortifications.", "In the chests along the path from Merlin's to the Bailey.") },
+      ],
     },
     {
       id: "terre-des-dragons",
@@ -202,7 +320,89 @@ export const walkthrough: Walkthrough = {
       subtitle: L("Première visite", "First visit"),
       world: "land-of-dragons",
       level: "10",
-      status: "todo",
+      status: "done",
+      intro: L(
+        "Le monde de Mulan, et le premier vrai monde du jeu : long, dense, et bâti autour d'une mécanique qu'on ne reverra qu'ici — la **jauge de moral**.\n\nElle remplace la jauge de vie comme condition de défaite dans presque toutes les épreuves du monde. Selon l'épreuve, elle baisse quand vous encaissez, quand **Ping** encaisse, ou simplement avec le temps. Les orbes à tête de dragon que lâchent les ennemis la rechargent.\n\nPing rejoint l'équipe et prend la place de Donald ou de Dingo — le membre écarté **gagne quand même de l'expérience**, et l'option Intervertir du menu de combat permet d'en changer à tout moment.\n\nDeux avertissements. Le **Sentier** vide la jauge à toute vitesse : n'y ramassez rien au premier passage, revenez plus tard. Et la grotte se fait **sans Donald**, donc sans soin : c'est le passage le plus exigeant de la visite.",
+        "Mulan's world, and the game's first real one: long, dense, and built around a mechanic you will not see again — the **morale gauge**.\n\nIt replaces the HP bar as the losing condition in nearly every trial here. Depending on the trial, it drops when you take damage, when **Ping** takes damage, or simply over time. The dragon-headed orbs enemies drop refill it.\n\nPing joins the party in place of Donald or Goofy — the member left out **still earns experience**, and the Swap option in the battle menu lets you change at any time.\n\nTwo warnings. The **Checkpoint path** drains the gauge at speed: pick nothing up on the first pass, come back later. And the cave is done **without Donald**, so without healing: it is the visit's most demanding stretch.",
+      ),
+      steps: [
+        {
+          id: "campement",
+          title: L("Le campement, et les trois missions", "The Encampment, and the three missions"),
+          text: L(
+            "Vous rencontrez Ping — Fa Mulan sous un déguisement — et retrouvez **Mushu**, qui accompagnait Sora en invocation dans le premier épisode. Choisissez qui de Donald ou de Dingo lui laisse sa place.\n\nAvant de bouger, consultez le Mog et ouvrez les trois coffres : un **Éclat noir**, un **Éther** et un **Éclat de mithril**.\n\nLe campement est attaqué : c'est ici que la **jauge de moral** apparaît, et elle baisse **chaque fois que Ping encaisse**. Protégez-la plus que vous ne vous protégez. La victoire donne la **carte du campement**.\n\nLe capitaine Li Shang doute des capacités de Ping et confie trois missions pour en juger. Les réussir toutes les trois donne un **Bonus PC**.",
+            "You meet Ping — Fa Mulan in disguise — and find **Mushu** again, who travelled with Sora as a summon in the first game. Choose whether Donald or Goofy gives up their place.\n\nBefore moving, check the moogle's stock and open the three chests: a **Dark Shard**, an **Ether** and a **Mythril Shard**.\n\nThe camp is attacked: this is where the **morale gauge** appears, and it drops **every time Ping takes a hit**. Protect it more than you protect yourself. Winning gives the **encampment map**.\n\nCaptain Li Shang doubts Ping's ability and sets three missions to judge. Clearing all three gives an **AP Boost**.",
+          ),
+        },
+        {
+          id: "sentier",
+          title: L("Le Sentier et le village", "The Checkpoint and the village"),
+          text: L(
+            "Montez au sommet du mirador derrière le capitaine et sautez vers la **pièce de puzzle** en donnant un coup de Keyblade en l'air pour l'attraper.\n\nSortez vers le poste de contrôle : deux coffres, un **Éclat de mithril** et une **Potion+**. Prenez ensuite le chemin derrière la rivière.\n\nSur le **Sentier**, il faut rejoindre le village en détruisant les rochers avec la commande réaction **Brise-roc**. La jauge de moral y fond à vue d'œil — elle baisse à la fois au temps et aux coups. **Ne vous occupez pas des coffres maintenant** : vous repasserez par là au calme. Le dernier passage est gardé par des **Centaurus** ; si ça tourne mal, cassez les rochers et filez sans les affronter.\n\nL'arrivée donne la **carte du village**. Avant la grotte, deux pièces de puzzle : l'une flotte au-dessus d'un tas de foin au sud-ouest, l'autre est sur un toit à l'est — le chariot près du foin sert de marchepied.",
+            "Climb the watchtower behind the captain and jump towards the **puzzle piece**, swinging the Keyblade mid-air to grab it.\n\nHead out to the checkpoint: two chests, a **Mythril Shard** and a **Hi-Potion**. Then take the path behind the river.\n\nOn the **Checkpoint path**, you must reach the village by smashing rocks with the **Rock Breaker** Reaction Command. The morale gauge melts away here — it drops both over time and on hits. **Do not bother with the chests now**: you will come back through at leisure. The last passage is guarded by **Assault Riders**; if it goes badly, break the rocks and run rather than fight them.\n\nArriving gives the **village map**. Before the cave, two puzzle pieces: one floats above a hay pile to the south-west, the other is on a roof to the east — the cart near the hay is your step up.",
+          ),
+        },
+        {
+          id: "grotte",
+          title: L("La grotte, sans Donald", "The cave, without Donald"),
+          text: L(
+            "Mushu affirme avoir vu **Shan Yu** dans une grotte derrière le village, et conseille d'y aller seul pour faire valoir Ping auprès du capitaine.\n\n**Sauvegardez avant d'entrer.** À l'intérieur, deux coffres près des chariots : un **Éclat noir** et un **Bonus PC**.\n\nL'embuscade qui suit — des Ombres et **trois Centaurus** — se livre avec Ping pour seul allié, donc **sans le soin de Donald**. C'est le passage le plus difficile de la visite. Deux règles : ne **jamais** attaquer un Centaurus en sautant, sous peine de prendre le moulinet de lance de plein fouet, et les traiter au **Glacier** à distance.\n\nLa victoire donne **Virevolte** à Sora ; Ping apprend Soin amical et gagne 15 points de vie.",
+            "Mushu claims to have seen **Shan Yu** in a cave behind the village, and suggests going alone so the captain will think better of Ping.\n\n**Save before going in.** Inside, two chests by the carts: a **Dark Shard** and an **AP Boost**.\n\nThe ambush that follows — Shadows and **three Assault Riders** — is fought with Ping as your only ally, so **without Donald's healing**. It is the hardest stretch of the visit. Two rules: **never** attack an Assault Rider while jumping, or you take the spinning lance full on, and handle them with **Blizzard** from range.\n\nWinning gives Sora **Aerial Sweep**; Ping learns Mushu's Flame and gains 15 HP.",
+          ),
+        },
+        {
+          id: "sommet",
+          title: L("Le sommet, et le retour au Sentier", "The summit, and back to the path"),
+          text: L(
+            "Le village est dévasté : l'attaque de la grotte était une diversion. Grimpez la pente derrière le point de sauvegarde.\n\nDans la zone suivante, une **pièce de puzzle** à droite près des chariots, puis un **Bonus PC** et un **Éclat glacial** dans les coffres. De petits tourbillons d'air permettent de flotter et de sauter plus haut : ils mènent à une **seconde pièce de puzzle**.\n\nAu sommet, une nuée d'**Hélicopiafs** accompagnés d'**Électro-tours**. Les deux ouvrent des commandes réaction — **Moulinet** et **Parafoudre** — et c'est le meilleur moyen de nettoyer. **Ne vous fiez pas à l'objectif affiché** : il ne s'agit pas de tous les tuer mais de **survivre une minute**. Attention aux ondes de choc des Électro-tours.\n\nLe capitaine reconnaît enfin Ping — et Mushu vend la mèche. Mulan reprend son apparence, ce qui augmente ses statistiques et ouvre la coopération **Fusée rouge**.\n\nProfitez-en pour revenir au **Sentier** ramasser ce que vous aviez laissé : deux coffres sur une plate-forme surélevée au nord (**Formule de récupération** et **Éther**), un **Éclat de mithril** au centre, et un **Éclat grondant** sur le chemin ouest.",
+            "The village is in ruins: the cave attack was a diversion. Climb the slope behind the save point.\n\nIn the next area, a **puzzle piece** on the right near the carts, then an **AP Boost** and a **Frost Shard** in the chests. Small updrafts let you float and jump higher: they lead to a **second puzzle piece**.\n\nAt the summit, a swarm of **Rapid Thrusters** with **Bolt Towers**. Both open Reaction Commands — **Rodeo** and **Bolt Reversal** — and that is the best way to clear them. **Do not trust the on-screen objective**: the point is not to kill them all but to **survive for one minute**. Watch for the Bolt Towers' shockwaves.\n\nThe captain finally acknowledges Ping — and Mushu gives the game away. Mulan drops the disguise, which raises her stats and opens the **Red Rocket** limit.\n\nTake the chance to go back to the **Checkpoint path** for what you left behind: two chests on a raised platform to the north (**Mythril Shard** and **Ether**), a **Mythril Shard** in the centre, and a **Thunder Shard** on the western path.",
+          ),
+        },
+      ],
+      tables: [
+        {
+          id: "missions",
+          title: L("Les trois missions du capitaine", "The captain's three missions"),
+          intro: L(
+            "Toutes ont le même principe : tuer avant que le moral ne se vide. Ce qui change d'une mission à l'autre, c'est **ce qui fait baisser la jauge** — et c'est là-dessus qu'il faut régler sa façon de jouer. Les trois réussies donnent un **Bonus PC**.",
+            "They all share a principle: kill before morale empties. What changes from one to the next is **what drains the gauge** — and that is what should change how you play. All three cleared gives an **AP Boost**.",
+          ),
+          columns: [L("Mission", "Mission"), L("Ce qui vide la jauge", "What drains the gauge"), L("Comment s'y prendre", "How to handle it")],
+          rows: [
+            at("Attaque surprise", ["Le temps, et non les coups encaissés.", "Time, not damage taken."], ["Des Ombres et des Rôdeurs nocturnes, en nombre affiché à l'écran. Les feux d'artifice donnent des orbes de moral : servez-vous-en plutôt que de courir après les traînards.", "Shadows and Nightwalkers, with the count shown on screen. The fireworks give morale orbs: use them rather than chasing stragglers."]),
+            at("Embuscade", ["Chaque coup reçu.", "Every hit taken."], ["Éliminer les Ombres et les Rôdeurs nocturnes d'abord, les Centaurus ensuite. Magie à distance sur ces derniers, et jamais d'attaque sautée quand ils font tournoyer leur lance.", "Clear the Shadows and Nightwalkers first, the Assault Riders after. Ranged magic on the latter, and never a jumping attack while they spin their lance."]),
+            at("Recherche", ["Le temps.", "Time."], ["Huit Sans-cœur cachés dans le campement. C'est une course : repérez vite plutôt que de fouiller méthodiquement.", "Eight Heartless hidden around the camp. It is a race: spot fast rather than search methodically."]),
+          ],
+        },
+      ],
+      bosses: [
+        {
+          id: "shan-yu",
+          name: L("Shan Yu", "Shan Yu"),
+          entry: "shan-yu",
+          level: "12",
+          reward: L("Sora : +5 points de vie et Cyclone. Donald : +3 points de vie. Dingo : Dingo-turbo. Mulan : +20 points de vie. Et la Keyblade Dragon Tapi.", "Sora: +5 HP and Aerial Spiral. Donald: +3 HP. Goofy: Goofy Turbo. Mulan: +20 HP. Plus the Hidden Dragon Keyblade."),
+          tactics: L(
+            "La jauge de moral laisse place à une jauge **Portes** : c'est leur résistance, et si elle tombe à zéro le combat est perdu, quelle que soit votre vie. Tout le combat se joue autour de ça.\n\nLa priorité n'est donc pas Shan Yu mais les **Sans-cœur qui l'accompagnent** — ce sont eux qui tapent sur les portes. La coopération **Fusée rouge** avec Mulan les balaie en une fois : déclenchez-la dès qu'elle est disponible, et vous pourrez ensuite vous consacrer au chef. Ignorez le faucon, il ne fait rien de sérieux.\n\nSur Shan Yu lui-même : **parer ses coups d'épée** peut déclencher un duel, où il suffit de marteler Triangle pour le renverser. C'est votre meilleure source de dégâts.\n\nQuand il s'entoure d'une **aura noire**, arrêtez tout et bougez : il devient invincible et prépare une charge dévastatrice. Attendre qu'elle passe est la seule option ; une fois calmé, reprenez.",
+            "The morale gauge gives way to a **Gate** gauge: that is the doors' durability, and if it hits zero the fight is lost whatever your HP. The whole battle turns on it.\n\nThe priority is therefore not Shan Yu but the **Heartless with him** — they are the ones hitting the doors. The **Red Rocket** limit with Mulan sweeps them away in one go: trigger it as soon as it is available, and you can then focus on the leader. Ignore the falcon, it does nothing serious.\n\nOn Shan Yu himself: **guarding his sword strikes** can start a clash, where mashing Triangle knocks him down. That is your best source of damage.\n\nWhen he wraps himself in a **black aura**, stop everything and move: he becomes invincible and winds up a devastating charge. Waiting it out is the only option; once he settles, go back in.",
+          ),
+          attacks: [
+            { name: L("Coups d'épée", "Sword strikes"), note: L("À parer : la parade réussie ouvre un duel, et le duel le met à terre.", "Guard them: a successful guard opens a clash, and the clash floors him.") },
+            { name: L("Aura noire", "Black aura"), note: L("Il devient invincible et charge. Fuir, sans chercher à le toucher.", "He becomes invincible and charges. Run, and do not try to hit him.") },
+            { name: L("Les Sans-cœur d'escorte", "The escorting Heartless"), note: L("Ce sont eux qui vident la jauge des portes. Fusée rouge les efface.", "They are what drains the gate gauge. Red Rocket wipes them out.") },
+          ],
+        },
+      ],
+      collectibles: [
+        { kind: "ability", label: L("Bonus PC ×3", "AP Boost ×3"), where: L("Les trois missions du capitaine réussies ; un coffre dans la grotte ; un coffre après la pente, au-delà du village.", "All three captain's missions cleared; a chest in the cave; a chest past the slope, beyond the village.") },
+        { kind: "minigame", label: L("Cinq pièces de puzzle", "Five puzzle pieces"), where: L("Mirador du campement, au-dessus du foin et sur un toit au village, près des chariots et dans les tourbillons après la pente.", "The camp watchtower, above the hay and on a roof in the village, near the carts and in the updrafts past the slope.") },
+        { kind: "keyblade", label: L("Dragon Tapi", "Hidden Dragon"), where: L("La victoire sur Shan Yu.", "Beating Shan Yu.") },
+        { kind: "ability", label: L("Virevolte, puis Cyclone", "Aerial Sweep, then Aerial Spiral"), where: L("L'embuscade de la grotte, puis Shan Yu.", "The cave ambush, then Shan Yu.") },
+        { kind: "synthesis", label: L("Éclats noir, glacial, grondant et de mithril", "Dark, Frost, Thunder and Mythril Shards"), where: L("Répartis dans les coffres du campement, du Sentier et du sommet — dont ceux à récupérer au second passage.", "Spread across the chests of the camp, the Checkpoint path and the summit — including those to collect on the second pass.") },
+      ],
+      missable: [
+        L("Rien n'est perdu définitivement ici : le monde se revisite. Les coffres du **Sentier** laissés de côté au premier passage se ramassent après le sommet, une fois la jauge de moral désactivée.", "Nothing is permanently lost here: the world can be revisited. The **Checkpoint path** chests skipped on the first pass can be collected after the summit, once the morale gauge is switched off."),
+      ],
     },
     {
       id: "chateau-de-la-bete",

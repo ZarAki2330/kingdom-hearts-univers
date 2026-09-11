@@ -10,7 +10,7 @@ const items = [
   { href: "/chronologie", key: "timeline" },
   { href: "/encyclopedie", key: "encyclopedia", submenu: "encyclopedia" },
   { href: "/histoire", key: "story", submenu: "story" },
-  { href: "/soluces", key: "guides" },
+  { href: "/soluces", key: "guides", submenu: "guides" },
 ] as const;
 
 // Plus rien n'est « bientôt » dans la barre : les soluces ont leur section.
@@ -19,7 +19,11 @@ const soon = [] as const;
 /** Entrée de sous-menu fournie par le serveur (les résumés d'histoire disponibles). */
 export type NavSubItem = { href: string; label: string };
 
-export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode; storyItems?: NavSubItem[] } = {}) {
+export function MainNav({
+  extras,
+  storyItems = [],
+  guideItems = [],
+}: { extras?: React.ReactNode; storyItems?: NavSubItem[]; guideItems?: NavSubItem[] } = {}) {
   const t = useTranslations("Nav");
   const te = useTranslations("Encyclopedia");
   const pathname = usePathname();
@@ -55,7 +59,10 @@ export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode;
 
   useEffect(() => () => window.clearTimeout(closeTimer.current), []);
 
-  /** Sous-entrées par section : les cinq catégories de l'encyclopédie, les jeux résumés pour l'histoire. */
+  /**
+   * Sous-entrées par section : les cinq catégories de l'encyclopédie, les jeux résumés pour
+   * l'histoire, les jeux dont la soluce est ouverte pour les guides.
+   */
   const submenus: Record<string, NavSubItem[]> = {
     encyclopedia: [
       ...CATEGORIES.map((c) => ({
@@ -65,6 +72,7 @@ export function MainNav({ extras, storyItems = [] }: { extras?: React.ReactNode;
       { href: "/glossaire", label: t("glossary") },
     ],
     story: storyItems,
+    guides: guideItems,
   };
 
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");

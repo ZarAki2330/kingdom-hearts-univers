@@ -8,6 +8,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 import { MainNav } from "./MainNav";
 import { stories } from "@/data/story";
 import { getGame } from "@/data/games";
+import { walkthroughs } from "@/data/walkthrough";
 import { SearchPalette } from "./SearchPalette";
 
 export function Header({ locale }: { locale: Locale }) {
@@ -18,6 +19,11 @@ export function Header({ locale }: { locale: Locale }) {
     .filter((g) => g !== undefined)
     .sort((a, b) => (a.chronoOrder ?? 0) - (b.chronoOrder ?? 0))
     .map((g) => ({ href: `/histoire/${g.slug}`, label: g.title }));
+  // Sous-menu Soluces : les jeux dont le guide est ouvert, dans l'ordre de la liste.
+  const guideItems = walkthroughs
+    .map((w) => getGame(w.game))
+    .filter((g) => g !== undefined)
+    .map((g) => ({ href: `/soluces/${g.slug}`, label: g.title }));
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur supports-[backdrop-filter]:bg-bg/70">
       <SkipLink />
@@ -30,7 +36,7 @@ export function Header({ locale }: { locale: Locale }) {
             <span className="mt-1 text-[0.7rem] uppercase tracking-[0.32em] text-accent">Univers</span>
           </span>
         </Link>
-        <MainNav extras={<ThemeSwitcher />} storyItems={storyItems} />
+        <MainNav extras={<ThemeSwitcher />} storyItems={storyItems} guideItems={guideItems} />
         <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
           <SearchPalette />
           <div className="hidden sm:block">
