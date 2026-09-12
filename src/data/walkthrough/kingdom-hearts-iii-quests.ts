@@ -43,8 +43,8 @@ export const quests: WalkQuest[] = [
         id: "scene-secrete",
         title: L("Ce que la scène secrète demande", "What the secret ending asks for"),
         text: L(
-          "La scène secrète n'est pas liée au nombre d'heures ni au taux de complétion : elle dépend uniquement du nombre d'emblèmes photographiés, et le seuil change avec la difficulté. En **Débutant** il faut les quatre-vingt-dix ; en **Standard**, soixante ; en **Vaillant**, trente. Le mode **Critique**, ajouté après la sortie, s'aligne sur le seuil le plus bas.\n\nLa logique est celle des jeux précédents inversée : plus on joue difficile, moins le jeu exige de collecte. Un joueur qui vise la scène sans y passer une semaine a donc intérêt à jouer en Vaillant, où trente emblèmes se ramassent presque naturellement en explorant.\n\nLa scène se déclenche après le générique, une fois la sauvegarde de fin chargée. Si le seuil n'était pas atteint au moment de finir, il suffit de revenir compléter la collecte et de rejouer la fin : la scène s'affiche alors normalement.",
-          "The secret ending is tied neither to playtime nor to completion rate: it depends only on how many emblems you have photographed, and the threshold moves with difficulty. On **Beginner** you need all ninety; on **Standard**, sixty; on **Proud**, thirty. **Critical** mode, added after release, uses the lowest threshold.\n\nThe logic inverts the earlier games': the harder you play, the less collecting the game asks for. A player who wants the scene without spending a week on it is therefore better off on Proud, where thirty emblems come almost naturally while exploring.\n\nThe scene plays after the credits, once the ending save is loaded. If the threshold was not met when you finished, simply come back, complete the collection and replay the ending: the scene then shows normally.",
+          "La scène secrète n'est pas liée au nombre d'heures ni au taux de complétion : elle dépend uniquement du nombre d'emblèmes photographiés, et le seuil change avec la difficulté. En **Débutant** il faut les quatre-vingt-dix ; en **Standard**, soixante ; en **Vaillant**, trente. En **Critique**, ajouté après la sortie, terminer le jeu suffit — aucun emblème n'est exigé.\n\nLa logique est celle des jeux précédents inversée : plus on joue difficile, moins le jeu exige de collecte. Un joueur qui vise la scène sans y passer une semaine a donc intérêt à jouer en Vaillant, où trente emblèmes se ramassent presque naturellement en explorant.\n\nLa scène se déclenche après le générique, une fois la sauvegarde de fin chargée. Si le seuil n'était pas atteint au moment de finir, il suffit de revenir compléter la collecte et de rejouer la fin : la scène s'affiche alors normalement.",
+          "The secret ending is tied neither to playtime nor to completion rate: it depends only on how many emblems you have photographed, and the threshold moves with difficulty. On **Beginner** you need all ninety; on **Standard**, sixty; on **Proud**, thirty. On **Critical**, added after release, finishing the game is enough — no emblems required.\n\nThe logic inverts the earlier games': the harder you play, the less collecting the game asks for. A player who wants the scene without spending a week on it is therefore better off on Proud, where thirty emblems come almost naturally while exploring.\n\nThe scene plays after the credits, once the ending save is loaded. If the threshold was not met when you finished, simply come back, complete the collection and replay the ending: the scene then shows normally.",
         ),
       },
     ],
@@ -618,11 +618,53 @@ export const quests: WalkQuest[] = [
     id: "figurines-hercule",
     title: L("Les figurines dorées d'Hercule", "The golden Hercules figures"),
     tagline: L(
-      "Les figurines cachées dans tous les mondes, et ce qu'elles rapportent.",
-      "The figurines hidden across every world, and what they pay out.",
+      "Cinq statuettes cachées dans Thèbes, et l'accessoire qu'un enfant échange contre elles.",
+      "Five statuettes hidden around Thebes, and the accessory a child trades for them.",
     ),
     entry: "hercules",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "C'est la plus courte des quêtes annexes de Kingdom Hearts III, et la plus facile à manquer : elle tient entièrement dans un seul monde, l'**Olympe**, et rien dans le jeu ne prévient qu'elle existe tant qu'on n'a pas trouvé la première figurine.\n\nCinq statuettes dorées à l'effigie d'Hercule sont posées dans Thèbes. Elles ne brillent pas, ne sonnent pas et n'apparaissent pas sur la carte : ce sont de petits objets dorés posés dans le décor, qu'il faut voir. Une fois les cinq en poche, on les rapporte à **l'enfant de l'Agora**, qui les collectionne — c'est lui qui donne la récompense.\n\nRien n'est manquable. L'Olympe se revisite librement, et les figurines restent en place jusqu'à ce qu'on les ramasse, y compris après la fin de l'histoire. Un joueur qui découvre la quête tard peut donc la boucler en une quinzaine de minutes.\n\nLa récompense, la **Ceinture de héros**, est une protection honnête sans être exceptionnelle. L'intérêt réel de la quête est ailleurs : elle oblige à fouiller Thèbes de fond en comble, et c'est précisément là que se trouvent plusieurs des dix emblèmes fétiches de l'Olympe.",
+      "This is Kingdom Hearts III's shortest side quest, and the easiest to miss: it sits entirely in one world, **Olympus**, and nothing in the game hints that it exists until you have found the first figure.\n\nFive gold statuettes of Hercules are set around Thebes. They do not glow, do not chime and do not show on the map: they are small golden objects placed in the scenery, and you have to see them. Once you have all five, you bring them to **the child in the Agora**, who collects them — he is the one who pays out.\n\nNothing is missable. Olympus can be revisited freely, and the figures stay put until you pick them up, including after the story ends. A player who finds the quest late can therefore finish it in about fifteen minutes.\n\nThe reward, the **Hero's Belt**, is a decent armour piece rather than an exceptional one. The real value of the quest is elsewhere: it forces you to comb Thebes thoroughly, and that is exactly where several of Olympus's ten Lucky Emblems are.",
+    ),
+    tables: [
+      {
+        id: "emplacements",
+        title: L("Les cinq figurines", "The five figures"),
+        intro: L(
+          "Toutes sont dans Thèbes, et toutes sont accessibles dès la première visite du quartier — aucune ne demande une capacité obtenue plus tard.",
+          "All are in Thebes, and all are reachable from your first visit to the district — none needs an ability earned later.",
+        ),
+        columns: [L("Zone", "Area"), L("Figurine", "Figure"), L("Où exactement", "Exactly where")],
+        rows: [
+          at("Thèbes — Venelle", ["Figurine 1", "Figure 1"], ["Dans le temple en reconstruction, au milieu des échafaudages.", "In the temple under reconstruction, among the scaffolding."]),
+          at("Thèbes — Jardins", ["Figurine 2", "Figure 2"], ["Au fond du trou creusé par Pat.", "At the bottom of the hole dug by Pete."]),
+          at("Thèbes — Jardins", ["Figurine 3", "Figure 3"], ["Dans le bâtiment où vous aviez secouru un habitant pendant l'histoire.", "Inside the building where you rescued a citizen during the story."]),
+          at("Thèbes — Belvédère", ["Figurine 4", "Figure 4"], ["Posée sur un banc, près du point de sauvegarde.", "Sitting on a bench, near the save point."]),
+          at("Thèbes — Belvédère", ["Figurine 5", "Figure 5"], ["En hauteur, sur le bouclier de la statue géante — il faut grimper.", "Up high, on the giant statue's shield — you have to climb."]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "fouiller",
+        title: L("Fouiller Thèbes efficacement", "Combing Thebes efficiently"),
+        text: L(
+          "Les cinq figurines partagent un défaut de conception qui joue contre le joueur : elles sont **petites et dorées**, dans une ville entièrement ocre et dorée. Les chercher à l'œil nu, en courant, ne marche pas.\n\nLa méthode qui fonctionne est de traiter Thèbes zone par zone — Venelle, Jardins, Belvédère — et, dans chacune, de faire un tour complet en marchant, caméra basse. Trois des cinq figurines sont au niveau du sol ou en dessous ; les deux autres demandent de lever les yeux, dont celle du bouclier de la statue, qui s'atteint en escaladant le mur voisin.\n\nProfitez-en pour sortir le Gummiphone : les emblèmes fétiches de l'Olympe sont répartis entre ces mêmes zones, et une seule traversée méthodique règle les deux collectes d'un coup. C'est le vrai gain de temps de cette quête.\n\nL'enfant de l'Agora accepte les figurines une par une, mais ne donne la Ceinture de héros qu'à la cinquième. Inutile donc de faire l'aller-retour à chaque trouvaille.",
+          "The five figures share a design flaw that works against the player: they are **small and gold**, in a city that is entirely ochre and gold. Hunting them by eye while running does not work.\n\nWhat works is to treat Thebes area by area — Alley, Gardens, Overlook — and in each one, do a full circuit at walking pace with the camera low. Three of the five are at ground level or below; the other two need you to look up, including the one on the statue's shield, reached by climbing the neighbouring wall.\n\nTake the chance to have the Gummiphone out: Olympus's Lucky Emblems are spread across those same areas, and one methodical sweep settles both collections at once. That is this quest's real time saving.\n\nThe child in the Agora accepts the figures one at a time, but only hands over the Hero's Belt at the fifth. So there is no point walking back after each find.",
+        ),
+      },
+    ],
+    rewards: {
+      tierHeader: L("Figurines rendues", "Figures returned"),
+      rows: [
+        { tier: L("Les cinq", "All five"), reward: L("Protection **Ceinture de héros**, remise par l'enfant de l'Agora", "The **Hero's Belt** armour, handed over by the child in the Agora") },
+      ],
+      note: L(
+        "La quête est sans conséquence sur le reste du jeu : aucun trophée ne lui est attaché et aucune autre récompense n'en dépend. Elle vaut surtout comme prétexte à fouiller Thèbes, où se cachent plusieurs **emblèmes fétiches**.",
+        "The quest has no knock-on effects: no trophy is attached to it and no other reward depends on it. Its main value is as an excuse to comb Thebes, where several **Lucky Emblems** hide.",
+      ),
+    },
   },
   {
     id: "royaume-classique",
@@ -711,61 +753,679 @@ export const quests: WalkQuest[] = [
     id: "mini-jeux",
     title: L("Les mini-jeux", "The mini-games"),
     tagline: L(
-      "La luge d'Arendelle, le festival de Corona, les manèges et le reste.",
-      "Arendelle's sled run, Corona's festival, the rides and the rest.",
+      "La luge d'Arendelle, le festival de Corona, l'arcade du Coffre à jouets et le reste.",
+      "Arendelle's sled run, Corona's festival, Toy Box's arcade and the rest.",
     ),
     entry: "sora",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "En dehors du Royaume Classique et des Sept Flantastiques, qui ont leur propre page, Kingdom Hearts III compte quatre grands mini-jeux, un par monde, tous rattachés à une scène de l'histoire puis rejouables librement.\n\nIls ont deux points communs. D'abord, ils se rejouent depuis le lieu où on les a découverts, sans condition et sans coût : un échec ne coûte rien d'autre que le temps de la manche. Ensuite, leurs récompenses sont **liées au score**, pas à la simple participation — c'est ce qui les distingue du Royaume Classique, où marquer une fois suffit.\n\nL'un d'eux dépasse largement les autres en difficulté comme en intérêt : la **luge alpine** d'Arendelle, dont le meilleur palier rapporte un **Orichalque +**, c'est-à-dire un septième de l'Ultima Arma. C'est, avec les portails de combat, le morceau le plus exigeant du jeu de base.\n\nLa navigation des Caraïbes est traitée à part : ce n'est pas un mini-jeu mais un système d'exploration, avec ses propres objectifs chiffrés — deux cents navires coulés, et le Léviathan amélioré au maximum.",
+      "Outside Classic Kingdom and the Flantastic Seven, which have pages of their own, Kingdom Hearts III has four major mini-games, one per world, each tied to a story scene and then freely replayable.\n\nThey have two things in common. First, they replay from where you found them, with no condition and no cost: a failure costs nothing but the length of the round. Second, their rewards are tied to **score**, not to mere participation — which is what sets them apart from Classic Kingdom, where scoring once is enough.\n\nOne of them far outstrips the others in difficulty and in interest: Arendelle's **Frozen Slider**, whose top tier pays out an **Orichalcum+**, that is, one seventh of the Ultima Weapon. With the Battlegates, it is the toughest thing in the base game.\n\nThe Caribbean's sailing is handled separately: it is not a mini-game but an exploration system, with numbered objectives of its own — two hundred ships sunk, and the Leviathan fully upgraded.",
+    ),
+    tables: [
+      {
+        id: "liste",
+        title: L("Les quatre mini-jeux", "The four mini-games"),
+        intro: L(
+          "Le score indiqué est celui que demande le trophée correspondant, et il sert de bon repère : au-dessus, il n'y a plus rien à gagner.",
+          "The score shown is the one the matching trophy asks for, and it makes a good marker: above it, there is nothing left to win.",
+        ),
+        columns: [L("Mini-jeu", "Mini-game"), L("Monde et accès", "World and access"), L("Objectif et récompense", "Goal and reward")],
+        rows: [
+          at(
+            "Verum Rex : Beat of Lead",
+            ["Coffre à jouets — la borne d'arcade de Galaxy Toys", "Toy Box — the Galaxy Toys arcade cabinet"],
+            [
+              "Un jeu de tir en cockpit, découvert pendant l'histoire puis rejouable à la borne. Objectif : **12 millions de points**. Le score vient des enchaînements sans dégât reçu, pas du nombre de cibles — restez en mouvement et visez les groupes.",
+              "A cockpit shooter, met during the story and then replayable at the cabinet. Target: **12 million points**. Score comes from chains taken without damage, not from the number of targets — keep moving and aim at clusters.",
+            ],
+          ),
+          at(
+            "La Danse festive",
+            ["Royaume de Corona — la place du village, pendant et après le festival", "Kingdom of Corona — the village square, during and after the festival"],
+            [
+              "Un jeu de rythme à deux, avec Raiponce. Objectif : **70 000 points**. Le multiplicateur monte tant qu'on ne rate rien : mieux vaut viser la régularité que la vitesse.",
+              "A two-person rhythm game, with Rapunzel. Target: **70,000 points**. The multiplier climbs while you miss nothing: steadiness beats speed.",
+            ],
+          ),
+          at(
+            "La Luge alpine",
+            ["Arendelle — la pente du Labyrinthe de glace", "Arendelle — the slope of the Labyrinth of Ice"],
+            [
+              "Une descente chronométrée semée d'anneaux et de rampes. Objectif : **600 000 points**, et c'est le plus difficile du jeu de base. Le palier le plus haut rapporte un **Orichalque +**.",
+              "A timed descent strewn with rings and ramps. Target: **600,000 points**, and it is the hardest thing in the base game. The top tier pays out an **Orichalcum+**.",
+            ],
+          ),
+          at(
+            "Le Lumirallye",
+            ["San Fransokyo — les câbles de la ville, de nuit", "San Fransokyo — the city's cables, at night"],
+            [
+              "Deux parcours de glisse sur les câbles, à faire au **rang A** chacun. Le rang dépend du temps et des anneaux franchis : prenez la ligne intérieure dans les virages plutôt que la plus rapide en ligne droite.",
+              "Two rail-grinding courses, each to be cleared at **rank A**. Rank depends on time and rings passed: take the inside line through the turns rather than the fastest straight.",
+            ],
+          ),
+        ],
+      },
+      {
+        id: "caraibes",
+        title: L("La navigation des Caraïbes", "Sailing in the Caribbean"),
+        intro: L(
+          "Ce n'est pas un mini-jeu mais un monde ouvert en bateau, avec ses propres objectifs chiffrés. Il reste accessible après la fin de l'histoire.",
+          "Not a mini-game but an open world by ship, with numbered objectives of its own. It stays open after the story ends.",
+        ),
+        columns: [L("Objectif", "Objective"), L("Ce qu'il demande", "What it asks"), L("Comment s'y prendre", "How to go about it")],
+        rows: [
+          at(
+            "Deux cents navires coulés",
+            ["Couler 200 navires ennemis en haute mer", "Sink 200 enemy ships on the high seas"],
+            [
+              "Le compteur monte vite une fois le Léviathan amélioré : les escadres se croisent par groupes de trois ou quatre, et une bordée bien placée en coule deux. Inutile d'aborder — seul le naufrage compte.",
+              "The counter climbs quickly once the Leviathan is upgraded: squadrons cross in groups of three or four, and a well-placed broadside sinks two. No need to board — only the sinking counts.",
+            ],
+          ),
+          at(
+            "Le Léviathan au maximum",
+            ["Améliorer le navire à son dernier palier", "Upgrade the ship to its final tier"],
+            [
+              "Les améliorations se paient en matériaux ramassés en mer : coffres des îles, épaves, navires coulés. Les îles facultatives de l'archipel en contiennent beaucoup plus que la route de l'histoire.",
+              "Upgrades are paid for in materials gathered at sea: island chests, wrecks, sunken ships. The archipelago's optional islands hold far more than the story route does.",
+            ],
+          ),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "luge",
+        title: L("La luge alpine, palier par palier", "The sled run, tier by tier"),
+        text: L(
+          "La luge est le seul mini-jeu du jeu de base qui demande vraiment de l'entraînement, et la raison en est son système de points : le score ne vient presque pas de la vitesse, mais des **anneaux enchaînés sans en rater un seul**. Chaque anneau franchi augmente un multiplicateur qui retombe à zéro dès qu'on en manque un.\n\nLa conséquence est la même que pour les Flantastiques, en plus marqué : il faut ralentir. Une descente propre à vitesse moyenne bat largement une descente rapide qui casse la série deux fois. Les rampes servent moins à aller vite qu'à se replacer sur la ligne d'anneaux suivante.\n\nLe parcours étant toujours identique, il s'apprend. Trois ou quatre descentes suffisent à mémoriser les deux endroits où la ligne d'anneaux change de côté — ce sont eux qui cassent les séries. À partir de là, les 600 000 points tombent en une poignée d'essais.\n\nLa récompense justifie l'effort : le palier le plus haut donne l'un des sept **Orichalque +** du jeu. Sans lui, l'Ultima Arma reste hors de portée.",
+          "The sled run is the only base-game mini-game that really needs practice, and the reason is its scoring: points come hardly at all from speed, and almost entirely from **rings chained without missing one**. Each ring raises a multiplier that drops to zero the moment you miss.\n\nThe consequence is the same as for the Flantastic Seven, only sharper: you have to slow down. A clean run at medium speed beats a fast one that breaks the chain twice by a wide margin. The ramps are less about going fast than about lining up with the next run of rings.\n\nSince the course never changes, it can be learned. Three or four descents are enough to memorise the two places where the ring line switches sides — those are what break chains. From there, 600,000 points fall within a handful of attempts.\n\nThe reward justifies the effort: the top tier gives one of the game's seven **Orichalcum+**. Without it, the Ultima Weapon stays out of reach.",
+        ),
+      },
+    ],
+    rewards: {
+      tierHeader: L("Mini-jeu", "Mini-game"),
+      rows: [
+        { tier: L("Verum Rex : Beat of Lead", "Verum Rex: Beat of Lead"), reward: L("12 millions de points — trophée **Centurion**", "12 million points — the **Centurion** trophy") },
+        { tier: L("Danse festive", "Festival Dance"), reward: L("70 000 points — trophée **Danseur festif**", "70,000 points — the **Festival Dancer** trophy") },
+        { tier: L("Luge alpine", "Frozen Slider"), reward: L("600 000 points — **Orichalque +** et le trophée **Champion des neiges**", "600,000 points — an **Orichalcum+** and the **Snow Champion** trophy") },
+        { tier: L("Lumirallye", "Flash Tracer"), reward: L("Rang A sur les deux parcours — trophée **Engrangeur**", "Rank A on both courses — the **Harvester** trophy") },
+        { tier: L("Les Caraïbes", "The Caribbean"), reward: L("200 navires coulés et le **Léviathan** au maximum — deux trophées", "200 ships sunk and the **Leviathan** fully upgraded — two trophies") },
+      ],
+    },
   },
   {
     id: "vaisseau-gummi",
     title: L("Le vaisseau Gummi", "The Gummi ship"),
     tagline: L(
-      "L'espace ouvert, les trésors, les constellations et les trois Sans-cœur géants.",
-      "The open space, the treasures, the constellations and the three giant Heartless.",
+      "Trois espaces ouverts, neuf sphères au trésor, neuf constellations et les affrontements géants.",
+      "Three open-space zones, nine treasure spheres, nine constellations and the giant clashes.",
     ),
     entry: "chip-and-dale",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "Le vaisseau Gummi de Kingdom Hearts III n'a plus rien du couloir de tir des épisodes précédents : c'est un **espace ouvert** qu'on parcourt librement, avec des combats optionnels, des trésors, des photos à prendre et un vaisseau à construire soi-même.\n\nIl se divise en trois zones, débloquées au fil de l'histoire. **Starlight Way** est la première : elle dessert l'Olympe, la Cité du Crépuscule, le Coffre à jouets et le Royaume de Corona. **Misty Stream** suit, avec Monstropolis, Arendelle, les Caraïbes et San Fransokyo. **The Eclipse** est la dernière, celle de la fin du jeu, et de loin la plus dure.\n\nChaque zone contient trois **sphères au trésor** — des épreuves de tir sur cibles chronométrées, qui rapportent des pièces Gummi rares — trois **constellations** à photographier, et une série d'**affrontements** contre des Sans-cœur géants, notés en étoiles.\n\nDeux d'entre eux sont de véritables boss facultatifs : le **Schwarzgeist** de Misty Stream, qui exige un vaisseau à 200 de vitesse minimum, et l'**Omega Machina** de The Eclipse, seul affrontement noté cinq étoiles du jeu. Le tout complété rapporte, entre autres, l'un des sept Orichalque +.",
+      "Kingdom Hearts III's Gummi ship has nothing left of the earlier games' shooting corridor: it is an **open space** you travel freely, with optional fights, treasures, photographs to take and a ship to build yourself.\n\nIt splits into three zones, unlocked as the story goes. **Starlight Way** is the first: it serves Olympus, Twilight Town, Toy Box and the Kingdom of Corona. **Misty Stream** follows, with Monstropolis, Arendelle, the Caribbean and San Fransokyo. **The Eclipse** is the last, the endgame's, and by far the hardest.\n\nEach zone holds three **treasure spheres** — timed target-shooting trials that pay out rare Gummi parts — three **constellations** to photograph, and a run of **clashes** against giant Heartless, rated in stars.\n\nTwo of those are genuine optional bosses: Misty Stream's **Schwarzgeist**, which demands a ship with at least 200 Speed, and The Eclipse's **Omega Machina**, the game's only five-star clash. Completing the lot pays out, among other things, one of the seven Orichalcum+.",
+    ),
+    tables: [
+      {
+        id: "zones",
+        title: L("Les trois espaces", "The three zones"),
+        intro: L(
+          "Les noms sont ceux du jeu, laissés en anglais dans toutes les versions. Chaque zone garde ses trésors et ses affrontements après la fin de l'histoire.",
+          "The names are the game's own, left in English in every version. Each zone keeps its treasures and clashes after the story ends.",
+        ),
+        columns: [L("Espace", "Zone"), L("Mondes desservis", "Worlds served"), L("Ce qu'on y trouve", "What it holds")],
+        rows: [
+          at(
+            "Starlight Way",
+            ["L'Olympe, la Cité du Crépuscule, le Coffre à jouets, le Royaume de Corona", "Olympus, Twilight Town, Toy Box, the Kingdom of Corona"],
+            [
+              "Sphères au trésor α, β et γ. Constellations **Cactuar**, **Bomb** et **Moogle**. Affrontements : Astrowarrior, Flower Guardian, et Comet Crawlers — ce dernier réclame 100 de vitesse.",
+              "Treasure Spheres α, β and γ. Constellations **Cactuar**, **Bomb** and **Moogle**. Clashes: Astrowarrior, Flower Guardian, and Comet Crawlers — the last needing 100 Speed.",
+            ],
+          ),
+          at(
+            "Misty Stream",
+            ["Monstropolis, Arendelle, les Caraïbes, San Fransokyo", "Monstropolis, Arendelle, the Caribbean, San Fransokyo"],
+            [
+              "Sphères au trésor δ, ε et ζ. Constellations **Endymion**, **Tonberry** et **Imp**. Affrontements : Dreadshark, Glacial Fortress, Space Worm, et le **Schwarzgeist**, qui exige 200 de vitesse.",
+              "Treasure Spheres δ, ε and ζ. Constellations **Endymion**, **Tonberry** and **Imp**. Clashes: Dreadshark, Glacial Fortress, Space Worm, and the **Schwarzgeist**, which demands 200 Speed.",
+            ],
+          ),
+          at(
+            "The Eclipse",
+            ["La Nécropole des Keyblades et la fin du jeu", "The Keyblade Graveyard and the endgame"],
+            [
+              "Sphères au trésor η, θ et ι. Constellations **Bismarck**, **Ultros** et **Omega**. Affrontements : Colossus Pyramid, Supreme Warrior et Scarlet Shark, tous quatre étoiles, puis l'**Omega Machina**, seul cinq étoiles du jeu.",
+              "Treasure Spheres η, θ and ι. Constellations **Bismarck**, **Ultros** and **Omega**. Clashes: Colossus Pyramid, Supreme Warrior and Scarlet Shark, all four stars, then the **Omega Machina**, the game's only five-star.",
+            ],
+          ),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "construire",
+        title: L("Construire un vaisseau qui tienne", "Building a ship that holds up"),
+        text: L(
+          "L'éditeur de vaisseau intimide, mais trois chiffres seulement décident de tout : les **PV**, la **vitesse** et la **puissance**. Les modèles préfabriqués fournis par le jeu sont volontairement médiocres sur au moins un des trois, et c'est ce qui bloque les joueurs devant les affrontements à quatre étoiles.\n\nLa **vitesse** est le chiffre à surveiller en premier, parce que deux affrontements y posent un seuil explicite : 100 pour les Comet Crawlers, **200 pour le Schwarzgeist**. Un vaisseau qui n'atteint pas 200 ne peut tout simplement pas engager ce combat, quelle que soit son artillerie.\n\nLes **PV** viennent ensuite. Contre l'Omega Machina, la question n'est pas de faire des dégâts mais de survivre assez longtemps pour en faire : un vaisseau fragile meurt avant la deuxième phase, quelle que soit l'adresse du pilote.\n\nLes pièces qui montent ces trois chiffres viennent des **sphères au trésor** et des **constellations photographiées**. La boucle est donc vertueuse : on nettoie les trésors faciles d'une zone, on améliore le vaisseau, et les affrontements de cette zone deviennent abordables. Vouloir attaquer le Schwarzgeist avec un vaisseau de départ est la façon la plus sûre de perdre une heure.",
+          "The ship editor looks intimidating, but only three numbers decide anything: **HP**, **Speed** and **Power**. The prefabs the game hands you are deliberately mediocre in at least one of the three, and that is what stops players in front of the four-star clashes.\n\n**Speed** is the number to watch first, because two clashes set an explicit floor: 100 for the Comet Crawlers, **200 for the Schwarzgeist**. A ship that does not reach 200 simply cannot start that fight, whatever its guns.\n\n**HP** comes next. Against the Omega Machina, the question is not dealing damage but surviving long enough to deal any: a fragile ship dies before the second phase, however well it is flown.\n\nThe parts that raise those three numbers come from the **treasure spheres** and the **photographed constellations**. So the loop is virtuous: clear a zone's easy treasures, upgrade the ship, and that zone's clashes become manageable. Attacking the Schwarzgeist in a starting ship is the surest way to lose an hour.",
+        ),
+      },
+      {
+        id: "spheres",
+        title: L("Les sphères au trésor et les constellations", "Treasure spheres and constellations"),
+        text: L(
+          "Les neuf **sphères au trésor**, trois par zone, fonctionnent toutes pareil : une série de cibles apparaît dans une forme donnée — un N, un Y, un T, un X — et il faut toutes les détruire dans le temps imparti avant que la forme suivante se présente. Les formes et leurs durées sont fixes, donc la sphère s'apprend comme un parcours.\n\nLa seule difficulté réelle est la dernière forme de chaque sphère, plus large que le champ de vision : il faut commencer à tirer en tournant, sans attendre de tout voir. Les sphères η, θ et ι de The Eclipse sont les plus serrées, et donnent aussi les meilleures pièces.\n\nLes neuf **constellations** ne se combattent pas : on les photographie, au Gummiphone, depuis l'espace. Elles sont posées à des endroits fixes — un coin de la carte, les abords d'un monde — et le jeu signale leur proximité. Ce sont des clins d'œil à Final Fantasy : Cactuar, Tonberry, Moogle, Bomb, Imp, Ultros, Omega, Bismarck et Endymion.\n\nLes deux collectes ont leur trophée : **Pilleur spatial** pour vingt trésors uniques, **Astronome** pour les neuf constellations photographiées.",
+          "The nine **treasure spheres**, three per zone, all work the same way: a run of targets appears in a given shape — an N, a Y, a T, an X — and every one must be destroyed within the allotted time before the next shape comes up. The shapes and their timings are fixed, so a sphere is learned like a course.\n\nThe only real difficulty is each sphere's last shape, wider than the field of view: you have to start firing while turning, rather than waiting to see it all. The Eclipse's η, θ and ι spheres are the tightest, and give the best parts.\n\nThe nine **constellations** are not fought: you photograph them with the Gummiphone, from space. They sit at fixed spots — a corner of the map, the approach to a world — and the game flags when you are near. They are Final Fantasy nods: Cactuar, Tonberry, Moogle, Bomb, Imp, Ultros, Omega, Bismarck and Endymion.\n\nBoth collections have a trophy: **Space Ranger** for twenty unique treasures, **Astronomer** for all nine constellations photographed.",
+        ),
+      },
+    ],
+    rewards: {
+      tierHeader: L("Objectif", "Objective"),
+      rows: [
+        { tier: L("Vingt trésors uniques", "Twenty unique treasures"), reward: L("Pièces Gummi rares et le trophée **Pilleur spatial**", "Rare Gummi parts and the **Space Ranger** trophy") },
+        { tier: L("Les neuf constellations", "All nine constellations"), reward: L("Trophée **Astronome** et des plans de vaisseau", "The **Astronomer** trophy and ship blueprints") },
+        { tier: L("Le Schwarzgeist", "The Schwarzgeist"), reward: L("Trophée **Thermosphère** — vaisseau à 200 de vitesse exigé", "The **Thermosphere** trophy — a 200-Speed ship required") },
+        { tier: L("L'espace complété", "Space completed"), reward: L("**Orichalque +**, l'un des sept de l'Ultima Arma", "An **Orichalcum+**, one of the Ultima Weapon's seven") },
+      ],
+      note: L(
+        "La section **Trésors** du Gummiphone recense les trois espaces : c'est elle qu'il faut remplir pour le trophée **Dans les moindres recoins**, et elle sert de carte de progression bien plus lisible que l'espace lui-même.",
+        "The Gummiphone's **Treasures** section covers all three zones: it is what you fill for the **Down to the Last Corner** trophy, and it reads as a progress map far better than space itself does.",
+      ),
+    },
   },
   {
     id: "rapports-secrets",
     title: L("Les rapports secrets", "The Secret Reports"),
     tagline: L(
-      "Les carnets qui expliquent ce que l'histoire garde pour elle.",
-      "The notebooks that explain what the story keeps back.",
+      "Treize carnets, un par portail de combat, qui expliquent ce que l'histoire garde pour elle.",
+      "Thirteen notebooks, one per Battlegate, explaining what the story keeps back.",
     ),
     entry: "ansem-the-wise",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "Les rapports secrets sont la tradition de la série : des documents écrits par les personnages eux-mêmes, qui comblent les trous laissés par les cinématiques. Kingdom Hearts III en compte **treize**, et les place tous derrière la même porte — chacun récompense un **portail de combat** vidé.\n\nAutrement dit, ils n'apparaissent qu'après la fin de l'histoire, et ils demandent d'avoir fait la quête annexe la plus difficile du jeu de base. C'est un choix délibéré : ces textes répondent à des questions que seul un joueur ayant terminé le jeu se pose, et plusieurs d'entre eux ne se comprennent qu'une fois la fin vue.\n\nCe qu'ils apportent est considérable. Les notes de Xehanort éclairent son apprentissage et ses expériences sur le cœur ; celles de Vexen expliquent le programme de répliques et ce que l'Organisation appelle sa « véritable » version ; les mémoires de Saïx donnent enfin le point de vue d'un personnage que le jeu tient à distance ; les analyses d'Ienzo portent sur le code d'Ansem le Sage. Les trois derniers, signés d'un auteur non identifié, sont les plus discutés de la série.\n\nIls se relisent à tout moment depuis le **Gummiphone**, dans la section qui leur est réservée.",
+      "Secret Reports are a series tradition: documents written by the characters themselves, filling the gaps the cutscenes leave. Kingdom Hearts III has **thirteen**, and puts them all behind one door — each rewards a cleared **Battlegate**.\n\nWhich is to say they only appear after the story ends, and they ask you to have done the base game's hardest side quest. That is deliberate: these texts answer questions only a player who has finished the game asks, and several of them make sense only once the ending has been seen.\n\nWhat they add is considerable. Xehanort's notes shed light on his apprenticeship and his experiments on the heart; Vexen's explain the replica programme and what the Organisation calls its \"true\" version; Saïx's memoirs finally give the point of view of a character the game keeps at arm's length; Ienzo's analyses concern Ansem the Wise's code. The last three, by an unidentified author, are the most argued-over in the series.\n\nThey can be reread at any time from the **Gummiphone**, in the section set aside for them.",
+    ),
+    tables: [
+      {
+        id: "liste",
+        title: L("Les treize rapports", "The thirteen reports"),
+        intro: L(
+          "Ils se débloquent dans l'ordre où les portails sont vidés, et non dans l'ordre de la liste. Aucun n'est manquable : les portails restent ouverts indéfiniment.",
+          "They unlock in the order the gates are cleared, not in list order. None is missable: the gates stay open indefinitely.",
+        ),
+        columns: [L("N°", "No."), L("Auteur", "Author"), L("Titre", "Title")],
+        rows: [
+          at("1", ["Auteur inconnu", "Unknown author"], ["Réminiscences", "Reminiscences"]),
+          at("2", ["Xehanort", "Xehanort"], ["Journal de l'examen de Symbole de maîtrise", "Mark of Mastery exam journal"]),
+          at("3", ["Xehanort", "Xehanort"], ["Expériences sur le cœur — Notes sur le sujet X, extrait n° 1", "Experiments on the heart — Notes on subject X, extract 1"]),
+          at("4", ["Xehanort", "Xehanort"], ["Expériences sur le cœur — Notes sur le sujet X, extrait n° 2", "Experiments on the heart — Notes on subject X, extract 2"]),
+          at("5", ["Saïx", "Saïx"], ["Mémoires, extrait n° 1", "Memoirs, extract 1"]),
+          at("6", ["Saïx", "Saïx"], ["Mémoires, extrait n° 2", "Memoirs, extract 2"]),
+          at("7", ["Vexen", "Vexen"], ["Réflexions sur le projet de réplication humaine et la réanimation", "Thoughts on the human replica project and reanimation"]),
+          at("8", ["Vexen", "Vexen"], ["La « véritable » Organisation", "The \"true\" Organisation"]),
+          at("9", ["Ienzo", "Ienzo"], ["Analyse partielle du code d'Ansem le Sage, extrait n° 1", "Partial analysis of Ansem the Wise's code, extract 1"]),
+          at("10", ["Ienzo", "Ienzo"], ["Analyse partielle du code d'Ansem, extrait n° 2", "Partial analysis of Ansem's code, extract 2"]),
+          at("11", ["Inconnu", "Unknown"], ["Observations, extrait n° 1", "Observations, extract 1"]),
+          at("12", ["Inconnu", "Unknown"], ["Observations, extrait n° 2", "Observations, extract 2"]),
+          at("13", ["Inconnu", "Unknown"], ["Observations, extrait n° 3", "Observations, extract 3"]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "lire",
+        title: L("Dans quel ordre les lire", "What order to read them in"),
+        text: L(
+          "L'ordre de déblocage étant celui des portails, la plupart des joueurs les découvrent mélangés. Ce n'est pas grave : chaque rapport se suffit à lui-même, et le Gummiphone les range ensuite dans l'ordre numérique, qui est celui de lecture.\n\nUne seule précaution vaut d'être prise : lisez les **deux extraits d'une même série à la suite**. Les notes de Xehanort sur le sujet X, les mémoires de Saïx et les analyses d'Ienzo forment des paires ; prises isolément, elles paraissent obscures, alors que lues d'affilée elles disent quelque chose de net.\n\nLes trois derniers, les **Observations**, sont d'une autre nature. Ils ne racontent pas un épisode passé mais commentent le présent depuis un point de vue extérieur, et ce sont eux qui préparent la suite de la série. Gardez-les pour la fin, après avoir vu la scène secrète : ils s'éclairent mutuellement.\n\nÀ noter enfin que ces textes sont d'authentiques révélations, et pas des compléments décoratifs. Un joueur qui trouve la fin de Kingdom Hearts III confuse y trouvera la plupart des réponses qui lui manquaient.",
+          "Since the unlock order follows the gates, most players meet them shuffled. That is fine: each report stands on its own, and the Gummiphone then files them in numerical order, which is the reading order.\n\nOne precaution is worth taking: read the **two extracts of a series back to back**. Xehanort's notes on subject X, Saïx's memoirs and Ienzo's analyses come in pairs; taken alone they read as obscure, whereas read in sequence they say something clear.\n\nThe last three, the **Observations**, are a different animal. They do not recount a past episode but comment on the present from outside, and they are what sets up the rest of the series. Save them for last, after the secret ending: they light each other up.\n\nWorth noting, finally, that these texts are genuine revelations rather than decorative extras. A player who finds Kingdom Hearts III's ending confusing will find most of the missing answers here.",
+        ),
+      },
+    ],
+    rewards: {
+      tierHeader: L("Étape", "Step"),
+      rows: [
+        { tier: L("Chaque portail de combat vidé", "Each Battlegate cleared"), reward: L("Un rapport secret, consultable au Gummiphone", "One Secret Report, readable on the Gummiphone") },
+        { tier: L("Les treize rapports", "All thirteen reports"), reward: L("La totalité du contexte que l'histoire laisse hors champ", "All the context the story leaves off-screen") },
+      ],
+      note: L(
+        "Les rapports partagent leur condition avec les récompenses des **portails de combat** : une seule série de combats débloque les deux. Voir l'annexe qui leur est consacrée pour l'ordre dans lequel les aborder.",
+        "The reports share their condition with the **Battlegates**' rewards: one run of fights unlocks both. See the annexe devoted to them for the order to take them in.",
+      ),
+    },
   },
   {
     id: "inventaire",
     title: L("L'inventaire", "The inventory"),
     tagline: L(
-      "Keyblades, armes des compagnons, accessoires et objets-clés.",
-      "Keyblades, party weapons, accessories and key items.",
+      "Keyblades, armes des compagnons, accessoires, protections et objets-clés.",
+      "Keyblades, party weapons, accessories, armour and key items.",
     ),
     entry: "kingdom-key",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "L'inventaire de Kingdom Hearts III se range en cinq catégories : les **armes** — les Keyblades de Sora, les bâtons de Donald, les boucliers de Dingo —, les **protections**, les **accessoires**, les **objets** consommables et les **objets-clés**.\n\nDeux choses distinguent cet inventaire de ceux des épisodes précédents. D'abord, chaque Keyblade s'**améliore à la forge** des Mogs, sur sept paliers : les chiffres donnés ci-dessous sont ceux de l'arme à son état d'origine, et une Keyblade entièrement forgée dépasse largement une arme plus récente laissée telle quelle. Ensuite, Sora en équipe **trois à la fois** et bascule de l'une à l'autre en plein combat — ce qui fait de la composition un choix tactique, pas un simple classement par puissance.\n\nLes accessoires, eux, ne se contentent plus de donner des points : beaucoup portent une **capacité** — Convertisseur de Soin, Explosion de MP, Concentration X — qui pèse davantage que les deux ou trois points d'attaque affichés à côté.\n\nLes protections ne sont pas détaillées ici une par une : elles suivent une progression linéaire, et la meilleure disponible est presque toujours la bonne. La seule à mériter d'être cherchée est la **Ceinture de héros**, donnée par les figurines dorées de l'Olympe.",
+      "Kingdom Hearts III's inventory falls into five categories: **weapons** — Sora's Keyblades, Donald's staves, Goofy's shields —, **armour**, **accessories**, consumable **items** and **key items**.\n\nTwo things set this inventory apart from earlier games'. First, every Keyblade **upgrades at the moogle forge**, across seven tiers: the figures below are the weapon's base state, and a fully forged Keyblade comfortably beats a newer one left as it is. Second, Sora equips **three at a time** and switches between them mid-fight — which makes the loadout a tactical choice, not a ranking by power.\n\nAccessories no longer merely hand out points either: many carry an **ability** — Heal Converter, MP Explosion, Focus Barrage — that weighs more than the two or three points of Strength listed beside it.\n\nArmour is not itemised here: it follows a linear progression, and the best available piece is almost always the right one. The only one worth hunting is the **Hero's Belt**, given by Olympus's golden figures.",
+    ),
+    tables: [
+      {
+        id: "keyblades",
+        title: L("Les Keyblades de Sora", "Sora's Keyblades"),
+        intro: L(
+          "Force et Magie sont celles de l'arme non améliorée. Chacune gagne sept paliers à la forge des Mogs ; les formes de chaque Keyblade sont détaillées dans l'annexe qui leur est consacrée.",
+          "Strength and Magic are the unupgraded weapon's. Each gains seven tiers at the moogle forge; every Keyblade's forms are detailed in the annexe devoted to them.",
+        ),
+        columns: [L("Keyblade", "Keyblade"), L("Force / Magie", "Strength / Magic"), L("Obtention", "How it's obtained")],
+        rows: [
+          at("Chaîne royale", ["4 / 3", "4 / 3"], ["Arme de départ.", "Starting weapon."]),
+          at("Genèse héroïque", ["5 / 2", "5 / 2"], ["Terminer l'Olympe.", "Finish Olympus."]),
+          at("Étoile filante", ["3 / 5", "3 / 5"], ["Terminer la Cité du Crépuscule.", "Finish Twilight Town."]),
+          at("Shérif de l'Ouest", ["6 / 3", "6 / 3"], ["Terminer le Coffre à jouets.", "Finish Toy Box."]),
+          at("À tout jamais", ["2 / 7", "2 / 7"], ["Terminer le Royaume de Corona.", "Finish the Kingdom of Corona."]),
+          at("Zygomagique", ["7 / 3", "7 / 3"], ["Terminer Monstropolis.", "Finish Monstropolis."]),
+          at("Neige cristalline", ["4 / 7", "4 / 7"], ["Terminer Arendelle.", "Finish Arendelle."]),
+          at("Verse-miel", ["6 / 5", "6 / 5"], ["Terminer la Forêt des Rêves Bleus.", "Finish the Hundred Acre Wood."]),
+          at("Microcomposant", ["7 / 5", "7 / 5"], ["Terminer San Fransokyo.", "Finish San Fransokyo."]),
+          at("Gouvernail du destin", ["8 / 5", "8 / 5"], ["Terminer les Caraïbes.", "Finish the Caribbean."]),
+          at("Lumière stellaire", ["4 / 4", "4 / 4"], ["Fin du jeu.", "End of the game."]),
+          at("Chef étoilé", ["5 / 7", "5 / 7"], ["Cinq étoiles au **Bistrot du Petit Chef**.", "Five stars at **Le Grand Bistrot**."]),
+          at("Son classique", ["6 / 9", "6 / 9"], ["Marquer un score dans chacun des vingt-trois jeux du **Royaume Classique**.", "Score in each of Classic Kingdom's twenty-three games."]),
+          at("Ultima Arma", ["13 / 13", "13 / 13"], ["Synthèse à l'**atelier des Mogs**, avec les sept Orichalque +.", "Synthesis at the **moogle workshop**, with all seven Orichalcum+."]),
+        ],
+      },
+      {
+        id: "compagnons",
+        title: L("Les armes des compagnons", "The party's weapons"),
+        intro: L(
+          "Elles ne se forgent pas : elles s'achètent, se trouvent en coffre ou se synthétisent. Contrairement aux Keyblades, la plus récente est presque toujours la meilleure.",
+          "They are not forged: they are bought, found in chests or synthesised. Unlike the Keyblades, the newest is nearly always the best.",
+        ),
+        columns: [L("Compagnon", "Companion"), L("Armes", "Weapons"), L("Où les obtenir", "Where to get them")],
+        rows: [
+          at(
+            "Donald — les bâtons",
+            ["Bâton de magicien, Marteau de bois, Baguette magique, Nirvana, Astrolabe, et leurs versions améliorées", "Mage's Staff, Wooden Hammer, Magic Wand, Nirvana, Astrolabe, and their improved versions"],
+            [
+              "Le bâton de départ, puis la boutique des Mogs et les coffres des mondes. Les versions améliorées passent par la synthèse.",
+              "The starting staff, then the moogle shop and world chests. The improved versions go through synthesis.",
+            ],
+          ),
+          at(
+            "Dingo — les boucliers",
+            ["Targe royale, Targe mécanique, Targe stellaire, Bouclier d'Aegis, Ancre des tempêtes, jusqu'à Save the King", "Royal Shield, Mecha Shield, Star Shield, Aegis Shield, Storm Anchor, up to Save the King"],
+            [
+              "Même logique : boutique, coffres et synthèse. **Save the King**, le dernier, monte à 9 en Force.",
+              "Same logic: shop, chests and synthesis. **Save the King**, the last one, reaches 9 Strength.",
+            ],
+          ),
+        ],
+      },
+      {
+        id: "accessoires",
+        title: L("Les accessoires", "Accessories"),
+        collapsed: true,
+        intro: L(
+          "Regroupés par familles. Les PC indiqués sont les points de capacité que l'accessoire coûte à équiper ; ce sont les capacités, plus que les points, qui font la valeur des meilleurs.",
+          "Grouped by family. The AP figure is what the accessory costs to equip; it is the abilities, more than the points, that make the best ones worth it.",
+        ),
+        columns: [L("Famille", "Family"), L("Exemples", "Examples"), L("Ce qu'ils apportent", "What they bring")],
+        rows: [
+          at(
+            "Les anneaux d'attaque",
+            ["Anneau de compétences, Anneau cosmique, Anneau d'orichalque", "Skill Ring, Cosmic Ring, Orichalcum Ring"],
+            [
+              "De +1 à +6 en Attaque. L'**Anneau d'orichalque** (6 ATT pour 10 PC) est le meilleur rapport du jeu sur cette ligne.",
+              "From +1 to +6 Strength. The **Orichalcum Ring** (6 Str for 10 AP) is the game's best value on this line.",
+            ],
+          ),
+          at(
+            "Les anneaux de magie",
+            ["Anneau magique, Anneau runique, Anneau de sorcier", "Magic Ring, Rune Ring, Sorcerer's Ring"],
+            ["De +2 à +5 en Magie, pour un coût en PC très faible. La base d'une composition orientée sorts.", "From +2 to +5 Magic, at a very low AP cost. The backbone of a spell-leaning loadout."],
+          ),
+          at(
+            "Les boucles",
+            ["Boucle de soldat, Boucle fine lame, Boucle de mage", "Soldier Earring, Fencer Earring, Mage Earring"],
+            ["Elles mélangent Attaque et Magie — le choix par défaut quand on ne veut se fermer aucune option.", "They mix Strength and Magic — the default choice when you want to keep every option open."],
+          ),
+          at(
+            "Les amulettes et colliers",
+            ["Amulette de bronze, Amulette d'argent, Amulette cosmique, Collier royal", "Bronze Amulet, Silver Amulet, Cosmic Amulet, Royal Necklace"],
+            ["Les amulettes montent progressivement jusqu'à 4 ATT / 4 MAG. Plusieurs viennent des paliers d'emblèmes fétiches.", "The amulets climb steadily to 4 Str / 4 Mag. Several come from the Lucky Emblem tiers."],
+          ),
+          at(
+            "Les attaches élémentaires",
+            ["Attache Brasier, Attache Foudre, Attache Rafale, Attache Eau, Attache Glacier, Attache zen, Attache trois étoiles", "Blazing Charm, Thunder Charm, Gust Charm, Aqua Charm, Frost Charm, Serenity Charm, Celestriad Charm"],
+            [
+              "Chacune renforce un élément et se gagne dans un **portail de combat**. Utiles surtout contre un boss dont on connaît la faiblesse.",
+              "Each strengthens one element and is won in a **Battlegate**. Mostly useful against a boss whose weakness you know.",
+            ],
+          ),
+          at(
+            "Les accessoires spéciaux",
+            ["Barrette de Mickey, Emblème de cristal, Anneau flantastique, Ruban royal", "Mickey Clasp, Crystal Regalia, Flantastic Ring, Royal Ribbon"],
+            [
+              "Les quatre récompenses de fin de collecte. La **Barrette de Mickey** (3 ATT, 5 MAG, 90 emblèmes) donne Concentration X et Magie infinie ; l'**Emblème de cristal** (5 ATT, 5 MAG) vient du portail 14.",
+              "The four end-of-collection rewards. The **Mickey Clasp** (3 Str, 5 Mag, 90 emblems) grants Focus Barrage and Infinite Magic; the **Crystal Regalia** (5 Str, 5 Mag) comes from gate 14.",
+            ],
+          ),
+        ],
+      },
+      {
+        id: "objets",
+        title: L("Objets et objets-clés", "Items and key items"),
+        intro: L(
+          "Les consommables sont d'une simplicité assumée dans cet épisode : peu de variété, beaucoup de quantité.",
+          "Consumables are deliberately simple this time round: little variety, plenty of quantity.",
+        ),
+        columns: [L("Catégorie", "Category"), L("Ce qu'elle contient", "What it holds"), L("Remarque", "Note")],
+        rows: [
+          at(
+            "Les soins",
+            ["Potion, Mégapotion, Éther, Méga-éther, Élixir, Mégalixir", "Potion, Mega-Potion, Ether, Mega-Ether, Elixir, Megalixir"],
+            [
+              "Les Mégapotions soignent toute l'équipe : dans un combat long, elles valent trois Potions. Le Mégalixir du portail 4 est à garder pour un affrontement précis.",
+              "Mega-Potions heal the whole party: in a long fight they are worth three Potions. The Megalixir from gate 4 is worth saving for a specific fight.",
+            ],
+          ),
+          at(
+            "Les boosters",
+            ["Booster Attaque, Booster Magie, Booster Défense, Booster PV, Booster PM", "Power Boost, Magic Boost, Defense Boost, HP Boost, MP Boost"],
+            [
+              "Bonus permanents. Ils viennent surtout des paliers d'**emblèmes fétiches** — et se cumulent avec les bonus du bistrot.",
+              "Permanent bonuses. They come mostly from the **Lucky Emblem** tiers — and stack with the bistro's bonuses.",
+            ],
+          ),
+          at(
+            "Les objets-clés",
+            ["Gummiphone, les sept Orichalque +, les cartes du Royaume Classique, les figurines dorées", "The Gummiphone, the seven Orichalcum+, the Classic Kingdom cards, the golden figures"],
+            [
+              "Ils ne s'utilisent pas : ils ouvrent des systèmes ou servent de matériau. Le Gummiphone porte à lui seul la photo, le bestiaire, les rapports secrets et le Royaume Classique.",
+              "They are not used: they open systems or serve as material. The Gummiphone alone carries the camera, the bestiary, the Secret Reports and Classic Kingdom.",
+            ],
+          ),
+        ],
+      },
+    ],
+    rewards: {
+      tierHeader: L("À retenir", "Key point"),
+      rows: [
+        { tier: L("La forge", "The forge"), reward: L("Sept paliers par Keyblade — une arme forgée bat une arme récente", "Seven tiers per Keyblade — a forged weapon beats a newer one") },
+        { tier: L("Trois Keyblades", "Three Keyblades"), reward: L("Couvrir groupe, distance et défense plutôt que cumuler la puissance", "Cover crowds, range and defence rather than stacking power") },
+        { tier: L("Les accessoires", "Accessories"), reward: L("Leurs capacités pèsent plus que les points affichés", "Their abilities weigh more than the listed points") },
+        { tier: L("Ultima Arma", "Ultima Weapon"), reward: L("13 / 13 — aucune autre arme n'en approche", "13 / 13 — nothing else comes close") },
+      ],
+    },
   },
   {
     id: "bestiaire",
     title: L("Le bestiaire", "The bestiary"),
     tagline: L(
-      "Les Sans-cœur, les Similis et les Nescients de Kingdom Hearts III.",
-      "Kingdom Hearts III's Heartless, Nobodies and Unversed.",
+      "Les Sans-cœur, les Nescients et les Similis de Kingdom Hearts III, et ce qu'ils lâchent.",
+      "Kingdom Hearts III's Heartless, Unversed and Nobodies, and what they drop.",
     ),
     entry: "heartless",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "Le bestiaire de Kingdom Hearts III tient dans le **Gummiphone**, section « Adversaires » : chaque espèce rencontrée s'y inscrit, avec les mondes où on la croise et les matériaux qu'elle laisse tomber. Le remplir entièrement vaut un trophée, mais son vrai usage est ailleurs — c'est la table de correspondance qui dit quel ennemi farmer pour quelle recette de synthèse.\n\nLa composition du bestiaire est particulière à cet épisode. Les **Sans-cœur** occupent presque toute la place : une cinquantaine d'espèces, réparties entre les neuf mondes et les portails de combat. Les **Nescients** ne reviennent que dans un seul monde, Monstropolis, où ils tiennent lieu d'ennemis locaux. Quant aux **Similis**, ils n'existent plus comme troupe : l'Organisation XIII se bat en personne, et aucun Simili commun ne patrouille dans les mondes.\n\nLa lecture des objets lâchés obéit à une logique simple : chaque espèce est liée à une **famille de matériaux** — torturé, ardent, apaisant, vibrant, grondant, hyalin, ressourçant, affamé, glacial, illusoire — et laisse tomber les trois qualités de cette famille, éclat, pierre puis gemme ou cristal selon son niveau. Quand une recette bloque, c'est la famille qu'on cherche, pas l'objet.\n\nLes portails de combat, indiqués par leur numéro dans le tableau, sont de loin le meilleur endroit pour accumuler : ils enchaînent des vagues denses d'ennemis de haut niveau, donc des matériaux de qualité supérieure.",
+      "Kingdom Hearts III's bestiary lives in the **Gummiphone**, under \"Enemies\": every species you meet is recorded there, with the worlds you meet it in and the materials it drops. Filling it is worth a trophy, but its real use is elsewhere — it is the lookup table that says which enemy to farm for which synthesis recipe.\n\nThe bestiary's make-up is particular to this game. **Heartless** take up nearly all of it: some fifty species, spread across the nine worlds and the Battlegates. **Unversed** return in one world only, Monstropolis, where they stand in for local enemies. As for **Nobodies**, they no longer exist as rank and file: Organisation XIII fights in person, and no common Nobody patrols the worlds.\n\nReading the drops follows a simple logic: each species is tied to a **material family** — Writhing, Blazing, Soothing, Wellspring, Pulsing, Lucid, Remembrance, Hungry, Frost, Illusory — and drops that family's three qualities, shard, then stone, then gem or crystal by its level. When a recipe stalls, it is the family you look for, not the item.\n\nThe Battlegates, shown by number in the table, are by far the best place to stockpile: they chain dense waves of high-level enemies, and therefore higher-grade materials.",
+    ),
+    tables: [
+      {
+        id: "sans-coeur",
+        title: L("Les Sans-cœur", "The Heartless"),
+        collapsed: true,
+        intro: L(
+          "Les mondes sont ceux où l'espèce apparaît en jeu libre ; les numéros renvoient aux portails de combat. Les objets sont donnés dans l'ordre de rareté croissante.",
+          "The worlds are where the species appears in free play; the numbers refer to the Battlegates. Drops are listed from commonest to rarest.",
+        ),
+        columns: [L("Sans-cœur", "Heartless"), L("Où on le croise", "Where you meet it"), L("Ce qu'il lâche", "What it drops")],
+        rows: [
+          at("Ombre", ["Olympe, Crépuscule, Coffre à jouets, Corona, San Fransokyo, portails", "Olympus, Twilight Town, Toy Box, Corona, San Fransokyo, gates"], ["Éclat torturé, Pierre torturée", "Writhing Shard, Writhing Stone"]),
+          at("Crypto Ombre", ["San Fransokyo, portail 0", "San Fransokyo, gate 0"], ["Pierre torturée, Gemme torturée, Pierre ressourçante", "Writhing Stone, Writhing Gem, Remembrance Stone"]),
+          at("Noctule", ["Corona, Monstropolis, Arendelle, portail 0", "Corona, Monstropolis, Arendelle, gate 0"], ["Éclat torturé, Pierre torturée, Gemme torturée", "Writhing Shard, Stone, Gem"]),
+          at("Pyronucléo", ["Olympe, Monstropolis, portails 1 et 8", "Olympus, Monstropolis, gates 1 and 8"], ["Éclat ardent, Pierre ardente", "Blazing Shard, Blazing Stone"]),
+          at("Aquanucléo", ["Olympe, Monstropolis, Caraïbes, portails 1 et 10", "Olympus, Monstropolis, the Caribbean, gates 1 and 10"], ["Éclat apaisant, Pierre apaisante", "Soothing Shard, Soothing Stone"]),
+          at("Terranucléo", ["Olympe, Caraïbes, portail 10", "Olympus, the Caribbean, gate 10"], ["Éclat et Pierre vibrants ; Éclat et Pierre affamés pour la variante sableuse", "Wellspring Shard and Stone; Hungry Shard and Stone for the sandy variant"]),
+          at("Soldat", ["Olympe, Arendelle, San Fransokyo, portail 2", "Olympus, Arendelle, San Fransokyo, gate 2"], ["Éclat vibrant, Éclat grondant, Éclat ressourçant", "Wellspring, Pulsing and Remembrance Shards"]),
+          at("Soldat cuirassé", ["San Fransokyo, portail 12", "San Fransokyo, gate 12"], ["Gemme ressourçante, Cristal ressourçant, Cristal ardent", "Remembrance Gem and Crystal, Blazing Crystal"]),
+          at("Soldat volant", ["Olympe, portail 1", "Olympus, gate 1"], ["Éclat hyalin, Pierre hyaline", "Lucid Shard, Lucid Stone"]),
+          at("Rondouillard", ["Olympe, Crépuscule, Coffre à jouets, Monstropolis, Caraïbes, portail 10", "Olympus, Twilight Town, Toy Box, Monstropolis, the Caribbean, gate 10"], ["Éclat ressourçant, Pierre ressourçante, Éclat affamé", "Remembrance Shard and Stone, Hungry Shard"]),
+          at("Rondouillard casqué", ["Arendelle, portail 11", "Arendelle, gate 11"], ["Gemme torturée, Cristal ressourçant, Cristal vibrant", "Writhing Gem, Remembrance Crystal, Wellspring Crystal"]),
+          at("Samba cinabre", ["Olympe, Crépuscule, Coffre à jouets, portail 13", "Olympus, Twilight Town, Toy Box, gate 13"], ["Pierre ardente, Gemme ardente", "Blazing Stone, Blazing Gem"]),
+          at("Rumba azurée", ["Corona, Monstropolis, Arendelle, Caraïbes, portail 10", "Corona, Monstropolis, Arendelle, the Caribbean, gate 10"], ["Pierre apaisante, Gemme apaisante", "Soothing Stone, Soothing Gem"]),
+          at("Cadence dorée", ["Coffre à jouets, Monstropolis, Arendelle, Caraïbes, San Fransokyo, portail 13", "Toy Box, Monstropolis, Arendelle, the Caribbean, San Fransokyo, gate 13"], ["Pierre grondante, Gemme grondante", "Pulsing Stone, Pulsing Gem"]),
+          at("Boléro verdâtre", ["Corona, portail 7", "Corona, gate 7"], ["Pierre hyaline, Gemme hyaline", "Lucid Stone, Lucid Gem"]),
+          at("Chapot", ["Olympe", "Olympus"], ["Éclat affamé, Pierre affamée", "Hungry Shard, Hungry Stone"]),
+          at("Chapot de vitalité", ["Arendelle", "Arendelle"], ["Éclat affamé, Pierre affamée, Pierre ressourçante", "Hungry Shard and Stone, Remembrance Stone"]),
+          at("Chapot de magie", ["Arendelle", "Arendelle"], ["Éclat affamé, Pierre affamée, Pierre ressourçante", "Hungry Shard and Stone, Remembrance Stone"]),
+          at("Chapot de concentration", ["Arendelle", "Arendelle"], ["Éclat affamé, Pierre affamée, Pierre ressourçante", "Hungry Shard and Stone, Remembrance Stone"]),
+          at("Chapot de munnies", ["Crépuscule", "Twilight Town"], ["Éclat affamé, Pierre affamée, Pierre ressourçante", "Hungry Shard and Stone, Remembrance Stone"]),
+          at("Archer fantasque", ["Olympe, Crépuscule, Corona, portail 1", "Olympus, Twilight Town, Corona, gate 1"], ["Éclat ardent, Éclat grondant, Éclat ressourçant", "Blazing, Pulsing and Remembrance Shards"]),
+          at("Rock'n'troll", ["Olympe, Arendelle, portail 2", "Olympus, Arendelle, gate 2"], ["Pierre ressourçante, Gemme ressourçante", "Remembrance Stone, Remembrance Gem"]),
+          at("Troll métalleux", ["San Fransokyo, portail 11", "San Fransokyo, gate 11"], ["Pierre ressourçante, Gemme ressourçante", "Remembrance Stone, Remembrance Gem"]),
+          at("Faune", ["Olympe, Arendelle, portail 1", "Olympus, Arendelle, gate 1"], ["Pierre vibrante, Gemme vibrante, Éclat ressourçant", "Wellspring Stone and Gem, Remembrance Shard"]),
+          at("Mécanitaure", ["San Fransokyo, portail 12", "San Fransokyo, gate 12"], ["Cristal torturé, Gemme ressourçante, Cristal affamé", "Writhing Crystal, Remembrance Gem, Hungry Crystal"]),
+          at("Soldat jouet", ["Coffre à jouets, portails 4 et 5", "Toy Box, gates 4 and 5"], ["Éclat apaisant, Éclat ressourçant", "Soothing Shard, Remembrance Shard"]),
+          at("Grobusier", ["Coffre à jouets, San Fransokyo, portails 4 et 5", "Toy Box, San Fransokyo, gates 4 and 5"], ["Éclat ardent, Pierre ardente, Pierre ressourçante", "Blazing Shard and Stone, Remembrance Stone"]),
+          at("Marionnette", ["Coffre à jouets", "Toy Box"], ["Éclat grondant, Pierre grondante", "Pulsing Shard, Pulsing Stone"]),
+          at("Primate costaud", ["Crépuscule, Corona, Caraïbes, portail 6", "Twilight Town, Corona, the Caribbean, gate 6"], ["Éclat vibrant, Pierre vibrante, Éclat ressourçant", "Wellspring Shard and Stone, Remembrance Shard"]),
+          at("Pelleteur", ["Monstropolis, San Fransokyo", "Monstropolis, San Fransokyo"], ["Gemme vibrante, Pierre ressourçante, Gemme ressourçante", "Wellspring Gem, Remembrance Stone and Gem"]),
+          at("Tendrombrelle", ["Corona, Arendelle, portail 7", "Corona, Arendelle, gate 7"], ["Éclat ressourçant, Pierre ressourçante, Pierre affamée", "Remembrance Shard and Stone, Hungry Stone"]),
+          at("Gros duveteux", ["Corona, portail 7", "Corona, gate 7"], ["Pierre et Gemme hyalines, Pierre ressourçante ; empilé : Pierre ressourçante, Éclat affamé", "Lucid Stone and Gem, Remembrance Stone; stacked: Remembrance Stone, Hungry Shard"]),
+          at("Fleurond", ["Corona, portail 7", "Corona, gate 7"], ["Éclat hyalin, Pierre hyaline", "Lucid Shard, Lucid Stone"]),
+          at("Char du chaos", ["Corona, portail 6", "Corona, gate 6"], ["Gemme ressourçante, Pierre affamée", "Remembrance Gem, Hungry Stone"]),
+          at("Cornu des neiges", ["Arendelle", "Arendelle"], ["Éclat glacial, Pierre glaciale", "Frost Shard, Frost Stone"]),
+          at("Dragon de givre", ["Arendelle", "Arendelle"], ["Cristal glacial ; ailes : Pierre et Gemme glaciales ; queue : Pierre, Gemme et Cristal affamés", "Frost Crystal; wings: Frost Stone and Gem; tail: Hungry Stone, Gem and Crystal"]),
+          at("Mouche à vapeur", ["Caraïbes, portail 10", "The Caribbean, gate 10"], ["Pierre hyaline, Gemme hyaline, Gemme ressourçante", "Lucid Stone and Gem, Remembrance Gem"]),
+          at("Vilain marin", ["Caraïbes", "The Caribbean"], ["Varie avec la couleur : bleu glacial, rouge ardent, jaune grondant, multicolore apaisant", "Varies with colour: blue Frost, red Blazing, yellow Pulsing, multicoloured Soothing"]),
+          at("Océanien lancier", ["Caraïbes, portail 10", "The Caribbean, gate 10"], ["Pierre, Gemme et Cristal apaisants", "Soothing Stone, Gem and Crystal"]),
+          at("Forbandit", ["Caraïbes, portail 10", "The Caribbean, gate 10"], ["Cristal hyalin, Gemme ressourçante, Cristal ressourçant", "Lucid Crystal, Remembrance Gem and Crystal"]),
+          at("Pneumaniaque", ["San Fransokyo, portails 4 et 12", "San Fransokyo, gates 4 and 12"], ["Pierre, Gemme et Cristal grondants", "Pulsing Stone, Gem and Crystal"]),
+          at("Tour démoniaque", ["Portail 8", "Gate 8"], ["Cristal illusoire", "Illusory Crystal"]),
+        ],
+      },
+      {
+        id: "nescients",
+        title: L("Les Nescients", "The Unversed"),
+        intro: L(
+          "Ils ne reviennent que dans un monde, Monstropolis, où ils remplacent les Sans-cœur comme troupe locale. Quatre espèces, toutes liées à Vanitas.",
+          "They return in one world only, Monstropolis, where they replace the Heartless as local rank and file. Four species, all tied to Vanitas.",
+        ),
+        columns: [L("Nescient", "Unversed"), L("Monde", "World"), L("Ce qu'il faut savoir", "What to know")],
+        rows: [
+          at("Inondeur", ["Monstropolis", "Monstropolis"], ["L'équivalent de l'Ombre chez les Nescients : nombreux, faibles, et là pour remplir le terrain.", "The Unversed answer to the Shadow: numerous, weak, and there to fill the floor."]),
+          at("Serpent à fleurs", ["Monstropolis", "Monstropolis"], ["Il projette du poison par des tuyaux et peut infliger la **Paralysie** — à traiter en priorité dans un groupe.", "It sprays poison through pipes and can inflict **Stun** — deal with it first in a group."]),
+          at("Crapaud-tortue à pointes", ["Monstropolis", "Monstropolis"], ["Il gonfle et avale d'autres créatures avant de les recracher ; ses pointes punissent l'attaque au corps à corps.", "It swells and swallows other creatures before spitting them out; its spikes punish melee."]),
+          at("Crapaud-tortue", ["Monstropolis", "Monstropolis"], ["La version sans pointes, à carapace souple : elle s'ouvre à la magie plus qu'aux coups.", "The spike-less version with a soft shell: magic opens it up better than blows do."]),
+        ],
+      },
+      {
+        id: "similis",
+        title: L("Les Similis, et les autres", "The Nobodies, and the rest"),
+        intro: L(
+          "Ce que le bestiaire de cet épisode ne contient pas est aussi révélateur que ce qu'il contient.",
+          "What this game's bestiary does not hold says as much as what it does.",
+        ),
+        columns: [L("Famille", "Family"), L("Présence dans le jeu", "Presence in the game"), L("Remarque", "Note")],
+        rows: [
+          at(
+            "Les Similis",
+            ["Aucune troupe commune", "No rank and file at all"],
+            [
+              "Pour la première fois de la série, aucun Simili ordinaire ne patrouille : l'Organisation XIII se bat en personne, et ses membres sont traités comme des boss, pas comme des ennemis de bestiaire.",
+              "For the first time in the series, no ordinary Nobody patrols: Organisation XIII fights in person, and its members are handled as bosses, not bestiary entries.",
+            ],
+          ),
+          at(
+            "Les flans",
+            ["Sept espèces, une par monde", "Seven species, one per world"],
+            [
+              "Ils figurent au bestiaire mais ne se combattent pas : ce sont les **Sept Flantastiques**, et chacun lâche son fruit selon le score obtenu à son mini-jeu.",
+              "They appear in the bestiary but are not fought: they are the **Flantastic Seven**, and each drops its fruit according to the score you post in its mini-game.",
+            ],
+          ),
+          at(
+            "Les boss",
+            ["Trente-deux affrontements au fil du cheminement", "Thirty-two fights across the walkthrough"],
+            [
+              "Titans, Gigas, membres de l'Organisation, plus **Obscurantis** au portail 14. Ils sont détaillés dans les sections du cheminement, encadré par encadré.",
+              "Titans, Gigas, Organisation members, plus **Dark Inferno** at gate 14. They are detailed in the walkthrough's sections, fight by fight.",
+            ],
+          ),
+        ],
+      },
+    ],
+    rewards: {
+      tierHeader: L("Objectif", "Objective"),
+      rows: [
+        { tier: L("Section Adversaires complétée", "Enemies section completed"), reward: L("Trophée **Connaître ses ennemis**", "The **Know Thine Enemy** trophy") },
+        { tier: L("Mille ennemis vaincus", "A thousand enemies defeated"), reward: L("Trophée **Chevalier**", "The **Knight** trophy") },
+        { tier: L("Trois mille", "Three thousand"), reward: L("Trophée **Fou**", "The **Bishop** trophy") },
+        { tier: L("Cinq mille", "Five thousand"), reward: L("Trophée **Tour**", "The **Rook** trophy") },
+      ],
+      note: L(
+        "Les compteurs d'ennemis vaincus montent surtout dans les **portails de combat**, qui alignent des vagues denses : c'est là que se règlent les trois trophées de comptage et l'essentiel de la récolte de matériaux.",
+        "The defeat counters climb fastest in the **Battlegates**, which line up dense waves: that is where the three counting trophies and most of the material harvest get settled.",
+      ),
+    },
   },
   {
     id: "trophees",
     title: L("Les trophées", "Trophies"),
     tagline: L(
-      "La liste complète, et ce que demande le platine.",
-      "The complete list, and what the platinum asks for.",
+      "Les quarante-six trophées, et ce que demande le platine.",
+      "The forty-six trophies, and what the platinum asks for.",
     ),
     entry: "jiminy-cricket",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "Kingdom Hearts III compte **quarante-six trophées**, platine compris. C'est l'un des platines les plus abordables de la série : il ne demande ni difficulté imposée, ni partie à recommencer, ni chronomètre sur l'histoire. Tout se fait sur une seule sauvegarde, et presque tout après la fin.\n\nIls se rangent en quatre groupes. Les **trophées d'histoire** tombent seuls, un par monde. Les **trophées du Gummiphone** demandent de remplir ses cinq sections : emblèmes fétiches, adversaires, trésors, objets créés, records de jeu — ce sont eux qui structurent la complétion. Les **trophées de mini-jeux** exigent un score précis dans chacune des épreuves. Les **trophées de progression** comptent les ennemis vaincus, les photos prises, les navires coulés et les niveaux gagnés.\n\nTrois seulement demandent un effort réel : **Roi cachés** (les quatre-vingt-dix emblèmes fétiches), **Thermosphère** (le Schwarzgeist, donc un vaisseau Gummi à 200 de vitesse) et **Champion des neiges** (600 000 points à la luge alpine). Le reste vient avec une partie jouée complètement.\n\nÀ noter que le platine n'exige **pas** le mode Critique, ni la scène secrète, ni l'extension Re Mind — laquelle a sa propre liste, séparée.",
+      "Kingdom Hearts III has **forty-six trophies**, platinum included. It is one of the series' more approachable platinums: no imposed difficulty, no second playthrough, no clock on the story. It all happens on one save, and nearly all of it after the ending.\n\nThey fall into four groups. The **story trophies** land on their own, one per world. The **Gummiphone trophies** ask you to fill its five sections: Lucky Emblems, Enemies, Treasures, Synthesis, Records — these are what structure completion. The **mini-game trophies** demand a set score in each trial. The **progress trophies** count enemies defeated, photographs taken, ships sunk and levels gained.\n\nOnly three ask for real effort: **Hidden Kings** (all ninety Lucky Emblems), **Thermosphere** (the Schwarzgeist, so a 200-Speed Gummi ship) and **Snow Champion** (600,000 points on the sled run). The rest comes with a game played through properly.\n\nWorth noting that the platinum does **not** require Critical mode, nor the secret ending, nor the Re Mind expansion — which has a list of its own.",
+    ),
+    tables: [
+      {
+        id: "histoire",
+        title: L("Les trophées d'histoire", "Story trophies"),
+        intro: L(
+          "Ils tombent en jouant, sans détour. Aucun n'est manquable.",
+          "They land as you play, with no detour. None is missable.",
+        ),
+        columns: [L("Trophée", "Trophy"), L("Rang", "Rank"), L("Condition", "Condition")],
+        rows: [
+          at("Un nouveau voyage", ["Bronze", "Bronze"], ["Commencez votre toute nouvelle aventure.", "Begin your brand-new adventure."]),
+          at("Le choc des dieux", ["Bronze", "Bronze"], ["Aventurez-vous dans l'Olympe et bouclez le chapitre.", "Venture into Olympus and finish the chapter."]),
+          at("Un vœu crépusculaire", ["Bronze", "Bronze"], ["Aventurez-vous dans la Cité du Crépuscule et bouclez le chapitre.", "Venture into Twilight Town and finish the chapter."]),
+          at("Amis inséparables", ["Bronze", "Bronze"], ["Aventurez-vous dans le Coffre à jouets et bouclez le chapitre.", "Venture into Toy Box and finish the chapter."]),
+          at("Jusqu'à la fin des temps", ["Bronze", "Bronze"], ["Aventurez-vous dans le Royaume de Corona et bouclez le chapitre.", "Venture into the Kingdom of Corona and finish the chapter."]),
+          at("L'énergie du rire", ["Bronze", "Bronze"], ["Aventurez-vous à Monstropolis et bouclez le chapitre.", "Venture into Monstropolis and finish the chapter."]),
+          at("Un geste d'amour", ["Bronze", "Bronze"], ["Aventurez-vous à Arendelle et bouclez le chapitre.", "Venture into Arendelle and finish the chapter."]),
+          at("Le code des pirates", ["Bronze", "Bronze"], ["Aventurez-vous dans les Caraïbes et bouclez le chapitre.", "Venture into the Caribbean and finish the chapter."]),
+          at("Faire la différence", ["Bronze", "Bronze"], ["Aventurez-vous à San Fransokyo et bouclez le chapitre.", "Venture into San Fransokyo and finish the chapter."]),
+          at("Dans le cœur de Winnie", ["Bronze", "Bronze"], ["Aventurez-vous dans la Forêt des Rêves Bleus et bouclez le chapitre.", "Venture into the Hundred Acre Wood and finish the chapter."]),
+          at("Les cœurs liés au sien", ["Bronze", "Bronze"], ["Rassemblez les sept gardiens de la lumière.", "Gather the seven guardians of light."]),
+          at("Quoi qu'il advienne", ["Bronze", "Bronze"], ["Retrouvez Kairi.", "Find Kairi."]),
+          at("Le combat ultime", ["Argent", "Silver"], ["Entamez l'affrontement final contre Maître Xehanort.", "Begin the final fight against Master Xehanort."]),
+          at("Un autre chapitre se clôt", ["Or", "Gold"], ["Terminez le jeu et regardez la scène finale.", "Finish the game and watch the ending."]),
+        ],
+      },
+      {
+        id: "gummiphone",
+        title: L("Les trophées du Gummiphone", "Gummiphone trophies"),
+        intro: L(
+          "Les cinq sections de l'appareil, plus les compteurs de photos. C'est ce groupe qui définit la complétion du jeu.",
+          "The device's five sections, plus the photo counters. This group is what defines completion.",
+        ),
+        columns: [L("Trophée", "Trophy"), L("Rang", "Rank"), L("Condition", "Condition")],
+        rows: [
+          at("Roi cachés", ["Or", "Gold"], ["Complétez la section Emblèmes fétiches du Gummiphone — les quatre-vingt-dix.", "Complete the Gummiphone's Lucky Emblems section — all ninety."]),
+          at("Connaître ses ennemis", ["Bronze", "Bronze"], ["Complétez la section Adversaires du Gummiphone.", "Complete the Gummiphone's Enemies section."]),
+          at("Dans les moindres recoins", ["Argent", "Silver"], ["Complétez la section Trésors du Gummiphone.", "Complete the Gummiphone's Treasures section."]),
+          at("Alchimiste", ["Argent", "Silver"], ["Complétez la section Objets créés du Gummiphone.", "Complete the Gummiphone's Synthesis section."]),
+          at("Dans les annales", ["Bronze", "Bronze"], ["Complétez la section Records de jeu du Gummiphone.", "Complete the Gummiphone's Records section."]),
+          at("Ouistiti !", ["Bronze", "Bronze"], ["Prenez votre première photo.", "Take your first photograph."]),
+          at("Souvenirs durables", ["Bronze", "Bronze"], ["Collectionnez 50 photos.", "Collect 50 photographs."]),
+        ],
+      },
+      {
+        id: "combat",
+        title: L("Les trophées de combat et de progression", "Combat and progress trophies"),
+        columns: [L("Trophée", "Trophy"), L("Rang", "Rank"), L("Condition", "Condition")],
+        rows: [
+          at("Fou de manèges", ["Bronze", "Bronze"], ["Éliminez des ennemis avec une attraction pour la première fois.", "Defeat enemies with an attraction for the first time."]),
+          at("Liés par le cœur", ["Bronze", "Bronze"], ["Éliminez des ennemis en utilisant un lien pour la première fois.", "Defeat enemies using a link for the first time."]),
+          at("Grand mage", ["Bronze", "Bronze"], ["Lancez un sort de magie puissante pour la première fois.", "Cast a powerful magic spell for the first time."]),
+          at("Chevalier", ["Bronze", "Bronze"], ["Éliminez 1 000 ennemis.", "Defeat 1,000 enemies."]),
+          at("Fou", ["Bronze", "Bronze"], ["Éliminez 3 000 ennemis.", "Defeat 3,000 enemies."]),
+          at("Tour", ["Argent", "Silver"], ["Éliminez 5 000 ennemis.", "Defeat 5,000 enemies."]),
+          at("Au max", ["Argent", "Silver"], ["Faites monter Sora au niveau 99.", "Take Sora to level 99."]),
+          at("Forgeron d'exception", ["Bronze", "Bronze"], ["Obtenez une Keyblade améliorée au maximum.", "Get a Keyblade upgraded to the maximum."]),
+          at("Ultima Arma", ["Argent", "Silver"], ["Créez l'Ultima Arma — les sept Orichalque + sont requis.", "Create the Ultima Weapon — all seven Orichalcum+ required."]),
+        ],
+      },
+      {
+        id: "annexes",
+        title: L("Les trophées des quêtes annexes", "Side-quest trophies"),
+        intro: L(
+          "Chacun correspond à une annexe de ce guide, et la page qui lui est consacrée en détaille la méthode.",
+          "Each matches an annexe of this guide, and the page devoted to it details the method.",
+        ),
+        columns: [L("Trophée", "Trophy"), L("Rang", "Rank"), L("Condition", "Condition")],
+        rows: [
+          at("Flangorneur", ["Argent", "Silver"], ["Terminez toutes les missions des **Sept Flantastiques**.", "Complete every **Flantastic Seven** mission."]),
+          at("Pilleur spatial", ["Bronze", "Bronze"], ["Utilisez le vaisseau Gummi pour obtenir 20 trésors uniques.", "Use the Gummi ship to obtain 20 unique treasures."]),
+          at("Astronome", ["Bronze", "Bronze"], ["Trouvez et photographiez toutes les constellations depuis le vaisseau Gummi.", "Find and photograph every constellation from the Gummi ship."]),
+          at("Thermosphère", ["Or", "Gold"], ["Détruisez le **Schwarzgeist** — un vaisseau à 200 de vitesse est exigé.", "Destroy the **Schwarzgeist** — a 200-Speed ship is required."]),
+          at("Centurion", ["Bronze", "Bronze"], ["Marquez au moins 12 millions de points à Verum Rex : Beat of Lead.", "Score at least 12 million points in Verum Rex: Beat of Lead."]),
+          at("Danseur festif", ["Bronze", "Bronze"], ["Marquez au moins 70 000 points à la Danse festive.", "Score at least 70,000 points in the Festival Dance."]),
+          at("Champion des neiges", ["Bronze", "Bronze"], ["Marquez au moins 600 000 points à la luge alpine.", "Score at least 600,000 points on the sled run."]),
+          at("Engrangeur", ["Bronze", "Bronze"], ["Obtenez le rang A sur les deux parcours du Lumirallye.", "Get rank A on both Flash Tracer courses."]),
+          at("Vaisseau amiral", ["Argent", "Silver"], ["Renforcez le Léviathan au maximum.", "Upgrade the Leviathan to the maximum."]),
+          at("Capitaine dans l'âme", ["Bronze", "Bronze"], ["Faites couler 200 navires ennemis dans les Caraïbes.", "Sink 200 enemy ships in the Caribbean."]),
+          at("Corne d'abondance", ["Bronze", "Bronze"], ["Collectionnez chaque type d'ingrédient.", "Collect every type of ingredient."]),
+          at("Repas complet", ["Bronze", "Bronze"], ["Obtenez votre premier « Excellent » en cuisinant.", "Get your first \"Excellent\" while cooking."]),
+          at("Chef étoilé", ["Argent", "Silver"], ["Obtenez un « Excellent » pour chaque plat — les vingt-huit recettes.", "Get an \"Excellent\" on every dish — all twenty-eight recipes."]),
+          at("As du jeu rétro", ["Bronze", "Bronze"], ["Atteignez un nouveau meilleur score dans un jeu du **Royaume Classique**.", "Set a new best score in one **Classic Kingdom** game."]),
+          at("Maître du jeu rétro", ["Argent", "Silver"], ["Atteignez un nouveau meilleur score dans chacun des vingt-trois jeux.", "Set a new best score in each of the twenty-three games."]),
+        ],
+      },
+      {
+        id: "platine",
+        title: L("Le platine", "The platinum"),
+        columns: [L("Trophée", "Trophy"), L("Rang", "Rank"), L("Condition", "Condition")],
+        rows: [
+          at("Maître ès de KINGDOM HEARTS III", ["Platine", "Platinum"], ["Déverrouillez tous les autres trophées.", "Unlock every other trophy."]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "ordre",
+        title: L("Dans quel ordre viser le platine", "What order to take the platinum in"),
+        text: L(
+          "La méthode la plus économe consiste à ne rien forcer pendant l'histoire, sauf deux choses : **prendre des photos** en permanence — les emblèmes fétiches et le compteur de cinquante clichés avancent ensemble — et **cuisiner au fur et à mesure** que les ingrédients arrivent, parce que les vingt-huit recettes demandent des allers-retours si on les garde pour la fin.\n\nUne fois le jeu terminé, l'ordre efficace est celui-ci. D'abord les **portails de combat**, qui règlent d'un coup les trois trophées de comptage d'ennemis, la récolte de matériaux pour la synthèse, et les treize rapports secrets. Ensuite l'**atelier des Mogs**, pour Alchimiste, Forgeron d'exception et l'Ultima Arma — l'ordre compte, puisque les portails fournissent les matériaux.\n\nViennent alors les **mini-jeux**, qui se travaillent l'un après l'autre sans dépendre de rien, et le **vaisseau Gummi**, dont les trésors améliorent le vaisseau et rendent le Schwarzgeist abordable. Les **emblèmes fétiches** se terminent en dernier, parce qu'ils obligent à retraverser les neuf mondes : autant le faire quand plus rien d'autre n'y attend.\n\nLe niveau 99 tombe seul en chemin, les portails donnant énormément d'expérience. Il n'y a donc aucune session de montée en niveau à prévoir.",
+          "The most economical method is to force nothing during the story, except two things: **take photographs** constantly — Lucky Emblems and the fifty-photo counter advance together — and **cook as ingredients arrive**, because the twenty-eight recipes mean backtracking if you save them for the end.\n\nOnce the game is finished, the efficient order is this. First the **Battlegates**, which settle the three enemy-count trophies, the material harvest for synthesis, and the thirteen Secret Reports in one go. Then the **moogle workshop**, for Alchemist, Master Smith and the Ultima Weapon — order matters, since the gates supply the materials.\n\nThen come the **mini-games**, which can be worked one after another without depending on anything, and the **Gummi ship**, whose treasures upgrade the ship and make the Schwarzgeist manageable. The **Lucky Emblems** finish last, because they mean crossing all nine worlds again: better done when nothing else waits there.\n\nLevel 99 lands on its own along the way, the gates giving a great deal of experience. So no levelling session needs planning.",
+        ),
+      },
+    ],
+    rewards: {
+      tierHeader: L("Groupe", "Group"),
+      rows: [
+        { tier: L("Histoire", "Story"), reward: L("Quatorze trophées, tous automatiques", "Fourteen trophies, all automatic") },
+        { tier: L("Gummiphone", "Gummiphone"), reward: L("Sept trophées — le cœur de la complétion", "Seven trophies — the heart of completion") },
+        { tier: L("Combat et progression", "Combat and progress"), reward: L("Neuf trophées, réglés par les portails de combat", "Nine trophies, settled by the Battlegates") },
+        { tier: L("Quêtes annexes", "Side quests"), reward: L("Quinze trophées, un par annexe de ce guide", "Fifteen trophies, one per annexe of this guide") },
+        { tier: L("Platine", "Platinum"), reward: L("**Maître ès de KINGDOM HEARTS III**", "**Kingdom Hearts III Master**") },
+      ],
+      note: L(
+        "Le platine ne demande ni le mode **Critique**, ni la **scène secrète**, ni l'extension **Re Mind**, qui possède sa propre liste de trophées.",
+        "The platinum requires neither **Critical** mode, nor the **secret ending**, nor the **Re Mind** expansion, which has a trophy list of its own.",
+      ),
+    },
   },
   {
     id: "scene-secrete",
@@ -775,6 +1435,58 @@ export const quests: WalkQuest[] = [
       "The Lucky Emblems by difficulty, and what the scene announces.",
     ),
     entry: "sora",
-    status: "todo",
+    status: "done",
+    intro: L(
+      "Comme dans chaque épisode depuis le premier, Kingdom Hearts III cache une scène supplémentaire après son épilogue, et cette scène **pose les bases de la suite de la série**. Elle n'est pas un bonus décoratif : elle introduit un lieu et une situation dont dépend tout ce qui vient ensuite.\n\nSa condition est unique et tient en une phrase : le nombre d'**emblèmes fétiches** photographiés, avec un seuil qui baisse à mesure que la difficulté monte. En **Débutant**, il faut les quatre-vingt-dix ; en **Standard**, soixante ; en **Expert**, trente. En **Critique**, ajouté après la sortie, terminer le jeu suffit — aucun emblème n'est exigé.\n\nLa logique de la série est donc inversée par rapport aux épisodes précédents : ce n'est plus le taux de complétion du Carnet qui compte, mais un unique compteur, et le jeu récompense le joueur qui accepte la difficulté plutôt que celui qui fouille.\n\nRien n'est définitif. Si le seuil n'était pas atteint au moment de finir, il suffit de revenir compléter la collecte et de recharger la sauvegarde de fin : la scène se déclenche alors normalement. Elle se revoit ensuite quand on veut, depuis l'option **Théâtre** du menu principal.",
+      "As in every episode since the first, Kingdom Hearts III hides an extra scene after its epilogue, and that scene **lays the groundwork for the rest of the series**. It is not a decorative bonus: it introduces a place and a situation on which everything that follows depends.\n\nIts condition is single and fits in a sentence: the number of **Lucky Emblems** photographed, with a threshold that falls as difficulty rises. On **Beginner** you need all ninety; on **Standard**, sixty; on **Proud**, thirty. On **Critical**, added after release, finishing the game is enough — no emblems required.\n\nThe series' logic is therefore inverted from earlier games: it is no longer the Journal's completion rate that counts but a single counter, and the game rewards the player who takes on the difficulty rather than the one who searches.\n\nNothing is final. If the threshold was not met when you finished, simply come back, complete the collection and reload the ending save: the scene then plays normally. It can be rewatched at will afterwards, from the main menu's **Theatre** option.",
+    ),
+    tables: [
+      {
+        id: "conditions",
+        title: L("Les conditions par difficulté", "Conditions by difficulty"),
+        intro: L(
+          "Le seuil est vérifié au moment de charger la sauvegarde de fin, et non pendant la partie : il peut donc être atteint après coup.",
+          "The threshold is checked when the ending save is loaded, not during the playthrough: it can therefore be met after the fact.",
+        ),
+        columns: [L("Difficulté", "Difficulty"), L("Emblèmes exigés", "Emblems required"), L("Ce que cela implique", "What that means")],
+        rows: [
+          at("Débutant", ["Les 90", "All 90"], ["La collecte complète, donc une partie de complétion. C'est le mode où la scène coûte le plus cher.", "The full collection, so a completionist playthrough. This is the mode where the scene costs most."]),
+          at("Standard", ["60", "60"], ["Environ deux tiers. Atteignable en fouillant sérieusement au fil des mondes, sans guide.", "About two thirds. Reachable by searching seriously world by world, without a guide."]),
+          at("Expert", ["30", "30"], ["Un tiers. Ces trente-là se ramassent presque naturellement en explorant.", "A third. Those thirty come almost naturally while exploring."]),
+          at("Critique", ["Aucun", "None"], ["Terminer le jeu suffit. Le mode le plus rapide vers la scène, pour un joueur qui accepte le combat exigeant.", "Finishing the game is enough. The fastest route to the scene, for a player who takes on the demanding combat."]),
+        ],
+      },
+    ],
+    steps: [
+      {
+        id: "choisir",
+        title: L("Choisir sa route vers la scène", "Choosing your route to the scene"),
+        text: L(
+          "Trois profils, trois routes. Un joueur qui veut **voir la scène sans y consacrer une semaine** a intérêt à jouer en Expert : trente emblèmes tombent en explorant normalement, sans détour ni carte.\n\nUn joueur qui **vise la complétion** photographiera les quatre-vingt-dix de toute façon, quelle que soit la difficulté — la scène devient alors une conséquence, pas un objectif. C'est aussi la route qui donne l'**Orichalque +** du palier 80 et la **Barrette de Mickey** du palier 90 ; à ce titre, elle se justifie même sans la scène.\n\nUn joueur qui **cherche le défi** prendra le mode Critique, où la scène ne demande rien d'autre que de finir. C'est le seul cas où la collecte et la scène secrète sont entièrement décorrélées.\n\nDernier point pratique : la difficulté se choisit au début de la partie et ne se change plus. Si la scène compte, autant y penser à ce moment-là plutôt qu'après quarante heures de jeu.",
+          "Three profiles, three routes. A player who wants to **see the scene without spending a week on it** is better off on Proud: thirty emblems fall while exploring normally, with no detour and no map.\n\nA player **going for completion** will photograph all ninety anyway, whatever the difficulty — the scene then becomes a consequence, not a goal. That route also gives the tier-80 **Orichalcum+** and the tier-90 **Mickey Clasp**; on that basis it justifies itself even without the scene.\n\nA player **after the challenge** will take Critical, where the scene asks for nothing but finishing. That is the only case where the collection and the secret ending are fully decoupled.\n\nOne last practical point: difficulty is chosen at the start of a playthrough and cannot be changed. If the scene matters, it is worth thinking about then rather than forty hours in.",
+        ),
+      },
+      {
+        id: "contenu",
+        title: L("Ce que la scène annonce", "What the scene announces"),
+        text: L(
+          "Cette section parle de l'après. Elle ne raconte pas la scène plan par plan, mais elle en dit assez pour situer ce qu'elle ouvre — un joueur qui veut la découvrir intacte peut passer directement à la suite.\n\nLa scène ne conclut rien : elle **déplace le récit**. Elle quitte les mondes connus de la série pour une ville qui n'appartient à aucun d'eux, filmée dans un registre volontairement réaliste, à l'opposé des décors Disney. Ce contraste est le propos : la série signale qu'elle change de terrain.\n\nElle reprend aussi des éléments semés ailleurs dans le jeu — dans **Verum Rex**, le jeu d'arcade du Coffre à jouets, et dans plusieurs des **rapports secrets**, en particulier les trois *Observations* signées d'un auteur non identifié. Lus ensemble, ces trois textes et la scène forment un même dispositif : ils décrivent la même chose depuis deux côtés.\n\nC'est de là que part la suite de la série, et c'est pourquoi la scène a autant occupé les joueurs depuis la sortie du jeu. L'extension **Re Mind** revient dessus et en prolonge certaines pistes, sans les refermer.",
+          "This section is about what comes after. It does not recount the scene shot by shot, but it says enough to place what it opens — a player who wants to find it intact can skip ahead.\n\nThe scene concludes nothing: it **moves the story**. It leaves the series' familiar worlds for a city belonging to none of them, filmed in a deliberately realistic register, at the opposite end from the Disney sets. That contrast is the point: the series is signalling a change of ground.\n\nIt also picks up threads sown elsewhere in the game — in **Verum Rex**, Toy Box's arcade game, and in several of the **Secret Reports**, particularly the three *Observations* by an unidentified author. Read together, those three texts and the scene form one device: they describe the same thing from two sides.\n\nThat is where the rest of the series starts, and it is why the scene has occupied players so much since release. The **Re Mind** expansion returns to it and extends some of its threads, without closing them.",
+        ),
+      },
+    ],
+    rewards: {
+      tierHeader: L("Difficulté", "Difficulty"),
+      rows: [
+        { tier: L("Débutant", "Beginner"), reward: L("Les 90 emblèmes fétiches", "All 90 Lucky Emblems") },
+        { tier: L("Standard", "Standard"), reward: L("60 emblèmes fétiches", "60 Lucky Emblems") },
+        { tier: L("Expert", "Proud"), reward: L("30 emblèmes fétiches", "30 Lucky Emblems") },
+        { tier: L("Critique", "Critical"), reward: L("Terminer le jeu, sans condition d'emblèmes", "Finish the game, with no emblem condition") },
+      ],
+      note: L(
+        "La scène se déclenche après l'épilogue et se revoit ensuite depuis l'option **Théâtre** du menu principal. Elle n'est requise ni pour le platine, ni pour l'extension Re Mind.",
+        "The scene plays after the epilogue and can be rewatched from the main menu's **Theatre** option. It is required neither for the platinum nor for the Re Mind expansion.",
+      ),
+    },
   },
 ];
