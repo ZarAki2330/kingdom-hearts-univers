@@ -65,6 +65,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "jour-3",
+          image: { src: "/images/walkthrough/kh2-prologue-3.webp", credit: credit("Simulated_Twilight_Town_gameplay_3.png"), width: 480, height: 270 },
           title: L("Troisième jour — le Palier de l'Éveil", "Day three — the Station of Awakening"),
           text: L(
             "Après une rencontre avec une inconnue, la Place des Fêtes est attaquée et Roxas se retrouve au **Palier de l'Éveil**. Trois armes s'y présentent : l'Épée des Rêves, le Sceptre des Rêves, la Targe des Rêves.\n\n**C'est le choix le plus important du prologue.** Il ne donne pas de bonus immédiat : il décide de l'ordre dans lequel Sora apprendra ses capacités pendant toute la partie. L'épée avance les capacités offensives, la targe les défensives — dont la **Parade**, que beaucoup considèrent comme la meilleure capacité du jeu — et le sceptre les soutiens magiques.\n\nArmé de la Chaîne Royale, éliminez les trois Reflets. Vous obtenez **Pirouette** : équipez-la immédiatement dans le menu des compétences, c'est l'esquive du jeu.\n\nEn mode **Critique**, l'aventure démarre avec 50 points de compétence et un lot de capacités — Booster Réaction, Finish Plus, Attraction, Chance ×2, Concentration et Zéro XP. Prenez la Potion dans le coffre avant d'avancer, et n'hésitez pas à refaire le parcours pour quelques niveaux.",
@@ -82,7 +83,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "jour-5",
           title: L("Cinquième jour — les sept mystères", "Day five — the seven wonders"),
-          image: { src: "/images/walkthrough/kh2-prologue-3.webp", credit: credit("Simulated_Twilight_Town_gameplay_3.png"), width: 480, height: 270 },
           text: L(
             "La rédaction de rentrée porte sur les sept mystères de la ville. Avant de vous lancer : en reprenant le train **immédiatement** après l'explication du premier mystère, trois coffres s'ouvrent à la gare du centre — deux Potions et une Potion+.\n\nDescendez ensuite vers la Terrasse du Couchant. Sautez sur le **tramway en mouvement** pour atteindre un coffre au sommet d'une tour : un **Anneau de compétences**. Laissez-vous tomber sur le flanc sud du bâtiment pour une Potion, continuez jusqu'à la rivière pour une Potion+ après le petit pont, et montez les escaliers à gauche du coffre pour une dernière Potion.\n\nLes mystères s'enchaînent ensuite, et le septième — le manoir abandonné — n'est accessible qu'une fois les autres résolus.",
             "The back-to-school essay is about the town's seven wonders. Before you start: taking the train **immediately** after the first wonder is explained opens three chests at Central Station — two Potions and a Hi-Potion.\n\nThen head down to Sunset Terrace. Jump onto the **moving tram** to reach a chest on top of a tower: an **AP Boost**. Drop down the south side of that building for a Potion, carry on to the river for a Hi-Potion past the small bridge, and climb the stairs left of the chest for one last Potion.\n\nThe wonders then follow one another, and the seventh — the abandoned mansion — only opens once the others are solved.",
@@ -91,7 +91,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "jour-6",
           title: L("Sixième jour — le manoir", "Day six — the mansion"),
-          image: { src: "/images/walkthrough/kh2-prologue-2.webp", credit: credit("Simulated_Twilight_Town_gameplay_2.png"), width: 480, height: 270 },
           text: L(
             "Axel attaque au repaire. Éliminez ses sbires jusqu'à ce qu'une voix vous appelle au manoir, et frayez-vous un chemin jusque là.\n\nÀ l'intérieur, le fond de la pièce près de la baie vitrée cache une **Potion+**. La porte gardée par une armure, près de l'escalier, mène à la salle à manger : une **Potion** et un **Bandana elfique**. Ressortez, montez l'escalier de gauche (un coffre avec une Potion en haut), et prenez à gauche jusqu'à la **salle blanche** — vous y recevez les dessins de Naminé et la **carte du manoir**.\n\nExplorez l'étage jusqu'à la salle opposée sans oublier la Potion du coffre. Dans la bibliothèque, Roxas complète le dessin et ouvre un passage secret : descendez, prenez la **Potion+** du coffre, avancez, et **sauvegardez avant la zone suivante** — des Similis y attendent, puis Axel, pour de bon cette fois.\n\nAprès le combat, un dernier coffre (Potion+) et une porte. Les vacances de Roxas sont finies.",
             "Axel attacks at the Usual Spot. Clear his minions until a voice calls you to the mansion, then fight your way there.\n\nInside, the far end of the room by the bay window hides a **Hi-Potion**. The door guarded by a suit of armour, near the staircase, leads to the dining room: a **Potion** and an **Elven Bandana**. Come back out, climb the left staircase (a chest with a Potion at the top), and go left to the **white room** — there you receive Naminé's drawings and the **mansion map**.\n\nExplore the upper floor to the opposite room, taking the chest's Potion on the way. In the library, Roxas completes the drawing and opens a hidden passage: go down, take the chest's **Hi-Potion**, move forward, and **save before the next area** — Nobodies wait there, then Axel, for real this time.\n\nAfter the fight, one last chest (Hi-Potion) and a door. Roxas's holidays are over.",
@@ -137,6 +136,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "armure-astrale",
+          image: { src: "/images/walkthrough/kh2-prologue-2.webp", credit: credit("Simulated_Twilight_Town_gameplay_2.png"), width: 480, height: 270 },
           name: L("L'Armure Astrale", "The Twilight Thorn"),
           entry: "twilight-thorn",
           level: "3",
@@ -346,7 +346,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "sentier",
           title: L("Le Sentier et le village", "The Checkpoint and the village"),
-          image: { src: "/images/walkthrough/kh2-terre-des-dragons-2.webp", credit: credit("The_Land_of_Dragons_gameplay_2.png"), width: 480, height: 270 },
           text: L(
             "Montez au sommet du mirador derrière le capitaine et sautez vers la **pièce de puzzle** en donnant un coup de Keyblade en l'air pour l'attraper.\n\nSortez vers le poste de contrôle : deux coffres, un **Éclat de mithril** et une **Potion+**. Prenez ensuite le chemin derrière la rivière.\n\nSur le **Sentier**, il faut rejoindre le village en détruisant les rochers avec la commande réaction **Brise-roc**. La jauge de moral y fond à vue d'œil — elle baisse à la fois au temps et aux coups. **Ne vous occupez pas des coffres maintenant** : vous repasserez par là au calme. Le dernier passage est gardé par des **Centaurus** ; si ça tourne mal, cassez les rochers et filez sans les affronter.\n\nL'arrivée donne la **carte du village**. Avant la grotte, deux pièces de puzzle : l'une flotte au-dessus d'un tas de foin au sud-ouest, l'autre est sur un toit à l'est — le chariot près du foin sert de marchepied.",
             "Climb the watchtower behind the captain and jump towards the **puzzle piece**, swinging the Keyblade mid-air to grab it.\n\nHead out to the checkpoint: two chests, a **Mythril Shard** and a **Hi-Potion**. Then take the path behind the river.\n\nOn the **Checkpoint path**, you must reach the village by smashing rocks with the **Rock Breaker** Reaction Command. The morale gauge melts away here — it drops both over time and on hits. **Do not bother with the chests now**: you will come back through at leisure. The last passage is guarded by **Assault Riders**; if it goes badly, break the rocks and run rather than fight them.\n\nArriving gives the **village map**. Before the cave, two puzzle pieces: one floats above a hay pile to the south-west, the other is on a roof to the east — the cart near the hay is your step up.",
@@ -388,6 +387,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "shan-yu",
+          image: { src: "/images/walkthrough/kh2-terre-des-dragons-2.webp", credit: credit("The_Land_of_Dragons_gameplay_2.png"), width: 480, height: 270 },
           name: L("Shan Yu", "Shan Yu"),
           entry: "shan-yu",
           level: "12",
@@ -570,7 +570,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "colisee-phil",
           title: L("Le Colisée, et l'entraînement de Phil", "The Coliseum, and Phil's training"),
-          image: { src: "/images/walkthrough/kh2-colisee-2.webp", credit: credit("Olympus_Coliseum_from_KH2_gameplay_2.png"), width: 480, height: 270 },
           text: L(
             "Cerbère battu, Auron quitte le groupe. Remontez vers le point de lumière : Hercule est épuisé, et la malédiction des Enfers est la cause. Le seul remède serait la **pierre de l'Olympe**. Vous recevez la **carte du Colisée**.\n\nPendant qu'Hercule part la chercher, Phil vous propose son entraînement. Le **mode maniaque** donne la capacité **Plongeon aérien** : c'est lui qu'il faut réussir.\n\nHercule revient avec une mauvaise nouvelle — la pierre a été volée par un homme en capuche noire — et une pire : **Mégara a été enlevée**. Hercule part affronter l'Hydre, vous redescendez aux Enfers.",
             "With Cerberus beaten, Auron leaves the party. Climb back to the point of light: Hercules is exhausted, and the Underworld's curse is why. The only cure would be the **Olympus Stone**. You receive the **Coliseum map**.\n\nWhile Hercules goes to fetch it, Phil offers his training. The **maniac mode** gives the **Aerial Dive** ability: that is the one to clear.\n\nHercules comes back with bad news — the stone has been stolen by a man in a black hood — and worse: **Megara has been taken**. Hercules leaves to face the Hydra, and you head back down.",
@@ -611,6 +610,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "cerbere",
+          image: { src: "/images/walkthrough/kh2-colisee-2.webp", credit: credit("Olympus_Coliseum_from_KH2_gameplay_2.png"), width: 480, height: 270 },
           name: L("Cerbère", "Cerberus"),
           entry: "cerberus",
           level: "17",
@@ -1012,6 +1012,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "oogie",
+          image: { src: "/images/walkthrough/kh2-ville-halloween-3.webp", credit: credit("Halloween_Town_from_KH2_gameplay_3.png"), width: 480, height: 270 },
           name: L("Oogie Boogie", "Oogie Boogie"),
           entry: "oogie-boogie",
           level: "26",
@@ -1161,7 +1162,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "ville-et-poterne",
           title: L("De la ville à la Poterne", "From the town to the Postern"),
-          image: { src: "/images/walkthrough/kh2-forteresse-oubliee-4.webp", credit: credit("Hollow_Bastion_from_KH2_gameplay_4.png"), width: 480, height: 270 },
           text: L(
             "Passez chez Merlin en parlant à Picsou avant de sortir. Vous croisez **Cloud**, toujours à la recherche de Séphiroth, et **Aerith**. Chez Merlin, **Cid** vous envoie au bureau d'Ansem.\n\nAux Fortifications, trois jeunes filles vous interpellent : **Yuna, Rikku et Paine**. Continuez le chemin en prenant une **pièce de puzzle** dans les escaliers.\n\nTraversez le **Chantier** jusqu'à la **Poterne**, où Aerith vous indique l'entrée du château. Deux coffres : la **carte des alentours du château** et une **Gemme de mithril**. Descendez l'escalier en prenant une **pièce de puzzle** et un **Bonus PC** en bas.",
             "Stop at Merlin's, talking to Scrooge before you leave. You run into **Cloud**, still looking for Sephiroth, and **Aerith**. At Merlin's, **Cid** sends you to Ansem's study.\n\nAt the Bailey, three young women hail you: **Yuna, Rikku and Paine**. Carry on, taking a **puzzle piece** on the stairs.\n\nCross the **Restoration Site** to the **Postern**, where Aerith points out the castle entrance. Two chests: the **castle grounds map** and a **Mythril Gem**. Go down the stairs, taking a **puzzle piece** and an **AP Boost** at the bottom.",
@@ -1289,6 +1289,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "demyx-2",
+          image: { src: "/images/walkthrough/kh2-forteresse-oubliee-4.webp", credit: credit("Hollow_Bastion_from_KH2_gameplay_4.png"), width: 480, height: 270 },
           name: L("Demyx", "Demyx"),
           entry: "demyx",
           level: "31",
@@ -1463,7 +1464,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "epaves",
           title: L("Le cimetière d'épaves", "The Ship Graveyard"),
-          image: { src: "/images/walkthrough/kh2-port-royal-4.webp", credit: credit("Port_Royal_from_KH2_gameplay_4.png"), width: 480, height: 270 },
           text: L(
             "Sur place : le **Pendentif plume** — l'invocation de **Peter Pan** — et une **pièce de puzzle**.\n\nL'allée de débris donne une **Gemme de sérénité**, une **pièce de puzzle**, la **Formule royale** et un **Cristal de mithril**. Attention : les zones éclairées par la lune sont rares ici, et les combats contre les pirates en deviennent nettement plus tendus.\n\nDans la **forteresse de débris**, vous tombez sur le premier **Joueur** de Luxord : battez-le pour la première pièce. Vous récupérez le Black Pearl et la **carte de la zone**.\n\nLes derniers coffres du monde sont ici : l'**Astéroïde**, un **Bonus PC**, un **Orichalque** et **deux pièces de puzzle** — dont une qui demande de **frapper l'ancre** pour l'atteindre. Mais avant de les ouvrir, profitez des **30 secondes** pour attraper le Joueur du niveau inférieur.",
             "On site: the **Feather Charm** — the **Peter Pan** summon — and a **puzzle piece**.\n\nThe debris path gives a **Serenity Gem**, a **puzzle piece**, the **King Recipe** and a **Mythril Crystal**. Careful: moonlit patches are rare here, and fights against the pirates get noticeably tenser as a result.\n\nIn the **Seadrift Keep** you run into Luxord's first **Gambler**: beat it for the first medallion. You recover the Black Pearl and the **area map**.\n\nThe world's last chests are here: the **Asteroid**, an **AP Boost**, an **Orichalcum** and **two puzzle pieces** — one of which requires **hitting the anchor** to reach. But before opening them, use the **30 seconds** to catch the Gambler on the level below.",
@@ -1502,6 +1502,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "fossoyeur-2",
+          image: { src: "/images/walkthrough/kh2-port-royal-4.webp", credit: credit("Port_Royal_from_KH2_gameplay_4.png"), width: 480, height: 270 },
           name: L("Le Fossoyeur — les 882 pièces", "The Grim Reaper — the 882 medallions"),
           entry: "grim-reaper",
           level: "39",
@@ -1544,6 +1545,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "hades",
+          image: { src: "/images/walkthrough/kh2-colisee-6.webp", credit: credit("Olympus_Coliseum_from_KH2_gameplay_6.png"), width: 480, height: 270 },
           name: L("Hadès", "Hades"),
           entry: "hades",
           level: "40",
@@ -1587,7 +1589,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "interrupteurs",
           title: L("Les trois interrupteurs", "The three switches"),
-          image: { src: "/images/walkthrough/kh2-agrabah-4.webp", credit: credit("Agrabah_from_KH2_gameplay_4.png"), width: 480, height: 270 },
           text: L(
             "Un piédestal apparaît au sommet de la tour. En l'examinant, vous voyez les trois interrupteurs à activer, cachés dans les ruines.\n\nChacun demande **un sort précis, au bon moment** — le détail est dans le tableau ci-dessous.\n\n**Le point à retenir : activez en dernier celui qui est près de la tour.** Une fois les trois faits, vous n'avez que **30 secondes** pour regagner la tour et passer la porte. Des ennemis apparaissent près de la porte : **ignorez-les**, ils ne sont là que pour vous faire perdre du temps.\n\nÀ l'intérieur, deux coffres : des **Pages déchirées** et la **carte des ruines ensevelies**. Le couloir vous apprend qu'Iago vous a trahi et que Jafar est en fait **à Agrabah** — et le perroquet déclenche par erreur un interrupteur de trop.\n\nLe tapis file à pleine vitesse : concentrez-vous sur les Sans-cœur qui barrent la route. Cette séquence se rejoue en mini-jeu par la suite.",
             "A pedestal appears at the top of the tower. Examining it shows the three switches to activate, hidden in the ruins.\n\nEach needs **a specific spell, at the right moment** — the detail is in the table below.\n\n**The thing to remember: do the one near the tower last.** Once all three are done you have only **30 seconds** to get back to the tower and through the door. Enemies appear near the door: **ignore them**, they are only there to cost you time.\n\nInside, two chests: **Torn Pages** and the **Ruined Chamber map**. The corridor reveals that Iago has betrayed you and that Jafar is in fact **in Agrabah** — and the parrot accidentally triggers one switch too many.\n\nThe carpet takes off at full speed: focus on the Heartless blocking the way. That sequence can be replayed later as a mini-game.",
@@ -1613,6 +1614,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "jafar",
+          image: { src: "/images/walkthrough/kh2-agrabah-4.webp", credit: credit("Agrabah_from_KH2_gameplay_4.png"), width: 480, height: 270 },
           name: L("Jafar", "Jafar"),
           entry: "jafar",
           level: "42",
@@ -1647,8 +1649,8 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "usine",
+          image: { src: "/images/walkthrough/kh2-ville-halloween-5.webp", credit: credit("Halloween_Town_from_KH2_gameplay_5.png"), width: 480, height: 270 },
           title: L("L'usine à jouets", "The toy factory"),
-          image: { src: "/images/walkthrough/kh2-ville-halloween-3.webp", credit: credit("Halloween_Town_from_KH2_gameplay_3.png"), width: 480, height: 270 },
           text: L(
             "Le docteur Finkelstein a été agressé. Vous croisez Jack dans la forêt, ramassant des cadeaux qui semblent venir de chez le Père Noël — ce qui lui vaut d'être soupçonné.\n\nUn bruit vient de l'usine. Prenez les **deux pièces de puzzle** du Centre de tri avant de monter à la Salle d'emballage.",
             "Dr Finkelstein has been attacked. You run into Jack in the woods, picking up presents that seem to come from Santa's — which is what gets him suspected.\n\nA noise comes from the factory. Take the **two puzzle pieces** in the Sorting Room before going up to the Wrapping Room.",
@@ -1717,7 +1719,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "duo",
           title: L("L'oasis, puis la savane", "The oasis, then the savannah"),
-          image: { src: "/images/walkthrough/kh2-terre-des-lions-4.webp", credit: credit("Pride_Lands_gameplay_4.png"), width: 480, height: 270 },
           text: L(
             "Le combat gagné, Simba fuit devant un fantôme de Scar. Retrouvez-le à l'**oasis** : Sora, sous son aspect de lionceau, lui rend confiance.\n\nVous revenez automatiquement au Rocher du Lion. Le combat qui suit se livre **avec Simba et personne d'autre** : **sauvegardez dans la grotte de Rafiki** avant de partir vers la savane.",
             "With the fight won, Simba flees from a ghost of Scar. Find him at the **oasis**: Sora, in his lion cub form, restores his confidence.\n\nYou return automatically to Pride Rock. The fight that follows is fought **with Simba and no one else**: **save in Rafiki's cave** before heading out to the savannah.",
@@ -1738,6 +1739,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "duo-sismique",
+          image: { src: "/images/walkthrough/kh2-terre-des-lions-4.webp", credit: credit("Pride_Lands_gameplay_4.png"), width: 480, height: 270 },
           name: L("Duo sismique", "Groundshaker"),
           entry: "groundshaker",
           level: "45",
@@ -1798,7 +1800,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "voilier",
           title: L("Le voilier solaire", "The Solar Sailer"),
-          image: { src: "/images/walkthrough/kh2-space-paranoids-3.webp", credit: credit("Space_Paranoids_gameplay_3.png"), width: 480, height: 270 },
           text: L(
             "De retour en cellule, Tron rejoint l'équipe. Direction la **tour E/S** pour de nouveaux combats.\n\nDans la salle de transmission, Tron reçoit enfin le programme écrit par Cid et Merlin, et gagne deux compétences : **Concentration** et **Booster Foudre**.\n\nActivez le **voilier solaire** depuis cette même salle ; il vous attend dans la salle rouge, à l'opposé. Une fois sur place, marchez sur le **losange jaune** pour monter à bord. Prenez la **pièce de puzzle**, puis lancez le voilier.\n\nLes Sans-cœur tendent une embuscade, et le voilier **cède si vous traînez** : il faut les supprimer vite. **Abusez des coopérations** avec Donald et Tron, c'est le rythme le plus rapide.\n\nÀ destination, quatre coffres : un **Bonus PC**, un **Orichalque +**, la **carte du cœur de l'unité centrale** et une **Amulette cosmique**. Sauvegardez avant d'avancer.",
             "Back in the cell, Tron rejoins the party. Head for the **I/O Tower** for more fighting.\n\nIn the communications room, Tron finally receives the program written by Cid and Merlin, and gains two abilities: **Combo Boost** and **Thunder Boost**.\n\nActivate the **Solar Sailer** from that same room; it waits for you in the red room opposite. Once there, step on the **yellow diamond** to board. Take the **puzzle piece**, then launch the sailer.\n\nThe Heartless ambush you, and the sailer **gives way if you dawdle**: they have to go down fast. **Lean on the limits** with Donald and Tron, it is the quickest pace.\n\nAt your destination, four chests: an **AP Boost**, an **Orichalcum+**, the **Central Computer Mesa map** and a **Cosmic Arts**. Save before moving on.",
@@ -1808,6 +1809,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "sark-mcp",
+          image: { src: "/images/walkthrough/kh2-space-paranoids-3.webp", credit: credit("Space_Paranoids_gameplay_3.png"), width: 480, height: 270 },
           name: L("Sark et le MCP", "Sark and the MCP"),
           entry: "mcp",
           level: "46",
@@ -1907,8 +1909,8 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "citadelle",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-3.webp", credit: credit("The_World_That_Never_Was_gameplay_3.png"), width: 480, height: 270 },
           title: L("L'Illusiocitadelle", "The Castle That Never Was"),
-          image: { src: "/images/walkthrough/kh2-illusiopolis-2.webp", credit: credit("The_World_That_Never_Was_gameplay_2.png"), width: 480, height: 270 },
           text: L(
             "L'intérieur est gardé par des Similis tous plus puissants les uns que les autres, dont une espèce nouvelle : les **Incantateurs**.\n\nDans **L'appel de la Vacuité**, deux coffres près de la sortie — un **Orichalque** et une **Gemme de mithril** — et une **pièce de puzzle**. Une horde tente de bloquer la plate-forme ascensionnelle.\n\nLe **Hall des mélodies creuses** donne une **Ceinture cosmique**, un point de sauvegarde et le dernier Mog. Xigbar vous attend en haut des escaliers.\n\nAprès lui, la **Passerelle du Néant** : une **Gemme de mithril**, un **Orichalque** et un **Cristal de mithril**. La zone suivante réserve des retrouvailles, la Keyblade **Souvenir perdu** et la **carte de l'Illusiocitadelle**.\n\nPuis vient la salle de la **Preuve d'existence** : un cimetière où treize stèles honorent les membres de l'Organisation. **Deux fonctionnent encore** — celle du numéro sept, Saïx, et celle du numéro dix, Luxord. Prenez la **pièce de puzzle** avant d'aller les saluer.",
             "Inside, the guards are Nobodies each stronger than the last, including a new species: the **Sorcerers**.\n\nIn **Naught's Approach**, two chests near the exit — an **Orichalcum** and a **Mythril Gem** — and a **puzzle piece**. A horde tries to block the rising platform.\n\nThe **Hall of Empty Melodies** gives a **Cosmic Belt**, a save point and the last moogle. Xigbar waits at the top of the stairs.\n\nAfter him, the **Ruin and Creation's Passage**: a **Mythril Gem**, an **Orichalcum** and a **Mythril Crystal**. The next area holds a reunion, the **Oblivion** Keyblade and the **castle map**.\n\nThen comes the **Proof of Existence**: a graveyard where thirteen headstones honour the Organisation's members. **Two are still working** — number seven, Saïx, and number ten, Luxord. Take the **puzzle piece** before going to pay your respects.",
@@ -1916,8 +1918,8 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "sommet",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-6.webp", credit: credit("The_World_That_Never_Was_gameplay_6.png"), width: 480, height: 270 },
           title: L("Le sommet, et le point de non-retour", "The summit, and the point of no return"),
-          image: { src: "/images/walkthrough/kh2-illusiopolis-3.webp", credit: credit("The_World_That_Never_Was_gameplay_3.png"), width: 480, height: 270 },
           text: L(
             "Saïx battu, le passage du fond de la Preuve d'existence s'ouvre. Vous rejoignez Mickey, et à la suite d'un événement tragique **Riku intègre l'équipe**.\n\nLa zone suivante est faite de plates-formes reliées par des **voies invisibles** — elles apparaissent sur la carte, et sous vos pas. Chaque plate-forme a son coffre : une **Pierre de mithril**, un **Bonus PC**, un **Cristal de mithril** et un **Orichalque**.\n\nAu sommet vous attend **Xemnas**, qui emmène Sora dans une dimension parallèle pour un duel.\n\nAprès ce combat, vous recevez le **rapport d'Ansem n° 13**. La porte face au Kingdom Hearts est **le vrai point de non-retour** — mais le point de sauvegarde permet de repartir sur l'atlas pour les quêtes annexes. C'est le moment d'y penser, pas après.",
             "With Saïx beaten, the passage at the back of the Proof of Existence opens. You join Mickey, and after a tragic turn **Riku joins the party**.\n\nThe next area is made of platforms joined by **invisible paths** — they show on the map, and under your feet. Each platform has its chest: a **Mythril Stone**, an **AP Boost**, a **Mythril Crystal** and an **Orichalcum**.\n\nAt the summit waits **Xemnas**, who takes Sora into a parallel dimension for a duel.\n\nAfter that fight you receive **Ansem's Report 13**. The door facing Kingdom Hearts is **the real point of no return** — but the save point lets you go back to the world map for the side content. Now is the moment to think about that, not after.",
@@ -1935,6 +1937,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "roxas",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-2.webp", credit: credit("The_World_That_Never_Was_gameplay_2.png"), width: 480, height: 270 },
           name: L("Roxas", "Roxas"),
           entry: "roxas",
           level: "50",
@@ -1950,6 +1953,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "xigbar",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-7.webp", credit: credit("The_World_That_Never_Was_gameplay_7.png"), width: 480, height: 270 },
           name: L("Xigbar", "Xigbar"),
           entry: "xigbar",
           level: "51",
@@ -1961,6 +1965,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "luxord",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-4.webp", credit: credit("The_World_That_Never_Was_gameplay_4.png"), width: 480, height: 270 },
           name: L("Luxord", "Luxord"),
           entry: "luxord",
           level: "52",
@@ -1972,6 +1977,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "saix",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-5.webp", credit: credit("The_World_That_Never_Was_gameplay_5.png"), width: 480, height: 270 },
           name: L("Saïx", "Saïx"),
           entry: "saix",
           level: "53",
@@ -1998,6 +2004,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "xemnas-armure",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-8.webp", credit: credit("The_World_That_Never_Was_gameplay_8.png"), width: 480, height: 270 },
           name: L("Xemnas en armure, et le dragon", "Armored Xemnas, and the dragon"),
           entry: "xemnas",
           level: "58",
@@ -2008,6 +2015,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "xemnas-final",
+          image: { src: "/images/walkthrough/kh2-illusiopolis-9.webp", credit: credit("The_World_That_Never_Was_gameplay_9.png"), width: 480, height: 270 },
           name: L("Xemnas — le dernier combat", "Xemnas — the last fight"),
           entry: "xemnas",
           level: "60",
