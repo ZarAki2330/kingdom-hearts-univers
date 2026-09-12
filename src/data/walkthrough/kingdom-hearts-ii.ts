@@ -438,7 +438,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "aile-ouest",
           title: L("L'aile ouest et la garde-robe", "The west wing and the wardrobe"),
-          image: { src: "/images/walkthrough/kh2-chateau-de-la-bete-2.webp", credit: credit("Beast's_Castle_from_KH2_gameplay_2.png"), width: 480, height: 270 },
           text: L(
             "Dans l'aile ouest, revenez sur vos pas après la scène : deux coffres attendent entre les armures — un **Éclat de mithril** et une **Potion+**. Les armures elles-mêmes se détruisent, et lâchent des **orbes de flux** : c'est de la magie gratuite, ne les ignorez pas.\n\nPlus loin, l'escalier est gardé par deux armures. À sa droite, un **Éclat de force** ; à sa gauche, un **Éclat de mithril** et une **Pierre de vitalité**.\n\nLa **garde-robe** postée devant une porte cache l'entrée du cachot. Poussez-la avec **Triangle**, et **lâchez dès qu'elle se réveille** — sinon elle se rendort de travers. Répétez jusqu'à dégager complètement le passage.",
             "In the west wing, backtrack after the scene: two chests sit between the suits of armour — a **Mythril Shard** and a **Hi-Potion**. The armour itself can be destroyed, and drops **MP orbs**: that is free magic, do not ignore it.\n\nFurther on, the staircase is guarded by two suits of armour. To its right, a **Power Shard**; to its left, a **Mythril Shard** and a **Serenity Stone**.\n\nThe **wardrobe** standing in front of a door hides the dungeon entrance. Push it with **Triangle**, and **let go the moment she wakes** — otherwise she settles back crooked. Repeat until the way is completely clear.",
@@ -464,6 +463,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "duetto",
+          image: { src: "/images/walkthrough/kh2-chateau-de-la-bete-2.webp", credit: credit("Beast's_Castle_from_KH2_gameplay_2.png"), width: 480, height: 270 },
           name: L("Duetto", "Thresholder"),
           entry: "thresholder",
           level: "14",
@@ -486,6 +486,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "maillon-tenebreux",
+          image: { src: "/images/walkthrough/kh2-chateau-de-la-bete-3.webp", credit: credit("Beast's_Castle_from_KH2_gameplay_3.png"), width: 480, height: 270 },
           name: L("Maillon Ténébreux, puis Nervure", "Shadow Stalker, then Dark Thorn"),
           entry: "dark-thorn",
           level: "16",
@@ -1169,7 +1170,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "dedale",
           title: L("Le dédale du château", "The castle maze"),
-          image: { src: "/images/walkthrough/kh2-atlantica.webp", credit: credit("Atlantica_from_KH2_gameplay.png"), width: 480, height: 270 },
           text: L(
             "À l'intérieur, suivez ce chemin pour tout ramasser sans tourner en rond :\n\n- Au **premier embranchement**, à gauche : un **Cristal noir**.\n- Au **carrefour suivant**, à gauche encore : une **Pierre de mithril** près d'un mur écroulé.\n- Suivez ce couloir jusqu'au coffre suivant : un **Cristal de mithril**.\n- Revenez de quelques pas et prenez le **passage sud** vers une grande salle.\n- Tout droit à l'**ouest** : un couloir avec un **Bonus PC**.\n- Revenez à la grande salle et prenez le **couloir sud** jusqu'au bureau d'Ansem.\n\nVous y rencontrez **Tifa**, à la recherche d'un garçon « aux cheveux en pétard ». Léon arrive et vous mène à l'ordinateur. **Avant de lui parler**, ouvrez le coffre à ses côtés : une **Formule de compétences**.\n\nStitch s'en mêle, Donald fait une fausse manœuvre, et vous êtes aspirés dans le système.",
             "Inside, follow this route to pick everything up without going in circles:\n\n- At the **first fork**, go left: a **Dark Crystal**.\n- At the **next junction**, left again: a **Mythril Stone** by a collapsed wall.\n- Follow that corridor to the next chest: a **Mythril Crystal**.\n- Come back a few steps and take the **southern passage** into a large room.\n- Straight ahead to the **west**: a corridor with an **AP Boost**.\n- Back to the large room and take the **southern corridor** to Ansem's study.\n\nThere you meet **Tifa**, looking for a boy with 'spiky hair'. Leon arrives and takes you to the computer. **Before talking to him**, open the chest beside him: an **AP Boost formula**.\n\nStitch gets involved, Donald fumbles a control, and you are pulled into the system.",
@@ -1206,7 +1206,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "bloc-rouge",
           title: L("Le bloc rouge", "The red block"),
-          image: { src: "/images/walkthrough/kh2-space-paranoids-2.webp", credit: credit("Space_Paranoids_gameplay_2.png"), width: 480, height: 270 },
           text: L(
             "Approchez-vous de la machine au centre et examinez le panneau de contrôle. Il faut retrouver la pièce manquante dans un temps limité.\n\nC'est un jeu d'attention : le **bloc rouge** repose au milieu d'un anneau de cubes qui descend du plafond, puis se met à tourner — **et le bloc rouge prend la couleur des autres**.\n\nIl n'y a pas d'astuce : **ne le quittez pas des yeux** jusqu'à l'arrêt de la rotation, puis frappez-le à la Keyblade.\n\nRetournez ensuite à la cyber cellule et sélectionnez le **laboratoire** au terminal.",
             "Step up to the machine in the centre and examine the control panel. You have to find the missing part within a time limit.\n\nIt is a game of attention: the **red block** sits in the middle of a ring of cubes that descends from the ceiling, then starts spinning — **and the red block takes on the same colour as the others**.\n\nThere is no trick: **do not take your eyes off it** until the ring stops, then hit it with the Keyblade.\n\nThen go back to the Cyber Cell and select the **laboratory** at the terminal.",
@@ -1232,6 +1231,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "programme-belliqueux",
+          image: { src: "/images/walkthrough/kh2-space-paranoids-2.webp", credit: credit("Space_Paranoids_gameplay_2.png"), width: 480, height: 270 },
           name: L("Programme Belliqueux", "Hostile Program"),
           entry: "hostile-program",
           level: "30",
@@ -1272,7 +1272,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "traversee",
           title: L("La traversée de la ville", "Crossing the town"),
-          image: { src: "/images/walkthrough/kh2-forteresse-oubliee-5.webp", credit: credit("Hollow_Bastion_from_KH2_gameplay_5.png"), width: 480, height: 270 },
           text: L(
             "Examinez l'ordinateur : Mickey arrive et livre de sérieuses révélations sur Ansem et sur votre véritable ennemi. Les secousses annoncent l'assaut — sortez affronter un groupe mêlant Sans-cœur et Similis. Les **Albatros** finissent par vous soutenir.\n\nÀ la **Poterne**, **Séphiroth** cherche Cloud. La bataille a ouvert un trou dans un mur de briques : c'est l'entrée de la **Caverne du Souvenir**. Notez-la et passez.\n\nPrenez le chantier en combattant, puis les Fortifications, d'où l'on mesure l'ampleur du combat. Après la scène, **faites demi-tour vers le chantier** : une nouvelle portion de la zone s'est ouverte, avec un **Bonus PC** et une **Formule lunaire**.\n\nRevenez aux Fortifications et continuez tout droit. Mickey essaie de vous faire partir ; deux scènes propres à Final Mix s'enchaînent, et Demyx vous attend aux portes du château.",
             "Examine the computer: Mickey arrives and makes some serious revelations about Ansem and about your real enemy. The tremors announce the assault — go out and face a mix of Heartless and Nobodies. The **Gullwings** eventually back you up.\n\nAt the **Postern**, **Sephiroth** is looking for Cloud. The battle has torn a hole in a brick wall: that is the entrance to the **Cavern of Remembrance**. Note it and move on.\n\nCross the Restoration Site fighting, then the Bailey, from which you can see the scale of the battle. After the scene, **double back to the Restoration Site**: a new part of the area has opened, with an **AP Boost** and a **Moon Recipe**.\n\nReturn to the Bailey and carry straight on. Mickey tries to send you away; two Final Mix scenes follow, and Demyx is waiting at the castle gates.",
@@ -1306,6 +1305,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "mille",
+          image: { src: "/images/walkthrough/kh2-forteresse-oubliee-5.webp", credit: credit("Hollow_Bastion_from_KH2_gameplay_5.png"), width: 480, height: 270 },
           name: L("Les mille Sans-cœur", "The thousand Heartless"),
           entry: "armored-knight",
           level: "32",
@@ -1350,7 +1350,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "palais",
           title: L("Le Palais impérial", "The Imperial Palace"),
-          image: { src: "/images/walkthrough/kh2-terre-des-dragons-4.webp", credit: credit("The_Land_of_Dragons_gameplay_4.png"), width: 480, height: 270 },
           text: L(
             "Les portes sont verrouillées ; Mulan trouve le moyen d'entrer. À l'intérieur, un autre membre de l'Organisation : **Xigbar**, qui s'échappe en vous laissant des **Snipers** et des Reflets.\n\nLa salle du trône est le gros lot de la visite — **huit coffres** : la **carte du Palais**, un **Orichalque**, un **Cristal de mithril**, des **Pages déchirées**, un **Bonus PC**, une **Formule souveraine**, un **Bouclier d'Ogre** et un second **Bonus PC**.\n\nRessortez pour affronter le Membranator.",
             "The gates are locked; Mulan finds a way in. Inside, another Organisation member: **Xigbar**, who slips away leaving you **Snipers** and Dusks.\n\nThe throne room is the visit's jackpot — **eight chests**: the **Palace map**, an **Orichalcum**, a **Mythril Crystal**, **Torn Pages**, an **AP Boost**, a **Queen Recipe**, an **Ogre Shield** and a second **AP Boost**.\n\nGo back out to face the Storm Rider.",
@@ -1361,7 +1360,6 @@ export const walkthrough: Walkthrough = {
         {
           id: "inconnu",
           name: L("Le mystérieux inconnu", "The mysterious stranger"),
-          entry: "riku",
           level: "35",
           tactics: L(
             "Un duel, et un adversaire étonnamment **passif** : il marque une pause entre chaque attaque, ce qui laisse largement le temps de lire son jeu.\n\nSes coups sont faciles à esquiver mais **font très mal** : ne vous laissez pas endormir par son rythme.\n\nSon schéma est régulier. Il enchaîne un **combo de trois coups**, puis l'une de trois techniques : une **charge** arme en avant, un **saut** qui crée une onde de choc au sol, ou une **rotation sur lui-même** qui projette des sphères d'énergie.\n\nLa méthode tient en deux phrases : **restez en mouvement**, et **ruez-vous sur lui à la fin de chaque attaque**. Les Sans-cœur des alentours vous gêneront un peu — ignorez-les, ils ne sont pas le sujet.",
@@ -1370,6 +1368,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "membranator",
+          image: { src: "/images/walkthrough/kh2-terre-des-dragons-4.webp", credit: credit("The_Land_of_Dragons_gameplay_4.png"), width: 480, height: 270 },
           name: L("Membranator", "Storm Rider"),
           entry: "storm-rider",
           level: "36",
@@ -1406,8 +1405,8 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "soiree",
+          image: { src: "/images/walkthrough/kh2-chateau-de-la-bete-4.webp", credit: credit("Beast's_Castle_from_KH2_gameplay_4.png"), width: 480, height: 270 },
           title: L("La soirée gâchée", "The ruined evening"),
-          image: { src: "/images/walkthrough/kh2-chateau-de-la-bete-3.webp", credit: credit("Beast's_Castle_from_KH2_gameplay_3.png"), width: 480, height: 270 },
           text: L(
             "Une soirée se prépare au château, et la Bête fait les cent pas en attendant Belle. Parlez-lui pour lancer la suite.\n\n**Xaldin** débarque avec des Similis et gâche tout. Combattez-les, avec la Bête ou sans.\n\nLe calme revenu, la Bête s'enferme dans sa chambre et quitte le groupe ; Belle la suit. Allez dans l'aile ouest — vous croiserez peut-être **Tirette** à l'entrée du hall.\n\nDans la chambre, la **rose enchantée a disparu**. Reparlez à la Bête pour qu'elle rejoigne le groupe. Vous recevez la Keyblade **Rose de combat** et la **carte de la cour du château**.\n\nXaldin vous attend dans le grand hall, la rose à la main. Battez les Similis qu'il invoque, puis rejoignez la cour.",
             "An evening is being prepared at the castle, and the Beast is pacing while he waits for Belle. Talk to him to set things going.\n\n**Xaldin** turns up with Nobodies and ruins it. Fight them, with the Beast or without.\n\nWhen it settles, the Beast shuts himself in his room and leaves the party; Belle follows. Go to the west wing — you may run into **Flan** at the hall entrance.\n\nIn the bedroom, the **enchanted rose has gone**. Talk to the Beast again so he rejoins the party. You receive the **Rumbling Rose** Keyblade and the **castle courtyard map**.\n\nXaldin is waiting in the Entrance Hall, rose in hand. Beat the Nobodies he summons, then head to the courtyard.",
@@ -1417,6 +1416,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "xaldin",
+          image: { src: "/images/walkthrough/kh2-chateau-de-la-bete-5.webp", credit: credit("Beast's_Castle_from_KH2_gameplay_5.png"), width: 480, height: 270 },
           name: L("Xaldin", "Xaldin"),
           entry: "xaldin",
           level: "38",
