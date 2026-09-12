@@ -2,12 +2,13 @@ import { getEntry } from "@/data/encyclopedia";
 import { entryImages } from "@/data/encyclopedia/images";
 import { walkthrough as kingdomHearts } from "./kingdom-hearts";
 import { walkthrough as kingdomHeartsII } from "./kingdom-hearts-ii";
+import { walkthrough as kingdomHeartsIII } from "./kingdom-hearts-iii";
 import type { Walkthrough, WalkImage, WalkQuest, WalkSection } from "./types";
 
 export * from "./types";
 
 /** Les soluces disponibles, dans l'ordre où elles sont proposées. */
-export const walkthroughs: Walkthrough[] = [kingdomHearts, kingdomHeartsII];
+export const walkthroughs: Walkthrough[] = [kingdomHearts, kingdomHeartsII, kingdomHeartsIII];
 
 const byGame = new Map(walkthroughs.map((w) => [w.game, w]));
 

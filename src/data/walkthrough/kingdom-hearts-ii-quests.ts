@@ -1504,7 +1504,6 @@ export const quests: WalkQuest[] = [
           "Un trophée par monde entièrement visité, c'est-à-dire ses deux visites terminées. Ils tombent naturellement en suivant le cheminement.",
           "One trophy per world fully visited, meaning both visits finished. They fall naturally by following the walkthrough.",
         ),
-        collapsed: true,
         columns: [L("Trophée", "Trophy"), L("Monde", "World"), L("Rang", "Grade")],
         rows: [
           at("Déjà-vu", ["Cité du Crépuscule", "Twilight Town"], ["Bronze", "Bronze"]),
@@ -1528,7 +1527,6 @@ export const quests: WalkQuest[] = [
           "Les huit coupes du Colisée, les trois grands défis de fin de partie, et les Bolets XIII. C'est la partie la plus longue du platine.",
           "The eight Coliseum cups, the three great endgame challenges, and the Mushroom XIII. This is the longest part of the platinum.",
         ),
-        collapsed: true,
         columns: [L("Trophée", "Trophy"), L("Condition", "Condition"), L("Rang", "Grade")],
         rows: [
           at("Graine de héros", ["Remporter la coupe Peine et Panique.", "Win the Pain and Panic Cup."], ["Bronze", "Bronze"]),
@@ -1552,7 +1550,6 @@ export const quests: WalkQuest[] = [
           "Douze sections, douze trophées de bronze. Réunis, ils valent le Carnet complet — c'est-à-dire l'une des conditions de la fin secrète.",
           "Twelve sections, twelve bronze trophies. Together they amount to the complete Journal — one of the secret-ending conditions.",
         ),
-        collapsed: true,
         columns: [L("Trophée", "Trophy"), L("Section du Carnet", "Journal section"), L("Rang", "Grade")],
         rows: [
           at("Chercheur", ["Rapports d'Ansem", "Secret Ansem Reports"], ["Bronze", "Bronze"]),
@@ -1576,7 +1573,6 @@ export const quests: WalkQuest[] = [
           "Les sept derniers. « Rongé par les Ténèbres » est le seul qui demande de mal jouer volontairement.",
           "The last seven. Consumed by Darkness is the only one that asks you to play badly on purpose.",
         ),
-        collapsed: true,
         columns: [L("Trophée", "Trophy"), L("Condition", "Condition"), L("Rang", "Grade")],
         rows: [
           at("Pro-skateur", ["Gagner 5 000 points en skateboard.", "Score 5,000 points on the skateboard."], ["Bronze", "Bronze"]),
