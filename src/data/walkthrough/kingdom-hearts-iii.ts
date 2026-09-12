@@ -84,6 +84,7 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "montee",
+          image: { src: "/images/walkthrough/kh3-olympe-2.webp", credit: credit("Olympus_011.png"), width: 480, height: 270 },
           title: L("La montée du Mont Olympe", "The climb up Mount Olympus"),
           text: L(
             "Le monde s'ouvre sur une paroi à escalader : c'est le tutoriel de la **Course libre**. Approchez un mur en courant et Sora le remonte tout seul ; la même touche sert à rebondir d'un mur à l'autre.\n\nLes premiers Sans-cœur arrivent par vagues. C'est ici qu'apparaît la première **commande d'attraction**, le **Train d'artifice** : quand l'icône s'affiche, déclenchez-la — elle nettoie l'écran et le jeu compte sur vous pour en prendre l'habitude.\n\nEn haut, le **Titan de roche** barre la route.",
@@ -92,6 +93,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "thebes",
+          image: { src: "/images/walkthrough/kh3-olympe-3.webp", credit: credit("Olympus_014.jpg"), width: 480, height: 270 },
           title: L("Thèbes : l'agora, la ville et les jardins", "Thebes: the agora, the town and the gardens"),
           text: L(
             "L'**agora** contient le premier point de sauvegarde et la **boutique du Mog** : passez-y, les objets de soin y sont bon marché et vous en aurez besoin.\n\nLa ville brûle, et le principe est simple : **secourir les habitants** signalés sur la carte, en nettoyant les Sans-cœur autour d'eux. Les **jardins de Thèbes** prolongent la même consigne, avec plus de verticalité.\n\nDeux détours qui valent le coup. L'**oliveraie** donne des ingrédients pour le Bistrot du Petit Chef — c'est la première occasion d'en ramasser, et ils serviront tout le jeu. La **venelle** propose un défi chronométré : éliminer les Sans-cœur en **moins de trois minutes**.\n\nC'est aussi ici que Sora reçoit le **Gummiphone**. Dès qu'il est en main, l'appareil photo fonctionne : à partir de maintenant, **photographiez chaque emblème fétiche** que vous croisez plutôt que d'y revenir.",
@@ -100,6 +102,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "montagne",
+          image: { src: "/images/walkthrough/kh3-olympe-4.webp", credit: credit("Olympus_013.jpg"), width: 480, height: 270 },
           title: L("Le ravin, le flanc et le sommet", "The ravine, the mountainside and the summit"),
           text: L(
             "Le **ravin du Mont Olympe** demande de traverser une rivière en enchaînant les surfaces : Course libre et sauts, rien de piégeux.\n\nSur le **flanc de montagne**, Hercule quitte l'équipe. Sora continue seul avec Donald et Dingo, et la difficulté monte d'un cran — c'est le moment de vérifier vos capacités équipées.\n\nLe **sommet** ouvre sur le **Royaume des Dieux**, qui se parcourt dans plusieurs directions. Les **couloirs** relient les zones, et la **crête des nuages** enchaîne sur une séquence de **tir sur rail** : laissez-vous porter et visez.\n\nAvant l'**Apogée**, passez par la **Forge reculée** : c'est là que Dingo reçoit la **Targe royale +**, sa première arme forgée, et le principe du forgeage vous resservira dans chaque monde.",
@@ -108,6 +111,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "formes",
+          image: { src: "/images/walkthrough/kh3-olympe-1.webp", credit: credit("Olympus_002.jpg"), width: 480, height: 270 },
           title: L("Ce qu'Olympe débloque vraiment", "What Olympus actually unlocks"),
           text: L(
             "Le monde ne rapporte pas grand-chose en objets, et beaucoup en systèmes. C'est ce qu'il faut retenir.\n\nLe **changement de forme des Keyblades** s'active après les Titans : à partir de là, chaque Keyblade a deux formes qui se déclenchent en plein combo, avec leurs propres finitions. C'est le cœur du combat de Kingdom Hearts III, et le jeu ne vous le donne qu'ici.\n\nLe **Tir visé** devient disponible : maintenez la touche pour verrouiller plusieurs cibles, relâchez pour tout frapper d'un coup. Il coûte de la Concentration, qui se recharge en combattant.\n\nLes **commandes d'attraction** se multiplient — Trio-bouclier, Brasier obscur, Double duel — et chacune a son contexte d'apparition.\n\nCôté équipement, Olympe donne la Keyblade **Genèse héroïque**, le **Rapproche-cœur onirique**, et plusieurs bonus de PV et de PM. Donald y apprend **Concentration** et **Booster Feu**, Dingo **Chance**.",
@@ -257,6 +261,7 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "chambre",
+          image: { src: "/images/walkthrough/kh3-jouets-1.webp", credit: credit("Toy_Box_008.jpg"), width: 480, height: 270 },
           title: L("La chambre d'Andy, et la rue", "Andy's room, and the street"),
           text: L(
             "Sora, Donald et Dingo se réveillent transformés en jouets. Les premiers Sans-cœur arrivent aussitôt : le combat donne **Pirouette**, l'esquive du jeu. Équipez-la immédiatement, tout le reste du monde la suppose acquise.\n\nWoody, Buzz et les autres cherchent leurs amis disparus. La **rue** se traverse en direction de **Galaxy Toys**, avec quelques groupes de Sans-cœur sur le chemin.\n\nProfitez de la rue pour les coffres et les emblèmes : la boutique en contient beaucoup, mais elle se parcourt en étages et les allers-retours y sont plus longs.",
@@ -265,6 +270,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "galaxy",
+          image: { src: "/images/walkthrough/kh3-jouets-2.webp", credit: credit("Toy_Box_004.jpg"), width: 480, height: 270 },
           title: L("Galaxy Toys, étage par étage", "Galaxy Toys, floor by floor"),
           text: L(
             "Le magasin s'explore de bas en haut, et chaque étage a sa fonction.\n\nLe **rez-de-chaussée** présente les **Gigas** : trois variantes, reconnaissables à leur couleur. Le **rouge** frappe fort, le **bleu** va vite, le **violet** tire à distance. On monte dedans avec la commande contextuelle, et on en ressort quand la jauge est vide ou quand on le décide.\n\nLe **premier étage** est le rayon *Action*, avec ses figurines de dinosaures. Le **deuxième** abrite le rayon jeux vidéo et l'aire de jeux — c'est là que se trouve le plus gros des coffres.\n\nLe principe du monde tient en une phrase : **quand un Giga est disponible, prenez-le**. Les combats qui semblent injustes à pied deviennent triviaux dedans, et le jeu en met toujours un à portée quand il en faut un.",
@@ -308,6 +314,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "roi-des-jouets",
+          image: { src: "/images/walkthrough/kh3-jouets-4.webp", credit: credit("Toy_Box_006.jpg"), width: 480, height: 270 },
           name: L("Le Roi des jouets", "The King of Toys"),
           entry: "king-of-toys",
           level: "18",
@@ -355,6 +362,7 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "foret",
+          image: { src: "/images/walkthrough/kh3-corona-1.webp", credit: credit("Kingdom_of_Corona_002.png"), width: 480, height: 270 },
           title: L("La forêt, et les quatre moments de Raiponce", "The forest, and Rapunzel's four moments"),
           text: L(
             "Après avoir tiré Flynn Rider d'un mauvais pas, Sora escorte Raiponce à travers la forêt. Elle suit, commente, et **réagit à ce qui l'entoure** — c'est là que se joue le secret du monde.\n\nQuatre situations demandent une attention particulière, et toutes se ratent en avançant sans regarder :\n\n- Lancer **Glacier** sur un **pissenlit** pour le figer devant elle.\n- La laisser **nager** dans un étang.\n- **Protéger les lapins** d'un groupe de Sans-cœur au lieu de tout balayer.\n- **Guider les oiseaux** jusqu'à elle.\n\nLes quatre réussies **avant d'atteindre la ville** donnent la **Barrette des bois**. Après, c'est trop tard : le monde ne repropose pas ces moments.\n\nLa forêt contient aussi la plupart des coffres et des emblèmes fétiches du monde — c'est le bon moment pour fouiller, la ville est plus contrainte.",
@@ -363,6 +371,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "ville",
+          image: { src: "/images/walkthrough/kh3-corona-2.webp", credit: credit("Kingdom_of_Corona_013.jpg"), width: 480, height: 270 },
           title: L("La ville, le festival et la danse", "The town, the festival and the dance"),
           text: L(
             "La ville de Corona est en fête. Le passage est surtout narratif, mais il cache un mini-jeu qui vaut le détour : la **danse sur la place centrale**, qui rapporte un **Booster de magie**.\n\nC'est un jeu de rythme court, et il se rejoue. Ne le laissez pas passer : les boosters de magie sont rares dans le jeu de base.\n\nLa ville contient quelques emblèmes fétiches, plus difficiles à repérer que ceux de la forêt — pensez à lever la caméra vers les toits.",
@@ -386,6 +395,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "gardienne-funeste",
+          image: { src: "/images/walkthrough/kh3-corona-3.webp", credit: credit("Kingdom_of_Corona_004.png"), width: 480, height: 270 },
           name: L("La Gardienne funeste", "The Grim Guardianess"),
           entry: "grim-guardianess",
           level: "24",
@@ -421,6 +431,7 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "portes",
+          image: { src: "/images/walkthrough/kh3-monstro-1.webp", credit: credit("Monstropolis_003.png"), width: 480, height: 270 },
           title: L("La salle des portes", "The door vault"),
           text: L(
             "Sora rencontre **Bob**, **Sulli** et **Bouh**, et se retrouve au milieu d'une usine envahie par les Nescients.\n\nLa salle des portes se parcourt sur des **rails**, avec les portes qui défilent. On saute de l'une à l'autre, on combat en équilibre, et on tombe si l'on s'endort. C'est spectaculaire et sans réelle difficulté, mais c'est là qu'on apprend à lire les Nescients.\n\nLe **Crapaud-tortue** apparaît ici : c'est le premier ennemi du jeu **entièrement blindé**. Sa carapace encaisse tout ; seule sa **gueule** prend des dégâts, et elle ne s'ouvre que lorsqu'il attaque. Attendez, encaissez, frappez à ce moment-là.",
@@ -429,6 +440,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "usine",
+          image: { src: "/images/walkthrough/kh3-monstro-2.webp", credit: credit("Monstropolis_008.png"), width: 480, height: 270 },
           title: L("L'usine et la centrale", "The factory and the power plant"),
           text: L(
             "L'**usine** est plus classique : des couloirs, des machines, des groupes de Nescients. C'est le passage où l'on monte en niveau sans y penser, et où les nouvelles capacités tombent.\n\n**Riposte-impact** transforme une garde réussie en contre-attaque qui touche autour de soi. **Maître du combo** empêche les combos d'être interrompus par un coup encaissé — c'est la capacité la plus importante du monde, et elle change la sensation de tous les combats suivants. Équipez-la dès qu'elle apparaît.\n\nLa **centrale** au centre de l'usine mène au combat final. Rien ne s'y ferme, mais c'est le dernier point de collecte tranquille avant le boss.",
@@ -439,6 +451,7 @@ export const walkthrough: Walkthrough = {
       bosses: [
         {
           id: "immondice",
+          image: { src: "/images/walkthrough/kh3-monstro-3.webp", credit: credit("Monstropolis_011.png"), width: 480, height: 270 },
           name: L("Immondice", "Lump of Horror"),
           entry: "unversed",
           level: "28",
@@ -468,6 +481,7 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "montagne",
+          image: { src: "/images/walkthrough/kh3-arendelle-1.webp", credit: credit("Arendelle_01.jpg"), width: 480, height: 270 },
           title: L("La montagne et la grotte de glace", "The mountain and the ice labyrinth"),
           text: L(
             "La montée commence par des groupes de **Rhinoneiges**, gros et lents, et un premier boss.\n\nLa **grotte de glace** qui suit est le passage difficile du monde. Ce n'est pas un labyrinthe au sens strict : il y a un chemin, mais les mauvaises sorties vous renvoient en bas de la pente, et il faut tout remonter.\n\nLa règle qui marche : **suivez le vent et la lumière**. Les couloirs qui montent vraiment sont ceux où la neige est poussée vers l'avant. Quand vous hésitez, regardez d'où vient la poudreuse.\n\nDes coffres et des emblèmes fétiches jalonnent les parois — mais vérifiez votre chemin avant de faire un détour : un détour raté coûte une redescente complète.",
@@ -476,6 +490,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "palais",
+          image: { src: "/images/walkthrough/kh3-arendelle-2.webp", credit: credit("Arendelle_05.jpg"), width: 480, height: 270 },
           title: L("Le palais de glace, et la luge", "The ice palace, and the sled"),
           text: L(
             "Le palais d'Elsa est gardé par **Marshmallow**, la créature qu'elle a façonnée. Après lui, le monde s'ouvre sur sa dernière ligne droite.\n\nDeux séquences de **luge** ponctuent la descente. Elles sont scénarisées la première fois, puis deviennent un **mini-jeu rejouable** avec un score : c'est l'un des mini-jeux qui comptent pour le Carnet, autant y revenir une fois le monde terminé.\n\nLe monde abrite aussi la reconstruction d'**Olaf**, dont les morceaux sont éparpillés — une collecte facultative, mais rapide si on la fait en chemin plutôt qu'en revenant.\n\nLes **dragons de glace** croisés ici lâchent des matériaux de synthèse rares : c'est l'une des meilleures sources du jeu de base.",
@@ -497,6 +512,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "marshmallow",
+          image: { src: "/images/walkthrough/kh3-arendelle-3.webp", credit: credit("Arendelle_03.jpg"), width: 480, height: 270 },
           name: L("Marshmallow", "Marshmallow"),
           entry: "marshmallow",
           level: "33",
@@ -508,6 +524,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "skoll",
+          image: { src: "/images/walkthrough/kh3-arendelle-4.webp", credit: credit("Arendelle_04.jpg"), width: 480, height: 270 },
           name: L("Skǫll", "Skoll"),
           entry: "skoll",
           level: "34",
@@ -544,6 +561,7 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "navigation",
+          image: { src: "/images/walkthrough/kh3-caraibes-1.webp", credit: credit("Caribbean_KHIII_03.jpg"), width: 480, height: 270 },
           title: L("Le Léviathan, et la mer ouverte", "The Leviathan, and the open sea"),
           text: L(
             "Une fois le navire en main, la carte s'ouvre. On navigue d'île en île, on aborde, on explore, on repart — et le monde est assez grand pour qu'on s'y perde volontiers.\n\nLes **combats navals** suivent une logique simple : viser avec les canons, garder de la distance, et se servir des vagues. Ils se gagnent rarement à l'abordage.\n\nLes **grottes sous-marines** contiennent une bonne partie des coffres du monde. La plongée est libre et sans limite de souffle : prenez le temps de fouiller, c'est plus rentable ici qu'ailleurs.\n\nLes **crabes blancs** sont partout — sur les plages, dans les grottes, sur les rochers. Ils sont trois cents, et il n'y a pas de raccourci : ramassez-les en passant plutôt que de prévoir une session dédiée.",
@@ -552,6 +570,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "hollandais",
+          image: { src: "/images/walkthrough/kh3-caraibes-2.webp", credit: credit("Caribbean_KHIII_04.jpg"), width: 480, height: 270 },
           title: L("Le Hollandais Volant", "The Flying Dutchman"),
           text: L(
             "La dernière partie du monde se joue autour du **Hollandais Volant** et de son équipage. La mer devient hostile, les barrières d'eau apparaissent, et les combats navals se durcissent.\n\nC'est aussi ici que **Luxord** réapparaît — l'Organisation n'a pas disparu, et le monde bascule d'un coup du registre pirate au registre Kingdom Hearts.\n\nAvant d'aborder le Hollandais, videz la carte : une fois à bord, le monde se resserre nettement, et revenir chercher un coffre oublié devient long.",
@@ -572,6 +591,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "poisson-tonnerre",
+          image: { src: "/images/walkthrough/kh3-caraibes-4.webp", credit: credit("Caribbean_KHIII_02.jpg"), width: 480, height: 270 },
           name: L("Le Poisson-tonnerre", "The Lightning Angler"),
           entry: "heartless",
           level: "37",
@@ -592,6 +612,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "davy-jones",
+          image: { src: "/images/walkthrough/kh3-caraibes-3.webp", credit: credit("Caribbean_KHIII_05.jpg"), width: 480, height: 270 },
           name: L("Davy Jones", "Davy Jones"),
           entry: "davy-jones",
           level: "40",
@@ -627,6 +648,7 @@ export const walkthrough: Walkthrough = {
       steps: [
         {
           id: "toits",
+          image: { src: "/images/walkthrough/kh3-sf-1.webp", credit: credit("San_Fransokyo_09.png"), width: 480, height: 270 },
           title: L("Les toits, Baymax et les Pneumaniacs", "The rooftops, Baymax and the airborne Heartless"),
           text: L(
             "Sora fait équipe avec **Baymax**, et le monde s'ouvre en hauteur. Les **Pneumaniacs** attaquent par nuées et restent en l'air : le Tir visé y est bien plus efficace que les combos.\n\nLa ville se parcourt en enchaînant les façades. Ne cherchez pas de chemin au sol : les coffres et les emblèmes sont sur les toits, les enseignes et les antennes, et la Course libre y monte plus vite qu'il n'y paraît.\n\nUn premier boss mécanique, un **Troll de métal**, sert de mise en jambes.",
@@ -635,6 +657,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "entrainement",
+          image: { src: "/images/walkthrough/kh3-sf-2.webp", credit: credit("San_Fransokyo_04.png"), width: 480, height: 270 },
           title: L("Le casque RA, et l'entraînement de Hiro", "The AR helmet, and Hiro's training"),
           text: L(
             "Sora récupère un **casque de réalité augmentée** qui sert à assister Hiro pendant ses exercices : passer dans des **anneaux**, éliminer des vagues d'ennemis, et des **défis de vol** chronométrés.\n\nCes exercices sont facultatifs mais comptent pour le Carnet, et ils sont le moyen le plus rapide de se familiariser avec la verticalité du monde avant les vrais combats.\n\nLe monde débloque aussi un nouveau circuit de **Lumirallye** — le mini-jeu de course en moto lumineuse.",
@@ -658,6 +681,7 @@ export const walkthrough: Walkthrough = {
         },
         {
           id: "obscubes",
+          image: { src: "/images/walkthrough/kh3-sf-3.webp", credit: credit("San_Fransokyo_07.png"), width: 480, height: 270 },
           name: L("Les Obscubes", "The Dark Cubes"),
           entry: "heartless",
           level: "44",
